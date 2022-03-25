@@ -1,0 +1,15 @@
+:root {
+  --navyblue: #333043;
+  --yellow: #fde474;
+  --darkpink: #e9587a;
+  --cerise: #dc355c;
+  --white: #fff;
+
+  --navbar-bg: var(--navyblue);
+  --nav-text: var(--white);
+  --activenav-text: var(--darkpink);
+  --card-text: var(--white)
+  --nav-msksi: var(--darkpink);
+  --contact-bg: var(--navyblue);
+  
+}
