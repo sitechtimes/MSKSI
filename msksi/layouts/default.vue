@@ -1,9 +1,5 @@
 <template>
   <div>
-    <Menu />
-    <DesktopMenu />
-
-    <Nuxt />
   </div>
 </template>
 <script>
