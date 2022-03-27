@@ -1,7 +1,8 @@
 <template>
   <div class="resources">
-      <Tutorial />
+    <nav-bar />
       <h2>Resources</h2>
+          <Footer />
   </div>
 </template>
 

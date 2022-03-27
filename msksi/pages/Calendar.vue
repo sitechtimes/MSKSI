@@ -1,7 +1,8 @@
 <template>
   <div class="calendar">
-      <Tutorial />
-      <h2>calendar </h2>
+    <nav-bar />
+      <h2>Calendar </h2>
+          <Footer />
   </div>
 </template>
 

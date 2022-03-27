@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-      <Tutorial />
+    <nav-bar />
       <h2>About us </h2>
       <Footer />
   </div>

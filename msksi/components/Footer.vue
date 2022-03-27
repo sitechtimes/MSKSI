@@ -1,14 +1,15 @@
 <template>
-    <div class="footer"> Contact Us</div>
+
+    <div class="footer"> 
+      <div class="contactus">
+        <h3 >contact us </h3>
+      </div>
+      </div>
 </template>
 <style scoped>
-.footer{
-    text-align: center;
-    background-color: black;
-    color: white;
-    }
 </style>
 <script>
+
 export default {
   name: 'NuxtFooter',
 }

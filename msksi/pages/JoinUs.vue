@@ -1,7 +1,8 @@
 <template>
   <div class="joinus">
-      <Tutorial />
+    <nav-bar />
       <h2>Join Us </h2>
+          <Footer />
   </div>
 </template>
 
