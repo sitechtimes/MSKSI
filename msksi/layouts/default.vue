@@ -1,7 +1,6 @@
 <template>
   <div>
-    <Menu />
-    <DesktopMenu />
+<Navbar />
 
     <Nuxt />
   </div>
