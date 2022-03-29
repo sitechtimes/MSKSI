@@ -75,8 +75,10 @@
   background-color: var(--navyblue);
   text-align: center;
   justify-content: center;
-  height: 20rem;
-  margin-top: 56.5rem;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding-bottom: 4rem;
 }
 .contacts {
   color: var(--white);
