@@ -66,11 +66,35 @@
   transition: 0.5s;
 }
 
-.footer {
-  text-align: center;
-  background-color: var(--navyblue);
-  height: 10rem;
-}
 .contactus {
   color: var(--darkpink);
+  font-size: var(--h3);
+  font-family: 'Black Han Sans';
+  padding-top: 2rem;
+  font-weight: lighter;
+}
+#footer {
+  background-color: var(--navyblue);
+  text-align: center;
+  justify-content: center;
+  height: 20rem;
+  margin-top: 56.5rem;
+}
+.contacts {
+  color: var(--white);
+  margin-top: 2rem;
+  font-weight: lighter;
+  font-size: var(--h4);
+  font-family: 'ABeeZee', sans-serif;
+}
+.buttons {
+  margin-top: 4rem;
+}
+.icon {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 1rem;
+  background-color: var(--white);
+  margin-left: 1rem;
+  margin-right: 1rem;
 }

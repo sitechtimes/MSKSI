@@ -1,6 +1,7 @@
 <template>
 <div class="aboutus">
 <Navbar />
+<Footer />
 </div>
 
 </template>
