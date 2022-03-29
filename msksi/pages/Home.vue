@@ -1,20 +1,9 @@
 <template>
-  <div class="home">
-      <head> <link rel="stylesheet" href="~assets/css/main.css">
-           </head>
-    <nav-bar />
-      <h2>Home </h2>
-          <Footer />
-  </div>
+  <Home />
 </template>
-
 
 <script>
 export default {
-  name: "Home",
-};
+  name: 'Home',
+}
 </script>
-
-<style scoped>
-
-</style>
