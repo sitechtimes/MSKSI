@@ -1,8 +1,7 @@
-<!-- Please remove this file from your project -->
 <template>
-  <header class="navbar">
-    <h1>MSKSI</h1>
-    <div id="nav">
+  <header id="navbar">
+    <h1 class="logo">MSKSI</h1>
+    <div class="nav">
       <router-link class="router tohome" to="/">Home</router-link>
       <router-link class="router toaboutus" to="/AboutUs">About Us</router-link>
       <router-link class="router tocalendar" to="/Calendar">Calendar</router-link>
@@ -15,12 +14,19 @@
 
 <script>
 export default {
-  name: 'NuxtTutorial',
+  name: 'NuxtNavBar',
 }
 </script>
 
 <style scoped>
-.navbar{
-  display: inline;
+#navbar{
+overflow-x: auto;
 }
+.logo{
+    display: inline-block;
+}
+.router{
+    display: inline-block;
+}
+
 </style>

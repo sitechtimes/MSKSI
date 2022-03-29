@@ -1,5 +1,18 @@
-@import './variables.css';
+@import url(variables.css);
+:root {
+  --navyblue: #333043;
+  --yellow: #fde474;
+  --darkpink: #e9587a;
+  --cerise: #dc355c;
+  --white: #fff;
 
+  --navbar-bg: var(--navyblue);
+  --nav-text: var(--white);
+  --activenav-text: var(--darkpink);
+  --card-text: var(--white);
+  --nav-msksi: var(--darkpink);
+  --contact-bg: var(--navyblue);
+}
 html,
 body,
 * {
@@ -9,4 +22,15 @@ body,
   font-size: 62.5%;
 }
 body {
+  background-color: var(--navyblue);
+}
+.navbar {
+  background-color: var(--navbar-bg);
+}
+#nav a.router-link-exact-active {
+  color: var(--activenav-text);
+}
+.contactus {
+  background-color: var(--navyblue);
+  color: var(--darkpink);
 }

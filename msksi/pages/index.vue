@@ -1,9 +1,10 @@
 <template>
-  <Tutorial />
 </template>
 
 <script>
+import NavBar from '../components/NavBar.vue'
 export default {
   name: 'IndexPage',
 }
-</script>
+
+    NavBar</script>
