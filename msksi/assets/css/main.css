@@ -21,16 +21,3 @@ body,
   margin: 0;
   font-size: 62.5%;
 }
-body {
-  background-color: var(--navyblue);
-}
-.navbar {
-  background-color: var(--navbar-bg);
-}
-#nav a.router-link-exact-active {
-  color: var(--activenav-text);
-}
-.contactus {
-  background-color: var(--navyblue);
-  color: var(--darkpink);
-}
