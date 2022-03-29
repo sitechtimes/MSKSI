@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Black+Han+Sans&display=swap');
 :root {
   --navyblue: #333043;
   --yellow: #fde474;
@@ -8,14 +10,67 @@
   --navbar-bg: var(--navyblue);
   --nav-text: var(--white);
   --activenav-text: var(--darkpink);
-  --card-text: var(--white)
+  --card-text: var(--white);
   --nav-msksi: var(--darkpink);
   --contact-bg: var(--navyblue);
-  
+
   --h1: 7.594rem;
   --h2: 5.063rem;
   --h3: 3.375rem;
   --h4: 2.25rem;
   --h5: 1.5rem;
   --smallText: 0.8rem;
+}
+#navbar {
+  background-color: var(--navyblue);
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.nav {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.logo {
+  font-size: var(--h4);
+  color: var(--darkpink);
+  margin-left: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Black Han Sans';
+}
+.router {
+  color: var(--white);
+  font-size: var(--h5);
+  margin: 2rem;
+  font-family: 'ABeeZee', sans-serif;
+}
+.router:link {
+  text-decoration: none;
+}
+.router:visited {
+  text-decoration: none;
+}
+.router:hover {
+  text-decoration: none;
+}
+.router:active {
+  text-decoration: none;
+}
+.router:active {
+  color: var(--darkpink);
+}
+.router:hover {
+  color: var(--darkpink);
+  transition: 0.5s;
+}
+
+.footer {
+  text-align: center;
+  background-color: var(--navyblue);
+  height: 10rem;
+}
+.contactus {
+  color: var(--darkpink);
 }
