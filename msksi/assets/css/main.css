@@ -1,18 +1,5 @@
-@import url(variables.css);
-:root {
-  --navyblue: #333043;
-  --yellow: #fde474;
-  --darkpink: #e9587a;
-  --cerise: #dc355c;
-  --white: #fff;
+@import './variables.css';
 
-  --navbar-bg: var(--navyblue);
-  --nav-text: var(--white);
-  --activenav-text: var(--darkpink);
-  --card-text: var(--white);
-  --nav-msksi: var(--darkpink);
-  --contact-bg: var(--navyblue);
-}
 html,
 body,
 * {
@@ -21,3 +8,8 @@ body,
   margin: 0;
   font-size: 62.5%;
 }
+<<<<<<< HEAD
+=======
+body {
+}
+>>>>>>> parent of dd62728 (Merge branch 'jess-router-test' into wen's-branch)

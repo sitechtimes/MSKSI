@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Black+Han+Sans&display=swap');
+=======
+>>>>>>> parent of dd62728 (Merge branch 'jess-router-test' into wen's-branch)
 :root {
   --navyblue: #333043;
   --yellow: #fde474;
@@ -21,6 +24,7 @@
   --h5: 1.5rem;
   --smallText: 0.8rem;
 }
+<<<<<<< HEAD
 #navbar {
   background-color: var(--navyblue);
   height: 6rem;
@@ -98,3 +102,5 @@
   margin-left: 1rem;
   margin-right: 1rem;
 }
+=======
+>>>>>>> parent of dd62728 (Merge branch 'jess-router-test' into wen's-branch)

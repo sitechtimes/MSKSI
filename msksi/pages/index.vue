@@ -1,12 +1,18 @@
 <template>
+<<<<<<< HEAD
   <Navbar />
+=======
+  <Tutorial />
+>>>>>>> parent of dd62728 (Merge branch 'jess-router-test' into wen's-branch)
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue'
 export default {
   name: 'IndexPage',
 }
+<<<<<<< HEAD
 
 NavBar
+=======
+>>>>>>> parent of dd62728 (Merge branch 'jess-router-test' into wen's-branch)
 </script>
