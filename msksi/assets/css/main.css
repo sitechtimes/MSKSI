@@ -8,3 +8,62 @@ body,
   margin: 0;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 720px) {
+  .nav {
+    display: none;
+  }
+}
+.menuBtn {
+  font-size: var(--h4);
+}
+@media only screen and (min-width: 720px) {
+  .menuBtn {
+    display: none;
+  }
+}
+button {
+  /* Group 30 */
+
+  position: absolute;
+  width: 41px;
+  height: 29px;
+  left: 361px;
+  top: 20px;
+  margin-bottom: 1rem;
+
+  /* Rectangle 100 */
+
+  position: absolute;
+  width: 41px;
+  height: 4px;
+  left: 361px;
+  top: 20px;
+  margin-bottom: 1rem;
+
+  background: #ffffff;
+  border-radius: 5px;
+
+  /* Rectangle 100 */
+
+  position: absolute;
+  width: 41px;
+  height: 4px;
+  left: 361px;
+  top: 33px;
+  margin-bottom: 1rem;
+
+  background: #ffffff;
+  border-radius: 5px;
+
+  /* Rectangle 101 */
+
+  position: absolute;
+  width: 41px;
+  height: 4px;
+  left: 361px;
+  top: 45px;
+  margin-bottom: 1rem;
+
+  background: #ffffff;
+  border-radius: 5px;
+}
