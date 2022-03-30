@@ -22,48 +22,39 @@ body,
   }
 }
 button {
-  /* Group 30 */
-
   position: absolute;
-  width: 41px;
-  height: 29px;
+  width: 4rem;
+  height: 4rem;
   left: 361px;
-  top: 20px;
+  top: 1rem;
   margin-bottom: 1rem;
-
-  /* Rectangle 100 */
-
+  background-color: transparent;
+  border: none;
+}
+.line {
+  margin-bottom: 1rem;
+}
+.one {
   position: absolute;
-  width: 41px;
-  height: 4px;
-  left: 361px;
-  top: 20px;
-  margin-bottom: 1rem;
-
+  width: 4rem;
+  height: 2px;
+  margin-top: 1rem;
   background: #ffffff;
   border-radius: 5px;
-
-  /* Rectangle 100 */
-
+}
+.two {
   position: absolute;
-  width: 41px;
-  height: 4px;
-  left: 361px;
-  top: 33px;
-  margin-bottom: 1rem;
-
+  width: 4rem;
+  height: 2px;
+  margin-top: 3rem;
   background: #ffffff;
   border-radius: 5px;
-
-  /* Rectangle 101 */
-
+}
+.three {
   position: absolute;
-  width: 41px;
-  height: 4px;
-  left: 361px;
-  top: 45px;
-  margin-bottom: 1rem;
-
+  width: 4rem;
+  height: 2px;
+  margin-top: 5rem;
   background: #ffffff;
   border-radius: 5px;
 }

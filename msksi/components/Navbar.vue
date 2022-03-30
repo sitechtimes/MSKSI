@@ -10,7 +10,11 @@
       <router-link class="router" to="/JoinUs"> Join Us </router-link>
     </div>
     <div class="menuBtn">
-      <button>Click</button>
+      <button>
+        <div class="line one"></div>
+        <div class="line two"></div>
+        <div class="line three"></div>
+      </button>
     </div>
   </header>
 </template>
