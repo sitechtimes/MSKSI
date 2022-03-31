@@ -7,7 +7,6 @@
     <button class="icon instagram"></button>
     <button class="icon tiktok"></button>
     <button class="icon gmail"></button>
-
     </div>
 </div>
 </template>
