@@ -13,48 +13,37 @@ body,
     display: none;
   }
 }
-.menuBtn {
+.menu {
   font-size: var(--h4);
 }
 @media only screen and (min-width: 720px) {
-  .menuBtn {
+  .menu {
     display: none;
   }
 }
-button {
-  position: absolute;
-  width: 4rem;
-  height: 4rem;
-  left: 361px;
-  top: 1rem;
-  margin-bottom: 1rem;
+.menuBtn {
   background-color: transparent;
-  border: none;
-}
-.line {
-  margin-bottom: 1rem;
+  border-color: transparent;
+  margin-bottom: 10;
 }
 .one {
-  position: absolute;
-  width: 4rem;
-  height: 2px;
-  margin-top: 1rem;
-  background: #ffffff;
-  border-radius: 5px;
+  width: 35px;
+  height: 5px;
+  background-color: var(--white);
+  margin: 6px 0;
+  border-radius: 10rem;
 }
 .two {
-  position: absolute;
-  width: 4rem;
-  height: 2px;
-  margin-top: 3rem;
-  background: #ffffff;
-  border-radius: 5px;
+  width: 35px;
+  height: 5px;
+  background-color: var(--white);
+  margin: 6px 0;
+  border-radius: 10rem;
 }
 .three {
-  position: absolute;
-  width: 4rem;
-  height: 2px;
-  margin-top: 5rem;
-  background: #ffffff;
-  border-radius: 5px;
+  width: 35px;
+  height: 5px;
+  background-color: var(--white);
+  margin: 6px 0;
+  border-radius: 10rem;
 }

@@ -9,8 +9,8 @@
       <router-link class="router" to="/Resources"> Resources </router-link>
       <router-link class="router" to="/JoinUs"> Join Us </router-link>
     </div>
-    <div class="menuBtn">
-      <button>
+    <div class="menu">
+      <button class="menuBtn">
         <div class="line one"></div>
         <div class="line two"></div>
         <div class="line three"></div>
