@@ -1,5 +1,5 @@
 <template>
-  <div class="aboutus">
+  <div class="joinus">
     <Navbar />
     <Footer />
   </div>
@@ -7,8 +7,6 @@
 
 <script>
 export default {
-  name: 'NuxtAboutUs',
+  name: 'NuxtJoinUs',
 }
 </script>
-<style scoped>
-</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="aboutus">
+  <div class="gallery">
     <Navbar />
     <Footer />
   </div>
@@ -7,8 +7,6 @@
 
 <script>
 export default {
-  name: 'NuxtAboutUs',
+  name: 'NuxtGallery',
 }
 </script>
-<style scoped>
-</style>
