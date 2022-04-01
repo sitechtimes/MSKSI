@@ -107,3 +107,9 @@ body,
     margin-right: 1rem;
   }
 }
+.heading {
+  font-size: var(--h1);
+  font-family: 'Black Han Sans';
+  margin-left: 6rem;
+  font-weight: lighter;
+}
