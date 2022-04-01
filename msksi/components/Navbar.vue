@@ -10,11 +10,16 @@
       <router-link class="router" to="/JoinUs"> Join Us </router-link>
     </div>
     <div class="menu">
-      <button class="menuBtn">
+      <button class="menuBtn" @click="displayMenu()" ref="menuBtn">
         <div class="line one"></div>
         <div class="line two"></div>
         <div class="line three"></div>
       </button>
+      <div id="dropdown" class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
     </div>
   </header>
 </template>
@@ -22,5 +27,10 @@
 <script>
 export default {
   name: 'NuxtTutorial',
+  methods: {
+    displayMenu() {
+      this.$refs.menuBtn.innerText = 'Hello'
+    },
+  },
 }
 </script>
