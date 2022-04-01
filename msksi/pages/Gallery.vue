@@ -1,12 +1,9 @@
 <template>
-  <div class="gallery">
-    <Navbar />
-    <Footer />
-  </div>
+
 </template>
 
 <script>
 export default {
-  name: 'NuxtGallery',
+layout: 'Gallery'
 }
 </script>
