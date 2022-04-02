@@ -55,9 +55,6 @@
   text-decoration: none;
 }
 .router:active {
-  text-decoration: none;
-}
-.router:active {
   color: var(--darkpink);
 }
 .router:hover {
@@ -70,17 +67,17 @@
   color: var(--darkpink);
   font-size: var(--h3);
   font-family: 'Black Han Sans';
-  padding-top: 2rem;
+  padding-top: 5rem;
   font-weight: lighter;
 }
 #footer {
   background-color: var(--navyblue);
   text-align: center;
   justify-content: center;
-  position: fixed;
   bottom: 0px;
   width: 100%;
   padding-bottom: 4rem;
+  padding-top: 10rem;
 }
 .contacts {
   color: var(--white);
@@ -97,6 +94,7 @@
   width: 4rem;
   border-radius: 1rem;
   background-color: var(--white);
-  margin-left: 1rem;
   margin-right: 1rem;
+  margin-left: 6rem;
+  padding-top: 2rem;
 }

@@ -11,10 +11,12 @@
 </template>
 <style scoped>
 .our{
-    color: var(--darkpink);
+color: var(--darkpink);
+font-size: var(--h2);
 }
 .mission{
 color: var(--yellow);
+font-size: var(--h2);
 }
 .AboutUsTop{
     background-color: var(--navyblue);

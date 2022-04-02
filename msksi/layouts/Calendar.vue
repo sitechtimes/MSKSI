@@ -12,8 +12,6 @@
 .heading{
     color: var(--yellow);
     font-size: var(--h2);
-    margin-left: 6rem;
-    padding-top: 2rem;
 }
 .calendartop{
     background-color: var(--navyblue);
