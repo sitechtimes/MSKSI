@@ -20,17 +20,18 @@ font-size: var(--h2);
 }
 .AboutUsTop{
     background-color: var(--navyblue);
-    height: 65rem;
+    height: 90rem;
 }
 .text{
-    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-bottom: auto;
     font-family: 'Cairo', sans-serif;
     color: var(--white);
     text-align: left;
     font-size: var(--h3);
     width: 90%;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 </style>
