@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+
 :root {
   --navyblue: #333043;
   --yellow: #fde474;
@@ -17,8 +18,8 @@
 
   --h1: 7.594rem;
   --h2: 5.063rem;
-  --h3: 3.375rem;
-  --h4: 2.25rem;
+  --h3: 3.4rem;
+  --h4: 2.5rem;
   --h5: 1.5rem;
   --smallText: 0.8rem;
 }
@@ -49,12 +50,7 @@
   margin: 2rem;
   font-family: 'ABeeZee', sans-serif;
 }
-.router:link {
-  text-decoration: none;
-}
-.router:visited {
-  text-decoration: none;
-}
+
 .router:active {
   color: var(--darkpink);
 }
@@ -97,4 +93,11 @@
   margin-right: 1rem;
   margin-left: 6rem;
   padding-top: 2rem;
+}
+.subheading {
+  margin-left: 10rem;
+  font-size: var(--h3);
+  margin-top: 4.5rem;
+  font-family: 'Black Han Sans';
+  font-weight: lighter;
 }
