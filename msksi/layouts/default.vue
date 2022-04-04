@@ -24,8 +24,8 @@ padding-top: 20rem;
      width: 70%;
 }
 .hometop{
-    height: 65rem;
     background-color: var(--navyblue);
+    height: 100rem;
 }
 .si{
     font-family: 'ABeeZee', sans-serif;
