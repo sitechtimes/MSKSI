@@ -9,27 +9,19 @@
       <router-link class="router" to="/Resources"> Resources </router-link>
       <router-link class="router" to="/JoinUs"> Join Us </router-link>
     </div>
-    <div class="menu">
-      <button class="menuBtn" @click="displayMenu()" ref="menuBtn">
-        <div class="line one"></div>
-        <div class="line two"></div>
-        <div class="line three"></div>
-      </button>
-      <div id="dropdown" class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-    </div>
+    <Menu />
   </header>
 </template>
 
 <script>
+import Menu from './Menu.vue'
 export default {
-  name: 'NuxtTutorial',
+  components: { Menu },
+  name: 'Navbar',
+  data: {},
   methods: {
-    displayMenu() {
-      this.$refs.menuBtn.innerText = 'Hello'
+    toggleMenu() {
+      this.$refs.menuBtn.innerHTML = 'Hello'
     },
   },
 }
