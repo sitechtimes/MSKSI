@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap');
 
 :root {
   --navyblue: #333043;
@@ -25,11 +26,17 @@
 }
 #navbar {
   background-color: var(--navyblue);
-  height: 6rem;
+  height: 10rem;
   display: flex;
   justify-content: space-between;
   padding: 2rem;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
 }
 .nav {
   margin-top: auto;
@@ -49,6 +56,7 @@
   font-size: var(--h5);
   margin: 2rem;
   font-family: 'ABeeZee', sans-serif;
+  text-decoration: none;
 }
 
 .router:active {

@@ -10,6 +10,9 @@
 <style scoped>
 .resourcestop{
     background-color: var(--navyblue);
-    height: 65rem;
+    height: 100rem;
+}
+.heading{
+    color: var(--yellow);
 }
 </style>
