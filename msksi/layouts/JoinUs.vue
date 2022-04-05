@@ -63,7 +63,7 @@
 .joinusmid{
     height: 100rem;
     background-color: white;
-    margin-top: 30rem;
+    margin-top: 20rem;
 }
 .wbsm{
     font-size: var(--h2);

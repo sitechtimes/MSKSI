@@ -15,6 +15,6 @@
 }
 .calendartop{
     background-color: var(--navyblue);
-    height: 65rem;
+    height: 100rem;
 }
 </style>

@@ -10,7 +10,7 @@
 </template>
 <style scoped>
 .Gallerytop{
-    height: 65rem;
+    height: 100rem;
     background-color: var(--navyblue);
 }
 .subheading{
