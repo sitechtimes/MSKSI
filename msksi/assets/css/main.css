@@ -29,22 +29,8 @@ body,
 }
 .line {
   margin: 0.5rem;
-}
-.one {
-  width: 32px;
-  height: 3.5px;
-  background-color: var(--white);
-  border-radius: 10rem;
-}
-.two {
-  width: 32px;
-  height: 3.5px;
-  background-color: var(--white);
-  border-radius: 10rem;
-}
-.three {
-  width: 32px;
-  height: 3.5px;
+  width: 36px;
+  height: 4px;
   background-color: var(--white);
   border-radius: 10rem;
 }
@@ -113,4 +99,52 @@ body,
   font-weight: lighter;
   color: var(--yellow);
   padding-top: 4rem;
+}
+/* Group 2 */
+.thing {
+  position: absolute;
+  width: 314px;
+  height: 842px;
+  left: 114px;
+  top: 0px;
+}
+
+/* Rectangle 6 */
+.twoo {
+  position: absolute;
+  width: 91px;
+  height: 177px;
+  left: 337px;
+  top: 0px;
+
+  background: #e9587a;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 16px;
+
+  text-align: center;
+  padding-top: 2rem;
+}
+/* Rectangle 7 */
+.threee {
+  position: absolute;
+  width: 314px;
+  height: 779px;
+  left: 114px;
+  top: 63px;
+
+  background: #e9587a;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+/* Rectangle 8 */
+.fourr {
+  position: absolute;
+  width: 85px;
+  height: 50px;
+  left: 340px;
+  top: 59px;
+
+  background: #e9587a;
 }
