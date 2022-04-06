@@ -34,4 +34,9 @@ font-size: var(--h2);
     width: 90%;
     justify-content: center;
 }
+@media only screen and (max-width: 1500px) {
+.text{
+  margin-top: 3rem;
+}
+}
 </style>
