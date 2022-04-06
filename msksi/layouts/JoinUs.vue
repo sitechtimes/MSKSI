@@ -12,6 +12,7 @@
         <li class="text">Transformation Tables</li>
         <li class="text">Managing website & calendar</li>
     </ul>
+    <button class="button pink">Join Us!</button>
 </div>
 <div class="joinusmid">
     <h3 class="subheading wbsm"> Website & Social Media Manager</h3>
@@ -23,11 +24,38 @@
         <li class="text">Transformation Tables</li>
         <li class="text">Managing website & calendar</li>
     </ul>
+    <button class="button yellow">Join Us!</button>
 </div>
 <Footer />
   </div>
 </template>
 <style scoped>
+.button{
+    margin-top: 10rem;
+    position: absolute;
+    left: 145rem;
+    width: 22rem;
+    height: 6rem;
+    font-size: var(--h3);
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+}
+.button:active{
+    transition: 0.3s;
+}
+.pink{
+    background-color: var(--darkpink);
+    color: white;
+    filter: drop-shadow(3px 4px 3px rgba(204, 203, 203, 0.75));
+
+}
+.yellow{
+    color: var(--navyblue);
+    background-color: var(--yellow);
+    filter: drop-shadow(5px 5px 4px rgba(78, 77, 77, 0.75));
+
+}
 #subc{
     list-style-type: circle;
     color: white;
