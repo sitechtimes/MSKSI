@@ -70,11 +70,16 @@
     color: rgba(220, 53, 92, 1);
 }
 #wbsm{
-        list-style-type: circle;
+    list-style-type: circle;
     color: var(--navyblue);
-        margin-top: 2rem;
+    margin-top: 2rem;
 }
 .wbsmr{
     color: var(--darkpink);
+}
+@media only screen and (max-width: 1500px) {
+    .text{
+        font-size: var(--h4);
+    }
 }
 </style>
