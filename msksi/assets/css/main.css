@@ -27,6 +27,21 @@ body,
   background-color: transparent;
   border-color: transparent;
 }
+.menuRouter {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 3rem;
+  font-family: 'Dongle';
+  /* Home About Us Sub-Committees Photos Agenda Resources Join Us */
+}
+.menuRouter:hover {
+  transition: 0.5s;
+  text-decoration: underline;
+}
+.menuRouter:active {
+  color: var(--navyblue);
+  transition: 0.5s;
+}
 .line {
   margin: 0.5rem;
   width: 36px;

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
 
 :root {
   --navyblue: #333043;
@@ -59,12 +60,8 @@
   text-decoration: none;
 }
 
-.router:active {
+.router:focus {
   color: var(--darkpink);
-}
-.router:hover {
-  color: var(--darkpink);
-  transition: 0.5s;
   text-decoration: underline;
 }
 
