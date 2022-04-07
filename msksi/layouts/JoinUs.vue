@@ -42,7 +42,18 @@
     border: none;
 }
 .button:active{
-    transition: 0.3s;
+      animation: press 0.2s 1 linear;
+}
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 .pink{
     background-color: var(--darkpink);
@@ -53,7 +64,7 @@
 .yellow{
     color: var(--navyblue);
     background-color: var(--yellow);
-    filter: drop-shadow(5px 5px 4px rgba(78, 77, 77, 0.75));
+    filter: drop-shadow(5px 5px 4px rgba(117, 117, 117, 0.75));
 
 }
 #subc{
