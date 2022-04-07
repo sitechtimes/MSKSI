@@ -8,22 +8,22 @@ body,
   margin: 0;
   font-size: 62.5%;
 }
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 810px) {
   .nav {
     display: none;
   }
 }
 .menu {
   font-size: var(--h4);
-  justify-content: center;
-  align-content: center;
+  top: 0;
+  left: 0;
 }
-@media only screen and (min-width: 730px) {
+@media only screen and (min-width: 810px) {
   .menu {
     display: none;
   }
 }
-.menuBtn {
+.menuIcon {
   background-color: transparent;
   border-color: transparent;
 }
@@ -75,9 +75,6 @@ body,
     margin-right: 1rem;
   }
 }
-.menu {
-  font-size: var(--h4);
-}
 @media only screen and (max-width: 1024px) {
   .contactus {
     font-size: var(--h4);
@@ -115,17 +112,8 @@ body,
   color: var(--yellow);
   padding-top: 12rem;
 }
-/* Group 2 */
-.thing {
-  position: absolute;
-  width: 314px;
-  height: 842px;
-  left: 114px;
-  top: 0px;
-}
-
 /* Rectangle 6 */
-.twoo {
+.menuBtn {
   position: absolute;
   width: 91px;
   height: 177px;
@@ -154,12 +142,20 @@ body,
   border-radius: 7px;
 }
 /* Rectangle 8 */
-.fourr {
+.block {
   position: absolute;
-  width: 85px;
+  width: 85.5px;
   height: 50px;
   left: 340px;
   top: 59px;
 
   background: #e9587a;
+}
+.mobileNavLinks {
+  list-style-type: none;
+  margin-left: 5rem;
+  margin-top: 4rem;
+}
+.link {
+  margin-top: 3rem;
 }
