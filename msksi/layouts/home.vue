@@ -15,7 +15,7 @@
   font-size: 12rem;
   text-align: center;
   width: 90%;
-padding-top: 20rem;
+padding-top: 30rem;
 }
 .keeper{
     color: var(--darkpink);
@@ -35,5 +35,12 @@ padding-top: 20rem;
     text-align: right;
     margin-top: 10rem;
 }
-
+@media only screen and (max-width: 1500px) {
+    .keeper{
+    color: var(--darkpink);
+     font-size: 12rem;
+     text-align: right;
+     width: 80%;
+}
+}
 </style>
