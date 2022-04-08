@@ -1,7 +1,7 @@
 <template>
   <div class="menu">
-    <div class="menuBtn">
-      <button class="menuIcon" @click="toggleMenu()" ref="menuIcon">
+    <div class="menuBtn" @click="toggleMenu">
+      <button class="menuIcon" ref="menuIcon">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
@@ -42,7 +42,7 @@ export default {
   data: {},
   methods: {
     toggleMenu() {
-      this.$refs.menuIcon.innerHTML = 'Hello'
+      this.isNotVisible = !this.isNotVisible
     },
   },
 }

@@ -122,9 +122,11 @@ body,
 .menuBtn {
   position: absolute;
   width: 91px;
-  height: 177px;
+  height: 8rem;
   right: 0px;
   top: 0px;
+  z-index: 1;
+  border-bottom: none;
 
   background: #e9587a;
   border: 3px solid #ffffff;
@@ -144,14 +146,13 @@ body,
 
   background: #e9587a;
   border: 3px solid #ffffff;
-  box-sizing: border-box;
   border-radius: 7px;
+  border-bottom: none;
 }
 /* Rectangle 8 */
 .block {
-  position: absolute;
-  width: 85.5px;
-  height: 50px;
+  width: 86px;
+  height: 20px;
   right: 2.5px;
   top: 59px;
 
