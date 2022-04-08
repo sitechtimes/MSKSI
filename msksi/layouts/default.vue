@@ -15,7 +15,7 @@
   font-size: 12rem;
   text-align: center;
   width: 90%;
-padding-top: 20rem;
+padding-top: 30rem;
 }
 .keeper{
     color: var(--darkpink);
