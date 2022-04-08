@@ -12,6 +12,9 @@ body,
   .nav {
     display: none;
   }
+  .menu {
+    display: initial;
+  }
 }
 .menu {
   font-size: var(--h4);
@@ -21,6 +24,9 @@ body,
 @media only screen and (min-width: 810px) {
   .menu {
     display: none;
+  }
+  .nav {
+    display: initial;
   }
 }
 .menuIcon {
@@ -49,7 +55,7 @@ body,
   background-color: var(--white);
   border-radius: 10rem;
 }
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 810px) {
   .contactus {
     font-size: var(--h4);
   }
@@ -117,7 +123,7 @@ body,
   position: absolute;
   width: 91px;
   height: 177px;
-  left: 337px;
+  right: 0px;
   top: 0px;
 
   background: #e9587a;
@@ -129,11 +135,11 @@ body,
   padding-top: 2rem;
 }
 /* Rectangle 7 */
-.threee {
+.linkContainer {
   position: absolute;
   width: 314px;
   height: 779px;
-  left: 114px;
+  right: 0;
   top: 63px;
 
   background: #e9587a;
@@ -146,7 +152,7 @@ body,
   position: absolute;
   width: 85.5px;
   height: 50px;
-  left: 340px;
+  right: 2.5px;
   top: 59px;
 
   background: #e9587a;

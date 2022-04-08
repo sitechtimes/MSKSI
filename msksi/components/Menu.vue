@@ -7,7 +7,7 @@
         <div class="line"></div>
       </button>
     </div>
-    <div class="threee">
+    <div class="linkContainer">
       <ul class="mobileNavLinks">
         <li class="link">
           <router-link class="menuRouter" to="/Home"> Home </router-link>
