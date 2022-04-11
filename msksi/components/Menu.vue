@@ -1,7 +1,7 @@
 <template>
   <div class="menu">
     <div class="menuBtn" @click="toggleMenu">
-      <button class="menuIcon" ref="menuIcon">
+      <button class="menuIcon">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
