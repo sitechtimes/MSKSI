@@ -33,7 +33,6 @@
         </li>
       </ul>
     </div>
-    <div class="block"></div>
   </div>
 </template>
 <script>
