@@ -1,6 +1,12 @@
 <template>
   <div class="menu">
-    <div class="menuBtn" @click="toggleMenu">
+    <button class="menuIcon" v-if="isNotVisible" @click="toggleMenu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </button>
+
+    <div class="menuBtn" v-else>
       <button class="menuIcon">
         <div class="line"></div>
         <div class="line"></div>
