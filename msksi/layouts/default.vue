@@ -35,12 +35,23 @@ padding-top: 30rem;
     text-align: right;
     margin-top: 10rem;
 }
-@media only screen and (max-width: 1500px) {
-    .keeper{
-    color: var(--darkpink);
-     font-size: 12rem;
-     text-align: right;
-     width: 80%;
+@media only screen and (max-width: 810px){
+  .hometop{
+    height: auto;
+}
+.mysis{
+  font-size: var(--h2);
+}
+.keeper{
+  font-size: var(--h2);
+}
+.si{
+  font-size: var(--h4);
+}
+.hometop{
+    background-color: var(--navyblue);
+    height: 100rem;
 }
 }
+
 </style>

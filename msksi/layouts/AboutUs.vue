@@ -81,9 +81,25 @@ font-size: var(--h2);
     width: 90%;
     justify-content: center;
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 810px) {
 .text{
   margin-top: 3rem;
+  font-size: var(--h4);
+}
+.AboutUsTop{
+      height: 125rem;
+}
+.vision{
+  color: var(--navyblue);
+  font-size: var(--h3);
+    margin-top: 30rem;
+
+}
+.msksi{
+  color: var(--darkpink);
+  font-size: var(--h3);
+  margin-top: 50rem;
 }
 }
+
 </style>

@@ -83,5 +83,23 @@ margin-right: auto;
     margin-right: auto;
     margin-left: auto;
 }
+@media only screen and (max-width: 810px){
+  .Gallerytop{
+    height: 275rem;
+  }
+  .polaroids{
+      width: 10rem;
+  }  
+  .polaroid{
+      height: 33rem;
+  }
+  #picture{
+      width: 20rem;
+  height: 20rem;
+  }
+  .name{
+    font-size: var(--h5);
+  }
+}
 
 </style>

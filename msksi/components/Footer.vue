@@ -10,6 +10,13 @@
     </div>
   </div>
 </template>
+<style scoped>
+@media only screen and (max-width: 810px){
+  #footer{
+    height: 20rem;
+  }
+}
+</style>
 
 <script>
 export default {

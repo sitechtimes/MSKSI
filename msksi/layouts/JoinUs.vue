@@ -116,9 +116,27 @@
 .wbsmr{
     color: var(--darkpink);
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 810px) {
     .text{
-        font-size: var(--h4);
+        margin-left: 10rem;
+        font-size: var(--h4);    
     }
+    .subc{
+    color: var(--darkpink);
+    font-size: var(--h3);
+    margin-left: 8rem;
+    margin-top: 2rem;
+}
+    .responsibility{
+    font-size: var(--h3);
+    margin-left: 10rem;
+}
+.wbsm{
+    font-size: var(--h3);
+    margin-left: 8rem;
+    margin-top: 1rem;
+
+}
+    
 }
 </style>
