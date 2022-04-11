@@ -1,18 +1,11 @@
 <template>
   <div class="menu">
-    <button class="menuIcon" v-if="isNotVisible" @click="toggleMenu">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="nav-menu">
       <div class="line"></div>
       <div class="line"></div>
       <div class="line"></div>
-    </button>
-
-    <div class="menuBtn" v-else>
-      <button class="menuIcon">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </button>
-    </div>
+    </label>
     <div class="linkContainer">
       <ul class="mobileNavLinks">
         <li class="link">
