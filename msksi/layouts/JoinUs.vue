@@ -124,19 +124,24 @@
     .subc{
     color: var(--darkpink);
     font-size: var(--h3);
-    margin-left: 8rem;
+    margin-left: 4rem;
     margin-top: 2rem;
 }
     .responsibility{
-    font-size: var(--h3);
-    margin-left: 10rem;
+    font-size: var(--h4);
+    margin-left: 6rem;
 }
 .wbsm{
     font-size: var(--h3);
     margin-left: 8rem;
-    margin-top: 1rem;
-
+    margin-top: 0rem;
+        margin-left: 4rem;
 }
+  .heading{
+        font-size: var(--h3);
+margin-left: 3rem;
+  margin-top: 0rem;
+  }
     
 }
 </style>

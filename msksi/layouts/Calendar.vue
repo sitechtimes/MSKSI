@@ -11,7 +11,9 @@
 <style scoped>
 .heading{
     color: var(--yellow);
-    font-size: var(--h2);
+    font-size: var(--h3);
+margin-left: 3rem;
+  margin-top: 0rem;
 }
 .calendartop{
     background-color: var(--navyblue);

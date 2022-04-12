@@ -100,6 +100,15 @@ margin-right: auto;
   .name{
     font-size: var(--h5);
   }
+  .heading{
+        font-size: var(--h3);
+margin-left: 3rem;
+  margin-top: 0rem;
+  }
+  .gall{
+        font-size: var(--h3);
+  margin-top: 0rem;
+  }
 }
 
 </style>

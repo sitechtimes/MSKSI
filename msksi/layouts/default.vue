@@ -41,12 +41,16 @@ padding-top: 30rem;
 }
 .mysis{
   font-size: var(--h2);
+margin-left: 2rem;
+
 }
 .keeper{
   font-size: var(--h2);
+  margin-top: 1rem;
 }
 .si{
   font-size: var(--h4);
+  
 }
 .hometop{
     background-color: var(--navyblue);
