@@ -140,7 +140,6 @@
   .heading{
         font-size: var(--h3);
 margin-left: 3rem;
-  margin-top: 0rem;
   }
     
 }

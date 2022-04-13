@@ -11,12 +11,16 @@
 <style scoped>
 .heading{
     color: var(--yellow);
-    font-size: var(--h3);
-margin-left: 3rem;
+    font-size: var(--h2);
   margin-top: 0rem;
 }
 .calendartop{
     background-color: var(--navyblue);
     height: 100rem;
+}
+@media only screen and (max-width: 810px){
+    .heading{
+        font-size: var(--h3);
+    }
 }
 </style>
