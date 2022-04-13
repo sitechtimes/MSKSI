@@ -28,27 +28,6 @@ body,
   background-color: transparent;
   border-color: transparent;
 }
-.menuRouter {
-  color: var(--white);
-  text-decoration: none;
-  font-size: 3rem;
-  font-family: 'Dongle';
-  /* Home About Us Sub-Committees Photos Agenda Resources Join Us */
-}
-/* .menuRouter:focus {
-  color: var(--navyblue);
-} */
-/* .menuRouter:active {
-  color: var(--navyblue);
-} */
-
-.line {
-  margin: 0.5rem;
-  width: 4rem;
-  height: 4px;
-  background-color: var(--white);
-  border-radius: 10rem;
-}
 @media only screen and (max-width: 810px) {
   .contactus {
     font-size: var(--h4);
