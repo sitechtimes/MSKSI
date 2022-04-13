@@ -12,7 +12,6 @@
 .heading{
     color: var(--yellow);
     font-size: var(--h2);
-margin-left: 3rem;
   margin-top: 0rem;
 }
 .calendartop{
