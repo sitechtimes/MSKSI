@@ -103,6 +103,7 @@ font-size: var(--h2);
 }
 .heading{
 margin-left: 3rem;
+padding-top: 10.5rem;
 }
 .h{
   font-size: var(--h3);
