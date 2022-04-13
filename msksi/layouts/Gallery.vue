@@ -7,23 +7,23 @@
     <div class="polaroids">
       <div class="polaroid">
         <div id="picture"> </div>
-        <h4 class="name">MSK/MBK Panel @CareerCon</h4>
+        <a target="_blank" class="name" href="https://photos.google.com/share/AF1QipOYeR5YLHq9mxkLMNOxsy6GI0wJzsKZ1QtiosJ_6--tEVz50-SVxMpwHfYwgIfQhA?key=YWk2MG80dnNWMU5VRU5zTjJac002b0JyVUM1Y1NR" >MSK/MBK Panel @CareerCon</a>
       </div>
       <div class="polaroid">
         <div id="picture"> </div>
-        <h4 class="name">#MSKSI January 17, 2020</h4>
+        <a class="name" target="_blank" href="https://photos.google.com/share/AF1QipPHuyh8L3zE-Fz0U5EeUr0bGCSJK2vu1ZZ5_hi6fVtLBVEJLp7QLtIXP1CT07SrMA?key=YXpJSnNuMlM5Ql8zeTREeXpSQ0RYRWlQTkdENnF3">#MSKSI January 17, 2020</a>
       </div>
       <div class="polaroid">
         <div id="picture"> </div>
-        <h4 class="name">#MSKSI December 16, 2020</h4>
+        <a target="_blank" class="name" href="https://photos.google.com/share/AF1QipMKY5scJY9x9zIzB16j0AiGUByxebmmJMpJe3qBv-PwBXagdDD8hNkeDEUNNl02hg?key=X0MwSzBGUndkOThyQmkxdjV2OFlsdnJmNC1pdDdB">#MSKSI December 16, 2020</a>
       </div>
       <div class="polaroid">
         <div id="picture"> </div>
-        <h4 class="name">#MSKSI March 6, 2020</h4>
+        <a target="_blank"  class="name" href="https://photos.google.com/share/AF1QipMcWfeOIP5pSD-Yn-llhK1EHDN-Wc5daek0AcDC0wDxp8cmQiwDufl8-v2H-A7_6A?key=anlJNndFTG44Y3hsZ2x5cXAtbGtSNnZrVW8wQWp3">#MSKSI March 6, 2020</a>
       </div>
       <div class="polaroid">
         <div id="picture"> </div>
-        <h4 class="name">#MSKSI Miscellaneous</h4>
+        <a target="_blank" class="name" href="https://photos.google.com/share/AF1QipN4xPbJIQQn7pncoxRFphN1nwgqWKIpMgz7Ek2Uy-28yKs8IcGR9WTD-9N37tGoQw?key=ZmNiU2t1X2RnSHdRdldUOGhWcV9MSExWTi1XWHpn">#MSKSI Miscellaneous</a>
       </div>
     </div>
 </div>
@@ -46,6 +46,8 @@ margin-top: 2rem;
 width: 25rem;
 margin-left: auto;
 margin-right: auto;
+display: block;
+font-weight: bolder;
 }
 #picture{
   width: 25rem;
