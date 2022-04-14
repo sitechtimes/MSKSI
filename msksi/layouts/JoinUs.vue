@@ -24,7 +24,7 @@
         <li class="text">Transformation Tables</li>
         <li class="text">Managing website & calendar</li>
     </ul>
-    <button class="button yellow">Join Us!</button>
+    <button target="_blank">Join Us!</button> 
 </div>
 <Footer />
   </div>
@@ -32,7 +32,7 @@
 <style scoped>
 .button{
     margin-top: 10rem;
-    position: absolute;
+position: sticky;
     left: 145rem;
     width: 22rem;
     height: 6rem;
@@ -117,9 +117,15 @@
     color: var(--darkpink);
 }
 @media only screen and (max-width: 810px) {
+    .joinustop{
+    height: 95rem;
+}
+.joinusmid{
+    height: 95rem;
+}
     .text{
-        margin-left: 10rem;
-        font-size: var(--h4);    
+        margin-left: 8rem;
+        font-size: var(--h5);    
     }
     .subc{
     color: var(--darkpink);
@@ -140,7 +146,19 @@
   .heading{
         font-size: var(--h3);
 margin-left: 3rem;
+margin-top: 0;
   }
-    
+    .button{
+    margin-top: 5rem;
+    width: 17rem;
+    height: 5rem;
+    font-size: var(--h4);
+    font-weight: lighter;
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+    margin-right: 2rem;
+}
+
 }
 </style>
