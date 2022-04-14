@@ -121,19 +121,32 @@
 #active:checked ~ .wrapper {
   right: 0;
 }
-.line {
-  margin: 0.5rem;
-  width: 3rem;
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  position: absolute;
   height: 4px;
-  background-color: white;
-  border-radius: 10rem;
+  width: 3.5rem;
+
+  border-radius: 2px;
+}
+.menu-icon::before {
+  content: '';
+  margin-top: -8px;
 }
 
+.menu-icon::after {
+  content: '';
+  margin-top: 8px;
+}
 .menu-btn {
-  position: absolute;
+  position: relative;
   z-index: 2;
-  right: 20px;
-  top: 20px;
+  right: 6rem;
+  top: 2.5rem;
   text-align: center;
   line-height: 50px;
   border-radius: 50%;

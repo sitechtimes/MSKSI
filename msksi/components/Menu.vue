@@ -1,11 +1,7 @@
 <template>
   <div class="menu">
     <input type="checkbox" id="active" />
-    <label for="active" class="menu-btn"
-      ><div class="line 1"></div>
-      <div class="line 2"></div>
-      <div class="line 3"></div
-    ></label>
+    <label for="active" class="menu-btn"><div class="menu-icon"></div></label>
     <label for="active" class="close"></label>
     <div class="wrapper">
       <ul class="link-container">
