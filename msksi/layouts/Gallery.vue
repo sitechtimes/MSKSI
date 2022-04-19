@@ -114,7 +114,7 @@ margin-left: 3rem;
 }
 @media only screen and (max-width: 1500px){
     .Gallerytop{
-    height: 195rem;
+    height: 135rem;
   }
     .polaroids{
       width: 100%;
