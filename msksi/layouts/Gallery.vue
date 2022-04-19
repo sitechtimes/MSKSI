@@ -112,5 +112,14 @@ margin-left: 3rem;
   margin-top: 0rem;
   }
 }
+@media only screen and (max-width: 1500px){
+    .Gallerytop{
+    height: 195rem;
+  }
+    .polaroids{
+      width: 100%;
+      margin-top: 0;
+  }  
+}
 
 </style>

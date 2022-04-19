@@ -189,5 +189,10 @@ position: sticky;
 .wbsm{
     margin-top: 0;
 }
+
+.joinusmid{
+    margin-top: 10rem;
 }
+}
+
 </style>

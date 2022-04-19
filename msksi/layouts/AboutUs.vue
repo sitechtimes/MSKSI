@@ -40,7 +40,6 @@ margin-left: 50%;
   color: var(--navyblue);
   font-size: var(--h1);
     margin-top: 30rem;
-
 }
 .msksi{
   color: var(--darkpink);
@@ -110,8 +109,35 @@ padding-top: 10.5rem;
 margin-top: 0;
 padding-top: 0;
 }
-
-
+}
+@media only screen and (max-width: 1500px){
+  .AboutUsTop{
+    height: 85rem;
+}
+.text{
+  margin-top: 5rem;
+  font-size: var(--h4);
+}
+.AboutUsMid{
+  text-align: center;
+  background-color: white;
+  height: 56rem;
+}
+.left{
+  width: 50%;
+  height: 65rem;
+    font-family: 'Black Han Sans';
+}
+.msksi{
+  color: var(--darkpink);
+  font-size: var(--h1);
+  margin-top: 17rem;
+}
+.vision{
+  color: var(--navyblue);
+  font-size: var(--h1);
+    margin-top: 20rem;
+}
 }
 
 </style>
