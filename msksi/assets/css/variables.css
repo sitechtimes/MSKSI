@@ -59,7 +59,11 @@
   font-family: 'ABeeZee', sans-serif;
   text-decoration: none;
 }
-
+.router:hover {
+  color: var(--darkpink);
+  text-decoration: underline;
+  transition: 0.3s;
+}
 .router:focus {
   color: var(--darkpink);
   text-decoration: underline;
