@@ -121,36 +121,46 @@
 #active:checked ~ .wrapper {
   right: 0;
 }
-.menu-icon,
-.menu-icon::before,
-.menu-icon::after {
-  position: absolute;
-  display: block;
-  background-color: #fff;
-  position: absolute;
-  height: 4px;
-  width: 3.5rem;
-
-  border-radius: 2px;
-}
-.menu-icon::before {
-  content: '';
-  margin-top: -8px;
-}
-
-.menu-icon::after {
-  content: '';
-  margin-top: 8px;
-}
 .menu-btn {
   position: relative;
   z-index: 2;
   right: 6rem;
-  top: 2.5rem;
+  top: 1.3rem;
   text-align: center;
   line-height: 50px;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
+}
+.menu-btn span,
+.menu-btn::before,
+.menu-btn::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  height: 4px;
+  width: 3.5rem;
+
+  border-radius: 2px;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu-btn::before {
+  content: '';
+  transform: translateY(-8px);
+}
+.menu-btn::after {
+  content: '';
+  transform: translateY(8px);
+}
+ #active:checked + .menu-btn span {
+   opacity: 0;
+}
+ #active:checked + .menu-btn:before {
+	transform: rotate(-45deg);
+}
+#active:checked + .menu-btn:after {
+	transform: rotate(45deg);
 }
 input[type='checkbox'] {
   display: none;
