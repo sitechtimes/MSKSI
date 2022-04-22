@@ -35,12 +35,47 @@ padding-top: 30rem;
     text-align: right;
     margin-top: 10rem;
 }
+@media only screen and (max-width: 810px){
+  .hometop{
+    height: auto;
+}
+.mysis{
+  font-size: var(--h2);
+margin-left: 2rem;
+
+}
+.keeper{
+  font-size: var(--h2);
+  margin-top: 1rem;
+}
+.si{
+  font-size: var(--h4);
+  
+}
+.hometop{
+    background-color: var(--navyblue);
+    height: 100rem;
+}
+}
 @media only screen and (max-width: 1500px) {
+  .mysis{
+    padding-top: 25rem;
+  }
     .keeper{
     color: var(--darkpink);
      font-size: 12rem;
      text-align: right;
      width: 80%;
+     margin-top: 1rem;
+     padding-top: 2rem;
+}
+.si{
+  padding-top: 0rem;
+  margin-top: 3rem;
+}
+.hometop{
+  height: 80rem;
 }
 }
+
 </style>

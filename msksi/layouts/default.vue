@@ -57,5 +57,25 @@ margin-left: 2rem;
     height: 100rem;
 }
 }
+@media only screen and (max-width: 1500px) {
+  .mysis{
+    padding-top: 25rem;
+  }
+    .keeper{
+    color: var(--darkpink);
+     font-size: 12rem;
+     text-align: right;
+     width: 80%;
+     margin-top: 1rem;
+     padding-top: 2rem;
+}
+.si{
+  padding-top: 0rem;
+  margin-top: 3rem;
+}
+.hometop{
+  height: 80rem;
+}
+}
 
 </style>
