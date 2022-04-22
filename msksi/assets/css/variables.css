@@ -24,6 +24,8 @@
   --h4: 2.5rem;
   --h5: 1.8rem;
   --smallText: 0.8rem;
+  --list: 3rem;
+  --subheadingju: 4rem;
 }
 #navbar {
   background-color: var(--navyblue);

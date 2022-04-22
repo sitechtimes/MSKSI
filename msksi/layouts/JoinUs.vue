@@ -116,6 +116,52 @@ position: sticky;
 .wbsmr{
     color: var(--darkpink);
 }
+@media only screen and (max-width: 1500px){
+        .joinusmid{
+        height: 66rem;
+    }
+    .joinustop{
+        height: 85rem;
+    }
+    .text{
+        font-size: var(--list);
+    }
+    .subheading{
+        font-size: var(--subheadingju);
+    }
+    .button{
+    margin-top: 7.5rem;
+position: sticky;
+    left: 115rem;
+    width: 20rem;
+    height: 5.5rem;
+}
+.text{
+    font-size: var(--h3);
+    margin-left: 12rem;
+    margin-top: 0.5rem;
+}
+ .responsibility{
+    font-size: var(--h3);
+    margin-left: 8rem;
+}
+.subheading{
+    margin-left: 6rem;
+}
+.joinustop{
+    height: 85rem;
+}
+.joinusmid{
+    height: 75rem;
+}
+.wbsm{
+    margin-top: 0;
+}
+
+.joinusmid{
+    margin-top: 10rem;
+}
+}
 @media only screen and (max-width: 810px) {
     .joinustop{
     height: 95rem;
@@ -160,39 +206,4 @@ margin-top: 0;
     margin-right: 2rem;
 }
 }
-@media only screen and (max-width: 1500px){
-    .button{
-    margin-top: 7.5rem;
-position: sticky;
-    left: 115rem;
-    width: 20rem;
-    height: 5.5rem;
-}
-.text{
-    font-size: var(--h3);
-    margin-left: 12rem;
-    margin-top: 0.5rem;
-}
- .responsibility{
-    font-size: var(--h3);
-    margin-left: 8rem;
-}
-.subheading{
-    margin-left: 6rem;
-}
-.joinustop{
-    height: 85rem;
-}
-.joinusmid{
-    height: 75rem;
-}
-.wbsm{
-    margin-top: 0;
-}
-
-.joinusmid{
-    margin-top: 10rem;
-}
-}
-
 </style>
