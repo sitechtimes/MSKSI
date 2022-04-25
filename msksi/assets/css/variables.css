@@ -22,7 +22,7 @@
   --h2: 5.063rem;
   --h3: 3.4rem;
   --h4: 2.5rem;
-  --h5: 1.5rem;
+  --h5: 1.8rem;
   --smallText: 0.8rem;
 }
 #navbar {
@@ -52,7 +52,7 @@
   font-family: 'Black Han Sans';
   font-weight: lighter;
 }
-.router {
+.navRouter {
   color: var(--white);
   font-size: var(--h5);
   margin: 2rem;
@@ -60,7 +60,7 @@
   text-decoration: none;
 }
 
-.router:focus {
+.navRouter.router-link-exact-active {
   color: var(--darkpink);
   text-decoration: underline;
 }

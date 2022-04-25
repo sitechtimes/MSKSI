@@ -2,12 +2,12 @@
   <header id="navbar">
     <h1 class="logo">MSKSI</h1>
     <div class="nav">
-      <router-link class="router" to="/Home"> Home </router-link>
-      <router-link class="router" to="/AboutUs"> About Us </router-link>
-      <router-link class="router" to="/Calendar"> Calendar </router-link>
-      <router-link class="router" to="/Gallery"> Gallery </router-link>
-      <router-link class="router" to="/Resources"> Resources </router-link>
-      <router-link class="router" to="/JoinUs"> Join Us </router-link>
+      <router-link class="navRouter" to="/Home"> Home </router-link>
+      <router-link class="navRouter" to="/AboutUs"> About Us </router-link>
+      <router-link class="navRouter" to="/Calendar"> Calendar </router-link>
+      <router-link class="navRouter" to="/Gallery"> Gallery </router-link>
+      <router-link class="navRouter" to="/Resources"> Resources </router-link>
+      <router-link class="navRouter" to="/JoinUs"> Join Us </router-link>
     </div>
     <Menu />
   </header>
