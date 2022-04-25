@@ -62,12 +62,12 @@
 .msksi {
   color: var(--darkpink);
   font-size: var(--h1);
-  margin-top: 50rem;
+  margin-top: 22rem;
 }
 .AboutUsMid {
   text-align: center;
   background-color: white;
-  height: 100rem;
+  height: 80rem;
 }
 .left {
   width: 50%;
@@ -105,11 +105,11 @@
 @media only screen and (max-width: 810px) {
   .text {
     margin-top: 2rem;
-    font-size: var(--h5);
+    font-size: var(--h6);
     width: 80%;
   }
   .AboutUsTop {
-    height: 125rem;
+    height: 130rem;
   }
   .vision {
     color: var(--navyblue);
