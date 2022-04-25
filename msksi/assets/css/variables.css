@@ -112,6 +112,10 @@
   font-family: 'Black Han Sans';
   font-weight: lighter;
 }
+.menu {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .wrapper {
   display: block;
   margin-top: auto;
@@ -128,10 +132,6 @@
   right: 0;
 }
 .menu-btn {
-  position: relative;
-  z-index: 2;
-  right: 6rem;
-  top: 1.3rem;
   text-align: center;
   line-height: 50px;
   border-radius: 50%;
@@ -141,7 +141,6 @@
 .menu-btn::before,
 .menu-btn::after {
   content: '';
-  position: absolute;
   display: block;
   background-color: #fff;
   height: 4px;
@@ -159,14 +158,14 @@
   content: '';
   transform: translateY(8px);
 }
- #active:checked + .menu-btn span {
-   opacity: 0;
+#active:checked + .menu-btn span {
+  opacity: 0;
 }
- #active:checked + .menu-btn:before {
-	transform: rotate(-45deg);
+#active:checked + .menu-btn:before {
+  transform: rotate(-45deg);
 }
 #active:checked + .menu-btn:after {
-	transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 input[type='checkbox'] {
   display: none;
