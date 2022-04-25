@@ -110,6 +110,7 @@
   }
   .AboutUsTop {
     height: 130rem;
+    z-index: 1;
   }
   .vision {
     color: var(--navyblue);

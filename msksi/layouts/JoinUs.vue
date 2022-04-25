@@ -32,6 +32,7 @@
 <style scoped>
 .button{
     margin-top: 10rem;
+    margin-left: 80%;
 position: sticky;
     left: 125rem;
     width: 22rem;
@@ -132,7 +133,7 @@ position: sticky;
     .button{
     margin-top: 7.5rem;
 position: sticky;
-    left: 115rem;
+    left: 11rem;
     width: 20rem;
     height: 5.5rem;
 }
@@ -196,14 +197,14 @@ margin-top: 0;
   }
     .button{
     margin-top: 5rem;
-    width: 17rem;
-    height: 5rem;
+    width: 16rem;
+    height: 4.5rem;
     font-size: var(--h4);
     font-weight: lighter;
     border-radius: 20rem;
     font-family: 'Black Han Sans';
     border: none;
-    margin-right: 2rem;
+    margin-left: 8rem;
 }
 }
 </style>
