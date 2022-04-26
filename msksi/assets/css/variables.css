@@ -29,6 +29,7 @@
 }
 #navbar {
   background-color: var(--navyblue);
+  width: 100%;
   height: 8rem;
   display: flex;
   justify-content: space-between;
@@ -115,12 +116,14 @@
 .menu {
   margin-top: auto;
   margin-bottom: auto;
+  z-index: 3;
 }
 .wrapper {
   display: block;
   margin-top: auto;
   margin-bottom: auto;
   position: fixed;
+  z-index: -1;
   top: 0;
   right: -100%;
   height: 100%;
@@ -133,14 +136,12 @@
 }
 .menu-btn {
   text-align: center;
-  line-height: 50px;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
 .menu-btn span,
 .menu-btn::before,
 .menu-btn::after {
-  content: '';
   display: block;
   background-color: #fff;
   height: 4px;
@@ -152,20 +153,20 @@
 
 .menu-btn::before {
   content: '';
-  transform: translateY(-8px);
+  transform: translateY(-5px);
 }
 .menu-btn::after {
   content: '';
-  transform: translateY(8px);
+  transform: translateY(5px);
 }
 #active:checked + .menu-btn span {
   opacity: 0;
 }
 #active:checked + .menu-btn:before {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translate(-7px, 0px);
 }
 #active:checked + .menu-btn:after {
-  transform: rotate(45deg);
+  transform: rotate(45deg) translate(-5.5px, 2px);
 }
 input[type='checkbox'] {
   display: none;
