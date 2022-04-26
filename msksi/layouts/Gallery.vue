@@ -85,15 +85,27 @@ margin-right: auto;
     margin-right: auto;
     margin-left: auto;
 }
+@media only screen and (max-width: 1500px){
+    .Gallerytop{
+    height: 135rem;
+  }
+    .polaroids{
+      width: 100%;
+      margin-top: 0;
+  }  
+}
 @media only screen and (max-width: 810px){
   .Gallerytop{
-    height: 275rem;
+    height: 230rem;
   }
   .polaroids{
       width: 10rem;
   }  
   .polaroid{
       height: 33rem;
+      width: 28rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
   }
   #picture{
       width: 20rem;
@@ -111,15 +123,6 @@ margin-left: 3rem;
         font-size: var(--h3);
   margin-top: 0rem;
   }
-}
-@media only screen and (max-width: 1500px){
-    .Gallerytop{
-    height: 135rem;
-  }
-    .polaroids{
-      width: 100%;
-      margin-top: 0;
-  }  
 }
 
 </style>
