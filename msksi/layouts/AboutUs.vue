@@ -16,7 +16,7 @@
         empowers young people to become impactful/inspiring, self-motivating,
         powerful transformative leaders. Giving a safe space and opportunity to
         our marginalized MSKSI young people in order to have a voice, respect
-        and rapport in a diverse community
+        and rapport in a diverse community.
       </h3>
     </div>
     <div class="AboutUsMid">
@@ -32,7 +32,17 @@
         ></iframe>
         <h2 class="v vision">VISION</h2>
       </div>
-      <div id="right"></div>
+      <div id="right">
+        <ol class="list">
+          <li> Become empowered and take an active lead in their education process.</li>
+          <li> Support peers in developing positive, sisterly relationships.</li>
+          <li> Build community, accountability and collaborative relationships among their peers.</li>
+          <li> Adopt healthy social emotional habits that support building positive internal self-esteem.</li>
+          <li> Partner with positive role models to create lasting impactful relationships.</li>
+          <li> Be supported with transitions from elementary school to college (College and Career Readiness).</li>
+          <li> Engage in community-based projects to build civic awareness and participation.</li>
+        </ol>
+      </div>
     </div>
 
     <Footer />
@@ -42,10 +52,11 @@
 #right {
   width: 50%;
   margin-left: 50%;
-  background-color: blue;
   font-family: 'Black Han Sans';
   color: var(--navyblue);
   font-size: var(--h4);
+  z-index: 100;
+  margin-top: 0;
 }
 .goal {
   color: var(--navyblue);
@@ -67,7 +78,8 @@
 .AboutUsMid {
   text-align: center;
   background-color: white;
-  height: 80rem;
+  height: 100rem;
+  display: inline;
 }
 .left {
   width: 50%;
@@ -98,38 +110,17 @@
   width: 90%;
   justify-content: center;
 }
+.list{
+  font-size: var(--h3);
+  color: var(--navyblue);
+  margin-top: -85rem;
+  margin-bottom: 40rem;
+  display: block;
+  text-align: left;
+}
 #video {
   padding: 5rem;
   border-style: none;
-}
-@media only screen and (max-width: 810px) {
-  .text {
-    margin-top: 2rem;
-    font-size: var(--h6);
-    width: 80%;
-  }
-  .AboutUsTop {
-    height: 130rem;
-    z-index: 1;
-  }
-  .vision {
-    color: var(--navyblue);
-    font-size: var(--h3);
-  }
-  .msksi {
-    color: var(--darkpink);
-    font-size: var(--h3);
-    margin-top: 50rem;
-  }
-  .heading {
-    margin-left: 3rem;
-    padding-top: 10.5rem;
-  }
-  .h {
-    font-size: var(--h3);
-    margin-top: 0;
-    padding-top: 0;
-  }
 }
 @media only screen and (max-width: 1500px) {
   .AboutUsTop {
@@ -159,4 +150,63 @@
     font-size: var(--h1);
   }
 }
+@media only screen and (max-width: 810px) {
+  .text {
+    margin-top: 2rem;
+    font-size: var(--h5);
+    width: 80%;
+  }
+  .AboutUsTop {
+    height: 95rem;
+    z-index: 1;
+  }
+  .vision {
+    color: var(--navyblue);
+    font-size: var(--h3);
+  }
+  .msksi {
+    color: var(--darkpink);
+    font-size: var(--h3);
+    margin-top: 10rem;
+  }
+  .left{
+    width: 100%;
+  }
+  .heading {
+    margin-left: 3rem;
+    padding-top: 10.5rem;
+  }
+  .h {
+    font-size: var(--h3);
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .v{
+    text-align: center;
+  }
+  #video {
+    width: 100%;
+    height: 55%;
+left: auto;
+right: auto;
+display: block;
+  border-style: none;
+}
+.AboutUsMid{
+  height: 95rem;
+}
+#right{
+  margin-left: 0;
+}
+.list{
+  font-size: var(--h4);
+  color: var(--navyblue);
+  margin-top: -55rem;
+  margin-bottom: 10rem;
+  display: block;
+  text-align: left;
+
+}
+}
+
 </style>

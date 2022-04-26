@@ -8,6 +8,34 @@ body,
   margin: 0;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 1024px) {
+  .contactus {
+    font-size: var(--h4);
+    margin-top: 0;
+  }
+  .contacts {
+    color: var(--white);
+    margin-top: 1rem;
+    font-weight: lighter;
+    font-size: var(--h5);
+    font-family: 'ABeeZee', sans-serif;
+  }
+  #footer {
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .buttons {
+    margin-top: 2rem;
+  }
+  .icon {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 @media only screen and (max-width: 810px) {
   .nav {
     display: none;
@@ -54,38 +82,10 @@ body,
     margin-right: 1rem;
   }
 }
-@media only screen and (max-width: 1024px) {
-  .contactus {
-    font-size: var(--h4);
-    margin-top: 0;
-  }
-  .contacts {
-    color: var(--white);
-    margin-top: 1rem;
-    font-weight: lighter;
-    font-size: var(--h5);
-    font-family: 'ABeeZee', sans-serif;
-  }
-  #footer {
-    bottom: 0;
-    width: 100%;
-    padding-bottom: 2rem;
-  }
-  .buttons {
-    margin-top: 2rem;
-  }
-  .icon {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
 .heading {
   font-size: var(--h2);
   font-family: 'Black Han Sans';
-  margin-left: 6rem;
+  margin-left: 4rem;
   font-weight: lighter;
   color: var(--yellow);
   padding-top: 12rem;
