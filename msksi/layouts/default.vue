@@ -35,6 +35,7 @@ padding-top: 30rem;
     text-align: right;
     margin-top: 10rem;
 }
+
 @media only screen and (max-width: 810px){
   .hometop{
     height: auto;

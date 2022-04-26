@@ -6,7 +6,11 @@
     <h2 class="heading keeper"> Keeper</h2>
     <h3 class="si">Staten Island</h3>
 </div>
-
+<div class="specialmonthly">
+  <h2 class="month">April
+    <h3 class="monthtitle">Cass' Birthday</h3>
+  </h2>
+</div>
 <Footer />
   </div>
 </template>
@@ -34,6 +38,16 @@ padding-top: 30rem;
     width: 90%;
     text-align: right;
     margin-top: 10rem;
+}
+.specialmonthly {
+  height: 100rem;
+  background-color: var(--navyblue);
+}
+.month {
+  font-size: var(--h1);
+}
+.monthtitle{
+  font-size: var(--h2);
 }
 @media only screen and (max-width: 810px){
   .hometop{
