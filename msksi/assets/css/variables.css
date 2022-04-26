@@ -60,7 +60,7 @@
   text-decoration: none;
 }
 
-.navRouter.router-link-exact-active {
+.navRouter:focus {
   color: var(--darkpink);
   text-decoration: underline;
 }
