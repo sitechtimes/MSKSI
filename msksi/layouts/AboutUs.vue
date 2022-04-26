@@ -16,7 +16,7 @@
         empowers young people to become impactful/inspiring, self-motivating,
         powerful transformative leaders. Giving a safe space and opportunity to
         our marginalized MSKSI young people in order to have a voice, respect
-        and rapport in a diverse community
+        and rapport in a diverse community.
       </h3>
     </div>
     <div class="AboutUsMid">
@@ -102,35 +102,6 @@
   padding: 5rem;
   border-style: none;
 }
-@media only screen and (max-width: 810px) {
-  .text {
-    margin-top: 2rem;
-    font-size: var(--h6);
-    width: 80%;
-  }
-  .AboutUsTop {
-    height: 130rem;
-    z-index: 1;
-  }
-  .vision {
-    color: var(--navyblue);
-    font-size: var(--h3);
-  }
-  .msksi {
-    color: var(--darkpink);
-    font-size: var(--h3);
-    margin-top: 50rem;
-  }
-  .heading {
-    margin-left: 3rem;
-    padding-top: 10.5rem;
-  }
-  .h {
-    font-size: var(--h3);
-    margin-top: 0;
-    padding-top: 0;
-  }
-}
 @media only screen and (max-width: 1500px) {
   .AboutUsTop {
     height: 85rem;
@@ -159,4 +130,51 @@
     font-size: var(--h1);
   }
 }
+@media only screen and (max-width: 810px) {
+  .text {
+    margin-top: 2rem;
+    font-size: var(--h5);
+    width: 80%;
+  }
+  .AboutUsTop {
+    height: 95rem;
+    z-index: 1;
+  }
+  .vision {
+    color: var(--navyblue);
+    font-size: var(--h3);
+  }
+  .msksi {
+    color: var(--darkpink);
+    font-size: var(--h3);
+    margin-top: 10rem;
+  }
+  .left{
+    width: 100%;
+  }
+  .heading {
+    margin-left: 3rem;
+    padding-top: 10.5rem;
+  }
+  .h {
+    font-size: var(--h3);
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .v{
+    text-align: center;
+  }
+  #video {
+    width: 100%;
+    height: 55%;
+left: auto;
+right: auto;
+display: block;
+  border-style: none;
+}
+.AboutUsMid{
+  height: 95rem;
+}
+}
+
 </style>

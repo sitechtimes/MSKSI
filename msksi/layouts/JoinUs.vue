@@ -183,6 +183,7 @@ position: sticky;
     .responsibility{
     font-size: var(--h4);
     margin-left: 6rem;
+    font-weight: lighter;
 }
 .wbsm{
     font-size: var(--h3);
@@ -192,7 +193,6 @@ position: sticky;
 }
   .heading{
         font-size: var(--h3);
-margin-left: 3rem;
 margin-top: 0;
   }
     .button{
@@ -204,7 +204,10 @@ margin-top: 0;
     border-radius: 20rem;
     font-family: 'Black Han Sans';
     border: none;
-    margin-left: 8rem;
+margin: 4rem;
+}
+.subheading{
+    font-size: var(--subheadingjum);
 }
 }
 </style>

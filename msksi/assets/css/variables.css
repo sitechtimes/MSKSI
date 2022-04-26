@@ -26,6 +26,7 @@
   --smallText: 0.8rem;
   --list: 3rem;
   --subheadingju: 4rem;
+  --subheadingjum: 3rem;
 }
 #navbar {
   background-color: var(--navyblue);
