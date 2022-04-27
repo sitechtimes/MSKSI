@@ -44,7 +44,10 @@
         </ol>
       </div>
     </div>
-
+    <div id="AboutUsBottom">
+      <h2 class="gao"> Goals and Outcome</h2>
+      <h3 class="will"> MSKSI</h3>
+    </div>
     <Footer />
   </div>
 </template>
