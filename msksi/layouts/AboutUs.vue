@@ -46,12 +46,44 @@
     </div>
     <div id="AboutUsBottom">
       <h2 class="gao"> Goals and Outcome</h2>
-      <h3 class="will"> MSKSI</h3>
+      <h3 class="will"> MSKSI members will:</h3>
+      <h4 class="texti">Be able to adapt healthy social and emotional habits that will support building positive internal self-esteem. Be mindful how others appear and show up. Have grace, dignity and leave room for error and forgiveness. Have a voice, opportunity and forum to grow in the MSKSI community. MSKSI focuses on equity in support of all students with a lens on our marginalized groups; however MSKSI is not just black and brown students, all are welcome.</h4>
     </div>
     <Footer />
   </div>
 </template>
 <style scoped>
+.texti{
+  color: white;
+  font-size: var(--h4);
+  text-align: left;
+      font-family: 'Black Han Sans';
+      font-weight: lighter;
+      width: 90%;
+      margin-left: 5rem;
+      margin-top: 5rem;
+}
+#AboutUsBottom{
+  background-color: var(--navyblue);
+  height: 95rem;
+}
+.gao{
+  font-size: var(--h2);
+  text-align: center;
+  color: var(--darkpink);
+    font-family: 'Black Han Sans';
+    padding-top: 8rem;
+    font-weight: lighter;
+}
+.will{
+  font-size: var(--h3);
+  color: var(--yellow);
+  text-align: left;
+    font-family: 'Black Han Sans';
+        margin-left: 4rem;
+    margin-top: 4rem;
+        font-weight: lighter;
+}
 li{
   margin-top: 1rem;
 }
@@ -214,6 +246,20 @@ display: block;
   display: block;
   text-align: left;
 margin-left: 5rem;
+}
+.gao{
+  font-size: var(--h3);
+  text-align: center;
+    font-family: 'Black Han Sans';
+    font-weight: lighter;
+}
+.will{
+  font-size: var(--h5);
+  text-align: left;
+    font-family: 'Black Han Sans';
+    margin-left: 4rem;
+    font-weight: lighter;
+    margin-top: 4rem;
 }
 }
 
