@@ -49,6 +49,9 @@
   </div>
 </template>
 <style scoped>
+li{
+  margin-top: 1rem;
+}
 #right {
   width: 50%;
   margin-left: 50%;
@@ -167,7 +170,7 @@
   .msksi {
     color: var(--darkpink);
     font-size: var(--h3);
-    margin-top: 10rem;
+    margin-top: 6rem;
   }
   .left{
     width: 100%;
@@ -197,6 +200,8 @@ display: block;
 }
 #right{
   margin-left: 0;
+  width: 90%;
+  margin-top: 40rem;
 }
 .list{
   font-size: var(--h4);
@@ -205,7 +210,7 @@ display: block;
   margin-bottom: 10rem;
   display: block;
   text-align: left;
-
+margin-left: 5rem;
 }
 }
 
