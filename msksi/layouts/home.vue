@@ -8,8 +8,8 @@
 </div>
 <div class="specialmonthly">
   <h2 class="month">April
-    <h3 class="monthtitle">Cass' Birthday</h3>
   </h2>
+  <h3 class="monthtitle">Cass' Birthday</h3>
 </div>
 <Footer />
   </div>
@@ -45,9 +45,11 @@ padding-top: 30rem;
 }
 .month {
   font-size: var(--h1);
+  color: var(--yellow);
 }
 .monthtitle{
   font-size: var(--h2);
+  color: var(--darkpink);
 }
 @media only screen and (max-width: 810px){
   .hometop{
