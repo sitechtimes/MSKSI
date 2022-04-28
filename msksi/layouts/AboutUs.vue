@@ -47,7 +47,8 @@
     <div id="AboutUsBottom">
       <h2 class="gao"> Goals and Outcome</h2>
       <h3 class="will"> MSKSI members will:</h3>
-      <h4 class="texti">Be able to adapt healthy social and emotional habits that will support building positive internal self-esteem. Be mindful how others appear and show up. Have grace, dignity and leave room for error and forgiveness. Have a voice, opportunity and forum to grow in the MSKSI community. MSKSI focuses on equity in support of all students with a lens on our marginalized groups; however MSKSI is not just black and brown students, all are welcome.</h4>
+      <h4 class="texti">Be able to adapt healthy social and emotional habits that will support building positive internal self-esteem. Be mindful how others appear and show up. Have grace, dignity and leave room for error and forgiveness. </h4>
+      <h4 class="texti">  Have a voice, opportunity and forum to grow in the MSKSI community. MSKSI focuses on equity in support of all students with a lens on our marginalized groups; however MSKSI is not just black and brown students, all are welcome.</h4>
     </div>
     <Footer />
   </div>
@@ -55,13 +56,19 @@
 <style scoped>
 .texti{
   color: white;
-  font-size: var(--h4);
-  text-align: left;
-      font-family: 'Black Han Sans';
       font-weight: lighter;
       width: 90%;
-      margin-left: 5rem;
       margin-top: 5rem;
+        margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  margin-bottom: auto;
+    font-family: 'Cairo', sans-serif;
+  color: var(--white);
+  text-align: left;
+  font-size: var(--h3);
+  width: 90%;
+  justify-content: center;
 }
 #AboutUsBottom{
   background-color: var(--navyblue);
@@ -85,7 +92,7 @@
         font-weight: lighter;
 }
 li{
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 #right {
   width: 50%;
@@ -151,7 +158,7 @@ li{
 .list{
   font-size: var(--h3);
   color: var(--navyblue);
-  margin-top: -85rem;
+  margin-top: -88rem;
   margin-bottom: 40rem;
   display: block;
   text-align: left;
@@ -190,6 +197,11 @@ li{
 }
 @media only screen and (max-width: 810px) {
   .text {
+    margin-top: 2rem;
+    font-size: var(--h5);
+    width: 80%;
+  }
+    .texti {
     margin-top: 2rem;
     font-size: var(--h5);
     width: 80%;
@@ -240,7 +252,6 @@ display: block;
 }
 .list{
   font-size: var(--h4);
-  color: var(--navyblue);
   margin-top: -55rem;
   margin-bottom: 10rem;
   display: block;
@@ -254,7 +265,8 @@ margin-left: 5rem;
     font-weight: lighter;
 }
 .will{
-  font-size: var(--h5);
+  font-size: var(--h4);
+  font-weight: lighter;
   text-align: left;
     font-family: 'Black Han Sans';
     margin-left: 4rem;

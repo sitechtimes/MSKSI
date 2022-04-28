@@ -27,6 +27,7 @@
   --list: 3rem;
   --subheadingju: 4rem;
   --subheadingjum: 3rem;
+  --members: 2rem;
 }
 #navbar {
   background-color: var(--navyblue);
@@ -187,6 +188,19 @@ input[type='checkbox'] {
 }
 .menu-router:hover {
   text-decoration: underline;
-  color: var(--darkpink);
+  color: c;
   transition: all 0.5s;
+}
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 40rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+  border-radius: 40rem;
 }

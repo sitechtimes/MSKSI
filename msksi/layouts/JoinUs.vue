@@ -24,13 +24,14 @@
         <li class="text">Transformation Tables</li>
         <li class="text">Managing website & calendar</li>
     </ul>
-    <button class="button yellow" target="_blank">Join Us!</button> 
+    <button class="button yellow" target="_blank"> Join Us!</button> 
 </div>
 <Footer />
   </div>
 </template>
 <style scoped>
 .button{
+    padding: 1.2rem;
     margin-top: 10rem;
     margin-left: 80%;
 position: sticky;
@@ -41,7 +42,9 @@ position: sticky;
     border-radius: 20rem;
     font-family: 'Black Han Sans';
     border: none;
+    cursor: pointer;
 }
+
 .button:active{
       animation: press 0.2s 1 linear;
 }
