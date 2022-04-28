@@ -34,64 +34,90 @@
       </div>
       <div id="right">
         <ol class="list">
-          <li> Become empowered and take an active lead in their education process.</li>
-          <li> Support peers in developing positive, sisterly relationships.</li>
-          <li> Build community, accountability and collaborative relationships among their peers.</li>
-          <li> Adopt healthy social emotional habits that support building positive internal self-esteem.</li>
-          <li> Partner with positive role models to create lasting impactful relationships.</li>
-          <li> Be supported with transitions from elementary school to college (College and Career Readiness).</li>
-          <li> Engage in community-based projects to build civic awareness and participation.</li>
+          <li>
+            Become empowered and take an active lead in their education process.
+          </li>
+          <li>Support peers in developing positive, sisterly relationships.</li>
+          <li>
+            Build community, accountability and collaborative relationships
+            among their peers.
+          </li>
+          <li>
+            Adopt healthy social emotional habits that support building positive
+            internal self-esteem.
+          </li>
+          <li>
+            Partner with positive role models to create lasting impactful
+            relationships.
+          </li>
+          <li>
+            Be supported with transitions from elementary school to college
+            (College and Career Readiness).
+          </li>
+          <li>
+            Engage in community-based projects to build civic awareness and
+            participation.
+          </li>
         </ol>
       </div>
     </div>
     <div id="AboutUsBottom">
-      <h2 class="gao"> Goals and Outcome</h2>
-      <h3 class="will"> MSKSI members will:</h3>
-      <h4 class="texti">Be able to adapt healthy social and emotional habits that will support building positive internal self-esteem. Be mindful how others appear and show up. Have grace, dignity and leave room for error and forgiveness. </h4>
-      <h4 class="texti">  Have a voice, opportunity and forum to grow in the MSKSI community. MSKSI focuses on equity in support of all students with a lens on our marginalized groups; however MSKSI is not just black and brown students, all are welcome.</h4>
+      <h2 class="gao">Goals and Outcome</h2>
+      <h3 class="will">MSKSI members will:</h3>
+      <h4 class="texti">
+        Be able to adapt healthy social and emotional habits that will support
+        building positive internal self-esteem. Be mindful how others appear and
+        show up. Have grace, dignity and leave room for error and forgiveness.
+      </h4>
+      <h4 class="texti">
+        Have a voice, opportunity and forum to grow in the MSKSI community.
+        MSKSI focuses on equity in support of all students with a lens on our
+        marginalized groups; however MSKSI is not just black and brown students,
+        all are welcome.
+      </h4>
     </div>
     <Footer />
   </div>
 </template>
 <style scoped>
-.texti{
+.texti {
   color: white;
-      font-weight: lighter;
-      width: 90%;
-      margin-top: 5rem;
-        margin-left: auto;
+  font-weight: lighter;
+  width: 90%;
+  margin-top: 5rem;
+  margin-left: auto;
   margin-right: auto;
   margin-top: 10rem;
   margin-bottom: auto;
-    font-family: 'Cairo', sans-serif;
+  font-family: 'Cairo', sans-serif;
   color: var(--white);
   text-align: left;
   font-size: var(--h3);
   width: 90%;
   justify-content: center;
 }
-#AboutUsBottom{
+#AboutUsBottom {
   background-color: var(--navyblue);
   height: 95rem;
 }
-.gao{
+.gao {
   font-size: var(--h2);
   text-align: center;
   color: var(--darkpink);
-    font-family: 'Black Han Sans';
-    padding-top: 8rem;
-    font-weight: lighter;
+  font-family: 'Black Han Sans';
+  padding-top: 8rem;
+  font-weight: lighter;
 }
-.will{
+.will {
   font-size: var(--h3);
   color: var(--yellow);
   text-align: left;
-    font-family: 'Black Han Sans';
-        margin-left: 4rem;
-    margin-top: 4rem;
-        font-weight: lighter;
+  font-family: 'Black Han Sans';
+  margin-left: 4rem;
+  margin-top: 4rem;
+  font-weight: lighter;
 }
-li{
+li {
   margin-top: 1.5rem;
 }
 #right {
@@ -123,12 +149,12 @@ li{
 .AboutUsMid {
   text-align: center;
   background-color: white;
-  height: 100rem;
+  height: 80rem;
   display: inline;
 }
 .left {
   width: 50%;
-  height: 100rem;
+  height: 80rem;
   font-family: 'Black Han Sans';
 }
 .our {
@@ -155,7 +181,7 @@ li{
   width: 90%;
   justify-content: center;
 }
-.list{
+.list {
   font-size: var(--h3);
   color: var(--navyblue);
   margin-top: -88rem;
@@ -201,7 +227,7 @@ li{
     font-size: var(--h5);
     width: 80%;
   }
-    .texti {
+  .texti {
     margin-top: 2rem;
     font-size: var(--h5);
     width: 80%;
@@ -219,7 +245,7 @@ li{
     font-size: var(--h3);
     margin-top: 6rem;
   }
-  .left{
+  .left {
     width: 100%;
   }
   .heading {
@@ -231,48 +257,47 @@ li{
     margin-top: 0;
     padding-top: 0;
   }
-  .v{
+  .v {
     text-align: center;
   }
   #video {
     width: 100%;
     height: 55%;
-left: auto;
-right: auto;
-display: block;
-  border-style: none;
-}
-.AboutUsMid{
-  height: 95rem;
-}
-#right{
-  margin-left: 0;
-  width: 90%;
-  margin-top: 40rem;
-}
-.list{
-  font-size: var(--h4);
-  margin-top: -55rem;
-  margin-bottom: 10rem;
-  display: block;
-  text-align: left;
-margin-left: 5rem;
-}
-.gao{
-  font-size: var(--h3);
-  text-align: center;
+    left: auto;
+    right: auto;
+    display: block;
+    border-style: none;
+  }
+  .AboutUsMid {
+    height: 95rem;
+  }
+  #right {
+    margin-left: 0;
+    width: 90%;
+    margin-top: 40rem;
+  }
+  .list {
+    font-size: var(--h4);
+    margin-top: -55rem;
+    margin-bottom: 10rem;
+    display: block;
+    text-align: left;
+    margin-left: 5rem;
+  }
+  .gao {
+    font-size: var(--h3);
+    text-align: center;
     font-family: 'Black Han Sans';
     font-weight: lighter;
-}
-.will{
-  font-size: var(--h4);
-  font-weight: lighter;
-  text-align: left;
+  }
+  .will {
+    font-size: var(--h4);
+    font-weight: lighter;
+    text-align: left;
     font-family: 'Black Han Sans';
     margin-left: 4rem;
     font-weight: lighter;
     margin-top: 4rem;
+  }
 }
-}
-
 </style>
