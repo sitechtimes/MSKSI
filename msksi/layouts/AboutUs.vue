@@ -58,9 +58,7 @@
   color: white;
       font-weight: lighter;
       width: 90%;
-      margin-top: 5rem;
         margin-left: auto;
-  margin-right: auto;
   margin-top: 10rem;
   margin-bottom: auto;
     font-family: 'Cairo', sans-serif;
