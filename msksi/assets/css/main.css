@@ -85,7 +85,8 @@ body,
 .heading {
   font-size: var(--h2);
   font-family: 'Black Han Sans';
-  margin-left: 4rem;
+  margin-top: 2rem;
+  margin-left: 9rem;
   font-weight: lighter;
   color: var(--yellow);
   padding-top: 12rem;

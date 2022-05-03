@@ -87,7 +87,7 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: auto;
   font-family: 'Cairo', sans-serif;
   color: var(--white);
@@ -113,8 +113,8 @@
   color: var(--yellow);
   text-align: left;
   font-family: 'Black Han Sans';
-  margin-left: 4rem;
-  margin-top: 4rem;
+  margin-left: 9rem;
+  margin-top: 8rem;
   font-weight: lighter;
 }
 li {
@@ -175,7 +175,7 @@ li {
 .text {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10rem;
+  margin-top: 6rem;
   margin-bottom: auto;
   font-family: 'Cairo', sans-serif;
   color: var(--white);
