@@ -142,17 +142,20 @@ li {
 .msksi {
   color: var(--darkpink);
   font-size: var(--h1);
-  margin-top: 22rem;
+  margin-top: 14rem;
+}
+#video {
+  padding: 5rem;
+  border-style: none;
 }
 .AboutUsMid {
   text-align: center;
   background-color: white;
-  height: 80rem;
-  display: inline;
+  height: 82rem;
 }
 .left {
   width: 50%;
-  height: 80rem;
+  height: 68rem;
   font-family: 'Black Han Sans';
 }
 .our {
@@ -182,14 +185,10 @@ li {
 .list {
   font-size: var(--h3);
   color: var(--navyblue);
-  margin-top: -88rem;
-  margin-bottom: 40rem;
+  margin-top: -60.5rem;
+  margin-right: 10rem;
   display: block;
   text-align: left;
-}
-#video {
-  padding: 5rem;
-  border-style: none;
 }
 @media only screen and (max-width: 1500px) {
   .AboutUsTop {
