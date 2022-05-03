@@ -85,6 +85,8 @@
   font-weight: lighter;
   width: 90%;
   margin-left: auto;
+  margin-right: auto;
+  display: block;
   margin-top: 10rem;
   margin-bottom: auto;
   font-family: 'Cairo', sans-serif;
