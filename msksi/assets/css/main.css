@@ -83,7 +83,7 @@ body,
   }
 }
 .heading {
-  font-size: var(--h2);
+  font-size: var(--h1);
   font-family: 'Black Han Sans';
   margin-top: 2rem;
   margin-left: 11rem;

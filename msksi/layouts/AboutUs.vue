@@ -161,11 +161,11 @@ li {
 }
 .our {
   color: var(--darkpink);
-  font-size: var(--h2);
+  font-size: var(--h1);
 }
 .mission {
   color: var(--yellow);
-  font-size: var(--h2);
+  font-size: var(--h1);
 }
 .AboutUsTop {
   background-color: var(--navyblue);

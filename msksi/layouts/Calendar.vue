@@ -10,7 +10,7 @@
 <style scoped>
 .heading {
   color: var(--yellow);
-  font-size: var(--h2);
+  font-size: var(--h1);
 }
 .calendartop {
   background-color: var(--navyblue);
