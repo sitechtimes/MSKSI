@@ -93,7 +93,6 @@
   color: var(--white);
   text-align: left;
   font-size: var(--h3);
-  width: 90%;
   justify-content: center;
 }
 #AboutUsBottom {
@@ -181,7 +180,7 @@ li {
   color: var(--white);
   text-align: left;
   font-size: var(--h3);
-  width: 90%;
+  width: 88%;
   justify-content: center;
 }
 .list {
