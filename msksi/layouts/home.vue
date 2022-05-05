@@ -1,19 +1,21 @@
 <template>
   <div>
-<Navbar />
-<div class="hometop">
+  <Navbar />
+  <div class="hometop">
     <h2 class="heading mysis"> My Sister’s</h2>
     <h2 class="heading keeper"> Keeper</h2>
     <h3 class="si">Staten Island</h3>
-</div>
-<div class="specialmonthly">
+  </div>
+  <div class="specialmonthly">
   <h2 class="month">April
   </h2>
   <h3 class="monthtitle">Cass' Birthday</h3>
+  <h2>hrllo</h2>
 </div>
 <Footer />
   </div>
 </template>
+
 <style scoped>
 .mysis{
   font-size: 12rem;
