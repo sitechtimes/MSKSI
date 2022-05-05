@@ -3,7 +3,7 @@
 
 <script>
 export default {
-  layout: 'Home',
-  name: 'Home',
+  layout: 'home',
+  name: 'home',
 }
 </script>
