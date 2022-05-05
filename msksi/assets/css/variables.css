@@ -49,9 +49,9 @@
   margin-bottom: auto;
 }
 .logo {
-  font-size: var(--h4);
+  font-size: 3rem;
   color: var(--darkpink);
-  margin-left: 2rem;
+  margin-left: 6.5rem;
   margin-top: auto;
   margin-bottom: auto;
   font-family: 'Black Han Sans';
