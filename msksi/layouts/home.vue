@@ -13,7 +13,6 @@
 <style scoped>
 .mysis {
   font-size: 13rem;
-  font-weight: bold;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -23,7 +22,6 @@
   color: var(--darkpink);
   font-size: 13rem;
   text-align: right;
-  font-weight: bold;
   width: 65.5%;
   padding: 0;
 }
