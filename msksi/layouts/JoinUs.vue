@@ -13,7 +13,9 @@
         <li class="text">Transformation Tables</li>
         <li class="text">Managing website & calendar</li>
       </ul>
-      <button class="button pink">Join Us!</button>
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSe2NJzLuFUyTc_8Jcmn4DhyH5qfBWbKtwRjYrSzCFyERI8r1Q/viewform">
+        <button class = "button pink" target="_blank">Join Us!</button>
+        </form>
     </div>
     <div class="joinusmid">
       <h3 class="subheading wbsm">Website & Social Media Manager</h3>
@@ -26,7 +28,9 @@
         <li class="text">Transformation Tables</li>
         <li class="text">Managing website & calendar</li>
       </ul>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform">
       <button class="button yellow" target="_blank">Join Us!</button>
+        </form>
     </div>
     <Footer />
   </div>
