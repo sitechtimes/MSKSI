@@ -39,7 +39,7 @@
   position: sticky;
   left: 125rem;
   width: 22rem;
-  height: 6rem;
+  height: 8rem;
   font-size: var(--h3);
   border-radius: 20rem;
   font-family: 'Black Han Sans';
