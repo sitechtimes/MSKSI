@@ -66,7 +66,7 @@
   font-style: normal;
   color: var(--navyblue);
   text-align: center;
-  font-size: var(--h4);
+  font-size: var(--h5);
   margin-top: 2rem;
   width: 25rem;
   margin-left: auto;
