@@ -28,8 +28,8 @@
         <li class="text">Transformation Tables</li>
         <li class="text">Managing website & calendar</li>
       </ul>
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform">
-      <button class="button yellow" target="_blank">Join Us!</button>
+            <form target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform">
+      <button class="button yellow" >Join Us!</button>
         </form>
     </div>
     <Footer />
