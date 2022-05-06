@@ -18,6 +18,7 @@
     </div>
 
     <div class="homespotlight">
+      <div class="readmore"></div>
       <h2 class="heading commspot">Community Spotlight</h2>
       <div class="spotlight-images">
         <img
@@ -92,19 +93,18 @@
   height: 125rem;
   background-color: var(--white);
   position: relative;
-  border: solid 2px red;
 }
 
 .spotlight-images {
-  width: 80rem;
-  height: 85rem;
+  width: 78rem;
+  height: 88rem;
   position: relative;
 }
 
 #spotlight {
   width: 80rem;
   margin-left: 2rem;
-  margin-top: -0.1rem;
+  margin-top: -0.25rem;
   filter: saturate(80%);
 }
 
@@ -120,11 +120,25 @@
 }
 
 .commspot {
-  border: solid 2px red;
   color: var(--darkpink);
   position: absolute;
   text-align: center;
-  top: 0%;
+  top: 5rem;
+  margin-left: 30rem;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.readmore {
+  height: 100rem;
+  width: 100rem;
+  background-color: var(--tpnavyblue);
+  clip-path: polygon(100% 21%, 100% 100%, 63% 100%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: solid 2px red;
 }
 /* @media only screen and (max-width: 1500px) {
   .keeper {
