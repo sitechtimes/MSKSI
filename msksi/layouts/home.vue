@@ -16,6 +16,18 @@
   </div>
 </template>
 
+
+<script>
+export default {
+  name: `HomePage`,
+  data(){
+    return {
+      posts: [],
+    }
+  }
+}
+</script>
+
 <style scoped>
 .mysis{
   font-size: 12rem;
