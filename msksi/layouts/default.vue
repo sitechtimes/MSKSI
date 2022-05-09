@@ -21,7 +21,7 @@
   color: var(--darkpink);
   font-size: 12rem;
   text-align: right;
-  width: 70%;
+  width: 64%;
   padding: 0;
 }
 .hometop {
@@ -32,9 +32,9 @@
   font-family: 'ABeeZee', sans-serif;
   color: var(--yellow);
   font-size: var(--h3);
-  width: 80%;
+  width: 75%;
   text-align: right;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 @media only screen and (max-width: 1500px) {
   .mysis {
@@ -79,4 +79,3 @@
   }
 }
 </style>
-

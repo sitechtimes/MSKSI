@@ -74,12 +74,12 @@
 .pink {
   background-color: var(--darkpink);
   color: white;
-  filter: drop-shadow(3px 4px 3px rgba(204, 203, 203, 0.75));
+  filter: drop-shadow(3px 4px 3px black);
 }
 .yellow {
   color: var(--navyblue);
   background-color: var(--yellow);
-  filter: drop-shadow(5px 5px 4px rgba(117, 117, 117, 0.75));
+  filter: drop-shadow(5px 5px 4px grey);
 }
 #subc {
   list-style-type: circle;
@@ -89,6 +89,8 @@
 .subc {
   color: var(--darkpink);
   font-size: var(--h2);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .joinustop {
   background-color: var(--navyblue);
@@ -99,6 +101,7 @@
   font-size: var(--h3);
   margin-left: 15rem;
   margin-top: 0.5rem;
+  line-height: 6rem;
 }
 .joinustop {
   height: 100rem;
