@@ -18,7 +18,8 @@
     </div>
 
     <div class="homespotlight">
-      <div class="readmore"></div>
+      <div class="arrowbutton" @mouseover="a = true" v-show="!a"></div>
+      <div class="readmore" @mouseout="a = false" v-show="a"></div>
       <h2 class="heading commspot">Community Spotlight</h2>
       <div class="spotlight-images">
         <img
@@ -32,6 +33,17 @@
     <Footer />
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      a: false,
+    }
+  },
+}
+</script>
+
 <style scoped>
 .hometop {
   background-color: var(--navyblue);
@@ -90,14 +102,14 @@
 }
 
 .homespotlight {
-  height: 125rem;
+  height: 100rem;
   background-color: var(--white);
   position: relative;
 }
 
 .spotlight-images {
-  width: 78rem;
-  height: 88rem;
+  width: 68rem;
+  height: 75rem;
   position: relative;
 }
 
@@ -110,8 +122,8 @@
 
 #temp-img {
   border: solid 2px red;
-  width: 50rem;
-  height: 50rem;
+  width: 40rem;
+  height: 40rem;
   border-radius: 50%;
   position: absolute;
   bottom: 0%;
@@ -130,15 +142,25 @@
   right: 0;
 }
 
-.readmore {
-  height: 100rem;
-  width: 100rem;
+.arrowbutton {
+  height: 10rem;
+  width: 10rem;
   background-color: var(--tpnavyblue);
-  clip-path: polygon(100% 21%, 100% 100%, 63% 100%);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.readmore {
+  height: 125rem;
+  width: 125rem;
+  background-color: var(--tpnavyblue);
+  clip-path: polygon(100% 27%, 68% 100%, 100% 100%);
   position: absolute;
   bottom: 0;
   right: 0;
-  border: solid 2px red;
+  transition: all 0.1s;
 }
 /* @media only screen and (max-width: 1500px) {
   .keeper {
