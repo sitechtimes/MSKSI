@@ -18,8 +18,13 @@
     </div>
 
     <div class="homespotlight">
-      <div class="arrowbutton" @mouseover="a = true" v-show="!a"></div>
-      <div class="readmore" @mouseout="a = false" v-show="a"></div>
+      <transition name="arrowbutton">
+        <div class="arrowbutton" @mouseover="a = true" v-show="!a"></div>
+      </transition>
+      <transition name="readmore">
+        <div class="readmore" @mouseout="a = false" v-show="a"></div>
+      </transition>
+
       <h2 class="heading commspot">Community Spotlight</h2>
       <div class="spotlight-images">
         <img
@@ -144,7 +149,7 @@ export default {
 
 .arrowbutton {
   height: 10rem;
-  width: 10rem;
+  width: 8rem;
   background-color: var(--tpnavyblue);
   position: absolute;
   right: 0;
@@ -160,7 +165,30 @@ export default {
   position: absolute;
   bottom: 0;
   right: 0;
-  transition: all 0.1s;
+}
+
+.arrowbutton-leave-active,
+.arrowbutton-enter-active,
+.readmore-leave-active,
+.readmore-enter-active {
+  transition: all 0.5s;
+}
+
+.arrowbutton-enter,
+.arrowbutton-leave-to,
+.readmore-enter,
+.readmore-leave-to {
+  opacity: 0;
+}
+
+.arrowbutton-enter-from,
+.arrowbutton-leave-to {
+  transform: scaleX(1.5);
+}
+
+.readmore-enter-from,
+.readmore-leave-to {
+  transform: translateX(4rem);
 }
 /* @media only screen and (max-width: 1500px) {
   .keeper {
@@ -169,5 +197,5 @@ export default {
     text-align: right;
     width: 80%;
   }
-} */
+} */ ;
 </style>
