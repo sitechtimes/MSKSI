@@ -84,8 +84,7 @@
   color: white;
   font-weight: lighter;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 11rem;
   display: block;
   margin-top: 5rem;
   margin-bottom: auto;
@@ -93,7 +92,6 @@
   color: var(--white);
   text-align: left;
   font-size: var(--h3);
-  width: 90%;
   justify-content: center;
 }
 #AboutUsBottom {
@@ -113,7 +111,7 @@
   color: var(--yellow);
   text-align: left;
   font-family: 'Black Han Sans';
-  margin-left: 9rem;
+  margin-left: 11rem;
   margin-top: 8rem;
   font-weight: lighter;
 }
@@ -162,11 +160,11 @@ li {
 }
 .our {
   color: var(--darkpink);
-  font-size: var(--h2);
+  font-size: var(--h1);
 }
 .mission {
   color: var(--yellow);
-  font-size: var(--h2);
+  font-size: var(--h1);
 }
 .AboutUsTop {
   background-color: var(--navyblue);
@@ -175,13 +173,13 @@ li {
 .text {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 6rem;
+  margin-top: 5.5rem;
   margin-bottom: auto;
   font-family: 'Cairo', sans-serif;
   color: var(--white);
   text-align: left;
   font-size: var(--h3);
-  width: 90%;
+  width: 88%;
   justify-content: center;
 }
 .list {
