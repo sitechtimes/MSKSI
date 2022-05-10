@@ -203,7 +203,7 @@ li {
   .AboutUsMid {
     text-align: center;
     background-color: white;
-    height: 56rem;
+    height: 66rem;
   }
   .left {
     width: 50%;
@@ -213,7 +213,7 @@ li {
   .msksi {
     color: var(--darkpink);
     font-size: var(--h1);
-    margin-top: 17rem;
+    margin-top: 10rem;
   }
   .vision {
     color: var(--navyblue);
