@@ -7,10 +7,12 @@
     <h3 class="si">Staten Island</h3>
   </div>
   <div class="specialmonthly">
-  <h2 class="month">April
-  </h2>
-  <h3 class="monthtitle">Cass' Birthday</h3>
-  <h2>hrllo</h2>
+    <MonthPost v-for="post in posts" 
+    :key="post.month" 
+    :month="post.month" 
+    :subheader="post.subheader" 
+    :description="post.description">
+    </MonthPost>
 </div>
 <Footer />
   </div>
@@ -24,6 +26,9 @@ export default {
     return {
       posts: [],
     }
+  },
+  async fetch(){
+    this.posts = await this.$content(`monthposts`).fetch()
   }
 }
 </script>

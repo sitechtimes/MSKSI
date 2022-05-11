@@ -2,7 +2,7 @@
 <div class="newmonth">
     <h2> {{ month }} </h2>
     <h3> {{ subheader }} </h3>
-    <p> {{ desc }} </p>
+    <p> {{ description }} </p>
 <!-- img will go here -->
 </div>
 </template>
@@ -21,5 +21,8 @@ h2 {
 h3 {
     font-size: var(--h3);
     color: var(--darkpink);
+}
+p {
+    font-size: var(--h4);
 }
 </style>
