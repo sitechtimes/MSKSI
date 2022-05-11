@@ -116,16 +116,7 @@
   font-weight: lighter;
 }
 li {
-  margin-top: 1.5rem;
-}
-#right {
-  width: 50%;
-  margin-left: 50%;
-  font-family: 'Black Han Sans';
-  color: var(--navyblue);
-  font-size: var(--h4);
-  z-index: 100;
-  margin-top: 0;
+  margin-top: 2rem;
 }
 .goal {
   color: var(--navyblue);
@@ -135,18 +126,27 @@ li {
   margin-bottom: auto;
   display: block;
 }
-.vision {
-  color: var(--navyblue);
-  font-size: var(--h1);
+#right {
+  width: 50%;
+  margin-left: 50%;
+  font-family: 'Black Han Sans';
+  margin-top: 3rem;
 }
 .msksi {
   color: var(--darkpink);
   font-size: var(--h1);
-  margin-top: 14rem;
+  margin-top: 8.5rem;
 }
 #video {
   padding: 5rem;
+  margin-top: -1rem;
   border-style: none;
+  width: 85%;
+  height: 80%;
+}
+.vision {
+  color: var(--navyblue);
+  font-size: var(--h1);
 }
 .AboutUsMid {
   text-align: center;
@@ -155,7 +155,7 @@ li {
 }
 .left {
   width: 50%;
-  height: 68rem;
+  height: 100%;
   font-family: 'Black Han Sans';
 }
 .our {
@@ -189,6 +189,7 @@ li {
   margin-right: 10rem;
   display: block;
   text-align: left;
+  line-height: 3rem;
 }
 @media only screen and (max-width: 1500px) {
   .AboutUsTop {
