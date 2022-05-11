@@ -5,6 +5,7 @@
   :key="Album.title" 
   :desc="Album.description"> 
   </AlbumPreview>
+
 </div>
 </template>
 
@@ -24,7 +25,6 @@ export default {
         hid: 'name',
         name: 'name',
         content: 'name',
-
         }
       ],
     }
