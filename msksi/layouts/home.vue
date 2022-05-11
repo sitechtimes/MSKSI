@@ -57,17 +57,15 @@
     height: 80rem;
   }
 }
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 1032px) {
   .hometop {
     height: auto;
   }
   .mysis {
-    font-size: var(--h2);
     margin-left: 2rem;
     margin-top: 8rem;
   }
   .keeper {
-    font-size: var(--h2);
     margin-top: 1rem;
     margin-left: 5rem;
   }
@@ -77,6 +75,26 @@
   .hometop {
     background-color: var(--navyblue);
     height: 100rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .mysis {
+    padding-top: 25rem;
+  }
+  .keeper {
+    color: var(--darkpink);
+    font-size: 12rem;
+    text-align: right;
+    width: 80%;
+    margin-top: 1rem;
+    padding-top: 2rem;
+  }
+  .si {
+    padding-top: 0rem;
+    margin-top: 3rem;
+  }
+  .hometop {
+    height: 80rem;
   }
 }
 </style>

@@ -51,7 +51,7 @@
 .logo {
   font-size: 3rem;
   color: var(--darkpink);
-  margin-left: 6.5rem;
+  margin-left: 2rem;
   margin-top: auto;
   margin-bottom: auto;
   font-family: 'Black Han Sans';
@@ -102,7 +102,7 @@
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
-  width: 15%;
+  width: 20%;
 }
 .icon {
   height: 4rem;
@@ -121,6 +121,7 @@
   margin-top: auto;
   margin-bottom: auto;
   z-index: 3;
+  margin-right: 6.5rem;
 }
 .wrapper {
   display: block;
