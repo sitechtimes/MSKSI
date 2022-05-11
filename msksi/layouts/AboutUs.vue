@@ -85,6 +85,7 @@
   font-weight: lighter;
   width: 90%;
   margin-left: 11rem;
+  margin-right: 11rem;
   display: block;
   margin-top: 5rem;
   margin-bottom: auto;
@@ -115,9 +116,6 @@
   margin-top: 8rem;
   font-weight: lighter;
 }
-li {
-  margin-top: 2rem;
-}
 .goal {
   color: var(--navyblue);
 }
@@ -132,17 +130,29 @@ li {
   font-family: 'Black Han Sans';
   margin-top: 3rem;
 }
+li {
+  margin-top: 2rem;
+}
+.list {
+  font-size: var(--h3);
+  color: var(--navyblue);
+  margin-top: -73rem;
+  margin-right: 10rem;
+  display: block;
+  text-align: left;
+  line-height: 3rem;
+}
 .msksi {
   color: var(--darkpink);
   font-size: var(--h1);
-  margin-top: 8.5rem;
+  margin-top: 7.5rem;
 }
 #video {
   padding: 5rem;
   margin-top: -1rem;
   border-style: none;
   width: 85%;
-  height: 80%;
+  height: 70%;
 }
 .vision {
   color: var(--navyblue);
@@ -181,15 +191,6 @@ li {
   font-size: var(--h3);
   width: 88%;
   justify-content: center;
-}
-.list {
-  font-size: var(--h3);
-  color: var(--navyblue);
-  margin-top: -60.5rem;
-  margin-right: 10rem;
-  display: block;
-  text-align: left;
-  line-height: 3rem;
 }
 @media only screen and (max-width: 1500px) {
   .AboutUsTop {
