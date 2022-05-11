@@ -24,8 +24,14 @@
       <transition name="readmore">
         <div class="readmore" @mouseout="a = false" v-show="a"></div>
       </transition>
-
       <h2 class="heading commspot">Community Spotlight</h2>
+      <div class="text-holder">
+        <p class="commspot-text">
+          hi guys im so cool like its really amazing im amazing this is a nice
+          page i love it sm i love life #thriving we love it here everyone does
+          we should really have more mental health days
+        </p>
+      </div>
       <div class="spotlight-images">
         <img
           id="spotlight"
@@ -142,9 +148,28 @@ export default {
   text-align: center;
   top: 5rem;
   margin-left: 30rem;
-  margin-right: auto;
   left: 0;
   right: 0;
+}
+
+.text-holder {
+  position: absolute;
+
+  top: 25rem;
+  margin-left: 30rem;
+  left: 0;
+  right: 0;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+
+.commspot-text {
+  font-size: var(--h3);
+  color: var(--navyblue);
+  font-family: 'ABeeZee', sans-serif;
+
+  width: 50rem;
 }
 
 .arrowbutton {
