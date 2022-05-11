@@ -12,16 +12,17 @@
 </template>
 <style scoped>
 .mysis {
-  font-size: 12rem;
+  font-size: 13rem;
   text-align: center;
-  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 30rem;
 }
 .keeper {
   color: var(--darkpink);
-  font-size: 12rem;
+  font-size: 13rem;
   text-align: right;
-  width: 64%;
+  width: 65.5%;
   padding: 0;
 }
 .hometop {
@@ -31,10 +32,10 @@
 .si {
   font-family: 'ABeeZee', sans-serif;
   color: var(--yellow);
-  font-size: var(--h3);
-  width: 75%;
+  font-size: var(--h2);
+  width: 82%;
   text-align: right;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 @media only screen and (max-width: 1500px) {
   .mysis {
