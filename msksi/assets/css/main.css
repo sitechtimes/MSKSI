@@ -8,6 +8,17 @@ body,
   margin: 0;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 1500px) {
+  .heading {
+    font-size: var(--h2);
+    font-family: 'Black Han Sans';
+    margin-top: 2rem;
+    margin-left: 8rem;
+    font-weight: lighter;
+    color: var(--yellow);
+    padding-top: 12rem;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .contactus {
     font-size: var(--h4);
