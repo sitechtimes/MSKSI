@@ -136,7 +136,7 @@ li {
 .list {
   font-size: var(--h3);
   color: var(--navyblue);
-  margin-top: -73rem;
+  margin-top: -77.5rem;
   margin-right: 10rem;
   display: block;
   text-align: left;
@@ -145,14 +145,14 @@ li {
 .msksi {
   color: var(--darkpink);
   font-size: var(--h1);
-  margin-top: 7.5rem;
+  margin-top: 9rem;
 }
 #video {
   padding: 5rem;
   margin-top: -1rem;
   border-style: none;
   width: 85%;
-  height: 70%;
+  height: 62%;
 }
 .vision {
   color: var(--navyblue);
@@ -161,7 +161,7 @@ li {
 .AboutUsMid {
   text-align: center;
   background-color: white;
-  height: 82rem;
+  height: 85rem;
 }
 .left {
   width: 50%;
