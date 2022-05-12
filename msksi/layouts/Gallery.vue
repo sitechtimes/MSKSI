@@ -61,7 +61,7 @@
   font-size: var(--h1);
 }
 .name {
-  font-family: 'Black Han Sans';
+    font-family: 'ABeeZee', sans-serif;
   font-style: normal;
   color: var(--navyblue);
   text-align: center;
