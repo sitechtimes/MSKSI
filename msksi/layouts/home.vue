@@ -17,13 +17,21 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 30rem;
+  display: flex;
+  justify-content: center;
 }
 .keeper {
   color: var(--darkpink);
-  font-size: 13rem;
   text-align: right;
-  width: 65.5%;
-  padding: 0;
+  width: 41%;
+  font-size: 13rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: right;
+}
+.heading {
+  margin-top: 3rem;
 }
 .hometop {
   background-color: var(--navyblue);
@@ -38,21 +46,6 @@
   margin-top: 4rem;
 }
 @media only screen and (max-width: 1500px) {
-  .mysis {
-    padding-top: 25rem;
-  }
-  .keeper {
-    color: var(--darkpink);
-    font-size: 12rem;
-    text-align: right;
-    width: 80%;
-    margin-top: 1rem;
-    padding-top: 2rem;
-  }
-  .si {
-    padding-top: 0rem;
-    margin-top: 3rem;
-  }
   .hometop {
     height: 80rem;
   }
@@ -61,38 +54,12 @@
   .hometop {
     height: auto;
   }
-  .mysis {
-    margin-left: 2rem;
-    margin-top: 8rem;
-  }
-  .keeper {
-    margin-top: 1rem;
-    margin-left: 5rem;
-  }
-  .si {
-    font-size: var(--h4);
-  }
   .hometop {
     background-color: var(--navyblue);
     height: 100rem;
   }
 }
 @media only screen and (max-width: 400px) {
-  .mysis {
-    padding-top: 25rem;
-  }
-  .keeper {
-    color: var(--darkpink);
-    font-size: 12rem;
-    text-align: right;
-    width: 80%;
-    margin-top: 1rem;
-    padding-top: 2rem;
-  }
-  .si {
-    padding-top: 0rem;
-    margin-top: 3rem;
-  }
   .hometop {
     height: 80rem;
   }
