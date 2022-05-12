@@ -20,15 +20,19 @@
 
 
 <script>
+
 export default {
   name: `HomePage`,
+  components: {
+   
+  },
   data(){
     return {
       posts: [],
     }
   },
   async fetch(){
-    this.posts = await this.$content(`monthposts`).fetch()
+    this.posts = await this.$content(`monthposts`).limit(1).fetch()
   }
 }
 </script>
