@@ -26,3 +26,9 @@ export default {
   },
 }
 </script>
+
+<style>
+#navbar {
+  z-index: 500;
+}
+</style>

@@ -18,14 +18,10 @@
     </div>
 
     <div class="homespotlight">
-      <transition name="arrowbutton">
-        <div class="arrowbutton" @mouseover="a = true" v-show="!a"></div>
-      </transition>
-      <transition name="readmore">
-        <div class="readmore" @mouseout="a = false" v-show="a"></div>
-      </transition>
-      <h2 class="heading commspot">Community Spotlight</h2>
+      <div class="readmore"></div>
+
       <div class="text-holder">
+        <h2 class="heading commspot">Community Spotlight</h2>
         <p class="commspot-text">
           hi guys im so cool like its really amazing im amazing this is a nice
           page i love it sm i love life #thriving we love it here everyone does
@@ -44,16 +40,6 @@
     <Footer />
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      a: false,
-    }
-  },
-}
-</script>
 
 <style scoped>
 .hometop {
@@ -142,44 +128,36 @@ export default {
   background-color: white;
 }
 
-.commspot {
-  color: var(--darkpink);
-  position: absolute;
-  text-align: center;
-  top: 5rem;
-  margin-left: 30rem;
-  left: 0;
-  right: 0;
-}
-
 .text-holder {
   position: absolute;
-
-  top: 25rem;
-  margin-left: 30rem;
+  border: solid 2px red;
+  height: 100%;
+  margin-left: 72rem;
   left: 0;
   right: 0;
   text-align: left;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  flex-direction: column;
+}
+.commspot {
+  color: var(--darkpink);
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-left: 0;
+  padding-top: 0;
+  margin-right: 12rem;
 }
 
 .commspot-text {
   font-size: var(--h3);
   color: var(--navyblue);
   font-family: 'ABeeZee', sans-serif;
-
-  width: 50rem;
-}
-
-.arrowbutton {
-  height: 10rem;
-  width: 8rem;
-  background-color: var(--tpnavyblue);
-  position: absolute;
-  right: 0;
-  top: 50%;
-  border-radius: 2rem 0 0 2rem;
+  margin-top: 3rem;
+  margin-right: 25rem;
+  line-height: 5rem;
+  border: solid 2px red;
 }
 
 .readmore {
@@ -190,31 +168,14 @@ export default {
   position: absolute;
   bottom: 0;
   right: 0;
+  transition: all 0.3s;
+  z-index: 10;
 }
 
-.arrowbutton-leave-active,
-.arrowbutton-enter-active,
-.readmore-leave-active,
-.readmore-enter-active {
-  transition: all 0.5s;
+.readmore:hover {
+  background-color: var(--navyblue);
 }
 
-.arrowbutton-enter,
-.arrowbutton-leave-to,
-.readmore-enter,
-.readmore-leave-to {
-  opacity: 0;
-}
-
-.arrowbutton-enter-from,
-.arrowbutton-leave-to {
-  transform: scaleX(1.5);
-}
-
-.readmore-enter-from,
-.readmore-leave-to {
-  transform: translateX(4rem);
-}
 /* @media only screen and (max-width: 1500px) {
   .keeper {
     color: var(--darkpink);
