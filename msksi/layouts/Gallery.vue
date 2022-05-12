@@ -61,7 +61,7 @@
   font-size: var(--h1);
 }
 .name {
-  font-family: 'Sora';
+  font-family: 'Black Han Sans';
   font-style: normal;
   color: var(--navyblue);
   text-align: center;
