@@ -71,6 +71,7 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
+  font-weight: bolder;
 }
 #picture {
   width: 25rem;
