@@ -88,7 +88,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 90vw;
+  width: 87vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;

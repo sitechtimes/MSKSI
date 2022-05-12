@@ -2,8 +2,8 @@
   <div>
     <Navbar />
     <div class="hometop">
-      <h2 class="heading mysis">My Sister’s</h2>
-      <h2 class="heading keeper">Keeper</h2>
+      <h2 class="homelogo mysis">My Sister’s</h2>
+      <h2 class="homelogo keeper">Keeper</h2>
       <h3 class="si">Staten Island</h3>
     </div>
 
@@ -11,6 +11,9 @@
   </div>
 </template>
 <style scoped>
+.homelogo {
+  margin-top: 2rem;
+}
 .mysis {
   font-size: 13rem;
   text-align: center;
@@ -19,11 +22,15 @@
   padding-top: 30rem;
   display: flex;
   justify-content: center;
+  color: var(--yellow);
+  font-family: 'Black Han Sans';
 }
 .keeper {
   color: var(--darkpink);
+  font-size: var(--h1);
+  font-family: 'Black Han Sans';
   text-align: right;
-  width: 41%;
+  width: 42.5%;
   font-size: 13rem;
   margin-left: auto;
   margin-right: auto;
