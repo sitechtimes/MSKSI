@@ -96,7 +96,7 @@
 }
 .polaroid {
   margin-top: 10rem;
-  width: 20.2%;
+  width: 18%;
   height: 42rem;
   background-color: white;
 }
