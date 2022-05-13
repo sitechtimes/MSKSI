@@ -18,16 +18,14 @@
     </div>
 
     <div class="homespotlight">
+      <router-link class="navRouter routermore arrow" to="/AboutUs">
+        >
+      </router-link>
+      <router-link class="navRouter routermore" to="/AboutUs">
+        Read More
+      </router-link>
       <div class="readmore"></div>
 
-      <div class="text-holder">
-        <h2 class="heading commspot">Community Spotlight</h2>
-        <p class="commspot-text">
-          hi guys im so cool like its really amazing im amazing this is a nice
-          page i love it sm i love life #thriving we love it here everyone does
-          we should really have more mental health days
-        </p>
-      </div>
       <div class="spotlight-images">
         <img
           id="spotlight"
@@ -35,6 +33,14 @@
           alt=""
         />
         <div id="temp-img"></div>
+      </div>
+      <div class="text-holder">
+        <h2 class="heading commspot">Community Spotlight</h2>
+        <p class="commspot-text">
+          hi guys im so cool like its really amazing im amazing this is a nice
+          page i love it sm i love life #thriving we love it here everyone does
+          we should really have more mental health days
+        </p>
       </div>
     </div>
     <Footer />
@@ -102,6 +108,8 @@
   height: 100rem;
   background-color: var(--white);
   position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
 .spotlight-images {
@@ -129,16 +137,14 @@
 }
 
 .text-holder {
-  position: absolute;
-  border: solid 2px red;
+  position: relative;
   height: 100%;
-  margin-left: 72rem;
-  left: 0;
-  right: 0;
   text-align: left;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-direction: column;
+  padding-left: 5rem;
+  margin-top: -5rem;
 }
 .commspot {
   color: var(--darkpink);
@@ -157,7 +163,6 @@
   margin-top: 3rem;
   margin-right: 25rem;
   line-height: 5rem;
-  border: solid 2px red;
 }
 
 .readmore {
@@ -172,8 +177,30 @@
   z-index: 10;
 }
 
-.readmore:hover {
+.readmore:hover,
+.routermore:hover + .readmore {
   background-color: var(--navyblue);
+}
+
+.routermore {
+  font-size: var(--h3);
+  color: var(--yellow);
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: bold;
+  bottom: 20rem;
+  right: 3rem;
+  position: absolute;
+  z-index: 11;
+}
+
+.routermore:hover {
+  text-decoration: underline;
+}
+
+.arrow {
+  bottom: 25rem;
+  right: 10rem;
+  font-size: var(--h2);
 }
 
 /* @media only screen and (max-width: 1500px) {
