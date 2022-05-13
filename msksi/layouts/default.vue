@@ -2,8 +2,8 @@
   <div>
     <Navbar />
     <div class="hometop">
-      <h2 class="heading mysis">My Sister’s</h2>
-      <h2 class="heading keeper">Keeper</h2>
+      <h2 class="homelogo mysis">My Sister’s</h2>
+      <h2 class="homelogo keeper">Keeper</h2>
       <h3 class="si">Staten Island</h3>
     </div>
 
@@ -11,19 +11,34 @@
   </div>
 </template>
 <style scoped>
+.homelogo {
+  margin-top: 2rem;
+}
 .mysis {
   font-size: 13rem;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 30rem;
+  display: flex;
+  justify-content: center;
+  color: var(--yellow);
+  font-family: 'Black Han Sans';
 }
 .keeper {
   color: var(--darkpink);
-  font-size: 13rem;
+  font-size: var(--h1);
+  font-family: 'Black Han Sans';
   text-align: right;
-  width: 65.5%;
-  padding: 0;
+  width: 42.5%;
+  font-size: 13rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: right;
+}
+.heading {
+  margin-top: 3rem;
 }
 .hometop {
   background-color: var(--navyblue);
@@ -38,45 +53,22 @@
   margin-top: 4rem;
 }
 @media only screen and (max-width: 1500px) {
-  .mysis {
-    padding-top: 25rem;
-  }
-  .keeper {
-    color: var(--darkpink);
-    font-size: 12rem;
-    text-align: right;
-    width: 80%;
-    margin-top: 1rem;
-    padding-top: 2rem;
-  }
-  .si {
-    padding-top: 0rem;
-    margin-top: 3rem;
-  }
   .hometop {
     height: 80rem;
   }
 }
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 1032px) {
   .hometop {
     height: auto;
-  }
-  .mysis {
-    font-size: var(--h2);
-    margin-left: 2rem;
-    margin-top: 8rem;
-  }
-  .keeper {
-    font-size: var(--h2);
-    margin-top: 1rem;
-    margin-left: 5rem;
-  }
-  .si {
-    font-size: var(--h4);
   }
   .hometop {
     background-color: var(--navyblue);
     height: 100rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .hometop {
+    height: 80rem;
   }
 }
 </style>
