@@ -91,8 +91,7 @@
   width: 87vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
-  margin-top: -6rem;
+  margin-top: -2rem;
 }
 .polaroid {
   margin-top: 10rem;
