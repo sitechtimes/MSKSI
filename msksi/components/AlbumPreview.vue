@@ -1,7 +1,5 @@
 <template>
     <div class="AlbumPreview">
-        <h3>{{Title}}</h3>
-        <img src="{{img}}" alt="{{Title}}">
 
     </div>
 </template>
@@ -21,4 +19,6 @@ export default {
         }
     }
 }
+/*         <h3>{{Title}}</h3>
+        <img src="{{img}}" alt="{{Title}}"> */
 </script>
