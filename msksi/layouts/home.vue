@@ -11,7 +11,8 @@
     :key="post.month" 
     :month="post.month" 
     :subheader="post.subheader" 
-    :description="post.description">
+    :description="post.description"
+    :image="post.image">
     </MonthPost>
 </div>
 <Footer />

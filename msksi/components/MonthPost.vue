@@ -2,8 +2,10 @@
 <div class="newmonth">
     <h2> {{ month }} </h2>
     <h3> {{ subheader }} </h3>
-    <p> {{ description }} </p>
-<!-- img will go here -->
+    <div class="postcontent">
+        <p> {{ description }} </p>
+        <img :src="image" alt="" />
+    </div>
 </div>
 </template>
 
@@ -15,12 +17,14 @@ export default {
     month: String,
     subheader: String,
     description: String,
+    image: String,
   },
 }
 </script>
 
 <style scoped>
  @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&family=Sora:wght@800&display=swap');
+
 h2 {
     font-size: var(--h1);
     color: var(--yellow);
@@ -35,8 +39,16 @@ h3 {
 }
 p {
     font-size: var(--h4);
-    margin: 2rem 2rem 0 2rem;
+    margin: 2rem 4rem 2rem 4rem;
     font-family: 'Be Vietnam Pro', sans-serif;
     color: var(--white);
+}
+img {
+    height: 40rem;
+    margin-right: 5rem;
+}
+.postcontent {
+    display: flex;
+    margin: 5rem 6rem 0 6rem;
 }
 </style>
