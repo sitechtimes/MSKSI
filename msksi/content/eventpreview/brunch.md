@@ -1,4 +1,5 @@
 ---
 event: MSK Brunch
-date: June 6th
+eventmonth: June
+eventdate: 6
 ---
