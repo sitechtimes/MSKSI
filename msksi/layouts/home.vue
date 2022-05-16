@@ -18,10 +18,8 @@
     </div>
 
     <div class="homespotlight">
-      <router-link class="navRouter routermore arrow" to="/AboutUs">
-        >
-      </router-link>
       <router-link class="navRouter routermore" to="/AboutUs">
+        <span class="arrow">></span>
         Read More
       </router-link>
       <div class="readmore"></div>
@@ -32,7 +30,9 @@
           src="https://www.yosemitelakespark.org/wp-content/uploads/2021/02/ylp-spotlight.png"
           alt=""
         />
-        <div id="temp-img"></div>
+        <div id="img-holder">
+          <img id="commspot-img" src="" alt="" />
+        </div>
       </div>
       <div class="text-holder">
         <h2 class="heading commspot">Community Spotlight</h2>
@@ -125,7 +125,7 @@
   filter: saturate(80%);
 }
 
-#temp-img {
+#img-holder {
   border: solid 2px red;
   width: 40rem;
   height: 40rem;
@@ -133,7 +133,11 @@
   position: absolute;
   bottom: 0%;
   right: 0%;
-  background-color: white;
+}
+
+#commspot-img {
+  height: auto;
+  width: 100%;
 }
 
 .text-holder {
@@ -177,7 +181,6 @@
   z-index: 10;
 }
 
-.readmore:hover,
 .routermore:hover + .readmore {
   background-color: var(--navyblue);
 }
@@ -191,16 +194,21 @@
   right: 3rem;
   position: absolute;
   z-index: 11;
+  transition: all 0.2s;
 }
 
 .routermore:hover {
+  color: var(--darkyellow);
   text-decoration: underline;
+  text-decoration-thickness: 0.35rem;
 }
 
 .arrow {
   bottom: 25rem;
   right: 10rem;
   font-size: var(--h2);
+  display: block;
+  text-align: center;
 }
 
 /* @media only screen and (max-width: 1500px) {
