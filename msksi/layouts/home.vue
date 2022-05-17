@@ -47,6 +47,20 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      posts: [],
+    }
+  },
+  async asyncData({ $content, params }) {
+    const post = await $content('comm-spot', params.slug).fetch()
+    return { post }
+  },
+}
+</script>
+
 <style scoped>
 .hometop {
   background-color: var(--navyblue);
