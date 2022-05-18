@@ -1,43 +1,6 @@
 <template>
   <div>
     <Navbar />
-    <Footer />
-  </div>
-</template>
-<script>
-import Footer from '../components/Footer.vue'
-import NavBar from '../components/NavBar.vue'
-import Tutorial from '../components/Tutorial.vue'
-export default {
-  components: { Tutorial, Footer, NavBar },
-}
-    <Menu />
-    <DesktopMenu />
-
-    <Nuxt />
-  </div>
-</template>
-<script>
-export default {}
-    <Menu />
-    <DesktopMenu />
-
-    <Nuxt />
-  </div>
-</template>
-<script>
-export default {}
-    <Menu />
-    <DesktopMenu />
-
-    <Nuxt />
-  </div>
-</template>
-<script>
-export default {}
-</script>
-<style lang="css"></style>
-    <Navbar />
     <div class="hometop">
       <h2 class="homelogo mysis">My Sister’s</h2>
       <h2 class="homelogo keeper">Keeper</h2>

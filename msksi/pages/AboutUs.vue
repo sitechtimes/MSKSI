@@ -1,12 +1,7 @@
-<template>
-  <div class="aboutus">
-    <Navbar />
-    <Footer />
-  </div>
-</template>
+<template></template>
 
 <script>
 export default {
-  name: 'NuxtAboutUs',
+  layout: 'AboutUs',
 }
 </script>

@@ -1,9 +1,9 @@
 <template>
+
 </template>
 
 <script>
 export default {
-  layout: 'home',
-  name: 'home',
+layout: 'Resources'
 }
 </script>

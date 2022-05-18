@@ -10,9 +10,20 @@
     </div>
   </div>
 </template>
+<style scoped>
+@media only screen and (max-width: 810px) {
+  #footer {
+    height: 20rem;
+    margin-bottom: 0;
+  }
+}
+.icon {
+  cursor: pointer;
+}
+</style>
 
 <script>
 export default {
-  name: 'NuxtTutorial',
+  name: 'Footer',
 }
 </script>
