@@ -17,8 +17,8 @@
     margin-bottom: 0;
   }
 }
-.icon{
-      cursor: pointer;
+.icon {
+  cursor: pointer;
 }
 </style>
 
