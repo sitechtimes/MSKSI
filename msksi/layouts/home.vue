@@ -36,11 +36,7 @@
       </div>
       <div class="text-holder">
         <h2 class="heading commspot">Community Spotlight</h2>
-        <p class="commspot-text">
-          hi guys im so cool like its really amazing im amazing this is a nice
-          page i love it sm i love life #thriving we love it here everyone does
-          we should really have more mental health days
-        </p>
+        <nuxt-content :document="post" />
       </div>
     </div>
     <Footer />
@@ -49,13 +45,13 @@
 
 <script>
 export default {
-  data() {
-    return {
-      posts: [],
-    }
-  },
   async asyncData({ $content, params }) {
-    const post = await $content('comm-spot', params.slug).fetch()
+    const post = await $content('comm-spot', params.slug)
+      .sortBy('title', 'desc')
+      .limit(1)
+      .fetch()
+    console.log('POST:')
+    console.log(post)
     return { post }
   },
 }
@@ -174,7 +170,7 @@ export default {
   margin-right: 12rem;
 }
 
-.commspot-text {
+.nuxt-content {
   font-size: var(--h3);
   color: var(--navyblue);
   font-family: 'ABeeZee', sans-serif;
