@@ -1,12 +1,14 @@
 <template>
-  <div>
-    <Navbar />
-    <div class="calendartop">
-      <h2 class="heading">Calendar</h2>
-    </div>
-    <Footer />
+  <div class="calendartop">
+    <h2 class="heading">Calendar</h2>
   </div>
 </template>
+<script>
+export default {
+  name: 'CalendarTop',
+}
+</script>
+
 <style scoped>
 .heading {
   color: var(--yellow);

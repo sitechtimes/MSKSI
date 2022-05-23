@@ -1,9 +1,13 @@
 <template>
-
+  <div>
+    <NavBar />
+    <CalendarTop />
+    <Footer />
+  </div>
 </template>
 
 <script>
 export default {
-layout: 'Resources'
+  layout: 'Resources',
 }
 </script>
