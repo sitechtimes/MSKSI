@@ -53,11 +53,8 @@
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
-html, body{
-    background-color : #333043;
-    
-}
-.Gallerytop {
+
+.GalleryTop {
   height: 140rem;
     background-color : #333043;
 }
