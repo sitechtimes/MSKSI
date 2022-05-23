@@ -1,4 +1,9 @@
 <template>
+<div>
+    <Navbar />
+    <ResourcesTop />
+    <Footer />
+</div>
 
 </template>
 

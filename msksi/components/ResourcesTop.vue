@@ -1,12 +1,15 @@
 <template>
-  <div>
-<Navbar />
 <div class="resourcestop">
     <h2 class="heading"> Resources</h2>
 </div>
-<Footer />
-  </div>
+    
 </template>
+
+<script>
+export default {
+  name: 'ResourcesTop',
+}
+</script>
 <style scoped>
 .resourcestop{
     background-color: var(--navyblue);

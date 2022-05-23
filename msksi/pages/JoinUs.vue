@@ -1,4 +1,11 @@
 <template>
+<div>
+<Navbar />
+<JoinUsTop />
+<JoinUsMid />
+<Footer />
+</div>
+
 
 </template>
 

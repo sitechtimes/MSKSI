@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <Navbar />
-    <div class="joinustop">
+        <div class="joinustop">
       <h2 class="heading">Join Us Today!</h2>
       <h3 class="subheading subc">Sub Comittee</h3>
       <ul id="subc">
@@ -15,31 +13,10 @@
       </ul>
       <form
         action="https://docs.google.com/forms/d/e/1FAIpQLSe2NJzLuFUyTc_8Jcmn4DhyH5qfBWbKtwRjYrSzCFyERI8r1Q/viewform"
-        target="_blank"
-      >
+        target="_blank">
         <button class="button pink">Join Us!</button>
       </form>
     </div>
-    <div class="joinusmid">
-      <h3 class="subheading wbsm">Website & Social Media Manager</h3>
-      <ul id="wbsm">
-        <li class="text">Sign in-Attendance Assist</li>
-        <li class="text">Session Feedback/Tracking and follow up</li>
-        <li class="text">
-          Keeping the attendance sign in for the meetings (in chat)
-        </li>
-        <li class="text">Transformation Tables</li>
-        <li class="text">Managing website & calendar</li>
-      </ul>
-      <form
-        target="_blank"
-        action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform"
-      >
-        <button class="button yellow">Join Us!</button>
-      </form>
-    </div>
-    <Footer />
-  </div>
 </template>
 <style scoped>
 .button {
@@ -60,6 +37,7 @@
 .button:active {
   animation: press 0.2s 1 linear;
 }
+
 @keyframes press {
   0% {
     transform: scale(1);
@@ -71,16 +49,13 @@
     transform: scale(1);
   }
 }
+
 .pink {
   background-color: var(--darkpink);
   color: white;
   filter: drop-shadow(3px 4px 3px black);
 }
-.yellow {
-  color: var(--navyblue);
-  background-color: var(--yellow);
-  filter: drop-shadow(5px 5px 4px grey);
-}
+
 #subc {
   list-style-type: circle;
   color: white;
@@ -111,22 +86,8 @@
   background-color: white;
   margin-top: 20rem;
 }
-.wbsm {
-  font-size: var(--h2);
-  color: rgba(220, 53, 92, 1);
-}
-#wbsm {
-  list-style-type: circle;
-  color: var(--navyblue);
-  margin-top: 2rem;
-}
-.wbsmr {
-  color: var(--darkpink);
-}
+
 @media only screen and (max-width: 1500px) {
-  .joinusmid {
-    height: 66rem;
-  }
   .joinustop {
     height: 85rem;
   }
@@ -148,7 +109,6 @@
     margin-left: 12rem;
     margin-top: 0.5rem;
   }
-
   .subheading {
     margin-left: 6rem;
   }
@@ -158,19 +118,10 @@
   .joinusmid {
     height: 75rem;
   }
-  .wbsm {
-    margin-top: 0;
-  }
 
-  .joinusmid {
-    margin-top: 10rem;
-  }
 }
 @media only screen and (max-width: 810px) {
   .joinustop {
-    height: 95rem;
-  }
-  .joinusmid {
     height: 95rem;
   }
   .text {
@@ -183,12 +134,7 @@
     margin-left: 4rem;
     margin-top: 2rem;
   }
-  .wbsm {
-    font-size: var(--h3);
-    margin-left: 8rem;
-    margin-top: 0rem;
-    margin-left: 4rem;
-  }
+
   .heading {
     font-size: var(--h3);
     margin-top: 0;
@@ -209,3 +155,11 @@
   }
 }
 </style>
+<script>
+export default {
+  name: 'JoinUsTop',
+  data: {},
+  methods: {},
+}
+
+</script>

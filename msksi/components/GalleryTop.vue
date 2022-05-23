@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <Navbar />
-    <div class="Gallerytop">
-      <h2 class="heading">Photo <span class="gall">Gallery</span></h2>
+<div class="GalleryTop">
+    <h2 class="heading">Photo <span class="gall">Gallery</span></h2>
       <div class="polaroids">
         <div class="polaroid">
           <div id="picture"></div>
@@ -49,13 +47,20 @@
             >#MSKSI Miscellaneous</a
           >
         </div>
-      </div>
-    </div>
-    <Footer />
-  </div>
+        </div>
+</div>
 </template>
+
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+html, body{
+    background-color : #333043;
+    
+}
+.Gallerytop {
+  height: 140rem;
+    background-color : #333043;
+}
 .gall {
   color: var(--darkpink);
   font-size: var(--h1);
@@ -99,10 +104,6 @@
   height: 42rem;
   background-color: white;
 }
-.Gallerytop {
-  height: 140rem;
-  background-color: var(--navyblue);
-}
 @media only screen and (max-width: 1500px) {
   .Gallerytop {
     height: 135rem;
@@ -143,3 +144,9 @@
   }
 }
 </style>
+
+<script>
+export default {
+  name: 'GalleryTop',
+}
+</script>
