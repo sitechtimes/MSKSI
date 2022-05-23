@@ -13,7 +13,11 @@
         alt=""
       />
       <div id="img-holder">
-        <img id="commspot-img" src="" alt="" />
+        <img
+          id="commspot-img"
+          src="https://cdn.britannica.com/96/180396-138-CA8FCDFD/chipmunks-Siberian-seeds.jpg?w=800&h=450&c=crop"
+          alt=""
+        />
       </div>
     </div>
     <div class="text-holder">
@@ -26,11 +30,17 @@
 <script>
 export default {
   name: 'CommSpot',
-  methods: {
-    async asyncData({ $content, params }) {
-      const post = await $content('comm-spot', params.slug).fetch()
-      return { post }
-    },
+  data() {
+    return {
+      post: {},
+    }
+  },
+  methods: {},
+  async fetch({ $content, params }) {
+    console.log('Slug: ' + params.slug)
+    const post = await $content('comm-spot', params.slug).fetch()
+    console.log('Fetched data')
+    return { post }
   },
 }
 </script>
@@ -58,18 +68,19 @@ export default {
 }
 
 #img-holder {
-  border: solid 2px red;
   width: 40rem;
   height: 40rem;
   border-radius: 50%;
   position: absolute;
   bottom: 0%;
   right: 0%;
+  overflow: hidden;
 }
 
 #commspot-img {
-  height: auto;
-  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  margin-left: -50%;
 }
 
 .text-holder {
