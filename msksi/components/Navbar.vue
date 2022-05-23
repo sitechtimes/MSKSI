@@ -18,7 +18,6 @@ import Menu from './Menu.vue'
 export default {
   components: { Menu },
   name: 'Navbar',
-  data: {},
   methods: {},
 }
 </script>

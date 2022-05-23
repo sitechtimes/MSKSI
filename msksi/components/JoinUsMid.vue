@@ -21,7 +21,6 @@
 <script>
 export default {
   name: 'JoinUsMid',
-  data: {},
   methods: {},
 }
 

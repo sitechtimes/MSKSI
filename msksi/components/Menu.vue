@@ -36,7 +36,6 @@
 <script>
 export default {
   name: 'Menu',
-  data: {},
   methods: {},
 }
 </script>

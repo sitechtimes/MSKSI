@@ -45,7 +45,6 @@
 <script>
 export default {
   name: 'AboutUsMid',
-  data: {},
   methods: {},
 }
 </script>
