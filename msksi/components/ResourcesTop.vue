@@ -3,6 +3,7 @@
     <h2 class="heading">Resources</h2>
   </div>
 </template>
+
 <script>
 export default {
   name: 'ResourcesTop',

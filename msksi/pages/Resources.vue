@@ -1,7 +1,7 @@
 <template>
   <div>
-    <NavBar />
-    <CalendarTop />
+    <Navbar />
+    <ResourcesTop />
     <Footer />
   </div>
 </template>
