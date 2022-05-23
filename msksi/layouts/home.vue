@@ -15,6 +15,9 @@
     :image="post.image">
     </MonthPost>
 </div>
+<div class="upcomingevents">
+
+</div>
 <Footer />
   </div>
 </template>
@@ -30,10 +33,14 @@ export default {
   data(){
     return {
       posts: [],
+      events: [],
     }
   },
   async fetch(){
     this.posts = await this.$content(`monthposts`).limit(1).fetch()
+  },
+  async fetch(){
+    this.events = await this.$content(`eventpopups`).limit(3).fetch()
   }
 }
 </script>
@@ -67,14 +74,7 @@ padding-top: 30rem;
   height: 100rem;
   background-color: var(--navyblue);
 }
-.month {
-  font-size: var(--h1);
-  color: var(--yellow);
-}
-.monthtitle{
-  font-size: var(--h2);
-  color: var(--darkpink);
-}
+
 @media only screen and (max-width: 810px){
   .hometop{
     height: auto;

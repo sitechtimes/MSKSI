@@ -9,12 +9,21 @@
 
 <script>
 export default {
-    name: `PopUp`,
+    name: `EventPopUp`,
 }
 </script>
 
 <style scoped>
 .previewcard{
     height: 30rem;
+}
+.eventname{
+    font-size: var(--h3);
+}
+.eventmonth {
+    font-size: var(--h3);
+}
+.eventnumber{
+    font-size: var(--h2);
 }
 </style>
