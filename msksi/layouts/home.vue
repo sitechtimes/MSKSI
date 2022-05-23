@@ -31,12 +31,16 @@
           alt=""
         />
         <div id="img-holder">
-          <img id="commspot-img" src="" alt="" />
+          <img
+            id="commspot-img"
+            src="https://cdn.britannica.com/96/180396-138-CA8FCDFD/chipmunks-Siberian-seeds.jpg?w=800&h=450&c=crop"
+            alt=""
+          />
         </div>
       </div>
       <div class="text-holder">
         <h2 class="heading commspot">Community Spotlight</h2>
-        <nuxt-content :document="post" />
+        <nuxt-content :document="page" />
       </div>
     </div>
     <Footer />
@@ -44,15 +48,12 @@
 </template>
 
 <script>
+import gsap from 'gsap'
 export default {
   async asyncData({ $content, params }) {
-    const post = await $content('comm-spot', params.slug)
-      .sortBy('title', 'desc')
-      .limit(1)
-      .fetch()
-    console.log('POST:')
-    console.log(post)
-    return { post }
+    const page = await $content('comm-spot', params.slug).fetch()
+
+    return { page }
   },
 }
 </script>
@@ -136,18 +137,19 @@ export default {
 }
 
 #img-holder {
-  border: solid 2px red;
   width: 40rem;
   height: 40rem;
   border-radius: 50%;
   position: absolute;
   bottom: 0%;
   right: 0%;
+  overflow: hidden;
 }
 
 #commspot-img {
-  height: auto;
-  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  margin-left: -50%;
 }
 
 .text-holder {
