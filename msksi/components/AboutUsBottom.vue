@@ -18,7 +18,6 @@
 <script>
 export default {
   name: 'AboutUsBottom',
-  data: {},
   methods: {},
 }
 </script>
