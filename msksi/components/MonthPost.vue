@@ -30,6 +30,7 @@ h2 {
     color: var(--yellow);
     text-align: center;
     font-family: 'Sora', sans-serif;
+    padding-top: 8rem;
 }
 h3 {
     font-size: var(--h2);
@@ -38,14 +39,15 @@ h3 {
     font-family: 'Sora', sans-serif;
 }
 p {
-    font-size: var(--h4);
-    margin: 2rem 4rem 2rem 4rem;
+    font-size: 3rem;
+    margin: 1rem 4rem 2rem 4rem;
     font-family: 'Be Vietnam Pro', sans-serif;
     color: var(--white);
 }
 img {
     height: 40rem;
     margin-right: 5rem;
+    padding-top: 2rem;
 }
 .postcontent {
     display: flex;
