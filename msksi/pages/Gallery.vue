@@ -5,5 +5,8 @@
 </template>
 
 <script>
-export default {}
+import GalleryTop from '~/components/GalleryTop.vue'
+export default {
+  components: { GalleryTop },
+}
 </script>

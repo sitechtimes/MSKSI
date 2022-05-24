@@ -6,5 +6,9 @@
 </template>
 
 <script>
-export default {}
+import JoinUsTop from '~/components/JoinUsTop.vue'
+import JoinUsMid from '~/components/JoinUsMid.vue'
+export default {
+  components: { JoinUsTop, JoinUsMid },
+}
 </script>

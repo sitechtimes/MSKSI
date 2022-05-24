@@ -5,5 +5,8 @@
 </template>
 
 <script>
-export default {}
+import ResourcesTop from '~/components/ResourcesTop.vue'
+export default {
+  components: { ResourcesTop },
+}
 </script>
