@@ -1,10 +1,13 @@
 <template>
-  <Home />
+  <div>
+    <Navbar />
+    <CommSpot />
+    <Footer />
+  </div>
 </template>
 
 <script>
 export default {
-  layout: 'home',
   name: 'home',
 }
 </script>
