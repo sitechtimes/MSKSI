@@ -18,12 +18,7 @@ import Menu from './Menu.vue'
 export default {
   components: { Menu },
   name: 'Navbar',
-  data: {},
-  methods: {
-    toggleMenu() {
-      this.$refs.menuBtn.innerHTML = 'Hello'
-    },
-  },
+  methods: {},
 }
 </script>
 

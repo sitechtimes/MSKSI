@@ -1,13 +1,17 @@
 <template>
   <div>
     <Navbar />
+    <HomeTop />
     <CommSpot />
     <Footer />
   </div>
 </template>
 
 <script>
+import HomeTop from '~/components/HomeTop.vue'
+
 export default {
-  name: 'Home',
+  components: { HomeTop },
+  name: 'home',
 }
 </script>

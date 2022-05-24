@@ -1,35 +1,33 @@
 <template>
   <div class="menu">
-    <div class="menuBtn" @click="toggleMenu">
-      <button class="menuIcon">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </button>
-    </div>
-    <div class="linkContainer">
-      <ul class="mobileNavLinks">
+    <input type="checkbox" id="active" />
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+      <ul class="link-container">
         <li class="link">
-          <router-link class="menuRouter" to="/Home"> Home </router-link>
+          <router-link class="menu-router" to="/Home"> Home </router-link>
         </li>
         <li class="link">
-          <router-link class="menuRouter" to="/AboutUs"> About Us </router-link>
+          <router-link class="menu-router" to="/AboutUs">
+            About Us
+          </router-link>
         </li>
         <li class="link">
-          <router-link class="menuRouter" to="/Calendar">
+          <router-link class="menu-router" to="/Calendar">
             Calendar
           </router-link>
         </li>
         <li class="link">
-          <router-link class="menuRouter" to="/Gallery"> Gallery </router-link>
+          <router-link class="menu-router" to="/Gallery"> Gallery </router-link>
         </li>
         <li class="link">
-          <router-link class="menuRouter" to="/Resources">
+          <router-link class="menu-router" to="/Resources">
             Resources
           </router-link>
         </li>
         <li class="link">
-          <router-link class="menuRouter" to="/JoinUs"> Join Us </router-link>
+          <router-link class="menu-router" to="/JoinUs"> Join Us </router-link>
         </li>
       </ul>
     </div>
@@ -38,11 +36,6 @@
 <script>
 export default {
   name: 'Menu',
-  data: {},
-  methods: {
-    toggleMenu() {
-      this.isNotVisible = !this.isNotVisible
-    },
-  },
+  methods: {},
 }
 </script>

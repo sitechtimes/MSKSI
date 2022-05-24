@@ -1,10 +1,18 @@
 <template>
   <div class="homespotlight">
+    <<<<<<< HEAD
     <router-link class="navRouter routermore" to="/AboutUs">
       <span class="arrow">></span>
       Read More
     </router-link>
     <div class="readmore"></div>
+    =======
+    <router-link class="navRouter CSroutermore" to="/AboutUs">
+      <span class="CSarrow">></span>
+      Read More
+    </router-link>
+    <div class="CSreadmore"></div>
+    >>>>>>> 2d9e879154b6fff5a988ce740aa4d17afec1e158
 
     <div class="spotlight-images">
       <img
@@ -12,40 +20,51 @@
         src="https://www.yosemitelakespark.org/wp-content/uploads/2021/02/ylp-spotlight.png"
         alt=""
       />
-      <div id="img-holder">
-        <img
-          id="commspot-img"
-          src="https://cdn.britannica.com/96/180396-138-CA8FCDFD/chipmunks-Siberian-seeds.jpg?w=800&h=450&c=crop"
-          alt=""
-        />
+      <div id="CSimg-holder">
+        <img id="CSimg" :src="post.img" alt="" />
       </div>
     </div>
-    <div class="text-holder">
+    <div class="CStext-holder">
       <h2 class="heading commspot">Community Spotlight</h2>
       <nuxt-content :document="post" />
     </div>
   </div>
 </template>
 
-<script>
+<script type="module">
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 export default {
   name: 'CommSpot',
   data() {
     return {
-      post: {},
+      post: 'Loading',
     }
   },
-  methods: {},
-  async fetch({ $content, params }) {
-    console.log('Slug: ' + params.slug)
-    const post = await $content('comm-spot', params.slug).fetch()
-    console.log('Fetched data')
-    return { post }
+  async fetch() {
+    let posts = await this.$content('comm-spot').only(['slug']).fetch()
+    let post = await this.$content(
+      'comm-spot',
+      posts[posts.length - 1].slug
+    ).fetch()
+    this.post = post
+  },
+
+  scrollFade() {
+    const fadeTL = gsap.timeline({
+      delay: 0.2,
+    })
+    fadeTL.from('.commspot', {
+      opacity: 0,
+      duration: 0.5,
+      ease: 'ease-out',
+    })
   },
 }
 </script>
 
-<style scoped>
+<style>
 .homespotlight {
   height: 100rem;
   background-color: var(--white);
@@ -67,7 +86,7 @@ export default {
   filter: saturate(80%);
 }
 
-#img-holder {
+#CSimg-holder {
   width: 40rem;
   height: 40rem;
   border-radius: 50%;
@@ -77,13 +96,13 @@ export default {
   overflow: hidden;
 }
 
-#commspot-img {
+#CSimg {
   object-fit: cover;
   object-position: top;
   margin-left: -50%;
 }
 
-.text-holder {
+.CStext-holder {
   position: relative;
   height: 100%;
   text-align: left;
@@ -112,7 +131,7 @@ export default {
   line-height: 5rem;
 }
 
-.readmore {
+.CSreadmore {
   height: 125rem;
   width: 125rem;
   background-color: var(--tpnavyblue);
@@ -124,12 +143,12 @@ export default {
   z-index: 10;
 }
 
-.routermore:hover + .readmore {
+.CSroutermore:hover + .CSreadmore {
   background-color: var(--navyblue);
 }
 
-.routermore {
-  font-size: var(--h3);
+.CSroutermore {
+  font-size: var(--h4);
   color: var(--yellow);
   font-family: 'ABeeZee', sans-serif;
   font-weight: bold;
@@ -140,16 +159,16 @@ export default {
   transition: all 0.2s;
 }
 
-.routermore:hover {
+.CSroutermore:hover {
   color: var(--darkyellow);
   text-decoration: underline;
   text-decoration-thickness: 0.35rem;
 }
 
-.arrow {
+.CSarrow {
   bottom: 25rem;
   right: 10rem;
-  font-size: var(--h2);
+  font-size: var(--h3);
   display: block;
   text-align: center;
 }
