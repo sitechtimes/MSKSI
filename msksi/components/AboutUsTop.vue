@@ -55,14 +55,17 @@ export default {
   }
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 510px) {
   .AboutUsTop {
-    height: 70rem;
-    z-index: 1;
+    height: 95rem;
   }
-  .h {
+  h2 {
+    font-size: var(--h3);
     margin-top: 0;
     padding-top: 0;
+  }
+  .mission {
+    font-size: var(--h3);
   }
   .heading {
     margin-left: 8rem;
