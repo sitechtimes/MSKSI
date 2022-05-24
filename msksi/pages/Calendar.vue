@@ -1,13 +1,12 @@
 <template>
   <div>
-    <Navbar />
     <CalendarTop />
-    <Footer />
   </div>
 </template>
 
 <script>
+import CalendarTop from '~/components/CalendarTop.vue'
 export default {
-  layout: 'Calendar',
+  components: { CalendarTop },
 }
 </script>

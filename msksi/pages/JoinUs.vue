@@ -1,16 +1,10 @@
 <template>
-<div>
-<Navbar />
-<JoinUsTop />
-<JoinUsMid />
-<Footer />
-</div>
-
-
+  <div>
+    <JoinUsTop />
+    <JoinUsMid />
+  </div>
 </template>
 
 <script>
-export default {
-layout: 'JoinUs'
-}
+export default {}
 </script>

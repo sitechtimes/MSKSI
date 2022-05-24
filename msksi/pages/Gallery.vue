@@ -1,13 +1,9 @@
 <template>
-<div>
-<Navbar />
-<GalleryTop/>
-</div>
-
+  <div>
+    <GalleryTop />
+  </div>
 </template>
 
 <script>
-export default {
-layout: 'Gallery'
-}
+export default {}
 </script>

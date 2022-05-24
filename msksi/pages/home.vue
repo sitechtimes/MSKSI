@@ -1,15 +1,13 @@
 <template>
-<div>
-  <Navbar/>
-  <CommSpot/>
-  <Footer/>
-</div>
+  <div>
+    <CommSpot />
+  </div>
 </template>
 
 <script>
-import CommSpot from '~/components/CommSpot.vue';
+import CommSpot from '~/components/CommSpot.vue'
 export default {
-    name: "home",
-    components: { CommSpot }
+  name: 'home',
+  components: { CommSpot },
 }
 </script>
