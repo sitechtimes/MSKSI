@@ -17,6 +17,9 @@
     margin-bottom: 0;
   }
 }
+.icon{
+      cursor: pointer;
+}
 </style>
 
 <script>

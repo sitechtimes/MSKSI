@@ -8,50 +8,15 @@ body,
   margin: 0;
   font-size: 62.5%;
 }
-@media only screen and (max-width: 810px) {
-  .nav {
-    display: none;
-  }
-  .menu {
-    display: initial;
-  }
-}
-@media only screen and (min-width: 810px) {
-  .menu {
-    display: none;
-  }
-  .nav {
-    display: initial;
-  }
-}
-.menuIcon {
-  background-color: transparent;
-  border-color: transparent;
-}
-@media only screen and (max-width: 810px) {
-  .contactus {
-    font-size: var(--h4);
-  }
-  .contacts {
-    color: var(--white);
+@media only screen and (max-width: 1500px) {
+  .heading {
+    font-size: var(--h2);
+    font-family: 'Black Han Sans';
     margin-top: 2rem;
+    margin-left: 8rem;
     font-weight: lighter;
-    font-size: var(--h5);
-    font-family: 'ABeeZee', sans-serif;
-  }
-  #footer {
-    width: 100%;
-    padding-bottom: 2rem;
-  }
-  .buttons {
-    margin-top: 3rem;
-  }
-  .icon {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    color: var(--yellow);
+    padding-top: 12rem;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -82,10 +47,57 @@ body,
     margin-right: 1rem;
   }
 }
+@media only screen and (max-width: 1032px) {
+  .nav {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+@media only screen and (min-width: 1032px) {
+  .menu {
+    display: none;
+  }
+  .nav {
+    display: initial;
+  }
+}
+.menuIcon {
+  background-color: transparent;
+  border-color: transparent;
+}
+@media only screen and (max-width: 1032px) {
+  .contactus {
+    font-size: var(--h4);
+  }
+  .contacts {
+    color: var(--white);
+    margin-top: 2rem;
+    font-weight: lighter;
+    font-size: var(--h5);
+    font-family: 'ABeeZee', sans-serif;
+  }
+  #footer {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .buttons {
+    margin-top: 3rem;
+  }
+  .icon {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 .heading {
-  font-size: var(--h2);
+  font-size: var(--h1);
   font-family: 'Black Han Sans';
-  margin-left: 6rem;
+  margin-top: 2rem;
+  margin-left: 11rem;
   font-weight: lighter;
   color: var(--yellow);
   padding-top: 12rem;
