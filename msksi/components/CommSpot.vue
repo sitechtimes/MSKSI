@@ -1,18 +1,16 @@
 <template>
   <div class="homespotlight">
-    <<<<<<< HEAD
     <router-link class="navRouter routermore" to="/AboutUs">
       <span class="arrow">></span>
       Read More
     </router-link>
     <div class="readmore"></div>
-    =======
+
     <router-link class="navRouter CSroutermore" to="/AboutUs">
       <span class="CSarrow">></span>
       Read More
     </router-link>
     <div class="CSreadmore"></div>
-    >>>>>>> 2d9e879154b6fff5a988ce740aa4d17afec1e158
 
     <div class="spotlight-images">
       <img
@@ -31,10 +29,7 @@
   </div>
 </template>
 
-<script type="module">
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-gsap.registerPlugin(ScrollTrigger)
+<script>
 export default {
   name: 'CommSpot',
   data() {
@@ -50,16 +45,26 @@ export default {
     ).fetch()
     this.post = post
   },
-
-  scrollFade() {
-    const fadeTL = gsap.timeline({
-      delay: 0.2,
-    })
-    fadeTL.from('.commspot', {
-      opacity: 0,
-      duration: 0.5,
-      ease: 'ease-out',
-    })
+  mounted() {
+    this.scrollFade()
+  },
+  methods: {
+    scrollFade() {
+      const fadeTL = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '.commspot',
+          start: 'top bottom',
+          end: 'top 100 px',
+          scrub: false,
+        },
+        delay: 0.2,
+      })
+      fadeTL.from('.homespotlight', {
+        opacity: 0,
+        duration: 0.8,
+        ease: 'ease-out',
+      })
+    },
   },
 }
 </script>
