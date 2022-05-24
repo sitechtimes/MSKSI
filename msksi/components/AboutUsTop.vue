@@ -1,7 +1,7 @@
 <template>
   <div class="AboutUsTop">
     <h2 class="heading">
-      <span class="h our">Our</span> <span class="h mission">Mission</span>
+   Our <span class="h mission">Mission</span>
     </h2>
     <h3 class="text">
       My Sister’s Keeper Staten Island (MSKSI) founded in November 2018, creates
@@ -24,6 +24,13 @@ export default {
 }
 </script>
 <style scoped>
+.mission{
+  color: var(--darkpink);
+  font-size: var(--h2);
+}
+.h2{
+  font-size: var(--h2);
+}
 .AboutUsTop {
   background-color: var(--navyblue);
   height: 100rem;
