@@ -39,32 +39,7 @@ body,
   background-color: transparent;
   border-color: transparent;
 }
-@media only screen and (max-width: 1032px) {
-  .contactus {
-    font-size: var(--h4);
-  }
-  .contacts {
-    color: var(--white);
-    margin-top: 2rem;
-    font-weight: lighter;
-    font-size: var(--h5);
-    font-family: 'ABeeZee', sans-serif;
-  }
-  #footer {
-    width: 100%;
-    padding-bottom: 2rem;
-  }
-  .buttons {
-    margin-top: 3rem;
-  }
-  .icon {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
+
 .heading {
   font-size: var(--h1);
   font-family: 'Black Han Sans';
@@ -73,33 +48,4 @@ body,
   font-weight: lighter;
   color: var(--yellow);
   padding-top: 12rem;
-}
-
-@media only screen and (max-width: 1024px) {
-  .contactus {
-    font-size: var(--h4);
-    margin-top: 0;
-  }
-  .contacts {
-    color: var(--white);
-    margin-top: 1rem;
-    font-weight: lighter;
-    font-size: var(--h5);
-    font-family: 'ABeeZee', sans-serif;
-  }
-  #footer {
-    bottom: 0;
-    width: 100%;
-    padding-bottom: 2rem;
-  }
-  .buttons {
-    margin-top: 2rem;
-  }
-  .icon {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
 }

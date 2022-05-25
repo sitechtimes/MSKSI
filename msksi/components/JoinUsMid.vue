@@ -170,7 +170,7 @@ export default {
   #wbsm {
     font-size: var(--h3);
     margin-right: 0.5rem;
-    margin-left: -1.5rem;
+    margin-left: -1.7rem;
     margin-top: 0rem;
   }
 

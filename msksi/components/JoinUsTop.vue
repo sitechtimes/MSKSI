@@ -1,7 +1,7 @@
 <template>
         <div class="joinustop">
       <h2 class="heading">Join Us Today!</h2>
-      <h3 class="subheading subc">Sub Comittee</h3>
+      <h3 class="subheading subc">Sub Committee</h3>
       <ul id="subc">
         <li class="text">Sign in-Attendance Assist</li>
         <li class="text">Session Feedback/Tracking and follow up</li>
@@ -168,7 +168,7 @@
   }
   #subc {
     font-size: var(--h3);
-    margin-left: -1.5rem;
+    margin-left: -1.7rem;
     margin-top: 0rem;
   }
 
@@ -177,7 +177,7 @@
 margin-left: 4rem;
   }
   .button {
-    margin-top: 5rem;
+    margin-top: 6rem;
     width: 16rem;
     height: 4.5rem;
     font-size: var(--h5);
@@ -185,7 +185,8 @@ margin-left: 4rem;
     border-radius: 20rem;
     font-family: 'Black Han Sans';
     border: none;
-    margin: 4rem;
+margin-left: auto;
+margin-right: auto;
   }
   .subheading {
     font-size: var(--subheadingjum);
