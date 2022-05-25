@@ -54,19 +54,24 @@ export default {
           end: 'top 100 px',
           scrub: false,
         },
-        delay: 0.2,
       })
-      fadeTL.from('.homespotlight', {
-        opacity: 0,
-        duration: 0.8,
-        ease: 'ease-out',
-      })
-      fadeTL.from('#spotlight', {
+
+      fadeTL.from('#spotlight ', {
         rotate: -45,
         opacity: 0,
         duration: 0.8,
         ease: 'ease-out',
       })
+      fadeTL.from(
+        '#CSimg-holder, .CStext-holder',
+        {
+          opacity: 0,
+          duration: 0.8,
+          x: 80,
+          ease: 'ease-out',
+        },
+        '<'
+      )
     },
   },
 }
@@ -208,34 +213,57 @@ export default {
   .homespotlight {
     flex-direction: column;
     align-content: center;
-    height: 120rem;
+    height: 130rem;
+  }
+
+  #spotlight {
+    width: 65rem;
+  }
+
+  #CSimg-holder {
+    width: 33rem;
+    height: 33rem;
+  }
+
+  .CStext-holder {
+    margin-top: -15rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .spotlight-images {
-    margin-left: 50vw;
+    height: 64rem;
+    width: 57rem;
+    margin-left: 41vw;
     transform: translateX(-50%);
   }
 
   .CSreadmore {
-    width: 4rem;
+    width: 30rem;
     clip-path: none;
-    height: 3rem;
+    height: 6rem;
+    margin-bottom: 1.3rem;
+    border-radius: 2rem;
   }
 
+  .CSreadmore,
   .CSroutermore {
+    margin-left: 50vw;
+    transform: translateX(-50%);
     right: auto;
-    bottom: 0;
-    margin-left: 50vw;
-    transform: translateX(-50%);
+    bottom: 4rem;
   }
 
-  .spotlight-images .CStext-holder .CSreadmore .CSroutermore {
-    margin-left: 50vw;
-    transform: translateX(-50%);
+  .CSarrow {
+    position: absolute;
+    bottom: -1rem;
+    opacity: 0;
+    transform: translateX(500%);
+    transition: all 0.2s;
   }
 
-  .CSbutton-holder {
-    position: unset;
+  .CSroutermore:hover > .CSarrow {
+    opacity: 1;
   }
 }
 </style>
