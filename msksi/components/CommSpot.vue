@@ -1,16 +1,12 @@
 <template>
   <div class="homespotlight">
-    <router-link class="navRouter routermore" to="/AboutUs">
-      <span class="arrow">></span>
-      Read More
-    </router-link>
-    <div class="readmore"></div>
-
-    <router-link class="navRouter CSroutermore" to="/AboutUs">
-      <span class="CSarrow">></span>
-      Read More
-    </router-link>
-    <div class="CSreadmore"></div>
+    <div class="CSbutton-holder">
+      <router-link class="navRouter CSroutermore" to="/AboutUs">
+        <span class="CSarrow">></span>
+        Read More
+      </router-link>
+      <div class="CSreadmore"></div>
+    </div>
 
     <div class="spotlight-images">
       <img
@@ -22,6 +18,7 @@
         <img id="CSimg" :src="post.img" alt="" />
       </div>
     </div>
+
     <div class="CStext-holder">
       <h2 class="heading commspot">Community Spotlight</h2>
       <nuxt-content :document="post" />
@@ -64,6 +61,12 @@ export default {
         duration: 0.8,
         ease: 'ease-out',
       })
+      fadeTL.from('#spotlight', {
+        rotate: -45,
+        opacity: 0,
+        duration: 0.8,
+        ease: 'ease-out',
+      })
     },
   },
 }
@@ -89,6 +92,7 @@ export default {
   margin-left: 2rem;
   margin-top: -0.25rem;
   filter: saturate(80%);
+  transform-origin: 0% 0%;
 }
 
 #CSimg-holder {
@@ -99,12 +103,12 @@ export default {
   bottom: 0%;
   right: 0%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 #CSimg {
   object-fit: cover;
-  object-position: top;
-  margin-left: -50%;
 }
 
 .CStext-holder {
@@ -132,7 +136,7 @@ export default {
   color: var(--navyblue);
   font-family: 'ABeeZee', sans-serif;
   margin-top: 3rem;
-  margin-right: 25rem;
+  margin-right: 28rem;
   line-height: 5rem;
 }
 
@@ -176,5 +180,62 @@ export default {
   font-size: var(--h3);
   display: block;
   text-align: center;
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 1560px) {
+  #spotlight {
+    width: 60rem;
+  }
+
+  #CSimg-holder {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .spotlight-images {
+    height: 55rem;
+    width: 50rem;
+  }
+
+  .nuxt-content {
+    margin-right: 32rem;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  .homespotlight {
+    flex-direction: column;
+    align-content: center;
+    height: 120rem;
+  }
+
+  .spotlight-images {
+    margin-left: 50vw;
+    transform: translateX(-50%);
+  }
+
+  .CSreadmore {
+    width: 4rem;
+    clip-path: none;
+    height: 3rem;
+  }
+
+  .CSroutermore {
+    right: auto;
+    bottom: 0;
+    margin-left: 50vw;
+    transform: translateX(-50%);
+  }
+
+  .spotlight-images .CStext-holder .CSreadmore .CSroutermore {
+    margin-left: 50vw;
+    transform: translateX(-50%);
+  }
+
+  .CSbutton-holder {
+    position: unset;
+  }
 }
 </style>
