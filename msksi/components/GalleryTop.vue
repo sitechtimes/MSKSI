@@ -132,7 +132,7 @@
   }
   .heading {
     font-size: var(--h3);
-    margin-left: 3rem;
+    margin-left: 4rem;
     margin-top: 0rem;
   }
   .gall {

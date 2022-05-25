@@ -159,4 +159,34 @@ export default {
     font-size: var(--subheadingjum);
   }
 }
+@media only screen and (max-width: 510px){
+  .joinusmid {
+    height: 95rem;
+  }
+  .text {
+    margin-left: 8rem;
+    font-size: var(--h5);
+  }
+  #wbsm {
+    font-size: var(--h3);
+    margin-right: 0.5rem;
+    margin-left: -1.5rem;
+    margin-top: 0rem;
+  }
+
+  .button {
+    margin-top: 5rem;
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: lighter;
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+    margin: 4rem;
+  }
+  .subheading {
+    font-size: var(--subheadingjum);
+  }
+}
 </style>

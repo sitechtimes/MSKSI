@@ -89,7 +89,7 @@
 
 @media only screen and (max-width: 1500px) {
   .joinustop {
-    height: 85rem;
+    height: 100rem;
   }
   .text {
     font-size: var(--list);
@@ -122,7 +122,7 @@
 }
 @media only screen and (max-width: 810px) {
   .joinustop {
-    height: 95rem;
+    height: 100rem;
   }
   .text {
     margin-left: 8rem;
@@ -140,10 +140,10 @@
     margin-top: 0;
   }
   .button {
-    margin-top: 5rem;
+    margin-top: 7rem;
     width: 16rem;
     height: 4.5rem;
-    font-size: var(--h4);
+    font-size: var(--h5);
     font-weight: lighter;
     border-radius: 20rem;
     font-family: 'Black Han Sans';
@@ -152,6 +152,44 @@
   }
   .subheading {
     font-size: var(--subheadingjum);
+  }
+}
+@media only screen and (max-width: 510px) {
+  .joinustop {
+    height: 92rem;
+  }
+  .text {
+    margin-left: 8rem;
+    font-size: var(--h5);
+    padding:0;
+        margin-top: 0;
+            margin-bottom: 0;
+    
+  }
+  #subc {
+    font-size: var(--h3);
+    margin-left: -1.5rem;
+    margin-top: 0rem;
+  }
+
+  .heading {
+    font-size: var(--h3);
+margin-left: 4rem;
+  }
+  .button {
+    margin-top: 5rem;
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: lighter;
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+    margin: 4rem;
+  }
+  .subheading {
+    font-size: var(--subheadingjum);
+    margin-top: 0;
   }
 }
 </style>
