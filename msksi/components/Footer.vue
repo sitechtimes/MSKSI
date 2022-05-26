@@ -11,23 +11,50 @@
   </div>
 </template>
 <style scoped>
+#footer {
+  background-color: var(--navyblue);
+  text-align: center;
+  justify-content: center;
+  bottom: 0px;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.contacts {
+  color: var(--white);
+  margin-top: 2rem;
+  font-weight: lighter;
+  font-size: var(--h5);
+  font-family: 'ABeeZee', sans-serif;
+}
+.contactus {
+  color: var(--darkpink);
+  font-size: var(--h3);
+  font-family: 'Black Han Sans';
+  padding-top: 3.5rem;
+  font-weight: lighter;
+}
+.buttons {
+  margin-top: 3rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  width: 20%;
+}
+.icon {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 1rem;
+  background-color: var(--white);
+}
 @media only screen and (max-width: 1032px) {
-  .contactus {
-    font-size: var(--h4);
-  }
-  .contacts {
-    color: var(--white);
-    margin-top: 2rem;
-    font-weight: lighter;
-    font-size: var(--h5);
-    font-family: 'ABeeZee', sans-serif;
-  }
   #footer {
     width: 100%;
     padding-bottom: 2rem;
   }
   .buttons {
     margin-top: 3rem;
+    width: 50%;
   }
   .icon {
     height: 3rem;
@@ -37,18 +64,15 @@
     margin-right: 1rem;
   }
 }
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 510px) {
   #footer {
     height: 22rem;
     margin-bottom: 0;
   }
 }
-.icon{
-      cursor: pointer;
-      width: 2rem;
-      height: 2rem;
+.icon {
+  cursor: pointer;
 }
-
 </style>
 
 <script>
