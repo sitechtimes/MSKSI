@@ -49,9 +49,9 @@ export default {
     scrollFade() {
       const fadeTL = this.$gsap.timeline({
         scrollTrigger: {
-          trigger: '.commspot',
+          trigger: '#CSimg-holder',
           start: 'top bottom',
-          end: 'top 100 px',
+          end: 'top 100px',
           scrub: false,
         },
       })
@@ -67,7 +67,7 @@ export default {
         {
           opacity: 0,
           duration: 0.8,
-          x: 80,
+          y: 80,
           ease: 'ease-out',
         },
         '<'
@@ -123,7 +123,7 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-left: 5rem;
+  padding-left: 6rem;
   margin-top: -5rem;
 }
 .commspot {
@@ -212,8 +212,7 @@ export default {
 @media only screen and (max-width: 1320px) {
   .homespotlight {
     flex-direction: column;
-    align-content: center;
-    height: 130rem;
+    height: fit-content;
   }
 
   #spotlight {
@@ -226,9 +225,15 @@ export default {
   }
 
   .CStext-holder {
-    margin-top: -15rem;
-    margin-left: auto;
-    margin-right: auto;
+    width: 80vw;
+    justify-content: center;
+    padding: 10rem 0 18rem 0;
+    align-self: center;
+  }
+
+  .commspot,
+  .nuxt-content {
+    margin-right: 0;
   }
 
   .spotlight-images {
@@ -241,9 +246,14 @@ export default {
   .CSreadmore {
     width: 30rem;
     clip-path: none;
-    height: 6rem;
+    height: 7rem;
     margin-bottom: 1.3rem;
     border-radius: 2rem;
+    bottom: 4rem;
+  }
+
+  .CSroutermore {
+    bottom: 5rem;
   }
 
   .CSreadmore,
@@ -251,7 +261,6 @@ export default {
     margin-left: 50vw;
     transform: translateX(-50%);
     right: auto;
-    bottom: 4rem;
   }
 
   .CSarrow {
@@ -264,6 +273,57 @@ export default {
 
   .CSroutermore:hover > .CSarrow {
     opacity: 1;
+  }
+
+  .icon {
+    height: 0;
+    width: 0;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #spotlight {
+    width: 33rem;
+  }
+
+  #CSimg-holder {
+    width: 20rem;
+    height: 20rem;
+  }
+  .spotlight-images {
+    width: 31rem;
+    height: 34rem;
+  }
+
+  .CStext-holder {
+    padding: 8rem 0 15rem 0;
+  }
+
+  .commspot {
+    font-size: 4rem;
+  }
+
+  .nuxt-content {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
+  .CSroutermore {
+    font-size: 2.5rem;
+  }
+
+  .CSreadmore {
+    width: 22rem;
+    height: 6rem;
+  }
+
+  .CSarrow {
+    font-size: 2.5rem;
+    bottom: -0.2rem;
+    transform: translateX(12.4rem);
   }
 }
 </style>
