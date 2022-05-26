@@ -68,7 +68,7 @@ export default {
     font-size: var(--h3);
   }
   .heading {
-    margin-left: 5rem;
+    margin-left: 4.5rem;
     padding-top: 10.5rem;
   }
   .text {
