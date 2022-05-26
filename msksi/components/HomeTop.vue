@@ -15,6 +15,7 @@ export default {
 <style scoped>
 .homelogo {
   margin-top: 2rem;
+  font-weight: lighter;
 }
 .mysis {
   font-size: 13rem;

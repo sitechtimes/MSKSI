@@ -76,7 +76,9 @@ export default {
 }
 .wbsm {
   font-size: var(--h2);
+  margin-top: -4rem;
   color: rgba(220, 53, 92, 1);
+  padding-top: 0;
 }
 #wbsm {
   list-style-type: circle;
@@ -164,14 +166,14 @@ export default {
     height: 95rem;
   }
   .text {
-    margin-left: 8rem;
-    font-size: var(--h5);
+    margin-top: 0;
+    margin-bottom: 0;
+    
   }
   #wbsm {
-    font-size: var(--h3);
-    margin-right: 0.5rem;
-    margin-left: -1.7rem;
-    margin-top: 0rem;
+    margin-left: -1.8rem;
+    font-size: var(--h6);
+    width: 95vw;
   }
 
   .button {
