@@ -74,14 +74,6 @@
   color: var(--darkpink);
   text-decoration: underline;
 }
-
-.contactus {
-  color: var(--darkpink);
-  font-size: var(--h3);
-  font-family: 'Black Han Sans';
-  padding-top: 5rem;
-  font-weight: lighter;
-}
 .subheading {
   margin-left: 11rem;
   font-size: var(--h3);

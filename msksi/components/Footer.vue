@@ -26,6 +26,13 @@
   font-size: var(--h5);
   font-family: 'ABeeZee', sans-serif;
 }
+.contactus {
+  color: var(--darkpink);
+  font-size: var(--h3);
+  font-family: 'Black Han Sans';
+  padding-top: 3.5rem;
+  font-weight: lighter;
+}
 .buttons {
   margin-top: 3rem;
   display: flex;
