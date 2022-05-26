@@ -183,7 +183,10 @@ export default {
     border-radius: 20rem;
     font-family: 'Black Han Sans';
     border: none;
-    margin: 4rem;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+
   }
   .subheading {
     font-size: var(--subheadingjum);
