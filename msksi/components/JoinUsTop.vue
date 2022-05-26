@@ -94,8 +94,15 @@
   .text {
     font-size: var(--list);
   }
+  .heading{
+    margin-left: 6rem;
+  }
+  .subc{
+    margin-left: 6rem;
+  }
   .subheading {
     font-size: var(--subheadingju);
+        margin-left: 6rem;
   }
   .button {
     margin-top: 7.5rem;
@@ -108,12 +115,6 @@
     font-size: var(--h3);
     margin-left: 12rem;
     margin-top: 0.5rem;
-  }
-  .subheading {
-    margin-left: 6rem;
-  }
-  .joinustop {
-    height: 85rem;
   }
   .joinusmid {
     height: 75rem;
@@ -132,12 +133,16 @@
     color: var(--darkpink);
     font-size: var(--h3);
     margin-left: 4rem;
-    margin-top: 2rem;
-  }
+    margin-top: .2rem;
 
+  }
+#subc{
+  margin-top: .5rem;
+}
   .heading {
     font-size: var(--h3);
     margin-top: 0;
+    margin-left: 4rem;
   }
   .button {
     margin-top: 7rem;
@@ -159,17 +164,15 @@
     height: 92rem;
   }
   .text {
-    margin-left: 8rem;
-    font-size: var(--h5);
-    padding:0;
-        margin-top: 0;
-            margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     
   }
   #subc {
-    font-size: var(--h3);
-    margin-left: -1.7rem;
     margin-top: 0rem;
+    margin-left: -1.8rem;
+    font-size: var(--h6);
+    width: 95vw;
   }
 
   .heading {
