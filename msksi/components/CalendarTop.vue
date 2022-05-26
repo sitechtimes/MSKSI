@@ -21,6 +21,13 @@ export default {
 @media only screen and (max-width: 810px) {
   .heading {
     font-size: var(--h3);
+    margin-left: 4rem;
+  }
+}
+@media only screen and (max-width: 510px) {
+  .heading {
+    font-size: var(--h3);
+    margin-left: 4rem;
   }
 }
 </style>

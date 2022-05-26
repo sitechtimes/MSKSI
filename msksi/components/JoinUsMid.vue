@@ -70,7 +70,7 @@ export default {
   line-height: 6rem;
 }
 .joinusmid {
-  height: 100rem;
+  height: 75rem;
   background-color: white;
   margin-top: 20rem;
 }
