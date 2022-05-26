@@ -185,8 +185,9 @@ margin-left: 4rem;
     border-radius: 20rem;
     font-family: 'Black Han Sans';
     border: none;
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
   }
   .subheading {
     font-size: var(--subheadingjum);
