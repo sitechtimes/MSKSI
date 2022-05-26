@@ -1,5 +1,13 @@
 <template>
-    <div class="eventpreviews">
+    <div class="homeevents">
+      <h1 class="eventheader">Upcoming Events</h1>
+      <div class="eventpreviews">
+        <EventPopUp v-for="event in events"
+       :key="event.eventname"
+       :eventname="event.eventname"
+       :eventmonth="event.eventmonth"
+       :eventdate="event.eventdate"
+       /></div>
        
     </div>
 </template>
@@ -22,5 +30,19 @@ export default {
 </script>
 
 <style scoped>
-
+.homeevents {
+  height: 100rem;
+  background-color: var(--darkpink);
+  padding: 7rem;
+  }
+.eventheader {
+    font-size: var(--h1);
+    text-align: center;
+  }
+.eventpreviews{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
 </style>

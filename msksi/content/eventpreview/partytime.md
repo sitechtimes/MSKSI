@@ -1,5 +1,5 @@
 ---
-event: HUGE party
-eventmonth: August
+eventname: HUGE party
+eventmonth: July
 eventdate: 2
 ---
