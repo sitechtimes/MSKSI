@@ -68,10 +68,46 @@ export default {
     background-color: var(--navyblue);
     height: 100rem;
   }
+    .mysis {
+  margin-top: 2rem;
+  font-size: var(--h1);
+  font-weight: lighter;
+  text-align: right;
 }
-@media only screen and (max-width: 400px) {
+.keeper {
+  margin-top: 2rem;
+  font-size: var(--h1);
+  font-weight: lighter;
+  text-align: right;
+  margin-right: 6rem;
+
+}
+.si{
+  font-size: var(  --h3);
+
+}
+}
+@media only screen and (max-width: 510px) {
   .hometop {
-    height: 80rem;
+    height: 95rem;
   }
+  .mysis {
+  margin-top: 2rem;
+  font-size: var(--h2);
+  font-weight: lighter;
+  text-align: right;
+}
+.keeper {
+  margin-top: 2rem;
+  font-size: var(--h2);
+  font-weight: lighter;
+  text-align: right;
+  margin-right: 6rem;
+
+}
+.si{
+  font-size: var(  --subheadingjum);
+
+}
 }
 </style>
