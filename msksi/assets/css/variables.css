@@ -5,11 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
 
 :root {
-  --navyblue: #333043;
-  --yellow: #fde474;
+  --navyblue: #262433;
+  --yellow: #fcdc4d;
   --darkpink: #e9587a;
   --cerise: #dc355c;
   --white: #fff;
+  --tpnavyblue: #141127d7;
+  --darkyellow: #ddb500;
 
   --navbar-bg: var(--navyblue);
   --nav-text: var(--white);
@@ -20,8 +22,8 @@
 
   --h1: 7rem;
   --h2: 6rem;
-  --h3: 3.4rem;
-  --h4: 4rem;
+  --h3: 4.5rem;
+  --h4: 3.4rem;
   --h5: 2rem;
   --h6: 1.5rem;
   --smallText: 0.8rem;
@@ -58,7 +60,7 @@
   font-family: 'Black Han Sans';
   font-weight: lighter;
 }
-.router {
+.navRouter {
   color: var(--white);
   font-size: var(--h5);
   margin: 2rem;

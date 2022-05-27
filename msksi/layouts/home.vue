@@ -18,12 +18,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'HomeTop',
-}
-</script>
-
 <style scoped>
 .hometop {
   background-color: var(--navyblue);
@@ -74,7 +68,7 @@ export default {
 .si {
   font-family: 'ABeeZee', sans-serif;
   color: var(--yellow);
-  font-size: var(--h3);
+  font-size: var(--h2);
   width: 35rem;
   text-align: right;
   margin-top: 10rem;
@@ -90,4 +84,3 @@ export default {
   }
 } */ ;
 </style>
-
