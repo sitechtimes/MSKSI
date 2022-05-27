@@ -38,11 +38,14 @@ export default {
 .eventheader {
     font-size: var(--h1);
     text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    color: var(--white);
   }
 .eventpreviews{
   display: flex;
   text-align: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-top: 10rem;
   }
 </style>
