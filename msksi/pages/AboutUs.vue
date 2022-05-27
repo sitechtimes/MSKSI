@@ -1,15 +1,16 @@
 <template>
   <div>
-    <Navbar />
     <AboutUsTop />
     <AboutUsMid />
     <AboutUsBottom />
-    <Footer />
   </div>
 </template>
 
 <script>
+import AboutUsTop from '~/components/AboutUsTop.vue'
+import AboutUsMid from '~/components/AboutUsMid.vue'
+import AboutUsBottom from '~/components/AboutUsBottom.vue'
 export default {
-  layout: 'AboutUs',
+  components: { AboutUsTop, AboutUsMid, AboutUsBottom },
 }
 </script>

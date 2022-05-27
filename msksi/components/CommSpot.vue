@@ -7,7 +7,6 @@
       </router-link>
       <div class="CSreadmore"></div>
     </div>
-
     <div class="spotlight-images">
       <img
         id="spotlight"
@@ -22,6 +21,7 @@
     <div class="CStext-holder">
       <h2 class="heading commspot">Community Spotlight</h2>
       <nuxt-content :document="post" />
+
     </div>
   </div>
 </template>
@@ -101,6 +101,7 @@ export default {
 }
 
 #CSimg-holder {
+
   width: 40rem;
   height: 40rem;
   border-radius: 50%;
@@ -117,6 +118,7 @@ export default {
 }
 
 .CStext-holder {
+
   position: relative;
   height: 100%;
   text-align: left;
@@ -146,6 +148,7 @@ export default {
 }
 
 .CSreadmore {
+
   height: 125rem;
   width: 125rem;
   background-color: var(--tpnavyblue);
@@ -326,4 +329,5 @@ export default {
     transform: translateX(12.4rem);
   }
 }
+
 </style>

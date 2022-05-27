@@ -1,13 +1,12 @@
 <template>
-<div>
-<Navbar />
-<GalleryTop/>
-</div>
-
+  <div>
+    <GalleryTop />
+  </div>
 </template>
 
 <script>
+import GalleryTop from '~/components/GalleryTop.vue'
 export default {
-layout: 'Gallery'
+  components: { GalleryTop },
 }
 </script>

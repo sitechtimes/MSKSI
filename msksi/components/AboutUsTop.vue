@@ -1,8 +1,6 @@
 <template>
   <div class="AboutUsTop">
-    <h2 class="heading">
-      <span class="h our">Our</span> <span class="h mission">Mission</span>
-    </h2>
+    <h2 class="heading">Our <span class="h mission">Mission</span></h2>
     <h3 class="text">
       My Sister’s Keeper Staten Island (MSKSI) founded in November 2018, creates
       a support system to build a community for social, emotional, and academic
@@ -24,6 +22,13 @@ export default {
 }
 </script>
 <style scoped>
+.mission {
+  color: var(--darkpink);
+  font-size: var(--h2);
+}
+.h2 {
+  font-size: var(--h2);
+}
 .AboutUsTop {
   background-color: var(--navyblue);
   height: 100rem;
@@ -50,18 +55,20 @@ export default {
   }
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 510px) {
   .AboutUsTop {
     height: 95rem;
-    z-index: 1;
   }
-  .h {
+  h2 {
     font-size: var(--h3);
     margin-top: 0;
     padding-top: 0;
   }
+  .mission {
+    font-size: var(--h3);
+  }
   .heading {
-    margin-left: 3rem;
+    margin-left: 4.5rem;
     padding-top: 10.5rem;
   }
   .text {

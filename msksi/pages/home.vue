@@ -8,10 +8,11 @@
 </template>
 
 <script>
-import HomeTop from '~/components/HomeTop.vue'
 
+import CommSpot from '~/components/CommSpot.vue'
+import HomeTop from '~/components/HomeTop.vue'
 export default {
-  components: { HomeTop },
   name: 'home',
+  components: { CommSpot, HomeTop },
 }
 </script>

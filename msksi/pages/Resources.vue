@@ -1,13 +1,12 @@
 <template>
   <div>
-    <Navbar />
     <ResourcesTop />
-    <Footer />
   </div>
 </template>
 
 <script>
+import ResourcesTop from '~/components/ResourcesTop.vue'
 export default {
-  layout: 'Resources',
+  components: { ResourcesTop },
 }
 </script>
