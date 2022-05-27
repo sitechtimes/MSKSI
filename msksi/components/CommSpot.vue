@@ -22,7 +22,7 @@
     </div>
     <div class="text-holder">
       <h2 class="heading commspot">Community Spotlight</h2>
-      <nuxt-content style="fontSize: 50px" :document="post"></nuxt-content>
+      <nuxt-content style="fontsize: 50px" :document="post"></nuxt-content>
     </div>
   </div>
 </template>
@@ -30,17 +30,15 @@
 <script>
 export default {
   name: 'CommSpot',
-  data(){
-    return{
-      post: "Loading"
+  data() {
+    return {
+      post: 'Loading',
     }
   },
   async fetch() {
-    let posts = await this.$content("comm-spot")
-        .only(['slug'])
-        .fetch()
-    let post = await this.$content("comm-spot", posts[posts.length-1].slug) // gets the latest markdown file
-        .fetch()
+    let posts = await this.$content('comm-spot').only(['slug']).fetch()
+    let post = await this.$content('comm-spot', posts[posts.length - 1].slug) // gets the latest markdown file
+      .fetch()
 
     this.post = post
   },
@@ -118,7 +116,7 @@ export default {
 .readmore {
   height: 125rem;
   width: 125rem;
-  background-color: var(--tpnavyblue);
+  background-color: #141127d7;
   clip-path: polygon(100% 27%, 68% 100%, 100% 100%);
   position: absolute;
   bottom: 0;
