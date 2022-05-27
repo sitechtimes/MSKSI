@@ -6,11 +6,10 @@
 
 <script>
     export default {
-        async aysncData({$content, params}){
-        const Album = await $content(`posts`, params.slug).fetch()
-        return{Album}
+            async aysncData({$content, params}){
+            const Album = await $content(`posts`, params.slug).fetch()
+            return{Album}
         },
-
     }
 </script>
 
