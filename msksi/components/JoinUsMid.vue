@@ -2,13 +2,8 @@
         <div class="joinusmid">
       <h3 class="subheading wbsm">Website & Social Media Manager</h3>
       <ul id="wbsm">
-        <li class="text">Sign in-Attendance Assist</li>
-        <li class="text">Session Feedback/Tracking and follow up</li>
-        <li class="text">
-          Keeping the attendance sign in for the meetings (in chat)
-        </li>
-        <li class="text">Transformation Tables</li>
-        <li class="text">Managing website & calendar</li>
+        <li class="text">Maintain the MSKSI website with the most current information, agendas, opportunities etc</li>
+        <li class="text">Highlight our MSKSI members for their work professionally, educationally and personally.</li>
       </ul>
       <form
         target="_blank"
@@ -35,7 +30,7 @@ export default {
   left: 125rem;
   width: 22rem;
   height: 8rem;
-  font-size: var(--h3);
+  font-size: var(--four);
   border-radius: 20rem;
   font-family: 'Black Han Sans';
   border: none;
@@ -66,7 +61,9 @@ export default {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-size: var(--h3);
   margin-left: 15rem;
-  margin-top: 0.5rem;
+  margin-top: 5.5rem;
+  line-height: 6rem;
+  width: 60vw;
   line-height: 6rem;
 }
 .joinusmid {

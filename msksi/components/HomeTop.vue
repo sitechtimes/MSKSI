@@ -81,13 +81,27 @@ export default {
   margin-left: 75%;
 }
 
-/* @media only screen and (max-width: 1500px) {
-  .keeper {
-    color: var(--darkpink);
-    font-size: 12rem;
-    text-align: right;
-    width: 80%;
+@media only screen and (max-width: 510px) {
+  .hometop {
+    height: 95rem;
   }
-} */ ;
+    .mysis {
+  margin-top: 2rem;
+  font-size: var(--h2);
+  font-weight: lighter;
+  text-align: right;
+}
+.keeper {
+  margin-top: 2rem;
+  font-size: var(--h2);
+  font-weight: lighter;
+  text-align: right;
+  margin-right: 6rem;
+
+}
+.si{
+  font-size: var(  --subheadingjum);
+  }}
+
 </style>
 

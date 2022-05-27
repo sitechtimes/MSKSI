@@ -6,7 +6,7 @@
         <li class="text">Sign in-Attendance Assist</li>
         <li class="text">Session Feedback/Tracking and follow up</li>
         <li class="text">
-          Keeping the attendance sign in for the meetings (in chat)
+          Keeping the attendance sign in for meetings in chat
         </li>
         <li class="text">Transformation Tables</li>
         <li class="text">Managing website & calendar</li>
@@ -27,7 +27,7 @@
   left: 125rem;
   width: 22rem;
   height: 8rem;
-  font-size: var(--h3);
+  font-size: var(--four);
   border-radius: 20rem;
   font-family: 'Black Han Sans';
   border: none;
@@ -68,7 +68,7 @@
   padding-bottom: 2rem;
 }
 .joinustop {
-  background-color: var(--navyblue);
+  background-color: #333043;
   height: 65rem;
 }
 .text {
@@ -76,7 +76,7 @@
   font-size: var(--h3);
   margin-left: 15rem;
   margin-top: 0.5rem;
-  line-height: 6rem;
+    line-height: 6rem;
 }
 .joinustop {
   height: 100rem;

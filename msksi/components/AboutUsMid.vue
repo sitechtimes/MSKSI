@@ -89,11 +89,11 @@ export default {
 .list {
   font-size: var(--h3);
   color: var(--navyblue);
-  margin-top: -77.5rem;
+  margin-top: -82rem;
   margin-right: 10rem;
   display: block;
   text-align: left;
-  line-height: 3rem;
+  line-height: 4rem;
 }
 
 li {

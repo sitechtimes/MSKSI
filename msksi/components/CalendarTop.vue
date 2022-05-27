@@ -15,7 +15,7 @@ export default {
   font-size: var(--h1);
 }
 .calendartop {
-  background-color: var(--navyblue);
+  background-color: #333043;
   height: 100rem;
 }
 @media only screen and (max-width: 810px) {

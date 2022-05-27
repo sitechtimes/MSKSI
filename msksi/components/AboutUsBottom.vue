@@ -34,11 +34,12 @@ export default {
   font-family: 'Cairo', sans-serif;
   color: var(--white);
   text-align: left;
-  font-size: var(--h3);
+
   justify-content: center;
+    font-size: var(--four);
 }
 #AboutUsBottom {
-  background-color: var(--navyblue);
+  background-color: #333043;
   height: 95rem;
 }
 .gao {

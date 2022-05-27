@@ -55,7 +55,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
 
 .GalleryTop {
-  height: 90rem;
+  height: 95rem;
   background-color: #333043;
 }
 .gall {
@@ -101,9 +101,40 @@
   height: 42rem;
   background-color: white;
 }
+@media only screen and (max-width: 1300px){
+    #picture {
+    width: 13rem;
+    height: 13rem;
+  }
+
+}
+@media only screen and (max-width: 810px){
+    .polaroids {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 87vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2rem;
+  }
+  .polaroid {
+    height: 33rem;
+    width: 20rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  #picture {
+    width: 16rem;
+    height: 16rem;
+  }
+  
+}
 @media only screen and (max-width: 510px) {
   .Gallerytop {
-    height: 230rem;
+    height: 630rem;
   }
   .polaroids {
     display: flex;

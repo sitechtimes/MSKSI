@@ -31,6 +31,7 @@
   --subheadingju: 4rem;
   --subheadingjum: 3rem;
   --members: 2rem;
+  --four: 4rem;
 }
 #navbar {
   background-color: var(--navyblue);

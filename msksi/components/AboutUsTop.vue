@@ -30,18 +30,18 @@ export default {
   font-size: var(--h2);
 }
 .AboutUsTop {
-  background-color: var(--navyblue);
+  background-color: #333043;
   height: 100rem;
 }
 .text {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5.5rem;
+  margin-top: 3.7rem;
   margin-bottom: auto;
   font-family: 'Cairo', sans-serif;
   color: var(--white);
   text-align: left;
-  font-size: var(--h3);
+  font-size: var(--four);
   width: 88%;
   justify-content: center;
 }

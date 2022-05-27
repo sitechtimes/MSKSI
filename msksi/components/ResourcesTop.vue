@@ -11,7 +11,7 @@ export default {
 </script>
 <style scoped>
 .resourcestop {
-  background-color: var(--navyblue);
+  background-color: #333043;
   height: 100rem;
 }
 .heading {
