@@ -110,29 +110,6 @@
     height: 225rem;
   }
 }
-@media only screen and (max-width: 810px) {
-  .polaroids {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 87vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -2rem;
-  }
-  .polaroid {
-    height: 33rem;
-    width: 20rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-  #picture {
-    width: 16rem;
-    height: 16rem;
-  }
-}
 @media only screen and (max-width: 510px) {
   .Gallerytop {
     height: 630rem;
@@ -146,7 +123,7 @@
     width: 87vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -2rem;
+    margin-top: 0rem;
   }
   .polaroid {
     height: 33rem;
@@ -163,8 +140,10 @@
   }
   .heading {
     font-size: var(--h3);
-    margin-left: 4rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
     margin-top: 0rem;
+    text-align: center;
   }
   .gall {
     font-size: var(--h3);
