@@ -101,15 +101,17 @@
   height: 42rem;
   background-color: white;
 }
-@media only screen and (max-width: 1300px){
-    #picture {
+@media only screen and (max-width: 1300px) {
+  #picture {
     width: 13rem;
     height: 13rem;
   }
-
+  .GalleryTop {
+    height: 225rem;
+  }
 }
-@media only screen and (max-width: 810px){
-    .polaroids {
+@media only screen and (max-width: 810px) {
+  .polaroids {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -130,7 +132,6 @@
     width: 16rem;
     height: 16rem;
   }
-  
 }
 @media only screen and (max-width: 510px) {
   .Gallerytop {
