@@ -6,7 +6,7 @@
         <div class="line2">
           <img
             id="temp-logo"
-            src="https://media.discordapp.net/attachments/747595261395861545/971942403323871262/unknown.png"
+            src="https://cutewallpaper.org/24/heart-clip-heart/clip-art-hearts-clip-art-two-hearts-clipart-panda-free-clipart-images--heart-clip-art-clip-art-free-clip-art.gif"
             alt=""
           />
           <h2 class="heading keeper">Keeper</h2>
@@ -85,23 +85,21 @@ export default {
   .hometop {
     height: 95rem;
   }
-    .mysis {
-  margin-top: 2rem;
-  font-size: var(--h2);
-  font-weight: lighter;
-  text-align: right;
+  .mysis {
+    margin-top: 2rem;
+    font-size: var(--h2);
+    font-weight: lighter;
+    text-align: right;
+  }
+  .keeper {
+    margin-top: 2rem;
+    font-size: var(--h2);
+    font-weight: lighter;
+    text-align: right;
+    margin-right: 6rem;
+  }
+  .si {
+    font-size: var(--subheadingjum);
+  }
 }
-.keeper {
-  margin-top: 2rem;
-  font-size: var(--h2);
-  font-weight: lighter;
-  text-align: right;
-  margin-right: 6rem;
-
-}
-.si{
-  font-size: var(  --subheadingjum);
-  }}
-
 </style>
-
