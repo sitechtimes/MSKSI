@@ -3,7 +3,17 @@
     <h2 class="contactus">Contact Us</h2>
     <h3 class="contacts">blankblankblank@email.com</h3>
     <div class="buttons">
-      <button class="icon twitter"></button>
+      <a
+        class="backing twitter"
+        href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
+        target="_blank"
+      >
+        <img
+          class="icon"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
+          alt=""
+        />
+      </a>
       <button class="icon instagram"></button>
       <button class="icon tiktok"></button>
       <button class="icon gmail"></button>
@@ -44,8 +54,12 @@
 .icon {
   height: 4rem;
   width: 4rem;
+}
+.backing {
+  background-color: white;
+  height: 5rem;
+  width: 5rem;
   border-radius: 1rem;
-  background-color: var(--white);
 }
 @media only screen and (max-width: 1032px) {
   #footer {
