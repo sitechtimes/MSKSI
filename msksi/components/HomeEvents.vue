@@ -40,6 +40,7 @@ export default {
     text-align: center;
     font-family: 'Black Han Sans', sans-serif;
     color: var(--white);
+    padding-top: 4rem;
   }
 .eventpreviews{
   display: flex;

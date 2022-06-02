@@ -23,7 +23,7 @@ export default {
     }
   },
   async fetch(){
-    this.posts = await this.$content(`monthposts`).limit(1).sortBy("order", "asc").fetch()
+    this.posts = await this.$content(`monthposts`).limit(1).sortBy("order", "desc").fetch()
   },
 }
 </script>
