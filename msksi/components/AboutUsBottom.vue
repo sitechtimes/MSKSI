@@ -36,7 +36,7 @@ export default {
   text-align: left;
 
   justify-content: center;
-    font-size: var(--four);
+  font-size: var(--four);
 }
 #AboutUsBottom {
   background-color: #333043;
@@ -73,7 +73,7 @@ export default {
 }
 @media only screen and (max-width: 510px) {
   #AboutUsBottom {
-    height: 68rem;
+    height: 78rem;
   }
   .texti {
     margin-top: 2rem;

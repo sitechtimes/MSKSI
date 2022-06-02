@@ -144,7 +144,7 @@ li {
   .AboutUsMid {
     text-align: center;
     background-color: white;
-    height: 99rem;
+    height: 115rem;
   }
   .left {
     height: 65rem;
