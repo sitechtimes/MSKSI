@@ -89,17 +89,17 @@ export default {
 .list {
   font-size: var(--h3);
   color: var(--navyblue);
-  margin-top: -77.5rem;
+  margin-top: -82rem;
   margin-right: 10rem;
   display: block;
   text-align: left;
-  line-height: 3rem;
+  line-height: 4rem;
 }
 
 li {
   margin-top: 2rem;
 }
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 510px) {
   .AboutUsMid {
     height: 95rem;
   }
@@ -116,25 +116,24 @@ li {
   .msksi {
     color: var(--darkpink);
     font-size: var(--h3);
-    margin-top: 6rem;
   }
   #right {
-    margin-left: 0;
-    width: 90%;
-    margin-top: 40rem;
+    margin-left: auto;
+    width: 75%;
+    margin-right: auto;
   }
 
   .list {
-    font-size: var(--h4);
-    margin-top: -55rem;
-    margin-bottom: 10rem;
+    font-size: var(--h5);
+    margin-top: -30rem;
     display: block;
     text-align: left;
-    margin-left: 5rem;
+    margin-left: 1.5rem;
+    margin-right: auto;
   }
   #video {
     width: 100%;
-    height: 55%;
+    height: 42%;
     left: auto;
     right: auto;
     display: block;
@@ -145,21 +144,25 @@ li {
   .AboutUsMid {
     text-align: center;
     background-color: white;
-    height: 66rem;
+    height: 99rem;
   }
   .left {
-    width: 50%;
     height: 65rem;
     font-family: 'Black Han Sans';
   }
   .msksi {
     color: var(--darkpink);
-    font-size: var(--h1);
-    margin-top: 10rem;
+    font-size: var(--h3);
+    margin-top: 4rem;
   }
   .vision {
     color: var(--navyblue);
-    font-size: var(--h1);
+    font-size: var(--h3);
+  }
+  #video {
+    padding: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 </style>
