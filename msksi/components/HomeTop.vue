@@ -86,6 +86,30 @@ export default {
     height: 95rem;
   }
   .mysis {
+    padding-top: 20rem;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .heading {
+    font-size: var(--h2);
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .si {
+    font-size: var(--h5);
+    width: 35rem;
+    text-align: right;
+    margin-top: 10rem;
+    margin-left: 5%;
+  }
+  .keeper {
+    margin-top: -2rem;
+    width: 30rem;
+    margin-right: 0%;
+  }
+  /*
+  .mysis {
     margin-top: 2rem;
     font-size: var(--h2);
     font-weight: lighter;
@@ -100,6 +124,6 @@ export default {
   }
   .si {
     font-size: var(--subheadingjum);
-  }
+  }*/
 }
 </style>
