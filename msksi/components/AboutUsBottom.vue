@@ -73,7 +73,7 @@ export default {
 }
 @media only screen and (max-width: 510px) {
   #AboutUsBottom {
-    height: 78rem;
+    height: 87rem;
   }
   .texti {
     margin-top: 2rem;
@@ -93,7 +93,7 @@ export default {
     font-size: var(--h5);
     text-align: left;
     font-family: 'Black Han Sans';
-    margin-left: 5rem;
+    margin-left: 4rem;
     font-weight: lighter;
     margin-top: 4rem;
   }

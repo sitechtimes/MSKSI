@@ -57,7 +57,7 @@ export default {
 
 @media only screen and (max-width: 510px) {
   .AboutUsTop {
-    height: 95rem;
+    height: 115rem;
   }
   h2 {
     font-size: var(--h3);
@@ -68,7 +68,7 @@ export default {
     font-size: var(--h3);
   }
   .heading {
-    margin-left: 4.5rem;
+    margin-left: 3.5rem;
     padding-top: 10.5rem;
   }
   .text {

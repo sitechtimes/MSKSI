@@ -83,47 +83,30 @@ export default {
 
 @media only screen and (max-width: 510px) {
   .hometop {
-    height: 95rem;
+    height: 65rem;
   }
   .mysis {
-    padding-top: 20rem;
+    padding-top: 25rem;
     text-align: center;
     margin-left: 0;
     margin-right: 0;
   }
   .heading {
-    font-size: var(--h2);
+    font-size: var(--h3);
     margin-left: 0;
     margin-right: 0;
+  }
+  .keeper {
+    margin-top: -3rem;
+    width: 30rem;
+    margin-right: 11.4%;
   }
   .si {
     font-size: var(--h5);
     width: 35rem;
     text-align: right;
-    margin-top: 10rem;
-    margin-left: 5%;
+    margin-top: 0.8rem;
+    margin-left: 0%;
   }
-  .keeper {
-    margin-top: -2rem;
-    width: 30rem;
-    margin-right: 0%;
-  }
-  /*
-  .mysis {
-    margin-top: 2rem;
-    font-size: var(--h2);
-    font-weight: lighter;
-    text-align: right;
-  }
-  .keeper {
-    margin-top: 2rem;
-    font-size: var(--h2);
-    font-weight: lighter;
-    text-align: right;
-    margin-right: 6rem;
-  }
-  .si {
-    font-size: var(--subheadingjum);
-  }*/
 }
 </style>

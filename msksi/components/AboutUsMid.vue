@@ -140,11 +140,11 @@ li {
     border-style: none;
   }
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 510px) {
   .AboutUsMid {
     text-align: center;
     background-color: white;
-    height: 115rem;
+    height: 124rem;
   }
   .left {
     height: 65rem;
@@ -163,6 +163,10 @@ li {
     padding: 5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    height: 35%;
+  }
+  .list {
+    margin-top: -32rem;
   }
 }
 </style>
