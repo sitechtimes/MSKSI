@@ -4,19 +4,47 @@
     <h3 class="contacts">blankblankblank@email.com</h3>
     <div class="buttons">
       <a
-        class="backing twitter"
         href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
         target="_blank"
       >
-        <img
-          class="icon"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
-          alt=""
-        />
+        <div class="backing">
+          <img
+            class="icon twitter"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
+            alt=""
+          />
+        </div>
       </a>
-      <button class="icon instagram"></button>
-      <button class="icon tiktok"></button>
-      <button class="icon gmail"></button>
+      <a
+        href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
+        target="_blank"
+        ><div class="backing">
+          <img
+            class="icon instagram"
+            src="~/assets/images/insta.png"
+            alt=""
+          /></div
+      ></a>
+      <a
+        href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
+        target="_blank"
+        ><div class="backing">
+          <img
+            class="icon tiktok"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
+            alt=""
+          /></div
+      ></a>
+      <a
+        href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
+        target="_blank"
+        ><div class="backing">
+          <img
+            class="icon gmail"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
+            alt=""
+          /></div
+      ></a>
     </div>
   </div>
 </template>
@@ -52,15 +80,24 @@
   width: 20%;
 }
 .icon {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
+}
+.instagram {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 1.5rem;
 }
 .backing {
   background-color: white;
   height: 5rem;
   width: 5rem;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 @media only screen and (max-width: 1032px) {
   #footer {
     width: 100%;
@@ -70,7 +107,7 @@
     margin-top: 3rem;
     width: 50%;
   }
-  .icon {
+  .backing {
     height: 3rem;
     width: 3rem;
     border-radius: 1rem;
