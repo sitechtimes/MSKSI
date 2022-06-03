@@ -28,15 +28,18 @@ export default {
     background-color: var(--navyblue);
     border-radius: 2rem;
     font-family: 'ABeeZee', sans-serif;
+    padding: 4rem;
 }
 .dates{
+    padding-top: 2.5rem;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 2.5rem;
+    padding: 2rem;
 }
 .eventname{
     font-size: var(--h3);
     color: var(--white);
+    text-align: left;
 }
 .eventmonth {
     font-size: var(--h3);
@@ -50,6 +53,7 @@ export default {
 }
 .calendarlink {
     color: var(--white);
-    font-size: var(--h5);
+    font-size: var(--h4);
+    text-align: right;
 }
 </style>
