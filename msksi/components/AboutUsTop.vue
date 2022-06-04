@@ -51,7 +51,7 @@ export default {
   }
   .text {
     margin-top: 5rem;
-    font-size: var(--h4);
+    font-size: var(--subheadingjum);
   }
 }
 

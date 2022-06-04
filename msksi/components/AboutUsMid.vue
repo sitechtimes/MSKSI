@@ -99,24 +99,33 @@ export default {
 li {
   margin-top: 2rem;
 }
+@media only screen and (max-width: 1500px){
+.AboutUsMid {
+  text-align: center;
+  background-color: white;
+  height: 70rem;
+}
+.list {
+  font-size: var(--subheadingjum);
+  margin-top: -68rem;
+  line-height: 1.5;
+}
+
+}
 @media only screen and (max-width: 510px) {
   .AboutUsMid {
     height: 95rem;
   }
-  .vision {
-    color: var(--navyblue);
-    font-size: var(--h3);
-  }
+
   .left {
     width: 100%;
+        height: 65rem;
+    font-family: 'Black Han Sans';
   }
   .v {
     text-align: center;
   }
-  .msksi {
-    color: var(--darkpink);
-    font-size: var(--h3);
-  }
+
   #right {
     margin-left: auto;
     width: 75%;
@@ -125,35 +134,24 @@ li {
 
   .list {
     font-size: var(--h5);
-    margin-top: -30rem;
+    margin-top: -32rem;
     display: block;
     text-align: left;
     margin-left: 1.5rem;
     margin-right: auto;
   }
-  #video {
-    width: 100%;
-    height: 42%;
-    left: auto;
-    right: auto;
-    display: block;
-    border-style: none;
-  }
-}
-@media only screen and (max-width: 510px) {
-  .AboutUsMid {
+
+    .AboutUsMid {
     text-align: center;
     background-color: white;
     height: 124rem;
   }
-  .left {
-    height: 65rem;
-    font-family: 'Black Han Sans';
-  }
+
   .msksi {
     color: var(--darkpink);
     font-size: var(--h3);
     margin-top: 4rem;
+
   }
   .vision {
     color: var(--navyblue);
@@ -165,8 +163,7 @@ li {
     padding-bottom: 2rem;
     height: 35%;
   }
-  .list {
-    margin-top: -32rem;
-  }
+
 }
+
 </style>
