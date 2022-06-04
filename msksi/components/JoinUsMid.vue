@@ -36,7 +36,11 @@ export default {
   border: none;
   cursor: pointer;
 }
+.button:hover{
+  transform: scale(1.2);
+  transition: transform .75s;
 
+}
 .button:active {
   animation: press 0.2s 1 linear;
 }
