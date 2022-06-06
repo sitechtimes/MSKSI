@@ -1,36 +1,15 @@
 <template>
-<div>
-  <AlbumPreview 
-  v-for="Album in Albums" 
-  :key="Album.title" 
-  :desc="Album.description"> 
-  </AlbumPreview>
-
-</div>
+  <div>
+    <HomeTop />
+    <CommSpot />
+  </div>
 </template>
 
 <script>
+import CommSpot from '~/components/CommSpot.vue'
+import HomeTop from '~/components/HomeTop.vue'
 export default {
-  name: 'IndexPage',
-  data(){
-    return{
-      Albums :[],
-    }
-  },
-  head(){
-    return{
-      title: `Album`,
-      meta: [
-        {
-        hid: 'name',
-        name: 'name',
-        content: 'name',
-        }
-      ],
-    }
-  },
-  async fetch(){
-    this.Albums = await this.$content('Albums').fetch()
-  },
+  name: 'home',
+  components: { CommSpot, HomeTop },
 }
 </script>
