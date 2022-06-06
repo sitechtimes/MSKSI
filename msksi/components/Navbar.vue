@@ -2,7 +2,7 @@
   <header id="navbar">
     <h1 class="logo">MSKSI</h1>
     <div class="nav">
-      <router-link class="navRouter" to="/Home"> Home </router-link>
+      <router-link class="navRouter" to="/"> Home </router-link>
       <router-link class="navRouter" to="/AboutUs"> About Us </router-link>
       <router-link class="navRouter" to="/Calendar"> Calendar </router-link>
       <router-link class="navRouter" to="/Gallery"> Gallery </router-link>

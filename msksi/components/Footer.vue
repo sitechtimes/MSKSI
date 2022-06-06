@@ -3,10 +3,44 @@
     <h2 class="contactus">Contact Us</h2>
     <h3 class="contacts">blankblankblank@email.com</h3>
     <div class="buttons">
-      <button class="icon twitter"></button>
-      <button class="icon instagram"></button>
-      <button class="icon tiktok"></button>
-      <button class="icon gmail"></button>
+      <a
+        href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
+        target="_blank"
+      >
+        <div class="backing">
+          <img
+            class="icon twitter"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
+            alt=""
+          />
+        </div>
+      </a>
+      <a
+        href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
+        target="_blank"
+        ><div class="backing">
+          <img
+            class="icon instagram"
+            src="~/assets/images/insta2.jpg"
+            alt=""
+          /></div
+      ></a>
+      <a
+        href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
+        target="_blank"
+        ><div class="backing">
+          <img
+            class="icon tiktok"
+            src="~/assets/images/tiktok.png"
+            alt=""
+          /></div
+      ></a>
+      <a
+        href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
+        target="_blank"
+        ><div class="backing">
+          <img class="icon gmail" src="~/assets/images/gmail.png" alt="" /></div
+      ></a>
     </div>
   </div>
 </template>
@@ -18,6 +52,7 @@
   bottom: 0px;
   width: 100%;
   padding-bottom: 3rem;
+  height: 20rem;
 }
 .contacts {
   color: var(--white);
@@ -34,19 +69,44 @@
   font-weight: lighter;
 }
 .buttons {
-  margin-top: 3rem;
+  margin-top: -10rem;
   display: flex;
+  margin-right: 10rem;
   margin-left: auto;
-  margin-right: auto;
   justify-content: space-between;
   width: 20%;
 }
 .icon {
-  height: 4rem;
-  width: 4rem;
-  border-radius: 1rem;
-  background-color: var(--white);
+  height: 3rem;
+  width: auto;
+  filter: saturate(0);
+  transition: all 0.2s;
 }
+.instagram {
+  height: 4rem;
+}
+.tiktok {
+  height: 3.5rem;
+  filter: invert() saturate(0);
+}
+.gmail {
+  height: 2.5rem;
+}
+.icon:hover {
+  filter: saturate(100%);
+}
+.tiktok:hover {
+  filter: invert() saturate(100%);
+}
+.backing {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 1032px) {
   #footer {
     width: 100%;
@@ -56,7 +116,7 @@
     margin-top: 3rem;
     width: 50%;
   }
-  .icon {
+  .backing {
     height: 3rem;
     width: 3rem;
     border-radius: 1rem;
