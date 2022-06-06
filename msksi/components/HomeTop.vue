@@ -80,13 +80,20 @@ export default {
   margin-top: 10rem;
   margin-left: 75%;
 }
-
+@media only screen and (max-width: 1500px){
+  .si{
+    margin-top: 5rem;
+  }
+  .mysis{
+    padding-top: 23rem;
+  }
+}
 @media only screen and (max-width: 510px) {
   .hometop {
-    height: 65rem;
+    height: 100rem;
   }
   .mysis {
-    padding-top: 25rem;
+    padding-top: 30rem;
     text-align: center;
     margin-left: 0;
     margin-right: 0;
