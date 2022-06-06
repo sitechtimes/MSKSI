@@ -31,7 +31,7 @@ export default {
 }
 .AboutUsTop {
   background-color: #333043;
-  height: 100rem;
+  padding-bottom: 9rem;
 }
 .text {
   margin-left: auto;
@@ -46,9 +46,6 @@ export default {
   justify-content: center;
 }
 @media only screen and (max-width: 1500px) {
-  .AboutUsTop {
-    height: 85rem;
-  }
   .text {
     margin-top: 5rem;
     font-size: var(--subheadingjum);
@@ -57,7 +54,7 @@ export default {
 
 @media only screen and (max-width: 510px) {
   .AboutUsTop {
-    height: 115rem;
+    padding-bottom: 5rem;
   }
   h2 {
     font-size: var(--h3);
