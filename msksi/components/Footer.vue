@@ -129,6 +129,10 @@
     height: 22rem;
     margin-bottom: 0;
   }
+  .contactus {
+    color: var(--darkpink);
+    font-size: var(--h4);
+  }
 }
 .icon {
   cursor: pointer;

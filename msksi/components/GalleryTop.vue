@@ -101,13 +101,31 @@
   height: 42rem;
   background-color: white;
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1500px) {
   #picture {
-    width: 13rem;
-    height: 13rem;
-  }
+    width: 20rem;
+    height: 20rem;
+
+      }
   .GalleryTop {
-    height: 225rem;
+    height: 120rem;
+  }
+  .polaroid{
+    width: 25rem;
+    height: 35rem;
+  }
+  .polaroids{
+    width: 85vw;
+    margin-left: 10rem;
+  }
+  .name{
+    font-size: 1.6rem;
+    margin-top: 5rem;
+  }
+  .polaroids{
+    display: flex;
+      align-items: center;
+  justify-content: space-around;
   }
 }
 @media only screen and (max-width: 510px) {
