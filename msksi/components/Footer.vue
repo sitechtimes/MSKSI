@@ -21,7 +21,7 @@
         ><div class="backing">
           <img
             class="icon instagram"
-            src="~/assets/images/insta.png"
+            src="~/assets/images/insta2.jpg"
             alt=""
           /></div
       ></a>
@@ -31,7 +31,7 @@
         ><div class="backing">
           <img
             class="icon tiktok"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
+            src="~/assets/images/tiktok.png"
             alt=""
           /></div
       ></a>
@@ -39,11 +39,7 @@
         href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
         target="_blank"
         ><div class="backing">
-          <img
-            class="icon gmail"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
-            alt=""
-          /></div
+          <img class="icon gmail" src="~/assets/images/gmail.png" alt="" /></div
       ></a>
     </div>
   </div>
@@ -56,6 +52,7 @@
   bottom: 0px;
   width: 100%;
   padding-bottom: 3rem;
+  height: 20rem;
 }
 .contacts {
   color: var(--white);
@@ -72,24 +69,36 @@
   font-weight: lighter;
 }
 .buttons {
-  margin-top: 3rem;
+  margin-top: -10rem;
   display: flex;
+  margin-right: 10rem;
   margin-left: auto;
-  margin-right: auto;
   justify-content: space-between;
   width: 20%;
 }
 .icon {
   height: 3rem;
-  width: 3rem;
+  width: auto;
+  filter: saturate(0);
+  transition: all 0.2s;
 }
 .instagram {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 1.5rem;
+  height: 4rem;
+}
+.tiktok {
+  height: 3.5rem;
+  filter: invert() saturate(0);
+}
+.gmail {
+  height: 2.5rem;
+}
+.icon:hover {
+  filter: saturate(100%);
+}
+.tiktok:hover {
+  filter: invert() saturate(100%);
 }
 .backing {
-  background-color: white;
   height: 5rem;
   width: 5rem;
   border-radius: 1.5rem;
