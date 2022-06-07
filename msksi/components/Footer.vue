@@ -1,7 +1,7 @@
 <template>
   <div id="footer">
-    <h2 class="contactus">Contact Us</h2>
-    <h3 class="contacts">blankblankblank@email.com</h3>
+    <h2 class="contactus footer-text">Contact Us</h2>
+
     <div class="buttons">
       <a
         href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
@@ -46,51 +46,46 @@
 </template>
 <style scoped>
 #footer {
-  background-color: var(--navyblue);
-  text-align: center;
-  justify-content: center;
+  background-color: rgb(23, 18, 43);
+  text-align: left;
   bottom: 0px;
   width: 100%;
-  padding-bottom: 3rem;
-  height: 20rem;
+  height: 30rem;
 }
-.contacts {
-  color: var(--white);
-  margin-top: 2rem;
-  font-weight: lighter;
-  font-size: var(--h5);
-  font-family: 'ABeeZee', sans-serif;
-}
+
 .contactus {
-  color: var(--darkpink);
-  font-size: var(--h3);
+  font-size: var(--h4);
   font-family: 'Black Han Sans';
-  padding-top: 3.5rem;
+  padding-top: 8rem;
   font-weight: lighter;
+  color: var(--white);
+  margin-left: 12rem;
+  padding-bottom: 3rem;
 }
+
 .buttons {
-  margin-top: -10rem;
   display: flex;
-  margin-right: 10rem;
-  margin-left: auto;
+  margin-left: 10rem;
+  margin-right: auto;
   justify-content: space-between;
-  width: 20%;
+  width: 35rem;
+  height: 5rem;
 }
 .icon {
-  height: 3rem;
+  height: 4rem;
   width: auto;
   filter: saturate(0);
   transition: all 0.2s;
 }
 .instagram {
-  height: 4rem;
+  height: 5rem;
 }
 .tiktok {
-  height: 3.5rem;
+  height: 4.5rem;
   filter: invert() saturate(0);
 }
 .gmail {
-  height: 2.5rem;
+  height: 3.5rem;
 }
 .icon:hover {
   filter: saturate(100%);
@@ -99,39 +94,25 @@
   filter: invert() saturate(100%);
 }
 .backing {
-  height: 5rem;
-  width: 5rem;
+  height: 8rem;
+  width: 8rem;
   border-radius: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media only screen and (max-width: 1032px) {
+@media only screen and (max-width: 1320px) {
   #footer {
-    width: 100%;
-    padding-bottom: 2rem;
+    text-align: center;
+  }
+  .contactus {
+    margin-left: 0;
   }
   .buttons {
-    margin-top: 3rem;
-    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
   }
-  .backing {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-@media only screen and (max-width: 510px) {
-  #footer {
-    height: 22rem;
-    margin-bottom: 0;
-  }
-}
-.icon {
-  cursor: pointer;
 }
 </style>
 
