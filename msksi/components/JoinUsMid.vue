@@ -89,38 +89,29 @@ export default {
   .joinusmid {
     height: 66rem;
   }
-  .text {
-    font-size: var(--list);
-  }
   .subheading {
     font-size: var(--subheadingju);
+    margin-left: 11rem;
   }
   .button {
-    margin-top: 7.5rem;
+    margin-top: 15.5rem;
     position: sticky;
     left: 11rem;
     width: 20rem;
     height: 5.5rem;
+    font-size: var(--subheadingjum);
   }
   .text {
-    font-size: var(--h3);
+    font-size: var(--list);
     margin-left: 12rem;
-    margin-top: 0.5rem;
-  }
-
-  .subheading {
-    margin-left: 6rem;
-  }
-  .joinustop {
-    height: 85rem;
+    margin-top: 0.2rem;
   }
   .joinusmid {
-    height: 75rem;
+    height: 65rem;
   }
   .wbsm {
     margin-top: 0;
   }
-
   .joinusmid {
     margin-top: 10rem;
   }

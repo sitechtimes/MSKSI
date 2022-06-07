@@ -89,35 +89,32 @@
 
 @media only screen and (max-width: 1500px) {
   .joinustop {
-    height: 100rem;
+    height: 85rem;
   }
   .text {
     font-size: var(--list);
+    margin-left: 12rem;
+    margin-top: 0.2rem;
   }
   .heading{
-    margin-left: 6rem;
+    margin-left: 11rem;
+
   }
-  .subc{
-    margin-left: 6rem;
+  #subc{
+    margin-left: 2rem;
   }
   .subheading {
     font-size: var(--subheadingju);
-        margin-left: 6rem;
+        margin-left: 11rem;
+        margin-top: 3rem;
   }
   .button {
-    margin-top: 7.5rem;
+    margin-top: 2rem;
     position: sticky;
     left: 11rem;
     width: 20rem;
     height: 5.5rem;
-  }
-  .text {
-    font-size: var(--h3);
-    margin-left: 12rem;
-    margin-top: 0.5rem;
-  }
-  .joinusmid {
-    height: 75rem;
+    font-size: var(--subheadingjum);
   }
 
 }

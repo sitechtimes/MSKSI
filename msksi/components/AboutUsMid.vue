@@ -68,7 +68,7 @@ export default {
 .msksi {
   color: var(--darkpink);
   font-size: var(--h1);
-  margin-top: 9rem;
+  padding-top: 9rem;
 }
 .vision {
   color: var(--navyblue);
@@ -102,6 +102,7 @@ li {
   .AboutUsMid {
     text-align: center;
     background-color: white;
+    padding-bottom: 10rem;
   }
   .list {
     font-size: var(--subheadingjum);
