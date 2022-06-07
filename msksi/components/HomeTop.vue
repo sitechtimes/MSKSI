@@ -58,7 +58,7 @@ export default {
   font-size: 13rem;
   text-align: right;
   padding-top: 3rem;
-  width: 50rem;
+  width: 58rem;
   margin-right: 0%;
 }
 
@@ -77,14 +77,14 @@ export default {
   font-size: var(--h3);
   width: 35rem;
   text-align: right;
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-left: 75%;
 }
-@media only screen and (max-width: 1500px){
-  .si{
+@media only screen and (max-width: 1500px) {
+  .si {
     margin-top: 5rem;
   }
-  .mysis{
+  .mysis {
     padding-top: 23rem;
   }
 }
