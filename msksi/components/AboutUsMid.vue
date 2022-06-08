@@ -52,13 +52,13 @@ export default {
 .AboutUsMid {
   text-align: center;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .left {
   width: 50%;
-  height: 100%;
   font-family: 'Black Han Sans';
-  padding-bottom: 10rem;
-  padding-top: 2rem;
 }
 .v {
   margin-top: auto;
@@ -68,7 +68,6 @@ export default {
 .msksi {
   color: var(--darkpink);
   font-size: var(--h1);
-  padding-top: 9rem;
 }
 .vision {
   color: var(--navyblue);
@@ -76,20 +75,19 @@ export default {
 }
 #right {
   width: 50%;
-  margin-left: 50%;
   font-family: 'Black Han Sans';
-  margin-top: 3rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 #video {
   padding: 5rem;
   padding-bottom: 6rem;
   border-style: none;
+  height: 43rem;
 }
 .list {
   font-size: var(--h3);
   color: var(--navyblue);
-  margin-top: -82rem;
-  margin-right: 10rem;
   display: block;
   text-align: left;
   line-height: 4rem;
