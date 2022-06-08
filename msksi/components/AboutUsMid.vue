@@ -57,7 +57,6 @@ export default {
   align-items: center;
 }
 .left {
-  width: 50%;
   font-family: 'Black Han Sans';
 }
 .v {
@@ -76,8 +75,8 @@ export default {
 #right {
   width: 50%;
   font-family: 'Black Han Sans';
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding: 7rem;
+  padding-left: 15rem;
 }
 #video {
   padding: 5rem;
@@ -91,6 +90,7 @@ export default {
   display: block;
   text-align: left;
   line-height: 4rem;
+  width: 130%;
 }
 
 li {
