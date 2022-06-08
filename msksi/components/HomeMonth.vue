@@ -34,4 +34,10 @@ export default {
   background-color: var(--navyblue);
 }
 
+@media screen (max-width: 420px){
+  .specialmonthly{
+    height: 200rem;
+    width: 100rem;
+  }
+}
 </style>

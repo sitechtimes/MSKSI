@@ -51,5 +51,6 @@ export default {
 .calendarlink {
     color: var(--white);
     font-size: var(--h5);
+    align-content: right;
 }
 </style>
