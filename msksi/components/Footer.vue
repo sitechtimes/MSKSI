@@ -1,7 +1,13 @@
 <template>
   <div id="footer">
     <h2 class="contactus footer-text">Contact Us</h2>
-
+    <div id="highlighter">
+      <span id="selecter"></span>
+      <span class="hoverselect selecttwitter"></span>
+      <span class="hoverselect selectinstagram"></span>
+      <span class="hoverselect selecttiktok"></span>
+      <span class="hoverselect selectgmail"></span>
+    </div>
     <div class="buttons">
       <a
         href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
@@ -60,7 +66,7 @@
   font-weight: lighter;
   color: var(--white);
   margin-left: 12rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .buttons {
@@ -75,7 +81,7 @@
   height: 4rem;
   width: auto;
   filter: saturate(0);
-  transition: all 0.2s;
+  transition: all 0.1s;
 }
 .instagram {
   height: 5rem;
@@ -90,6 +96,7 @@
 .icon:hover {
   filter: saturate(100%);
 }
+
 .tiktok:hover {
   filter: invert() saturate(100%);
 }
@@ -101,6 +108,45 @@
   justify-content: center;
   align-items: center;
 }
+#highlighter {
+  position: absolute;
+  width: 40rem;
+  height: 5.5rem;
+  background-color: white;
+  border-radius: 4rem;
+  margin: 1.25rem auto 0 50%;
+  transform: translatex(-50%);
+}
+
+#selecter,
+.hoverselect {
+  position: absolute;
+  height: 6.5rem;
+  width: 6.5rem;
+  border-radius: 5.5rem;
+
+  margin-top: -0.35rem;
+  background-color: blueviolet;
+}
+.hoverselect:hover {
+  background-color: blue;
+}
+#selecter {
+  background-color: red;
+}
+
+.selecttwitter {
+  transform: translateX(-300%);
+}
+.selectinstagram {
+  transform: translateX(-133%);
+}
+.selecttiktok {
+  transform: translateX(28%);
+}
+.selectgmail {
+  transform: translate(195%);
+}
 
 @media only screen and (max-width: 1320px) {
   #footer {
@@ -110,8 +156,9 @@
     margin-left: 0;
   }
   .buttons {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 50%;
+    margin-right: auto;
+    transform: translatex(-50%);
   }
 }
 </style>
