@@ -1,12 +1,12 @@
 <template>
         <div class="joinustop">
       <h2 class="heading">Join Us Today!</h2>
-      <h3 class="subheading subc">Sub Comittee</h3>
+      <h3 class="subheading subc">Sub Committee</h3>
       <ul id="subc">
         <li class="text">Sign in-Attendance Assist</li>
         <li class="text">Session Feedback/Tracking and follow up</li>
         <li class="text">
-          Keeping the attendance sign in for the meetings (in chat)
+          Keeping the attendance sign in for meetings in chat
         </li>
         <li class="text">Transformation Tables</li>
         <li class="text">Managing website & calendar</li>
@@ -27,7 +27,7 @@
   left: 125rem;
   width: 22rem;
   height: 8rem;
-  font-size: var(--h3);
+  font-size: var(--four);
   border-radius: 20rem;
   font-family: 'Black Han Sans';
   border: none;
@@ -68,7 +68,7 @@
   padding-bottom: 2rem;
 }
 .joinustop {
-  background-color: var(--navyblue);
+  background-color: #333043;
   height: 65rem;
 }
 .text {
@@ -76,7 +76,7 @@
   font-size: var(--h3);
   margin-left: 15rem;
   margin-top: 0.5rem;
-  line-height: 6rem;
+    line-height: 6rem;
 }
 .joinustop {
   height: 100rem;
@@ -89,13 +89,20 @@
 
 @media only screen and (max-width: 1500px) {
   .joinustop {
-    height: 85rem;
+    height: 100rem;
   }
   .text {
     font-size: var(--list);
   }
+  .heading{
+    margin-left: 6rem;
+  }
+  .subc{
+    margin-left: 6rem;
+  }
   .subheading {
     font-size: var(--subheadingju);
+        margin-left: 6rem;
   }
   .button {
     margin-top: 7.5rem;
@@ -109,12 +116,6 @@
     margin-left: 12rem;
     margin-top: 0.5rem;
   }
-  .subheading {
-    margin-left: 6rem;
-  }
-  .joinustop {
-    height: 85rem;
-  }
   .joinusmid {
     height: 75rem;
   }
@@ -122,7 +123,7 @@
 }
 @media only screen and (max-width: 810px) {
   .joinustop {
-    height: 95rem;
+    height: 100rem;
   }
   .text {
     margin-left: 8rem;
@@ -132,18 +133,22 @@
     color: var(--darkpink);
     font-size: var(--h3);
     margin-left: 4rem;
-    margin-top: 2rem;
-  }
+    margin-top: .2rem;
 
+  }
+#subc{
+  margin-top: .5rem;
+}
   .heading {
     font-size: var(--h3);
     margin-top: 0;
+    margin-left: 4rem;
   }
   .button {
-    margin-top: 5rem;
+    margin-top: 7rem;
     width: 16rem;
     height: 4.5rem;
-    font-size: var(--h4);
+    font-size: var(--h5);
     font-weight: lighter;
     border-radius: 20rem;
     font-family: 'Black Han Sans';
@@ -152,6 +157,44 @@
   }
   .subheading {
     font-size: var(--subheadingjum);
+  }
+}
+@media only screen and (max-width: 510px) {
+  .joinustop {
+    height: 92rem;
+  }
+  .text {
+    margin-top: 0;
+    margin-bottom: 0;
+    
+  }
+  #subc {
+    margin-top: 0rem;
+    margin-left: -1.8rem;
+    font-size: var(--h6);
+    width: 95vw;
+  }
+
+  .heading {
+    font-size: var(--h3);
+margin-left: 4rem;
+  }
+  .button {
+    margin-top: 6rem;
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: lighter;
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+  }
+  .subheading {
+    font-size: var(--subheadingjum);
+    margin-top: 0;
   }
 }
 </style>

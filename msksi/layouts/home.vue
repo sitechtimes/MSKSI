@@ -6,7 +6,7 @@
         <div class="line2">
           <img
             id="temp-logo"
-            src="https://cutewallpaper.org/24/heart-clip-heart/clip-art-hearts-clip-art-two-hearts-clipart-panda-free-clipart-images--heart-clip-art-clip-art-free-clip-art.gif"
+            src="https://media.discordapp.net/attachments/747595261395861545/971942403323871262/unknown.png"
             alt=""
           />
           <h2 class="heading keeper">Keeper</h2>
@@ -17,12 +17,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'HomeTop',
-}
-</script>
 
 <style scoped>
 .hometop {
@@ -74,32 +68,19 @@ export default {
 .si {
   font-family: 'ABeeZee', sans-serif;
   color: var(--yellow);
-  font-size: var(--h3);
+  font-size: var(--h2);
   width: 35rem;
   text-align: right;
   margin-top: 10rem;
   margin-left: 75%;
 }
 
-@media only screen and (max-width: 510px) {
-  .hometop {
-    height: 95rem;
-  }
-  .mysis {
-    margin-top: 2rem;
-    font-size: var(--h2);
-    font-weight: lighter;
-    text-align: right;
-  }
+/* @media only screen and (max-width: 1500px) {
   .keeper {
-    margin-top: 2rem;
-    font-size: var(--h2);
-    font-weight: lighter;
+    color: var(--darkpink);
+    font-size: 12rem;
     text-align: right;
-    margin-right: 6rem;
+    width: 80%;
   }
-  .si {
-    font-size: var(--subheadingjum);
-  }
-}
+} */ ;
 </style>

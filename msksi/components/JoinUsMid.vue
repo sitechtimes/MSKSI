@@ -2,13 +2,8 @@
         <div class="joinusmid">
       <h3 class="subheading wbsm">Website & Social Media Manager</h3>
       <ul id="wbsm">
-        <li class="text">Sign in-Attendance Assist</li>
-        <li class="text">Session Feedback/Tracking and follow up</li>
-        <li class="text">
-          Keeping the attendance sign in for the meetings (in chat)
-        </li>
-        <li class="text">Transformation Tables</li>
-        <li class="text">Managing website & calendar</li>
+        <li class="text">Maintain the MSKSI website with the most current information, agendas, opportunities etc</li>
+        <li class="text">Highlight our MSKSI members for their work professionally, educationally and personally.</li>
       </ul>
       <form
         target="_blank"
@@ -35,7 +30,7 @@ export default {
   left: 125rem;
   width: 22rem;
   height: 8rem;
-  font-size: var(--h3);
+  font-size: var(--four);
   border-radius: 20rem;
   font-family: 'Black Han Sans';
   border: none;
@@ -66,17 +61,21 @@ export default {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-size: var(--h3);
   margin-left: 15rem;
-  margin-top: 0.5rem;
+  margin-top: 5.5rem;
+  line-height: 6rem;
+  width: 60vw;
   line-height: 6rem;
 }
 .joinusmid {
-  height: 100rem;
+  height: 75rem;
   background-color: white;
   margin-top: 20rem;
 }
 .wbsm {
   font-size: var(--h2);
+  margin-top: -4rem;
   color: rgba(220, 53, 92, 1);
+  padding-top: 0;
 }
 #wbsm {
   list-style-type: circle;
@@ -154,6 +153,39 @@ export default {
     font-family: 'Black Han Sans';
     border: none;
     margin: 4rem;
+  }
+  .subheading {
+    font-size: var(--subheadingjum);
+  }
+}
+@media only screen and (max-width: 510px){
+  .joinusmid {
+    height: 95rem;
+  }
+  .text {
+    margin-top: 0;
+    margin-bottom: 0;
+    
+  }
+  #wbsm {
+    margin-left: -1.8rem;
+    font-size: var(--h6);
+    width: 95vw;
+  }
+
+  .button {
+    margin-top: 5rem;
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: lighter;
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+
   }
   .subheading {
     font-size: var(--subheadingjum);

@@ -11,7 +11,7 @@ export default {
 </script>
 <style scoped>
 .resourcestop {
-  background-color: var(--navyblue);
+  background-color: #333043;
   height: 100rem;
 }
 .heading {
@@ -20,7 +20,7 @@ export default {
 @media only screen and (max-width: 810px) {
   .heading {
     font-size: var(--h3);
-    margin-left: 3rem;
+    margin-left: 4rem;
     margin-top: 0rem;
   }
 }

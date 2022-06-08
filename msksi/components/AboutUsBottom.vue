@@ -34,11 +34,12 @@ export default {
   font-family: 'Cairo', sans-serif;
   color: var(--white);
   text-align: left;
-  font-size: var(--h3);
+
   justify-content: center;
+    font-size: var(--four);
 }
 #AboutUsBottom {
-  background-color: var(--navyblue);
+  background-color: #333043;
   height: 95rem;
 }
 .gao {
@@ -70,28 +71,29 @@ export default {
   color: var(--yellow);
   font-size: var(--h1);
 }
-
-@media only screen and (max-width: 1500px) {
-}
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 510px) {
+  #AboutUsBottom {
+    height: 68rem;
+  }
   .texti {
     margin-top: 2rem;
     font-size: var(--h5);
-    width: 80%;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
   }
-
   .gao {
     font-size: var(--h3);
     text-align: center;
     font-family: 'Black Han Sans';
     font-weight: lighter;
+    padding-top: 5rem;
   }
   .will {
-    font-size: var(--h4);
-    font-weight: lighter;
+    font-size: var(--h5);
     text-align: left;
     font-family: 'Black Han Sans';
-    margin-left: 4rem;
+    margin-left: 5rem;
     font-weight: lighter;
     margin-top: 4rem;
   }
