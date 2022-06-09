@@ -52,9 +52,6 @@
 }
 
 @media only screen and (max-width: 1500px) {
-  .joinustop {
-    height: 85rem;
-  }
   .text {
     font-size: var(--list);
     margin-left: 12rem;
@@ -72,35 +69,7 @@
     margin-top: 3rem;
   }
 }
-@media only screen and (max-width: 810px) {
-  .joinustop {
-    height: 100rem;
-  }
-  .text {
-    margin-left: 8rem;
-    font-size: var(--h5);
-  }
-  .subc {
-    color: var(--darkpink);
-    font-size: var(--h3);
-    margin-left: 4rem;
-  }
-  #subc {
-    margin-top: 0.5rem;
-  }
-  .heading {
-    font-size: var(--h3);
-    margin-top: 0;
-    margin-left: 4rem;
-  }
-  .subheading {
-    font-size: var(--subheadingjum);
-  }
-}
 @media only screen and (max-width: 510px) {
-  .joinustop {
-    height: 92rem;
-  }
   .text {
     margin-top: 0;
     margin-bottom: 0;
@@ -111,9 +80,18 @@
     font-size: var(--h6);
     width: 95vw;
   }
-
+  .text {
+    margin-left: 8rem;
+    font-size: var(--h5);
+  }
+  .subc {
+    color: var(--darkpink);
+    font-size: var(--h3);
+    margin-left: 4rem;
+  }
   .heading {
     font-size: var(--h3);
+    margin-top: 0;
     margin-left: 4rem;
   }
   .subheading {

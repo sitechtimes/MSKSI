@@ -56,14 +56,12 @@ export default {
   list-style-type: circle;
   color: var(--navyblue);
   margin-top: 2rem;
+  padding-bottom: 5rem;
 }
 .wbsmr {
   color: var(--darkpink);
 }
 @media only screen and (max-width: 1500px) {
-  .joinusmid {
-    height: 66rem;
-  }
   .subheading {
     font-size: var(--subheadingju);
     margin-left: 11rem;
@@ -73,9 +71,6 @@ export default {
     margin-left: 12rem;
     margin-top: 0.2rem;
   }
-  .joinusmid {
-    height: 65rem;
-  }
   .wbsm {
     margin-top: 0;
   }
@@ -84,9 +79,6 @@ export default {
   }
 }
 @media only screen and (max-width: 810px) {
-  .joinusmid {
-    height: 95rem;
-  }
   .text {
     margin-left: 8rem;
     font-size: var(--h5);
@@ -94,21 +86,10 @@ export default {
   .wbsm {
     font-size: var(--h3);
     margin-left: 8rem;
-    margin-top: 0rem;
     margin-left: 4rem;
-  }
-  .heading {
-    font-size: var(--h3);
-    margin-top: 0;
-  }
-  .subheading {
-    font-size: var(--subheadingjum);
   }
 }
 @media only screen and (max-width: 510px) {
-  .joinusmid {
-    height: 95rem;
-  }
   .text {
     margin-top: 0;
     margin-bottom: 0;
@@ -116,7 +97,6 @@ export default {
   #wbsm {
     margin-left: -1.8rem;
     font-size: var(--h6);
-    width: 95vw;
   }
   .subheading {
     font-size: var(--subheadingjum);
