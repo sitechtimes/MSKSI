@@ -55,8 +55,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
 
 .GalleryTop {
-  height: 95rem;
   background-color: #333043;
+  padding-bottom: 10rem;
 }
 .gall {
   color: var(--darkpink);
@@ -93,45 +93,36 @@
   width: 87vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -2rem;
 }
 .polaroid {
   margin-top: 10rem;
   width: 18%;
-  height: 42rem;
   background-color: white;
 }
 @media only screen and (max-width: 1500px) {
   #picture {
     width: 20rem;
     height: 20rem;
-
-      }
-  .GalleryTop {
-    height: 120rem;
   }
-  .polaroid{
+  .polaroid {
     width: 25rem;
     height: 35rem;
   }
-  .polaroids{
+  .polaroids {
     width: 85vw;
     margin-left: 10rem;
   }
-  .name{
+  .name {
     font-size: 1.6rem;
     margin-top: 5rem;
   }
-  .polaroids{
+  .polaroids {
     display: flex;
-      align-items: center;
-  justify-content: space-around;
+    align-items: center;
+    justify-content: space-around;
   }
 }
 @media only screen and (max-width: 510px) {
-  .Gallerytop {
-    height: 630rem;
-  }
   .polaroids {
     display: flex;
     flex-wrap: wrap;

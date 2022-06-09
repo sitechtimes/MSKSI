@@ -22,6 +22,10 @@ export default {
 }
 </script>
 <style scoped>
+.AboutUsTop {
+  background-color: #333043;
+  padding-bottom: 9rem;
+}
 .mission {
   color: var(--darkpink);
   font-size: var(--h2);
@@ -29,15 +33,10 @@ export default {
 .h2 {
   font-size: var(--h2);
 }
-.AboutUsTop {
-  background-color: #333043;
-  padding-bottom: 9rem;
-}
 .text {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3.7rem;
-  margin-bottom: auto;
+  margin-left: 11rem;
+  margin-right: 11rem;
+  margin-top: 4rem;
   font-family: 'Cairo', sans-serif;
   color: var(--white);
   text-align: left;
@@ -65,13 +64,15 @@ export default {
     font-size: var(--h3);
   }
   .heading {
-    margin-left: 3.5rem;
-    padding-top: 10.5rem;
+    margin-left: 4rem;
+    padding-top: 3rem;
   }
   .text {
     margin-top: 2rem;
     font-size: var(--h5);
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 </style>
