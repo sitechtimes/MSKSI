@@ -34,13 +34,12 @@ export default {
   font-family: 'Cairo', sans-serif;
   color: var(--white);
   text-align: left;
-
   justify-content: center;
   font-size: var(--four);
 }
 #AboutUsBottom {
   background-color: #333043;
-  height: 95rem;
+  padding-bottom: 10rem;
 }
 .gao {
   font-size: var(--h2);
@@ -71,27 +70,25 @@ export default {
   color: var(--yellow);
   font-size: var(--h1);
 }
-@media only screen and (max-width: 1500px){
-  .texti{
+@media only screen and (max-width: 1500px) {
+  .texti {
     font-size: var(--subheadingjum);
   }
   #AboutUsBottom {
-  background-color: #333043;
-  height: 75rem;
-}
-.will{
-  margin-top: 4rem;
-  font-weight: lighter;
-}
-.gao {
-
-  padding-top: 7rem;
-  font-weight: lighter;
-}
+    background-color: #333043;
+  }
+  .will {
+    margin-top: 4rem;
+    font-weight: lighter;
+  }
+  .gao {
+    padding-top: 7rem;
+    font-weight: lighter;
+  }
 }
 @media only screen and (max-width: 510px) {
   #AboutUsBottom {
-    height: 87rem;
+    padding-bottom: 6rem;
   }
   .texti {
     margin-top: 2rem;

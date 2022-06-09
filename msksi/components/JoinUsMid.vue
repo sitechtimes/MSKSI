@@ -1,57 +1,32 @@
 <template>
-        <div class="joinusmid">
-      <h3 class="subheading wbsm">Website & Social Media Manager</h3>
-      <ul id="wbsm">
-        <li class="text">Maintain the MSKSI website with the most current information, agendas, opportunities etc</li>
-        <li class="text">Highlight our MSKSI members for their work professionally, educationally and personally.</li>
-      </ul>
-      <form
-        target="_blank"
-        action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform"
-      >
-        <button class="button yellow">Join Us!</button>
-      </form>
-    </div>
+  <div class="joinusmid">
+    <h3 class="subheading wbsm">Website & Social Media Manager</h3>
+    <ul id="wbsm">
+      <li class="text">
+        Maintain the MSKSI website with the most current information, agendas,
+        opportunities etc
+      </li>
+      <li class="text">
+        Highlight our MSKSI members for their work professionally, educationally
+        and personally.
+      </li>
+    </ul>
+    <form
+      target="_blank"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform"
+    >
+      <button class="button yellow">Join Us!</button>
+    </form>
+  </div>
 </template>
 <script>
 export default {
   name: 'JoinUsMid',
   methods: {},
 }
-
 </script>
 
 <style scoped>
-.button {
-  padding: 1.2rem;
-  margin-top: 10rem;
-  margin-left: 80%;
-  position: sticky;
-  left: 125rem;
-  width: 22rem;
-  height: 8rem;
-  font-size: var(--four);
-  border-radius: 20rem;
-  font-family: 'Black Han Sans';
-  border: none;
-  cursor: pointer;
-}
-
-.button:active {
-  animation: press 0.2s 1 linear;
-}
-
-@keyframes press {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.92);
-  }
-  to {
-    transform: scale(1);
-  }
-}
 .yellow {
   color: var(--navyblue);
   background-color: var(--yellow);
@@ -67,7 +42,7 @@ export default {
   line-height: 6rem;
 }
 .joinusmid {
-  height: 75rem;
+  padding-bottom: 8rem;
   background-color: white;
   margin-top: 20rem;
 }
@@ -92,14 +67,6 @@ export default {
   .subheading {
     font-size: var(--subheadingju);
     margin-left: 11rem;
-  }
-  .button {
-    margin-top: 15.5rem;
-    position: sticky;
-    left: 11rem;
-    width: 20rem;
-    height: 5.5rem;
-    font-size: var(--subheadingjum);
   }
   .text {
     font-size: var(--list);
@@ -149,14 +116,13 @@ export default {
     font-size: var(--subheadingjum);
   }
 }
-@media only screen and (max-width: 510px){
+@media only screen and (max-width: 510px) {
   .joinusmid {
     height: 95rem;
   }
   .text {
     margin-top: 0;
     margin-bottom: 0;
-    
   }
   #wbsm {
     margin-left: -1.8rem;
@@ -176,7 +142,6 @@ export default {
     margin-left: auto;
     display: block;
     margin-right: auto;
-
   }
   .subheading {
     font-size: var(--subheadingjum);
