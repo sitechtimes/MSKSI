@@ -63,6 +63,7 @@ export default {
   margin-top: auto;
   margin-bottom: auto;
   display: block;
+  text-align: center;
 }
 .msksi {
   color: var(--darkpink);
@@ -76,13 +77,12 @@ export default {
   width: 50%;
   font-family: 'Black Han Sans';
   padding: 7rem;
-  padding-left: 15rem;
+  padding-left: 10rem;
 }
 #video {
   padding: 5rem;
   padding-bottom: 6rem;
   border-style: none;
-  height: 43rem;
 }
 .list {
   font-size: var(--h3);
@@ -90,54 +90,39 @@ export default {
   display: block;
   text-align: left;
   line-height: 4rem;
-  width: 130%;
+  width: 120%;
 }
 
 li {
   margin-top: 2rem;
 }
 @media only screen and (max-width: 1500px) {
-  .AboutUsMid {
-    text-align: center;
-    background-color: white;
-    padding-bottom: 10rem;
-  }
   .list {
     font-size: var(--subheadingjum);
-    margin-top: -68rem;
     line-height: 1.5;
   }
 }
 @media only screen and (max-width: 510px) {
-  .left {
-    width: 100%;
-    height: 65rem;
-    font-family: 'Black Han Sans';
-  }
-  .v {
+  .AboutUsMid {
     text-align: center;
+    background-color: white;
+    display: inline-block;
+    padding-bottom: 6rem;
   }
-
   #right {
     margin-left: auto;
-    width: 75%;
     margin-right: auto;
+    width: 30rem;
+    padding: 0;
   }
-
   .list {
     font-size: var(--h5);
-    margin-top: -32rem;
     display: block;
     text-align: left;
     margin-left: 1.5rem;
     margin-right: auto;
+    width: 30rem;
   }
-
-  .AboutUsMid {
-    text-align: center;
-    background-color: white;
-  }
-
   .msksi {
     color: var(--darkpink);
     font-size: var(--h3);
@@ -151,7 +136,8 @@ li {
     padding: 5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    height: 35%;
+    height: 22rem;
+    width: auto;
   }
 }
 </style>
