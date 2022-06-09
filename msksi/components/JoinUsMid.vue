@@ -101,17 +101,6 @@ export default {
     font-size: var(--h3);
     margin-top: 0;
   }
-  .button {
-    margin-top: 5rem;
-    width: 16rem;
-    height: 4.5rem;
-    font-size: var(--h4);
-    font-weight: lighter;
-    border-radius: 20rem;
-    font-family: 'Black Han Sans';
-    border: none;
-    margin: 4rem;
-  }
   .subheading {
     font-size: var(--subheadingjum);
   }
@@ -128,20 +117,6 @@ export default {
     margin-left: -1.8rem;
     font-size: var(--h6);
     width: 95vw;
-  }
-
-  .button {
-    margin-top: 5rem;
-    width: 16rem;
-    height: 4.5rem;
-    font-size: var(--h5);
-    font-weight: lighter;
-    border-radius: 20rem;
-    font-family: 'Black Han Sans';
-    border: none;
-    margin-left: auto;
-    display: block;
-    margin-right: auto;
   }
   .subheading {
     font-size: var(--subheadingjum);
