@@ -27,7 +27,7 @@ export default {
 <style scoped>
 .hometop {
   background-color: var(--navyblue);
-  height: 100rem;
+  padding-bottom: 30rem;
 }
 .alignright {
   width: fit-content;
@@ -90,10 +90,10 @@ export default {
 }
 @media only screen and (max-width: 510px) {
   .hometop {
-    height: 100rem;
+    padding-bottom: 20rem;
   }
   .mysis {
-    padding-top: 30rem;
+    padding-top: 20rem;
     text-align: center;
     margin-left: 0;
     margin-right: 0;

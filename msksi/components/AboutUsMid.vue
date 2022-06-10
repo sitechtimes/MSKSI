@@ -2,14 +2,14 @@
   <div class="AboutUsMid">
     <div class="left">
       <h2 class="v msksi">MSKSI</h2>
-      <iframe
-        id="video"
-        src="https://drive.google.com/file/d/1JlT8gnYTEr3YedSs970C7dVHHq5K43eM/preview"
-        width="600"
-        height="400"
-        allow="autoplay"
-        poster="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
-      ></iframe>
+      <div id="video-container">
+        <iframe
+          id="video"
+          src="https://drive.google.com/file/d/1JlT8gnYTEr3YedSs970C7dVHHq5K43eM/preview"
+          allow="autoplay"
+          poster="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
+        ></iframe>
+      </div>
       <h2 class="v vision">VISION</h2>
     </div>
     <div id="right">
@@ -57,6 +57,7 @@ export default {
   align-items: center;
 }
 .left {
+  width: 50%;
   font-family: 'Black Han Sans';
 }
 .v {
@@ -76,13 +77,17 @@ export default {
 #right {
   width: 50%;
   font-family: 'Black Han Sans';
-  padding: 7rem;
-  padding-left: 10rem;
+  /* padding: 7rem;
+  padding-left: 10rem; */
+}
+#video-container {
+  width: 100%;
+  text-align: center;
 }
 #video {
-  padding: 5rem;
-  padding-bottom: 6rem;
-  border-style: none;
+  height: 22vw;
+  width: 35vw;
+  margin: 2rem 0 2rem 0;
 }
 .list {
   font-size: var(--h3);
@@ -90,7 +95,8 @@ export default {
   display: block;
   text-align: left;
   line-height: 4rem;
-  width: 120%;
+  width: 95%;
+  margin: 8rem 0 8rem 0;
 }
 
 li {
@@ -108,6 +114,9 @@ li {
     background-color: white;
     display: inline-block;
     padding-bottom: 6rem;
+  }
+  .left {
+    width: 100vw;
   }
   #right {
     margin-left: auto;
@@ -133,11 +142,11 @@ li {
     font-size: var(--h3);
   }
   #video {
-    padding: 5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    height: 22rem;
-    width: auto;
+    margin: 2rem 0 2.5rem 0;
+  }
+  #video-container {
+    height: 20%;
+    width: 80%;
   }
 }
 </style>
