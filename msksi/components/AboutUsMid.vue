@@ -128,8 +128,9 @@ li {
     font-size: var(--h5);
     display: block;
     text-align: left;
-    margin-left: 1.5rem;
-    margin-right: auto;
+    margin: 3rem 0 0 1.5rem;
+    /* margin-left: 1.5rem;
+    margin-right: auto; */
     width: 30rem;
   }
   .msksi {
@@ -143,10 +144,11 @@ li {
   }
   #video {
     margin: 2rem 0 2.5rem 0;
+    height: 50vw;
+    width: 80vw;
   }
   #video-container {
-    height: 20%;
-    width: 80%;
+    width: 100%;
   }
 }
 </style>
