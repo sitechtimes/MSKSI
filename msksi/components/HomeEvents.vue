@@ -7,7 +7,8 @@
        :eventname="event.eventname"
        :eventmonth="event.eventmonth"
        :eventdate="event.eventdate"
-       /></div>
+       />
+       </div>
        
     </div>
 </template>
