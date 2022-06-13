@@ -1,6 +1,6 @@
 <template>
   <div id="AboutUsBottom">
-    <h2 class="gao">Goals and Outcome</h2>
+    <h2 class="gao">Goals and Outcomes</h2>
     <h3 class="will">MSKSI members will:</h3>
     <h4 class="texti">
       Be able to adapt healthy social and emotional habits that will support
@@ -34,13 +34,12 @@ export default {
   font-family: 'Cairo', sans-serif;
   color: var(--white);
   text-align: left;
-
   justify-content: center;
-    font-size: var(--four);
+  font-size: var(--four);
 }
 #AboutUsBottom {
   background-color: #333043;
-  height: 95rem;
+  padding-bottom: 10rem;
 }
 .gao {
   font-size: var(--h2);
@@ -71,9 +70,25 @@ export default {
   color: var(--yellow);
   font-size: var(--h1);
 }
+@media only screen and (max-width: 1500px) {
+  .texti {
+    font-size: var(--subheadingjum);
+  }
+  #AboutUsBottom {
+    background-color: #333043;
+  }
+  .will {
+    margin-top: 4rem;
+    font-weight: lighter;
+  }
+  .gao {
+    padding-top: 7rem;
+    font-weight: lighter;
+  }
+}
 @media only screen and (max-width: 510px) {
   #AboutUsBottom {
-    height: 68rem;
+    padding-bottom: 6rem;
   }
   .texti {
     margin-top: 2rem;
@@ -93,7 +108,7 @@ export default {
     font-size: var(--h5);
     text-align: left;
     font-family: 'Black Han Sans';
-    margin-left: 5rem;
+    margin-left: 4rem;
     font-weight: lighter;
     margin-top: 4rem;
   }
