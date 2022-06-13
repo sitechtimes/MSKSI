@@ -25,9 +25,7 @@ export default {
 .texti {
   color: white;
   font-weight: lighter;
-  width: 90%;
-  margin-left: 11rem;
-  margin-right: 11rem;
+  margin: 11rem;
   display: block;
   margin-top: 5rem;
   margin-bottom: auto;
