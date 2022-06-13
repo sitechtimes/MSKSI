@@ -1,21 +1,17 @@
 <template>
   <div id="footer">
     <h2 class="contactus footer-text">Contact Us</h2>
-    <div id="highlighter">
-      <span id="selecter"></span>
-      <span class="hoverselect selecttwitter"></span>
-      <span class="hoverselect selectinstagram"></span>
-      <span class="hoverselect selecttiktok"></span>
-      <span class="hoverselect selectgmail"></span>
-    </div>
+    <div id="highlighter"></div>
     <div class="buttons">
       <a
         href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
         target="_blank"
+        class="icon"
       >
         <div class="backing">
+          <span class="hoverselect selecttwitter"></span>
           <img
-            class="icon twitter"
+            class="iconimg twitter"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
             alt=""
           />
@@ -24,9 +20,11 @@
       <a
         href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
         target="_blank"
+        class="icon"
         ><div class="backing">
+          <span class="hoverselect selectinstagram"></span>
           <img
-            class="icon instagram"
+            class="iconimg instagram"
             src="~/assets/images/insta2.jpg"
             alt=""
           /></div
@@ -34,9 +32,11 @@
       <a
         href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
         target="_blank"
+        class="icon"
         ><div class="backing">
+          <span class="hoverselect selecttiktok"></span>
           <img
-            class="icon tiktok"
+            class="iconimg tiktok"
             src="~/assets/images/tiktok.png"
             alt=""
           /></div
@@ -44,8 +44,14 @@
       <a
         href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
         target="_blank"
+        class="icon"
         ><div class="backing">
-          <img class="icon gmail" src="~/assets/images/gmail.png" alt="" /></div
+          <span class="hoverselect selectgmail"></span>
+          <img
+            class="iconimg gmail"
+            src="~/assets/images/gmail.png"
+            alt=""
+          /></div
       ></a>
     </div>
   </div>
@@ -71,13 +77,13 @@
 
 .buttons {
   display: flex;
-  margin-left: 10rem;
-  margin-right: auto;
   justify-content: space-between;
   width: 35rem;
   height: 5rem;
+  margin: 0rem auto 0 50%;
+  transform: translatex(-50%);
 }
-.icon {
+.iconimg {
   height: 4rem;
   width: auto;
   filter: saturate(0);
@@ -88,18 +94,22 @@
 }
 .tiktok {
   height: 4.5rem;
-  filter: invert() saturate(0);
 }
 .gmail {
   height: 3.5rem;
 }
-.icon:hover {
+.icon {
+  transition: all 0.6s;
+}
+
+.icon:hover .iconimg {
   filter: saturate(100%);
 }
 
-.tiktok:hover {
-  filter: invert() saturate(100%);
+.icon:hover .hoverselect {
+  visibility: visible;
 }
+
 .backing {
   height: 8rem;
   width: 8rem;
@@ -118,34 +128,15 @@
   transform: translatex(-50%);
 }
 
-#selecter,
 .hoverselect {
   position: absolute;
-  height: 6.5rem;
-  width: 6.5rem;
+  height: 7.5rem;
+  width: 7.5rem;
   border-radius: 5.5rem;
-
-  margin-top: -0.35rem;
-  background-color: blueviolet;
-}
-.hoverselect:hover {
-  background-color: blue;
-}
-#selecter {
-  background-color: red;
-}
-
-.selecttwitter {
-  transform: translateX(-300%);
-}
-.selectinstagram {
-  transform: translateX(-133%);
-}
-.selecttiktok {
-  transform: translateX(28%);
-}
-.selectgmail {
-  transform: translate(195%);
+  margin-top: -0.2rem;
+  background-color: white;
+  border: solid 2px gray;
+  visibility: hidden;
 }
 
 @media only screen and (max-width: 1320px) {
