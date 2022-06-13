@@ -51,8 +51,6 @@
   justify-content: center;
   bottom: 0px;
   width: 100%;
-  padding-bottom: 3rem;
-  height: 20rem;
 }
 .contacts {
   color: var(--white);
@@ -69,12 +67,12 @@
   font-weight: lighter;
 }
 .buttons {
-  margin-top: -10rem;
   display: flex;
-  margin-right: 10rem;
   margin-left: auto;
+  margin-right: auto;
   justify-content: space-between;
-  width: 20%;
+  width: 30rem;
+  padding: 2rem;
 }
 .icon {
   height: 3rem;
@@ -106,28 +104,13 @@
   justify-content: center;
   align-items: center;
 }
-
-@media only screen and (max-width: 1032px) {
-  #footer {
-    width: 100%;
-    padding-bottom: 2rem;
-  }
-  .buttons {
-    margin-top: 3rem;
-    width: 50%;
-  }
-  .backing {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
 @media only screen and (max-width: 510px) {
   #footer {
-    height: 22rem;
     margin-bottom: 0;
+  }
+  .contactus {
+    color: var(--darkpink);
+    font-size: var(--h4);
   }
 }
 .icon {
