@@ -2,6 +2,8 @@
   <div>
     <HomeTop />
     <CommSpot />
+    <HomeMonth />
+    <HomeEvents />
   </div>
 </template>
 
