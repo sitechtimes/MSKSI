@@ -1,9 +1,33 @@
 <template>
   <div class="resourcestop">
     <h2 class="heading">Resources</h2>
+    <div id="resources">
     <div class="resource">
-      <img src="https://lh5.googleusercontent.com/COsJj6QMRp1jsOd4yBIRe_xlfHZUyxfWRdsJOPpr84qrU0J6yRuou1e5PCTwNtCMER27EcClC27QdOSn68jjZ_I=w1280" alt="folder">
+      <img src="">
     <a href=""> MSKSI Video Folder</a>
+    </div>
+      <div class="resource">
+      <img src="">
+    <a href=""> June 11, 2021 Jamboard Vision-board Reflections</a>
+    </div>
+      <div class="resource">
+      <img src="">
+    <a href="">April 9 MSKSI Padlet for Breakouts</a>
+    </div>
+        <div class="resource">
+      <img src="">
+    <a href="">MSKSI Journal</a>
+    </div>
+        <div class="resource">
+      <img src="">
+    <a href="">Background-Vision Board</a>
+    </div>
+        <div class="resource">
+      <img src="">
+    <a href="">Jamboard January 8, 2021 Gratitude Prompts link</a>
+    </div>
+
+
     </div>
   
   </div>
@@ -15,8 +39,18 @@ export default {
 }
 </script>
 <style scoped>
+#resources{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 45rem;
+}
 .resource{
-  width: 30rem;
+  height: 40rem;
+  width: 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: azure;
 }
 .resourcestop {
   background-color: #333043;
@@ -30,9 +64,10 @@ img{
 margin-left: 20rem;
 }
 a{
-  color: white;
-  font-size: var(--h4);
+  color: #333043;
+  font-size: var(--h5);
 font-family: 'Cairo', sans-serif;
+margin-bottom: 1rem;
 }
 @media only screen and (max-width: 810px) {
   .heading {
