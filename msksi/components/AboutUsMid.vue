@@ -121,15 +121,14 @@ li {
   #right {
     margin-left: auto;
     margin-right: auto;
-    width: 30rem;
+    width: 50rem;
     padding: 0;
   }
   .list {
-    font-size: var(--h5);
+    font-size: var(--h4);
     display: block;
     text-align: left;
-    margin: 3rem 0 0 1.5rem;
-    width: 30rem;
+    margin: 3rem 0 0 3.5rem;
   }
   .msksi {
     color: var(--darkpink);
@@ -149,7 +148,7 @@ li {
     width: 100%;
   }
 }
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 512px) {
   .AboutUsMid {
     text-align: center;
     background-color: white;
