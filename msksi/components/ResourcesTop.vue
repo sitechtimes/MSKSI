@@ -85,7 +85,7 @@ margin-right: auto;
   color: var(--yellow);
 }
 img{
-width: 20rem;
+width: 18rem;
 margin-left: auto;
 margin-right: auto;
 display: block;
@@ -127,17 +127,18 @@ ul{
   color: var(--yellow);
 }
 img{
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  height: 18rem;
 }
 #link{
 color: #333043;
-font-size: var(--smallText);
+font-size: var(--h5);
 font-family: 'Cairo', sans-serif;
 text-align: center;
+margin-top: 1rem;
 }
 }
-@media only screen and (max-width: 620px){
+@media only screen and (max-width: 720px){
   img{
     width: 15rem;
     height: 15rem;
@@ -146,7 +147,7 @@ text-align: center;
     margin-top: 0;
   }
   #link{
-  font-size: var(--one);
+  font-size: var(--h5);
   }
 }
 @media only screen and (max-width: 620px) {
