@@ -143,7 +143,7 @@ margin-top: 1rem;
     margin-top: 0rem;
   }
   img{
-    height: 15rem;
+    height: 13rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
@@ -162,7 +162,33 @@ margin-top: 1rem;
   justify-content: center;
   padding-bottom: 5rem;
 }
+ .resource{
+  margin-top: 3rem;
+  width: 25rem;
+  height: 25rem;
+ }
+  h3{
+font-size: var(--one);}
 }
+@media only screen and (max-width: 710px){
+ #resources{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+ .resource{
+  margin-top: 3rem;
+  width: 25rem;
+  height: 25rem;
+  margin-right: 2rem;
+ }
+ h3{
+font-size: var(--one);}
+}
+
 @media only screen and (max-width: 620px) {
   .heading {
     font-size: var(--h4);
