@@ -68,7 +68,7 @@
   color: var(--navyblue);
   text-align: center;
   font-size: var(--h5);
-  margin-top: 3rem;
+  margin-top: 0;
   width: 25rem;
   margin-left: auto;
   margin-right: auto;
@@ -84,20 +84,23 @@
   margin-top: 4.5rem;
 }
 .polaroid-container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+   */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 87vw;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
+  margin: 11rem;
+  margin-top: 6rem;
 }
 .polaroid {
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
+  background-color: white;
+  display: flex;
+  flex-flow: column;
   width: 26rem;
   height: 35rem;
-  background-color: white;
 }
 @media only screen and (max-width: 1500px) {
   .polaroid {
@@ -112,14 +115,14 @@
     margin-top: 4rem;
   }
   .polaroids {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; */
   }
 }
 @media only screen and (max-width: 510px) {
   .polaroids {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
@@ -127,7 +130,7 @@
     width: 87vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0rem;
+    margin-top: 0rem; */
   }
   .polaroid {
     width: auto;
