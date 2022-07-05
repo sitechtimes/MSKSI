@@ -1,7 +1,7 @@
 <template>
   <div class="GalleryTop">
     <h2 class="heading">Photo <span class="gall">Gallery</span></h2>
-    <div class="polaroids">
+    <div class="polaroid-container">
       <div class="polaroid">
         <div id="picture"></div>
         <a
@@ -83,7 +83,7 @@
   margin: 3rem;
   margin-top: 4.5rem;
 }
-.polaroids {
+.polaroid-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -96,12 +96,11 @@
 .polaroid {
   margin-top: 10rem;
   width: 26rem;
-  height: 38rem;
+  height: 35rem;
   background-color: white;
 }
 @media only screen and (max-width: 1500px) {
   .polaroid {
-    width: 25rem;
     height: 35rem;
   }
   .polaroids {
@@ -110,7 +109,7 @@
   }
   .name {
     font-size: 1.6rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
   .polaroids {
     display: flex;
