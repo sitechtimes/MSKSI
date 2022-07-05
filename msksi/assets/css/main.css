@@ -43,9 +43,9 @@ body,
 .heading {
   font-size: var(--h1);
   font-family: 'Black Han Sans';
-  margin-top: 0rem;
+  margin-top: 2rem;
   margin-left: 11rem;
   font-weight: lighter;
   color: var(--yellow);
-  padding-top: 7rem;
+  padding-top: 12rem;
 }

@@ -6,7 +6,7 @@
     <div class="wrapper">
       <ul class="link-container">
         <li class="link">
-          <router-link class="menu-router" to="/"> Home </router-link>
+          <router-link class="menu-router" to="/Home"> Home </router-link>
         </li>
         <li class="link">
           <router-link class="menu-router" to="/AboutUs">
