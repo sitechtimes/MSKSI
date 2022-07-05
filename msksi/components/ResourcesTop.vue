@@ -62,12 +62,12 @@ margin-right: auto;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  height: 65rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 6rem;
 }
 .resource{
   margin-top: 2rem;
@@ -80,7 +80,6 @@ margin-right: auto;
 }
 .resourcestop {
   background-color: #333043;
-  height: 100rem;
 }
 .heading {
   color: var(--yellow);
@@ -99,12 +98,12 @@ font-family: 'Cairo', sans-serif;
 width: 80%;
 margin-left: auto;
 margin-right: auto;
-margin-top: 2rem;
+margin-top: 1rem;
 }
 .item{
 color: #333043;
 font-family: 'Cairo', sans-serif;
-text-align: left;
+  text-align: center;
 font-size: var(--h6);
 }
 ul{
@@ -123,33 +122,73 @@ ul{
 }
 .resourcestop {
   background-color: #333043;
-  height: 100rem;
 }
 .heading {
   color: var(--yellow);
 }
 img{
+  width: 20rem;
   height: 20rem;
-margin-left: 20rem;
 }
 #link{
 color: #333043;
-font-size: var(--h5);
+font-size: var(--smallText);
 font-family: 'Cairo', sans-serif;
 text-align: center;
 }
-
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 620px){
+  img{
+    width: 15rem;
+    height: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+  #link{
+  font-size: var(--one);
+  }
+}
+@media only screen and (max-width: 620px) {
   .heading {
-    font-size: var(--h3);
+    font-size: var(--h4);
     margin-left: 4rem;
     margin-top: 0rem;
   }
+
+  #resources{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+ .resource{
+  margin-top: 3rem;
+  width: 25rem;
+  height: 25rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  padding-bottom: 2rem;
+}
   img{
     width: 10rem;
     height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
   }
-
+  #link{
+  font-size: var(--h6);
+  }
+h3{
+  font-size: var(--one);
+}
 }
 </style>
