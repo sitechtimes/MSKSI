@@ -25,7 +25,7 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative; 
-  padding-bottom: 75%; 
+  padding-bottom:40%;
   height: 0; 
   overflow: hidden;
 }
@@ -34,7 +34,7 @@ position: absolute;
 top:0; 
 /* left: 0;  */
 width: 70%; 
-height: 50%;
+height: 100%;
 }
 @media only screen and (max-width: 810px) {
   .heading {

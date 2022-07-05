@@ -65,19 +65,19 @@
   font-size: var(--h5);
   margin: 2rem;
   font-family: 'ABeeZee', sans-serif;
-  text-decoration: none; 
+  text-decoration: none;
   padding: 1rem;
 }
 .router:hover {
   color: var(--darkpink);
-  height:5rem;
+  height: 5rem;
   border-bottom: 3px solid var(--darkpink);
   /* text-decoration: underline; */
   transition: 0.3s;
 }
 .router.nuxt-link-exact-active {
   color: var(--darkpink);
-  height:5rem;
+  height: 5rem;
   border-bottom: 3px solid var(--darkpink);
 }
 .subheading {
@@ -99,14 +99,13 @@
   border: none;
   cursor: pointer;
 }
-@media only screen and (max-width: 1500px)
-{
+@media only screen and (max-width: 1500px) {
   .button {
-  left: 11rem;
-  width: 20rem;
-  height: 7rem;
-  font-size: var(--subheadingjum);
-}
+    left: 11rem;
+    width: 20rem;
+    height: 7rem;
+    font-size: var(--subheadingjum);
+  }
 }
 .button:active {
   animation: press 0.2s 1 linear;
@@ -209,6 +208,6 @@ input[type='checkbox'] {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--yellow);
+  background: var(--darkpink);
   border-radius: 40rem;
 }
