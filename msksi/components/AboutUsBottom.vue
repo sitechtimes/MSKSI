@@ -84,6 +84,14 @@ export default {
     font-weight: lighter;
   }
 }
+@media only screen and (max-width: 1500px) {
+  .will {
+    font-size: var(--h4);
+  }
+  .texti {
+    margin-top: 4rem;
+  }
+}
 @media only screen and (max-width: 510px) {
   #AboutUsBottom {
     padding-bottom: 6rem;
