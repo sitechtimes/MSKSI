@@ -23,8 +23,14 @@ export default {
 </script>
 
 <style scoped>
- @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&family=Sora:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Sora:wght@800&display=swap');
 
+img {
+    height: 40rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    justify-content: flex-end;
+}
 h2 {
     font-size: var(--h1);
     color: var(--yellow);
@@ -42,13 +48,10 @@ p {
     font-size: 3rem;
     padding: 1rem 4rem 2rem 4rem;
     font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 300;
     color: var(--white);
 }
-img {
-    height: 40rem;
-    padding-right: 5rem;
-    padding-top: 2rem;
-}
+
 .postcontent {
     display: flex;
     padding: 5rem 6rem 0 6rem;
@@ -58,6 +61,9 @@ img {
 }
 
 @media screen and (max-width: 450px){
+    .newmonth{
+        padding-bottom: 0rem;
+    }
     .postcontent{
         display: inline-block;
         padding: 2rem 0 0 0;
@@ -70,16 +76,14 @@ img {
         font-size: 3rem;
     }
     p{
-        font-size: var(--h5);
-        padding-bottom: 0rem;
+        font-size: 2.3rem;
+        padding: .4rem 4rem 0 4rem;
     }
     img{
         height: 20rem;
         margin: 0 4rem 0 0;
     }
-    .newmonth{
-        padding-bottom: 0rem;
-    }
+
 }
 
 </style>

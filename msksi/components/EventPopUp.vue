@@ -15,7 +15,7 @@ export default {
     props: {
     eventname: String,
     eventmonth: String,
-    eventdate: String,
+    eventdate: Number,
   },
 }
 </script>
@@ -23,37 +23,37 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Black+Han+Sans&display=swap');
 .previewcard{
-    height: 40rem;
-    width: 40rem;
+    height: 45rem;
+    width: 45rem;
     background-color: var(--navyblue);
     border-radius: 2rem;
     font-family: 'ABeeZee', sans-serif;
-    padding: 4rem;
+    padding: 1rem;
 }
 .dates{
     padding-top: 2.5rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 2rem;
 }
 .eventname{
     font-size: var(--h3);
     color: var(--white);
-    text-align: left;
 }
 .eventmonth {
     font-size: var(--h3);
     color: var(--white);
-    padding: 2rem;
+    padding-top: 6rem;
 }
 .eventnumber{
-    font-size: var(--h1);
+    font-size: 16rem;
     color: var(--white);
     font-family: 'Black Han Sans', sans-serif;
 }
 .calendarlink {
     color: var(--white);
     font-size: var(--h4);
-    text-align: right;
 }
+
 </style>
