@@ -26,4 +26,7 @@ export default {
 #navbar {
   z-index: 500;
 }
+
+/* css for links when hover and when active */
+
 </style>
