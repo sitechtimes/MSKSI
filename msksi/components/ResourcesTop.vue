@@ -114,6 +114,7 @@ ul{
 @media only screen and (max-width: 1500px){
   .resource{
   width: 30rem;
+  margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(255, 255, 255);
@@ -137,6 +138,10 @@ margin-top: 1rem;
 }
 }
 @media only screen and (max-width: 720px){
+    .heading {
+    margin-left: 4rem;
+    margin-top: 0rem;
+  }
   img{
     height: 15rem;
     margin-left: auto;
@@ -146,6 +151,17 @@ margin-top: 1rem;
   #link{
   font-size: var(--h5);
   }
+  #resources{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
 }
 @media only screen and (max-width: 620px) {
   .heading {
