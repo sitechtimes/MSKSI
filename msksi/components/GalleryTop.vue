@@ -77,7 +77,6 @@
 }
 #picture {
   width: 25rem;
-  height: 25rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4.5rem;
