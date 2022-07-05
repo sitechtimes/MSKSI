@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style scoped>
+
 .button {
   padding: 1.2rem;
   margin-top: 10rem;
@@ -37,10 +38,14 @@ export default {
   cursor: pointer;
 }
 
+.button:hover{
+  transform: scale(1.2);
+  transition: transform .75s;
+
+}
 .button:active {
   animation: press 0.2s 1 linear;
 }
-
 @keyframes press {
   0% {
     transform: scale(1);

@@ -50,7 +50,8 @@ export default {
   width: 40rem;
   display: flex;
   flex-wrap: wrap;
-  background-color: azure;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
 }
 .resourcestop {
   background-color: #333043;
