@@ -57,23 +57,29 @@ img {
     padding-bottom: 8rem;
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 450px){
     .postcontent{
         display: inline-block;
         padding: 2rem 0 0 0;
     }
     h2 {
-        font-size: var(--h2);
+        font-size: var(--h3);
+        padding-top: 6rem;
     }
     h3{
-        font-size: var(--h4);
+        font-size: 3rem;
     }
     p{
         font-size: var(--h5);
+        padding-bottom: 0rem;
     }
     img{
         height: 20rem;
         margin: 0 4rem 0 0;
     }
+    .newmonth{
+        padding-bottom: 0rem;
+    }
 }
+
 </style>
