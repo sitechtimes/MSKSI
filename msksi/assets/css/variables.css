@@ -58,6 +58,7 @@
   margin-bottom: auto;
   font-family: 'Black Han Sans';
   font-weight: lighter;
+  text-decoration: none;
 }
 .navRouter {
   color: var(--white);
@@ -67,14 +68,14 @@
   text-decoration: none; 
   padding: 1rem;
 }
-.navRouter:hover {
+.router:hover {
   color: var(--darkpink);
   height:5rem;
   border-bottom: 3px solid var(--darkpink);
   /* text-decoration: underline; */
   transition: 0.3s;
 }
-.navRouter.nuxt-link-exact-active {
+.router.nuxt-link-exact-active {
   color: var(--darkpink);
   height:5rem;
   border-bottom: 3px solid var(--darkpink);
