@@ -76,13 +76,12 @@
   font-weight: bolder;
 }
 #picture {
-  width: 25rem;
-  height: 25rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4.5rem;
+  height: 20rem;
   z-index: 1;
   background-color: rgb(194, 194, 194);
+  width: 20rem;
+  margin: 3rem;
+  margin-top: 4.5rem;
 }
 .polaroids {
   display: flex;
@@ -96,14 +95,11 @@
 }
 .polaroid {
   margin-top: 10rem;
-  width: 18%;
+  width: 26rem;
+  height: 38rem;
   background-color: white;
 }
 @media only screen and (max-width: 1500px) {
-  #picture {
-    width: 20rem;
-    height: 20rem;
-  }
   .polaroid {
     width: 25rem;
     height: 35rem;
@@ -135,17 +131,13 @@
     margin-top: 0rem;
   }
   .polaroid {
-    height: 33rem;
-    width: 28rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-  #picture {
-    width: 20rem;
-    height: 20rem;
+    width: auto;
+    height: 35rem;
+    margin-top: 5rem;
   }
   .name {
     font-size: var(--h5);
+    margin-top: 3rem;
   }
   .heading {
     font-size: var(--h3);
