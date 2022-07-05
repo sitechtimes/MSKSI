@@ -64,16 +64,20 @@
   font-size: var(--h5);
   margin: 2rem;
   font-family: 'ABeeZee', sans-serif;
-  text-decoration: none;
+  text-decoration: none; 
+  padding: 1rem;
 }
-.router:hover {
+.navRouter:hover {
   color: var(--darkpink);
-  text-decoration: underline;
+  height:5rem;
+  border-bottom: 3px solid var(--darkpink);
+  /* text-decoration: underline; */
   transition: 0.3s;
 }
-.router:focus {
+.navRouter.nuxt-link-exact-active {
   color: var(--darkpink);
-  text-decoration: underline;
+  height:5rem;
+  border-bottom: 3px solid var(--darkpink);
 }
 .subheading {
   margin-left: 11rem;
