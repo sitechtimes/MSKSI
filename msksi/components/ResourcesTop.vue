@@ -3,23 +3,23 @@
     <h2 class="heading">Resources</h2>
     <div id="resources">
     <div class="resource">
-      <img src="https://i.pinimg.com/originals/67/75/9e/67759e3a6a1dd544deffe5673d021174.png">
+      <img src="https://i.pinimg.com/originals/67/75/9e/67759e3a6a1dd544deffe5673d021174.png" alt="folder">
     <a target="_blank" id="link" href="https://sites.google.com/strongschools.nyc/msksi/resources#h.vefx57yqjvc2">MSKSI Video Folder</a>
     </div>
       <div class="resource">
-      <img src="https://lh5.googleusercontent.com/PuV14rc2AkU5Kq_K5brxP4UFlGe3IRxLydIY-RuY7BW2j88m5dlpBAvNehiTluiAZ97wQ01GAo1VIG8IHcGqnGxu5QXMw-f3fPMGxrihsHuKhXheDXjZRkGyvrX8idFSnw=w1280">
+      <img src="https://lh5.googleusercontent.com/PuV14rc2AkU5Kq_K5brxP4UFlGe3IRxLydIY-RuY7BW2j88m5dlpBAvNehiTluiAZ97wQ01GAo1VIG8IHcGqnGxu5QXMw-f3fPMGxrihsHuKhXheDXjZRkGyvrX8idFSnw=w1280" alt="jamboard posts">
     <a target="_blank" id="link" href="https://sites.google.com/strongschools.nyc/msksi/resources#h.3zdell8jwjmb">June 11, 2021 Jamboard Vision-board Reflections</a>
     </div>
       <div class="resource">
-      <img src="https://padlet-uploads.storage.googleapis.com/5587727/AEV1LKtFkyKgLU1DzT_Ocg/ef1210d4305560b0eb3acf6500d5099c.png">
+      <img src="https://padlet-uploads.storage.googleapis.com/5587727/AEV1LKtFkyKgLU1DzT_Ocg/ef1210d4305560b0eb3acf6500d5099c.png" alt="padlet logo">
     <a target="_blank" id="link"  href="https://sites.google.com/strongschools.nyc/msksi/resources#h.2ejb8tqf6z7a">April 9 MSKSI Padlet for Breakouts</a>
     </div>
     <div class="resource">
-      <img src="https://lh3.googleusercontent.com/rQQvR9fnoQP1dNAApdTanQqgs5dM5RNCrwZiiLQ38xvIxqO0GFo5ZfyQLwy2qnfnAhGEdzVgNvKXEcNZM0nCd0LTXLKZsaHn5n9IAPibIktsdhvd_QtyUHBVC-h3pdas-A=w1280">
+      <img src="https://lh3.googleusercontent.com/rQQvR9fnoQP1dNAApdTanQqgs5dM5RNCrwZiiLQ38xvIxqO0GFo5ZfyQLwy2qnfnAhGEdzVgNvKXEcNZM0nCd0LTXLKZsaHn5n9IAPibIktsdhvd_QtyUHBVC-h3pdas-A=w1280" alt="journal">
     <a target="_blank" id="link"  href="https://docs.google.com/presentation/u/0/d/17DbBKlW0LjksZ3NsXBlewAGMp1v4YNWDP85bbhJEwTQ/copy">MSKSI Journal</a>
     </div>
     <div class="resource">
-      <img src="https://padlet-uploads.storage.googleapis.com/5587727/AEV1LKtFkyKgLU1DzT_Ocg/ef1210d4305560b0eb3acf6500d5099c.png">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png">
     <a target="_blank" id="link" href="https://docs.google.com/document/d/11fbuSuNiU4O6g6RKTeAxfixFOV89Dd1W1wO5CEcbwmQ/edit">Background-Vision Board</a>
     </div>
     <div class="resource">
@@ -32,7 +32,7 @@
         </ul>
     </div>
     <div class="resource">
-      <img src="https://lh4.googleusercontent.com/nE2JYKfW5D-icd_xuFx0rJ2nFvSAC6qHX7JF6dN-CTDSQC9Sp0H7jz-2OMVE8DGixIW8V91uNu82W36frdhbBAWFvBeRNOVU3o_k2uBCyIF4UzEflJMFqAnTPHb_Rv7biQ=w1280">
+      <img src="https://lh4.googleusercontent.com/nE2JYKfW5D-icd_xuFx0rJ2nFvSAC6qHX7JF6dN-CTDSQC9Sp0H7jz-2OMVE8DGixIW8V91uNu82W36frdhbBAWFvBeRNOVU3o_k2uBCyIF4UzEflJMFqAnTPHb_Rv7biQ=w1280" alt="jamboard posts">
     <a target="_blank" id="link" href="https://jamboard.google.com/d/1I0G1z3-7R96nD9EAgRI4ncikXWkw8AhpdrRZC3JOtIw/viewer">Jamboard January 8, 2021 Gratitude Prompts link </a>
     </div>
     <div class="resource">
@@ -51,7 +51,7 @@ export default {
 </script>
 <style scoped>
 h3{
-  font-size: var(--h6);
+font-size: var(--h6);
 font-family: 'Cairo', sans-serif;
 width: 80%;
 margin-left: auto;
@@ -85,7 +85,7 @@ margin-right: auto;
   color: var(--yellow);
 }
 img{
-width: 18rem;
+height: 15rem;
 margin-left: auto;
 margin-right: auto;
 display: block;
@@ -113,7 +113,6 @@ ul{
 }
 @media only screen and (max-width: 1500px){
   .resource{
-  margin-top: 2rem;
   width: 30rem;
   display: flex;
   flex-wrap: wrap;
@@ -127,8 +126,7 @@ ul{
   color: var(--yellow);
 }
 img{
-  width: 18rem;
-  height: 18rem;
+  height: 14rem;
 }
 #link{
 color: #333043;
@@ -140,11 +138,10 @@ margin-top: 1rem;
 }
 @media only screen and (max-width: 720px){
   img{
-    width: 15rem;
     height: 15rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0;
+    margin-top: 4rem;
   }
   #link{
   font-size: var(--h5);
@@ -179,7 +176,6 @@ margin-top: 1rem;
   padding-bottom: 2rem;
 }
   img{
-    width: 10rem;
     height: 10rem;
     margin-left: auto;
     margin-right: auto;
