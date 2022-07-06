@@ -76,10 +76,12 @@
 }
 .polaroid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
   grid-gap: 7rem;
   margin: 11rem;
   margin-top: 6rem;
+  justify-items: center;
+  grid-template-rows: auto;
 }
 .polaroid {
   background-color: white;
