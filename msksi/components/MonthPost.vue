@@ -3,8 +3,8 @@
     <h2> {{ month }} </h2>
     <h3> {{ subheader }} </h3>
     <div class="postcontent">
-        <p> {{ description }} </p>
-        <img :src="image" alt="" />
+            <p> {{ description }} </p>
+            <img :src="image" alt="" />
     </div>
 </div>
 </template>
@@ -27,9 +27,7 @@ export default {
 
 img {
     height: 40rem;
-    padding-right: 5rem;
     padding-top: 2rem;
-    justify-content: flex-end;
 }
 h2 {
     font-size: var(--h1);
@@ -54,10 +52,15 @@ p {
 
 .postcontent {
     display: flex;
+    align-items: center;
     padding: 5rem 6rem 0 6rem;
 }
 .newmonth{
     padding-bottom: 8rem;
+}
+
+@media screen and (max-width: 1600px){
+
 }
 
 @media screen and (max-width: 450px){
@@ -67,6 +70,7 @@ p {
     .postcontent{
         display: inline-block;
         padding: 2rem 0 0 0;
+        text-align:center;
     }
     h2 {
         font-size: var(--h3);
@@ -77,11 +81,13 @@ p {
     }
     p{
         font-size: 2.3rem;
-        padding: .4rem 4rem 0 4rem;
+        padding: .4rem 4rem 1rem 4rem;
     }
     img{
-        height: 20rem;
-        margin: 0 4rem 0 0;
+        height: 24rem;
+        margin: 0 4rem 0 4rem;
+        padding-bottom: 2rem;
+        justify-content: center;
     }
 
 }

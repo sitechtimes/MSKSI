@@ -23,7 +23,7 @@ export default {
     }
   },
   async fetch(){
-    this.posts = await this.$content(`monthposts`).limit(1).sortBy("order", "desc").fetch()
+    this.posts = await this.$content(`monthposts`).limit(1).sortBy("order", "descending").fetch()
   },
 }
 </script>
@@ -31,6 +31,7 @@ export default {
 <style scoped>
 .specialmonthly {
   background-color: var(--navyblue);
+  padding-bottom: 4rem;
 }
 
 </style>

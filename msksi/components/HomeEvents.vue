@@ -9,7 +9,6 @@
        :eventdate="event.eventdate"
        />
        </div>
-       
     </div>
 </template>
 
@@ -32,22 +31,25 @@ export default {
 
 <style scoped>
 .homeevents {
-  height: 100rem;
   background-color: var(--darkpink);
   padding: 7rem;
   }
 .eventheader {
     font-size: var(--h1);
     text-align: center;
-    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Sora', sans-serif;
     color: var(--white);
     padding-top: 4rem;
   }
 .eventpreviews{
   display: flex;
-  text-align: center;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 10rem;
+  padding: 12rem 0 14rem 0;
+  }
+  @media screen and (max-width: 1200px){
+    .eventpreviews{
+      padding: 7rem 0 10rem 0;
+    }
   }
 </style>
