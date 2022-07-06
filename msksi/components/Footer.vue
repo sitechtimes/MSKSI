@@ -52,7 +52,6 @@
   bottom: 0px;
   width: 100%;
   padding-bottom: 3rem;
-  height: 20rem;
 }
 .contacts {
   color: var(--white);
@@ -69,12 +68,12 @@
   font-weight: lighter;
 }
 .buttons {
-  margin-top: -10rem;
   display: flex;
-  margin-right: 10rem;
+  margin-right: auto;
   margin-left: auto;
   justify-content: space-between;
-  width: 20%;
+  width: 30rem;
+  padding: 2rem;
 }
 .icon {
   height: 3rem;
