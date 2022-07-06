@@ -43,15 +43,23 @@ export default {
     font-size: var(--subheadingjum);
   }
 }
-@media only screen and (max-width: 824px) {
+@media only screen and (max-width: 1032px) {
   .heading {
-    margin-left: 8rem;
+    text-align: center;
+    margin-left: 0;
+  }
+  h2 {
+    font-size: var(--h2);
+  }
+  .mission {
+    font-size: var(--h2);
   }
   .text {
     margin: 4rem 8rem 0 8rem;
+    font-size: var(--h5);
   }
 }
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 770px) {
   .AboutUsTop {
     padding-bottom: 5rem;
   }
@@ -64,7 +72,6 @@ export default {
     font-size: var(--h3);
   }
   .heading {
-    margin-left: 4rem;
     padding-top: 3rem;
   }
   .text {

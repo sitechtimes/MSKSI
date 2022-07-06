@@ -8,15 +8,21 @@ body,
   margin: 0;
   font-size: 62.5%;
 }
+.heading {
+  font-size: var(--h1);
+  font-family: 'Black Han Sans';
+  margin: 0rem 11rem 0 11rem;
+  font-weight: lighter;
+  color: var(--yellow);
+  padding-top: 7rem;
+}
 @media only screen and (max-width: 1500px) {
   .heading {
     font-size: var(--h2);
     font-family: 'Black Han Sans';
-    margin-top: 2rem;
     margin-left: 8rem;
     font-weight: lighter;
-    color: var(--yellow);
-    padding-top: 12rem;
+    padding-top: 8rem;
   }
 }
 @media only screen and (max-width: 1032px) {
@@ -25,6 +31,15 @@ body,
   }
   .menu {
     display: initial;
+  }
+  .heading {
+    font-size: var(--h2);
+    font-family: 'Black Han Sans';
+    margin-top: 0rem;
+    margin-left: 0;
+    font-weight: lighter;
+    padding-top: 7rem;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 1032px) {
@@ -38,14 +53,4 @@ body,
 .menuIcon {
   background-color: transparent;
   border-color: transparent;
-}
-
-.heading {
-  font-size: var(--h1);
-  font-family: 'Black Han Sans';
-  margin-top: 0rem;
-  margin-left: 11rem;
-  font-weight: lighter;
-  color: var(--yellow);
-  padding-top: 7rem;
 }

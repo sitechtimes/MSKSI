@@ -71,6 +71,7 @@ export default {
 @media only screen and (max-width: 1500px) {
   .texti {
     font-size: var(--subheadingjum);
+    margin-top: 4rem;
   }
   #AboutUsBottom {
     background-color: #333043;
@@ -78,30 +79,35 @@ export default {
   .will {
     margin-top: 4rem;
     font-weight: lighter;
+    font-size: var(--h4);
   }
   .gao {
     padding-top: 7rem;
     font-weight: lighter;
   }
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1032px) {
+  .gao {
+    font-size: var(--h2);
+  }
   .will {
-    font-size: var(--h4);
+    margin: 3rem 8rem 0 8rem;
   }
   .texti {
-    margin-top: 4rem;
+    font-size: var(--h5);
+    margin: 2rem 8rem 0 8rem;
   }
 }
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 770px) {
   #AboutUsBottom {
     padding-bottom: 6rem;
   }
   .texti {
-    margin-top: 2rem;
-    font-size: var(--h5);
-    width: 78%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem 6rem 0 6rem;
+  }
+  h2 {
+    text-align: center;
+    width: 100%;
   }
   .gao {
     font-size: var(--h3);
@@ -114,7 +120,7 @@ export default {
     font-size: var(--h5);
     text-align: left;
     font-family: 'Black Han Sans';
-    margin-left: 4rem;
+    margin: 2rem 6rem 0 6rem;
     font-weight: lighter;
     margin-top: 4rem;
   }

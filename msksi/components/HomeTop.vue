@@ -2,14 +2,14 @@
   <div>
     <div class="hometop">
       <div class="alignright">
-        <h2 class="heading mysis">My Sister’s</h2>
+        <h2 class="name mysis">My Sister’s</h2>
         <div class="line2">
           <img
             id="temp-logo"
             src="https://cutewallpaper.org/24/heart-clip-heart/clip-art-hearts-clip-art-two-hearts-clipart-panda-free-clipart-images--heart-clip-art-clip-art-free-clip-art.gif"
             alt=""
           />
-          <h2 class="heading keeper">Keeper</h2>
+          <h2 class="name keeper">Keeper</h2>
         </div>
 
         <h3 class="si">Staten Island</h3>
@@ -29,6 +29,13 @@ export default {
   background-color: var(--navyblue);
   padding-bottom: 30rem;
 }
+.name {
+  font-size: var(--h1);
+  font-family: 'Black Han Sans';
+  font-weight: lighter;
+  color: var(--yellow);
+  padding-top: 7rem;
+}
 .alignright {
   width: fit-content;
   display: flex;
@@ -41,9 +48,6 @@ export default {
   font-size: 13rem;
   text-align: right;
   padding-top: 30rem;
-}
-.heading {
-  margin-left: 0;
 }
 .line2 {
   display: flex;
