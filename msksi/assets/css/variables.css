@@ -32,6 +32,7 @@
   --subheadingjum: 3rem;
   --members: 2rem;
   --four: 4rem;
+  --one: 1.3rem;
 }
 #navbar {
   background-color: var(--navyblue);
@@ -41,10 +42,13 @@
   align-items:center;
   justify-content: space-between;
   padding: 2rem;
+  padding-top: 2.5rem;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2;
+  display: flex;
 }
 .nav {
   margin-top: auto;

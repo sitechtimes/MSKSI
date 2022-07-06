@@ -24,16 +24,53 @@
   </div>
 </template>
 <style scoped>
+
+.button {
+  padding: 1.2rem;
+  margin-top: 10rem;
+  margin-left: 80%;
+  position: sticky;
+  left: 125rem;
+  width: 22rem;
+  height: 8rem;
+  font-size: var(--four);
+  border-radius: 20rem;
+  font-family: 'Black Han Sans';
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover{
+  transform: scale(1.2);
+  transition: transform .75s;
+
+}
+.button:active {
+  animation: press 0.2s 1 linear;
+}
+
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 .pink {
   background-color: var(--darkpink);
   color: white;
   filter: drop-shadow(3px 4px 3px black);
 }
+
 #subc {
   list-style-type: circle;
   color: white;
   margin-top: 2rem;
-  padding-bottom: 5rem;
 }
 .subc {
   color: var(--darkpink);
@@ -43,28 +80,39 @@
 }
 .joinustop {
   background-color: #333043;
-  padding-bottom: 8rem;
+  height: 65rem;
 }
 .text {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-size: var(--h3);
   margin-left: 15rem;
   margin-top: 0.5rem;
-  line-height: 6rem;
+    line-height: 6rem;
+}
+.joinustop {
+  height: 100rem;
 }
 #picture{
   width: 30rem;
 
 } 
+.joinusmid {
+  height: 100rem;
+  background-color: white;
+  margin-top: 20rem;
+}
 
 @media only screen and (max-width: 1500px) {
+  .joinustop {
+    height: 100rem;
+  }
   .text {
     font-size: var(--list);
     margin-left: 12rem;
     margin-top: 0rem;
   }
-  .heading {
-    margin-left: 11rem;
+  .heading{
+    margin-left: 6rem;
   }
   #subc {
     margin-left: 2rem;
@@ -86,15 +134,33 @@
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-  .text {
-    margin-top: 0;
-    margin-bottom: 0;
+  .subc{
+    margin-left: 6rem;
   }
-  #subc {
-    margin-top: 0rem;
-    margin-left: -1.8rem;
-    font-size: var(--h6);
-    width: 95vw;
+  .subheading {
+    font-size: var(--subheadingju);
+        margin-left: 6rem;
+  }
+  .button {
+    margin-top: 7.5rem;
+    position: sticky;
+    left: 11rem;
+    width: 20rem;
+    height: 5.5rem;
+  }
+  .text {
+    font-size: var(--h3);
+    margin-left: 12rem;
+    margin-top: 0.5rem;
+  }
+  .joinusmid {
+    height: 75rem;
+  }
+
+}
+@media only screen and (max-width: 810px) {
+  .joinustop {
+    height: 100rem;
   }
   .text {
     margin-left: 8rem;
@@ -104,11 +170,64 @@
     color: var(--darkpink);
     font-size: var(--h3);
     margin-left: 4rem;
+    margin-top: .2rem;
+
   }
+#subc{
+  margin-top: .5rem;
+}
   .heading {
     font-size: var(--h3);
     margin-top: 0;
     margin-left: 4rem;
+  }
+  .button {
+    margin-top: 7rem;
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: lighter;
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+    margin: 4rem;
+  }
+  .subheading {
+    font-size: var(--subheadingjum);
+  }
+}
+@media only screen and (max-width: 510px) {
+  .joinustop {
+    height: 92rem;
+  }
+  .text {
+    margin-top: 0;
+    margin-bottom: 0;
+    
+  }
+  #subc {
+    margin-top: 0rem;
+    margin-left: -1.8rem;
+    font-size: var(--h6);
+    width: 95vw;
+  }
+
+  .heading {
+    font-size: var(--h3);
+margin-left: 4rem;
+  }
+  .button {
+    margin-top: 6rem;
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: lighter;
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
   }
   .subheading {
     font-size: var(--subheadingjum);
@@ -126,4 +245,5 @@ export default {
   name: 'JoinUsTop',
   methods: {},
 }
+
 </script>
