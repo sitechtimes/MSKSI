@@ -67,12 +67,17 @@
 .navRouter {
   color: var(--white);
   font-size: var(--h5);
-  margin-right: 2rem;
+  margin-right: 4rem;
   font-family: 'ABeeZee', sans-serif;
   text-decoration: none;
-  padding: 1rem;
+  padding-top: 1rem; 
   /* position: relative; */
   display: inline-block;
+}
+
+html,
+body{
+  cursor: url("../images/favicon.png"), default;
 }
 
 .router:after {
