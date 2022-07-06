@@ -39,6 +39,9 @@ export default {
   justify-content: center;
 }
 @media only screen and (max-width: 1500px) {
+  .mission {
+    font-size: var(--h2);
+  }
   .text {
     font-size: var(--subheadingjum);
   }
@@ -72,7 +75,7 @@ export default {
     font-size: var(--h3);
   }
   .heading {
-    padding-top: 3rem;
+    padding-top: 5rem;
   }
   .text {
     margin-top: 2rem;

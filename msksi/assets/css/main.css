@@ -20,7 +20,7 @@ body,
   .heading {
     font-size: var(--h2);
     font-family: 'Black Han Sans';
-    margin-left: 8rem;
+    margin: 0rem 11rem 0 11rem;
     font-weight: lighter;
     padding-top: 8rem;
   }
@@ -35,8 +35,7 @@ body,
   .heading {
     font-size: var(--h2);
     font-family: 'Black Han Sans';
-    margin-top: 0rem;
-    margin-left: 0;
+    margin: 0 0 0 0;
     font-weight: lighter;
     padding-top: 7rem;
     text-align: center;

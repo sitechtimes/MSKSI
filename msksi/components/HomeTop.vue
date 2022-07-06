@@ -87,20 +87,35 @@ export default {
   margin-left: 75%;
 }
 @media only screen and (max-width: 1500px) {
-  .si {
-    margin-top: 5rem;
+  .hometop {
+    background-color: var(--navyblue);
+    padding-bottom: 30rem;
   }
-  .mysis {
-    padding-top: 23rem;
+  .name {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 11rem;
+  }
+  .si {
+    margin-top: 2rem;
+    font-size: var(--h4);
+    margin-left: 64%;
+  }
+  #temp-logo {
+    width: auto;
+    height: 16rem;
+    position: absolute;
+    bottom: 5%;
+    right: 47rem;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1032px) {
   .mysis {
     text-align: center;
     margin-left: 0;
     margin-right: 0;
   }
-  .heading {
+  .name {
     margin-left: 0;
     margin-right: 0;
     font-size: 9.5rem;
@@ -109,20 +124,20 @@ export default {
     width: 52rem;
   }
   .si {
-    font-size: var(--h4);
-    width: 25rem;
+    font-size: 3rem;
+    width: 28rem;
     text-align: right;
     margin-top: 3rem;
   }
   #temp-logo {
     width: auto;
-    height: 14rem;
+    height: 12rem;
     position: absolute;
     bottom: 5%;
     right: 42rem;
   }
 }
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 770px) {
   .hometop {
     padding-bottom: 20rem;
   }
@@ -132,7 +147,7 @@ export default {
     margin-left: 0;
     margin-right: 0;
   }
-  .heading {
+  .name {
     font-size: var(--h3);
     margin-left: 0;
     margin-right: 0;
@@ -143,7 +158,7 @@ export default {
     margin-right: 11.4%;
   }
   .si {
-    font-size: var(--h5);
+    font-size: var(--h6);
     width: 35rem;
     text-align: right;
     margin-top: 0.8rem;
