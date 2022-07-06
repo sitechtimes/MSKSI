@@ -48,7 +48,8 @@ export default {
   width: 75%;
 }
 #picture{
-  width: 30rem;
+  width: 35rem;
+  height: 35rem;
   margin-top: 4rem;
 } 
 .image{
@@ -130,6 +131,36 @@ export default {
     margin-left: 4rem;
   }
 }
+@media only screen and (max-width: 770px) {
+    #picture{
+width: 21rem;
+    height: 21rem;
+    position: relative;
+    margin-top: 0rem;
+    display: block;
+    margin: auto;
+    margin-bottom: 4rem;
+} 
+.image{
+  margin-top: 1rem;
+  flex-direction: column;
+     display: flex;
+    justify-content: flex-end;
+    margin-right: 10rem;
+}
+  #wbsm {
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+  flex-direction: row;
+  }
+  #textgroup{
+    width: 80%;
+  }
+  #info{
+    flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 510px) {
     #info{
     flex-direction: column;

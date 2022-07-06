@@ -37,7 +37,10 @@
   width: 75%;
 }
 #picture{
-margin-top: 10rem;
+margin-top: 14rem;
+height: 30rem;
+widows: 30rem
+;
 } 
 .image{
     justify-content: end;
@@ -96,26 +99,58 @@ margin-top: 10rem;
   #picture{
   width: 28rem;
   height: 28rem;
+  margin-top: 13rem;
 } 
 .image{
   margin-top: 1rem;
   flex-direction: row;
      display: flex;
-    justify-content: flex-end;
+    justify-content:end;
     margin-right: 10rem;
 }
+}
+@media only screen and (max-width: 1000px) {
+  #picture{
+  width: 25rem;
+  height: 25rem;
+} 
+.image{
+  margin-top: 3rem;
+  flex-direction: column;
+     display: flex;
+    justify-content: center;
+
+}
+  #subc {
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+  flex-direction: row;
+  }
+  #textgroup{
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 770px) {
+  .text {
+    margin-left: 8rem;
+    font-size: var(--h5);
+  }
     #picture{
-  width: 20rem;
-  height: 20rem;
+width: 21rem;
+    height: 21rem;
+    position: sticky;
+    margin-top: 0rem;
+    display: block;
+    margin: auto;
+padding: 0;
+    margin-right: auto;
+    margin-bottom: 4rem;
 } 
 .image{
   margin-top: 1rem;
-  flex-direction: row;
-     display: flex;
-    justify-content: flex-end;
-    margin-right: 10rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
 }
   #subc {
     margin-left: 2rem;
@@ -125,7 +160,9 @@ margin-top: 10rem;
   #textgroup{
     width: 80%;
   }
-
+  #info{
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 510px) {
@@ -133,7 +170,6 @@ margin-top: 10rem;
     flex-direction: column;
   }
   #picture{
-  width: 20rem;
   position: relative;
   top: 0;
   margin-bottom: 2rem;
@@ -168,7 +204,6 @@ margin-top: 10rem;
     font-size: var(--subheadingjum);
     margin-top: 0;
   }
-
   .image {
     display: flex;
     justify-content: center;
