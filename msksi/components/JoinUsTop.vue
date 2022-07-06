@@ -1,13 +1,9 @@
 <template>
   <div class="joinustop">
     <h2 class="heading">Join Us Today!</h2>
-    <h3 class="subheading subc">Sub Committee</h3>
-        <div class="image"> 
-          <img
-            id="picture"
-            src="~/assets/images/subcom.png"
-            alt="remote meeting"/>
-          </div> 
+    <div id="info">
+      <div id="textgroup"> 
+      <h3 class="subheading subc">Sub Committee</h3>
     <ul id="subc">
       <li class="text">Sign in-Attendance Assist</li>
       <li class="text">Session Feedback/Tracking and follow up</li>
@@ -15,6 +11,15 @@
       <li class="text">Transformation Tables</li>
       <li class="text">Managing website & calendar</li>
     </ul>
+    </div>
+    
+       <div class="image"> 
+          <img
+            id="picture"
+            src="~/assets/images/subcom.png"
+            alt="remote meeting"/>
+          </div> 
+    </div>
     <form
       action="https://docs.google.com/forms/d/e/1FAIpQLSe2NJzLuFUyTc_8Jcmn4DhyH5qfBWbKtwRjYrSzCFyERI8r1Q/viewform"
       target="_blank"
@@ -24,6 +29,24 @@
   </div>
 </template>
 <style scoped>
+#info{
+  display: flex;
+  flex-direction: row;
+}
+#textgroup{
+  width: 75%;
+}
+#picture{
+margin-top: 10rem;
+} 
+.image{
+    justify-content: end;
+    margin-right: 10rem;
+}
+.joinustop {
+  background-color: #333043;
+  padding-bottom: 8rem;
+}
 .pink {
   background-color: var(--darkpink);
   color: white;
@@ -34,6 +57,7 @@
   color: white;
   margin-top: 2rem;
   padding-bottom: 5rem;
+  flex-direction: row;
 }
 .subc {
   color: var(--darkpink);
@@ -41,24 +65,12 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.joinustop {
-  background-color: #333043;
-  padding-bottom: 8rem;
-}
 .text {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-size: var(--h3);
   margin-left: 15rem;
   margin-top: 0.5rem;
   line-height: 6rem;
-}
-#picture{
-  width: 30rem;
-} 
-.image{
-     display: flex;
-    justify-content: end;
-    margin-right: 10rem;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -73,6 +85,7 @@
   #subc {
     margin-left: 2rem;
     padding-bottom: 2rem;
+  flex-direction: row;
   }
   .subheading {
     font-size: var(--subheadingju);
@@ -80,6 +93,17 @@
     margin-top: 2rem;
     padding-bottom: 0;
   }
+  #picture{
+  width: 28rem;
+  height: 28rem;
+} 
+.image{
+  margin-top: 1rem;
+  flex-direction: row;
+     display: flex;
+    justify-content: flex-end;
+    margin-right: 10rem;
+}
 }
 @media only screen and (max-width: 510px) {
   #picture{
@@ -99,6 +123,7 @@
     margin-left: -1.8rem;
     font-size: var(--h6);
     width: 95vw;
+    flex-direction: column;
   }
   .text {
     margin-left: 8rem;
@@ -122,6 +147,7 @@
   .image {
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 }
 </style>

@@ -1,22 +1,29 @@
 <template>
   <div class="joinusmid">
-    <h3 class="subheading wbsm">Website & Social Media Manager</h3>
-        <div class="image">
-           <img
-        id="picture"
-            src="~/assets/images/social.png"
-            alt="woman on social media"/>
+    <div id="info">
+    
+        <div id="textgroup">
+          <h3 class="subheading wbsm">Website & Social Media Manager</h3>
+           <ul id="wbsm">
+           <li class="text">
+            Maintain the MSKSI website with the most current information, agendas,
+            opportunities etc
+          </li>
+          <li class="text">
+            Highlight our MSKSI members for their work professionally, educationally
+            and personally.
+          </li>
+        </ul>
+
+        </div>
+       
+            <div class="image">
+              <img
+            id="picture"
+                src="~/assets/images/social.png"
+                alt="woman on social media"/>
     </div>
-    <ul id="wbsm">
-      <li class="text">
-        Maintain the MSKSI website with the most current information, agendas,
-        opportunities etc
-      </li>
-      <li class="text">
-        Highlight our MSKSI members for their work professionally, educationally
-        and personally.
-      </li>
-    </ul>
+    </div>
     <form
       target="_blank"
       action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform"
@@ -33,8 +40,16 @@ export default {
 </script>
 
 <style scoped>
+#info{
+  display: flex;
+  flex-direction: row;
+}
+#textgroup{
+  width: 75%;
+}
 #picture{
   width: 30rem;
+  margin-top: 4rem;
 } 
 .image{
      display: flex;
@@ -92,6 +107,17 @@ export default {
   .joinusmid {
     margin-top: 10rem;
   }
+  #picture{
+  width: 28rem;
+  height: 28rem;
+} 
+.image{
+  margin-top: 1rem;
+  flex-direction: row;
+     display: flex;
+    justify-content: flex-end;
+    margin-right: 10rem;
+}
 }
 @media only screen and (max-width: 810px) {
   .text {
@@ -119,6 +145,7 @@ export default {
     .image {
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 }
 </style>
