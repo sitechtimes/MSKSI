@@ -27,7 +27,6 @@ export default {
 
 img {
     height: 40rem;
-    padding-top: 2rem;
 }
 h2 {
     font-size: var(--h1);
@@ -44,7 +43,7 @@ h3 {
 }
 p {
     font-size: 3rem;
-    padding: 1rem 4rem 2rem 4rem;
+    padding: 0 4rem 2rem 4rem;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 300;
     color: var(--white);
@@ -57,10 +56,6 @@ p {
 }
 .newmonth{
     padding-bottom: 8rem;
-}
-
-@media screen and (max-width: 1600px){
-
 }
 
 @media screen and (max-width: 450px){
@@ -85,11 +80,20 @@ p {
     }
     img{
         height: 24rem;
-        margin: 0 4rem 0 4rem;
         padding-bottom: 2rem;
         justify-content: center;
     }
 
+}
+@media screen and (max-width: 1500px){
+    .postcontent{
+        flex-wrap: wrap-reverse;
+    }
+    img{
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 2rem;
+    }
 }
 
 </style>

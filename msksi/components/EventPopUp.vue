@@ -1,12 +1,14 @@
 <template>
     <div class="previewcard">
+        <div class="eventinfo">
         <div class="dates">
-        <h3 class="eventmonth"> {{ eventmonth }}</h3>
+        <p class="eventmonth"> {{ eventmonth }}</p>
         <h1 class="eventnumber"> {{ eventdate }}</h1>
         </div>
-        <h2 class="eventname"> {{ eventname }} </h2>
+        <p class="eventname"> {{ eventname }} </p>
         <div class="cal-button">
             <a class="calendarlink" href="/Calendar">Read More...</a>
+        </div>
         </div>
     </div>
 </template>
@@ -30,38 +32,37 @@ export default {
     background-color: var(--navyblue);
     border-radius: 2rem;
     font-family: 'ABeeZee', sans-serif;
-    font-weight: 400;
-    padding: 1rem 0 0 0;
+    padding-top: 3rem;
+}
+.eventinfo{
+    margin: 2rem 2rem 2rem 2rem;
 }
 .dates{
-    padding-top: 2.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 2rem;
+    align-items: center;
 }
 .eventname{
-    font-size: var(--h3);
+    font-size: 5rem;
     color: var(--white);
     text-align: left;
-    padding: 0 0 0 3rem;
-    margin-right: 20rem;
+    padding: 0 0 0 1.2rem;
 }
 .eventmonth {
     font-size: var(--h3);
     color: var(--white);
-    padding-top: 6rem;
     font-size: 7rem;
 }
 .eventnumber{
     font-size: 16rem;
     color: var(--white);
     font-family: 'Black Han Sans', sans-serif;
-    /* padding: 0 2rem 0 0; */
+    padding: 0 2rem 0 0;
 }
 .cal-button{
     text-align: right;
-    padding: 2rem 2rem 0 0;
+    padding: 1.5rem 3rem 0 0;
     
 }
 .calendarlink {
@@ -73,7 +74,7 @@ export default {
 .calendarlink:hover {
     color: var(--darkpink);
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1500px){
 .previewcard{
     height: 38rem;
     width: 38rem;
@@ -87,6 +88,30 @@ export default {
 }
 .eventname{
     font-size: 4rem;
+    padding-left: 2.3rem;
 }
+}
+@media screen and (max-width: 500px){
+    .previewcard{
+        height: 28rem;
+        width: 28rem;
+    }
+    .eventnumber{
+        font-size: 9.3rem;
+        padding: 0 0 0 0;
+    }
+    .eventmonth{
+        font-size: 4.5rem;
+    }
+    .eventname{
+        font-size: 2.5rem;
+        padding-left: 2.1rem;
+    }
+    .calendarlink{
+        font-size: 2rem;
+    }
+    .dates{
+        padding: 2.5rem 2.6rem 0 2.6rem;
+    }
 }
 </style>

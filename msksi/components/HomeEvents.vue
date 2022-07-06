@@ -35,7 +35,7 @@ export default {
   padding: 7rem;
   }
 .eventheader {
-    font-size: var(--h1);
+    font-size: 9rem;
     text-align: center;
     font-family: 'Sora', sans-serif;
     color: var(--white);
@@ -47,9 +47,19 @@ export default {
   justify-content: space-around;
   padding: 12rem 0 14rem 0;
   }
-  @media screen and (max-width: 1200px){
+
+  @media screen and (max-width: 1500px){
     .eventpreviews{
       padding: 7rem 0 10rem 0;
+    }
+  }
+  @media screen and (max-width: 500px){
+    .eventheader{
+      font-size: var(--h3);
+    }
+    .eventpreviews{
+      padding-top: 4rem;
+      padding-bottom: 4rem;
     }
   }
 </style>
