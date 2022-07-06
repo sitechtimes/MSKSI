@@ -1,6 +1,12 @@
 <template>
   <div class="joinusmid">
     <h3 class="subheading wbsm">Website & Social Media Manager</h3>
+        <div class="image">
+           <img
+        id="picture"
+            src="~/assets/images/social.png"
+            alt="woman on social media"/>
+    </div>
     <ul id="wbsm">
       <li class="text">
         Maintain the MSKSI website with the most current information, agendas,
@@ -11,10 +17,6 @@
         and personally.
       </li>
     </ul>
-     <img
-        id="picture"
-            src="~/assets/images/social.png"
-            alt="woman on social media"/>
     <form
       target="_blank"
       action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform"
@@ -32,7 +34,7 @@ export default {
 
 <style scoped>
 #picture{
-  width: 20rem;
+  width: 30rem;
 }
 .yellow {
   color: var(--navyblue);
@@ -108,6 +110,10 @@ export default {
   }
   .subheading {
     font-size: var(--subheadingjum);
+  }
+    .image {
+    display: flex;
+    justify-content: center;
   }
 }
 </style>

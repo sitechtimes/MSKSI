@@ -2,10 +2,12 @@
   <div class="joinustop">
     <h2 class="heading">Join Us Today!</h2>
     <h3 class="subheading subc">Sub Committee</h3>
-         <img
-        id="picture"
+        <div class="image"> 
+          <img
+            id="picture"
             src="~/assets/images/subcom.png"
             alt="remote meeting"/>
+          </div> 
     <ul id="subc">
       <li class="text">Sign in-Attendance Assist</li>
       <li class="text">Session Feedback/Tracking and follow up</li>
@@ -52,10 +54,9 @@
 }
 #picture{
   width: 30rem;
-  position: absolute;
-  right: 14rem;
-  top: 35rem;
-}
+
+} 
+
 @media only screen and (max-width: 1500px) {
   .text {
     font-size: var(--list);
@@ -80,11 +81,10 @@
   #picture{
   width: 20rem;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
   top: 0;
-margin-bottom: 2rem;
-margin-top: 2rem;
+  display: grid;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
   .text {
     margin-top: 0;
@@ -113,6 +113,11 @@ margin-top: 2rem;
   .subheading {
     font-size: var(--subheadingjum);
     margin-top: 0;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
   }
 }
 </style>
