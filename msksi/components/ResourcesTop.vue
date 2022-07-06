@@ -50,6 +50,10 @@ export default {
 }
 </script>
 <style scoped>
+.resource:hover{
+transform: scale(1.1);
+transition: .5s;
+}
 h3{
 font-size: var(--h6);
 font-family: 'Cairo', sans-serif;
@@ -66,11 +70,11 @@ margin-right: auto;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+justify-content: space-around;
   padding-bottom: 6rem;
 }
 .resource{
-  margin-top: 2rem;
+  margin-top: 5rem;
   height: 30rem;
   width: 30rem;
   display: flex;
@@ -119,12 +123,10 @@ ul{
   flex-wrap: wrap;
   background-color: rgb(255, 255, 255);
   border-radius: 2rem;
+  margin-left: 2rem;
 }
 .resourcestop {
   background-color: #333043;
-}
-.heading {
-  color: var(--yellow);
 }
 img{
   height: 14rem;
@@ -149,7 +151,7 @@ margin-top: 1rem;
     margin-top: 4rem;
   }
   #link{
-  font-size: var(--h5);
+  font-size: var(--h6);
   }
   #resources{
   margin-left: auto;
@@ -159,7 +161,7 @@ margin-top: 1rem;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+justify-content: space-around;
   padding-bottom: 5rem;
 }
  .resource{
@@ -176,7 +178,7 @@ font-size: var(--one);}
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+justify-content: space-around;
   padding-bottom: 5rem;
 }
  .resource{
@@ -184,16 +186,17 @@ font-size: var(--one);}
   width: 25rem;
   height: 25rem;
   margin-right: 2rem;
+  margin-left: 2rem;
  }
  h3{
-font-size: var(--one);}
+font-size: var(--smallText);}
 }
 
 @media only screen and (max-width: 620px) {
   .heading {
     font-size: var(--h4);
-    margin-left: 4rem;
-    margin-top: 0rem;
+    text-align: center;
+    margin-left: 0;
   }
 
   #resources{
@@ -228,6 +231,9 @@ font-size: var(--one);}
   }
 h3{
   font-size: var(--one);
+}
+.resource:hover{
+transform: scale(1.05);
 }
 }
 </style>
