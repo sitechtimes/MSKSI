@@ -47,18 +47,11 @@ export default {
   }
 }
 @media only screen and (max-width: 1032px) {
-  .heading {
-    text-align: center;
-    margin-left: 0;
-  }
-  h2 {
-    font-size: var(--h2);
-  }
   .mission {
     font-size: var(--h2);
   }
   .text {
-    margin: 4rem 8rem 0 8rem;
+    margin: 3rem 8rem 0 8rem;
     font-size: var(--h5);
   }
 }
@@ -66,16 +59,8 @@ export default {
   .AboutUsTop {
     padding-bottom: 5rem;
   }
-  h2 {
-    font-size: var(--h3);
-    margin-top: 0;
-    padding-top: 0;
-  }
   .mission {
     font-size: var(--h3);
-  }
-  .heading {
-    padding-top: 5rem;
   }
   .text {
     margin-top: 2rem;

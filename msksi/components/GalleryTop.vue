@@ -100,14 +100,21 @@
   z-index: 1;
   background-color: rgb(194, 194, 194);
 }
-@media only screen and (max-width: 1080px) {
-  .heading {
-    text-align: center;
-    margin: 0;
+@media only screen and (max-width: 1500px) {
+  .gall {
+    font-size: var(--h2);
   }
+}
+
+@media only screen and (max-width: 1032px) {
   .polaroid-container {
     grid-gap: 5rem;
     margin: 7rem;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .gall {
+    font-size: var(--h3);
   }
 }
 @media only screen and (max-width: 600px) {
@@ -129,17 +136,6 @@
   .name {
     font-size: var(--h5);
     margin-top: 0;
-  }
-  .heading {
-    font-size: var(--h3);
-    margin-left: 0rem;
-    margin-right: 0rem;
-    margin-top: 0rem;
-    text-align: center;
-  }
-  .gall {
-    font-size: var(--h3);
-    margin-top: 0rem;
   }
 }
 </style>

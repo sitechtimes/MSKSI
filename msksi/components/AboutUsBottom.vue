@@ -22,25 +22,12 @@ export default {
 }
 </script>
 <style scoped>
-.texti {
-  color: white;
-  font-weight: lighter;
-  margin: 11rem;
-  display: block;
-  margin-top: 5rem;
-  margin-bottom: auto;
-  font-family: 'Cairo', sans-serif;
-  color: var(--white);
-  text-align: left;
-  justify-content: center;
-  font-size: var(--four);
-}
 #AboutUsBottom {
   background-color: #333043;
   padding-bottom: 10rem;
 }
 .gao {
-  font-size: var(--h2);
+  font-size: var(--h1);
   text-align: center;
   color: var(--darkpink);
   font-family: 'Black Han Sans';
@@ -56,10 +43,22 @@ export default {
   margin-top: 8rem;
   font-weight: lighter;
 }
+.texti {
+  color: white;
+  font-weight: lighter;
+  margin: 11rem;
+  display: block;
+  margin-top: 5rem;
+  margin-bottom: auto;
+  font-family: 'Cairo', sans-serif;
+  color: var(--white);
+  text-align: left;
+  justify-content: center;
+  font-size: var(--four);
+}
 .goal {
   color: var(--navyblue);
 }
-
 .our {
   color: var(--darkpink);
   font-size: var(--h1);
@@ -73,9 +72,6 @@ export default {
     font-size: var(--subheadingjum);
     margin-top: 4rem;
   }
-  #AboutUsBottom {
-    background-color: #333043;
-  }
   .will {
     margin-top: 4rem;
     font-weight: lighter;
@@ -84,6 +80,7 @@ export default {
   .gao {
     padding-top: 7rem;
     font-weight: lighter;
+    font-size: var(--h2);
   }
 }
 @media only screen and (max-width: 1032px) {
@@ -96,6 +93,9 @@ export default {
   .texti {
     font-size: var(--h5);
     margin: 2rem 8rem 0 8rem;
+  }
+  #AboutUsBottom {
+    padding-bottom: 6rem;
   }
 }
 @media only screen and (max-width: 770px) {

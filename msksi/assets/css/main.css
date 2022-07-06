@@ -20,9 +20,6 @@ body,
   .heading {
     font-size: var(--h2);
     font-family: 'Black Han Sans';
-    margin: 0rem 11rem 0 11rem;
-    font-weight: lighter;
-    padding-top: 8rem;
   }
 }
 @media only screen and (max-width: 1032px) {
@@ -35,10 +32,10 @@ body,
   .heading {
     font-size: var(--h2);
     font-family: 'Black Han Sans';
-    margin: 0 0 0 0;
     font-weight: lighter;
-    padding-top: 7rem;
+    padding-top: 6rem;
     text-align: center;
+    font-size: var(--h2);
   }
 }
 @media only screen and (min-width: 1032px) {
@@ -47,6 +44,12 @@ body,
   }
   .nav {
     display: initial;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .heading {
+    padding-top: 5rem;
+    font-size: var(--h3);
   }
 }
 .menuIcon {

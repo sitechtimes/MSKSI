@@ -152,7 +152,7 @@ li {
     text-align: center;
     background-color: white;
     display: inline-block;
-    padding-bottom: 6rem;
+    padding-bottom: 0rem;
   }
   .left {
     width: 100vw;

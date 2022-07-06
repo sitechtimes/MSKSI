@@ -52,9 +52,6 @@
     margin-left: 12rem;
     margin-top: 0rem;
   }
-  .heading {
-    margin-left: 11rem;
-  }
   #subc {
     margin-left: 2rem;
     padding-bottom: 2rem;
@@ -66,7 +63,7 @@
     padding-bottom: 0;
   }
 }
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 770px) {
   .text {
     margin-top: 0;
     margin-bottom: 0;
@@ -84,11 +81,6 @@
   .subc {
     color: var(--darkpink);
     font-size: var(--h3);
-    margin-left: 4rem;
-  }
-  .heading {
-    font-size: var(--h3);
-    margin-top: 0;
     margin-left: 4rem;
   }
   .subheading {
