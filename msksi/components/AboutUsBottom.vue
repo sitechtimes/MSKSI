@@ -25,9 +25,7 @@ export default {
 .texti {
   color: white;
   font-weight: lighter;
-  width: 90%;
-  margin-left: 11rem;
-  margin-right: 11rem;
+  margin: 11rem;
   display: block;
   margin-top: 5rem;
   margin-bottom: auto;
@@ -84,6 +82,14 @@ export default {
   .gao {
     padding-top: 7rem;
     font-weight: lighter;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .will {
+    font-size: var(--h4);
+  }
+  .texti {
+    margin-top: 4rem;
   }
 }
 @media only screen and (max-width: 510px) {
