@@ -68,75 +68,65 @@
   color: var(--navyblue);
   text-align: center;
   font-size: var(--h5);
-  margin-top: 0;
-  width: 25rem;
-  margin-left: auto;
-  margin-right: auto;
+  width: 20rem;
   display: block;
   font-weight: bolder;
-}
-#picture {
-  height: 20rem;
-  z-index: 1;
-  background-color: rgb(194, 194, 194);
-  width: 20rem;
-  margin: 3rem;
-  margin-top: 4.5rem;
+  text-align: center;
+  margin-top: 3rem;
 }
 .polaroid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
   grid-gap: 7rem;
   margin: 11rem;
   margin-top: 6rem;
 }
 .polaroid {
   background-color: white;
-  height: 35rem;
+  height: 36rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* justify-content: flex-start; */
 }
-@media only screen and (max-width: 1500px) {
+#picture {
+  height: 20rem;
+  width: 20rem;
+  margin: 3rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  z-index: 1;
+  background-color: rgb(194, 194, 194);
+}
+@media only screen and (max-width: 1080px) {
+  .heading {
+    text-align: center;
+    margin: 0;
+  }
+  .polaroid-container {
+    grid-gap: 5rem;
+    margin: 7rem;
+  }
+}
+@media only screen and (max-width: 600px) {
   .polaroid {
-    height: 35rem;
-  }
-  .polaroids {
-    width: 85vw;
-    margin-left: 10rem;
-  }
-  .name {
-    font-size: 1.6rem;
-    margin-top: 4rem;
-  }
-  .polaroids {
-    /* display: flex;
-    align-items: center;
-    justify-content: space-around; */
-  }
-}
-@media only screen and (max-width: 510px) {
-  .polaroids {
-    /* display: flex;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 87vw;
+    width: 48vw;
+    height: 35rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0rem; */
+    margin-top: 0rem;
   }
-  .polaroid {
-    width: auto;
-    height: 35rem;
-    margin-top: 5rem;
+  #picture {
+    margin-top: 2rem;
   }
   .name {
     font-size: var(--h5);
-    margin-top: 3rem;
+    margin-top: 0;
   }
   .heading {
     font-size: var(--h3);
