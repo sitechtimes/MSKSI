@@ -3,7 +3,10 @@
     <h2 class="heading">Photo <span class="gall">Gallery</span></h2>
     <div class="polaroids">
       <div class="polaroid">
-        <div id="picture"></div>
+        <img
+        id="picture"
+            src="~/assets/images/panelcareercon.png"
+            alt="MSK and MBK panel career con"/>
         <a
           target="_blank"
           class="name"
@@ -12,7 +15,10 @@
         >
       </div>
       <div class="polaroid">
-        <div id="picture"></div>
+         <img
+        id="picture"
+            src="~/assets/images/january.png"
+            alt="MSKSI January 17, 2020"/>
         <a
           class="name"
           target="_blank"
@@ -21,7 +27,10 @@
         >
       </div>
       <div class="polaroid">
-        <div id="picture"></div>
+         <img
+        id="picture"
+            src="~/assets/images/december.png"
+            alt="MSKSI December 16, 2020"/>
         <a
           target="_blank"
           class="name"
@@ -30,7 +39,10 @@
         >
       </div>
       <div class="polaroid">
-        <div id="picture"></div>
+         <img
+        id="picture"
+            src="~/assets/images/march.png"
+            alt="MSKSI March 6,2020"/>
         <a
           target="_blank"
           class="name"
@@ -39,7 +51,10 @@
         >
       </div>
       <div class="polaroid">
-        <div id="picture"></div>
+         <img
+        id="picture"
+            src="~/assets/images/misc.png"
+            alt="MSKSI Miscellaneous"/>
         <a
           target="_blank"
           class="name"
