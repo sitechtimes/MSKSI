@@ -108,7 +108,47 @@ li {
     line-height: 1.5;
   }
 }
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 1018px) {
+  .AboutUsMid {
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+    padding-bottom: 6rem;
+  }
+  .left {
+    width: 100vw;
+  }
+  #right {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50rem;
+    padding: 0;
+  }
+  .list {
+    font-size: var(--h4);
+    display: block;
+    text-align: left;
+    margin: 3rem 0 0 3.5rem;
+  }
+  .msksi {
+    color: var(--darkpink);
+    font-size: var(--h1);
+    margin-top: 4rem;
+  }
+  .vision {
+    color: var(--navyblue);
+    font-size: var(--h1);
+  }
+  #video {
+    margin: 2rem 0 2.5rem 0;
+    height: 38vw;
+    width: 65vw;
+  }
+  #video-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 512px) {
   .AboutUsMid {
     text-align: center;
     background-color: white;
@@ -129,8 +169,6 @@ li {
     display: block;
     text-align: left;
     margin: 3rem 0 0 1.5rem;
-    /* margin-left: 1.5rem;
-    margin-right: auto; */
     width: 30rem;
   }
   .msksi {

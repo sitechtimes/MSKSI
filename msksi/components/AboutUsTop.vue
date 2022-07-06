@@ -23,34 +23,34 @@ export default {
 </script>
 <style scoped>
 .AboutUsTop {
-  background-color: #333043;
   padding-bottom: 9rem;
+  background-color: #333043;
 }
 .mission {
   color: var(--darkpink);
-  font-size: var(--h2);
-}
-.h2 {
-  font-size: var(--h2);
+  font-size: var(--h1);
 }
 .text {
-  margin-left: 11rem;
-  margin-right: 11rem;
-  margin-top: 4rem;
+  margin: 4rem 11rem 0 11rem;
   font-family: 'Cairo', sans-serif;
   color: var(--white);
   text-align: left;
   font-size: var(--four);
-  width: 88%;
   justify-content: center;
 }
 @media only screen and (max-width: 1500px) {
   .text {
-    margin-top: 5rem;
     font-size: var(--subheadingjum);
   }
 }
-
+@media only screen and (max-width: 824px) {
+  .heading {
+    margin-left: 8rem;
+  }
+  .text {
+    margin: 4rem 8rem 0 8rem;
+  }
+}
 @media only screen and (max-width: 510px) {
   .AboutUsTop {
     padding-bottom: 5rem;
