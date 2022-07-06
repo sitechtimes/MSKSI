@@ -30,44 +30,11 @@ export default {
   name: 'JoinUsMid',
   methods: {},
 }
-
 </script>
 
 <style scoped>
-
-.button {
-  padding: 1.2rem;
-  margin-top: 10rem;
-  margin-left: 80%;
-  position: sticky;
-  left: 125rem;
-  width: 22rem;
-  height: 8rem;
-  font-size: var(--four);
-  border-radius: 20rem;
-  font-family: 'Black Han Sans';
-  border: none;
-  cursor: pointer;
-}
-
-.button:hover{
-  transform: scale(1.2);
-  transition: transform .75s;
-
-}
-.button:active {
-  animation: press 0.2s 1 linear;
-}
-@keyframes press {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.92);
-  }
-  to {
-    transform: scale(1);
-  }
+#picture{
+  width: 30rem;
 }
 .yellow {
   color: var(--navyblue);
@@ -85,7 +52,7 @@ export default {
   display: inline-block
 }
 .joinusmid {
-  height: 75rem;
+  padding-bottom: 8rem;
   background-color: white;
   margin-top: 20rem;
 }
@@ -99,54 +66,29 @@ export default {
   list-style-type: circle;
   color: var(--navyblue);
   margin-top: 2rem;
+  padding-bottom: 5rem;
 }
 .wbsmr {
   color: var(--darkpink);
 }
 @media only screen and (max-width: 1500px) {
-  .joinusmid {
-    height: 66rem;
+  .subheading {
+    font-size: var(--subheadingju);
+    margin-left: 11rem;
   }
   .text {
     font-size: var(--list);
-  }
-  .subheading {
-    font-size: var(--subheadingju);
-  }
-  .button {
-    margin-top: 7.5rem;
-    position: sticky;
-    left: 11rem;
-    width: 20rem;
-    height: 5.5rem;
-  }
-  .text {
-    font-size: var(--h3);
     margin-left: 12rem;
-    margin-top: 0.5rem;
-  }
-
-  .subheading {
-    margin-left: 6rem;
-  }
-  .joinustop {
-    height: 85rem;
-  }
-  .joinusmid {
-    height: 75rem;
+    margin-top: 0.2rem;
   }
   .wbsm {
     margin-top: 0;
   }
-
   .joinusmid {
     margin-top: 10rem;
   }
 }
 @media only screen and (max-width: 810px) {
-  .joinusmid {
-    height: 95rem;
-  }
   .text {
     margin-left: 8rem;
     font-size: var(--h5);
@@ -154,23 +96,17 @@ export default {
   .wbsm {
     font-size: var(--h3);
     margin-left: 8rem;
-    margin-top: 0rem;
     margin-left: 4rem;
   }
-  .heading {
-    font-size: var(--h3);
+}
+@media only screen and (max-width: 510px) {
+  .text {
     margin-top: 0;
+    margin-bottom: 0;
   }
-  .button {
-    margin-top: 5rem;
-    width: 16rem;
-    height: 4.5rem;
-    font-size: var(--h4);
-    font-weight: lighter;
-    border-radius: 20rem;
-    font-family: 'Black Han Sans';
-    border: none;
-    margin: 4rem;
+  #wbsm {
+    margin-left: -1.8rem;
+    font-size: var(--h6);
   }
   .subheading {
     font-size: var(--subheadingjum);
@@ -178,39 +114,6 @@ export default {
     .image {
     display: flex;
     justify-content: center;
-  }
-}
-@media only screen and (max-width: 510px){
-  .joinusmid {
-    height: 95rem;
-  }
-  .text {
-    margin-top: 0;
-    margin-bottom: 0;
-    
-  }
-  #wbsm {
-    margin-left: -1.8rem;
-    font-size: var(--h6);
-    width: 95vw;
-  }
-
-  .button {
-    margin-top: 5rem;
-    width: 16rem;
-    height: 4.5rem;
-    font-size: var(--h5);
-    font-weight: lighter;
-    border-radius: 20rem;
-    font-family: 'Black Han Sans';
-    border: none;
-    margin-left: auto;
-    display: block;
-    margin-right: auto;
-
-  }
-  .subheading {
-    font-size: var(--subheadingjum);
   }
 }
 </style>

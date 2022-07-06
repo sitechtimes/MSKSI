@@ -70,8 +70,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
 
 .GalleryTop {
-  height: 95rem;
   background-color: #333043;
+  padding-bottom: 10rem;
 }
 .gall {
   color: var(--darkpink);
@@ -107,44 +107,26 @@
   justify-content: center;
 }
 #picture {
-  width: 25rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4.5rem;
+  height: 20rem;
+  width: 20rem;
+  margin: 3rem;
+  margin-bottom: 0;
+  margin-top: 0;
   z-index: 1;
   background-color: rgb(194, 194, 194);
 }
-.polaroids {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 87vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -2rem;
-}
-.polaroid {
-  margin-top: 10rem;
-  width: 18%;
-  height: 42rem;
-  background-color: white;
-}
-@media only screen and (max-width: 1300px) {
-  #picture {
-    width: 13rem;
-    height: 13rem;
+@media only screen and (max-width: 1080px) {
+  .heading {
+    text-align: center;
+    margin: 0;
   }
-  .GalleryTop {
-    height: 225rem;
+  .polaroid-container {
+    grid-gap: 5rem;
+    margin: 7rem;
   }
 }
-@media only screen and (max-width: 510px) {
-  .Gallerytop {
-    height: 630rem;
-  }
-  .polaroids {
+@media only screen and (max-width: 600px) {
+  .polaroid {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
