@@ -11,6 +11,10 @@
         and personally.
       </li>
     </ul>
+     <img
+        id="picture"
+            src="~/assets/images/social.png"
+            alt="woman on social media"/>
     <form
       target="_blank"
       action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform"
@@ -27,6 +31,9 @@ export default {
 </script>
 
 <style scoped>
+#picture{
+  width: 20rem;
+}
 .yellow {
   color: var(--navyblue);
   background-color: var(--yellow);
@@ -40,6 +47,7 @@ export default {
   line-height: 6rem;
   width: 60vw;
   line-height: 6rem;
+  display: inline-block
 }
 .joinusmid {
   padding-bottom: 8rem;

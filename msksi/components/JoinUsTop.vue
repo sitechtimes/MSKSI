@@ -9,6 +9,10 @@
       <li class="text">Transformation Tables</li>
       <li class="text">Managing website & calendar</li>
     </ul>
+     <img
+        id="picture"
+            src="~/assets/images/subcom.png"
+            alt="remote meeting"/>
     <form
       action="https://docs.google.com/forms/d/e/1FAIpQLSe2NJzLuFUyTc_8Jcmn4DhyH5qfBWbKtwRjYrSzCFyERI8r1Q/viewform"
       target="_blank"
@@ -45,6 +49,9 @@
   margin-left: 15rem;
   margin-top: 0.5rem;
   line-height: 6rem;
+}
+#picture{
+  width: 20rem;
 }
 @media only screen and (max-width: 1500px) {
   .text {
