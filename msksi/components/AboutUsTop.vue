@@ -22,27 +22,24 @@ export default {
 }
 </script>
 <style scoped>
+.AboutUsTop {
+  padding-bottom: 9rem;
+  background-color: #333043;
+}
 .mission {
   color: var(--darkpink);
-  font-size: var(--h2);
-}
-.h2 {
-  font-size: var(--h2);
+  font-size: var(--h1);
 }
 .AboutUsTop {
   background-color: #333043;
   height: 100rem;
 }
 .text {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3.7rem;
-  margin-bottom: auto;
+  margin: 4rem 11rem 0 11rem;
   font-family: 'Cairo', sans-serif;
   color: var(--white);
   text-align: left;
   font-size: var(--four);
-  width: 88%;
   justify-content: center;
 }
 @media only screen and (max-width: 1500px) {
@@ -50,11 +47,17 @@ export default {
     height: 85rem;
   }
   .text {
-    margin-top: 5rem;
-    font-size: var(--h4);
+    font-size: var(--subheadingjum);
   }
 }
-
+@media only screen and (max-width: 824px) {
+  .heading {
+    margin-left: 8rem;
+  }
+  .text {
+    margin: 4rem 8rem 0 8rem;
+  }
+}
 @media only screen and (max-width: 510px) {
   .AboutUsTop {
     height: 95rem;

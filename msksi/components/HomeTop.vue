@@ -42,7 +42,9 @@ export default {
   text-align: right;
   padding-top: 30rem;
 }
-
+.heading {
+  margin-left: 0;
+}
 .line2 {
   display: flex;
   height: fit-content;
@@ -80,7 +82,42 @@ export default {
   margin-top: 10rem;
   margin-left: 75%;
 }
-
+@media only screen and (max-width: 1500px) {
+  .si {
+    margin-top: 5rem;
+  }
+  .mysis {
+    padding-top: 23rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .mysis {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .heading {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 9.5rem;
+  }
+  .keeper {
+    width: 52rem;
+  }
+  .si {
+    font-size: var(--h4);
+    width: 25rem;
+    text-align: right;
+    margin-top: 3rem;
+  }
+  #temp-logo {
+    width: auto;
+    height: 14rem;
+    position: absolute;
+    bottom: 5%;
+    right: 42rem;
+  }
+}
 @media only screen and (max-width: 510px) {
   .hometop {
     height: 95rem;
@@ -100,6 +137,13 @@ export default {
   }
   .si {
     font-size: var(--subheadingjum);
+  }
+  #temp-logo {
+    width: auto;
+    height: 5rem;
+    position: absolute;
+    bottom: 5%;
+    right: 24rem;
   }
 }
 </style>

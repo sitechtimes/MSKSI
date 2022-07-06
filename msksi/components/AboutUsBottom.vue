@@ -25,9 +25,7 @@ export default {
 .texti {
   color: white;
   font-weight: lighter;
-  width: 90%;
-  margin-left: 11rem;
-  margin-right: 11rem;
+  margin: 11rem;
   display: block;
   margin-top: 5rem;
   margin-bottom: auto;
@@ -70,6 +68,30 @@ export default {
 .mission {
   color: var(--yellow);
   font-size: var(--h1);
+}
+@media only screen and (max-width: 1500px) {
+  .texti {
+    font-size: var(--subheadingjum);
+  }
+  #AboutUsBottom {
+    background-color: #333043;
+  }
+  .will {
+    margin-top: 4rem;
+    font-weight: lighter;
+  }
+  .gao {
+    padding-top: 7rem;
+    font-weight: lighter;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .will {
+    font-size: var(--h4);
+  }
+  .texti {
+    margin-top: 4rem;
+  }
 }
 @media only screen and (max-width: 510px) {
   #AboutUsBottom {
