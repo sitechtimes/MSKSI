@@ -2,6 +2,10 @@
   <div class="joinustop">
     <h2 class="heading">Join Us Today!</h2>
     <h3 class="subheading subc">Sub Committee</h3>
+         <img
+        id="picture"
+            src="~/assets/images/subcom.png"
+            alt="remote meeting"/>
     <ul id="subc">
       <li class="text">Sign in-Attendance Assist</li>
       <li class="text">Session Feedback/Tracking and follow up</li>
@@ -9,10 +13,6 @@
       <li class="text">Transformation Tables</li>
       <li class="text">Managing website & calendar</li>
     </ul>
-     <img
-        id="picture"
-            src="~/assets/images/subcom.png"
-            alt="remote meeting"/>
     <form
       action="https://docs.google.com/forms/d/e/1FAIpQLSe2NJzLuFUyTc_8Jcmn4DhyH5qfBWbKtwRjYrSzCFyERI8r1Q/viewform"
       target="_blank"
@@ -51,7 +51,10 @@
   line-height: 6rem;
 }
 #picture{
-  width: 20rem;
+  width: 30rem;
+  position: absolute;
+  right: 14rem;
+  top: 35rem;
 }
 @media only screen and (max-width: 1500px) {
   .text {
@@ -74,6 +77,15 @@
   }
 }
 @media only screen and (max-width: 510px) {
+  #picture{
+  width: 20rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+margin-bottom: 2rem;
+margin-top: 2rem;
+}
   .text {
     margin-top: 0;
     margin-bottom: 0;
