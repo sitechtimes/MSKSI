@@ -35,6 +35,11 @@ export default {
 <style scoped>
 #picture{
   width: 30rem;
+} 
+.image{
+     display: flex;
+    justify-content: end;
+    margin-right: 10rem;
 }
 .yellow {
   color: var(--navyblue);

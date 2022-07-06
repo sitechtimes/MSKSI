@@ -54,8 +54,12 @@
 }
 #picture{
   width: 30rem;
-
 } 
+.image{
+     display: flex;
+    justify-content: end;
+    margin-right: 10rem;
+}
 
 @media only screen and (max-width: 1500px) {
   .text {

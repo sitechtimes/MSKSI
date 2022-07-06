@@ -107,6 +107,7 @@
   font-family: 'Black Han Sans';
   border: none;
   cursor: pointer;
+  z-index: 1;
 }
 .button:hover{
   transform: scale(1.1);
