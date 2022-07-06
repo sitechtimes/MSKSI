@@ -105,12 +105,37 @@ margin-top: 10rem;
     margin-right: 10rem;
 }
 }
+@media only screen and (max-width: 770px) {
+    #picture{
+  width: 20rem;
+  height: 20rem;
+} 
+.image{
+  margin-top: 1rem;
+  flex-direction: row;
+     display: flex;
+    justify-content: flex-end;
+    margin-right: 10rem;
+}
+  #subc {
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+  flex-direction: row;
+  }
+  #textgroup{
+    width: 80%;
+  }
+
+}
+
 @media only screen and (max-width: 510px) {
+  #info{
+    flex-direction: column;
+  }
   #picture{
   width: 20rem;
   position: relative;
   top: 0;
-  display: grid;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -147,7 +172,9 @@ margin-top: 10rem;
   .image {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 2rem;
   }
 }
 </style>

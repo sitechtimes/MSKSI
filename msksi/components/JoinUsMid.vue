@@ -131,6 +131,17 @@ export default {
   }
 }
 @media only screen and (max-width: 510px) {
+    #info{
+    flex-direction: column;
+  }
+  #picture{
+  width: 25rem;
+  height: 25rem;
+  position: relative;
+  top: 0;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
   .text {
     margin-top: 0;
     margin-bottom: 0;
@@ -138,14 +149,16 @@ export default {
   #wbsm {
     margin-left: -1.8rem;
     font-size: var(--h6);
+    padding-bottom: 2rem;
   }
   .subheading {
     font-size: var(--subheadingjum);
   }
-    .image {
+  .image {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    margin: 0;
   }
 }
 </style>
