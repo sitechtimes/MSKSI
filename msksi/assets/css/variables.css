@@ -94,6 +94,10 @@
   border: none;
   cursor: pointer;
 }
+.button:hover{
+  transform: scale(1.1);
+  transition: .3s;
+}
 @media only screen and (max-width: 1500px)
 {
   .button {
