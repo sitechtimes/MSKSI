@@ -84,23 +84,20 @@
   margin-top: 4.5rem;
 }
 .polaroid-container {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-   */
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 7rem;
   margin: 11rem;
   margin-top: 6rem;
 }
 .polaroid {
-  /* margin-top: 10rem; */
   background-color: white;
-  display: flex;
-  flex-flow: column;
-  width: 26rem;
   height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: flex-start; */
 }
 @media only screen and (max-width: 1500px) {
   .polaroid {
