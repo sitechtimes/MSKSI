@@ -58,25 +58,26 @@
   margin-bottom: auto;
   font-family: 'Black Han Sans';
   font-weight: lighter;
+  text-decoration: none;
 }
 .navRouter {
   color: var(--white);
   font-size: var(--h5);
   margin: 2rem;
   font-family: 'ABeeZee', sans-serif;
-  text-decoration: none; 
+  text-decoration: none;
   padding: 1rem;
 }
-.navRouter:hover {
+.router:hover {
   color: var(--darkpink);
-  height:5rem;
+  height: 5rem;
   border-bottom: 3px solid var(--darkpink);
   /* text-decoration: underline; */
   transition: 0.3s;
 }
-.navRouter.nuxt-link-exact-active {
+.router.nuxt-link-exact-active {
   color: var(--darkpink);
-  height:5rem;
+  height: 5rem;
   border-bottom: 3px solid var(--darkpink);
 }
 .subheading {
@@ -98,14 +99,13 @@
   border: none;
   cursor: pointer;
 }
-@media only screen and (max-width: 1500px)
-{
+@media only screen and (max-width: 1500px) {
   .button {
-  left: 11rem;
-  width: 20rem;
-  height: 7rem;
-  font-size: var(--subheadingjum);
-}
+    left: 11rem;
+    width: 20rem;
+    height: 7rem;
+    font-size: var(--subheadingjum);
+  }
 }
 .button:active {
   animation: press 0.2s 1 linear;
@@ -208,6 +208,12 @@ input[type='checkbox'] {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--yellow);
-  border-radius: 40rem;
+  background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, var(--darkyellow)),
+									   color-stop(0.72, var(--darkpink)),
+									   color-stop(0.86, var(--cerise)));
+  border-radius: 10rem;
 }
+
