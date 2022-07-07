@@ -1,8 +1,8 @@
 <template>
     <div class="AlbumPreview">
         <div class="polaroid">
-             <img id="picture" src="{{album.img}}" alt="{{ album.title }}">
-            <a target="_blank" href="{{ album.link }}">{{ album.title}}</a> 
+             <img id="picture" src="{{img}}" alt="{{ title }}">
+            <a target="_blank" href="{{ link }}">{{title}}</a> 
         </div>
 
     </div>
