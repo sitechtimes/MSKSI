@@ -2,7 +2,7 @@
   <div class="AboutUsTop">
     <div>
       <button @click="playMethod" id=play></button>
-      <button id=pause></button>
+      <button @click="pauseMethods" id=pause></button>
     </div>
     <h2 class="heading">Our <span class="h mission">Mission</span></h2>
     <h3 id="text" class="text">
@@ -11,6 +11,8 @@
   </div>
 </template>
 <script>
+import { resourceLimits } from 'worker_threads'
+
 export default {
   name: 'AboutUsTop',
   data(){
@@ -24,7 +26,8 @@ export default {
       projects. My Sister’s Keeper Staten Island empowers young people to become
       impactful/inspiring, self-motivating, powerful transformative leaders.
       Giving a safe space and opportunity to our marginalized MSKSI young people
-      in order to have a voice, respect and rapport in a diverse community.`
+      in order to have a voice, respect and rapport in a diverse community.`,
+      paused: false,
     }
   },
   head (){
@@ -42,34 +45,28 @@ export default {
   },
   methods: {
     playMethod(){
-      const utterance = new SpeechSynthesisUtterance();
-      utterance.text = 'Hello World';
-      speechSynthesis.speak(utterance);
-      console.log(this.textarea);
-      // utterance.voice = getVoices()[0];
-      utterance.rate = 10;
-      utterance.volume = 10;
-      let voices = []
-      voices = window.speechSynthesis.getVoices();
-      window.speechSynthesis.speak(utterance);
-  // Initially set the First Voice in the Array.
-  utterance.voice = voices[0];
-
-//  if (!window.speechSynthesis) {
-//     alert(`Your browser doesn\'t support text to speech.\nTry Chrome 33+ :)`);
-//   } else {
-//     // speechSynthesis only "speaks" SpeechSynthesisUtterance's. Let's make one.
-//     const u = new SpeechSynthesisUtterance();
-
-//     // configure our new utterance
-//     u.text = this.textarea;
-//     u.lang = "en";
-
-//     // finally, call speechSynthesis.speak(utterance) to make the browser speak!
-//     speechSynthesis.speak(u);
-//   }
-
+      utterance.voice = voices[0];
+      if (this.paused === true ){
+        window.speechSynthesis.resume();
+        // resume();
+      }
+      else{
+        const utterance = new SpeechSynthesisUtterance();
+        utterance.text = this.textarea;
+        speechSynthesis.speak(utterance);
+        console.log(this.textarea);
+        utterance.rate = 10;
+        utterance.volume = 10;
+        let voices = []
+        voices = window.speechSynthesis.getVoices();
+      // Initially set the First Voice in the Array.
+      }
     },
+    pauseMethods(){
+      speechSynthesis.pause();
+      this.paused = true;
+      // pause();
+    }
   },
 }
 </script>
