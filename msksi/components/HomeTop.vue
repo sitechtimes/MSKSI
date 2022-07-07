@@ -54,27 +54,23 @@ export default {
   height: fit-content;
   flex-direction: row;
   justify-content: right;
-
   align-content: center;
-  position: relative;
 }
 
 .keeper {
   color: var(--darkpink);
   font-size: 13rem;
   text-align: right;
-  padding-top: 3rem;
+  padding-top: 0rem;
+  margin-top: 2rem;
   width: 50rem;
   margin-right: 0%;
 }
 
 #temp-logo {
-  /* border: solid 2px red; */
   width: auto;
   height: 18rem;
-  position: absolute;
-  bottom: 5%;
-  right: 57rem;
+  margin-right: 5rem;
 }
 
 .si {
@@ -83,7 +79,7 @@ export default {
   font-size: var(--h3);
   width: 35rem;
   text-align: right;
-  margin-top: 10rem;
+  margin-top: 3rem;
   margin-left: 75%;
 }
 @media only screen and (max-width: 1500px) {
@@ -96,6 +92,10 @@ export default {
     margin-right: 0;
     font-size: 11rem;
   }
+  .keeper {
+    width: 45rem;
+    margin-top: 1rem;
+  }
   .si {
     margin-top: 2rem;
     font-size: var(--h4);
@@ -104,9 +104,7 @@ export default {
   #temp-logo {
     width: auto;
     height: 16rem;
-    position: absolute;
-    bottom: 5%;
-    right: 47rem;
+    margin-right: 2rem;
   }
 }
 @media only screen and (max-width: 1032px) {
@@ -121,20 +119,18 @@ export default {
     font-size: 9.5rem;
   }
   .keeper {
-    width: 52rem;
+    width: 40rem;
   }
   .si {
     font-size: 3rem;
     width: 28rem;
     text-align: right;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   #temp-logo {
     width: auto;
-    height: 12rem;
-    position: absolute;
-    bottom: 5%;
-    right: 42rem;
+    height: 14rem;
+    margin-right: 1rem;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -152,47 +148,42 @@ export default {
     margin-left: 0;
     margin-right: 0;
   }
+  .line2 {
+    margin-right: 5.5rem;
+  }
   .keeper {
     font-size: var(--h2);
-    font-weight: lighter;
-    text-align: right;
-    margin-top: -3rem;
-    width: 30rem;
-    margin-right: 11.4%;
+    width: 23.5rem;
   }
   .si {
     font-size: var(--h5);
     width: 47rem;
     text-align: right;
-    margin-top: 0.8rem;
     margin-left: 0%;
   }
   #temp-logo {
-    width: auto;
     height: 7rem;
-    position: absolute;
-    bottom: 5%;
-    right: 32rem;
+    margin-right: 3rem;
   }
 }
 @media only screen and (max-width: 500px) {
   .name {
     font-size: var(--h3);
-    margin-left: 0;
-    margin-right: 0;
+  }
+  .line2 {
+    margin-right: 3rem;
   }
   .keeper {
     font-size: var(--h3);
-    margin-right: 8%;
+    width: 18rem;
   }
   .si {
     font-size: var(--h6);
-    width: 32rem;
+    width: 33rem;
   }
   #temp-logo {
-    height: 5rem;
-    bottom: 5%;
-    right: 24rem;
+    height: 6rem;
+    margin-right: 1rem;
   }
 }
 </style>

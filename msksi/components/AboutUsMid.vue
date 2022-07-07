@@ -59,6 +59,7 @@ export default {
 .left {
   width: 50%;
   font-family: 'Black Han Sans';
+  margin: 10rem 0 10rem 0;
 }
 .v {
   margin-top: auto;
@@ -116,6 +117,7 @@ li {
   }
   .left {
     width: 100vw;
+    margin: 7rem 0 4rem 0;
   }
   #right {
     margin-left: auto;
@@ -126,7 +128,7 @@ li {
   .msksi {
     color: var(--darkpink);
     font-size: var(--h2);
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
   }
   .vision {
     color: var(--navyblue);
