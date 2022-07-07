@@ -11,7 +11,7 @@
   </div>
 </template>
 <script>
-import { resourceLimits } from 'worker_threads'
+// import { resourceLimits } from 'worker_threads'
 
 export default {
   name: 'AboutUsTop',
@@ -45,20 +45,23 @@ export default {
   },
   methods: {
     playMethod(){
+      const utterance = new SpeechSynthesisUtterance();
+      let voices = []
+      voices = window.speechSynthesis.getVoices();
       utterance.voice = voices[0];
+      utterance.rate = 10;
+      utterance.volume = 10;
+      
       if (this.paused === true ){
         window.speechSynthesis.resume();
         // resume();
       }
       else{
-        const utterance = new SpeechSynthesisUtterance();
+  
         utterance.text = this.textarea;
         speechSynthesis.speak(utterance);
         console.log(this.textarea);
-        utterance.rate = 10;
-        utterance.volume = 10;
-        let voices = []
-        voices = window.speechSynthesis.getVoices();
+        
       // Initially set the First Voice in the Array.
       }
     },
