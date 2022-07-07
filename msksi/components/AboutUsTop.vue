@@ -70,4 +70,16 @@ export default {
     margin-right: auto;
   }
 }
+@media only screen and (max-width: 500px) {
+  .mission {
+    font-size: var(--h4);
+  }
+  .text {
+    margin-top: 2rem;
+    font-size: var(--h6);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 </style>

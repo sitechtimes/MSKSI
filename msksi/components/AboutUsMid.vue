@@ -122,16 +122,14 @@ li {
   #right {
     margin-left: auto;
     margin-right: auto;
-    width: 50rem;
+    width: 70rem;
     padding: 0;
   }
   .msksi {
-    color: var(--darkpink);
     font-size: var(--h2);
     /* margin-top: 4rem; */
   }
   .vision {
-    color: var(--navyblue);
     font-size: var(--h2);
   }
   #video {
@@ -151,28 +149,14 @@ li {
 }
 @media only screen and (max-width: 770px) {
   .AboutUsMid {
-    text-align: center;
-    background-color: white;
-    display: inline-block;
-    padding-bottom: 0rem;
-  }
-  .left {
-    width: 100vw;
+    padding-bottom: 2rem;
   }
   #right {
-    margin-left: auto;
-    margin-right: auto;
     padding: 5rem;
+    padding-top: 0rem;
     width: fit-content;
-    padding-top: 0;
-  }
-  .list {
-    font-size: var(--h4);
-    display: block;
-    text-align: left;
   }
   .msksi {
-    color: var(--darkpink);
     font-size: var(--h3);
     margin-top: 4rem;
   }
@@ -184,6 +168,38 @@ li {
     margin: 2rem 0 2.5rem 0;
     height: 43vw;
     width: 70vw;
+  }
+  #video-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .AboutUsMid {
+    padding-bottom: 0rem;
+  }
+  #right {
+    margin: 0 3rem 0 0rem;
+    width: fit-content;
+    padding: 2rem;
+    padding-top: 0;
+    padding-bottom: 5rem;
+  }
+  .left {
+    margin: 2rem 0 0rem 0;
+  }
+  .list {
+    font-size: var(--h5);
+    line-height: 2rem;
+  }
+  .msksi {
+    font-size: var(--h4);
+    margin-top: 4rem;
+  }
+  .vision {
+    font-size: var(--h4);
+  }
+  #video {
+    margin: 1rem 0 1.5rem 0;
   }
   #video-container {
     width: 100%;
