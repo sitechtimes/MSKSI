@@ -2,7 +2,6 @@
 <div class="Gallery">
     <div class="Albums">
         <Album 
-        class="polaroid" 
         v-for="album in albums"
         :key="album.title" 
         :albumname="album.title"
@@ -26,7 +25,8 @@ export default {
         }
     },
     async fetch(){
-        this.albums = await this.$content(`album`).fetch()
+        this.albums = await this.$content(`albums`).fetch()
     }
+    
 }
 </script>
