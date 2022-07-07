@@ -2,7 +2,7 @@
   <div id="footer">
     <h2 class="contactus footer-text">Contact Us</h2>
     <div class="combo">
-      <div id="highlighter"></div>
+      <div class="highlighter"></div>
       <div class="buttons">
         <a
           href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
@@ -61,7 +61,7 @@
 <style scoped>
 #footer {
   background-color: rgb(23, 18, 43);
-  text-align: left;
+  text-align: center;
   bottom: 0px;
   width: 100%;
   height: 30rem;
@@ -72,25 +72,24 @@
   font-family: 'Black Han Sans';
   padding-top: 8rem;
   font-weight: lighter;
-  color: var(--white);
-  margin-left: 12rem;
+  color: var(--yellow);
   padding-bottom: 2rem;
 }
-.combo {
-  margin-top: 1rem;
-}
+
 .buttons {
   display: flex;
   justify-content: space-between;
   width: 35rem;
   height: 5rem;
-  margin: 0rem auto 0 14.5rem;
+  margin: 2rem auto 0 50%;
+  transform: translateX(-50%);
 }
+
 .iconimg {
   height: 4rem;
   width: auto;
-  filter: saturate(0);
   transition: all 0.1s;
+  filter: saturate(0);
 }
 .instagram {
   height: 5rem;
@@ -103,13 +102,17 @@
 }
 .icon {
   transition: all 0.9s;
+  z-index: 100;
 }
 
+.icon:hover .hoverselect {
+  visibility: visible;
+}
 .icon:hover .iconimg {
   filter: saturate(100%);
 }
 
-.icon:hover .hoverselect {
+.icon:hover ~ .highlighter-top {
   visibility: visible;
 }
 
@@ -124,37 +127,37 @@ a {
   justify-content: center;
   align-items: center;
 }
-#highlighter {
+.highlighter {
   position: absolute;
-  width: 40rem;
-  height: 7rem;
-  background-color: rgba(255, 255, 255, 0.164);
-  border-radius: 4rem;
-  margin: 0.5rem auto 0 12rem;
+  width: 42rem;
+  height: 8rem;
+  border-radius: 5rem;
+
+  margin: 0rem auto 0 50%;
+  transform: translateX(-50%);
+  background-color: var(--white);
+}
+.highlighter-top {
+  z-index: 10;
+  margin-left: 0rem;
+  visibility: hidden;
 }
 
 .hoverselect {
   position: absolute;
-  height: 8.5rem;
-  width: 8.5rem;
-  border-radius: 5.5rem;
-  margin-top: -0.2rem;
-  background-color: rgba(255, 255, 255, 0.76);
-  border: solid 2px gray;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 6rem;
+  margin-top: 0rem;
+  background-color: var(--white);
+  border: solid 1rem var(--yellow);
+  z-index: -1;
   visibility: hidden;
 }
 
 @media only screen and (max-width: 1320px) {
-  #footer {
-    text-align: center;
-  }
   .contactus {
     margin-left: 0;
-  }
-  .buttons {
-    margin: 1rem auto 0 50%;
-    transform: translateX(-50%);
-    width: 32rem;
   }
   a {
     width: 6rem;
