@@ -48,7 +48,7 @@ export default {
   font-weight: lighter;
   margin: 11rem;
   display: block;
-  margin-top: 5rem;
+  margin-top: 6rem;
   margin-bottom: auto;
   font-family: 'Cairo', sans-serif;
   color: var(--white);
@@ -68,6 +68,9 @@ export default {
   font-size: var(--h1);
 }
 @media only screen and (max-width: 1500px) {
+  #AboutUsBottom {
+    padding-bottom: 8rem;
+  }
   .texti {
     font-size: var(--subheadingjum);
     margin-top: 4rem;
@@ -123,6 +126,26 @@ export default {
     margin: 2rem 6rem 0 6rem;
     font-weight: lighter;
     margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .texti {
+    margin: 2rem 6rem 0 6rem;
+    font-size: var(--h6);
+  }
+  h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .gao {
+    font-size: var(--h4);
+    text-align: center;
+    font-family: 'Black Han Sans';
+    font-weight: lighter;
+    padding-top: 5rem;
+  }
+  .will {
+    margin-top: 2rem;
   }
 }
 </style>
