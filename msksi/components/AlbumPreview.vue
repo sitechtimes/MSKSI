@@ -1,12 +1,23 @@
 <template>
     <div class="AlbumPreview">
         <div class="polaroid">
-            <img id="picture" src="image" alt="{{ title }}">
-            <a target="_blank" href="{{ link }}">{{ title }}</a>
+             <img id="picture" src="{{album.img}}" alt="{{ album.title }}">
+            <a target="_blank" href="{{ album.link }}">{{ album.title}}</a> 
         </div>
 
     </div>
 </template>
+<script>
+export default {
+    name: 'AlbumPreview',
+    methods: {},
+    props: {
+        title: String,
+        img: String,
+        link: String,
+    }
+}
+</script>
 <style scoped>
 .AlbumPreview {
   background-color: #333043;
@@ -98,14 +109,3 @@
 }
 </style>
 
-<script>
-export default {
-    name: 'AlbumPreview',
-    methods: {},
-    props: {
-        title: String,
-        img: String,
-        link: String,
-    }
-}
-</script>
