@@ -70,6 +70,7 @@
 .buttons {
   display: flex;
   margin-right: auto;
+  margin-left: auto;
   justify-content: space-evenly;
   width: 40rem;
   padding: 2rem;

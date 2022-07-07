@@ -27,7 +27,7 @@ export default {
 <style scoped>
 .hometop {
   background-color: var(--navyblue);
-  height: 100rem;
+  padding-bottom: 30rem;
 }
 .name {
   font-size: var(--h1);
@@ -139,7 +139,7 @@ export default {
 }
 @media only screen and (max-width: 770px) {
   .hometop {
-    height: 95rem;
+    padding-bottom: 20rem;
   }
   .mysis {
     padding-top: 20rem;
@@ -148,28 +148,49 @@ export default {
     margin-right: 0;
   }
   .name {
-    font-size: var(--h3);
+    font-size: var(--h2);
     margin-left: 0;
     margin-right: 0;
   }
   .keeper {
-    margin-top: 2rem;
     font-size: var(--h2);
     font-weight: lighter;
     text-align: right;
-    margin-right: 6rem;
+    margin-top: -3rem;
+    width: 30rem;
+    margin-right: 11.4%;
   }
   .si {
-    font-size: var(--h6);
-    width: 35rem;
+    font-size: var(--h5);
+    width: 47rem;
     text-align: right;
     margin-top: 0.8rem;
     margin-left: 0%;
   }
   #temp-logo {
     width: auto;
-    height: 5rem;
+    height: 7rem;
     position: absolute;
+    bottom: 5%;
+    right: 32rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .name {
+    font-size: var(--h3);
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .keeper {
+    font-size: var(--h3);
+    margin-right: 8%;
+  }
+  .si {
+    font-size: var(--h6);
+    width: 32rem;
+  }
+  #temp-logo {
+    height: 5rem;
     bottom: 5%;
     right: 24rem;
   }
