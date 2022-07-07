@@ -1,6 +1,5 @@
 <template>
     <div class="previewcard">
-        <div class="eventinfo">
         <div class="dates">
         <p class="eventmonth"> {{ eventmonth }}</p>
         <h1 class="eventnumber"> {{ eventdate }}</h1>
@@ -9,7 +8,7 @@
         <div class="cal-button">
             <a class="calendarlink" href="/Calendar">Read More...</a>
         </div>
-        </div>
+        <a class="cal-arrow" href="/Calendar">></a>
     </div>
 </template>
 
@@ -26,6 +25,7 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
 .previewcard{
     height: 45rem;
     width: 45rem;
@@ -33,9 +33,6 @@ export default {
     border-radius: 2rem;
     font-family: 'ABeeZee', sans-serif;
     padding-top: 3rem;
-}
-.eventinfo{
-    margin: 2rem 2rem 2rem 2rem;
 }
 .dates{
     display: flex;
@@ -47,7 +44,7 @@ export default {
     font-size: 5rem;
     color: var(--white);
     text-align: left;
-    padding: 0 0 0 1.2rem;
+    padding: 0 0 0 2.5rem;
 }
 .eventmonth {
     font-size: var(--h3);
@@ -74,6 +71,11 @@ export default {
 .calendarlink:hover {
     color: var(--darkpink);
 }
+.cal-arrow{
+    color: var(--white);
+    display: none;
+    text-decoration: none;
+}
 @media screen and (max-width: 1500px){
 .previewcard{
     height: 38rem;
@@ -90,15 +92,33 @@ export default {
     font-size: 4rem;
     padding-left: 2.3rem;
 }
+.cal-arrow{
+    display: none;
+}
 }
 @media screen and (max-width: 500px){
     .previewcard{
-        height: 28rem;
-        width: 28rem;
+        height: 20rem;
+        width: 20rem;
+        background: none;
+        display: flex;
+        flex: auto;
+        align-items: center;
+        margin-top: 0;
+        padding: 0 0 0 0;
+    }
+    .dates{
+        padding: 1.5rem 2.6rem 0 2.6rem;
+        background-color: var(--navyblue);
+        border-radius: 2rem;
+        display: block;
+        height: 14rem;
+        width: 14rem;
     }
     .eventnumber{
-        font-size: 9.3rem;
+        font-size: 6.2rem;
         padding: 0 0 0 0;
+        text-align: right;
     }
     .eventmonth{
         font-size: 4.5rem;
@@ -107,11 +127,13 @@ export default {
         font-size: 2.5rem;
         padding-left: 2.1rem;
     }
-    .calendarlink{
-        font-size: 2rem;
+    .cal-button{
+        display: none;
     }
-    .dates{
-        padding: 2.5rem 2.6rem 0 2.6rem;
+    .cal-arrow{
+        display: flex;
+        font-size: var(--h4);
+        padding: 0 0 0 1rem;
     }
 }
 </style>

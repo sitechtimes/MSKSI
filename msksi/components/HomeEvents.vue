@@ -58,8 +58,10 @@ export default {
       font-size: var(--h3);
     }
     .eventpreviews{
-      padding-top: 4rem;
-      padding-bottom: 4rem;
+      padding: rem 0 0 0;
+    }
+    .homeevents{
+      padding: 2rem 4rem 6rem 4rem;
     }
   }
 </style>
