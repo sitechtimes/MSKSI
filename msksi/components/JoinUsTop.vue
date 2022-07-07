@@ -18,16 +18,51 @@
   </div>
 </template>
 <style scoped>
+.button {
+  padding: 1.2rem;
+  margin-top: 10rem;
+  margin-left: 80%;
+  position: sticky;
+  left: 125rem;
+  width: 22rem;
+  height: 8rem;
+  font-size: var(--four);
+  border-radius: 20rem;
+  font-family: 'Black Han Sans';
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.2);
+  transition: transform 0.75s;
+}
+.button:active {
+  animation: press 0.2s 1 linear;
+}
+
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 .pink {
   background-color: var(--darkpink);
   color: white;
   filter: drop-shadow(3px 4px 3px black);
 }
+
 #subc {
   list-style-type: circle;
   color: white;
   margin-top: 2rem;
-  padding-bottom: 5rem;
 }
 .subc {
   color: var(--darkpink);
@@ -37,7 +72,7 @@
 }
 .joinustop {
   background-color: #333043;
-  padding-bottom: 8rem;
+  height: 65rem;
 }
 .text {
   font-family: 'Be Vietnam Pro', sans-serif;
@@ -46,7 +81,13 @@
   margin-top: 0.5rem;
   line-height: 6rem;
 }
+.joinustop {
+  height: 100rem;
+}
 @media only screen and (max-width: 1500px) {
+  .joinustop {
+    height: 100rem;
+  }
   .text {
     font-size: var(--list);
     margin-left: 12rem;
@@ -65,14 +106,17 @@
 }
 @media only screen and (max-width: 770px) {
   .text {
-    margin-top: 0;
-    margin-bottom: 0;
+    font-size: var(--h3);
+    margin-left: 12rem;
+    margin-top: 0.5rem;
   }
-  #subc {
-    margin-top: 0rem;
-    margin-left: -1.8rem;
-    font-size: var(--h6);
-    width: 95vw;
+  .joinusmid {
+    height: 75rem;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .joinustop {
+    height: 100rem;
   }
   .text {
     margin-left: 8rem;
@@ -82,6 +126,7 @@
     color: var(--darkpink);
     font-size: var(--h3);
     margin-left: 4rem;
+    margin-top: 0.2rem;
   }
   .subheading {
     font-size: var(--subheadingjum);

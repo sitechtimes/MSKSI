@@ -55,8 +55,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
 
 .GalleryTop {
+  height: 95rem;
   background-color: #333043;
-  padding-bottom: 10rem;
 }
 .gall {
   color: var(--darkpink);

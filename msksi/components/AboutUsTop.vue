@@ -30,6 +30,10 @@ export default {
   color: var(--darkpink);
   font-size: var(--h1);
 }
+.AboutUsTop {
+  background-color: #333043;
+  height: 100rem;
+}
 .text {
   margin: 4rem 11rem 0 11rem;
   font-family: 'Cairo', sans-serif;
@@ -57,7 +61,7 @@ export default {
 }
 @media only screen and (max-width: 770px) {
   .AboutUsTop {
-    padding-bottom: 5rem;
+    height: 95rem;
   }
   .mission {
     font-size: var(--h3);
@@ -66,8 +70,6 @@ export default {
     margin-top: 2rem;
     font-size: var(--h5);
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 </style>

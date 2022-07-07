@@ -32,23 +32,27 @@
   --subheadingjum: 3rem;
   --members: 2rem;
   --four: 4rem;
+  --one: 1.3rem;
 }
 #navbar {
   background-color: var(--navyblue);
   width: 100%;
   height: 8rem;
   display: flex;
+  align-items:center;
   justify-content: space-between;
+  position:sticky;
   padding: 2rem;
-  padding-top: 2.5rem;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2;
+  display: flex;
 }
 .nav {
   margin-top: auto;
   margin-bottom: auto;
+  align-items: center;
 }
 .logo {
   font-size: 3rem;
@@ -58,22 +62,35 @@
   margin-bottom: auto;
   font-family: 'Black Han Sans';
   font-weight: lighter;
+  text-decoration: none;
 }
 .navRouter {
   color: var(--white);
   font-size: var(--h5);
-  margin: 2rem;
+  margin-right: 2rem;
   font-family: 'ABeeZee', sans-serif;
   text-decoration: none;
+  padding: 1rem;
+  /* position: relative; */
+  display: inline-block;
 }
-.router:hover {
-  color: var(--darkpink);
-  text-decoration: underline;
-  transition: 0.3s;
+
+.router:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px var(--darkpink);  
+  transform: scaleX(0);  
+  transition: transform .3s ease-in-out;
 }
-.router:focus {
-  color: var(--darkpink);
-  text-decoration: underline;
+
+.router:hover:after { 
+  transform: scaleX(1);
+}
+
+
+.router.nuxt-link-exact-active {
+  color: var(--darkyellow);
+  border-bottom: 3px solid var(--darkyellow);
 }
 .subheading {
   margin-left: 11rem;
@@ -101,11 +118,11 @@
 @media only screen and (max-width: 1500px)
 {
   .button {
-  left: 11rem;
-  width: 20rem;
-  height: 7rem;
-  font-size: var(--subheadingjum);
-}
+    left: 11rem;
+    width: 20rem;
+    height: 7rem;
+    font-size: var(--subheadingjum);
+  }
 }
 .button:active {
   animation: press 0.2s 1 linear;
@@ -193,11 +210,7 @@ input[type='checkbox'] {
   font-size: 2rem;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
-.menu-router:hover {
-  text-decoration: underline;
-  color: c;
-  transition: all 0.5s;
-}
+
 ::-webkit-scrollbar {
   width: 1.5rem;
 }
@@ -208,6 +221,12 @@ input[type='checkbox'] {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--yellow);
-  border-radius: 40rem;
+  background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, var(--darkyellow)),
+									   color-stop(0.72, var(--darkpink)),
+									   color-stop(0.86, var(--cerise)));
+  border-radius: 10rem;
 }
+
