@@ -1,6 +1,6 @@
 <template>
   <div id="AboutUsBottom">
-    <h2 class="gao">Goals and Outcomes</h2>
+    <h2 class="heading gao">Goals and Outcomes</h2>
     <h3 class="will">MSKSI members will:</h3>
     <h4 class="texti">
       Be able to adapt healthy social and emotional habits that will support
@@ -26,13 +26,10 @@ export default {
   background-color: #333043;
   padding-bottom: 10rem;
 }
-.gao {
-  font-size: var(--h1);
+.heading {
   text-align: center;
   color: var(--darkpink);
   font-family: 'Black Han Sans';
-  padding-top: 8rem;
-  font-weight: lighter;
 }
 .will {
   font-size: var(--h3);

@@ -1,7 +1,7 @@
 <template>
   <div class="AboutUsMid">
     <div class="left">
-      <h2 class="v msksi">MSKSI</h2>
+      <h2 class="heading v msksi">MSKSI</h2>
       <div id="video-container">
         <iframe
           id="video"
@@ -10,7 +10,7 @@
           poster="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
         ></iframe>
       </div>
-      <h2 class="v vision">VISION</h2>
+      <h2 class="heading v vision">VISION</h2>
     </div>
     <div id="right">
       <ol class="list">
@@ -61,25 +61,16 @@ export default {
   font-family: 'Black Han Sans';
   margin: 10rem 0 10rem 0;
 }
-.v {
-  margin-top: auto;
-  margin-bottom: auto;
-  display: block;
-  text-align: center;
-}
 .msksi {
   color: var(--darkpink);
-  font-size: var(--h1);
+  padding-top: 0;
 }
 .vision {
   color: var(--navyblue);
-  font-size: var(--h1);
+  padding-top: 1.2rem;
 }
 #right {
   width: 50%;
-  font-family: 'Cairo', sans-serif;
-  /* padding: 7rem;
-  padding-left: 10rem; */
 }
 #video-container {
   width: 100%;
@@ -98,6 +89,7 @@ export default {
   line-height: 4rem;
   width: 95%;
   margin: 8rem 0 8rem 0;
+  font-family: 'Cairo', sans-serif;
 }
 
 li {
@@ -125,17 +117,13 @@ li {
     width: 70rem;
     padding: 0;
   }
-  .msksi {
-    font-size: var(--h2);
-    /* margin-top: 4rem; */
-  }
-  .vision {
-    font-size: var(--h2);
-  }
   #video {
     margin: 2rem 0 2.5rem 0;
     height: 36.5vw;
     width: 60vw;
+  }
+  .vision {
+    padding-top: 0.5rem;
   }
   .list {
     font-size: var(--h4);
@@ -155,14 +143,6 @@ li {
     padding: 5rem;
     padding-top: 0rem;
     width: fit-content;
-  }
-  .msksi {
-    font-size: var(--h3);
-    margin-top: 4rem;
-  }
-  .vision {
-    color: var(--navyblue);
-    font-size: var(--h3);
   }
   #video {
     margin: 2rem 0 2.5rem 0;
@@ -192,11 +172,10 @@ li {
     line-height: 2rem;
   }
   .msksi {
-    font-size: var(--h4);
     margin-top: 4rem;
   }
   .vision {
-    font-size: var(--h4);
+    padding-top: 0rem;
   }
   #video {
     margin: 1rem 0 1.5rem 0;
