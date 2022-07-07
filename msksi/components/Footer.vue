@@ -26,7 +26,7 @@
             <span class="hoverselect selectinstagram"></span>
             <img
               class="iconimg instagram"
-              src="~/assets/images/insta2.jpg"
+              src="~/assets/images/insta-cool.png"
               alt=""
             /></div
         ></a>
@@ -60,7 +60,7 @@
 </template>
 <style scoped>
 #footer {
-  background-color: rgb(23, 18, 43);
+  background-color: var(--darknavyblue);
   text-align: center;
   bottom: 0px;
   width: 100%;
@@ -68,7 +68,7 @@
 }
 
 .contactus {
-  font-size: var(--h4);
+  font-size: 2.5rem;
   font-family: 'Black Han Sans';
   padding-top: 8rem;
   font-weight: lighter;
@@ -76,83 +76,73 @@
   padding-bottom: 2rem;
 }
 
+.highlighter {
+  position: absolute;
+  width: 32rem;
+  height: 7rem;
+  border-radius: 5rem;
+  margin: 0rem auto 0 50%;
+  transform: translateX(-50%);
+  border: solid 0.5rem var(--yellow);
+}
 .buttons {
   display: flex;
   justify-content: space-between;
-  width: 35rem;
+  width: 25rem;
   height: 5rem;
-  margin: 2rem auto 0 50%;
+  margin: 1rem auto 0 50%;
   transform: translateX(-50%);
 }
 
-.iconimg {
-  height: 4rem;
-  width: auto;
-  transition: all 0.1s;
-  filter: saturate(0);
-}
-.instagram {
-  height: 5rem;
-}
-.tiktok {
-  height: 4.5rem;
-}
-.gmail {
-  height: 3.5rem;
-}
-.icon {
-  transition: all 0.9s;
-  z-index: 100;
-}
-
-.icon:hover .hoverselect {
-  visibility: visible;
-}
-.icon:hover .iconimg {
-  filter: saturate(100%);
-}
-
-.icon:hover ~ .highlighter-top {
-  visibility: visible;
-}
-
 a {
-  width: 8rem;
+  margin-top: 0.5rem;
 }
 .backing {
-  height: 8rem;
-  width: 8rem;
+  height: 6rem;
+  width: 6rem;
   border-radius: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.highlighter {
-  position: absolute;
-  width: 42rem;
-  height: 8rem;
-  border-radius: 5rem;
 
-  margin: 0rem auto 0 50%;
-  transform: translateX(-50%);
-  background-color: var(--white);
+.iconimg {
+  height: 2.5rem;
+  width: auto;
+  transition: all 0.1s;
+  filter: saturate(0) brightness(5);
 }
-.highlighter-top {
-  z-index: 10;
-  margin-left: 0rem;
-  visibility: hidden;
+.instagram,
+.tiktok {
+  height: 3rem;
+}
+.gmail {
+  height: 2.3rem;
+}
+
+.icon {
+  transition: all 0.9s;
+  z-index: 100;
+}
+.icon:hover .hoverselect {
+  background-color: var(--white);
+  border: solid 0.5rem var(--yellow);
+}
+.icon:hover .iconimg {
+  filter: saturate(100%);
+}
+.icon:hover ~ .highlighter-top {
+  visibility: visible;
 }
 
 .hoverselect {
   position: absolute;
-  height: 10rem;
-  width: 10rem;
+  height: 7.75rem;
+  width: 7.75rem;
   border-radius: 6rem;
   margin-top: 0rem;
-  background-color: var(--white);
-  border: solid 1rem var(--yellow);
   z-index: -1;
-  visibility: hidden;
+  transition: all 0.2s;
 }
 
 @media only screen and (max-width: 1320px) {
@@ -161,10 +151,47 @@ a {
   }
   a {
     width: 6rem;
-  }
-  .backing {
     height: 6rem;
-    width: 6rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contactus {
+    font-size: 3.2rem;
+  }
+  a {
+    margin-top: 1.75rem;
+  }
+  .backing,
+  a {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .iconimg {
+    height: 2.5rem;
+  }
+  .instagram,
+  .tiktok {
+    height: 3rem;
+  }
+  .gmail {
+    height: 2.3rem;
+  }
+  .buttons {
+    width: 20rem;
+  }
+  .highlighter {
+    width: 30rem;
+    height: 6rem;
+    border: solid 0.5rem var(--yellow);
+  }
+  .hoverselect {
+    height: 7.5rem;
+    width: 7.5rem;
+  }
+  .icon:hover .hoverselect {
+    border: solid 0.5rem var(--yellow);
   }
 }
 </style>
