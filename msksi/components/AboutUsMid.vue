@@ -2,14 +2,14 @@
   <div class="AboutUsMid">
     <div class="left">
       <h2 class="v msksi">MSKSI</h2>
-      <iframe
-        id="video"
-        src="https://drive.google.com/file/d/1JlT8gnYTEr3YedSs970C7dVHHq5K43eM/preview"
-        width="600"
-        height="400"
-        allow="autoplay"
-        poster="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
-      ></iframe>
+      <div id="video-container">
+        <iframe
+          id="video"
+          src="https://drive.google.com/file/d/1JlT8gnYTEr3YedSs970C7dVHHq5K43eM/preview"
+          allow="autoplay"
+          poster="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
+        ></iframe>
+      </div>
       <h2 class="v vision">VISION</h2>
     </div>
     <div id="right">
@@ -52,22 +52,23 @@ export default {
 .AboutUsMid {
   text-align: center;
   background-color: white;
-  height: 85rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .left {
   width: 50%;
-  height: 100%;
   font-family: 'Black Han Sans';
 }
 .v {
   margin-top: auto;
   margin-bottom: auto;
   display: block;
+  text-align: center;
 }
 .msksi {
   color: var(--darkpink);
   font-size: var(--h1);
-  margin-top: 9rem;
 }
 .vision {
   color: var(--navyblue);
@@ -84,20 +85,18 @@ export default {
   text-align: center;
 }
 #video {
-  padding: 5rem;
-  margin-top: -1rem;
-  border-style: none;
-  width: 85%;
-  height: 62%;
+  height: 22vw;
+  width: 35vw;
+  margin: 2rem 0 2rem 0;
 }
 .list {
   font-size: var(--h3);
   color: var(--navyblue);
-  margin-top: -82rem;
-  margin-right: 10rem;
   display: block;
   text-align: left;
   line-height: 4rem;
+  width: 95%;
+  margin: 8rem 0 8rem 0;
 }
 
 li {
@@ -156,24 +155,15 @@ li {
     padding-bottom: 0rem;
   }
   .left {
-    width: 100%;
-  }
-  .v {
-    text-align: center;
-  }
-  .msksi {
-    color: var(--darkpink);
-    font-size: var(--h3);
+    width: 100vw;
   }
   #right {
     margin-left: auto;
-    width: 75%;
     margin-right: auto;
     padding: 5rem;
     width: fit-content;
     padding-top: 0;
   }
-
   .list {
     font-size: var(--h4);
     display: block;

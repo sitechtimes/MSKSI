@@ -1,6 +1,6 @@
 <template>
   <div id="AboutUsBottom">
-    <h2 class="gao">Goals and Outcome</h2>
+    <h2 class="gao">Goals and Outcomes</h2>
     <h3 class="will">MSKSI members will:</h3>
     <h4 class="texti">
       Be able to adapt healthy social and emotional habits that will support
@@ -24,7 +24,7 @@ export default {
 <style scoped>
 #AboutUsBottom {
   background-color: #333043;
-  height: 95rem;
+  padding-bottom: 10rem;
 }
 .gao {
   font-size: var(--h1);
@@ -100,7 +100,7 @@ export default {
 }
 @media only screen and (max-width: 770px) {
   #AboutUsBottom {
-    height: 68rem;
+    padding-bottom: 6rem;
   }
   .texti {
     margin: 2rem 6rem 0 6rem;
