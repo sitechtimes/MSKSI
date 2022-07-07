@@ -4,11 +4,7 @@
       <div class="alignright">
         <h2 class="name mysis">My Sister’s</h2>
         <div class="line2">
-          <img
-            id="temp-logo"
-            src="https://cutewallpaper.org/24/heart-clip-heart/clip-art-hearts-clip-art-two-hearts-clipart-panda-free-clipart-images--heart-clip-art-clip-art-free-clip-art.gif"
-            alt=""
-          />
+          <img id="temp-logo" src="~/assets/images/logo.png" alt="msksi logo" />
           <h2 class="name keeper">Keeper</h2>
         </div>
 

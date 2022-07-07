@@ -51,7 +51,6 @@
   justify-content: center;
   bottom: 0px;
   width: 100%;
-  padding-bottom: 3rem;
 }
 .contacts {
   color: var(--white);
@@ -69,7 +68,6 @@
 }
 .buttons {
   display: flex;
-  margin-right: auto;
   margin-left: auto;
   justify-content: space-evenly;
   width: 40rem;
