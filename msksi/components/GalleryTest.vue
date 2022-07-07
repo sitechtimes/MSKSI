@@ -4,8 +4,8 @@
         <Album 
         class="polaroid" 
         v-for="album in albums"
-        :key="album.albumname" 
-        :albumname="album.albumname"
+        :key="album.title" 
+        :albumname="album.title"
         :albumimg="album.img"
         :albumlink="album.link"
         />

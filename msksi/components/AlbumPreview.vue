@@ -1,5 +1,9 @@
 <template>
     <div class="AlbumPreview">
+        <div class="polaroid">
+            <img src="{{img}}" alt="{{title}}">
+            <a target="_blank" href="{{link}}">{{title}}</a>
+        </div>
 
     </div>
 </template>
@@ -8,16 +12,9 @@ export default {
     name: 'AlbumPreview',
     methods: {},
     props: {
-        title:{
-            type: String,
-            default: 'Title',
-        },
-        img:{
-            type: String,
-            default: 'img',
-        }
+        title: String,
+        img: String,
+        link: String,
     }
 }
-/*         <h3>{{Title}}</h3>
-        <img src="{{img}}" alt="{{Title}}"> */
 </script>
