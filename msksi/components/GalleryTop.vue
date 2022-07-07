@@ -3,10 +3,7 @@
     <h2 class="heading">Photo <span class="gall">Gallery</span></h2>
     <div class="polaroid-container">
       <div class="polaroid">
-        <img
-        id="picture"
-            src="~/assets/images/panelcareercon.png"
-            alt="MSK and MBK panel career con"/>
+        <div id="picture"></div>
         <a
           target="_blank"
           class="name"
@@ -15,10 +12,7 @@
         >
       </div>
       <div class="polaroid">
-         <img
-        id="picture"
-            src="~/assets/images/january.png"
-            alt="MSKSI January 17, 2020"/>
+        <div id="picture"></div>
         <a
           class="name"
           target="_blank"
@@ -27,10 +21,7 @@
         >
       </div>
       <div class="polaroid">
-         <img
-        id="picture"
-            src="~/assets/images/december.png"
-            alt="MSKSI December 16, 2020"/>
+        <div id="picture"></div>
         <a
           target="_blank"
           class="name"
@@ -39,10 +30,7 @@
         >
       </div>
       <div class="polaroid">
-         <img
-        id="picture"
-            src="~/assets/images/march.png"
-            alt="MSKSI March 6,2020"/>
+        <div id="picture"></div>
         <a
           target="_blank"
           class="name"
@@ -51,10 +39,7 @@
         >
       </div>
       <div class="polaroid">
-         <img
-        id="picture"
-            src="~/assets/images/misc.png"
-            alt="MSKSI Miscellaneous"/>
+        <div id="picture"></div>
         <a
           target="_blank"
           class="name"
@@ -70,8 +55,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
 
 .GalleryTop {
+  height: 95rem;
   background-color: #333043;
-  padding-bottom: 10rem;
 }
 .gall {
   color: var(--darkpink);

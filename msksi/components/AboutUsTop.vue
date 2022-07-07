@@ -30,6 +30,10 @@ export default {
   color: var(--darkpink);
   font-size: var(--h1);
 }
+.AboutUsTop {
+  background-color: #333043;
+  height: 100rem;
+}
 .text {
   margin: 4rem 11rem 0 11rem;
   font-family: 'Cairo', sans-serif;
@@ -39,6 +43,9 @@ export default {
   justify-content: center;
 }
 @media only screen and (max-width: 1500px) {
+  .AboutUsTop {
+    height: 85rem;
+  }
   .text {
     font-size: var(--subheadingjum);
   }
@@ -53,7 +60,7 @@ export default {
 }
 @media only screen and (max-width: 510px) {
   .AboutUsTop {
-    padding-bottom: 5rem;
+    height: 95rem;
   }
   h2 {
     font-size: var(--h3);
@@ -64,15 +71,13 @@ export default {
     font-size: var(--h3);
   }
   .heading {
-    margin-left: 4rem;
-    padding-top: 3rem;
+    margin-left: 4.5rem;
+    padding-top: 10.5rem;
   }
   .text {
     margin-top: 2rem;
     font-size: var(--h5);
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 </style>
