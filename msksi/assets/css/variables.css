@@ -86,11 +86,10 @@
 .router:hover:after { 
   transform: scaleX(1);
 }
-
-
 .router.nuxt-link-exact-active {
-  color: var(--darkyellow);
-  border-bottom: 3px solid var(--darkyellow);
+  color: var(--darkpink);
+  border-bottom: 3px solid var(--darkpink);
+  padding-bottom: 0;
 }
 .subheading {
   margin-left: 11rem;
