@@ -57,11 +57,11 @@ export default {
     .eventheader{
       font-size: var(--h3);
     }
-    .eventpreviews{
-      padding: rem 0 0 0;
-    }
     .homeevents{
       padding: 2rem 4rem 6rem 4rem;
+    }
+    .eventpreviews{
+      padding: 2.5rem 0 2rem 0;
     }
   }
 </style>
