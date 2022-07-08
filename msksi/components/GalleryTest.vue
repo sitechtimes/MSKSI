@@ -29,7 +29,6 @@ export default {
         //     posts[posts.length - 1].slug
         // ).fetch()
         this.albums = posts
-        console.log("MD: ")
         console.log(this.albums)
     }
     

@@ -1,8 +1,8 @@
 <template>
-    <div class="AlbumPreview">
+    <div id="AlbumPreview">
         <div class="polaroid">
-             <img id="picture" src="{{img}}" alt="{{ title }}">
-            <a target="_blank" href="{{ link }}">{{title}}</a> 
+             <img id="picture" :src="img" :alt="title">
+            <a class="name" target="_blank" :href="link">{{title}}</a> 
         </div>
 
     </div>
@@ -19,7 +19,7 @@ export default {
 }
 </script>
 <style scoped>
-.AlbumPreview {
+#AlbumPreview {
   background-color: #333043;
   padding-bottom: 10rem;
 }
@@ -51,6 +51,7 @@ export default {
 .polaroid {
   background-color: white;
   height: 36rem;
+  width: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
