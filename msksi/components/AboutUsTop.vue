@@ -1,10 +1,10 @@
 <template>
   <div class="AboutUsTop">
-    <div>
+    <div class="blockText">
+      <h2 class="heading">Our <span class="h mission">Mission</span></h2>
       <button @click="playMethod" id=play></button>
       <button @click="pauseMethods" id=pause></button>
     </div>
-    <h2 class="heading">Our <span class="h mission">Mission</span></h2>
     <h3 id="text" class="text">
         {{ textarea }}
     </h3>
@@ -49,20 +49,15 @@ export default {
       let voices = []
       voices = window.speechSynthesis.getVoices();
       utterance.voice = voices[0];
-      utterance.rate = 10;
+      // utterance.rate = 10;
       utterance.volume = 10;
+      utterance.text = this.textarea;
+        speechSynthesis.speak(utterance);
+        console.log(this.textarea);
       
       if (this.paused === true ){
         window.speechSynthesis.resume();
         // resume();
-      }
-      else{
-  
-        utterance.text = this.textarea;
-        speechSynthesis.speak(utterance);
-        console.log(this.textarea);
-        
-      // Initially set the First Voice in the Array.
       }
     },
     pauseMethods(){
@@ -85,6 +80,10 @@ export default {
 .AboutUsTop {
   background-color: #333043;
   height: 100rem;
+}
+.blockText{
+  display:flex;
+  align-items: center;
 }
 .text {
   margin: 4rem 11rem 0 11rem;
@@ -109,7 +108,7 @@ button {
   background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
 }
 
-#play.played {
+#play:focus {
   background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
 }
 
@@ -117,7 +116,7 @@ button {
   background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
 }
 
-#pause.paused {
+#pause:focus {
   background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
 }
 
