@@ -14,13 +14,18 @@
         alt=""
       />
       <div id="CSimg-holder">
-        <img id="CSimg" :src="post.img" alt="" />
+        <img id="CSimg" :src="post.img_main" alt="" />
       </div>
     </div>
 
     <div class="CStext-holder">
       <h2 class="heading commspot">Community Spotlight</h2>
       <nuxt-content :document="post" />
+    </div>
+
+    <div class="CSimg-reel">
+      <img class="CSimg-r" :src="post.img1" alt="" />
+      <img class="CSimg-r" :src="post.img2" alt="" />
     </div>
   </div>
 </template>
@@ -123,7 +128,7 @@ export default {
   justify-content: center;
   flex-direction: column;
   padding-left: 6rem;
-  margin-top: -5rem;
+  margin-top: -10rem;
 }
 .commspot {
   color: var(--darkpink);
@@ -133,10 +138,11 @@ export default {
   margin-left: 0;
   padding-top: 0;
   margin-right: 12rem;
+  font-size: 5rem;
 }
 
 .nuxt-content {
-  font-size: var(--h3);
+  font-size: 4rem;
   color: var(--navyblue);
   font-family: 'ABeeZee', sans-serif;
   margin-top: 3rem;
@@ -161,7 +167,7 @@ export default {
 }
 
 .CSroutermore {
-  font-size: var(--h4);
+  font-size: 2.6rem;
   color: var(--yellow);
   font-family: 'ABeeZee', sans-serif;
   font-weight: bold;
@@ -174,8 +180,6 @@ export default {
 
 .CSroutermore:hover {
   color: var(--darkyellow);
-  text-decoration: underline;
-  text-decoration-thickness: 0.35rem;
 }
 
 .CSarrow {
