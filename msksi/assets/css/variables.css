@@ -59,22 +59,27 @@
   margin-bottom: auto;
   font-family: 'Black Han Sans';
   font-weight: lighter;
+  text-decoration: none;
 }
 .navRouter {
   color: var(--white);
   font-size: var(--h5);
   margin: 2rem;
   font-family: 'ABeeZee', sans-serif;
-  text-decoration: none;
+  text-decoration: none; 
+  padding: 1rem;
 }
 .router:hover {
   color: var(--darkpink);
-  text-decoration: underline;
+  height:5rem;
+  border-bottom: 3px solid var(--darkpink);
+  /* text-decoration: underline; */
   transition: 0.3s;
 }
-.router:focus {
+.router.nuxt-link-exact-active {
   color: var(--darkpink);
-  text-decoration: underline;
+  height:5rem;
+  border-bottom: 3px solid var(--darkpink);
 }
 .subheading {
   margin-left: 11rem;
