@@ -1,16 +1,17 @@
 <template>
     <div id="AlbumPreview">
-        <div class="polaroid">
+      <h2 class="heading">Photo <span class="gall">Gallery</span></h2>
+       <div class="polaroid-container">
+            <div class="polaroid">
              <img id="picture" :src="img" :alt="title">
             <a class="name" target="_blank" :href="link">{{title}}</a> 
         </div>
-
+        </div>
     </div>
 </template>
 <script>
 export default {
     name: 'AlbumPreview',
-    methods: {},
     props: {
         title: String,
         img: String,
