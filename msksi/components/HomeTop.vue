@@ -35,12 +35,12 @@ export default {
   align-content: right;
   height: fit-content;
   flex-direction: column;
-  margin: auto;
+  margin: 0 auto;
 }
 .mysis {
   font-size: 13rem;
   text-align: right;
-  padding-top: 30rem;
+  padding-top: 20rem;
 }
 .heading {
   margin-left: 0;
@@ -79,7 +79,7 @@ export default {
   font-size: var(--h3);
   width: 35rem;
   text-align: right;
-  margin-top: 10rem;
+  margin-top: 7rem;
   margin-left: 75%;
 }
 @media only screen and (max-width: 1500px) {
