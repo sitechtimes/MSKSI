@@ -38,7 +38,7 @@
             <span class="hoverselect selecttiktok"></span>
             <img
               class="iconimg tiktok"
-              src="~/assets/images/tiktok.png"
+              src="~/assets/images/tiktok-white.png"
               alt=""
             /></div
         ></a>
@@ -81,26 +81,24 @@
   width: 32rem;
   height: 7rem;
   border-radius: 5rem;
-  margin: 0rem auto 0 50%;
+  margin-left: 50%;
   transform: translateX(-50%);
   border: solid 0.5rem var(--yellow);
+  background-color: var(--yellow);
 }
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 25rem;
   height: 5rem;
   margin: 1rem auto 0 50%;
   transform: translateX(-50%);
 }
 
-a {
-  margin-top: 0.5rem;
-}
 .backing {
   height: 6rem;
   width: 6rem;
-  border-radius: 1.5rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,6 +121,7 @@ a {
 .icon {
   transition: all 0.9s;
   z-index: 100;
+  margin-top: 0.5rem;
 }
 .icon:hover .hoverselect {
   background-color: var(--white);
@@ -135,6 +134,9 @@ a {
   visibility: visible;
 }
 
+.backing:hover .tiktok {
+  content: url(~/assets/images/tiktok.png);
+}
 .hoverselect {
   position: absolute;
   height: 7.75rem;
@@ -148,50 +150,69 @@ a {
 @media only screen and (max-width: 1320px) {
   .contactus {
     margin-left: 0;
+    font-size: 2rem;
   }
-  a {
-    width: 6rem;
-    height: 6rem;
-    margin-top: 0.5rem;
+
+  .highlighter {
+    width: 28rem;
+    height: 5.5rem;
+  }
+  .buttons {
+    width: 25rem;
+  }
+  .icon {
+    margin-top: 1.25rem;
+  }
+  .backing {
+    margin: auto;
+  }
+  .icon,
+  .backing {
+    height: 3rem;
+    width: 3rem;
+  }
+  .iconimg {
+    height: 2rem;
+  }
+  .instagram,
+  .tiktok {
+    height: 2.5rem;
+  }
+  .hoverselect {
+    width: 7rem;
+    height: 7rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .contactus {
-    font-size: 3.2rem;
+  .icon {
+    margin-top: 1.745rem;
   }
-  a {
-    margin-top: 1.75rem;
-  }
-  .backing,
-  a {
-    height: 2.5rem;
-    width: 2.5rem;
+  .icon,
+  .backing {
+    height: 1.5rem;
+    width: 1.5rem;
   }
   .iconimg {
-    height: 2.5rem;
+    height: 1.8rem;
   }
   .instagram,
   .tiktok {
-    height: 3rem;
+    height: 2.2rem;
   }
   .gmail {
-    height: 2.3rem;
+    height: 1.7rem;
   }
   .buttons {
     width: 20rem;
   }
   .highlighter {
-    width: 30rem;
-    height: 6rem;
-    border: solid 0.5rem var(--yellow);
+    width: 24rem;
+    height: 5rem;
   }
   .hoverselect {
-    height: 7.5rem;
-    width: 7.5rem;
-  }
-  .icon:hover .hoverselect {
-    border: solid 0.5rem var(--yellow);
+    height: 6.5rem;
+    width: 6.5rem;
   }
 }
 </style>
