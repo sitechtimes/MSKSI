@@ -48,7 +48,8 @@ export default {
   width: 75%;
 }
 #picture{
-  width: 30rem;
+  width: 35rem;
+  height: 35rem;
   margin-top: 4rem;
 } 
 .image{
