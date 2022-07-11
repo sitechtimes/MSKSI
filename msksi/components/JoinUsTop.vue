@@ -73,7 +73,6 @@
 }
 .text {
   font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: var(--h3);
   margin-left: 15rem;
   margin-top: 0.5rem;
   line-height: 7rem;
@@ -81,7 +80,6 @@
 
 @media only screen and (max-width: 1500px) {
   .text {
-    font-size: var(--list);
     margin-left: 12rem;
     margin-top: 0rem;
   }
@@ -99,7 +97,6 @@
 }
 @media only screen and (max-width: 770px) {
   .text {
-    font-size: var(--h3);
     margin-left: 12rem;
     margin-top: 0.5rem;
   }
@@ -142,7 +139,6 @@
 @media only screen and (max-width: 770px) {
   .text {
     margin-left: 8rem;
-    font-size: var(--h5);
   }
   #picture {
     width: 21rem;
@@ -197,7 +193,6 @@
   }
   .text {
     margin-left: 8rem;
-    font-size: var(--h5);
   }
   .subc {
     color: var(--darkpink);

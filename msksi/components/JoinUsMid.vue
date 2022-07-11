@@ -60,7 +60,6 @@ export default {
 }
 .text {
   font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: var(--h3);
   margin-left: 15rem;
   margin-top: 5.5rem;
   line-height: 6rem;
@@ -93,7 +92,6 @@ export default {
     margin-left: 11rem;
   }
   .text {
-    font-size: var(--list);
     margin-left: 12rem;
     margin-top: 0.2rem;
   }
@@ -111,10 +109,8 @@ export default {
 @media only screen and (max-width: 810px) {
   .text {
     margin-left: 8rem;
-    font-size: var(--h5);
   }
   .wbsm {
-    font-size: var(--h3);
     margin-left: 8rem;
     margin-left: 4rem;
   }
@@ -167,7 +163,6 @@ export default {
   }
   #wbsm {
     margin-left: -1.8rem;
-    font-size: var(--h6);
     padding-bottom: 2rem;
   }
   .subheading {

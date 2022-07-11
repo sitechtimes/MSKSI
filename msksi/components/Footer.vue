@@ -114,6 +114,9 @@
   .contactus {
     font-size: var(--h4);
   }
+  .icon {
+    filter: saturate(100%);
+  }
 }
 @media only screen and (max-width: 770px) {
   .contactus {
