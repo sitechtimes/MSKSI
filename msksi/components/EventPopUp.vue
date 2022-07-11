@@ -2,7 +2,7 @@
     <div class="previewcard">
         <div class="dates">
         <p class="eventmonth"> {{ eventmonth }}</p>
-        <p class="eventnumber"> {{ eventdate }}</p>
+        <p class="eventnumber"> {{ leadingZero(eventdate) }}</p>
         </div>
         <p class="eventname"> {{ eventname }} </p>
         <div class="cal-button">
@@ -20,6 +20,15 @@ export default {
     eventmonth: String,
     eventdate: Number,
   },
+  methods: {
+      leadingZero: function(){
+          if (this.eventdate < 10) {
+              return "0" + this.eventdate;
+          } else {
+              return this.eventdate;
+          }
+      }
+  }
 }
 </script>
 
@@ -39,18 +48,18 @@ export default {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem 3rem 0 3rem;
+    padding: 0 3rem 0 3rem;
 }
 .eventname{
     font-size: 5rem;
     color: var(--white);
     text-align: left;
     padding: 0 0 0 3rem;
+    margin-right: 11rem;
 }
 .eventmonth {
-    font-size: var(--h3);
     color: var(--white);
-    font-size: 7rem;
+    font-size: 6rem;
 }
 .eventnumber{
     font-size: 13rem;
@@ -92,10 +101,55 @@ export default {
 .eventname{
     font-size: 4rem;
     padding-left: 2.3rem;
+    margin-right: 11rem;
 }
 .cal-arrow{
     display: none;
 }
+}
+@media screen and (max-width: 900px){
+    .previewcard{
+        height: 29rem;
+        background: none;
+        display: flex;
+        flex: auto;
+        align-items: center;
+        margin-top: 0;
+        padding: 0 0 0 0;
+    }
+    .dates{
+        padding: 2rem 2.7rem 0 2.7rem;
+        background-color: var(--navyblue);
+        border-radius: 2rem;
+        display: block;
+        height: 25rem;
+        width: 25rem;
+    }
+    .eventnumber{
+        font-size: 12rem;
+        padding: 0 0 0 0;
+        text-align: right;
+    }
+    .eventmonth{
+        font-size: 5rem;
+    }
+    .eventname{
+        font-size: 4rem;
+        padding-left: 2.1rem;
+        margin-right: 3.4rem;
+    }
+    .cal-button{
+        display: none;
+    }
+    .cal-arrow{
+        display: flex;
+        font-size: var(--h4);
+        padding: 0 0 0 1rem;
+        position: absolute;
+        font-size: 4rem;
+        right: 100px;
+        right: 50px;
+    }
 }
 @media screen and (max-width: 500px){
     .previewcard{
@@ -125,8 +179,7 @@ export default {
     }
     .eventname{
         font-size: 2.2rem;
-        padding-left: 2.1rem;
-        margin-right: 3.5rem;
+        margin-right: 3.8rem;
     }
     .cal-button{
         display: none;

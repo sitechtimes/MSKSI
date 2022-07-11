@@ -1,5 +1,5 @@
 ---
-eventname: Cassidy Bday
+eventname: Cassidy Bday YAy
 eventmonth: apr
-eventdate: 6
+eventdate: 06
 ---
