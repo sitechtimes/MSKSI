@@ -317,7 +317,7 @@ export default {
 
   .CSarrow {
     position: absolute;
-    bottom: -1rem;
+    bottom: -0.3rem;
     opacity: 0;
     transform: translateX(500%);
     transition: all 0.2s;
@@ -379,6 +379,7 @@ export default {
 
   .CSroutermore {
     font-size: 2rem;
+    bottom: 4.2rem;
   }
 
   .CSreadmore {
@@ -388,8 +389,8 @@ export default {
 
   .CSarrow {
     font-size: 2.5rem;
-    bottom: -0.2rem;
-    transform: translateX(12.4rem);
+    bottom: 0.4rem;
+    transform: translateX(11.4rem);
   }
   .square-cut {
     height: 12rem;
