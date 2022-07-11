@@ -2,11 +2,16 @@
   <div class="AboutUsTop">
     <div class="blockText">
       <h2 class="heading">Our <span class="h mission">Mission</span></h2>
-      <button @click="playMethod" id=play></button>
-      <button @click="pauseMethods" id=pause>
+      <div class="buttonRow">
+        <button @click="playMethod" id=play>
+        <font-awesome-icon @click="activePauseIcon" v-if="!this.iconNotHidden" :icon="['far', 'circle-play']"  class="pause"></font-awesome-icon>
+        <font-awesome-icon @click="pauseIcon" v-if="!this.iconHidden" :icon="['fas', 'circle-play']" class="pause"></font-awesome-icon>
+        </button>
+        <button @click="pauseMethods" id=pause>
         <font-awesome-icon @click="pauseIcon" v-if="!this.iconHidden" :icon="['far', 'circle-pause']"  class="pause"></font-awesome-icon>
         <font-awesome-icon @click="activePauseIcon" v-if="!this.iconNotHidden" :icon="['fas', 'circle-pause']" class="pause"></font-awesome-icon>
       </button>
+      </div>
     </div>
     <h3 id="text" class="text">
         {{ textarea }}
@@ -121,17 +126,18 @@ button {
 }
 
 #play {
-  background-image: url("~/assets/images/pinkPlayBtn.png");
+  /* background-image: url("~/assets/images/pinkPlayBtn.png");*/
+  font-size: 7.5rem;
+  color: var(--darkpink);
+  position: relative;
 }
 
-#play:focus {
-  background-image: url("~/assets/images/pinkPlayed.png");
-}
 
 #pause {
   /* background-image: url("~/assets/images/pauseBtn.png"); */
   font-size: 7.5rem;
   color: var(--darkpink);
+  position: relative;
 }
 
 /* #pause:focus {
