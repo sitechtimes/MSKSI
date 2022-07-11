@@ -49,11 +49,9 @@ export default {
       let voices = []
       voices = window.speechSynthesis.getVoices();
       utterance.voice = voices[0];
-      // utterance.rate = 10;
       utterance.volume = 10;
       utterance.text = this.textarea;
       speechSynthesis.speak(utterance);
-      console.log(voices)
       if (this.paused === true ){
         window.speechSynthesis.resume();
         // resume();
@@ -107,7 +105,7 @@ button {
 }
 
 #play {
-  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+  background-image: url("~/assets/images/pinkPlay.png");
 }
 
 #play:focus {
