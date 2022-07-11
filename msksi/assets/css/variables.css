@@ -31,7 +31,6 @@
   --subheadingjum: 3rem;
   --members: 2rem;
   --four: 4rem;
-  --one: 1.3rem;
 }
 #navbar {
   background-color: var(--navyblue);
@@ -46,7 +45,6 @@
   left: 0;
   right: 0;
   z-index: 2;
-  display: flex;
 }
 .nav {
   margin-top: auto;
@@ -90,7 +88,6 @@ body {
 .router:hover:after {
   transform: scaleX(1);
 }
-
 .router.nuxt-link-exact-active {
   color: var(--yellow);
   border-bottom: 3px solid var(--yellow);
@@ -104,15 +101,16 @@ body {
 }
 .button {
   position: sticky;
-  left: 125rem;
+  left: 80%;
   padding: 1.2rem;
   width: 22rem;
-  height: 10rem;
+  height: 8rem;
   font-size: var(--four);
   border-radius: 20rem;
   font-family: 'Black Han Sans';
   border: none;
   cursor: pointer;
+  z-index: 1;
 }
 .button:hover {
   transform: scale(1.1);
