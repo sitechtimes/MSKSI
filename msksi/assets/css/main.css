@@ -7,6 +7,7 @@ body,
   box-sizing: border-box;
   margin: 0;
   font-size: 62.5%;
+  cursor: url('../images/myHeartu.png'), auto;
 }
 @media only screen and (max-width: 1500px) {
   .heading {
@@ -47,5 +48,6 @@ body,
   margin-left: 11rem;
   font-weight: lighter;
   color: var(--yellow);
-  padding-top: 7rem;
+  padding-top: 10rem;
 }
+

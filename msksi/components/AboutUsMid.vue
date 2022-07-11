@@ -2,14 +2,14 @@
   <div class="AboutUsMid">
     <div class="left">
       <h2 class="v msksi">MSKSI</h2>
-      <div id="video-container">
-        <iframe
-          id="video"
-          src="https://drive.google.com/file/d/1JlT8gnYTEr3YedSs970C7dVHHq5K43eM/preview"
-          allow="autoplay"
-          poster="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
-        ></iframe>
-      </div>
+      <iframe
+        id="video"
+        src="https://drive.google.com/file/d/1JlT8gnYTEr3YedSs970C7dVHHq5K43eM/preview"
+        width="600"
+        height="400"
+        allow="autoplay"
+        poster="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
+      ></iframe>
       <h2 class="v vision">VISION</h2>
     </div>
     <div id="right">
@@ -52,23 +52,22 @@ export default {
 .AboutUsMid {
   text-align: center;
   background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 85rem;
 }
 .left {
   width: 50%;
+  height: 100%;
   font-family: 'Black Han Sans';
 }
 .v {
   margin-top: auto;
   margin-bottom: auto;
   display: block;
-  text-align: center;
 }
 .msksi {
   color: var(--darkpink);
   font-size: var(--h1);
+  margin-top: 9rem;
 }
 .vision {
   color: var(--navyblue);
@@ -76,27 +75,25 @@ export default {
 }
 #right {
   width: 50%;
+  margin-left: 50%;
   font-family: 'Black Han Sans';
-  /* padding: 7rem;
-  padding-left: 10rem; */
-}
-#video-container {
-  width: 100%;
-  text-align: center;
+  margin-top: 3rem;
 }
 #video {
-  height: 22vw;
-  width: 35vw;
-  margin: 2rem 0 2rem 0;
+  padding: 5rem;
+  margin-top: -1rem;
+  border-style: none;
+  width: 85%;
+  height: 62%;
 }
 .list {
   font-size: var(--h3);
   color: var(--navyblue);
+  margin-top: -82rem;
+  margin-right: 10rem;
   display: block;
   text-align: left;
   line-height: 4rem;
-  width: 95%;
-  margin: 8rem 0 8rem 0;
 }
 
 li {
@@ -108,7 +105,7 @@ li {
     line-height: 1.5;
   }
 }
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 1018px) {
   .AboutUsMid {
     text-align: center;
     background-color: white;
@@ -121,16 +118,63 @@ li {
   #right {
     margin-left: auto;
     margin-right: auto;
-    width: 30rem;
+    width: 50rem;
     padding: 0;
   }
   .list {
+    font-size: var(--h4);
+    display: block;
+    text-align: left;
+    margin: 3rem 0 0 3.5rem;
+  }
+  .msksi {
+    color: var(--darkpink);
+    font-size: var(--h1);
+    margin-top: 4rem;
+  }
+  .vision {
+    color: var(--navyblue);
+    font-size: var(--h1);
+  }
+  #video {
+    margin: 2rem 0 2.5rem 0;
+    height: 38vw;
+    width: 65vw;
+  }
+  #video-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .AboutUsMid {
+    height: 95rem;
+  }
+  .vision {
+    color: var(--navyblue);
+    font-size: var(--h3);
+  }
+  .left {
+    width: 100%;
+  }
+  .v {
+    text-align: center;
+  }
+  .msksi {
+    color: var(--darkpink);
+    font-size: var(--h3);
+  }
+  #right {
+    margin-left: auto;
+    width: 75%;
+    margin-right: auto;
+  }
+
+  .list {
     font-size: var(--h5);
+    margin-top: -30rem;
     display: block;
     text-align: left;
     margin: 3rem 0 0 1.5rem;
-    /* margin-left: 1.5rem;
-    margin-right: auto; */
     width: 30rem;
   }
   .msksi {
@@ -143,12 +187,9 @@ li {
     font-size: var(--h3);
   }
   #video {
-    margin: 2rem 0 2.5rem 0;
-    height: 50vw;
-    width: 80vw;
-  }
-  #video-container {
-    width: 100%;
+    padding: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 </style>

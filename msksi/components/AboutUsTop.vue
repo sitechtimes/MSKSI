@@ -1,8 +1,23 @@
 <template>
   <div class="AboutUsTop">
-    <h2 class="heading">Our <span class="h mission">Mission</span></h2>
-    <h3 class="text">
-      My Sister’s Keeper Staten Island (MSKSI) founded in November 2018, creates
+    <div class="blockText">
+      <h2 class="heading">Our <span class="h mission">Mission</span></h2>
+      <button @click="playMethod" id=play></button>
+      <button @click="pauseMethods" id=pause></button>
+    </div>
+    <h3 id="text" class="text">
+        {{ textarea }}
+    </h3>
+  </div>
+</template>
+<script>
+// import { resourceLimits } from 'worker_threads'
+
+export default {
+  name: 'AboutUsTop',
+  data(){
+    return{
+      textarea: `      My Sister’s Keeper Staten Island (MSKSI) founded in November 2018, creates
       a support system to build a community for social, emotional, and academic
       support and leadership empowerment for MSKSI members from elementary to
       high school students in District 31. MSKSI fosters opportunities to build
@@ -11,49 +26,121 @@
       projects. My Sister’s Keeper Staten Island empowers young people to become
       impactful/inspiring, self-motivating, powerful transformative leaders.
       Giving a safe space and opportunity to our marginalized MSKSI young people
-      in order to have a voice, respect and rapport in a diverse community.
-    </h3>
-  </div>
-</template>
-<script>
-export default {
-  name: 'AboutUsTop',
-  methods: {},
+      in order to have a voice, respect and rapport in a diverse community.`,
+      paused: false,
+    }
+  },
+  head (){
+    return{
+      htmlAttrs: {lang:'en'}
+    }
+  },
+  mounted(){
+     if ('speechSynthesis' in window) {
+     console.log('works') /* speech synthesis supported */
+  }
+  else {
+     console.log('no works') /* speech synthesis not supported */
+  }
+  },
+  methods: {
+    playMethod(){
+      const utterance = new SpeechSynthesisUtterance();
+      let voices = []
+      voices = window.speechSynthesis.getVoices();
+      utterance.voice = voices[0];
+      // utterance.rate = 10;
+      utterance.volume = 10;
+      utterance.text = this.textarea;
+        speechSynthesis.speak(utterance);
+        console.log(this.textarea);
+      
+      if (this.paused === true ){
+        window.speechSynthesis.resume();
+        // resume();
+      }
+    },
+    pauseMethods(){
+      speechSynthesis.pause();
+      this.paused = true;
+      // pause();
+    }
+  },
 }
 </script>
 <style scoped>
 .AboutUsTop {
-  background-color: #333043;
   padding-bottom: 9rem;
+  background-color: #333043;
 }
 .mission {
   color: var(--darkpink);
-  font-size: var(--h2);
+  font-size: var(--h1);
 }
-.h2 {
-  font-size: var(--h2);
+.AboutUsTop {
+  background-color: #333043;
+  height: 100rem;
 }
+.blockText{
+  display:flex;
+  align-items: center;
+}
+
 .text {
-  margin-left: 11rem;
-  margin-right: 11rem;
-  margin-top: 4rem;
+  margin: 4rem 11rem 0 11rem;
   font-family: 'Cairo', sans-serif;
   color: var(--white);
   text-align: left;
   font-size: var(--four);
-  width: 88%;
   justify-content: center;
 }
+/* test buttons */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 48px;
+  outline: none;
+  padding: 0;
+  width: 48px;
+}
+
+#play {
+  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+}
+
+#play:focus {
+  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
+}
+
+#pause {
+  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
+}
+
+#pause:focus {
+  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
+}
+
+
 @media only screen and (max-width: 1500px) {
+  .AboutUsTop {
+    height: 85rem;
+  }
   .text {
-    margin-top: 5rem;
     font-size: var(--subheadingjum);
   }
 }
-
+@media only screen and (max-width: 824px) {
+  .heading {
+    margin-left: 8rem;
+  }
+  .text {
+    margin: 4rem 8rem 0 8rem;
+  }
+}
 @media only screen and (max-width: 510px) {
   .AboutUsTop {
-    padding-bottom: 5rem;
+    height: 95rem;
   }
   h2 {
     font-size: var(--h3);
@@ -64,15 +151,13 @@ export default {
     font-size: var(--h3);
   }
   .heading {
-    margin-left: 4rem;
-    padding-top: 3rem;
+    margin-left: 4.5rem;
+    padding-top: 10.5rem;
   }
   .text {
     margin-top: 2rem;
     font-size: var(--h5);
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 </style>
