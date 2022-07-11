@@ -154,25 +154,14 @@ export default {
 @media screen and (max-width: 500px){
     .previewcard{
         height: 16rem;
-        background: none;
-        display: flex;
-        flex: auto;
-        align-items: center;
-        margin-top: 0;
-        padding: 0 0 0 0;
     }
     .dates{
         padding: 1.5rem 2.4rem 0 2.4rem;
-        background-color: var(--navyblue);
-        border-radius: 2rem;
-        display: block;
         height: 14rem;
         width: 14rem;
     }
     .eventnumber{
         font-size: 6.2rem;
-        padding: 0 0 0 0;
-        text-align: right;
     }
     .eventmonth{
         font-size: 3rem;
