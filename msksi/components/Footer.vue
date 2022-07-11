@@ -19,7 +19,7 @@
           </div>
         </a>
         <a
-          href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
+          href="https://en.wikipedia.org/wiki/Instagram"
           target="_blank"
           class="icon"
           ><div class="backing">
@@ -31,7 +31,7 @@
             /></div
         ></a>
         <a
-          href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
+          href="https://planethome.eco/tiktok-challenge-inspires-global-trash-cleanup/"
           target="_blank"
           class="icon"
           ><div class="backing">
@@ -43,7 +43,7 @@
             /></div
         ></a>
         <a
-          href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
+          href="https://support.google.com/mail/?hl=en#topic=7065107"
           target="_blank"
           class="icon"
           ><div class="backing">
@@ -130,9 +130,6 @@
 .icon:hover .iconimg {
   filter: saturate(100%);
 }
-.icon:hover ~ .highlighter-top {
-  visibility: visible;
-}
 
 .backing:hover .tiktok {
   content: url(~/assets/images/tiktok.png);
@@ -148,6 +145,8 @@
   z-index: -1;
   transition: all 0.2s;
 }
+
+/*media queries*/
 
 @media only screen and (max-width: 1320px) {
   #footer {
@@ -185,11 +184,21 @@
     height: 2.5rem;
   }
   .hoverselect {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 5.5rem;
+    height: 5.5rem;
   }
 }
-
+@media only screen and (max-width: 1030px) {
+  .icon:hover .hoverselect {
+    background-color: transparent;
+  }
+  .icon:hover .iconimg {
+    filter: saturate(0) brightness(5);
+  }
+  .backing:hover .tiktok {
+    content: url(~/assets/images/tiktok-white.png);
+  }
+}
 @media only screen and (max-width: 500px) {
   #footer {
     height: 25rem;
@@ -221,10 +230,6 @@
   .highlighter {
     width: 22rem;
     height: 5rem;
-  }
-  .hoverselect {
-    height: 6rem;
-    width: 6rem;
   }
 }
 </style>
