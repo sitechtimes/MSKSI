@@ -1,10 +1,10 @@
 <template>
   <div class="AboutUsTop">
-    <div>
+    <div class="blockText">
+      <h2 class="heading">Our <span class="h mission">Mission</span></h2>
       <button @click="playMethod" id=play></button>
       <button @click="pauseMethods" id=pause></button>
     </div>
-    <h2 class="heading">Our <span class="h mission">Mission</span></h2>
     <h3 id="text" class="text">
         {{ textarea }}
     </h3>
@@ -80,6 +80,10 @@ export default {
 .AboutUsTop {
   background-color: #333043;
   height: 100rem;
+}
+.blockText{
+  display:flex;
+  align-items: center;
 }
 .text {
   margin: 4rem 11rem 0 11rem;
