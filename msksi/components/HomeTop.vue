@@ -4,7 +4,7 @@
       <div class="alignright">
         <h2 class="name mysis">My Sister’s</h2>
         <div class="line2">
-          <img id="temp-logo" src="~/assets/images/logo.png" alt="msksi logo" />
+          <img id="logo-img" src="~/assets/images/logo.png" alt="msksi logo" />
           <h2 class="name keeper">Keeper</h2>
         </div>
 
@@ -59,14 +59,12 @@ export default {
   text-align: right;
   padding-top: 0rem;
   margin-top: 2rem;
-  width: 50rem;
-  margin-right: 0%;
 }
 
-#temp-logo {
+#logo-img {
   width: auto;
   height: 18rem;
-  margin-right: 5rem;
+  margin-right: 3.5rem;
 }
 
 .si {
@@ -97,10 +95,10 @@ export default {
     font-size: var(--h4);
     margin-left: 64%;
   }
-  #temp-logo {
+  #logo-img {
     width: auto;
-    height: 16rem;
-    margin-right: 2rem;
+    height: 14.5rem;
+    margin-right: 1rem;
   }
 }
 @media only screen and (max-width: 1032px) {
@@ -115,7 +113,8 @@ export default {
     font-size: 9.5rem;
   }
   .keeper {
-    width: 40rem;
+    width: 37rem;
+    text-align: left;
   }
   .si {
     font-size: 3rem;
@@ -123,10 +122,10 @@ export default {
     text-align: right;
     margin-top: 1rem;
   }
-  #temp-logo {
+  #logo-img {
     width: auto;
-    height: 14rem;
-    margin-right: 1rem;
+    height: 12.5rem;
+    margin-right: 2.5rem;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -145,7 +144,7 @@ export default {
     margin-right: 0;
   }
   .line2 {
-    margin-right: 5.5rem;
+    width: 41.5rem;
   }
   .keeper {
     font-size: var(--h2);
@@ -157,9 +156,9 @@ export default {
     text-align: right;
     margin-left: 0%;
   }
-  #temp-logo {
-    height: 7rem;
-    margin-right: 3rem;
+  #logo-img {
+    height: 8.5rem;
+    margin-right: 2rem;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -168,6 +167,7 @@ export default {
   }
   .line2 {
     margin-right: 3rem;
+    width: initial;
   }
   .keeper {
     font-size: var(--h3);
@@ -177,8 +177,8 @@ export default {
     font-size: var(--h6);
     width: 33rem;
   }
-  #temp-logo {
-    height: 6rem;
+  #logo-img {
+    height: 6.5rem;
     margin-right: 1rem;
   }
 }
