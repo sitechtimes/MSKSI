@@ -39,7 +39,7 @@
           class="name"
           href="https://photos.google.com/share/AF1QipMKY5scJY9x9zIzB16j0AiGUByxebmmJMpJe3qBv-PwBXagdDD8hNkeDEUNNl02hg?key=X0MwSzBGUndkOThyQmkxdjV2OFlsdnJmNC1pdDdB"
           >#MSKSI December 16, 2020</a
-        <!-- >
+        >
       </div>
       <div class="polaroid">
         <img
@@ -65,7 +65,7 @@
           class="name"
           href="https://photos.google.com/share/AF1QipN4xPbJIQQn7pncoxRFphN1nwgqWKIpMgz7Ek2Uy-28yKs8IcGR9WTD-9N37tGoQw?key=ZmNiU2t1X2RnSHdRdldUOGhWcV9MSExWTi1XWHpn"
           >#MSKSI Miscellaneous</a
-        > -->
+        >
       </div>
     </div>
   </div>
