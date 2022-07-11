@@ -52,9 +52,8 @@ export default {
       // utterance.rate = 10;
       utterance.volume = 10;
       utterance.text = this.textarea;
-        speechSynthesis.speak(utterance);
-        console.log(this.textarea);
-      
+      speechSynthesis.speak(utterance);
+      console.log(voices)
       if (this.paused === true ){
         window.speechSynthesis.resume();
         // resume();
@@ -84,6 +83,7 @@ export default {
 .blockText{
   display:flex;
   align-items: center;
+  margin-right:1rem;
 }
 .text {
   margin: 4rem 11rem 0 11rem;
