@@ -305,7 +305,7 @@ export default {
   }
 
   .CSroutermore {
-    bottom: 5rem;
+    bottom: 4.5rem;
   }
 
   .CSreadmore,
@@ -378,7 +378,7 @@ export default {
   }
 
   .CSroutermore {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .CSreadmore {
