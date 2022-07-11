@@ -4,12 +4,8 @@
       <div class="alignright">
         <h2 class="heading mysis">My Sister’s</h2>
         <div class="line2">
-          <img
-            id="temp-logo"
-            src="https://cutewallpaper.org/24/heart-clip-heart/clip-art-hearts-clip-art-two-hearts-clipart-panda-free-clipart-images--heart-clip-art-clip-art-free-clip-art.gif"
-            alt=""
-          />
-          <h2 class="heading keeper">Keeper</h2>
+          <img id="temp-logo" src="~/assets/images/logo.png" alt="msksi logo" />
+          <h2 class="name keeper">Keeper</h2>
         </div>
 
         <h3 class="si">Staten Island</h3>
@@ -27,7 +23,14 @@ export default {
 <style scoped>
 .hometop {
   background-color: var(--navyblue);
-  height: 100rem;
+  padding-bottom: 30rem;
+}
+.name {
+  font-size: var(--h1);
+  font-family: 'Black Han Sans';
+  font-weight: lighter;
+  color: var(--yellow);
+  padding-top: 7rem;
 }
 .alignright {
   width: fit-content;
@@ -59,7 +62,8 @@ export default {
   color: var(--darkpink);
   font-size: 13rem;
   text-align: right;
-  padding-top: 3rem;
+  padding-top: 0rem;
+  margin-top: 2rem;
   width: 50rem;
   margin-right: 0%;
 }
@@ -79,7 +83,7 @@ export default {
   font-size: var(--h3);
   width: 35rem;
   text-align: right;
-  margin-top: 10rem;
+  margin-top: 3rem;
   margin-left: 75%;
 }
 @media only screen and (max-width: 1500px) {
@@ -123,20 +127,28 @@ export default {
     height: 95rem;
   }
   .mysis {
-    margin-top: 2rem;
+    padding-top: 20rem;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .name {
     font-size: var(--h2);
-    font-weight: lighter;
-    text-align: right;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .line2 {
+    margin-right: 5.5rem;
   }
   .keeper {
-    margin-top: 2rem;
     font-size: var(--h2);
-    font-weight: lighter;
-    text-align: right;
-    margin-right: 6rem;
+    width: 23.5rem;
   }
   .si {
-    font-size: var(--subheadingjum);
+    font-size: var(--h5);
+    width: 47rem;
+    text-align: right;
+    margin-left: 0%;
   }
   #temp-logo {
     width: auto;

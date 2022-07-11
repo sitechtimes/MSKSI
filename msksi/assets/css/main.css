@@ -39,13 +39,3 @@ body,
   background-color: transparent;
   border-color: transparent;
 }
-
-.heading {
-  font-size: var(--h1);
-  font-family: 'Black Han Sans';
-  margin-top: 0rem;
-  margin-left: 11rem;
-  font-weight: lighter;
-  color: var(--yellow);
-  padding-top: 12rem;
-}

@@ -86,8 +86,6 @@
 .router:hover:after { 
   transform: scaleX(1);
 }
-
-
 .router.nuxt-link-exact-active {
   color: var(--darkyellow);
   border-bottom: 3px solid var(--darkyellow);

@@ -1,16 +1,16 @@
 <template>
   <div class="AboutUsMid">
     <div class="left">
-      <h2 class="v msksi">MSKSI</h2>
-      <iframe
-        id="video"
-        src="https://drive.google.com/file/d/1JlT8gnYTEr3YedSs970C7dVHHq5K43eM/preview"
-        width="600"
-        height="400"
-        allow="autoplay"
-        poster="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
-      ></iframe>
-      <h2 class="v vision">VISION</h2>
+      <h2 class="heading v msksi">MSKSI</h2>
+      <div id="video-container">
+        <iframe
+          id="video"
+          src="https://drive.google.com/file/d/1JlT8gnYTEr3YedSs970C7dVHHq5K43eM/preview"
+          allow="autoplay"
+          poster="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
+        ></iframe>
+      </div>
+      <h2 class="heading v vision">VISION</h2>
     </div>
     <div id="right">
       <ol class="list">
@@ -58,16 +58,11 @@ export default {
   width: 50%;
   height: 100%;
   font-family: 'Black Han Sans';
-}
-.v {
-  margin-top: auto;
-  margin-bottom: auto;
-  display: block;
+  margin: 10rem 0 10rem 0;
 }
 .msksi {
   color: var(--darkpink);
-  font-size: var(--h1);
-  margin-top: 9rem;
+  padding-top: 0;
 }
 .vision {
   color: var(--navyblue);
@@ -75,9 +70,10 @@ export default {
 }
 #right {
   width: 50%;
-  margin-left: 50%;
-  font-family: 'Black Han Sans';
-  margin-top: 3rem;
+}
+#video-container {
+  width: 100%;
+  text-align: center;
 }
 #video {
   padding: 5rem;
@@ -94,6 +90,9 @@ export default {
   display: block;
   text-align: left;
   line-height: 4rem;
+  width: 95%;
+  margin: 8rem 0 8rem 0;
+  font-family: 'Cairo', sans-serif;
 }
 
 li {
@@ -147,35 +146,21 @@ li {
 }
 @media only screen and (max-width: 512px) {
   .AboutUsMid {
-    height: 95rem;
-  }
-  .vision {
-    color: var(--navyblue);
-    font-size: var(--h3);
-  }
-  .left {
-    width: 100%;
-  }
-  .v {
-    text-align: center;
-  }
-  .msksi {
-    color: var(--darkpink);
-    font-size: var(--h3);
+    padding-bottom: 0rem;
   }
   #right {
-    margin-left: auto;
-    width: 75%;
-    margin-right: auto;
+    margin: 0 3rem 0 0rem;
+    width: fit-content;
+    padding: 2rem;
+    padding-top: 0;
+    padding-bottom: 5rem;
   }
-
+  .left {
+    margin: 2rem 0 0rem 0;
+  }
   .list {
     font-size: var(--h5);
-    margin-top: -30rem;
-    display: block;
-    text-align: left;
-    margin: 3rem 0 0 1.5rem;
-    width: 30rem;
+    line-height: 2rem;
   }
   .msksi {
     color: var(--darkpink);
@@ -187,9 +172,10 @@ li {
     font-size: var(--h3);
   }
   #video {
-    padding: 5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    margin: 1rem 0 1.5rem 0;
+  }
+  #video-container {
+    width: 100%;
   }
 }
 </style>
