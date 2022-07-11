@@ -11,7 +11,6 @@
   --cerise: #dc355c;
   --white: #fff;
   --tpnavyblue: #141127d7;
-  --darkyellow: #ddb500;
 
   --navbar-bg: var(--navyblue);
   --nav-text: var(--white);
@@ -65,12 +64,17 @@
 .navRouter {
   color: var(--white);
   font-size: var(--h5);
-  margin-right: 2rem;
+  margin-right: 4rem;
   font-family: 'ABeeZee', sans-serif;
   text-decoration: none;
-  padding: 1rem;
+  padding-top: 1rem;
   /* position: relative; */
   display: inline-block;
+}
+
+html,
+body {
+  cursor: url('../images/favicon.png'), default;
 }
 
 .router:after {
@@ -85,9 +89,8 @@
   transform: scaleX(1);
 }
 .router.nuxt-link-exact-active {
-  color: var(--darkpink);
-  border-bottom: 3px solid var(--darkpink);
-  padding-bottom: 0;
+  color: var(--yellow);
+  border-bottom: 3px solid var(--yellow);
 }
 .subheading {
   margin-left: 11rem;
@@ -222,8 +225,8 @@ input[type='checkbox'] {
     linear,
     left bottom,
     left top,
-    color-stop(0.44, var(--darkyellow)),
-    color-stop(0.72, var(--darkpink)),
+    color-stop(0.14, var(--yellow)),
+    color-stop(0.62, var(--darkpink)),
     color-stop(0.86, var(--cerise))
   );
   border-radius: 10rem;
