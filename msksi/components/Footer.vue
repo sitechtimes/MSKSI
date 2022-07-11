@@ -69,9 +69,11 @@
 .buttons {
   display: flex;
   margin-left: auto;
+  margin-right: auto;
   justify-content: space-evenly;
   width: 40rem;
   padding: 2rem;
+  padding-top: 1.5rem;
 }
 .icon {
   width: auto;
