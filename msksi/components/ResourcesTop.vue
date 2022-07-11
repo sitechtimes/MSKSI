@@ -40,6 +40,7 @@
     <h3>Take some time as your journal, goal set or continue to work on a vision board and jot down somethings you need from your MSKSI team and the adults supporting you in MSKSI. Fill out the anonymous form and share with us YOUR needs.</h3>
     </div>
     </div>
+  </div>
 </template>
 
 <script>
