@@ -127,7 +127,7 @@ export default {
 }
 @media only screen and (max-width: 550px) {
   .texti {
-    margin: 2rem 6rem 0 6rem;
+    margin: 2rem 4rem 0 4rem;
     font-size: var(--h6);
   }
   h2 {
@@ -142,7 +142,7 @@ export default {
     padding-top: 5rem;
   }
   .will {
-    margin-top: 2rem;
+    margin: 2rem 4rem 0 4rem;
   }
 }
 </style>

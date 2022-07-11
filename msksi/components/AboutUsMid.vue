@@ -168,7 +168,7 @@ li {
     margin: 2rem 0 0rem 0;
   }
   .list {
-    font-size: var(--h5);
+    font-size: 2.2rem;
     line-height: 2rem;
   }
   .msksi {

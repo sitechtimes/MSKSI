@@ -30,7 +30,6 @@
   --list: 3rem;
   --subheadingju: 4rem;
   --subheadingjum: 3rem;
-  --members: 2rem;
   --four: 4rem;
 }
 #navbar {
@@ -97,8 +96,6 @@
   font-weight: lighter;
 }
 .button {
-  position: sticky;
-  left: 80%;
   padding: 1.2rem;
   width: 22rem;
   height: 8rem;
@@ -107,7 +104,6 @@
   font-family: 'Black Han Sans';
   border: none;
   cursor: pointer;
-  z-index: 1;
 }
 .button:hover {
   transform: scale(1.1);
@@ -115,7 +111,6 @@
 }
 @media only screen and (max-width: 1500px) {
   .button {
-    left: 11rem;
     width: 20rem;
     height: 7rem;
     font-size: var(--subheadingjum);
