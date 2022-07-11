@@ -54,7 +54,7 @@ export default {
     font-size: 5rem;
     color: var(--white);
     text-align: left;
-    padding: 0 0 0 3rem;
+    margin-left: 3rem;
     margin-right: 11rem;
 }
 .eventmonth {
@@ -100,11 +100,11 @@ export default {
 }
 .eventname{
     font-size: 4rem;
-    padding-left: 2.3rem;
     margin-right: 11rem;
 }
 .cal-arrow{
     display: none;
+    font-family: 'Black Han Sans', sans-serif;
 }
 }
 @media screen and (max-width: 900px){
@@ -135,20 +135,19 @@ export default {
     }
     .eventname{
         font-size: 4rem;
-        padding-left: 2.1rem;
         margin-right: 3.4rem;
+        width: 2rem;
     }
     .cal-button{
         display: none;
     }
     .cal-arrow{
         display: flex;
-        font-size: var(--h4);
+        font-size: var(--h3);
         padding: 0 0 0 1rem;
         position: absolute;
         font-size: 4rem;
-        right: 100px;
-        right: 50px;
+        right: 120px;
     }
 }
 @media screen and (max-width: 500px){
@@ -168,14 +167,16 @@ export default {
     }
     .eventname{
         font-size: 2.2rem;
-        margin-right: 3.8rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        width: 2rem;
     }
     .cal-button{
         display: none;
     }
     .cal-arrow{
         display: flex;
-        font-size: var(--h4);
+        font-size: var(--h5);
         padding: 0 0 0 1rem;
         position: absolute;
         right: 100px;
