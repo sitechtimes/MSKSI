@@ -39,7 +39,7 @@ export default {
     text-align: center;
     font-family: 'Sora', sans-serif;
     color: var(--white);
-    padding-top: 4rem;
+    padding-top: 3rem;
   }
 .eventpreviews{
   display: flex;

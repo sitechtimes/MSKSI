@@ -64,7 +64,7 @@ p {
     }
     .postcontent{
         display: inline-block;
-        padding: 2rem 0 0 0;
+        padding: 1rem 0 0 0;
         text-align:center;
     }
     h2 {
