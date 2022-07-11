@@ -78,13 +78,13 @@
 
 .highlighter {
   position: absolute;
-  width: 32rem;
-  height: 7rem;
+  width: 30rem;
+  height: 6rem;
   border-radius: 5rem;
   margin-left: 50%;
   transform: translateX(-50%);
-  border: solid 0.5rem var(--yellow);
-  background-color: var(--yellow);
+  /* border: solid 0.5rem var(--yellow);
+  background-color: var(--yellow); */
 }
 .buttons {
   display: flex;
@@ -121,11 +121,11 @@
 .icon {
   transition: all 0.9s;
   z-index: 100;
-  margin-top: 0.5rem;
+  margin-top: 0rem;
 }
 .icon:hover .hoverselect {
-  background-color: var(--white);
-  border: solid 0.5rem var(--yellow);
+  background-color: rgb(255, 255, 255);
+  /*  border: solid 0.5rem var(--yellow); */
 }
 .icon:hover .iconimg {
   filter: saturate(100%);
@@ -139,8 +139,10 @@
 }
 .hoverselect {
   position: absolute;
-  height: 7.75rem;
-  width: 7.75rem;
+  /*  height: 7.75rem;
+  width: 7.75rem; */
+  height: 6rem;
+  width: 6rem;
   border-radius: 6rem;
   margin-top: 0rem;
   z-index: -1;
@@ -148,20 +150,24 @@
 }
 
 @media only screen and (max-width: 1320px) {
+  #footer {
+    height: 27rem;
+  }
   .contactus {
+    padding-top: 7rem;
     margin-left: 0;
     font-size: 2rem;
   }
 
   .highlighter {
-    width: 28rem;
-    height: 5.5rem;
+    width: 26rem;
+    height: 5rem;
   }
   .buttons {
-    width: 25rem;
+    width: 22rem;
   }
   .icon {
-    margin-top: 1.25rem;
+    margin-top: 1rem;
   }
   .backing {
     margin: auto;
@@ -179,14 +185,20 @@
     height: 2.5rem;
   }
   .hoverselect {
-    width: 7rem;
-    height: 7rem;
+    width: 6.5rem;
+    height: 6.5rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
+  #footer {
+    height: 25rem;
+  }
+  .contactus {
+    padding-top: 6rem;
+  }
   .icon {
-    margin-top: 1.745rem;
+    margin-top: 1.75rem;
   }
   .icon,
   .backing {
@@ -204,15 +216,15 @@
     height: 1.7rem;
   }
   .buttons {
-    width: 20rem;
+    width: 18rem;
   }
   .highlighter {
-    width: 24rem;
+    width: 22rem;
     height: 5rem;
   }
   .hoverselect {
-    height: 6.5rem;
-    width: 6.5rem;
+    height: 6rem;
+    width: 6rem;
   }
 }
 </style>
