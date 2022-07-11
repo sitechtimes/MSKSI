@@ -1,7 +1,7 @@
 <template>
   <div class="AboutUsTop">
     <div>
-      <a href='#play' id='target1' class='target'><button @click="playMethod" id=play></button></a>
+      <button @click="playMethod" id=play></button>
       <button @click="pauseMethods" id=pause></button>
     </div>
     <h2 class="heading">Our <span class="h mission">Mission</span></h2>
@@ -49,7 +49,7 @@ export default {
       let voices = []
       voices = window.speechSynthesis.getVoices();
       utterance.voice = voices[0];
-      utterance.rate = 10;
+      // utterance.rate = 10;
       utterance.volume = 10;
       utterance.text = this.textarea;
         speechSynthesis.speak(utterance);
