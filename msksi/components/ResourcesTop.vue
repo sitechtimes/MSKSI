@@ -40,6 +40,32 @@
       <h4 class="item">Ideas for journaling and goal setting</h4>
       <h4 class="item">Projects & connecting with others</h4>   
         </ul>
+      </div>
+      <div class="resource">
+        <img
+          src="https://lh4.googleusercontent.com/nE2JYKfW5D-icd_xuFx0rJ2nFvSAC6qHX7JF6dN-CTDSQC9Sp0H7jz-2OMVE8DGixIW8V91uNu82W36frdhbBAWFvBeRNOVU3o_k2uBCyIF4UzEflJMFqAnTPHb_Rv7biQ=w1280"
+          alt="jamboard posts"
+        />
+        <a
+          target="_blank"
+          id="link"
+          href="https://jamboard.google.com/d/1I0G1z3-7R96nD9EAgRI4ncikXWkw8AhpdrRZC3JOtIw/viewer"
+          >Jamboard January 8, 2021 Gratitude Prompts link
+        </a>
+      </div>
+      <div class="resource">
+        <a
+          id="link"
+          href="https://sites.google.com/strongschools.nyc/msksi/resources#h.xere2vvav6n9"
+          >Let's hear from you!
+        </a>
+        <h3>
+          Take some time as your journal, goal set or continue to work on a
+          vision board and jot down somethings you need from your MSKSI team and
+          the adults supporting you in MSKSI. Fill out the anonymous form and
+          share with us YOUR needs.
+        </h3>
+      </div>
     </div>
     <div class="resource">
        <img
@@ -62,18 +88,18 @@ export default {
 }
 </script>
 <style scoped>
-.resource:hover{
-transform: scale(1.1);
-transition: .5s;
+.resource:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
-h3{
-font-size: var(--h6);
-font-family: 'Cairo', sans-serif;
-width: 80%;
-margin-left: auto;
-margin-right: auto;
+h3 {
+  font-size: var(--h6);
+  font-family: 'Cairo', sans-serif;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
-#resources{
+#resources {
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
@@ -82,10 +108,10 @@ margin-right: auto;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-justify-content: space-around;
+  justify-content: space-around;
   padding-bottom: 6rem;
 }
-.resource{
+.resource {
   margin-top: 5rem;
   height: 30rem;
   width: 30rem;
@@ -100,108 +126,110 @@ justify-content: space-around;
 .heading {
   color: var(--yellow);
 }
-img{
-height: 15rem;
-margin-left: auto;
-margin-right: auto;
-display: block;
-margin-top: 3rem;
+img {
+  height: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 3rem;
 }
-#link{
-color: #333043;
-font-size: var(--h5);
-font-family: 'Cairo', sans-serif;
-width: 80%;
-margin-left: auto;
-margin-right: auto;
-margin-top: 1rem;
+#link {
+  color: #333043;
+  font-size: var(--h5);
+  font-family: 'Cairo', sans-serif;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
 }
-.item{
-color: #333043;
-font-family: 'Cairo', sans-serif;
+.item {
+  color: #333043;
+  font-family: 'Cairo', sans-serif;
   text-align: center;
-font-size: var(--h6);
+  font-size: var(--h6);
 }
-ul{
-  margin-top: .2rem;
+ul {
+  margin-top: 0.2rem;
   margin-left: auto;
   margin-right: auto;
 }
-@media only screen and (max-width: 1500px){
-  .resource{
-  width: 30rem;
-  margin-top: 5rem;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: rgb(255, 255, 255);
-  border-radius: 2rem;
-  margin-left: 2rem;
+@media only screen and (max-width: 1500px) {
+  .resource {
+    width: 30rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    margin-left: 2rem;
+  }
+  .resourcestop {
+    background-color: #333043;
+  }
+  img {
+    height: 14rem;
+  }
+  #link {
+    color: #333043;
+    font-size: var(--h5);
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
-.resourcestop {
-  background-color: #333043;
-}
-img{
-  height: 14rem;
-}
-#link{
-color: #333043;
-font-size: var(--h5);
-font-family: 'Cairo', sans-serif;
-text-align: center;
-margin-top: 1rem;
-}
-}
-@media only screen and (max-width: 720px){
-    .heading {
+@media only screen and (max-width: 720px) {
+  .heading {
     margin-left: 4rem;
     margin-top: 0rem;
   }
-  img{
+  img {
     height: 13rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
   }
-  #link{
-  font-size: var(--h6);
+  #link {
+    font-size: var(--h6);
   }
-  #resources{
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-justify-content: space-around;
-  padding-bottom: 5rem;
+  #resources {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 5rem;
+  }
+  .resource {
+    margin-top: 3rem;
+    width: 25rem;
+    height: 25rem;
+  }
+  h3 {
+    font-size: var(--one);
+  }
 }
- .resource{
-  margin-top: 3rem;
-  width: 25rem;
-  height: 25rem;
- }
-  h3{
-font-size: var(--one);}
-}
-@media only screen and (max-width: 710px){
- #resources{
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-justify-content: space-around;
-  padding-bottom: 5rem;
-}
- .resource{
-  margin-top: 3rem;
-  width: 25rem;
-  height: 25rem;
-  margin-right: 2rem;
-  margin-left: 2rem;
- }
- h3{
-font-size: var(--smallText);}
+@media only screen and (max-width: 710px) {
+  #resources {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 5rem;
+  }
+  .resource {
+    margin-top: 3rem;
+    width: 25rem;
+    height: 25rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  h3 {
+    font-size: var(--smallText);
+  }
 }
 
 @media only screen and (max-width: 620px) {
@@ -211,42 +239,42 @@ font-size: var(--smallText);}
     margin-left: 0;
   }
 
-  #resources{
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 5rem;
-}
- .resource{
-  margin-top: 3rem;
-  width: 25rem;
-  height: 25rem;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: rgb(255, 255, 255);
-  border-radius: 2rem;
-  padding-bottom: 2rem;
-}
-  img{
+  #resources {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+  .resource {
+    margin-top: 3rem;
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    padding-bottom: 2rem;
+  }
+  img {
     height: 10rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
   }
-  #link{
-  font-size: var(--h6);
+  #link {
+    font-size: var(--h6);
   }
-h3{
-  font-size: var(--one);
-}
-.resource:hover{
-transform: scale(1.05);
-}
+  h3 {
+    font-size: var(--one);
+  }
+  .resource:hover {
+    transform: scale(1.05);
+  }
 }
 </style>
 
