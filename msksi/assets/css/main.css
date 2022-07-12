@@ -7,8 +7,12 @@ body,
   box-sizing: border-box;
   margin: 0;
   font-size: 62.5%;
-  cursor: url('../images/myHeartu.png'), auto;
+  cursor: url('../images/pinkCursor.png'), auto;
 }
+.button[data-v-8d025cfc] {
+  cursor: url('../images/hoverBtnCursor.png'), auto;
+}
+
 .heading {
   font-size: var(--h1);
   font-family: 'Black Han Sans';
