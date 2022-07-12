@@ -1,13 +1,9 @@
 <template>
   <div class="GalleryTop">
-    <h2 class="heading">Photo <span class="heading gall">Gallery</span></h2>
+    <h2 class="heading">Photo <span class="gall">Gallery</span></h2>
     <div class="polaroid-container">
       <div class="polaroid">
-        <img
-          id="picture"
-          src="~/assets/images/panelcareercon.png"
-          alt="MSK and MBK panel career con"
-        />
+        <div id="picture"></div>
         <a
           target="_blank"
           class="name"
@@ -16,11 +12,7 @@
         >
       </div>
       <div class="polaroid">
-        <img
-          id="picture"
-          src="~/assets/images/january.png"
-          alt="MSKSI January 17, 2020"
-        />
+        <div id="picture"></div>
         <a
           class="name"
           target="_blank"
@@ -29,11 +21,7 @@
         >
       </div>
       <div class="polaroid">
-        <img
-          id="picture"
-          src="~/assets/images/december.png"
-          alt="MSKSI December 16, 2020"
-        />
+        <div id="picture"></div>
         <a
           target="_blank"
           class="name"
@@ -42,11 +30,7 @@
         >
       </div>
       <div class="polaroid">
-        <img
-          id="picture"
-          src="~/assets/images/march.png"
-          alt="MSKSI March 6,2020"
-        />
+        <div id="picture"></div>
         <a
           target="_blank"
           class="name"
@@ -55,11 +39,7 @@
         >
       </div>
       <div class="polaroid">
-        <img
-          id="picture"
-          src="~/assets/images/misc.png"
-          alt="MSKSI Miscellaneous"
-        />
+        <div id="picture"></div>
         <a
           target="_blank"
           class="name"
@@ -75,12 +55,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
 
 .GalleryTop {
+  height: 95rem;
   background-color: #333043;
-  padding-bottom: 10rem;
 }
 .gall {
   color: var(--darkpink);
-  margin: 0;
+  font-size: var(--h1);
 }
 .name {
   font-family: 'ABeeZee', sans-serif;
@@ -120,8 +100,11 @@
   z-index: 1;
   background-color: rgb(194, 194, 194);
 }
-
-@media only screen and (max-width: 1032px) {
+@media only screen and (max-width: 1080px) {
+  .heading {
+    text-align: center;
+    margin: 0;
+  }
   .polaroid-container {
     grid-gap: 5rem;
     margin: 7rem;
@@ -142,6 +125,21 @@
   }
   #picture {
     margin-top: 2rem;
+  }
+  .name {
+    font-size: var(--h5);
+    margin-top: 0;
+  }
+  .heading {
+    font-size: var(--h3);
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 0rem;
+    text-align: center;
+  }
+  .gall {
+    font-size: var(--h3);
+    margin-top: 0rem;
   }
 }
 </style>

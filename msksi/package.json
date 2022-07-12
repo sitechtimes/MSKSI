@@ -20,7 +20,6 @@
     "@fortawesome/vue-fontawesome": "^2.0.8",
     "@nuxt/content": "^1.15.1",
     "core-js": "^3.19.3",
-    "gsap": "^3.10.4",
     "nuxt": "^2.15.8",
     "nuxt-fontawesome": "^0.4.0",
     "vue": "^2.6.14",
