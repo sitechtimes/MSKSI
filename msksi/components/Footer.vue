@@ -64,7 +64,6 @@
   text-align: center;
   bottom: 0px;
   width: 100%;
-  height: 30rem;
 }
 
 .contactus {

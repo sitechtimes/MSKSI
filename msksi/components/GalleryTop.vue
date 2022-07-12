@@ -1,9 +1,13 @@
 <template>
   <div class="GalleryTop">
-    <h2 class="heading">Photo <span class="gall">Gallery</span></h2>
-    <div class="polaroids">
+    <h2 class="heading">Photo <span class="heading gall">Gallery</span></h2>
+    <div class="polaroid-container">
       <div class="polaroid">
-        <div id="picture"></div>
+        <img
+          id="picture"
+          src="~/assets/images/panelcareercon.png"
+          alt="MSK and MBK panel career con"
+        />
         <a
           target="_blank"
           class="name"
@@ -12,7 +16,11 @@
         >
       </div>
       <div class="polaroid">
-        <div id="picture"></div>
+        <img
+          id="picture"
+          src="~/assets/images/january.png"
+          alt="MSKSI January 17, 2020"
+        />
         <a
           class="name"
           target="_blank"
@@ -21,7 +29,11 @@
         >
       </div>
       <div class="polaroid">
-        <div id="picture"></div>
+        <img
+          id="picture"
+          src="~/assets/images/december.png"
+          alt="MSKSI December 16, 2020"
+        />
         <a
           target="_blank"
           class="name"
@@ -30,7 +42,11 @@
         >
       </div>
       <div class="polaroid">
-        <div id="picture"></div>
+        <img
+          id="picture"
+          src="~/assets/images/march.png"
+          alt="MSKSI March 6,2020"
+        />
         <a
           target="_blank"
           class="name"
@@ -39,7 +55,11 @@
         >
       </div>
       <div class="polaroid">
-        <div id="picture"></div>
+        <img
+          id="picture"
+          src="~/assets/images/misc.png"
+          alt="MSKSI Miscellaneous"
+        />
         <a
           target="_blank"
           class="name"
@@ -60,7 +80,7 @@
 }
 .gall {
   color: var(--darkpink);
-  font-size: var(--h1);
+  margin: 0;
 }
 .name {
   font-family: 'ABeeZee', sans-serif;
@@ -68,95 +88,60 @@
   color: var(--navyblue);
   text-align: center;
   font-size: var(--h5);
-  margin-top: 3rem;
-  width: 25rem;
-  margin-left: auto;
-  margin-right: auto;
+  width: 20rem;
   display: block;
   font-weight: bolder;
+  text-align: center;
+  margin-top: 3rem;
+}
+.polaroid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+  grid-gap: 7rem;
+  margin: 11rem;
+  margin-top: 6rem;
+  justify-items: center;
+  grid-template-rows: auto;
+}
+.polaroid {
+  background-color: white;
+  height: 36rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #picture {
-  width: 25rem;
-  height: 25rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4.5rem;
+  height: 20rem;
+  width: 20rem;
+  margin: 3rem;
+  margin-bottom: 0;
+  margin-top: 0;
   z-index: 1;
   background-color: rgb(194, 194, 194);
 }
-.polaroids {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 87vw;
-  margin-left: auto;
-  margin-right: auto;
-}
-.polaroid {
-  margin-top: 10rem;
-  width: 18%;
-  background-color: white;
-}
-@media only screen and (max-width: 1500px) {
-  #picture {
-    width: 20rem;
-    height: 20rem;
+
+@media only screen and (max-width: 1032px) {
+  .polaroid-container {
+    grid-gap: 5rem;
+    margin: 7rem;
   }
+}
+@media only screen and (max-width: 600px) {
   .polaroid {
-    width: 25rem;
-    height: 35rem;
-  }
-  .polaroids {
-    width: 85vw;
-    margin-left: 10rem;
-  }
-  .name {
-    font-size: 1.6rem;
-    margin-top: 5rem;
-  }
-  .polaroids {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-}
-@media only screen and (max-width: 510px) {
-  .polaroids {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 87vw;
+    width: 48vw;
+    height: 35rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0rem;
   }
-  .polaroid {
-    height: 33rem;
-    width: 28rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
   #picture {
-    width: 20rem;
-    height: 20rem;
-  }
-  .name {
-    font-size: var(--h5);
-  }
-  .heading {
-    font-size: var(--h3);
-    margin-left: 0rem;
-    margin-right: 0rem;
-    margin-top: 0rem;
-    text-align: center;
-  }
-  .gall {
-    font-size: var(--h3);
-    margin-top: 0rem;
+    margin-top: 2rem;
   }
 }
 </style>
