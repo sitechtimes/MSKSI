@@ -2,14 +2,10 @@
   <div>
     <div class="hometop">
       <div class="alignright">
-        <h2 class="heading mysis">My Sister’s</h2>
+        <h2 class="name mysis">My Sister’s</h2>
         <div class="line2">
-          <img
-            id="temp-logo"
-            src="https://cutewallpaper.org/24/heart-clip-heart/clip-art-hearts-clip-art-two-hearts-clipart-panda-free-clipart-images--heart-clip-art-clip-art-free-clip-art.gif"
-            alt=""
-          />
-          <h2 class="heading keeper">Keeper</h2>
+          <img id="temp-logo" src="~/assets/images/logo.png" alt="msksi logo" />
+          <h2 class="name keeper">Keeper</h2>
         </div>
 
         <h3 class="si">Staten Island</h3>
@@ -29,46 +25,48 @@ export default {
   background-color: var(--navyblue);
   padding-bottom: 30rem;
 }
+.name {
+  font-size: var(--h1);
+  font-family: 'Black Han Sans';
+  font-weight: lighter;
+  color: var(--yellow);
+  padding-top: 7rem;
+}
 .alignright {
   width: fit-content;
   display: flex;
   align-content: right;
   height: fit-content;
   flex-direction: column;
-  margin: auto;
+  margin: 0 auto;
 }
 .mysis {
   font-size: 13rem;
   text-align: right;
-  padding-top: 30rem;
+  padding-top: 20rem;
 }
-
 .line2 {
   display: flex;
   height: fit-content;
   flex-direction: row;
   justify-content: right;
-
   align-content: center;
-  position: relative;
 }
 
 .keeper {
   color: var(--darkpink);
   font-size: 13rem;
   text-align: right;
-  padding-top: 3rem;
-  width: 58rem;
+  padding-top: 0rem;
+  margin-top: 2rem;
+  width: 50rem;
   margin-right: 0%;
 }
 
 #temp-logo {
-  /* border: solid 2px red; */
   width: auto;
   height: 18rem;
-  position: absolute;
-  bottom: 5%;
-  right: 57rem;
+  margin-right: 5rem;
 }
 
 .si {
@@ -77,18 +75,61 @@ export default {
   font-size: var(--h3);
   width: 35rem;
   text-align: right;
-  margin-top: 5rem;
+  margin-top: 7rem;
   margin-left: 75%;
 }
 @media only screen and (max-width: 1500px) {
-  .si {
-    margin-top: 5rem;
+  .hometop {
+    background-color: var(--navyblue);
+    padding-bottom: 30rem;
   }
-  .mysis {
-    padding-top: 23rem;
+  .name {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 11rem;
+  }
+  .keeper {
+    width: 45rem;
+    margin-top: 1rem;
+  }
+  .si {
+    margin-top: 2rem;
+    font-size: var(--h4);
+    margin-left: 64%;
+  }
+  #temp-logo {
+    width: auto;
+    height: 16rem;
+    margin-right: 2rem;
   }
 }
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 1032px) {
+  .mysis {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .name {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 9.5rem;
+  }
+  .keeper {
+    width: 40rem;
+  }
+  .si {
+    font-size: 3rem;
+    width: 28rem;
+    text-align: right;
+    margin-top: 1rem;
+  }
+  #temp-logo {
+    width: auto;
+    height: 14rem;
+    margin-right: 1rem;
+  }
+}
+@media only screen and (max-width: 770px) {
   .hometop {
     padding-bottom: 20rem;
   }
@@ -98,22 +139,47 @@ export default {
     margin-left: 0;
     margin-right: 0;
   }
-  .heading {
-    font-size: var(--h3);
+  .name {
+    font-size: var(--h2);
     margin-left: 0;
     margin-right: 0;
   }
+  .line2 {
+    margin-right: 5.5rem;
+  }
   .keeper {
-    margin-top: -3rem;
-    width: 30rem;
-    margin-right: 11.4%;
+    font-size: var(--h2);
+    width: 23.5rem;
   }
   .si {
     font-size: var(--h5);
-    width: 35rem;
+    width: 47rem;
     text-align: right;
-    margin-top: 0.8rem;
     margin-left: 0%;
+  }
+  #temp-logo {
+    height: 7rem;
+    margin-right: 3rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .name {
+    font-size: var(--h3);
+  }
+  .line2 {
+    margin-right: 3rem;
+  }
+  .keeper {
+    font-size: var(--h3);
+    width: 18rem;
+  }
+  .si {
+    font-size: var(--h6);
+    width: 33rem;
+  }
+  #temp-logo {
+    height: 6rem;
+    margin-right: 1rem;
   }
 }
 </style>

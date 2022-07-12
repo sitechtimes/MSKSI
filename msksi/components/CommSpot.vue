@@ -168,7 +168,7 @@ export default {
 }
 
 .CSroutermore:hover + .CSreadmore {
-  background-color: var(--navyblue);
+  background-color: #141127d7;
 }
 
 .CSroutermore {
@@ -184,7 +184,7 @@ export default {
 }
 
 .CSroutermore:hover {
-  color: var(--darkyellow);
+  color: var(--yellow);
   text-decoration: underline;
 }
 
