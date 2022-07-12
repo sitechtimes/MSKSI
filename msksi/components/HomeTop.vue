@@ -64,7 +64,7 @@ export default {
 #logo-img {
   width: auto;
   height: 18rem;
-  margin-right: 3.5rem;
+  margin-right: 4rem;
 }
 
 .si {
@@ -98,7 +98,7 @@ export default {
   #logo-img {
     width: auto;
     height: 14.5rem;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
   }
 }
 @media only screen and (max-width: 1032px) {
@@ -125,7 +125,7 @@ export default {
   #logo-img {
     width: auto;
     height: 12.5rem;
-    margin-right: 2.5rem;
+    margin-right: 3.5rem;
   }
 }
 @media only screen and (max-width: 770px) {
