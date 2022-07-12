@@ -1,7 +1,7 @@
 <template>
   <div class="homespotlight">
     <div class="CSbutton-holder">
-      <router-link class="navRouter CSroutermore" to="/AboutUs">
+      <router-link class="navRouter CSroutermore router" to="/AboutUs">
         Read More
       </router-link>
       <div class="CSreadmore"></div>
@@ -158,7 +158,7 @@ export default {
 .CSreadmore {
   height: 125rem;
   width: 125rem;
-  background-color: #141127d7;
+  background-color: var(--tpnavyblue);
   clip-path: polygon(100% 27%, 68% 100%, 100% 100%);
   position: absolute;
   bottom: 0;
@@ -168,12 +168,16 @@ export default {
 }
 
 .CSroutermore:hover + .CSreadmore {
-  background-color: #141127d7;
+  background-color: var(--darknavyblue);
+}
+
+.CSroutermore:hover {
+  transform: scale(1.025);
 }
 
 .CSroutermore {
   font-size: 2.6rem;
-  color: var(--yellow);
+  color: var(--white);
   font-family: 'ABeeZee', sans-serif;
   font-weight: bold;
   bottom: 20rem;
@@ -181,11 +185,6 @@ export default {
   position: absolute;
   z-index: 11;
   transition: all 0.2s;
-}
-
-.CSroutermore:hover {
-  color: var(--yellow);
-  text-decoration: underline;
 }
 
 .CSimg-reel {
@@ -295,7 +294,7 @@ export default {
   }
 
   .CSroutermore {
-    bottom: 4.5rem;
+    bottom: 7rem;
   }
 
   .CSreadmore,
