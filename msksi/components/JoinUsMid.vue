@@ -92,9 +92,7 @@ export default {
 .wbsmr {
   color: var(--darkpink);
 }
-/* .button{
-  cursor: url('../images/hoverBtnCursor.png'), auto;
-} */
+
 @media only screen and (max-width: 1500px) {
   .subheading {
     font-size: var(--subheadingju);

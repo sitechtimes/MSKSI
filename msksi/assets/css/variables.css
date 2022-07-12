@@ -70,12 +70,9 @@
   padding-top: 1rem;
   /* position: relative; */
   display: inline-block;
+  cursor: url('../images/hoverBtnCursor.png'), auto;
 }
 
-html,
-body {
-  cursor: url('../images/favicon.png'), default;
-}
 
 .router:after {
   display: block;
@@ -115,6 +112,21 @@ body {
 .button:hover {
   transform: scale(1.1);
   transition: 0.3s;
+}
+
+#play {
+  /* background-image: url("~/assets/images/pinkPlayBtn.png");*/
+  font-size: 7.5rem;
+  color: var(--darkpink);
+  position: relative;
+}
+
+
+#pause {
+  /* background-image: url("~/assets/images/pauseBtn.png"); */
+  font-size: 7.5rem;
+  color: var(--darkpink);
+  position: relative;
 }
 @media only screen and (max-width: 1500px) {
   .button {
@@ -209,6 +221,10 @@ input[type='checkbox'] {
   text-decoration: none;
   font-size: 2rem;
   font-family: 'Be Vietnam Pro', sans-serif;
+}
+.menu-router.nuxt-link-exact-active{
+  color: var(--yellow);
+  border-bottom: 3px solid var(--yellow);
 }
 
 ::-webkit-scrollbar {
