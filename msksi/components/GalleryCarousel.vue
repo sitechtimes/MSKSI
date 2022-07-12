@@ -1,10 +1,13 @@
 <template>
     <div class="app">
-        <carousel>
+        <carousel
+        @next="next"
+        @prev="prev"
+        >
             <carousel-slide v-for="(slide,index) in slides" 
             :key="slide" 
             :index="index"
-            :visibleslide="visibleSlide"
+            :visibleSlide="visibleSlide"
             >
                 <img :src="slide">
             </carousel-slide>
@@ -29,6 +32,27 @@ export default {
             visibleSlide: 0,
         }
     },
+    computed: {
+        slidesLen() {
+            return this.slides.length;
+        }
+    },
+    methods: {
+        next(){
+            if(this.visibleSlide >= this.slidesLen - 1){
+                this.visibleSlide = 0;
+            }else {
+                this.visibleSlide++;
+            }
+        },
+        prev(){
+            if(this.visibleSlide <= 0){
+                this.visibleSlide = this.slidesLen - 1;
+            }else {
+                this.visibleSlide--;
+            }
+        },
+    },
     components : {
         Carousel,
         CarouselSlide
@@ -40,9 +64,15 @@ export default {
 .app{
     display: flex;
     justify-content: center;
+    height: 90rem;
+    background-color: var(--navyblue);
 }
 img{
-    height: 20rem;
-    width: 20rem;
+    height: 30rem;
+    width: 30rem;
+}
+.carousel{
+    padding-top: 6rem;
+    height: 60rem;
 }
 </style>
