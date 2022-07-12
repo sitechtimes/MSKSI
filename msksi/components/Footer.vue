@@ -70,9 +70,11 @@
 .buttons {
   display: flex;
   margin-left: auto;
+  margin-right: auto;
   justify-content: space-evenly;
   width: 40rem;
   padding: 2rem;
+  padding-top: 1.5rem;
 }
 .icon {
   height: 3rem;
@@ -129,7 +131,41 @@
   }
 }
 .icon {
-  cursor: pointer;
+  cursor: url('../assets/images/hoverBtnCursor.png'), auto;
+}
+@media only screen and (max-width: 1032px) {
+  .contactus {
+    font-size: var(--h4);
+  }
+  .icon {
+    filter: saturate(100%);
+  }
+}
+@media only screen and (max-width: 770px) {
+  .contactus {
+    font-size: var(--h4);
+  }
+  .buttons {
+    width: 35rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .contactus {
+    font-size: 2.5rem;
+  }
+  .contacts {
+    font-size: var(--h6);
+  }
+  .buttons {
+    width: 28rem;
+    padding: 1rem;
+  }
+  .icon {
+    height: 2.5rem;
+  }
+  .instagram {
+    height: 3rem;
+  }
 }
 </style>
 

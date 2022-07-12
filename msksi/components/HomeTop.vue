@@ -4,7 +4,7 @@
       <div class="alignright">
         <h2 class="heading mysis">My Sister’s</h2>
         <div class="line2">
-          <img id="temp-logo" src="~/assets/images/logo.png" alt="msksi logo" />
+          <img id="logo-img" src="~/assets/images/logo.png" alt="msksi logo" />
           <h2 class="name keeper">Keeper</h2>
         </div>
 
@@ -64,17 +64,12 @@ export default {
   text-align: right;
   padding-top: 0rem;
   margin-top: 2rem;
-  width: 50rem;
-  margin-right: 0%;
 }
 
-#temp-logo {
-  /* border: solid 2px red; */
+#logo-img {
   width: auto;
   height: 18rem;
-  position: absolute;
-  bottom: 5%;
-  right: 57rem;
+  margin-right: 3.5rem;
 }
 
 .si {
@@ -90,8 +85,10 @@ export default {
   .si {
     margin-top: 5rem;
   }
-  .mysis {
-    padding-top: 23rem;
+  #logo-img {
+    width: auto;
+    height: 14.5rem;
+    margin-right: 1rem;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -106,7 +103,8 @@ export default {
     font-size: 9.5rem;
   }
   .keeper {
-    width: 52rem;
+    width: 37rem;
+    text-align: left;
   }
   .si {
     font-size: var(--h4);
@@ -114,12 +112,10 @@ export default {
     text-align: right;
     margin-top: 3rem;
   }
-  #temp-logo {
+  #logo-img {
     width: auto;
-    height: 14rem;
-    position: absolute;
-    bottom: 5%;
-    right: 42rem;
+    height: 12.5rem;
+    margin-right: 2.5rem;
   }
 }
 @media only screen and (max-width: 510px) {
@@ -138,7 +134,7 @@ export default {
     margin-right: 0;
   }
   .line2 {
-    margin-right: 5.5rem;
+    width: 41.5rem;
   }
   .keeper {
     font-size: var(--h2);
@@ -150,12 +146,30 @@ export default {
     text-align: right;
     margin-left: 0%;
   }
-  #temp-logo {
-    width: auto;
-    height: 5rem;
-    position: absolute;
-    bottom: 5%;
-    right: 24rem;
+  #logo-img {
+    height: 8.5rem;
+    margin-right: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .name {
+    font-size: var(--h3);
+  }
+  .line2 {
+    margin-right: 3rem;
+    width: initial;
+  }
+  .keeper {
+    font-size: var(--h3);
+    width: 18rem;
+  }
+  .si {
+    font-size: var(--h6);
+    width: 33rem;
+  }
+  #logo-img {
+    height: 6.5rem;
+    margin-right: 1rem;
   }
 }
 </style>

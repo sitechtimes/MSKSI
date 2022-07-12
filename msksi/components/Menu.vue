@@ -5,29 +5,29 @@
     <label for="active" class="close"></label>
     <div id="_nav__menu" class="wrapper">
       <ul class="link-container">
-        <li   v-on:click="toggleOff()" class="link">
-          <router-link class="menu-router router" to="/"> Home </router-link>
+        <li class="link">
+          <router-link class="menu-router" to="/"> Home </router-link>
         </li>
-        <li  v-on:click="toggleOff()" class="link">
-          <router-link class="menu-router router" to="/AboutUs">
+        <li class="link">
+          <router-link class="menu-router" to="/AboutUs">
             About Us
           </router-link>
         </li>
-        <li  v-on:click="toggleOff()" class="link">
-          <router-link class="menu-router router" to="/Calendar">
+        <li class="link">
+          <router-link class="menu-router" to="/Calendar">
             Calendar
           </router-link>
         </li>
-        <li  v-on:click="toggleOff()" class="link">
-          <router-link class="menu-router router" to="/Gallery"> Gallery </router-link>
+        <li class="link">
+          <router-link class="menu-router" to="/Gallery"> Gallery </router-link>
         </li>
-        <li  v-on:click="toggleOff()" class="link">
-          <router-link class="menu-router router" to="/Resources">
+        <li class="link">
+          <router-link class="menu-router" to="/Resources">
             Resources
           </router-link>
         </li>
-        <li  v-on:click="toggleOff()" class="link">
-          <router-link class="menu-router router" to="/JoinUs"> Join Us </router-link>
+        <li class="link">
+          <router-link class="menu-router" to="/JoinUs"> Join Us </router-link>
         </li>
       </ul>
     </div>

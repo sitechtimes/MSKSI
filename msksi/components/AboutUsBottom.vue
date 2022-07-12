@@ -2,12 +2,12 @@
   <div id="AboutUsBottom">
     <h2 class="heading gao">Goals and Outcomes</h2>
     <h3 class="will">MSKSI members will:</h3>
-    <h4 class="texti">
+    <h4 class="text texti">
       Be able to adapt healthy social and emotional habits that will support
       building positive internal self-esteem. Be mindful how others appear and
       show up. Have grace, dignity and leave room for error and forgiveness.
     </h4>
-    <h4 class="texti">
+    <h4 class="text texti">
       Have a voice, opportunity and forum to grow in the MSKSI community. MSKSI
       focuses on equity in support of all students with a lens on our
       marginalized groups; however MSKSI is not just black and brown students,
@@ -43,6 +43,18 @@ export default {
   margin-top: 8rem;
   font-weight: lighter;
 }
+.texti {
+  color: white;
+  font-weight: lighter;
+  margin: 11rem;
+  display: block;
+  margin-top: 6rem;
+  margin-bottom: auto;
+  font-family: 'Cairo', sans-serif;
+  color: var(--white);
+  text-align: left;
+  justify-content: center;
+}
 .goal {
   color: var(--navyblue);
 }
@@ -57,26 +69,22 @@ export default {
 }
 @media only screen and (max-width: 1500px) {
   .texti {
-    font-size: var(--subheadingjum);
-  }
-  #AboutUsBottom {
-    background-color: #333043;
+    margin-top: 4rem;
   }
   .will {
     margin-top: 4rem;
     font-weight: lighter;
   }
-  .gao {
-    padding-top: 7rem;
-    font-weight: lighter;
-  }
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1032px) {
   .will {
     font-size: var(--h4);
   }
   .texti {
-    margin-top: 4rem;
+    margin: 2rem 8rem 0 8rem;
+  }
+  #AboutUsBottom {
+    padding-bottom: 6rem;
   }
 }
 @media only screen and (max-width: 510px) {
@@ -90,13 +98,6 @@ export default {
     margin-left: auto;
     margin-right: auto;
   }
-  .gao {
-    font-size: var(--h3);
-    text-align: center;
-    font-family: 'Black Han Sans';
-    font-weight: lighter;
-    padding-top: 5rem;
-  }
   .will {
     font-size: var(--h5);
     text-align: left;
@@ -104,6 +105,18 @@ export default {
     margin: 2rem 6rem 0 6rem;
     font-weight: lighter;
     margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .texti {
+    margin: 2rem 4rem 0 4rem;
+  }
+  h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .will {
+    margin: 2rem 4rem 0 4rem;
   }
 }
 </style>
