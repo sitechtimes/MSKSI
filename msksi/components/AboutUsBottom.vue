@@ -1,6 +1,8 @@
 <template>
+<div>
   <div id="AboutUsBottom">
     <h2 class="heading gao">Goals and Outcomes</h2>
+    </div>
     <h3 class="will">MSKSI members will:</h3>
     <h4 class="text texti">
       Be able to adapt healthy social and emotional habits that will support
@@ -18,7 +20,9 @@
 <script>
 export default {
   name: 'AboutUsBottom',
-  methods: {},
+  
+  methods: {
+  },
 }
 </script>
 <style scoped>

@@ -2,6 +2,8 @@
   <div class="AboutUsMid">
     <div class="left">
       <h2 class="heading v msksi">MSKSI</h2>
+      <div class="buttonRow">
+    </div>
       <div id="video-container">
         <iframe
           id="video"
@@ -45,7 +47,8 @@
 <script>
 export default {
   name: 'AboutUsMid',
-  methods: {},
+  methods: {
+  },
 }
 </script>
 <style scoped>

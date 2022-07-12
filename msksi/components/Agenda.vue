@@ -68,6 +68,7 @@ export default {
   color: var(--navyblue);
   font-size: var(--h5);
 }
+
 .Agendas {
   background-color: white;
   padding-bottom: 10rem;
