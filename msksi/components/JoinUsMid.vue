@@ -39,6 +39,9 @@ export default {
 </script>
 
 <style scoped>
+.button {
+  margin-left: 0;
+}
 #info {
   display: flex;
   flex-direction: row;
