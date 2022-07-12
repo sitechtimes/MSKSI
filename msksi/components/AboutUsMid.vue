@@ -1,16 +1,16 @@
 <template>
   <div class="AboutUsMid">
     <div class="left">
-      <h2 class="heading v msksi">MSKSI</h2>
-      <div id="video-container">
-        <iframe
-          id="video"
-          src="https://drive.google.com/file/d/1JlT8gnYTEr3YedSs970C7dVHHq5K43eM/preview"
-          allow="autoplay"
-          poster="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
-        ></iframe>
-      </div>
-      <h2 class="heading v vision">VISION</h2>
+      <h2 class="v msksi">MSKSI</h2>
+      <iframe
+        id="video"
+        src="https://drive.google.com/file/d/1JlT8gnYTEr3YedSs970C7dVHHq5K43eM/preview"
+        width="600"
+        height="400"
+        allow="autoplay"
+        poster="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
+      ></iframe>
+      <h2 class="v vision">VISION</h2>
     </div>
     <div id="right">
       <ol class="list">
@@ -52,44 +52,48 @@ export default {
 .AboutUsMid {
   text-align: center;
   background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 85rem;
 }
 .left {
   width: 50%;
+  height: 100%;
   font-family: 'Black Han Sans';
-  margin: 10rem 0 10rem 0;
+}
+.v {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
 }
 .msksi {
   color: var(--darkpink);
-  padding-top: 0;
+  font-size: var(--h1);
+  margin-top: 9rem;
 }
 .vision {
   color: var(--navyblue);
-  padding-top: 1.2rem;
+  font-size: var(--h1);
 }
 #right {
   width: 50%;
-}
-#video-container {
-  width: 100%;
-  text-align: center;
+  margin-left: 50%;
+  font-family: 'Black Han Sans';
+  margin-top: 3rem;
 }
 #video {
-  height: 22vw;
-  width: 35vw;
-  margin: 2rem 0 2rem 0;
+  padding: 5rem;
+  margin-top: -1rem;
+  border-style: none;
+  width: 85%;
+  height: 62%;
 }
 .list {
   font-size: var(--h3);
   color: var(--navyblue);
+  margin-top: -82rem;
+  margin-right: 10rem;
   display: block;
   text-align: left;
   line-height: 4rem;
-  width: 95%;
-  margin: 8rem 0 8rem 0;
-  font-family: 'Cairo', sans-serif;
 }
 
 li {
@@ -97,10 +101,11 @@ li {
 }
 @media only screen and (max-width: 1500px) {
   .list {
-    font-size: var(--h4);
+    font-size: var(--subheadingjum);
+    line-height: 1.5;
   }
 }
-@media only screen and (max-width: 1032px) {
+@media only screen and (max-width: 1018px) {
   .AboutUsMid {
     text-align: center;
     background-color: white;
@@ -109,21 +114,12 @@ li {
   }
   .left {
     width: 100vw;
-    margin: 7rem 0 4rem 0;
   }
   #right {
     margin-left: auto;
     margin-right: auto;
-    width: 70rem;
+    width: 50rem;
     padding: 0;
-  }
-  #video {
-    margin: 2rem 0 2.5rem 0;
-    height: 36.5vw;
-    width: 60vw;
-  }
-  .vision {
-    padding-top: 0.5rem;
   }
   .list {
     font-size: var(--h4);
@@ -131,57 +127,69 @@ li {
     text-align: left;
     margin: 3rem 0 0 3.5rem;
   }
-  #video-container {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 770px) {
-  .AboutUsMid {
-    padding-bottom: 2rem;
-  }
-  #right {
-    padding: 5rem;
-    padding-top: 0rem;
-    width: fit-content;
-  }
-  #video {
-    margin: 2rem 0 2.5rem 0;
-    height: 43vw;
-    width: 70vw;
-  }
-  #video-container {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .AboutUsMid {
-    padding-bottom: 0rem;
-  }
-  #right {
-    margin: 0 3rem 0 0rem;
-    width: fit-content;
-    padding: 2rem;
-    padding-top: 0;
-    padding-bottom: 5rem;
-  }
-  .left {
-    margin: 2rem 0 0rem 0;
-  }
-  .list {
-    font-size: var(--h5);
-    line-height: 2rem;
-  }
   .msksi {
+    color: var(--darkpink);
+    font-size: var(--h1);
     margin-top: 4rem;
   }
   .vision {
-    padding-top: 0rem;
+    color: var(--navyblue);
+    font-size: var(--h1);
   }
   #video {
-    margin: 1rem 0 1.5rem 0;
+    margin: 2rem 0 2.5rem 0;
+    height: 38vw;
+    width: 65vw;
   }
   #video-container {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .AboutUsMid {
+    height: 95rem;
+  }
+  .vision {
+    color: var(--navyblue);
+    font-size: var(--h3);
+  }
+  .left {
+    width: 100%;
+  }
+  .v {
+    text-align: center;
+  }
+  .msksi {
+    color: var(--darkpink);
+    font-size: var(--h3);
+  }
+  #right {
+    margin-left: auto;
+    width: 75%;
+    margin-right: auto;
+  }
+
+  .list {
+    font-size: var(--h5);
+    margin-top: -30rem;
+    display: block;
+    text-align: left;
+    margin: 3rem 0 0 1.5rem;
+    width: 30rem;
+  }
+  .msksi {
+    color: var(--darkpink);
+    font-size: var(--h3);
+    margin-top: 4rem;
+  }
+  .vision {
+    color: var(--navyblue);
+    font-size: var(--h3);
+  }
+  #video {
+    padding: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 </style>

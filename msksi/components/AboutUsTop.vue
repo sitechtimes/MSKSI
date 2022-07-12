@@ -144,47 +144,41 @@ button {
 
 
 @media only screen and (max-width: 1500px) {
-  .mission {
-    font-size: var(--h2);
+  .AboutUsTop {
+    height: 85rem;
   }
   .text {
     font-size: var(--subheadingjum);
   }
 }
-@media only screen and (max-width: 1032px) {
-  .mission {
-    font-size: var(--h2);
+@media only screen and (max-width: 824px) {
+  .heading {
+    margin-left: 8rem;
   }
   .text {
-    margin: 3rem 8rem 0 8rem;
-    font-size: var(--h5);
+    margin: 4rem 8rem 0 8rem;
   }
 }
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 510px) {
   .AboutUsTop {
-    padding-bottom: 5rem;
+    height: 95rem;
+  }
+  h2 {
+    font-size: var(--h3);
+    margin-top: 0;
+    padding-top: 0;
   }
   .mission {
     font-size: var(--h3);
   }
+  .heading {
+    margin-left: 4.5rem;
+    padding-top: 10.5rem;
+  }
   .text {
     margin-top: 2rem;
     font-size: var(--h5);
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .mission {
-    font-size: var(--h4);
-  }
-  .text {
-    margin-top: 2rem;
-    font-size: var(--h6);
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 </style>

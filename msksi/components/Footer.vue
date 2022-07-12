@@ -51,6 +51,7 @@
   justify-content: center;
   bottom: 0px;
   width: 100%;
+  padding-bottom: 3rem;
 }
 .contacts {
   color: var(--white);
@@ -68,18 +69,17 @@
 }
 .buttons {
   display: flex;
+  margin-right: auto;
   margin-left: auto;
-  justify-content: space-evenly;
-  width: 40rem;
+  justify-content: space-between;
+  width: 30rem;
   padding: 2rem;
 }
 .icon {
+  height: 3rem;
   width: auto;
   filter: saturate(0);
   transition: all 0.2s;
-}
-.twitter {
-  height: 3rem;
 }
 .instagram {
   height: 4rem;
@@ -89,7 +89,7 @@
   filter: invert() saturate(0);
 }
 .gmail {
-  height: 3rem;
+  height: 2.5rem;
 }
 .icon:hover {
   filter: saturate(100%);
@@ -105,39 +105,32 @@
   justify-content: center;
   align-items: center;
 }
+
+@media only screen and (max-width: 1032px) {
+  #footer {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .buttons {
+    margin-top: 3rem;
+    width: 50%;
+  }
+  .backing {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+@media only screen and (max-width: 510px) {
+  #footer {
+    height: 22rem;
+    margin-bottom: 0;
+  }
+}
 .icon {
   cursor: pointer;
-}
-@media only screen and (max-width: 1032px) {
-  .contactus {
-    font-size: var(--h4);
-  }
-}
-@media only screen and (max-width: 770px) {
-  .contactus {
-    font-size: var(--h4);
-  }
-  .buttons {
-    width: 35rem;
-  }
-}
-@media only screen and (max-width: 520px) {
-  .contactus {
-    font-size: 2.5rem;
-  }
-  .contacts {
-    font-size: var(--h6);
-  }
-  .buttons {
-    width: 28rem;
-    padding: 1rem;
-  }
-  .icon {
-    height: 2.5rem;
-  }
-  .instagram {
-    height: 3rem;
-  }
 }
 </style>
 
