@@ -6,7 +6,7 @@
         <div class="line2">
           <img
             id="temp-logo"
-            src="https://cutewallpaper.org/24/heart-clip-heart/clip-art-hearts-clip-art-two-hearts-clipart-panda-free-clipart-images--heart-clip-art-clip-art-free-clip-art.gif"
+            src="https://media.discordapp.net/attachments/747595261395861545/971942403323871262/unknown.png"
             alt=""
           />
           <h2 class="heading keeper">Keeper</h2>
@@ -18,16 +18,10 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'HomeTop',
-}
-</script>
-
 <style scoped>
 .hometop {
   background-color: var(--navyblue);
-  padding-bottom: 30rem;
+  height: 100rem;
 }
 .alignright {
   width: fit-content;
@@ -58,7 +52,7 @@ export default {
   font-size: 13rem;
   text-align: right;
   padding-top: 3rem;
-  width: 58rem;
+  width: 50rem;
   margin-right: 0%;
 }
 
@@ -74,46 +68,19 @@ export default {
 .si {
   font-family: 'ABeeZee', sans-serif;
   color: var(--yellow);
-  font-size: var(--h3);
+  font-size: var(--h2);
   width: 35rem;
   text-align: right;
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-left: 75%;
 }
-@media only screen and (max-width: 1500px) {
-  .si {
-    margin-top: 5rem;
-  }
-  .mysis {
-    padding-top: 23rem;
-  }
-}
-@media only screen and (max-width: 510px) {
-  .hometop {
-    padding-bottom: 20rem;
-  }
-  .mysis {
-    padding-top: 20rem;
-    text-align: center;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .heading {
-    font-size: var(--h3);
-    margin-left: 0;
-    margin-right: 0;
-  }
+
+/* @media only screen and (max-width: 1500px) {
   .keeper {
-    margin-top: -3rem;
-    width: 30rem;
-    margin-right: 11.4%;
-  }
-  .si {
-    font-size: var(--h5);
-    width: 35rem;
+    color: var(--darkpink);
+    font-size: 12rem;
     text-align: right;
-    margin-top: 0.8rem;
-    margin-left: 0%;
+    width: 80%;
   }
-}
+} */ ;
 </style>

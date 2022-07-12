@@ -1,7 +1,6 @@
 <template>
   <div>
     <CalendarTop />
-    <CalendarMid />
   </div>
 </template>
 

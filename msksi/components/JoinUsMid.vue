@@ -1,29 +1,16 @@
 <template>
   <div class="joinusmid">
-    <div id="info">
-    
-        <div id="textgroup">
-          <h3 class="subheading wbsm">Website & Social Media Manager</h3>
-           <ul id="wbsm">
-           <li class="text">
-            Maintain the MSKSI website with the most current information, agendas,
-            opportunities etc
-          </li>
-          <li class="text">
-            Highlight our MSKSI members for their work professionally, educationally
-            and personally.
-          </li>
-        </ul>
-
-        </div>
-       
-            <div class="image">
-              <img
-            id="picture"
-                src="~/assets/images/social.png"
-                alt="woman on social media"/>
-    </div>
-    </div>
+    <h3 class="subheading wbsm">Website & Social Media Manager</h3>
+    <ul id="wbsm">
+      <li class="text">
+        Maintain the MSKSI website with the most current information, agendas,
+        opportunities etc
+      </li>
+      <li class="text">
+        Highlight our MSKSI members for their work professionally, educationally
+        and personally.
+      </li>
+    </ul>
     <form
       target="_blank"
       action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform"
@@ -40,23 +27,6 @@ export default {
 </script>
 
 <style scoped>
-#info{
-  display: flex;
-  flex-direction: row;
-}
-#textgroup{
-  width: 75%;
-}
-#picture{
-  width: 38rem;
-  height: 38rem;
-  margin-top: 4rem;
-} 
-.image{
-     display: flex;
-    justify-content: end;
-    margin-right: 10rem;
-}
 .yellow {
   color: var(--navyblue);
   background-color: var(--yellow);
@@ -70,7 +40,6 @@ export default {
   line-height: 6rem;
   width: 60vw;
   line-height: 6rem;
-  display: inline-block
 }
 .joinusmid {
   padding-bottom: 8rem;
@@ -92,9 +61,6 @@ export default {
 .wbsmr {
   color: var(--darkpink);
 }
-/* .button{
-  cursor: url('../images/hoverBtnCursor.png'), auto;
-} */
 @media only screen and (max-width: 1500px) {
   .subheading {
     font-size: var(--subheadingju);
@@ -111,17 +77,6 @@ export default {
   .joinusmid {
     margin-top: 10rem;
   }
-  #picture{
-  width: 28rem;
-  height: 28rem;
-} 
-.image{
-  margin-top: 1rem;
-  flex-direction: row;
-     display: flex;
-    justify-content: flex-end;
-    margin-right: 10rem;
-}
 }
 @media only screen and (max-width: 810px) {
   .text {
@@ -134,48 +89,7 @@ export default {
     margin-left: 4rem;
   }
 }
-@media only screen and (max-width: 770px) {
-    #picture{
-width: 21rem;
-    height: 21rem;
-    position: relative;
-    margin-top: 0rem;
-    display: block;
-    margin: auto;
-    margin-bottom: 4rem;
-} 
-.image{
-  margin-top: 1rem;
-  flex-direction: column;
-     display: flex;
-    justify-content: flex-end;
-    margin-right: 10rem;
-}
-  #wbsm {
-    margin-left: 2rem;
-    padding-bottom: 2rem;
-  flex-direction: row;
-  }
-  #textgroup{
-    width: 80%;
-  }
-  #info{
-    flex-direction: column;
-  }
-}
-
 @media only screen and (max-width: 510px) {
-    #info{
-    flex-direction: column;
-  }
-  #picture{
-  width: 25rem;
-  height: 25rem;
-  position: relative;
-  top: 0;
-  margin-bottom: 4rem;
-  margin-top: 1rem;
-}
   .text {
     margin-top: 0;
     margin-bottom: 0;
@@ -183,16 +97,9 @@ width: 21rem;
   #wbsm {
     margin-left: -1.8rem;
     font-size: var(--h6);
-    padding-bottom: 2rem;
   }
   .subheading {
     font-size: var(--subheadingjum);
-  }
-  .image {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin: 0;
   }
 }
 </style>
