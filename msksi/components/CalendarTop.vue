@@ -19,8 +19,9 @@ export default {
   background-color: #333043;
   height: 100rem;
 }
-.calendarFlex{
-  display: flex;
+
+.calendarFlex {
+  display: flex;  
   margin: 0 auto;
   justify-content: center;
   align-items: center;

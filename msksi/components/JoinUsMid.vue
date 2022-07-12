@@ -90,6 +90,9 @@ export default {
 .wbsmr {
   color: var(--darkpink);
 }
+/* .button{
+  cursor: url('../images/hoverBtnCursor.png'), auto;
+} */
 @media only screen and (max-width: 1500px) {
   .joinusmid {
     height: 66rem;
