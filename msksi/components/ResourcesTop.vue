@@ -133,6 +133,7 @@ img {
   margin: 0 auto 0 auto;
   display: block;
 }
+
 #link {
   color: #333043;
   font-size: var(--h5);
@@ -151,6 +152,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+
 @media only screen and (max-width: 1500px) {
   img {
     height: 14rem;
@@ -182,24 +184,34 @@ ul {
   h3 {
     font-size: var(--one);
   }
-  h3 {
-    font-size: var(--smallText);
+  ul {
+    font-size: var(--one);
   }
 }
 @media only screen and (max-width: 500px) {
+  img {
+    height: 7.5rem;
+  }
   #link {
     font-size: var(--h6);
+    margin-top: 1rem;
+    line-height: 2rem;
+  }
+  .item {
+    font-size: var(--tiny);
+    line-height: 1.5rem;
   }
   h3 {
-    font-size: var(--one);
+    font-size: var(--tiny);
+    line-height: 1.5rem;
   }
   #resources {
     margin-left: 5rem;
     margin-right: 5rem;
   }
   .resource {
-    width: 20rem;
-    height: 22rem;
+    width: 18rem;
+    height: 18rem;
   }
   .resource:hover {
     transform: scale(1.05);

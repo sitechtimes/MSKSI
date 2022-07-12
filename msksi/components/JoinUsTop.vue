@@ -85,7 +85,6 @@
 .text {
   font-family: 'Be Vietnam Pro', sans-serif;
   margin-left: 15rem;
-  margin-top: 0.5rem;
   line-height: 7rem;
 }
 @media only screen and (max-width: 1500px) {
