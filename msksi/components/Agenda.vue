@@ -75,6 +75,13 @@ export default {
 .heading {
   color: var(--navyblue);
   text-align: center;
+  font-size: var(--h2);
+  color: var(--navyblue);
+  text-align: center;
+  margin-left: auto;
+  font-family: 'Black Han Sans';
+  margin-top: 0rem;
+  padding-top: 4rem;
 }
 .subheading {
   font-size: var(--h3);
@@ -103,6 +110,15 @@ export default {
   .subheading {
     font-size: var(--subheadingjum);
     margin-left: 4rem;
+  }
+}
+</style>
+  .heading {
+    font-size: var(--h3);
+    text-align: center;
+    margin-left: auto;
+    padding: 0;
+    margin-top: 5rem;
   }
 }
 </style>
