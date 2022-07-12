@@ -130,6 +130,7 @@ li {
     display: block;
     text-align: left;
     margin: 3rem 0 0 3.5rem;
+    line-height: 3.5rem;
   }
   #video-container {
     width: 100%;

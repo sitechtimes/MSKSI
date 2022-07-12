@@ -15,7 +15,7 @@
         </ul>
       </div>
 
-      <div class="image">
+      <div class="image-container">
         <img
           id="picture"
           src="~/assets/images/subcom.png"
@@ -32,25 +32,6 @@
   </div>
 </template>
 <style scoped>
-.button {
-  padding: 1.2rem;
-  margin-top: 10rem;
-  margin-left: 80%;
-  position: sticky;
-  left: 125rem;
-  width: 22rem;
-  height: 8rem;
-  font-size: var(--four);
-  border-radius: 20rem;
-  font-family: 'Black Han Sans';
-  border: none;
-  cursor: pointer;
-}
-
-.button:hover {
-  transform: scale(1.2);
-  transition: transform 0.75s;
-}
 #info {
   display: flex;
   flex-direction: row;
@@ -58,14 +39,14 @@
 #textgroup {
   width: 75%;
 }
-#picture {
-  margin-top: 14rem;
-  height: 30rem;
-  widows: 30rem;
+.image-container {
+  text-align: center;
+  margin-top: 2rem;
 }
-.image {
-  justify-content: end;
-  margin-right: 10rem;
+#picture {
+  margin-top: 8rem;
+  height: 30rem;
+  width: 30rem;
 }
 .joinustop {
   background-color: #333043;
@@ -75,6 +56,7 @@
   background-color: var(--darkpink);
   color: white;
   filter: drop-shadow(3px 4px 3px black);
+  margin-top: 4rem;
 }
 #subc {
   list-style-type: circle;
@@ -91,15 +73,13 @@
 }
 .text {
   font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: var(--h3);
   margin-left: 15rem;
   margin-top: 0.5rem;
-  line-height: 6rem;
+  line-height: 7rem;
 }
 
 @media only screen and (max-width: 1500px) {
   .text {
-    font-size: var(--list);
     margin-left: 12rem;
     margin-top: 0rem;
   }
@@ -117,7 +97,6 @@
 }
 @media only screen and (max-width: 770px) {
   .text {
-    font-size: var(--h3);
     margin-left: 12rem;
     margin-top: 0.5rem;
   }
@@ -129,7 +108,7 @@
     height: 28rem;
     margin-top: 13rem;
   }
-  .image {
+  .image-container {
     margin-top: 1rem;
     flex-direction: row;
     display: flex;
@@ -142,7 +121,7 @@
     width: 25rem;
     height: 25rem;
   }
-  .image {
+  .image-container {
     margin-top: 3rem;
     flex-direction: column;
     display: flex;
@@ -160,7 +139,6 @@
 @media only screen and (max-width: 770px) {
   .text {
     margin-left: 8rem;
-    font-size: var(--h5);
   }
   #picture {
     width: 21rem;
@@ -173,7 +151,7 @@
     margin-right: auto;
     margin-bottom: 4rem;
   }
-  .image {
+  .image-container {
     margin-top: 1rem;
     flex-direction: column;
     display: flex;
@@ -215,7 +193,6 @@
   }
   .text {
     margin-left: 8rem;
-    font-size: var(--h5);
   }
   .subc {
     color: var(--darkpink);
@@ -227,7 +204,7 @@
     font-size: var(--subheadingjum);
     margin-top: 0;
   }
-  .image {
+  .image-container {
     display: flex;
     justify-content: center;
     flex-direction: row;

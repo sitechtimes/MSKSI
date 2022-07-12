@@ -35,15 +35,11 @@ export default {
   font-family: 'Cairo', sans-serif;
   color: var(--white);
   text-align: left;
-  font-size: var(--four);
   justify-content: center;
 }
 @media only screen and (max-width: 1500px) {
   .mission {
     font-size: var(--h2);
-  }
-  .text {
-    font-size: var(--subheadingjum);
   }
 }
 @media only screen and (max-width: 1032px) {
@@ -52,7 +48,6 @@ export default {
   }
   .text {
     margin: 3rem 8rem 0 8rem;
-    font-size: var(--h5);
   }
 }
 @media only screen and (max-width: 770px) {
@@ -64,7 +59,6 @@ export default {
   }
   .text {
     margin-top: 2rem;
-    font-size: var(--h5);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -76,7 +70,6 @@ export default {
   }
   .text {
     margin-top: 2rem;
-    font-size: var(--h6);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
