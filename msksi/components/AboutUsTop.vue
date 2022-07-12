@@ -95,7 +95,6 @@ export default {
   color: var(--darkpink);
   font-size: var(--h1);
 }
-
 .AboutUsTop {
   background-color: #333043;
   height: 100rem;
@@ -105,7 +104,6 @@ export default {
   align-items: center;
   margin-right:1rem;
 }
-
 .text {
   margin: 4rem 11rem 0 11rem;
   font-family: 'Cairo', sans-serif;
