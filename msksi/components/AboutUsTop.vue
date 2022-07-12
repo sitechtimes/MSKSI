@@ -2,8 +2,16 @@
   <div class="AboutUsTop">
     <div class="blockText">
       <h2 class="heading">Our <span class="h mission">Mission</span></h2>
-      <button @click="playMethod" id=play></button>
-      <button @click="pauseMethods" id=pause></button>
+      <div class="buttonRow">
+        <button @click="playMethod" id=play>
+        <font-awesome-icon @click="activePauseIcon" v-if="!this.iconNotHidden" :icon="['far', 'circle-play']"  class="pause"></font-awesome-icon>
+        <font-awesome-icon @click="pauseIcon" v-if="!this.iconHidden" :icon="['fas', 'circle-play']" class="pause"></font-awesome-icon>
+        </button>
+        <button @click="pauseMethods" id=pause>
+        <font-awesome-icon @click="pauseIcon" v-if="!this.iconHidden" :icon="['far', 'circle-pause']"  class="pause"></font-awesome-icon>
+        <font-awesome-icon @click="activePauseIcon" v-if="!this.iconNotHidden" :icon="['fas', 'circle-pause']" class="pause"></font-awesome-icon>
+      </button>
+      </div>
     </div>
     <h3 id="text" class="text">
         {{ textarea }}
@@ -28,6 +36,8 @@ export default {
       Giving a safe space and opportunity to our marginalized MSKSI young people
       in order to have a voice, respect and rapport in a diverse community.`,
       paused: false,
+      iconHidden: false,
+      iconNotHidden: true,
     }
   },
   head (){
@@ -49,12 +59,12 @@ export default {
       let voices = []
       voices = window.speechSynthesis.getVoices();
       utterance.voice = voices[0];
-      // utterance.rate = 10;
       utterance.volume = 10;
       utterance.text = this.textarea;
-        speechSynthesis.speak(utterance);
-        console.log(this.textarea);
-      
+      speechSynthesis.speak(utterance);
+
+      this.iconHidden = false;
+      this.iconNotHidden = true;
       if (this.paused === true ){
         window.speechSynthesis.resume();
         // resume();
@@ -64,6 +74,14 @@ export default {
       speechSynthesis.pause();
       this.paused = true;
       // pause();
+    },
+    pauseIcon(){
+      this.iconHidden = true;
+      this.iconNotHidden = false;
+    },
+    activePauseIcon(){
+      this.iconHidden = false;
+      this.iconNotHidden = true;
     }
   },
 }
@@ -77,6 +95,7 @@ export default {
   color: var(--darkpink);
   font-size: var(--h1);
 }
+
 .AboutUsTop {
   background-color: #333043;
   height: 100rem;
@@ -84,7 +103,9 @@ export default {
 .blockText{
   display:flex;
   align-items: center;
+  margin-right:1rem;
 }
+
 .text {
   margin: 4rem 11rem 0 11rem;
   font-family: 'Cairo', sans-serif;
@@ -105,58 +126,67 @@ button {
 }
 
 #play {
-  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+  /* background-image: url("~/assets/images/pinkPlayBtn.png");*/
+  font-size: 7.5rem;
+  color: var(--darkpink);
+  position: relative;
 }
 
-#play:focus {
-  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
-}
 
 #pause {
-  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
+  /* background-image: url("~/assets/images/pauseBtn.png"); */
+  font-size: 7.5rem;
+  color: var(--darkpink);
+  position: relative;
 }
 
-#pause:focus {
+/* #pause:focus {
   background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
-}
+} */
 
 
 @media only screen and (max-width: 1500px) {
-  .AboutUsTop {
-    height: 85rem;
+  .mission {
+    font-size: var(--h2);
   }
   .text {
     font-size: var(--subheadingjum);
   }
 }
-@media only screen and (max-width: 824px) {
-  .heading {
-    margin-left: 8rem;
+@media only screen and (max-width: 1032px) {
+  .mission {
+    font-size: var(--h2);
   }
   .text {
-    margin: 4rem 8rem 0 8rem;
+    margin: 3rem 8rem 0 8rem;
+    font-size: var(--h5);
   }
 }
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 770px) {
   .AboutUsTop {
-    height: 95rem;
-  }
-  h2 {
-    font-size: var(--h3);
-    margin-top: 0;
-    padding-top: 0;
+    padding-bottom: 5rem;
   }
   .mission {
     font-size: var(--h3);
-  }
-  .heading {
-    margin-left: 4.5rem;
-    padding-top: 10.5rem;
   }
   .text {
     margin-top: 2rem;
     font-size: var(--h5);
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .mission {
+    font-size: var(--h4);
+  }
+  .text {
+    margin-top: 2rem;
+    font-size: var(--h6);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 </style>
