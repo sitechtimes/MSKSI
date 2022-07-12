@@ -16,6 +16,7 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Album Link', name: 'link', widget: 'string' }
       - { label: 'Image', name: 'img', widget: 'image' }
 
@@ -29,6 +30,7 @@ collections:
     editor:
       preview: false
     fields:
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Title', name: 'subheader', widget: 'string' }
       - { label: 'Month', name: 'month', widget: 'string' }
       - { label: 'Image', name: 'img', widget: 'image' }
