@@ -1,32 +1,32 @@
 <template>
   <div class="menu">
-    <input type="checkbox" id="active" />
+    <input @click="toggleOn" type="checkbox" id="active" />
     <label for="active" class="menu-btn"><span></span></label>
     <label for="active" class="close"></label>
     <div class="wrapper">
       <ul class="link-container">
-        <li class="link">
+        <li class="link" @click="toggleOff">
           <router-link class="menu-router" to="/"> Home </router-link>
         </li>
-        <li class="link">
+        <li class="link" @click="toggleOff">
           <router-link class="menu-router" to="/AboutUs">
             About Us
           </router-link>
         </li>
-        <li class="link">
+        <li class="link" @click="toggleOff">
           <router-link class="menu-router" to="/Calendar">
             Calendar
           </router-link>
         </li>
-        <li class="link">
+        <li class="link" @click="toggleOff">
           <router-link class="menu-router" to="/Gallery"> Gallery </router-link>
         </li>
-        <li class="link">
+        <li class="link" @click="toggleOff">
           <router-link class="menu-router" to="/Resources">
             Resources
           </router-link>
         </li>
-        <li class="link">
+        <li class="link" @click="toggleOff">
           <router-link class="menu-router" to="/JoinUs"> Join Us </router-link>
         </li>
       </ul>
@@ -36,6 +36,22 @@
 <script>
 export default {
   name: 'Menu',
-  methods: {},
+  methods: {
+    toggleOn() {
+      let menuOpen = document.querySelector('.wrapper');
+      menuOpen.classList.remove('hide');
+      console.log('bye')
+    },
+      toggleOff() {
+      let menuOpen = document.querySelector('.wrapper');
+      menuOpen.classList.add('hide')
+      console.log('hello')
+    }
+  },
 }
 </script>
+<style>
+  .hide{
+    display:none;
+  }
+</style>
