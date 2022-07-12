@@ -382,6 +382,8 @@ export default {
 
   .CSroutermore {
     bottom: 7rem;
+    padding: 2rem 8.5rem;
+    bottom: 5rem;
   }
 
   .CSreadmore,
