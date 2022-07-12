@@ -130,6 +130,7 @@ li {
     display: block;
     text-align: left;
     margin: 3rem 0 0 3.5rem;
+    line-height: 3.5rem;
   }
   #video-container {
     width: 100%;
@@ -168,31 +169,8 @@ li {
     margin: 2rem 0 0rem 0;
   }
   .list {
-    font-size: var(--h5);
-    margin-top: -30rem;
-    display: block;
-    text-align: left;
-    margin-left: 1.5rem;
-    margin-right: auto;
-  }
-  #video {
-    width: 100%;
-    height: 42%;
-    left: auto;
-    right: auto;
-    display: block;
-    border-style: none;
-  }
-}
-@media only screen and (max-width: 1500px) {
-  .AboutUsMid {
-    text-align: center;
-    background-color: white;
-    height: 99rem;
-  }
-  .left {
-    height: 65rem;
-    font-family: 'Black Han Sans';
+    font-size: 2.2rem;
+    line-height: 2rem;
   }
   .msksi {
     margin-top: 4rem;

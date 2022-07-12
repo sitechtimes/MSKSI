@@ -2,12 +2,12 @@
   <div id="AboutUsBottom">
     <h2 class="heading gao">Goals and Outcomes</h2>
     <h3 class="will">MSKSI members will:</h3>
-    <h4 class="texti">
+    <h4 class="text texti">
       Be able to adapt healthy social and emotional habits that will support
       building positive internal self-esteem. Be mindful how others appear and
       show up. Have grace, dignity and leave room for error and forgiveness.
     </h4>
-    <h4 class="texti">
+    <h4 class="text texti">
       Have a voice, opportunity and forum to grow in the MSKSI community. MSKSI
       focuses on equity in support of all students with a lens on our
       marginalized groups; however MSKSI is not just black and brown students,
@@ -51,7 +51,6 @@ export default {
   color: var(--white);
   text-align: left;
   justify-content: center;
-  font-size: var(--four);
 }
 .goal {
   color: var(--navyblue);
@@ -69,7 +68,6 @@ export default {
     padding-bottom: 8rem;
   }
   .texti {
-    font-size: var(--subheadingjum);
     margin-top: 4rem;
   }
   .will {
@@ -77,21 +75,12 @@ export default {
     font-weight: lighter;
     font-size: var(--h4);
   }
-  .gao {
-    padding-top: 7rem;
-    font-weight: lighter;
-    font-size: var(--h2);
-  }
 }
 @media only screen and (max-width: 1032px) {
-  .gao {
-    font-size: var(--h2);
-  }
   .will {
     margin: 3rem 8rem 0 8rem;
   }
   .texti {
-    font-size: var(--h5);
     margin: 2rem 8rem 0 8rem;
   }
   #AboutUsBottom {
@@ -109,13 +98,6 @@ export default {
     text-align: center;
     width: 100%;
   }
-  .gao {
-    font-size: var(--h3);
-    text-align: center;
-    font-family: 'Black Han Sans';
-    font-weight: lighter;
-    padding-top: 5rem;
-  }
   .will {
     font-size: var(--h5);
     text-align: left;
@@ -125,24 +107,16 @@ export default {
     margin-top: 4rem;
   }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 500px) {
   .texti {
-    margin: 2rem 6rem 0 6rem;
-    font-size: var(--h6);
+    margin: 2rem 4rem 0 4rem;
   }
   h2 {
     text-align: center;
     width: 100%;
   }
-  .gao {
-    font-size: var(--h4);
-    text-align: center;
-    font-family: 'Black Han Sans';
-    font-weight: lighter;
-    padding-top: 5rem;
-  }
   .will {
-    margin-top: 2rem;
+    margin: 2rem 4rem 0 4rem;
   }
 }
 </style>
