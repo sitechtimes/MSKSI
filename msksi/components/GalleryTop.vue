@@ -73,7 +73,9 @@
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
-
+a {
+  cursor: pointer;
+}
 .GalleryTop {
   background-color: #333043;
   padding-bottom: 10rem;
