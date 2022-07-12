@@ -1,22 +1,22 @@
 <template>
-    <div id="AlbumPreview">
-      <h2 class="heading">Photo <span class="gall">Gallery</span></h2>
-       <div class="polaroid-container">
-            <div class="polaroid">
-             <img id="picture" :src="img" :alt="title">
-            <a class="name" target="_blank" :href="link">{{title}}</a> 
-        </div>
-        </div>
+  <div id="AlbumPreview">
+    <h2 class="heading">Photo <span class="gall">Gallery</span></h2>
+    <div class="polaroid-container">
+      <div class="polaroid">
+        <img id="picture" :src="img" :alt="title" />
+        <a class="name" target="_blank" :href="link">{{ title }}</a>
+      </div>
     </div>
+  </div>
 </template>
 <script>
 export default {
-    name: 'AlbumPreview',
-    props: {
-        title: String,
-        img: String,
-        link: String,
-    }
+  name: 'AlbumPreview',
+  props: {
+    title: String,
+    img: String,
+    link: String,
+  },
 }
 </script>
 <style scoped>
