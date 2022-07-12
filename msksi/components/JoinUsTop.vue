@@ -15,36 +15,25 @@
         </ul>
       </div>
 
-      <div class="image">
+      <div class="image-container">
         <img
           id="picture"
           src="~/assets/images/subcom.png"
           alt="remote meeting"
         />
+        <form
+          action="https://docs.google.com/forms/d/e/1FAIpQLSe2NJzLuFUyTc_8Jcmn4DhyH5qfBWbKtwRjYrSzCFyERI8r1Q/viewform"
+          target="_blank"
+        >
+          <button class="button pink">Join Us!</button>
+        </form>
       </div>
     </div>
-    <form
-      action="https://docs.google.com/forms/d/e/1FAIpQLSe2NJzLuFUyTc_8Jcmn4DhyH5qfBWbKtwRjYrSzCFyERI8r1Q/viewform"
-      target="_blank"
-    >
-      <button class="button pink">Join Us!</button>
-    </form>
   </div>
 </template>
 <style scoped>
 .button {
-  padding: 1.2rem;
-  margin-top: 10rem;
-  margin-left: 80%;
-  position: sticky;
-  left: 125rem;
-  width: 22rem;
-  height: 8rem;
-  font-size: var(--four);
-  border-radius: 20rem;
-  font-family: 'Black Han Sans';
-  border: none;
-    cursor: url('../assets/images/hoverBtnCursor.png'), auto;
+  cursor: url('../assets/images/hoverBtnCursor.png'), auto;
   /* cursor: pointer; */
 }
 
@@ -59,24 +48,27 @@
 #textgroup {
   width: 75%;
 }
-#picture {
-  margin-top: 14rem;
-  height: 30rem;
-  widows: 30rem;
+.image-container {
+  text-align: center;
+  margin-top: 2rem;
 }
-.image {
-  justify-content: end;
-  margin-right: 10rem;
+#picture {
+  margin-top: 8rem;
+  height: 30rem;
+  width: 30rem;
 }
 .joinustop {
   background-color: #333043;
   padding-bottom: 8rem;
 }
+
 .pink {
   background-color: var(--darkpink);
   color: white;
   filter: drop-shadow(3px 4px 3px black);
+  margin-top: 4rem;
 }
+
 #subc {
   list-style-type: circle;
   color: white;
@@ -92,22 +84,18 @@
 }
 .text {
   font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: var(--h3);
   margin-left: 15rem;
   margin-top: 0.5rem;
-  line-height: 6rem;
+  line-height: 7rem;
 }
-
 @media only screen and (max-width: 1500px) {
   .text {
-    font-size: var(--list);
     margin-left: 12rem;
     margin-top: 0rem;
   }
   #subc {
     margin-left: 2rem;
     padding-bottom: 2rem;
-    flex-direction: row;
   }
   .subheading {
     font-size: var(--subheadingju);
@@ -115,10 +103,7 @@
     margin-top: 2rem;
     padding-bottom: 0;
   }
-}
-@media only screen and (max-width: 770px) {
   .text {
-    font-size: var(--h3);
     margin-left: 12rem;
     margin-top: 0.5rem;
   }
@@ -128,40 +113,16 @@
   #picture {
     width: 28rem;
     height: 28rem;
-    margin-top: 13rem;
+    margin-top: 5rem;
   }
-  .image {
+  .image-container {
     margin-top: 1rem;
-    flex-direction: row;
-    display: flex;
-    justify-content: end;
     margin-right: 10rem;
   }
 }
-@media only screen and (max-width: 1000px) {
-  #picture {
-    width: 25rem;
-    height: 25rem;
-  }
-  .image {
-    margin-top: 3rem;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-  }
-  #subc {
-    margin-left: 2rem;
-    padding-bottom: 2rem;
-    flex-direction: row;
-  }
-  #textgroup {
-    width: 90%;
-  }
-}
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1032px) {
   .text {
     margin-left: 8rem;
-    font-size: var(--h5);
   }
   #picture {
     width: 21rem;
@@ -174,7 +135,7 @@
     margin-right: auto;
     margin-bottom: 4rem;
   }
-  .image {
+  .image-container {
     margin-top: 1rem;
     flex-direction: column;
     display: flex;
@@ -192,17 +153,40 @@
     flex-direction: column;
   }
 }
-
-@media only screen and (max-width: 510px) {
-  #info {
-    flex-direction: column;
+@media only screen and (max-width: 770px) {
+  .text {
+    margin-left: 8rem;
   }
-  #picture {
-    position: relative;
-    top: 0;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+  .subc {
+    color: var(--darkpink);
+    font-size: var(--h3);
+    margin-left: 4rem;
+    margin-top: 0.2rem;
   }
+  #subc {
+    margin-top: 0.5rem;
+  }
+  .heading {
+    font-size: var(--h3);
+    margin-top: 0;
+    margin-left: 4rem;
+  }
+  .button {
+    margin-top: 7rem;
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: lighter;
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+    margin: 4rem;
+  }
+  .subheading {
+    font-size: var(--subheadingjum);
+  }
+}
+@media only screen and (max-width: 500px) {
   .text {
     margin-top: 0;
     margin-bottom: 0;
@@ -212,23 +196,12 @@
     margin-left: -1.8rem;
     font-size: var(--h6);
     width: 95vw;
-    flex-direction: column;
-  }
-  .text {
-    margin-left: 8rem;
-    font-size: var(--h5);
-  }
-  .subc {
-    color: var(--darkpink);
-    font-size: var(--h3);
-    margin-left: 4rem;
-    margin-top: 0.2rem;
   }
   .subheading {
     font-size: var(--subheadingjum);
     margin-top: 0;
   }
-  .image {
+  .image-container {
     display: flex;
     justify-content: center;
     flex-direction: row;

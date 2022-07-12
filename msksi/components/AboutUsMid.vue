@@ -133,6 +133,7 @@ li {
     display: block;
     text-align: left;
     margin: 3rem 0 0 3.5rem;
+    line-height: 3.5rem;
   }
   #video-container {
     width: 100%;
@@ -171,7 +172,7 @@ li {
     margin: 2rem 0 0rem 0;
   }
   .list {
-    font-size: var(--h5);
+    font-size: 2.2rem;
     line-height: 2rem;
   }
   .msksi {
