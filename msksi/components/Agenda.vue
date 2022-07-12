@@ -21,9 +21,6 @@
           href="https://docs.google.com/forms/d/e/1FAIpQLSdgGfQEu7TBbMe1aB9A7HZOMSSL2T6WfqsM1gR7qGFFaXszEQ/viewform"
           >click to acess agenda!</a
         >
-
-        <h4 class="text">March 2021 Agenda</h4>
-        <h4 class="text">June 2021 Agenda</h4>
       </div>
       <div class="yearly-agenda">
         <h3 class="subheading">2019-2020 Agendas</h3>
@@ -79,6 +76,7 @@ export default {
   color: var(--navyblue);
   text-align: center;
   margin-left: auto;
+  margin-right: auto;
   font-family: 'Black Han Sans';
   margin-top: 0rem;
   padding-top: 4rem;
@@ -113,12 +111,4 @@ export default {
   }
 }
 </style>
-  .heading {
-    font-size: var(--h3);
-    text-align: center;
-    margin-left: auto;
-    padding: 0;
-    margin-top: 5rem;
-  }
-}
-</style>
+
