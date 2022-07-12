@@ -109,7 +109,7 @@ body {
   border-radius: 20rem;
   font-family: 'Black Han Sans';
   border: none;
-  cursor: pointer;
+  cursor: url('../images/hoverBtnCursor.png'), auto;
   z-index: 1;
 }
 .button:hover {
