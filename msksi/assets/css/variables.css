@@ -222,6 +222,10 @@ input[type='checkbox'] {
   font-size: 2rem;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
+.menu-router.nuxt-link-exact-active{
+  color: var(--yellow);
+  border-bottom: 3px solid var(--yellow);
+}
 
 ::-webkit-scrollbar {
   width: 1.5rem;
