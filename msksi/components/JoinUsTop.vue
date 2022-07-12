@@ -44,7 +44,8 @@
   border-radius: 20rem;
   font-family: 'Black Han Sans';
   border: none;
-  cursor: pointer;
+    cursor: url('../assets/images/hoverBtnCursor.png'), auto;
+  /* cursor: pointer; */
 }
 
 .button:hover {
