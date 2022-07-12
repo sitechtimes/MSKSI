@@ -2,7 +2,7 @@
   <div class="AboutUsTop">
       <h2 class="heading">Our <span class="h mission">Mission</span></h2>
     <h3 id="text" class="text">
-        {{ textarea }}
+      {{ textarea }}
     </h3>
   </div>
 </template>
@@ -11,8 +11,8 @@
 
 export default {
   name: 'AboutUsTop',
-  data(){
-    return{
+  data() {
+    return {
       textarea: `      My Sister’s Keeper Staten Island (MSKSI) founded in November 2018, creates
       a support system to build a community for social, emotional, and academic
       support and leadership empowerment for MSKSI members from elementary to
@@ -40,32 +40,22 @@ export default {
   color: var(--darkpink);
   font-size: var(--h1);
 }
-.AboutUsTop {
-  background-color: #333043;
-  height: 100rem;
-}
-.blockText{
-  display:flex;
+.blockText {
+  display: flex;
   align-items: center;
-  margin-right:1rem;
 }
 .text {
   margin: 4rem 11rem 0 11rem;
   font-family: 'Cairo', sans-serif;
   color: var(--white);
   text-align: left;
-  font-size: var(--four);
   justify-content: center;
 }
-
 
 
 @media only screen and (max-width: 1500px) {
   .mission {
     font-size: var(--h2);
-  }
-  .text {
-    font-size: var(--subheadingjum);
   }
 }
 @media only screen and (max-width: 1032px) {
@@ -73,8 +63,19 @@ export default {
     font-size: var(--h2);
   }
   .text {
-    margin: 3rem 8rem 0 8rem;
-    font-size: var(--h5);
+    margin: 2rem 8rem 0 8rem;
+  }
+  .blockText {
+    display: initial;
+  }
+  .tts-container {
+    text-align: center;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15rem;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -86,7 +87,6 @@ export default {
   }
   .text {
     margin-top: 2rem;
-    font-size: var(--h5);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -98,7 +98,6 @@ export default {
   }
   .text {
     margin-top: 2rem;
-    font-size: var(--h6);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
