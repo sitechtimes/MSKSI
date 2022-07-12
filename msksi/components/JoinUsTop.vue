@@ -52,12 +52,14 @@
   background-color: #333043;
   padding-bottom: 8rem;
 }
+
 .pink {
   background-color: var(--darkpink);
   color: white;
   filter: drop-shadow(3px 4px 3px black);
   margin-top: 4rem;
 }
+
 #subc {
   list-style-type: circle;
   color: white;
@@ -77,7 +79,6 @@
   margin-top: 0.5rem;
   line-height: 7rem;
 }
-
 @media only screen and (max-width: 1500px) {
   .text {
     margin-left: 12rem;
@@ -86,7 +87,6 @@
   #subc {
     margin-left: 2rem;
     padding-bottom: 2rem;
-    flex-direction: row;
   }
   .subheading {
     font-size: var(--subheadingju);
@@ -94,8 +94,6 @@
     margin-top: 2rem;
     padding-bottom: 0;
   }
-}
-@media only screen and (max-width: 770px) {
   .text {
     margin-left: 12rem;
     margin-top: 0.5rem;
@@ -106,37 +104,14 @@
   #picture {
     width: 28rem;
     height: 28rem;
-    margin-top: 13rem;
+    margin-top: 5rem;
   }
   .image-container {
     margin-top: 1rem;
-    flex-direction: row;
-    display: flex;
-    justify-content: end;
     margin-right: 10rem;
   }
 }
-@media only screen and (max-width: 1000px) {
-  #picture {
-    width: 25rem;
-    height: 25rem;
-  }
-  .image-container {
-    margin-top: 3rem;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-  }
-  #subc {
-    margin-left: 2rem;
-    padding-bottom: 2rem;
-    flex-direction: row;
-  }
-  #textgroup {
-    width: 90%;
-  }
-}
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1032px) {
   .text {
     margin-left: 8rem;
   }
@@ -169,17 +144,40 @@
     flex-direction: column;
   }
 }
-
-@media only screen and (max-width: 510px) {
-  #info {
-    flex-direction: column;
+@media only screen and (max-width: 770px) {
+  .text {
+    margin-left: 8rem;
   }
-  #picture {
-    position: relative;
-    top: 0;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+  .subc {
+    color: var(--darkpink);
+    font-size: var(--h3);
+    margin-left: 4rem;
+    margin-top: 0.2rem;
   }
+  #subc {
+    margin-top: 0.5rem;
+  }
+  .heading {
+    font-size: var(--h3);
+    margin-top: 0;
+    margin-left: 4rem;
+  }
+  .button {
+    margin-top: 7rem;
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: lighter;
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+    margin: 4rem;
+  }
+  .subheading {
+    font-size: var(--subheadingjum);
+  }
+}
+@media only screen and (max-width: 500px) {
   .text {
     margin-top: 0;
     margin-bottom: 0;
@@ -189,16 +187,6 @@
     margin-left: -1.8rem;
     font-size: var(--h6);
     width: 95vw;
-    flex-direction: column;
-  }
-  .text {
-    margin-left: 8rem;
-  }
-  .subc {
-    color: var(--darkpink);
-    font-size: var(--h3);
-    margin-left: 4rem;
-    margin-top: 0.2rem;
   }
   .subheading {
     font-size: var(--subheadingjum);
