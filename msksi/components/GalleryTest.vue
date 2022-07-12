@@ -1,33 +1,29 @@
 <template>
-<div class="Gallery">
+  <div class="Gallery">
     <div class="Albums">
-        <Album 
+      <Album
         v-for="album in albums"
-        :key="album.title" 
+        :key="album.title"
         :title="album.title"
         :img="album.img"
         :link="album.link"
-        />
+      />
     </div>
-
-</div>
-    
+  </div>
 </template>
 <script>
 export default {
-    name:'GalleryTest',
-    components:{
-    },
-    data(){
-        return{
-            albums:[],
-        }
-    },
-    async fetch(){
-        let posts = await this.$content('albums').sortBy("order", "desc").fetch()
-        this.albums = posts
-        console.log(this.albums)
+  name: 'GalleryTest',
+  components: {},
+  data() {
+    return {
+      albums: [],
     }
-    
+  },
+  async fetch() {
+    let albums = await this.$content('albums').sortBy('order', 'desc').fetch()
+    this.albums = albums
+    console.log(this.albums)
+  },
 }
 </script>
