@@ -75,16 +75,8 @@ export default {
     font-weight: lighter;
     font-size: var(--h4);
   }
-  .gao {
-    padding-top: 7rem;
-    font-weight: lighter;
-    font-size: var(--h2);
-  }
 }
 @media only screen and (max-width: 1032px) {
-  .gao {
-    font-size: var(--h2);
-  }
   .will {
     margin: 3rem 8rem 0 8rem;
   }
@@ -106,13 +98,6 @@ export default {
     text-align: center;
     width: 100%;
   }
-  .gao {
-    font-size: var(--h3);
-    text-align: center;
-    font-family: 'Black Han Sans';
-    font-weight: lighter;
-    padding-top: 5rem;
-  }
   .will {
     font-size: var(--h5);
     text-align: left;
@@ -122,20 +107,13 @@ export default {
     margin-top: 4rem;
   }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 500px) {
   .texti {
     margin: 2rem 4rem 0 4rem;
   }
   h2 {
     text-align: center;
     width: 100%;
-  }
-  .gao {
-    font-size: var(--h4);
-    text-align: center;
-    font-family: 'Black Han Sans';
-    font-weight: lighter;
-    padding-top: 5rem;
   }
   .will {
     margin: 2rem 4rem 0 4rem;

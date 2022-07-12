@@ -64,16 +64,14 @@
   list-style-type: circle;
   color: white;
   margin-top: 2rem;
+  padding-bottom: 5rem;
+  flex-direction: row;
 }
 .subc {
   color: var(--darkpink);
   font-size: var(--h2);
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.joinustop {
-  background-color: #333043;
-  height: 65rem;
 }
 .text {
   font-family: 'Be Vietnam Pro', sans-serif;
@@ -82,15 +80,9 @@
   line-height: 7rem;
 }
 @media only screen and (max-width: 1500px) {
-  .joinustop {
-    height: 100rem;
-  }
   .text {
     margin-left: 12rem;
     margin-top: 0rem;
-  }
-  .heading {
-    margin-left: 6rem;
   }
   #subc {
     margin-left: 2rem;
@@ -112,37 +104,14 @@
   #picture {
     width: 28rem;
     height: 28rem;
-    margin-top: 13rem;
+    margin-top: 5rem;
   }
   .image-container {
     margin-top: 1rem;
-    flex-direction: row;
-    display: flex;
-    justify-content: end;
     margin-right: 10rem;
   }
 }
-@media only screen and (max-width: 1000px) {
-  #picture {
-    width: 25rem;
-    height: 25rem;
-  }
-  .image-container {
-    margin-top: 3rem;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-  }
-  #subc {
-    margin-left: 2rem;
-    padding-bottom: 2rem;
-    flex-direction: row;
-  }
-  #textgroup {
-    width: 90%;
-  }
-}
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1032px) {
   .text {
     margin-left: 8rem;
   }
@@ -175,10 +144,7 @@
     flex-direction: column;
   }
 }
-@media only screen and (max-width: 810px) {
-  .joinustop {
-    height: 100rem;
-  }
+@media only screen and (max-width: 770px) {
   .text {
     margin-left: 8rem;
   }
@@ -211,10 +177,7 @@
     font-size: var(--subheadingjum);
   }
 }
-@media only screen and (max-width: 510px) {
-  .joinustop {
-    height: 92rem;
-  }
+@media only screen and (max-width: 500px) {
   .text {
     margin-top: 0;
     margin-bottom: 0;
@@ -224,24 +187,6 @@
     margin-left: -1.8rem;
     font-size: var(--h6);
     width: 95vw;
-  }
-
-  .heading {
-    font-size: var(--h3);
-    margin-left: 4rem;
-  }
-  .button {
-    margin-top: 6rem;
-    width: 16rem;
-    height: 4.5rem;
-    font-size: var(--h5);
-    font-weight: lighter;
-    border-radius: 20rem;
-    font-family: 'Black Han Sans';
-    border: none;
-    margin-left: auto;
-    display: block;
-    margin-right: auto;
   }
   .subheading {
     font-size: var(--subheadingjum);

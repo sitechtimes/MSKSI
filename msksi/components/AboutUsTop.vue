@@ -2,8 +2,10 @@
   <div class="AboutUsTop">
     <div class="blockText">
       <h2 class="heading">Our <span class="h mission">Mission</span></h2>
-      <button @click="playMethod" id="play"></button>
-      <button @click="pauseMethods" id="pause"></button>
+      <div class="tts-container">
+        <button @click="playMethod" id="play" class="tts"></button>
+        <button @click="pauseMethods" id="pause" class="tts"></button>
+      </div>
     </div>
     <h3 id="text" class="text">
       {{ textarea }}
@@ -124,7 +126,19 @@ button {
     font-size: var(--h2);
   }
   .text {
-    margin: 3rem 8rem 0 8rem;
+    margin: 2rem 8rem 0 8rem;
+  }
+  .blockText {
+    display: initial;
+  }
+  .tts-container {
+    text-align: center;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15rem;
   }
 }
 @media only screen and (max-width: 770px) {

@@ -38,11 +38,9 @@ body,
   }
   .heading {
     font-size: var(--h2);
-    font-family: 'Black Han Sans';
-    font-weight: lighter;
     padding-top: 6rem;
     text-align: center;
-    font-size: var(--h2);
+    margin: 0;
   }
   .text {
     font-size: var(--h5);

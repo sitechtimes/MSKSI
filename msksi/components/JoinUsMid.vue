@@ -47,8 +47,8 @@ export default {
   width: 75%;
 }
 #picture {
-  width: 38rem;
-  height: 38rem;
+  width: 40rem;
+  height: 40rem;
 }
 .yellow {
   color: var(--navyblue);
@@ -102,8 +102,8 @@ export default {
     margin-top: 10rem;
   }
   #picture {
-    width: 28rem;
-    height: 28rem;
+    width: 35rem;
+    height: 35rem;
   }
 }
 @media only screen and (max-width: 810px) {
