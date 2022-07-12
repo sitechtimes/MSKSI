@@ -19,7 +19,7 @@
           </div>
         </a>
         <a
-          href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
+          href="https://en.wikipedia.org/wiki/Instagram"
           target="_blank"
           class="icon"
           ><div class="backing">
@@ -31,7 +31,7 @@
             /></div
         ></a>
         <a
-          href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
+          href="https://planethome.eco/tiktok-challenge-inspires-global-trash-cleanup/"
           target="_blank"
           class="icon"
           ><div class="backing">
@@ -43,7 +43,7 @@
             /></div
         ></a>
         <a
-          href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
+          href="https://support.google.com/mail/?hl=en#topic=7065107"
           target="_blank"
           class="icon"
           ><div class="backing">
@@ -64,12 +64,13 @@
   text-align: center;
   bottom: 0px;
   width: 100%;
+  height: 25rem;
 }
 
 .contactus {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-family: 'Black Han Sans';
-  padding-top: 8rem;
+  padding-top: 7rem;
   font-weight: lighter;
   color: var(--yellow);
   padding-bottom: 2rem;
@@ -90,7 +91,7 @@
   justify-content: space-around;
   width: 25rem;
   height: 5rem;
-  margin: 1rem auto 0 50%;
+  margin: 0.5rem auto 0 50%;
   transform: translateX(-50%);
 }
 
@@ -123,14 +124,11 @@
   margin-top: 0rem;
 }
 .icon:hover .hoverselect {
-  background-color: rgb(255, 255, 255);
+  transform: scale(1);
   /*  border: solid 0.5rem var(--yellow); */
 }
 .icon:hover .iconimg {
   filter: saturate(100%);
-}
-.icon:hover ~ .highlighter-top {
-  visibility: visible;
 }
 
 .backing:hover .tiktok {
@@ -140,18 +138,19 @@
   position: absolute;
   /*  height: 7.75rem;
   width: 7.75rem; */
+  background-color: rgb(255, 255, 255);
+  transform: scale(0);
   height: 6rem;
   width: 6rem;
   border-radius: 6rem;
   margin-top: 0rem;
   z-index: -1;
-  transition: all 0.2s;
+  transition: all 0.2s ease-in-out;
 }
 
+/*media queries*/
+
 @media only screen and (max-width: 1320px) {
-  #footer {
-    height: 27rem;
-  }
   .contactus {
     padding-top: 7rem;
     margin-left: 0;
@@ -184,11 +183,21 @@
     height: 2.5rem;
   }
   .hoverselect {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 5.5rem;
+    height: 5.5rem;
   }
 }
-
+@media only screen and (max-width: 1030px) {
+  .icon:hover .hoverselect {
+    transform: scale(0);
+  }
+  .icon:hover .iconimg {
+    filter: saturate(0) brightness(5);
+  }
+  .backing:hover .tiktok {
+    content: url(~/assets/images/tiktok-white.png);
+  }
+}
 @media only screen and (max-width: 500px) {
   #footer {
     height: 25rem;
@@ -220,10 +229,6 @@
   .highlighter {
     width: 22rem;
     height: 5rem;
-  }
-  .hoverselect {
-    height: 6rem;
-    width: 6rem;
   }
 }
 </style>
