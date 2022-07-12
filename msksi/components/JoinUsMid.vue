@@ -105,6 +105,9 @@ export default {
     width: 28rem;
     height: 28rem;
   }
+  .button {
+    margin-left: 0;
+  }
 }
 @media only screen and (max-width: 810px) {
   .text {
