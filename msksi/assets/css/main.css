@@ -9,7 +9,9 @@ body,
   font-size: 62.5%;
   cursor: url('../images/pinkCursor.png'), auto;
 }
-.button[data-v-8d025cfc] {
+.button[data-v-8d025cfc],
+button,
+a {
   cursor: url('../images/hoverBtnCursor.png'), auto;
 }
 
