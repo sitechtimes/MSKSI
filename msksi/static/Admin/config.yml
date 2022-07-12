@@ -20,7 +20,6 @@ collections:
       - { label: 'Album Link', name: 'link', widget: 'string' }
       - { label: 'Image', name: 'img', widget: 'image' }
 
-collections:
   - name: 'comm-spot'
     label: 'Community Spotlight'
     folder: 'content/comm-spot'
