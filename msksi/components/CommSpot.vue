@@ -18,7 +18,7 @@
       <nuxt-content :document="post" />
     </div>
 
-    <div class="CSimg-reel">
+    <div class="CSimg-reel" id="CSimg-reel">
       <div class="square-cut">
         <img class="CSimg-r" :src="post.img_reel1" alt="" />
       </div>
@@ -51,6 +51,7 @@ export default {
   },
   mounted() {
     this.scrollFade()
+    this.scrollFadeReel()
   },
   methods: {
     scrollFade() {
@@ -79,6 +80,22 @@ export default {
         },
         '<'
       )
+    },
+    scrollFadeReel() {
+      const fadeTLR = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '#CSimg-reel',
+          start: 'top',
+          end: 'top 100px',
+          scrub: false,
+        },
+      })
+
+      fadeTLR.from('#CSimg-reel ', {
+        opacity: 0,
+        duration: 0.8,
+        ease: 'ease-out',
+      })
     },
   },
 }
