@@ -1,6 +1,6 @@
 <template>
   <div class="homespotlight">
-    <div class="CSbutton-holder">
+    <div id="CSbutton-holder">
       <router-link class="navRouter CSroutermore router" to="/AboutUs">
         Read More
       </router-link>
@@ -18,15 +18,21 @@
       <nuxt-content :document="post" />
     </div>
 
-    <div class="CSimg-reel" id="CSimg-reel">
-      <div class="square-cut">
+    <div class="CSimg-reel">
+      <div class="square-cut" id="CSimg-r1">
         <img class="CSimg-r" :src="post.img_reel1" alt="" />
+        <span class="reel-caption">{{ post.reel_caption1 }}</span>
+        <div class="tp-hover"></div>
       </div>
-      <div class="square-cut">
+      <div class="square-cut" id="CSimg-r2">
         <img class="CSimg-r" :src="post.img_reel2" alt="" />
+        <span class="reel-caption">{{ post.reel_caption2 }}</span>
+        <div class="tp-hover"></div>
       </div>
-      <div class="square-cut">
+      <div class="square-cut" id="CSimg-r3">
         <img class="CSimg-r" :src="post.img_reel3" alt="" />
+        <span class="reel-caption">{{ post.reel_caption3 }}</span>
+        <div class="tp-hover"></div>
       </div>
     </div>
   </div>
@@ -84,18 +90,42 @@ export default {
     scrollFadeReel() {
       const fadeTLR = this.$gsap.timeline({
         scrollTrigger: {
-          trigger: '#CSimg-reel',
-          start: 'top',
+          trigger: '.CSimg-reel',
+          start: 'top bottom',
           end: 'top 100px',
           scrub: false,
         },
       })
 
-      fadeTLR.from('#CSimg-reel ', {
+      fadeTLR.from('#CSimg-r1, .CSreadmore, .CSroutermore', {
+        delay: 0.5,
         opacity: 0,
         duration: 0.8,
+        y: 80,
         ease: 'ease-out',
       })
+      fadeTLR.from(
+        '#CSimg-r2',
+        {
+          delay: 0.2,
+          opacity: 0,
+          duration: 0.8,
+          y: 80,
+          ease: 'ease-out',
+        },
+        '<'
+      )
+      fadeTLR.from(
+        '#CSimg-r3',
+        {
+          delay: 0.2,
+          opacity: 0,
+          duration: 0.8,
+          y: 80,
+          ease: 'ease-out',
+        },
+        '<'
+      )
     },
   },
 }
@@ -224,6 +254,43 @@ export default {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.reel-caption {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.884);
+  font-family: 'ABeeZee', sans-serif;
+  z-index: 2000;
+  position: absolute;
+  bottom: 0;
+  padding: 1.3rem;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.tp-hover {
+  background-color: rgba(0, 0, 0, 0.514);
+  height: 5rem;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s;
+  object-fit: cover;
+  bottom: 0;
+  position: absolute;
+}
+
+.square-cut:hover {
+  transform: translate(0) scale(2);
+}
+
+.square-cut:hover .reel-caption {
+  font-size: 1.75rem;
+  padding-bottom: 3rem;
+}
+.square-cut:hover .tp-hover {
+  height: 100%;
 }
 
 /*media queries*/
@@ -264,6 +331,9 @@ export default {
   .square-cut {
     height: 25rem;
     width: 25rem;
+  }
+  .reel-caption {
+    font-size: 1.5rem;
   }
 }
 
@@ -317,12 +387,12 @@ export default {
   .CSreadmore,
   .CSroutermore {
     margin-left: 50vw;
-    transform: translateX(-50%);
+    transform: translate(-50%);
     right: auto;
   }
 
   .CSroutermore:hover {
-    transform: translateX(-50%) scale(1.025);
+    transform: translate(-50%) scale(1.025);
   }
 
   .icon {
@@ -347,8 +417,11 @@ export default {
   .CSimg-reel {
     width: 62rem;
   }
+  .tp-hover {
+    height: 6rem;
+  }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   #spotlight {
     width: 33rem;
   }
@@ -363,7 +436,7 @@ export default {
   }
 
   .CStext-holder {
-    padding: 15rem 0 35rem 0;
+    padding: 15rem 0 48rem 0;
   }
 
   .commspot {
@@ -386,12 +459,20 @@ export default {
   }
 
   .square-cut {
-    height: 12rem;
-    width: 12rem;
+    height: 14rem;
+    width: 14rem;
   }
   .CSimg-reel {
     width: 38rem;
-    bottom: 1rem;
+    bottom: 15rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .reel-caption {
+    font-size: 1.2rem;
   }
 }
 </style>
