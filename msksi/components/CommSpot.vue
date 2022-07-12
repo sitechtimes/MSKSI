@@ -220,6 +220,7 @@ export default {
 
 .CSroutermore:hover {
   transform: scale(1.025);
+  cursor: pointer;
 }
 
 .CSroutermore {
@@ -388,7 +389,7 @@ export default {
 
   .CSreadmore,
   .CSroutermore {
-    margin-left: 50vw;
+    margin-left: 50%;
     transform: translate(-50%);
     right: auto;
   }
