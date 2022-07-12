@@ -52,18 +52,18 @@
   background-color: #333043;
   padding-bottom: 8rem;
 }
+
 .pink {
   background-color: var(--darkpink);
   color: white;
   filter: drop-shadow(3px 4px 3px black);
   margin-top: 4rem;
 }
+
 #subc {
   list-style-type: circle;
   color: white;
   margin-top: 2rem;
-  padding-bottom: 5rem;
-  flex-direction: row;
 }
 .subc {
   color: var(--darkpink);
@@ -71,22 +71,30 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.joinustop {
+  background-color: #333043;
+  height: 65rem;
+}
 .text {
   font-family: 'Be Vietnam Pro', sans-serif;
   margin-left: 15rem;
   margin-top: 0.5rem;
   line-height: 7rem;
 }
-
 @media only screen and (max-width: 1500px) {
+  .joinustop {
+    height: 100rem;
+  }
   .text {
     margin-left: 12rem;
     margin-top: 0rem;
   }
+  .heading {
+    margin-left: 6rem;
+  }
   #subc {
     margin-left: 2rem;
     padding-bottom: 2rem;
-    flex-direction: row;
   }
   .subheading {
     font-size: var(--subheadingju);
@@ -94,8 +102,6 @@
     margin-top: 2rem;
     padding-bottom: 0;
   }
-}
-@media only screen and (max-width: 770px) {
   .text {
     margin-left: 12rem;
     margin-top: 0.5rem;
@@ -169,16 +175,45 @@
     flex-direction: column;
   }
 }
-
-@media only screen and (max-width: 510px) {
-  #info {
-    flex-direction: column;
+@media only screen and (max-width: 810px) {
+  .joinustop {
+    height: 100rem;
   }
-  #picture {
-    position: relative;
-    top: 0;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+  .text {
+    margin-left: 8rem;
+  }
+  .subc {
+    color: var(--darkpink);
+    font-size: var(--h3);
+    margin-left: 4rem;
+    margin-top: 0.2rem;
+  }
+  #subc {
+    margin-top: 0.5rem;
+  }
+  .heading {
+    font-size: var(--h3);
+    margin-top: 0;
+    margin-left: 4rem;
+  }
+  .button {
+    margin-top: 7rem;
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: lighter;
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+    margin: 4rem;
+  }
+  .subheading {
+    font-size: var(--subheadingjum);
+  }
+}
+@media only screen and (max-width: 510px) {
+  .joinustop {
+    height: 92rem;
   }
   .text {
     margin-top: 0;
@@ -189,16 +224,24 @@
     margin-left: -1.8rem;
     font-size: var(--h6);
     width: 95vw;
-    flex-direction: column;
   }
-  .text {
-    margin-left: 8rem;
-  }
-  .subc {
-    color: var(--darkpink);
+
+  .heading {
     font-size: var(--h3);
     margin-left: 4rem;
-    margin-top: 0.2rem;
+  }
+  .button {
+    margin-top: 6rem;
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: lighter;
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
   }
   .subheading {
     font-size: var(--subheadingjum);
