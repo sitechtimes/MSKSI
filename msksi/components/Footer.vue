@@ -108,7 +108,7 @@
   align-items: center;
 }
 .icon {
-  cursor: url('../assets/images/hoverBtnCursor.png'), auto;
+  cursor: pointer;
 }
 @media only screen and (max-width: 1032px) {
   .contactus {
