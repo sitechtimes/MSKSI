@@ -3,18 +3,38 @@
     <div class="blockText">
       <h2 class="heading">Our <span class="h mission">Mission</span></h2>
       <div class="buttonRow">
-        <button @click="playMethod" id=play>
-        <font-awesome-icon @click="activePauseIcon" v-if="!this.iconNotHidden" :icon="['far', 'circle-play']"  class="pause"></font-awesome-icon>
-        <font-awesome-icon @click="pauseIcon" v-if="!this.iconHidden" :icon="['fas', 'circle-play']" class="pause"></font-awesome-icon>
+        <button @click="playMethod" id="play">
+          <font-awesome-icon
+            @click="activePauseIcon"
+            v-if="!this.iconNotHidden"
+            :icon="['far', 'circle-play']"
+            class="pause"
+          ></font-awesome-icon>
+          <font-awesome-icon
+            @click="pauseIcon"
+            v-if="!this.iconHidden"
+            :icon="['fas', 'circle-play']"
+            class="pause"
+          ></font-awesome-icon>
         </button>
-        <button @click="pauseMethods" id=pause>
-        <font-awesome-icon @click="pauseIcon" v-if="!this.iconHidden" :icon="['far', 'circle-pause']"  class="pause"></font-awesome-icon>
-        <font-awesome-icon @click="activePauseIcon" v-if="!this.iconNotHidden" :icon="['fas', 'circle-pause']" class="pause"></font-awesome-icon>
-      </button>
+        <button @click="pauseMethods" id="pause">
+          <font-awesome-icon
+            @click="pauseIcon"
+            v-if="!this.iconHidden"
+            :icon="['far', 'circle-pause']"
+            class="pause"
+          ></font-awesome-icon>
+          <font-awesome-icon
+            @click="activePauseIcon"
+            v-if="!this.iconNotHidden"
+            :icon="['fas', 'circle-pause']"
+            class="pause"
+          ></font-awesome-icon>
+        </button>
       </div>
     </div>
     <h3 id="text" class="text">
-        {{ textarea }}
+      {{ textarea }}
     </h3>
   </div>
 </template>
@@ -23,8 +43,8 @@
 
 export default {
   name: 'AboutUsTop',
-  data(){
-    return{
+  data() {
+    return {
       textarea: `      My Sister’s Keeper Staten Island (MSKSI) founded in November 2018, creates
       a support system to build a community for social, emotional, and academic
       support and leadership empowerment for MSKSI members from elementary to
@@ -40,49 +60,48 @@ export default {
       iconNotHidden: true,
     }
   },
-  head (){
-    return{
-      htmlAttrs: {lang:'en'}
+  head() {
+    return {
+      htmlAttrs: { lang: 'en' },
     }
   },
-  mounted(){
-     if ('speechSynthesis' in window) {
-     console.log('works') /* speech synthesis supported */
-  }
-  else {
-     console.log('no works') /* speech synthesis not supported */
-  }
+  mounted() {
+    if ('speechSynthesis' in window) {
+      console.log('works') /* speech synthesis supported */
+    } else {
+      console.log('no works') /* speech synthesis not supported */
+    }
   },
   methods: {
-    playMethod(){
-      const utterance = new SpeechSynthesisUtterance();
+    playMethod() {
+      const utterance = new SpeechSynthesisUtterance()
       let voices = []
-      voices = window.speechSynthesis.getVoices();
-      utterance.voice = voices[0];
-      utterance.volume = 10;
-      utterance.text = this.textarea;
-      speechSynthesis.speak(utterance);
+      voices = window.speechSynthesis.getVoices()
+      utterance.voice = voices[0]
+      utterance.volume = 10
+      utterance.text = this.textarea
+      speechSynthesis.speak(utterance)
 
-      this.iconHidden = false;
-      this.iconNotHidden = true;
-      if (this.paused === true ){
-        window.speechSynthesis.resume();
+      this.iconHidden = false
+      this.iconNotHidden = true
+      if (this.paused === true) {
+        window.speechSynthesis.resume()
         // resume();
       }
     },
-    pauseMethods(){
-      speechSynthesis.pause();
-      this.paused = true;
+    pauseMethods() {
+      speechSynthesis.pause()
+      this.paused = true
       // pause();
     },
-    pauseIcon(){
-      this.iconHidden = true;
-      this.iconNotHidden = false;
+    pauseIcon() {
+      this.iconHidden = true
+      this.iconNotHidden = false
     },
-    activePauseIcon(){
-      this.iconHidden = false;
-      this.iconNotHidden = true;
-    }
+    activePauseIcon() {
+      this.iconHidden = false
+      this.iconNotHidden = true
+    },
   },
 }
 </script>
@@ -95,21 +114,15 @@ export default {
   color: var(--darkpink);
   font-size: var(--h1);
 }
-.AboutUsTop {
-  background-color: #333043;
-  height: 100rem;
-}
-.blockText{
-  display:flex;
+.blockText {
+  display: flex;
   align-items: center;
-  margin-right:1rem;
 }
 .text {
   margin: 4rem 11rem 0 11rem;
   font-family: 'Cairo', sans-serif;
   color: var(--white);
   text-align: left;
-  font-size: var(--four);
   justify-content: center;
 }
 /* test buttons */
@@ -123,12 +136,27 @@ button {
   width: 48px;
 }
 
+#play {
+  /* background-image: url("~/assets/images/pinkPlayBtn.png");*/
+  font-size: 7.5rem;
+  color: var(--darkpink);
+  position: relative;
+}
+
+#pause {
+  /* background-image: url("~/assets/images/pauseBtn.png"); */
+  font-size: 7.5rem;
+  color: var(--darkpink);
+  position: relative;
+}
+
+/* #pause:focus {
+  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
+} */
+
 @media only screen and (max-width: 1500px) {
   .mission {
     font-size: var(--h2);
-  }
-  .text {
-    font-size: var(--subheadingjum);
   }
 }
 @media only screen and (max-width: 1032px) {
@@ -136,8 +164,19 @@ button {
     font-size: var(--h2);
   }
   .text {
-    margin: 3rem 8rem 0 8rem;
-    font-size: var(--h5);
+    margin: 2rem 8rem 0 8rem;
+  }
+  .blockText {
+    display: initial;
+  }
+  .tts-container {
+    text-align: center;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15rem;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -149,7 +188,6 @@ button {
   }
   .text {
     margin-top: 2rem;
-    font-size: var(--h5);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -161,7 +199,6 @@ button {
   }
   .text {
     margin-top: 2rem;
-    font-size: var(--h6);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
