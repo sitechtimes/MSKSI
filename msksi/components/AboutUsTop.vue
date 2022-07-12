@@ -123,26 +123,6 @@ button {
   width: 48px;
 }
 
-#play {
-  /* background-image: url("~/assets/images/pinkPlayBtn.png");*/
-  font-size: 7.5rem;
-  color: var(--darkpink);
-  position: relative;
-}
-
-
-#pause {
-  /* background-image: url("~/assets/images/pauseBtn.png"); */
-  font-size: 7.5rem;
-  color: var(--darkpink);
-  position: relative;
-}
-
-/* #pause:focus {
-  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
-} */
-
-
 @media only screen and (max-width: 1500px) {
   .mission {
     font-size: var(--h2);
