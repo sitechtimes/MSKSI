@@ -2,17 +2,12 @@
   <div class="homespotlight">
     <div class="CSbutton-holder">
       <router-link class="navRouter CSroutermore" to="/AboutUs">
-        <span class="CSarrow">></span>
         Read More
       </router-link>
       <div class="CSreadmore"></div>
     </div>
     <div class="spotlight-images">
-      <img
-        id="spotlight"
-        src="https://www.yosemitelakespark.org/wp-content/uploads/2021/02/ylp-spotlight.png"
-        alt=""
-      />
+      <img id="spotlight" src="~/assets/images/spotlight.png" alt="" />
       <div id="CSimg-holder">
         <img id="CSimg" :src="post.img_main" alt="" />
       </div>
@@ -126,6 +121,8 @@ export default {
 
 #CSimg {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .CStext-holder {
@@ -188,14 +185,7 @@ export default {
 
 .CSroutermore:hover {
   color: var(--darkyellow);
-}
-
-.CSarrow {
-  bottom: 25rem;
-  right: 10rem;
-  font-size: var(--h3);
-  display: block;
-  text-align: center;
+  text-decoration: underline;
 }
 
 .CSimg-reel {
@@ -315,14 +305,6 @@ export default {
     right: auto;
   }
 
-  .CSarrow {
-    position: absolute;
-    bottom: -0.3rem;
-    opacity: 0;
-    transform: translateX(500%);
-    transition: all 0.2s;
-  }
-
   .CSroutermore:hover > .CSarrow {
     opacity: 1;
   }
@@ -387,11 +369,6 @@ export default {
     height: 6rem;
   }
 
-  .CSarrow {
-    font-size: 2.5rem;
-    bottom: 0.4rem;
-    transform: translateX(11.4rem);
-  }
   .square-cut {
     height: 12rem;
     width: 12rem;
