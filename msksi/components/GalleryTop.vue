@@ -129,7 +129,10 @@ a{
     margin: 7rem;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
+  .polaroid-container {
+    margin-top: 3rem;
+  }
   .polaroid {
     display: flex;
     flex-wrap: wrap;
@@ -137,13 +140,18 @@ a{
     align-items: center;
     justify-content: center;
     width: 48vw;
-    height: 35rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0rem;
+    height: 27rem;
+    margin: 0 auto 0 auto;
   }
   #picture {
     margin-top: 2rem;
+    width: 15rem;
+    height: 15rem;
+  }
+  .name {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    font-size: var(--h6);
   }
 }
 </style>
