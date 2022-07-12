@@ -180,7 +180,7 @@ export default {
   color: var(--white);
   font-family: 'ABeeZee', sans-serif;
   font-weight: bold;
-  bottom: 20rem;
+  bottom: 22rem;
   right: 3rem;
   position: absolute;
   z-index: 11;
@@ -304,8 +304,8 @@ export default {
     right: auto;
   }
 
-  .CSroutermore:hover > .CSarrow {
-    opacity: 1;
+  .CSroutermore:hover {
+    transform: translateX(-50%) scale(1.025);
   }
 
   .icon {
@@ -360,7 +360,7 @@ export default {
 
   .CSroutermore {
     font-size: 2rem;
-    bottom: 4.2rem;
+    bottom: 7rem;
   }
 
   .CSreadmore {
