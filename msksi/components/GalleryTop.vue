@@ -1,12 +1,13 @@
 <template>
   <div class="GalleryTop">
-    <h2 class="heading">Photo <span class="gall">Gallery</span></h2>
+    <h2 class="heading">Photo <span class="heading gall">Gallery</span></h2>
     <div class="polaroid-container">
       <div class="polaroid">
         <img
-        id="picture"
-            src="~/assets/images/panelcareercon.png"
-            alt="MSK and MBK panel career con"/>
+          id="picture"
+          src="~/assets/images/panelcareercon.png"
+          alt="MSK and MBK panel career con"
+        />
         <a
           target="_blank"
           class="name"
@@ -15,10 +16,11 @@
         >
       </div>
       <div class="polaroid">
-         <img
-        id="picture"
-            src="~/assets/images/january.png"
-            alt="MSKSI January 17, 2020"/>
+        <img
+          id="picture"
+          src="~/assets/images/january.png"
+          alt="MSKSI January 17, 2020"
+        />
         <a
           class="name"
           target="_blank"
@@ -27,10 +29,11 @@
         >
       </div>
       <div class="polaroid">
-         <img
-        id="picture"
-            src="~/assets/images/december.png"
-            alt="MSKSI December 16, 2020"/>
+        <img
+          id="picture"
+          src="~/assets/images/december.png"
+          alt="MSKSI December 16, 2020"
+        />
         <a
           target="_blank"
           class="name"
@@ -39,10 +42,11 @@
         >
       </div>
       <div class="polaroid">
-         <img
-        id="picture"
-            src="~/assets/images/march.png"
-            alt="MSKSI March 6,2020"/>
+        <img
+          id="picture"
+          src="~/assets/images/march.png"
+          alt="MSKSI March 6,2020"
+        />
         <a
           target="_blank"
           class="name"
@@ -51,10 +55,11 @@
         >
       </div>
       <div class="polaroid">
-         <img
-        id="picture"
-            src="~/assets/images/misc.png"
-            alt="MSKSI Miscellaneous"/>
+        <img
+          id="picture"
+          src="~/assets/images/misc.png"
+          alt="MSKSI Miscellaneous"
+        />
         <a
           target="_blank"
           class="name"
@@ -68,14 +73,16 @@
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
-
+a {
+  cursor: pointer;
+}
 .GalleryTop {
   background-color: #333043;
   padding-bottom: 10rem;
 }
 .gall {
   color: var(--darkpink);
-  font-size: var(--h1);
+  margin: 0;
 }
 .name {
   font-family: 'ABeeZee', sans-serif;
@@ -115,17 +122,17 @@
   z-index: 1;
   background-color: rgb(194, 194, 194);
 }
-@media only screen and (max-width: 1080px) {
-  .heading {
-    text-align: center;
-    margin: 0;
-  }
+
+@media only screen and (max-width: 1032px) {
   .polaroid-container {
     grid-gap: 5rem;
     margin: 7rem;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
+  .polaroid-container {
+    margin-top: 3rem;
+  }
   .polaroid {
     display: flex;
     flex-wrap: wrap;
@@ -133,28 +140,18 @@
     align-items: center;
     justify-content: center;
     width: 48vw;
-    height: 35rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0rem;
+    height: 27rem;
+    margin: 0 auto 0 auto;
   }
   #picture {
     margin-top: 2rem;
+    width: 15rem;
+    height: 15rem;
   }
   .name {
-    font-size: var(--h5);
-    margin-top: 0;
-  }
-  .heading {
-    font-size: var(--h3);
-    margin-left: 0rem;
-    margin-right: 0rem;
     margin-top: 0rem;
-    text-align: center;
-  }
-  .gall {
-    font-size: var(--h3);
-    margin-top: 0rem;
+    margin-bottom: 1rem;
+    font-size: var(--h6);
   }
 }
 </style>

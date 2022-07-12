@@ -35,41 +35,41 @@ export default {
   font-family: 'Cairo', sans-serif;
   color: var(--white);
   text-align: left;
-  font-size: var(--four);
   justify-content: center;
 }
 @media only screen and (max-width: 1500px) {
-  .text {
-    font-size: var(--subheadingjum);
+  .mission {
+    font-size: var(--h2);
   }
 }
-@media only screen and (max-width: 824px) {
-  .heading {
-    margin-left: 8rem;
+@media only screen and (max-width: 1032px) {
+  .mission {
+    font-size: var(--h2);
   }
   .text {
-    margin: 4rem 8rem 0 8rem;
+    margin: 3rem 8rem 0 8rem;
   }
 }
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 770px) {
   .AboutUsTop {
     padding-bottom: 5rem;
-  }
-  h2 {
-    font-size: var(--h3);
-    margin-top: 0;
-    padding-top: 0;
   }
   .mission {
     font-size: var(--h3);
   }
-  .heading {
-    margin-left: 4rem;
-    padding-top: 3rem;
+  .text {
+    margin-top: 2rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .mission {
+    font-size: var(--h4);
   }
   .text {
     margin-top: 2rem;
-    font-size: var(--h5);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
