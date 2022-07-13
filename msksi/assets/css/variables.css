@@ -111,7 +111,7 @@ body {
   border-radius: 20rem;
   font-family: 'Black Han Sans';
   border: none;
-  cursor: pointer;
+  cursor: url('../images/hoverBtnCursor.png'), auto;
   z-index: 1;
 }
 .button:hover {
@@ -212,13 +212,16 @@ input[type='checkbox'] {
   font-size: 2rem;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
-
+.menu-router.nuxt-link-exact-active{
+  color: var(--yellow);
+  border-bottom: 3px solid var(--yellow);
+}
 ::-webkit-scrollbar {
   width: 1.5rem;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--navyblue);
   border-radius: 40rem;
 }
 

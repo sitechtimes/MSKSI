@@ -118,10 +118,13 @@ h3 {
   margin-top: 5rem;
   height: 30rem;
   width: 30rem;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: rgb(255, 255, 255);
   border-radius: 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .resourcestop {
   background-color: #333043;
@@ -189,6 +192,11 @@ ul {
     height: 13rem;
     margin-left: auto;
     margin-right: auto;
+  }
+  #link {
+    font-size: var(--h6);
+  }
+  #resources {
     margin-top: 4rem;
   }
   #link {

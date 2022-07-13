@@ -1,15 +1,10 @@
 <template>
   <div class="AboutUsTop">
-    <div class="blockText">
-      <h2 class="heading">Our <span class="h mission">Mission</span></h2>
-      <div class="tts-container">
-        <button @click="playMethod" id="play" class="tts"></button>
-        <button @click="pauseMethods" id="pause" class="tts"></button>
-      </div>
+    <h2 class="heading">Our <span class="h mission">Mission</span></h2>
+    <div class="tts-container">
+      <button @click="playMethod" id="play" class="tts"></button>
+      <button @click="pauseMethods" id="pause" class="tts"></button>
     </div>
-    <h3 id="text" class="text">
-      {{ textarea }}
-    </h3>
   </div>
 </template>
 <script>
@@ -29,7 +24,6 @@ export default {
       impactful/inspiring, self-motivating, powerful transformative leaders.
       Giving a safe space and opportunity to our marginalized MSKSI young people
       in order to have a voice, respect and rapport in a diverse community.`,
-      paused: false,
     }
   },
   head() {
@@ -88,20 +82,6 @@ export default {
   color: var(--white);
   text-align: left;
   justify-content: center;
-}
-/* test buttons */
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  height: 48px;
-  outline: none;
-  padding: 0;
-  width: 48px;
-}
-
-#play {
-  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
 }
 
 #play:focus {
