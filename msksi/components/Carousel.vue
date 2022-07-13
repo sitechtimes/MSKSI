@@ -3,7 +3,8 @@
         <slot></slot>
 
         <button @click="$emit(`next`)" class="next"> > </button>
-        <button @click="$emit(`prev`)" class="prev"> < </button>
+        <button @click="$emit(`prev`)" class="prev">  < </button>
+        <!-- <input type="image" class="next" src="~/assets/images/carouselright"> -->
     </div>
 </template>
 
@@ -29,6 +30,7 @@ export default {
     right: 0;
     border: none;
     font-size: 2rem;
+    background: none;
 }
 .prev{
     position: absolute;
@@ -38,6 +40,7 @@ export default {
     left: 0;
     border: none;
     font-size: 2rem;
+    background: none;
 }
 button:active, button:hover {
     outline: none;
