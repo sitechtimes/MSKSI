@@ -1,6 +1,6 @@
 <template>
   <div class="polaroid">
-    <img id="picture" :src="img" :alt="title" />
+    <img id="picture" :src=img :alt="title" />
     <a class="name" target="_blank" :href="link">{{ title }}</a>
   </div>
 </template>

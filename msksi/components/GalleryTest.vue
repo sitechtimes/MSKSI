@@ -22,7 +22,7 @@ export default {
     }
   },
   async fetch() {
-    let albums = await this.$content('albums').sortBy('order', 'incr').fetch()
+    let albums = await this.$content('albums').sortBy('order', 'desc').fetch()
     this.albums = albums
     console.log(this.albums)
   },
@@ -60,7 +60,6 @@ a {
   grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
   grid-gap: 7rem;
   margin: 11rem;
-  margin-top: 4rem;
   justify-items: center;
   grid-template-rows: auto;
   padding-top: 0;
