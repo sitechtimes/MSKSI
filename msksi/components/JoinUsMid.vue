@@ -80,14 +80,10 @@ export default {
   list-style-type: circle;
   color: var(--navyblue);
   margin-top: 4rem;
-  padding-bottom: 5rem;
 }
 .wbsmr {
   color: var(--darkpink);
 }
-/* .button{
-  cursor: url('../images/hoverBtnCursor.png'), auto;
-} */
 @media only screen and (max-width: 1500px) {
   .subheading {
     font-size: var(--subheadingju);

@@ -163,6 +163,9 @@ ul {
     margin-left: 8rem;
     margin-right: 8rem;
   }
+  .resource:hover {
+    transform: scale(1);
+  }
 }
 @media only screen and (max-width: 770px) {
   img {

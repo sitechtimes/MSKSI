@@ -36,11 +36,6 @@
   cursor: url('../assets/images/hoverBtnCursor.png'), auto;
   /* cursor: pointer; */
 }
-
-.button:hover {
-  transform: scale(1.2);
-  transition: transform 0.75s;
-}
 #info {
   display: flex;
   flex-direction: row;
