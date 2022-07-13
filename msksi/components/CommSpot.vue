@@ -19,7 +19,7 @@
     </div>
 
     <div class="CSimg-reel">
-      <div class="square-cut" id="CSimg-r1">
+      <div class="square-cut" id="CSimg-r1" style="null">
         <img class="CSimg-r" :src="post.img_reel1" alt="" />
         <span class="reel-caption">{{ post.reel_caption1 }}</span>
         <div class="tp-hover"></div>
@@ -97,7 +97,7 @@ export default {
         },
       })
 
-      fadeTLR.from('#CSimg-r1, .CSreadmore, .CSroutermore', {
+      fadeTLR.from('#CSimg-r1, .CSreadmore', {
         delay: 0.5,
         opacity: 0,
         duration: 0.8,
@@ -243,6 +243,7 @@ export default {
   width: 62rem;
   display: flex;
   justify-content: space-between;
+  transition: all 0.3s;
 }
 
 .CSimg-r {
@@ -283,7 +284,7 @@ export default {
 }
 
 .square-cut:hover {
-  transform: translate(0) scale(2);
+  height: 22rem;
 }
 
 .square-cut:hover .reel-caption {
@@ -298,10 +299,15 @@ export default {
 @media only screen and (max-width: 1750px) {
   .CSimg-reel {
     width: 47rem;
+    height: 15rem;
+    top: 62rem;
   }
   .square-cut {
     height: 15rem;
     width: 15rem;
+  }
+  .square-cut:hover {
+    height: 17rem;
   }
 }
 @media only screen and (max-width: 1560px) {
@@ -323,11 +329,12 @@ export default {
     margin-right: 32rem;
   }
   .CSimg-reel {
-    bottom: 3rem;
+    bottom: 10rem;
     left: auto;
     right: 45rem;
     width: 78rem;
-    height: 30rem;
+    height: 25rem;
+    top: auto;
   }
   .square-cut {
     height: 25rem;
@@ -335,6 +342,9 @@ export default {
   }
   .reel-caption {
     font-size: 1.5rem;
+  }
+  .square-cut:hover {
+    height: 27rem;
   }
 }
 
@@ -382,7 +392,6 @@ export default {
   }
 
   .CSroutermore {
-    bottom: 7rem;
     padding: 2rem 8.5rem;
     bottom: 5rem;
   }
@@ -406,7 +415,7 @@ export default {
     margin-right: 0;
   }
   .CSimg-reel {
-    bottom: 13rem;
+    bottom: 20rem;
     right: auto;
     left: 50%;
     transform: translateX(-50%);
@@ -419,9 +428,19 @@ export default {
   }
   .CSimg-reel {
     width: 62rem;
+    height: 20rem;
+    bottom: 22rem;
   }
   .tp-hover {
     height: 6rem;
+  }
+  .square-cut:hover {
+    height: 22rem;
+  }
+
+  .CSroutermore {
+    width: 29.5rem;
+    padding: 2rem 8rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -453,7 +472,10 @@ export default {
 
   .CSroutermore {
     font-size: 2rem;
-    bottom: 7rem;
+    bottom: 5rem;
+    width: 22.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .CSreadmore {
@@ -464,18 +486,24 @@ export default {
   .square-cut {
     height: 14rem;
     width: 14rem;
+    margin-bottom: 1.5rem;
   }
   .CSimg-reel {
     width: 38rem;
-    bottom: 15rem;
+    height: 14rem;
+    bottom: 32rem;
     padding-right: 3rem;
     padding-left: 3rem;
+
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
 
   .reel-caption {
     font-size: 1.2rem;
+  }
+  .square-cut:hover {
+    height: 15rem;
   }
 }
 </style>
