@@ -36,11 +36,6 @@
   cursor: url('../assets/images/hoverBtnCursor.png'), auto;
   /* cursor: pointer; */
 }
-
-.button:hover {
-  transform: scale(1.2);
-  transition: transform 0.75s;
-}
 #info {
   display: flex;
   flex-direction: row;
@@ -85,7 +80,6 @@
 .text {
   font-family: 'Be Vietnam Pro', sans-serif;
   margin-left: 15rem;
-  margin-top: 0.5rem;
   line-height: 7rem;
 }
 @media only screen and (max-width: 1500px) {

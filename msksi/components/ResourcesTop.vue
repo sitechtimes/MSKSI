@@ -139,6 +139,7 @@ img {
   display: block;
   margin-top: 3rem;
 }
+
 #link {
   color: #333043;
   font-size: var(--h5);
@@ -159,6 +160,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+
 @media only screen and (max-width: 1500px) {
   .resource {
     width: 30rem;
@@ -181,6 +183,9 @@ ul {
     font-family: 'Cairo', sans-serif;
     text-align: center;
     margin-top: 1rem;
+  }
+  .resource:hover {
+    transform: scale(1);
   }
 }
 @media only screen and (max-width: 720px) {
@@ -279,9 +284,24 @@ ul {
   }
   #link {
     font-size: var(--h6);
+    margin-top: 1rem;
+    line-height: 2rem;
+  }
+  .item {
+    font-size: var(--tiny);
+    line-height: 1.5rem;
+  }
+  ul {
+    font-size: var(--one);
+  }
+}
+@media only screen and (max-width: 500px) {
+  img {
+    height: 7.5rem;
   }
   h3 {
-    font-size: var(--one);
+    font-size: var(--tiny);
+    line-height: 1.5rem;
   }
   .resource:hover {
     transform: scale(1.05);
