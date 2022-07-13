@@ -1,7 +1,5 @@
 <template>
   <div>
-    <GalleryTop />
-
     <GalleryTest />
   </div>
 </template>
