@@ -94,6 +94,9 @@
   text-align: center;
   margin-top: 3rem;
 }
+.name:active, .name:hover {
+    cursor: pointer;
+}
 .polaroid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));

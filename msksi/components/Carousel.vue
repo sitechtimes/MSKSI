@@ -3,7 +3,7 @@
         <slot></slot>
 
         <button @click="$emit(`next`)" class="next"> > </button>
-        <button @click="$emit(`prev`)" class="prev">  < </button>
+        <button @click="$emit(`prev`)" class="prev">  o </button>
         <!-- <input type="image" class="next" src="~/assets/images/carouselright"> -->
     </div>
 </template>
