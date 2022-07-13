@@ -19,10 +19,6 @@ export default {
 a {
   cursor: pointer;
 }
-.gall {
-  color: var(--darkpink);
-  margin: 0;
-}
 .name {
   font-family: 'ABeeZee', sans-serif;
   font-style: normal;
@@ -35,24 +31,14 @@ a {
   text-align: center;
   margin-top: 3rem;
 }
-.polaroid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
-  grid-gap: 7rem;
-  margin: 11rem;
-  margin-top: 6rem;
-  justify-items: center;
-  grid-template-rows: auto;
-}
 .polaroid {
   background-color: white;
   height: 36rem;
-  width: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 #picture {
   height: 20rem;

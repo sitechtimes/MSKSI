@@ -1,5 +1,6 @@
 <template>
   <div class="Gallery">
+    <h2 class="heading">Photo <span class="gall">Gallery</span></h2>
     <div class="Albums">
       <Album
         v-for="album in albums"
@@ -39,6 +40,7 @@ a {
 .gall {
   color: var(--darkpink);
   margin: 0;
+  font-size: var(--h1);
 }
 .name {
   font-family: 'ABeeZee', sans-serif;
