@@ -63,7 +63,7 @@ a {
   margin-top: 4rem;
   justify-items: center;
   grid-template-rows: auto;
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
 }
 .polaroid {
   background-color: white;
