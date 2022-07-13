@@ -218,7 +218,7 @@ input[type='checkbox'] {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--navyblue);
   border-radius: 40rem;
 }
 
