@@ -33,6 +33,10 @@ export default {
     border-radius: 2rem;
     font-family: 'ABeeZee', sans-serif;
     padding-top: 3rem;
+    transition: all .3s;
+}
+.previewcard:hover{
+      transform: translateY(-5px);
 }
 .eventinfo{
     margin: 2rem 2rem 2rem 2rem;
