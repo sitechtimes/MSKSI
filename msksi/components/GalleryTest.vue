@@ -1,5 +1,6 @@
 <template>
   <div class="Gallery">
+    <h2 class="heading">Photo <span class="heading gall">Gallery</span></h2>
     <div class="Albums">
       <Album
         v-for="album in albums"
