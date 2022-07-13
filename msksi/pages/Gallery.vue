@@ -1,7 +1,6 @@
 <template>
   <div>
     <GalleryTop />
-    <AlbumPreview />
     <GalleryTest />
   </div>
 </template>
