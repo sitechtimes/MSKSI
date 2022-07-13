@@ -224,7 +224,7 @@ export default {
 }
 
 .CSroutermore {
-  font-size: 2.6rem;
+  font-size: 3rem;
   color: var(--white);
   font-family: 'ABeeZee', sans-serif;
   font-weight: bold;
@@ -394,6 +394,7 @@ export default {
   .CSroutermore {
     padding: 2rem 8.5rem;
     bottom: 5rem;
+    font-size: 2.6rem;
   }
 
   .CSreadmore,
