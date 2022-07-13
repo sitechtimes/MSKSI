@@ -1,6 +1,6 @@
 <template>
   <div class="menu">
-    <input @click="toggleOn" type="checkbox" id="active" />
+    <input v-model="checked" @click="toggleOn" type="checkbox" id="active" />
     <label for="active" class="menu-btn"><span></span></label>
     <label for="active" class="close"></label>
     <div class="wrapper">
@@ -36,22 +36,31 @@
 <script>
 export default {
   name: 'Menu',
+  data(){
+    return{
+      checked: Boolean,
+    }
+  },
   methods: {
     toggleOn() {
       let menuOpen = document.querySelector('.wrapper');
       menuOpen.classList.remove('hide');
       console.log('bye')
+      this.checked = true;
     },
       toggleOff() {
       let menuOpen = document.querySelector('.wrapper');
       menuOpen.classList.add('hide')
       console.log('hello')
+      this.checked = false;
     }
   },
 }
 </script>
 <style>
   .hide{
-    display:none;
+  z-index: -2;
+  right: -100%;
+  transition: all 0.6s ease-in-out;
   }
 </style>
