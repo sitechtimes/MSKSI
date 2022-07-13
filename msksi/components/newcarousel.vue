@@ -3,29 +3,29 @@
         <div class="cardList">
             <button @click="swapCards(left)" class="left btn">
                 <div class="icon">
-                    <!-- icon goes here -->
+                    <P>L</P>
                 </div>
             </button>
                 <div class="card-wrapper">
                     <div class="current-card">
                         <div class="cardimg">
-                            <!-- img here -->
+                            <img src="https://randomwordgenerator.com/img/picture-generator/57e5d4444d50ab14f1dc8460962e33791c3ad6e04e507440752f73dd944bc6_640.jpg" alt="">
                         </div>
                     </div>
                     <div class="next-card">
                         <div class="cardimg">
-                            <!-- img here -->
+                            <img src="https://randomwordgenerator.com/img/picture-generator/54e3dd404c5aaf14f1dc8460962e33791c3ad6e04e5074417c2f7dd6954cc1_640.jpg" alt="">
                         </div>
                     </div>
                     <div class="prev-card">
                         <div class="cardimg">
-                            <img src="" alt="">
+                            <img src="https://randomwordgenerator.com/img/picture-generator/53e3d44a4950aa14f1dc8460962e33791c3ad6e04e507440722d72d5944ccd_640.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 <button class="right btn">
                 <div class="icon">
-                    <!-- icon goes here -->
+                    <P>L</P>
                 </div>
             </button>
         </div>
@@ -33,7 +33,7 @@
 </template>
 
 <script>
-const cardsContainerEl = document.querySelector(".card-wrapper")
+const cardsContainerEl = this.$refs["card-wrapper"]
 export default {
     name: 'CarouselNew',
     methods: {
