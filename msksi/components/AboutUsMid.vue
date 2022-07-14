@@ -169,7 +169,30 @@ li {
   }
   .list {
     font-size: var(--h5);
-    line-height: 2rem;
+    margin-top: -30rem;
+    display: block;
+    text-align: left;
+    margin-left: 1.5rem;
+    margin-right: auto;
+  }
+  #video {
+    width: 100%;
+    height: 42%;
+    left: auto;
+    right: auto;
+    display: block;
+    border-style: none;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .AboutUsMid {
+    text-align: center;
+    background-color: white;
+    height: 99rem;
+  }
+  .left {
+    height: 65rem;
+    font-family: 'Black Han Sans';
   }
   .msksi {
     margin-top: 4rem;

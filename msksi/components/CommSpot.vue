@@ -1,20 +1,15 @@
 <template>
   <div class="homespotlight">
     <div class="CSbutton-holder">
-      <router-link class="navRouter CSroutermore" to="/AboutUs">
-        <span class="CSarrow">></span>
+      <router-link class="navRouter CSroutermore router" to="/AboutUs">
         Read More
       </router-link>
       <div class="CSreadmore"></div>
     </div>
     <div class="spotlight-images">
-      <img
-        id="spotlight"
-        src="https://www.yosemitelakespark.org/wp-content/uploads/2021/02/ylp-spotlight.png"
-        alt=""
-      />
+      <img id="spotlight" src="~/assets/images/spotlight.png" alt="" />
       <div id="CSimg-holder">
-        <img id="CSimg" :src="post.img" alt="" />
+        <img id="CSimg" :src="post.img_main" alt="" />
       </div>
     </div>
 
@@ -22,12 +17,25 @@
       <h2 class="heading commspot">Community Spotlight</h2>
       <nuxt-content :document="post" />
     </div>
+
+    <div class="CSimg-reel">
+      <div class="square-cut">
+        <img class="CSimg-r" :src="post.img_reel1" alt="" />
+      </div>
+      <div class="square-cut">
+        <img class="CSimg-r" :src="post.img_reel2" alt="" />
+      </div>
+      <div class="square-cut">
+        <img class="CSimg-r" :src="post.img_reel3" alt="" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'CommSpot',
+
   data() {
     return {
       post: 'Loading',
@@ -113,6 +121,8 @@ export default {
 
 #CSimg {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .CStext-holder {
@@ -123,7 +133,7 @@ export default {
   justify-content: center;
   flex-direction: column;
   padding-left: 6rem;
-  margin-top: -5rem;
+  margin-top: -10rem;
 }
 .commspot {
   color: var(--darkpink);
@@ -133,10 +143,11 @@ export default {
   margin-left: 0;
   padding-top: 0;
   margin-right: 12rem;
+  font-size: 5rem;
 }
 
 .nuxt-content {
-  font-size: var(--h3);
+  font-size: 4rem;
   color: var(--navyblue);
   font-family: 'ABeeZee', sans-serif;
   margin-top: 3rem;
@@ -147,7 +158,7 @@ export default {
 .CSreadmore {
   height: 125rem;
   width: 125rem;
-  background-color: #141127d7;
+  background-color: var(--tpnavyblue);
   clip-path: polygon(100% 27%, 68% 100%, 100% 100%);
   position: absolute;
   bottom: 0;
@@ -157,12 +168,16 @@ export default {
 }
 
 .CSroutermore:hover + .CSreadmore {
-  background-color: #141127d7;
+  background-color: var(--darknavyblue);
+}
+
+.CSroutermore:hover {
+  transform: scale(1.025);
 }
 
 .CSroutermore {
-  font-size: var(--h4);
-  color: var(--yellow);
+  font-size: 2.6rem;
+  color: var(--white);
   font-family: 'ABeeZee', sans-serif;
   font-weight: bold;
   bottom: 20rem;
@@ -172,22 +187,38 @@ export default {
   transition: all 0.2s;
 }
 
-.CSroutermore:hover {
-  color: var(--yellow);
-  text-decoration: underline;
-  text-decoration-thickness: 0.35rem;
+.CSimg-reel {
+  position: absolute;
+  bottom: 15rem;
+  left: 74rem;
+  height: 20rem;
+  width: 62rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.CSarrow {
-  bottom: 25rem;
-  right: 10rem;
-  font-size: var(--h3);
-  display: block;
-  text-align: center;
+.CSimg-r {
+  object-fit: cover;
+}
+
+.square-cut {
+  height: 20rem;
+  width: 20rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 /*media queries*/
-
+@media only screen and (max-width: 1750px) {
+  .CSimg-reel {
+    width: 47rem;
+  }
+  .square-cut {
+    height: 15rem;
+    width: 15rem;
+  }
+}
 @media only screen and (max-width: 1560px) {
   #spotlight {
     width: 60rem;
@@ -205,6 +236,17 @@ export default {
 
   .nuxt-content {
     margin-right: 32rem;
+  }
+  .CSimg-reel {
+    bottom: 3rem;
+    left: auto;
+    right: 45rem;
+    width: 78rem;
+    height: 30rem;
+  }
+  .square-cut {
+    height: 25rem;
+    width: 25rem;
   }
 }
 
@@ -226,7 +268,7 @@ export default {
   .CStext-holder {
     width: 80vw;
     justify-content: center;
-    padding: 10rem 0 18rem 0;
+    padding: 16rem 0 50rem 0;
     align-self: center;
   }
 
@@ -252,7 +294,7 @@ export default {
   }
 
   .CSroutermore {
-    bottom: 5rem;
+    bottom: 7rem;
   }
 
   .CSreadmore,
@@ -260,14 +302,6 @@ export default {
     margin-left: 50vw;
     transform: translateX(-50%);
     right: auto;
-  }
-
-  .CSarrow {
-    position: absolute;
-    bottom: -1rem;
-    opacity: 0;
-    transform: translateX(500%);
-    transition: all 0.2s;
   }
 
   .CSroutermore:hover > .CSarrow {
@@ -281,8 +315,22 @@ export default {
     margin-left: 0;
     margin-right: 0;
   }
+  .CSimg-reel {
+    bottom: 13rem;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
-
+@media only screen and (max-width: 900px) {
+  .square-cut {
+    height: 20rem;
+    width: 20rem;
+  }
+  .CSimg-reel {
+    width: 62rem;
+  }
+}
 @media only screen and (max-width: 500px) {
   #spotlight {
     width: 33rem;
@@ -298,7 +346,7 @@ export default {
   }
 
   .CStext-holder {
-    padding: 8rem 0 15rem 0;
+    padding: 15rem 0 35rem 0;
   }
 
   .commspot {
@@ -311,7 +359,8 @@ export default {
   }
 
   .CSroutermore {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    bottom: 4.2rem;
   }
 
   .CSreadmore {
@@ -319,10 +368,13 @@ export default {
     height: 6rem;
   }
 
-  .CSarrow {
-    font-size: 2.5rem;
-    bottom: -0.2rem;
-    transform: translateX(12.4rem);
+  .square-cut {
+    height: 12rem;
+    width: 12rem;
+  }
+  .CSimg-reel {
+    width: 38rem;
+    bottom: 1rem;
   }
 }
 </style>
