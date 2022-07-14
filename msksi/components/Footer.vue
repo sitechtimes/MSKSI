@@ -123,6 +123,11 @@
   z-index: 100;
   margin-top: 0rem;
 }
+.iconimg:hover,
+.backing:hover {
+  cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
+}
+
 .icon:hover .hoverselect {
   transform: scale(1);
   /*  border: solid 0.5rem var(--yellow); */
