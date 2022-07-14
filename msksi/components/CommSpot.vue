@@ -220,7 +220,7 @@ export default {
 
 .CSroutermore:hover {
   transform: scale(1.025);
-  cursor: pointer;
+  cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
 }
 
 .CSroutermore {
