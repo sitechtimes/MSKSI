@@ -16,7 +16,7 @@ export default {
   components: { AboutUsTop, AboutUsMid, AboutUsBottom, Agenda },
     head() {
     return {
-      title: "About | MSKSI "
+      title: "About | My Sister's Keeper Staten Island"
     };
   },
 }

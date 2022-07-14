@@ -17,7 +17,7 @@ export default {
   components: { HomeEvents, HomeMonth, CommSpot, HomeTop },
     head() {
     return {
-      title: "Home | MSKSI "
+      title: "Home | My Sister's Keeper Staten Island"
     };
   },
 }

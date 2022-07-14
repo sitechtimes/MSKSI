@@ -17,11 +17,6 @@
 <script>
 export default {
   name: 'HomeTop',
-  head() {
-    return {
-      title: "Home | MSKSI "
-    };
-  },
 }
 </script>
 
