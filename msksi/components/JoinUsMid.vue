@@ -64,10 +64,9 @@ export default {
 .text {
   font-family: 'Be Vietnam Pro', sans-serif;
   margin-left: 15rem;
-  margin-top: 5.5rem;
-  line-height: 6rem;
+  margin-top: 5rem;
   width: 60vw;
-  line-height: 7rem;
+  line-height: 5rem;
 }
 .joinusmid {
   padding-bottom: 8rem;
@@ -84,7 +83,6 @@ export default {
   list-style-type: circle;
   color: var(--navyblue);
   margin-top: 4rem;
-  padding-bottom: 5rem;
 }
 .wbsmr {
   color: var(--darkpink);
@@ -93,10 +91,6 @@ export default {
   .subheading {
     font-size: var(--subheadingju);
     margin-left: 11rem;
-  }
-  .text {
-    margin-left: 12rem;
-    margin-top: 0.2rem;
   }
   .wbsm {
     margin-top: 0;

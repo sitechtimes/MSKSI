@@ -32,6 +32,10 @@
   </div>
 </template>
 <style scoped>
+.button {
+  cursor: url('../assets/images/hoverBtnCursor.png'), auto;
+  /* cursor: pointer; */
+}
 #info {
   display: flex;
   flex-direction: row;
@@ -74,7 +78,6 @@
 .text {
   font-family: 'Be Vietnam Pro', sans-serif;
   margin-left: 15rem;
-  margin-top: 0.5rem;
   line-height: 7rem;
 }
 
