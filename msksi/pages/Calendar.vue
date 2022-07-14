@@ -9,5 +9,10 @@
 import CalendarTop from '~/components/CalendarTop.vue'
 export default {
   components: { CalendarTop },
+    head() {
+    return {
+      title: "Calender | MSKSI "
+    };
+  },
 }
 </script>
