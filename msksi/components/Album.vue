@@ -6,7 +6,7 @@
 </template>
 <script>
 export default {
-  name: 'AlbumPreview',
+  name: 'Album',
   props: {
     title: String,
     img: String,
