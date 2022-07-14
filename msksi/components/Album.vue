@@ -1,12 +1,12 @@
 <template>
   <div class="polaroid">
-    <img id="picture" :src=img :alt="title" />
+    <img id="picture" :src="img" :alt="title" />
     <a class="name" target="_blank" :href="link">{{ title }}</a>
   </div>
 </template>
 <script>
 export default {
-  name: 'AlbumPreview',
+  name: 'Album',
   props: {
     title: String,
     img: String,
@@ -20,14 +20,13 @@ a {
   cursor: pointer;
 }
 .name {
-  font-family: 'ABeeZee', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-style: normal;
   color: var(--navyblue);
   text-align: center;
   font-size: var(--h5);
   width: 20rem;
   display: block;
-  font-weight: bolder;
   text-align: center;
   margin-top: 3rem;
 }
