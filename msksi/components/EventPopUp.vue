@@ -1,5 +1,5 @@
 <template>
-    <div class="previewcard">
+    <div @mouseover="gifHover" @mouseleave="gifLeave" class="previewcard">
         <div class="eventinfo">
         <div class="dates">
         <p class="eventmonth"> {{ eventmonth }}</p>
@@ -10,17 +10,31 @@
             <a class="calendarlink" href="/Calendar">Read More...</a>
         </div>
         </div>
+         <img v-show="gifVisible" src="../assets/images/heartGif.gif" alt="heart gif when hover" class="gifImage">
     </div>
 </template>
 
 <script>
 export default {
     name: `EventPopUp`,
+    data(){
+        return{
+            gifVisible: false,
+        }
+    },
     props: {
     eventname: String,
     eventmonth: String,
     eventdate: Number,
   },
+  methods:{
+    gifHover(){
+      this.gifVisible = true;
+    },
+    gifLeave(){
+      this.gifVisible = false;
+    }
+  }
 }
 </script>
 
@@ -34,12 +48,21 @@ export default {
     font-family: 'ABeeZee', sans-serif;
     padding-top: 3rem;
     transition: all .3s;
+    position: relative;
 }
 .previewcard:hover{
       transform: translateY(-5px);
 }
 .eventinfo{
     margin: 2rem 2rem 2rem 2rem;
+}
+
+.gifImage{
+    width:25%;
+    /* position: inherit; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 .dates{
     display: flex;
