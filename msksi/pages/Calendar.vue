@@ -11,7 +11,7 @@ export default {
   components: { CalendarTop },
     head() {
     return {
-      title: "Calender | MSKSI "
+      title: "Calender | My Sister's Keeper Staten Island"
     };
   },
 }

@@ -10,7 +10,7 @@ export default {
   components: { ResourcesTop },
     head() {
     return {
-      title: "Resources | MSKSI "
+      title: "Resources | My Sister's Keeper Staten Island"
     };
   },
 }

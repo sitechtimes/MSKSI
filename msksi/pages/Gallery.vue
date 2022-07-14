@@ -12,7 +12,7 @@ export default {
   components: { GalleryTop },
     head() {
     return {
-      title: "Gallery | MSKSI "
+      title: "Gallery | My Sister's Keeper Staten Island"
     };
   },
 }

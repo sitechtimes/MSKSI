@@ -12,7 +12,7 @@ export default {
   components: { JoinUsTop, JoinUsMid },
     head() {
     return {
-      title: "Join | MSKSI "
+      title: "Join | My Sister's Keeper Staten Island"
     };
   },
 }
