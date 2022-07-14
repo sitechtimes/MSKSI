@@ -34,6 +34,7 @@
 <style scoped>
 .button {
   cursor: url('../assets/images/hoverBtnCursor.png'), auto;
+       outline-offset: 4px;
   /* cursor: pointer; */
 }
 
