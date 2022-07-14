@@ -15,5 +15,10 @@ import HomeEvents from '~/components/HomeEvents.vue'
 export default {
   name: 'home',
   components: { HomeEvents, HomeMonth, CommSpot, HomeTop },
+    head() {
+    return {
+      title: "Home | MSKSI "
+    };
+  },
 }
 </script>
