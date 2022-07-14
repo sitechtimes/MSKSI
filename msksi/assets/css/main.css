@@ -8,12 +8,6 @@ body,
   margin: 0;
   font-size: 62.5%;
 }
-.button[data-v-8d025cfc],
-button,
-a {
-  cursor: url('../images/hoverBtnCursor.png'), auto;
-}
-
 .heading {
   font-size: var(--h1);
   font-family: 'Black Han Sans';
