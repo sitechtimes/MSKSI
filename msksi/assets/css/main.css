@@ -46,9 +46,6 @@ body,
   .text {
     font-size: var(--h5);
   }
-  .button:hover {
-    transform: scale(1);
-  }
 }
 @media only screen and (min-width: 1032px) {
   .menu {
