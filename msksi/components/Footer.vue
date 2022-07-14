@@ -19,7 +19,7 @@
           </div>
         </a>
         <a
-          href="https://en.wikipedia.org/wiki/Instagram"
+          href="https://www.instagram.com/_sammytheseagull/?hl=en"
           target="_blank"
           class="icon"
           ><div class="backing">
@@ -31,7 +31,7 @@
             /></div
         ></a>
         <a
-          href="https://planethome.eco/tiktok-challenge-inspires-global-trash-cleanup/"
+          href="https://www.tiktok.com/@charlidamelio?lang=en"
           target="_blank"
           class="icon"
           ><div class="backing">
@@ -43,7 +43,7 @@
             /></div
         ></a>
         <a
-          href="https://support.google.com/mail/?hl=en#topic=7065107"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=mwhalen3@schools.nyc.gov"
           target="_blank"
           class="icon"
           ><div class="backing">

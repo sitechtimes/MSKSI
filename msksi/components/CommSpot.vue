@@ -1,6 +1,6 @@
 <template>
   <div class="homespotlight">
-    <div class="CSbutton-holder">
+    <div id="CSbutton-holder">
       <router-link class="navRouter CSroutermore router" to="/AboutUs">
         Read More
       </router-link>
@@ -19,14 +19,20 @@
     </div>
 
     <div class="CSimg-reel">
-      <div class="square-cut">
+      <div class="square-cut" id="CSimg-r1" style="null">
         <img class="CSimg-r" :src="post.img_reel1" alt="" />
+        <span class="reel-caption">{{ post.reel_caption1 }}</span>
+        <div class="tp-hover"></div>
       </div>
-      <div class="square-cut">
+      <div class="square-cut" id="CSimg-r2">
         <img class="CSimg-r" :src="post.img_reel2" alt="" />
+        <span class="reel-caption">{{ post.reel_caption2 }}</span>
+        <div class="tp-hover"></div>
       </div>
-      <div class="square-cut">
+      <div class="square-cut" id="CSimg-r3">
         <img class="CSimg-r" :src="post.img_reel3" alt="" />
+        <span class="reel-caption">{{ post.reel_caption3 }}</span>
+        <div class="tp-hover"></div>
       </div>
     </div>
   </div>
@@ -51,6 +57,7 @@ export default {
   },
   mounted() {
     this.scrollFade()
+    this.scrollFadeReel()
   },
   methods: {
     scrollFade() {
@@ -72,6 +79,46 @@ export default {
       fadeTL.from(
         '#CSimg-holder, .CStext-holder',
         {
+          opacity: 0,
+          duration: 0.8,
+          y: 80,
+          ease: 'ease-out',
+        },
+        '<'
+      )
+    },
+    scrollFadeReel() {
+      const fadeTLR = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '.CSimg-reel',
+          start: 'top bottom',
+          end: 'top 100px',
+          scrub: false,
+        },
+      })
+
+      fadeTLR.from('#CSimg-r1, .CSreadmore', {
+        delay: 0.5,
+        opacity: 0,
+        duration: 0.8,
+        y: 80,
+        ease: 'ease-out',
+      })
+      fadeTLR.from(
+        '#CSimg-r2',
+        {
+          delay: 0.2,
+          opacity: 0,
+          duration: 0.8,
+          y: 80,
+          ease: 'ease-out',
+        },
+        '<'
+      )
+      fadeTLR.from(
+        '#CSimg-r3',
+        {
+          delay: 0.2,
           opacity: 0,
           duration: 0.8,
           y: 80,
@@ -173,14 +220,15 @@ export default {
 
 .CSroutermore:hover {
   transform: scale(1.025);
+  cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
 }
 
 .CSroutermore {
-  font-size: 2.6rem;
+  font-size: 3rem;
   color: var(--white);
   font-family: 'ABeeZee', sans-serif;
   font-weight: bold;
-  bottom: 20rem;
+  bottom: 22rem;
   right: 3rem;
   position: absolute;
   z-index: 11;
@@ -195,6 +243,7 @@ export default {
   width: 62rem;
   display: flex;
   justify-content: space-between;
+  transition: all 0.3s;
 }
 
 .CSimg-r {
@@ -207,16 +256,58 @@ export default {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.reel-caption {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.884);
+  font-family: 'ABeeZee', sans-serif;
+  z-index: 2000;
+  position: absolute;
+  bottom: 0;
+  padding: 1.3rem;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.tp-hover {
+  background-color: rgba(0, 0, 0, 0.514);
+  height: 5rem;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s;
+  object-fit: cover;
+  bottom: 0;
+  position: absolute;
+}
+
+.square-cut:hover {
+  height: 22rem;
+}
+
+.square-cut:hover .reel-caption {
+  font-size: 1.75rem;
+  padding-bottom: 3rem;
+}
+.square-cut:hover .tp-hover {
+  height: 100%;
 }
 
 /*media queries*/
 @media only screen and (max-width: 1750px) {
   .CSimg-reel {
     width: 47rem;
+    height: 15rem;
+    top: 62rem;
   }
   .square-cut {
     height: 15rem;
     width: 15rem;
+  }
+  .square-cut:hover {
+    height: 17rem;
   }
 }
 @media only screen and (max-width: 1560px) {
@@ -238,15 +329,22 @@ export default {
     margin-right: 32rem;
   }
   .CSimg-reel {
-    bottom: 3rem;
+    bottom: 10rem;
     left: auto;
     right: 45rem;
     width: 78rem;
-    height: 30rem;
+    height: 25rem;
+    top: auto;
   }
   .square-cut {
     height: 25rem;
     width: 25rem;
+  }
+  .reel-caption {
+    font-size: 1.5rem;
+  }
+  .square-cut:hover {
+    height: 27rem;
   }
 }
 
@@ -294,18 +392,20 @@ export default {
   }
 
   .CSroutermore {
-    bottom: 7rem;
+    padding: 2rem 8.5rem;
+    bottom: 5rem;
+    font-size: 2.6rem;
   }
 
   .CSreadmore,
   .CSroutermore {
-    margin-left: 50vw;
-    transform: translateX(-50%);
+    margin-left: 50%;
+    transform: translate(-50%);
     right: auto;
   }
 
-  .CSroutermore:hover > .CSarrow {
-    opacity: 1;
+  .CSroutermore:hover {
+    transform: translate(-50%) scale(1.025);
   }
 
   .icon {
@@ -316,7 +416,7 @@ export default {
     margin-right: 0;
   }
   .CSimg-reel {
-    bottom: 13rem;
+    bottom: 20rem;
     right: auto;
     left: 50%;
     transform: translateX(-50%);
@@ -329,9 +429,22 @@ export default {
   }
   .CSimg-reel {
     width: 62rem;
+    height: 20rem;
+    bottom: 22rem;
+  }
+  .tp-hover {
+    height: 6rem;
+  }
+  .square-cut:hover {
+    height: 22rem;
+  }
+
+  .CSroutermore {
+    width: 29.5rem;
+    padding: 2rem 8rem;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   #spotlight {
     width: 33rem;
   }
@@ -346,7 +459,7 @@ export default {
   }
 
   .CStext-holder {
-    padding: 15rem 0 35rem 0;
+    padding: 15rem 0 48rem 0;
   }
 
   .commspot {
@@ -360,7 +473,10 @@ export default {
 
   .CSroutermore {
     font-size: 2rem;
-    bottom: 4.2rem;
+    bottom: 5rem;
+    width: 22.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .CSreadmore {
@@ -369,12 +485,26 @@ export default {
   }
 
   .square-cut {
-    height: 12rem;
-    width: 12rem;
+    height: 14rem;
+    width: 14rem;
+    margin-bottom: 1.5rem;
   }
   .CSimg-reel {
     width: 38rem;
-    bottom: 1rem;
+    height: 14rem;
+    bottom: 32rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .reel-caption {
+    font-size: 1.2rem;
+  }
+  .square-cut:hover {
+    height: 15rem;
   }
 }
 </style>
