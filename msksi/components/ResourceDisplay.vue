@@ -24,7 +24,7 @@ export default {
   },
   async fetch() {
     let resources = await this.$content('resources')
-      .sortBy('order', 'desc')
+      .sortBy('order', 'incr')
       .fetch()
     this.resources = resources
     console.log(this.resources)

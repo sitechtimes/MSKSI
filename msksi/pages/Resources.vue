@@ -1,6 +1,5 @@
 <template>
   <div>
-    <ResourcesTop />
     <ResourceDisplay />
   </div>
 </template>

@@ -2,6 +2,7 @@
   <div class="resource">
     <img :src="img" :alt="title" />
     <a target="_blank" id="link" :href="link">{{ title }}</a>
+    <h3>{{ description }}</h3>
   </div>
 </template>
 <script>
@@ -11,6 +12,7 @@ export default {
     title: String,
     img: String,
     link: String,
+    description: String,
   },
 }
 </script>
@@ -66,9 +68,11 @@ img {
   font-size: var(--h5);
   font-family: 'Cairo', sans-serif;
   width: 80%;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
+  text-align: center;
 }
 .item {
   color: #333043;
