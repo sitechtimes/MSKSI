@@ -1,8 +1,19 @@
 <template>
   <div class="AboutUsTop">
     <h2 class="heading">Our <span class="h mission">Mission</span></h2>
-    <h3 class="text">
-      My Sister’s Keeper Staten Island (MSKSI) founded in November 2018, creates
+    <h3 id="text" class="text">
+      {{ textarea }}
+    </h3>
+  </div>
+</template>
+<script>
+// import { resourceLimits } from 'worker_threads'
+
+export default {
+  name: 'AboutUsTop',
+  data() {
+    return {
+      textarea: `      My Sister’s Keeper Staten Island (MSKSI) founded in November 2018, creates
       a support system to build a community for social, emotional, and academic
       support and leadership empowerment for MSKSI members from elementary to
       high school students in District 31. MSKSI fosters opportunities to build
@@ -11,13 +22,10 @@
       projects. My Sister’s Keeper Staten Island empowers young people to become
       impactful/inspiring, self-motivating, powerful transformative leaders.
       Giving a safe space and opportunity to our marginalized MSKSI young people
-      in order to have a voice, respect and rapport in a diverse community.
-    </h3>
-  </div>
-</template>
-<script>
-export default {
-  name: 'AboutUsTop',
+      in order to have a voice, respect and rapport in a diverse community.`,
+    }
+  },
+
   methods: {},
 }
 </script>
