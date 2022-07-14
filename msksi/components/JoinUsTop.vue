@@ -21,14 +21,14 @@
           src="~/assets/images/subcom.png"
           alt="remote meeting"
         />
+        <form
+          action="https://docs.google.com/forms/d/e/1FAIpQLSe2NJzLuFUyTc_8Jcmn4DhyH5qfBWbKtwRjYrSzCFyERI8r1Q/viewform"
+          target="_blank"
+        >
+          <button class="button pink">Join Us!</button>
+        </form>
       </div>
     </div>
-    <form
-      action="https://docs.google.com/forms/d/e/1FAIpQLSe2NJzLuFUyTc_8Jcmn4DhyH5qfBWbKtwRjYrSzCFyERI8r1Q/viewform"
-      target="_blank"
-    >
-      <button class="button pink">Join Us!</button>
-    </form>
   </div>
 </template>
 <style scoped>
@@ -57,6 +57,7 @@
   color: white;
   filter: drop-shadow(3px 4px 3px black);
   margin-top: 4rem;
+  margin-left: 0;
 }
 #subc {
   list-style-type: circle;
