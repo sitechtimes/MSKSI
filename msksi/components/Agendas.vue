@@ -22,7 +22,12 @@
           <i class="arrow up"></i>
         </div>
         <ul>
-          <li class="text date">October 2020</li>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdgGfQEu7TBbMe1aB9A7HZOMSSL2T6WfqsM1gR7qGFFaXszEQ/closedform"
+            target="_blank"
+          >
+            <li class="text date">October 2020</li></a
+          >
         </ul>
       </div>
       <div class="yearly-agenda">
@@ -31,9 +36,22 @@
           <i class="arrow up"></i>
         </div>
         <ul>
-          <li class="text date">March 6th, 2020</li>
-          <li class="text date">January 17th, 2020</li>
-          <li class="text date">December 13th, 2019</li>
+          <a
+            href="https://docs.google.com/document/d/11kbl0ug0NmI0ABU2szF86nC_dU55vYrNUX_0FNvDxL8/edit"
+            target="_blank"
+          >
+            <li class="text date">March 6th, 2020</li></a
+          ><a
+            href="https://docs.google.com/document/d/18-ke1JA2iAwRs5xVC1CnxLj5cGz9EbuuUpavbyXfq9I/edit"
+            target="_blank"
+          >
+            <li class="text date">January 17th, 2020</li></a
+          ><a
+            href="https://docs.google.com/document/d/1Dn0-o498J7-DwpcoXxixHRZoa5ytpT_jJg5bthItMNw/edit"
+            target="_blank"
+          >
+            <li class="text date">December 13th, 2019</li></a
+          >
         </ul>
       </div>
     </div>
@@ -64,15 +82,17 @@ export default {
   font-style: normal;
   font-weight: 400;
   text-align: center;
-  line-height: 15rem;
+  line-height: 10rem;
   font-size: 2.8rem;
 }
 .agendas-container {
-  display: flex;
+  display: grid;
+  grid-gap: 6.5rem;
+  margin-top: 5rem;
 }
 .yearly-agenda {
   background-color: var(--white);
-  /* margin: 0 10rem 0 10rem; */
+  margin: 0 10rem 0 10rem;
   border-radius: 1rem;
 }
 .container {
@@ -88,7 +108,7 @@ export default {
   font-size: 4.5rem;
 }
 ul {
-  list-style-image: url('~/assets/images/yellowbullet.png');
+  list-style-type: none;
   margin-top: 3rem;
   padding-bottom: 5rem;
 }
@@ -98,15 +118,13 @@ a {
 .date {
   color: var(--navy);
   text-align: left;
-  margin-left: 30rem;
-  padding-left: 3rem;
+  margin-left: 20rem;
   line-height: 8rem;
   cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
 }
-li:hover {
-  animation-name: expand;
-}
-@keyframes expand {
+.date::before {
+  content: url('~/assets/images/yellowbullet.png');
+  margin-right: 3rem;
 }
 .arrow {
   width: 4rem;
@@ -117,5 +135,6 @@ li:hover {
   transform: rotate(-45deg);
   margin-top: 6.5rem;
   margin-right: 10rem;
+  cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
 }
 </style>
