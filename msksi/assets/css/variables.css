@@ -225,13 +225,12 @@ input[type='checkbox'] {
   color: var(--yellow);
   border-bottom: 3px solid var(--yellow);
 }
-
 ::-webkit-scrollbar {
   width: 1.5rem;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--navyblue);
   border-radius: 40rem;
 }
 
