@@ -29,8 +29,8 @@
   --list: 3rem;
   --subheadingju: 4rem;
   --subheadingjum: 3rem;
-  --members: 2rem;
   --four: 4rem;
+  --one: 1.3rem;
 }
 #navbar {
   background-color: var(--navyblue);
@@ -45,6 +45,7 @@
   left: 0;
   right: 0;
   z-index: 2;
+  display: flex;
 }
 .nav {
   margin-top: auto;
@@ -88,6 +89,7 @@ body {
 .router:hover:after {
   transform: scaleX(1);
 }
+
 .router.nuxt-link-exact-active {
   color: var(--yellow);
   border-bottom: 3px solid var(--yellow);
@@ -100,12 +102,10 @@ body {
   font-weight: lighter;
 }
 .button {
-  position: sticky;
-  left: 80%;
   padding: 1.2rem;
   width: 22rem;
   height: 8rem;
-  font-size: var(--four);
+  font-size: var(--h4);
   border-radius: 20rem;
   font-family: 'Black Han Sans';
   border: none;
@@ -118,7 +118,6 @@ body {
 }
 @media only screen and (max-width: 1500px) {
   .button {
-    left: 11rem;
     width: 20rem;
     height: 7rem;
     font-size: var(--subheadingjum);
@@ -210,13 +209,16 @@ input[type='checkbox'] {
   font-size: 2rem;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
-
+.menu-router.nuxt-link-exact-active{
+  color: var(--yellow);
+  border-bottom: 3px solid var(--yellow);
+}
 ::-webkit-scrollbar {
   width: 1.5rem;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--navyblue);
   border-radius: 40rem;
 }
 

@@ -2,6 +2,8 @@
   <div>
     <newcarousel />
     <GalleryTop />
+    <AlbumPreview />
+    <GalleryTest />
   </div>
 </template>
 
@@ -11,5 +13,10 @@ import GalleryCarousel from '~/components/GalleryCarousel.vue'
 import newcarousel from '~/components/newcarousel.vue'
 export default {
   components: { GalleryTop, GalleryCarousel, newcarousel },
+  head() {
+    return {
+      title: "Gallery | My Sister's Keeper Staten Island",
+    }
+  },
 }
 </script>
