@@ -6,16 +6,11 @@
       <div class="yearly-agenda">
         <div class="container">
           <h3 class="subheading year">2021 - 2022</h3>
-          <button class="toggle">
-            <img
-              @click="show = !show"
-              class="arrow"
-              src="~/assets/images/arrow up.png"
-              alt="arrow"
-            />
+          <button @click="show2019 = !show2019" class="toggle">
+            <img class="arrow" src="~/assets/images/arrow up.png" alt="arrow" />
           </button>
         </div>
-        <div v-if="show"></div>
+        <div v-if="show2019"></div>
         <ul v-else>
           <a
             href="https://docs.google.com/document/d/1KsYIV0xbcgvJkDc9naG-yNLnhbX6zTUNH4O9Ac5pN7k/edit#heading=h.vdzc5dwb6uac"
@@ -27,11 +22,11 @@
       <div class="yearly-agenda">
         <div class="container">
           <h3 class="subheading year">2020 - 2021</h3>
-          <button @click="show = !show" class="toggle">
+          <button @click="show2020 = !show2020" class="toggle">
             <img class="arrow" src="~/assets/images/arrow up.png" alt="" />
           </button>
         </div>
-        <div v-if="show"></div>
+        <div v-if="show2020"></div>
         <ul v-else>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSdgGfQEu7TBbMe1aB9A7HZOMSSL2T6WfqsM1gR7qGFFaXszEQ/closedform"
@@ -44,11 +39,11 @@
       <div class="yearly-agenda">
         <div class="container">
           <h3 class="subheading year">2019 - 2020</h3>
-          <button @click="show = !show" class="toggle">
+          <button @click="show2021 = !show2021" class="toggle">
             <img class="arrow" src="~/assets/images/arrow up.png" alt="" />
           </button>
         </div>
-        <div v-if="show"></div>
+        <div v-if="show2021"></div>
         <ul v-else>
           <a
             href="https://docs.google.com/document/d/11kbl0ug0NmI0ABU2szF86nC_dU55vYrNUX_0FNvDxL8/edit"
@@ -75,6 +70,13 @@
 export default {
   name: 'Agendas',
   methods: {},
+  data() {
+    return {
+      show2019: true,
+      show2020: true,
+      show2021: true,
+    }
+  },
 }
 </script>
 <style scoped>
