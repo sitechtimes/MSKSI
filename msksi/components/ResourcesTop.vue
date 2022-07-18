@@ -123,6 +123,8 @@ h3 {
   justify-content: center;
   text-align: center;
   transition: 0.5s ease-in-out;
+  background-color: white;
+  border-radius: 2rem;
 }
 .resourcestop {
   background-color: #333043;
