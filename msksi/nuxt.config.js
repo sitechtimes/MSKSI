@@ -33,6 +33,7 @@ export default {
     extraPlugins: {
       scrollTo: true,
       scrollTrigger: true,
+      MotionPathPlugin: true,
     },
   },
 

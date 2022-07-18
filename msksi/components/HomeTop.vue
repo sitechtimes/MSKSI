@@ -180,6 +180,37 @@ export default {
   methods: {
     drawLogo() {
       const fadeTL = this.$gsap.timeline()
+      fadeTL.fromTo(
+        '.name, .si',
+        {
+          opacity: 0,
+          duration: 2,
+          ease: 'none',
+          delay: 2,
+        },
+        {
+          opacity: 1,
+          duration: 2,
+        }
+      )
+      fadeTL.from('#logo-img', {
+        xPercent: -50,
+        left: '50%',
+        yPercent: -50,
+        top: '50%',
+        position: 'absolute',
+        ease: 'none',
+        duration: 0.3,
+
+        scale: 0.9,
+      })
+      fadeTL.to('#logo-img', {
+        opacity: 1,
+        position: 'static',
+        duration: 0.3,
+
+        scale: 1,
+      }) /*
       fadeTL.from('#logo-line1', {
         duration: 1.5,
         y: 30,
@@ -371,15 +402,12 @@ export default {
       fadeTL.fromTo(
         '#heart',
         {
-          opacity: 0,
-          scale: 0.5,
-          x: 50,
-          y: 50,
+          scale: 1.02,
         },
         {
           duration: 0.7,
           opacity: 1,
-          scale: 1.02,
+          scale: 1.1,
           x: 0,
           y: 0,
         },
@@ -392,7 +420,7 @@ export default {
           scale: 1,
         },
         '>'
-      )
+      )*/
     },
   },
 }
@@ -443,8 +471,8 @@ export default {
 
 #logo-img {
   width: auto;
-  height: 18rem;
-  margin-right: 6rem;
+  height: 25rem;
+  margin-right: 4rem;
   margin-top: 1rem;
 }
 .logo-heart {
