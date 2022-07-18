@@ -6,9 +6,12 @@
       <div class="yearly-agenda">
         <div class="container">
           <h3 class="subheading year">2021 - 2022</h3>
-          <i class="arrow up"></i>
+          <button @click="show = !show" class="toggle">
+            <img class="arrow" src="~/assets/images/arrow up.png" alt="arrow" />
+          </button>
         </div>
-        <ul>
+        <div v-if="show"></div>
+        <ul v-else>
           <a
             href="https://docs.google.com/document/d/1KsYIV0xbcgvJkDc9naG-yNLnhbX6zTUNH4O9Ac5pN7k/edit#heading=h.vdzc5dwb6uac"
             target="_blank"
@@ -19,9 +22,12 @@
       <div class="yearly-agenda">
         <div class="container">
           <h3 class="subheading year">2020 - 2021</h3>
-          <i class="arrow up"></i>
+          <button @click="show = !show" class="toggle">
+            <img class="arrow" src="~/assets/images/arrow up.png" alt="" />
+          </button>
         </div>
-        <ul>
+        <div v-if="show"></div>
+        <ul v-else>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSdgGfQEu7TBbMe1aB9A7HZOMSSL2T6WfqsM1gR7qGFFaXszEQ/closedform"
             target="_blank"
@@ -33,9 +39,12 @@
       <div class="yearly-agenda">
         <div class="container">
           <h3 class="subheading year">2019 - 2020</h3>
-          <i class="arrow up"></i>
+          <button @click="show = !show" class="toggle">
+            <img class="arrow" src="~/assets/images/arrow up.png" alt="" />
+          </button>
         </div>
-        <ul>
+        <div v-if="show"></div>
+        <ul v-else>
           <a
             href="https://docs.google.com/document/d/11kbl0ug0NmI0ABU2szF86nC_dU55vYrNUX_0FNvDxL8/edit"
             target="_blank"
@@ -115,6 +124,18 @@ ul {
 a {
   text-decoration: none;
 }
+ul li::before {
+  content: '•';
+  font-size: 8rem;
+  color: var(--yellow);
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 2rem;
+}
+li {
+  display: flex;
+  align-items: center;
+}
 .date {
   color: var(--navy);
   text-align: left;
@@ -122,19 +143,16 @@ a {
   line-height: 8rem;
   cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
 }
-.date::before {
+/* .date::before {
   content: url('~/assets/images/yellowbullet.png');
   margin-right: 3rem;
+  vertical-align: middle;
+} */
+.toggle {
+  background: transparent;
+  border: none;
 }
 .arrow {
-  width: 4rem;
-  height: 4rem;
-  border-style: solid;
-  display: block;
-  border-width: 0.8vmin 0.8vmin 0 0;
-  transform: rotate(-45deg);
-  margin-top: 6.5rem;
-  margin-right: 10rem;
-  cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
+  height: 6rem;
 }
 </style>
