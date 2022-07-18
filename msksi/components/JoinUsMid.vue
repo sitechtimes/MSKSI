@@ -109,6 +109,39 @@ export default {
     height: 35rem;
   }
 }
+@media only screen and (max-width: 1032px) {
+  .text {
+    margin-left: 8rem;
+  }
+  #picture {
+    width: 21rem;
+    height: 21rem;
+    position: sticky;
+    margin-top: 0rem;
+    display: block;
+    margin: auto;
+    padding: 0;
+    margin-right: auto;
+    margin-bottom: 4rem;
+  }
+  .image-container {
+    margin-top: 1rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #subc {
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+    flex-direction: row;
+  }
+  #textgroup {
+    width: 80%;
+  }
+  #info {
+    flex-direction: column;
+  }
+}
 @media only screen and (max-width: 810px) {
   .text {
     margin-left: 8rem;
