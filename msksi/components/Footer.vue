@@ -10,7 +10,7 @@
         <div class="backing">
           <img
             class="icon twitter"
-            src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_36/v1658158920/Twitter-logo.svg_gzu5h2.png"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
             alt=""
           />
         </div>
@@ -21,7 +21,7 @@
         ><div class="backing">
           <img
             class="icon instagram"
-            src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_36/v1658158827/insta2_nwkjlt.png"
+            src="~/assets/images/insta2.jpg"
             alt=""
           /></div
       ></a>
@@ -31,7 +31,7 @@
         ><div class="backing">
           <img
             class="icon tiktok"
-            src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_36/v1658158813/tiktok_kphjpg.png"
+            src="~/assets/images/tiktok.png"
             alt=""
           /></div
       ></a>
@@ -39,7 +39,7 @@
         href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
         target="_blank"
         ><div class="backing">
-          <img class="icon gmail" src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_36/v1658158832/gmail_t1edxi.png" alt="" /></div
+          <img class="icon gmail" src="~/assets/images/gmail.png" alt="" /></div
       ></a>
     </div>
   </div>
@@ -51,6 +51,7 @@
   justify-content: center;
   bottom: 0px;
   width: 100%;
+  padding-bottom: 3rem;
 }
 .contacts {
   color: var(--white);
@@ -68,20 +69,17 @@
 }
 .buttons {
   display: flex;
-  margin-left: auto;
   margin-right: auto;
-  justify-content: space-evenly;
-  width: 40rem;
+  margin-left: auto;
+  justify-content: space-between;
+  width: 30rem;
   padding: 2rem;
-  padding-top: 1.5rem;
 }
 .icon {
+  height: 3rem;
   width: auto;
   filter: saturate(0);
   transition: all 0.2s;
-}
-.twitter {
-  height: 3rem;
 }
 .instagram {
   height: 4rem;
@@ -91,7 +89,7 @@
   filter: invert() saturate(0);
 }
 .gmail {
-  height: 3rem;
+  height: 2.5rem;
 }
 .icon:hover {
   filter: saturate(100%);
@@ -107,42 +105,32 @@
   justify-content: center;
   align-items: center;
 }
-.icon {
-  cursor: url('../assets/images/hoverBtnCursor.png'), auto;
-}
+
 @media only screen and (max-width: 1032px) {
-  .contactus {
-    font-size: var(--h4);
-  }
-  .icon {
-    filter: saturate(100%);
-  }
-}
-@media only screen and (max-width: 770px) {
-  .contactus {
-    font-size: var(--h4);
+  #footer {
+    width: 100%;
+    padding-bottom: 2rem;
   }
   .buttons {
-    width: 35rem;
+    margin-top: 3rem;
+    width: 50%;
   }
-}
-@media only screen and (max-width: 520px) {
-  .contactus {
-    font-size: 2.5rem;
-  }
-  .contacts {
-    font-size: var(--h6);
-  }
-  .buttons {
-    width: 28rem;
-    padding: 1rem;
-  }
-  .icon {
-    height: 2.5rem;
-  }
-  .instagram {
+  .backing {
     height: 3rem;
+    width: 3rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
+}
+@media only screen and (max-width: 510px) {
+  #footer {
+    height: 22rem;
+    margin-bottom: 0;
+  }
+}
+.icon {
+  cursor: pointer;
 }
 </style>
 

@@ -11,7 +11,7 @@
        </div>
     </div>
 </template>
-aadfas
+
 <script>
 export default {
   name: `HomeEvents`,
@@ -39,7 +39,7 @@ export default {
     text-align: center;
     font-family: 'Sora', sans-serif;
     color: var(--white);
-    padding-top: 4rem;
+    padding-top: 3rem;
   }
 .eventpreviews{
   display: flex;
@@ -57,9 +57,11 @@ export default {
     .eventheader{
       font-size: var(--h3);
     }
+    .homeevents{
+      padding: 2rem 4rem 6rem 4rem;
+    }
     .eventpreviews{
-      padding-top: 4rem;
-      padding-bottom: 4rem;
+      padding: 2.5rem 0 2rem 0;
     }
   }
 </style>

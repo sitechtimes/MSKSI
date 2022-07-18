@@ -1,5 +1,5 @@
 ---
 eventname: MSK Meeting
 eventmonth: aug
-eventdate: 12
+eventdate: 18
 ---

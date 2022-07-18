@@ -58,13 +58,13 @@ p {
     padding-bottom: 8rem;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     .newmonth{
         padding-bottom: 0rem;
     }
     .postcontent{
         display: inline-block;
-        padding: 2rem 0 0 0;
+        padding: 1rem 0 0 0;
         text-align:center;
     }
     h2 {
@@ -93,6 +93,9 @@ p {
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 2rem;
+    }
+    p {
+        padding-top: 3rem;
     }
 }
 
