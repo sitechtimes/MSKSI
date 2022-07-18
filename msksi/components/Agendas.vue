@@ -6,8 +6,13 @@
       <div class="yearly-agenda">
         <div class="container">
           <h3 class="subheading year">2021 - 2022</h3>
-          <button @click="show = !show" class="toggle">
-            <img class="arrow" src="~/assets/images/arrow up.png" alt="arrow" />
+          <button class="toggle">
+            <img
+              @click="show = !show"
+              class="arrow"
+              src="~/assets/images/arrow up.png"
+              alt="arrow"
+            />
           </button>
         </div>
         <div v-if="show"></div>
@@ -115,11 +120,12 @@ export default {
   font-style: normal;
   font-weight: 700;
   font-size: 4.5rem;
+  margin-top: 3.5rem;
+  padding-bottom: 3rem;
 }
 ul {
   list-style-type: none;
-  margin-top: 3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 a {
   text-decoration: none;
@@ -151,8 +157,14 @@ li {
 .toggle {
   background: transparent;
   border: none;
+  cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
+  margin-top: 1.5rem;
+  margin-bottom: auto;
+  margin-right: 6rem;
 }
 .arrow {
-  height: 6rem;
+  height: 10rem;
+  cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
+  /* transform: rotate(180deg); */
 }
 </style>
