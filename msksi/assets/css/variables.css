@@ -85,8 +85,8 @@
   transform: scaleX(1);
 }
 .router.nuxt-link-exact-active {
-  color: var(--darkpink);
-  border-bottom: 3px solid var(--darkpink);
+  color: var(--yellow);
+  border-bottom: 3px solid var(--yellow);
   padding-bottom: 0;
 }
 .subheading {
