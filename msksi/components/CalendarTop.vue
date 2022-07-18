@@ -25,7 +25,7 @@ export default {
   height: 100rem;
 }
 .calendarFlex {
-  display: flex;
+  display: flex;  
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -40,17 +40,5 @@ export default {
   /* left: 0;  */
   width: 70%;
   height: 100%;
-}
-@media only screen and (max-width: 810px) {
-  .heading {
-    font-size: var(--h3);
-    margin-left: 4rem;
-  }
-}
-@media only screen and (max-width: 510px) {
-  .heading {
-    font-size: var(--h3);
-    margin-left: 4rem;
-  }
 }
 </style>

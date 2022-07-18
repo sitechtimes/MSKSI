@@ -1,17 +1,14 @@
 <template>
   <div>
+    <GalleryTop />
+    <AlbumPreview />
     <GalleryTest />
   </div>
 </template>
 
 <script>
-import GalleryTest from '~/components/GalleryTest.vue'
+import GalleryTop from '~/components/GalleryTop.vue'
 export default {
-  components: { GalleryTest },
-  head() {
-    return {
-      title: "Gallery | My Sister's Keeper Staten Island",
-    }
-  },
+  components: { GalleryTop },
 }
 </script>

@@ -126,7 +126,7 @@ a {
 @media only screen and (max-width: 1032px) {
   .polaroid-container {
     grid-gap: 5rem;
-    margin: 7rem;
+    margin: 5rem;
   }
 }
 @media only screen and (max-width: 500px) {
