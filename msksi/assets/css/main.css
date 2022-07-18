@@ -7,14 +7,7 @@ body,
   box-sizing: border-box;
   margin: 0;
   font-size: 62.5%;
-  cursor: url('../images/pinkCursor.png'), auto;
 }
-.button[data-v-8d025cfc],
-button,
-a {
-  cursor: url('../images/hoverBtnCursor.png'), auto;
-}
-
 .heading {
   font-size: var(--h1);
   font-family: 'Black Han Sans';
@@ -44,9 +37,11 @@ a {
   }
   .heading {
     font-size: var(--h2);
+    font-family: 'Black Han Sans';
+    font-weight: lighter;
     padding-top: 6rem;
     text-align: center;
-    margin: 0;
+    font-size: var(--h2);
   }
   .text {
     font-size: var(--h5);
@@ -62,7 +57,7 @@ a {
 }
 @media only screen and (max-width: 770px) {
   .heading {
-    padding-top: 4rem;
+    padding-top: 5rem;
     font-size: var(--h3);
     margin: 0;
   }

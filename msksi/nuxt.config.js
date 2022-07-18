@@ -40,7 +40,6 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
