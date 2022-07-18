@@ -111,6 +111,7 @@ body {
   border: none;
   cursor: url('../images/hoverBtnCursor.png'), auto;
   z-index: 1;
+  transition: 0.5s ease-in-out;
 }
 .button:hover {
   transform: scale(1.1);
