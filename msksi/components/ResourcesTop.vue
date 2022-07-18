@@ -93,7 +93,6 @@ export default {
 <style scoped>
 .resource:hover {
   transform: scale(1.1);
-  transition: 0.5s;
 }
 h3 {
   font-size: var(--h6);
@@ -121,6 +120,7 @@ h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
+   transition: 0.5s ease-in-out;
 }
 .resourcestop {
   background-color: #333043;
