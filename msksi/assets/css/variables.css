@@ -11,6 +11,7 @@
   --cerise: #dc355c;
   --white: #fff;
   --tpnavyblue: #141127d7;
+  --darkyellow: #ddb500;
 
   --navbar-bg: var(--navyblue);
   --nav-text: var(--white);
@@ -29,8 +30,8 @@
   --list: 3rem;
   --subheadingju: 4rem;
   --subheadingjum: 3rem;
+  --members: 2rem;
   --four: 4rem;
-  --one: 1.3rem;
 }
 #navbar {
   background-color: var(--navyblue);
@@ -45,7 +46,6 @@
   left: 0;
   right: 0;
   z-index: 2;
-  display: flex;
 }
 .nav {
   margin-top: auto;
@@ -65,17 +65,12 @@
 .navRouter {
   color: var(--white);
   font-size: var(--h5);
-  margin-right: 4rem;
+  margin-right: 2rem;
   font-family: 'ABeeZee', sans-serif;
   text-decoration: none;
-  padding-top: 1rem;
+  padding: 1rem;
   /* position: relative; */
   display: inline-block;
-}
-
-html,
-body {
-  cursor: url('../images/favicon.png'), default;
 }
 
 .router:after {
@@ -89,10 +84,10 @@ body {
 .router:hover:after {
   transform: scaleX(1);
 }
-
 .router.nuxt-link-exact-active {
   color: var(--yellow);
   border-bottom: 3px solid var(--yellow);
+  padding-bottom: 0;
 }
 .subheading {
   margin-left: 11rem;
@@ -102,6 +97,7 @@ body {
   font-weight: lighter;
 }
 .button {
+  margin-left: 80%;
   padding: 1.2rem;
   width: 22rem;
   height: 8rem;
@@ -109,7 +105,7 @@ body {
   border-radius: 20rem;
   font-family: 'Black Han Sans';
   border: none;
-  cursor: url('../images/hoverBtnCursor.png'), auto;
+  cursor: pointer;
   z-index: 1;
   transition: 0.5s ease-in-out;
 }
@@ -119,6 +115,7 @@ body {
 }
 @media only screen and (max-width: 1500px) {
   .button {
+    left: 11rem;
     width: 20rem;
     height: 7rem;
     font-size: var(--subheadingjum);
@@ -210,16 +207,13 @@ input[type='checkbox'] {
   font-size: 2rem;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
-.menu-router.nuxt-link-exact-active{
-  color: var(--yellow);
-  border-bottom: 3px solid var(--yellow);
-}
+
 ::-webkit-scrollbar {
   width: 1.5rem;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--navyblue);
+  background: #f1f1f1;
   border-radius: 40rem;
 }
 
@@ -228,8 +222,8 @@ input[type='checkbox'] {
     linear,
     left bottom,
     left top,
-    color-stop(0.14, var(--yellow)),
-    color-stop(0.62, var(--darkpink)),
+    color-stop(0.44, var(--darkyellow)),
+    color-stop(0.72, var(--darkpink)),
     color-stop(0.86, var(--cerise))
   );
   border-radius: 10rem;
