@@ -184,39 +184,42 @@ export default {
         '.name, .si',
         {
           opacity: 0,
-          duration: 2,
-          ease: 'none',
-          delay: 2,
+          x: 200,
         },
         {
+          x: 0,
+          y: 0,
           opacity: 1,
-          duration: 2,
+          duration: 1,
+          delay: 2,
         }
       )
-      fadeTL.from('#logo-img', {
-        xPercent: -50,
-        left: '50%',
-        yPercent: -50,
-        top: '50%',
-        position: 'absolute',
-        ease: 'none',
-        duration: 0.3,
+      fadeTL.from(
+        '#logo-img',
+        {
+          xPercent: -50,
+          left: '50%',
+          yPercent: -80,
+          top: '50%',
+          position: 'absolute',
+          ease: 'none',
+          duration: 0.5,
+          scale: 1.5,
+          opacity: 1,
+        },
+        '<'
+      )
 
-        scale: 0.9,
-      })
-      fadeTL.to('#logo-img', {
-        opacity: 1,
-        position: 'static',
-        duration: 0.3,
-
-        scale: 1,
-      }) /*
-      fadeTL.from('#logo-line1', {
-        duration: 1.5,
-        y: 30,
-        opacity: 0,
-        delay: 0.2,
-      })
+      fadeTL.from(
+        '#logo-line1',
+        {
+          duration: 1.5,
+          y: 30,
+          opacity: 0,
+          delay: 0.2,
+        },
+        '<-2'
+      )
       fadeTL.from(
         '#logo-line2',
         {
@@ -402,7 +405,7 @@ export default {
       fadeTL.fromTo(
         '#heart',
         {
-          scale: 1.02,
+          scale: 0.8,
         },
         {
           duration: 0.7,
@@ -420,7 +423,7 @@ export default {
           scale: 1,
         },
         '>'
-      )*/
+      )
     },
   },
 }
@@ -457,6 +460,7 @@ export default {
   flex-direction: row;
   justify-content: right;
   align-content: center;
+  position: relative;
 }
 
 .keeper {
@@ -467,12 +471,13 @@ export default {
   margin-top: 2rem;
   width: 50rem;
   margin-right: 0%;
+  margin-left: 4rem;
 }
 
 #logo-img {
   width: auto;
   height: 25rem;
-  margin-right: 4rem;
+
   margin-top: 1rem;
 }
 .logo-heart {
@@ -504,16 +509,16 @@ export default {
   .keeper {
     width: 45rem;
     margin-top: 1rem;
+    margin-left: 2rem;
   }
   .si {
     margin-top: 2rem;
     font-size: var(--h4);
     margin-left: 64%;
   }
-  #temp-logo {
+  #logo-img {
     width: auto;
-    height: 16rem;
-    margin-right: 2rem;
+    height: 20rem;
   }
 }
 @media only screen and (max-width: 1032px) {
@@ -529,6 +534,7 @@ export default {
   }
   .keeper {
     width: 40rem;
+    margin-left: 1rem;
   }
   .si {
     font-size: 3rem;
@@ -536,10 +542,9 @@ export default {
     text-align: right;
     margin-top: 1rem;
   }
-  #temp-logo {
+  #logo-img {
     width: auto;
-    height: 14rem;
-    margin-right: 1rem;
+    height: 16rem;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -563,6 +568,7 @@ export default {
   .keeper {
     font-size: var(--h2);
     width: 23.5rem;
+    margin-left: 2rem;
   }
   .si {
     font-size: var(--h5);
@@ -570,9 +576,8 @@ export default {
     text-align: right;
     margin-left: 0%;
   }
-  #temp-logo {
-    height: 7rem;
-    margin-right: 3rem;
+  #logo-img {
+    height: 10rem;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -585,14 +590,14 @@ export default {
   .keeper {
     font-size: var(--h3);
     width: 18rem;
+    margin-left: 1rem;
   }
   .si {
     font-size: var(--h6);
     width: 33rem;
   }
-  #temp-logo {
-    height: 6rem;
-    margin-right: 1rem;
+  #logo-img {
+    height: 8rem;
   }
 }
 </style>
