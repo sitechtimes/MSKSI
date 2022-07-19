@@ -7,7 +7,17 @@
         <div class="container">
           <h3 class="subheading year">2021 - 2022</h3>
           <button @click="show2019 = !show2019" class="toggle">
-            <img class="arrow" src="~/assets/images/arrow up.png" alt="arrow" />
+            <img
+              v-if="show2019"
+              class="arrow down"
+              src="~/assets/images/arrow up.png"
+              alt="arrow"
+            /><img
+              v-else
+              class="arrow up"
+              src="~/assets/images/arrow up.png"
+              alt="arrow"
+            />
           </button>
         </div>
         <div v-if="show2019"></div>
@@ -23,7 +33,17 @@
         <div class="container">
           <h3 class="subheading year">2020 - 2021</h3>
           <button @click="show2020 = !show2020" class="toggle">
-            <img class="arrow" src="~/assets/images/arrow up.png" alt="" />
+            <img
+              v-if="show2020"
+              class="arrow down"
+              src="~/assets/images/arrow up.png"
+              alt="arrow"
+            /><img
+              v-else
+              class="arrow up"
+              src="~/assets/images/arrow up.png"
+              alt="arrow"
+            />
           </button>
         </div>
         <div v-if="show2020"></div>
@@ -40,7 +60,17 @@
         <div class="container">
           <h3 class="subheading year">2019 - 2020</h3>
           <button @click="show2021 = !show2021" class="toggle">
-            <img class="arrow" src="~/assets/images/arrow up.png" alt="" />
+            <img
+              v-if="show2021"
+              class="arrow down"
+              src="~/assets/images/arrow up.png"
+              alt="arrow"
+            /><img
+              v-else
+              class="arrow up"
+              src="~/assets/images/arrow up.png"
+              alt="arrow"
+            />
           </button>
         </div>
         <div v-if="show2021"></div>
@@ -168,5 +198,8 @@ li {
   height: 10rem;
   cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
   /* transform: rotate(180deg); */
+}
+.down {
+  transform: rotate(180deg);
 }
 </style>
