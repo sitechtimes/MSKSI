@@ -14,10 +14,5 @@ import AboutUsBottom from '~/components/AboutUsBottom.vue'
 import Agenda from '../components/Agenda.vue'
 export default {
   components: { AboutUsTop, AboutUsMid, AboutUsBottom, Agenda },
-    head() {
-    return {
-      title: "About | My Sister's Keeper Staten Island"
-    };
-  },
 }
 </script>
