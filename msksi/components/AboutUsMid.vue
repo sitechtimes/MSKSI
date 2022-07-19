@@ -169,7 +169,7 @@ li {
     margin: 2rem 0 0rem 0;
   }
   .list {
-    font-size: 2.2rem;
+    font-size: var(--h5);
     line-height: 2rem;
   }
   .msksi {
