@@ -96,8 +96,8 @@ export default {
     margin-top: 10rem;
   }
   #picture {
-    width: 35rem;
-    height: 35rem;
+    width: 33rem;
+    height: 33rem;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -123,9 +123,13 @@ export default {
   }
 }
 @media only screen and (max-width: 770px) {
+  .subheading {
+    font-size: var(--subheadingjum);
+    text-align: center;
+  }
   #picture {
-    width: 23rem;
-    height: 23rem;
+    width: 24rem;
+    height: 24rem;
     display: block;
     margin: auto;
     margin-bottom: 4rem;
@@ -143,10 +147,17 @@ export default {
     flex-direction: row;
   }
   #textgroup {
-    width: 80%;
+    width: 90%;
   }
   #info {
     flex-direction: column;
+  }
+  .button {
+    margin-top: 9rem;
+    margin-left: 4rem;
+  }
+  .text {
+    margin-top: 2rem;
   }
 }
 
