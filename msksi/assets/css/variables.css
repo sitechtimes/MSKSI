@@ -18,7 +18,7 @@
   --cerise: #FFE9E9;
   --white: #FFE9E9;
   --tpnavyblue: #FF92AB;
-  --secondarybackground:#1E1E1E;
+  --secondar ybackground:#1E1E1E;
 
   --navbar-bg: var(--navyblue);
   --nav-text: var(--white);
@@ -278,7 +278,7 @@ input[type='checkbox'] {
   font-size: 2rem;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
-.menu-router.nuxt-link-exact-active{
+.menu-router.nuxt-link-exact-active {
   color: var(--yellow);
   border-bottom: 3px solid var(--yellow);
 }
