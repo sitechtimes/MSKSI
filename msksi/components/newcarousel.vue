@@ -3,7 +3,7 @@
     <div class="cardList">
       <button @click="swapCards(left)" class="left-btn">
         <div class="icon">
-          <img src="" alt="" />
+          <p>L</p>
         </div>
       </button>
       <div class="card-wrapper" ref="card-wrapper">
@@ -43,7 +43,7 @@
 
 <script>
 export default {
-  name: 'CarouselNew',
+  name: 'NewCarousel',
   data() {
     return {
       right: 'right',
@@ -62,15 +62,15 @@ export default {
         nextCardEl.classList.remove('next--card')
 
         if (direction === 'right') {
-          prevCardEl.style.zIndex = '20'
-          nextCardEl.style.zIndex = '30'
+          prevCardEl.style.zIndex = '2'
+          nextCardEl.style.zIndex = '3'
 
           currentCardEl.classList.add('prev--card')
           prevCardEl.classList.add('next--card')
           nextCardEl.classList.add('current--card')
         } else if (direction === 'left') {
-          prevCardEl.style.zIndex = '30'
-          nextCardEl.style.zIndex = '20'
+          prevCardEl.style.zIndex = '3'
+          nextCardEl.style.zIndex = '2'
 
           currentCardEl.classList.add('next--card')
           prevCardEl.classList.add('current--card')
@@ -85,7 +85,6 @@ export default {
 
 <style scoped>
 .NewCarousel {
-  position: relative;
   width: 100%;
   height: 95rem;
   display: flex;
@@ -102,19 +101,20 @@ button {
   background-color: red;
   height: var(--btn-size);
   width: var(--btn-size);
-  top: 50%;
-  transform: translate(-50%);
-  z-index: 100;
+  top: 56%;
+  z-index: 5;
+}
+img{
+  height: 50rem;
+  width: 50rem;
 }
 .right-btn {
-  right: 29.3%;
+  right: 35%;
 }
 .cardList {
-  height: auto;
   width: calc(3 * var(--card-width));
 }
 .card-wrapper {
-  position: relative;
   width: 100%;
   height: 100%;
   perspective: 1000px;
@@ -124,8 +124,9 @@ button {
   height: 100%;
   display: inline-block;
   user-select: none;
-  z-index: 100;
+  z-index: 3;
   position: relative;
+
 }
 .prev--card {
   position: absolute;
@@ -137,6 +138,7 @@ button {
   display: inline-block;
   user-select: none;
   opacity: 0.6;
+  z-index: 2;
 }
 .next--card {
   position: absolute;
@@ -148,6 +150,7 @@ button {
   display: inline-block;
   user-select: none;
   opacity: 0.6;
+  z-index: 2;
 }
 .card::before {
   content: '';
@@ -156,6 +159,5 @@ button {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
 }
 </style>
