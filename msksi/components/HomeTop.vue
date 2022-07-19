@@ -176,254 +176,302 @@ export default {
   name: 'HomeTop',
   mounted() {
     this.drawLogo()
+    this.bounce()
   },
   methods: {
+    bounce() {
+      const bounceTL = this.$gsap.timeline({
+        repeat: -1,
+        yoyo: true,
+        delay: 2.5,
+      })
+      bounceTL
+        .to('#logo-img', {
+          duration: 1,
+          opacity: 1,
+          y: 5,
+        })
+        .to(
+          '#logo-line1,  #logo-line7, #logo-line16',
+          {
+            y: -15,
+            duration: 1,
+          },
+          '<'
+        )
+        .to(
+          '#logo-line10, #logo-line2, #logo-line9,#logo-line18',
+          {
+            y: 10,
+            duration: 1,
+          },
+          '<'
+        )
+        .to(
+          '#logo-line15, #logo-line13',
+          {
+            x: 10,
+            duration: 1,
+          },
+          '<'
+        )
+        .to(
+          '#logo-line4, #logo-line6',
+          {
+            x: -10,
+            duration: 1,
+          },
+          '<'
+        )
+    },
     drawLogo() {
       const fadeTL = this.$gsap.timeline()
-      fadeTL.fromTo(
-        '.name, .si',
-        {
-          opacity: 0,
-          x: 200,
-        },
-        {
-          x: 0,
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          delay: 2,
-        }
-      )
-      fadeTL.from(
-        '#logo-img',
-        {
-          xPercent: -50,
-          left: '50%',
-          yPercent: -80,
-          top: '50%',
-          position: 'absolute',
-          ease: 'none',
-          duration: 0.5,
-          scale: 1.5,
-          opacity: 1,
-        },
-        '<'
-      )
+      fadeTL
+        .fromTo(
+          '.name, .si',
+          {
+            opacity: 0,
+            x: 200,
+          },
+          {
+            x: 0,
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            delay: 2,
+          }
+        )
+        .from(
+          '#logo-img',
+          {
+            xPercent: -50,
+            left: '50%',
+            yPercent: -80,
+            top: '50%',
+            position: 'absolute',
+            ease: 'none',
+            duration: 0.5,
+            scale: 1.5,
+            opacity: 1,
+          },
+          '<'
+        )
+        .add('bounce')
+        .from(
+          '#logo-line1',
+          {
+            duration: 1.5,
+            y: 30,
+            opacity: 0,
+            delay: 0.2,
+          },
 
-      fadeTL.from(
-        '#logo-line1',
-        {
-          duration: 1.5,
-          y: 30,
-          opacity: 0,
-          delay: 0.2,
-        },
-        '<-2'
-      )
-      fadeTL.from(
-        '#logo-line2',
-        {
-          duration: 1,
-          y: 30,
-          x: 20,
-          opacity: 0,
-          delay: 0.4,
-        },
-        '<-0.2'
-      )
-      fadeTL.from(
-        '#logo-line3',
-        {
-          duration: 1,
-          y: 30,
-          x: 30,
-          opacity: 0,
-          delay: 0.6,
-        },
-        '<-0.4'
-      )
-      fadeTL.from(
-        '#logo-line4',
-        {
-          duration: 1,
+          '<-2'
+        )
+        .from(
+          '#logo-line2',
+          {
+            duration: 1,
+            y: 30,
+            x: 20,
+            opacity: 0,
+            delay: 0.4,
+          },
+          '<-0.2'
+        )
+        .from(
+          '#logo-line3',
+          {
+            duration: 1,
+            y: 30,
+            x: 30,
+            opacity: 0,
+            delay: 0.6,
+          },
+          '<-0.4'
+        )
+        .from(
+          '#logo-line4',
+          {
+            duration: 1,
 
-          x: 30,
-          opacity: 0,
-          delay: 0.8,
-        },
-        '<-0.6'
-      )
-      fadeTL.from(
-        '#logo-line5',
-        {
-          duration: 1,
-          y: -30,
-          x: 30,
-          opacity: 0,
-          delay: 0.7,
-        },
-        '<-0.8'
-      )
-      fadeTL.from(
-        '#logo-line6',
-        {
-          duration: 1,
-          y: -30,
-          x: 20,
-          opacity: 0,
-          delay: 0.6,
-        },
-        '<-0.7'
-      )
-      fadeTL.from(
-        '#logo-line7',
-        {
-          duration: 1,
-          y: -30,
-          x: 20,
-          opacity: 0,
-          delay: 0.4,
-        },
-        '<-0.6'
-      )
-      fadeTL.from(
-        '#logo-line8',
-        {
-          duration: 1,
-          y: -30,
-          opacity: 0,
-          delay: 0.2,
-        },
-        '<-0.4'
-      )
-      fadeTL.from(
-        '#logo-line9',
-        {
-          duration: 1,
-          y: -30,
+            x: 30,
+            opacity: 0,
+            delay: 0.8,
+          },
+          '<-0.6'
+        )
+        .from(
+          '#logo-line5',
+          {
+            duration: 1,
+            y: -30,
+            x: 30,
+            opacity: 0,
+            delay: 0.7,
+          },
+          '<-0.8'
+        )
+        .from(
+          '#logo-line6',
+          {
+            duration: 1,
+            y: -30,
+            x: 20,
+            opacity: 0,
+            delay: 0.6,
+          },
+          '<-0.7'
+        )
+        .from(
+          '#logo-line7',
+          {
+            duration: 1,
+            y: -30,
+            x: 20,
+            opacity: 0,
+            delay: 0.4,
+          },
+          '<-0.6'
+        )
+        .from(
+          '#logo-line8',
+          {
+            duration: 1,
+            y: -30,
+            opacity: 0,
+            delay: 0.2,
+          },
+          '<-0.4'
+        )
+        .from(
+          '#logo-line9',
+          {
+            duration: 1,
+            y: -30,
 
-          opacity: 0,
-          delay: 0.4,
-        },
-        '<-0.2'
-      )
-      fadeTL.from(
-        '#logo-line10',
-        {
-          duration: 1,
-          y: -30,
-          x: -20,
-          opacity: 0,
-          delay: 0.2,
-        },
-        '<-0.4'
-      )
-      fadeTL.from(
-        '#logo-line11',
-        {
-          duration: 1,
-          y: -30,
-          x: -30,
-          opacity: 0,
-          delay: 0.4,
-        },
-        '<-0.2'
-      )
-      fadeTL.from(
-        '#logo-line12',
-        {
-          duration: 1,
-          y: -30,
-          x: -30,
-          opacity: 0,
-          delay: 0.6,
-        },
-        '<-0.4'
-      )
-      fadeTL.from(
-        '#logo-line13',
-        {
-          duration: 1,
-          y: -30,
-          x: -30,
-          opacity: 0,
-          delay: 0.4,
-        },
-        '<-0.6'
-      )
-      fadeTL.from(
-        '#logo-line14',
-        {
-          duration: 1,
+            opacity: 0,
+            delay: 0.4,
+          },
+          '<-0.2'
+        )
+        .from(
+          '#logo-line10',
+          {
+            duration: 1,
+            y: -30,
+            x: -20,
+            opacity: 0,
+            delay: 0.2,
+          },
+          '<-0.4'
+        )
+        .from(
+          '#logo-line11',
+          {
+            duration: 1,
+            y: -30,
+            x: -30,
+            opacity: 0,
+            delay: 0.4,
+          },
+          '<-0.2'
+        )
+        .from(
+          '#logo-line12',
+          {
+            duration: 1,
+            y: -30,
+            x: -30,
+            opacity: 0,
+            delay: 0.6,
+          },
+          '<-0.4'
+        )
+        .from(
+          '#logo-line13',
+          {
+            duration: 1,
+            y: -30,
+            x: -30,
+            opacity: 0,
+            delay: 0.4,
+          },
+          '<-0.6'
+        )
+        .from(
+          '#logo-line14',
+          {
+            duration: 1,
 
-          x: -30,
-          opacity: 0,
-          delay: 0.6,
-        },
-        '<-0.4'
-      )
-      fadeTL.from(
-        '#logo-line15',
-        {
-          duration: 1,
-          x: -30,
-          opacity: 0,
-          delay: 0.4,
-        },
-        '<-0.6'
-      )
-      fadeTL.from(
-        '#logo-line16',
-        {
-          duration: 1,
-          y: 30,
-          opacity: 0,
-          delay: 0.6,
-        },
-        '<-0.4'
-      )
-      fadeTL.from(
-        '#logo-line17',
-        {
-          duration: 1,
-          y: 30,
-          opacity: 0,
-          delay: 0.4,
-        },
-        '<-0.6'
-      )
-      fadeTL.from(
-        '#logo-line18',
-        {
-          duration: 1,
-          y: 30,
-          opacity: 0,
-          delay: 0.1,
-        },
-        '<-0.4'
-      )
-      fadeTL.fromTo(
-        '#heart',
-        {
-          scale: 0.8,
-        },
-        {
-          duration: 0.7,
-          opacity: 1,
-          scale: 1.1,
-          x: 0,
-          y: 0,
-        },
-        '<-0.1'
-      )
-      fadeTL.to(
-        '#heart',
-        {
-          duration: 0.5,
-          scale: 1,
-        },
-        '>'
-      )
+            x: -30,
+            opacity: 0,
+            delay: 0.6,
+          },
+          '<-0.4'
+        )
+        .from(
+          '#logo-line15',
+          {
+            duration: 1,
+            x: -30,
+            opacity: 0,
+            delay: 0.4,
+          },
+          '<-0.6'
+        )
+        .from(
+          '#logo-line16',
+          {
+            duration: 1,
+            y: 30,
+            opacity: 0,
+            delay: 0.6,
+          },
+          '<-0.4'
+        )
+        .from(
+          '#logo-line17',
+          {
+            duration: 1,
+            y: 30,
+            opacity: 0,
+            delay: 0.4,
+          },
+          '<-0.6'
+        )
+        .from(
+          '#logo-line18',
+          {
+            duration: 1,
+            y: 30,
+            opacity: 0,
+            delay: 0.1,
+          },
+          '<-0.4'
+        )
+        .fromTo(
+          '#heart',
+          {
+            scale: 0.8,
+          },
+          {
+            duration: 0.7,
+            opacity: 1,
+            scale: 1.1,
+            x: 0,
+            y: 0,
+          },
+          '<-0.1'
+        )
+        .to(
+          '#heart',
+          {
+            duration: 0.5,
+            scale: 1,
+          },
+          '>'
+        )
     },
   },
 }
