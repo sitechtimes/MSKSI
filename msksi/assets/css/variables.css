@@ -94,6 +94,12 @@
   font-family: 'Black Han Sans';
   font-weight: lighter;
 }
+.button[data-v-8d025cfc],
+button,
+a {
+  cursor: url('../images/hoverBtnCursor.png'), auto;
+}
+
 .button {
   margin-left: 80%;
   padding: 1.2rem;
