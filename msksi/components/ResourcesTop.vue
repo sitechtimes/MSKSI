@@ -3,7 +3,10 @@
     <h2 class="heading">Resources</h2>
     <div id="resources">
       <div class="resource">
-        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_147/v1658158400/folder_ceqsbs.png" alt="folder" />
+        <img
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_147/v1658158400/folder_ceqsbs.png"
+          alt="folder"
+        />
         <a
           target="_blank"
           id="link"
@@ -12,7 +15,10 @@
         >
       </div>
       <div class="resource">
-        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_266/v1658158427/jamboard_ss2kz9.png" alt="jamboard" />
+        <img
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_266/v1658158427/jamboard_ss2kz9.png"
+          alt="jamboard"
+        />
         <a
           target="_blank"
           id="link"
@@ -21,7 +27,10 @@
         >
       </div>
       <div class="resource">
-        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_150/v1658158440/padlet_fioxqe.png" alt="padlet logo" />
+        <img
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_150/v1658158440/padlet_fioxqe.png"
+          alt="padlet logo"
+        />
         <a
           target="_blank"
           id="link"
@@ -30,7 +39,10 @@
         >
       </div>
       <div class="resource">
-        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_266/v1658158421/journal_vdoeki.png" alt="journal" />
+        <img
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_266/v1658158421/journal_vdoeki.png"
+          alt="journal"
+        />
         <a
           target="_blank"
           id="link"
@@ -39,7 +51,10 @@
         >
       </div>
       <div class="resource">
-        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_167/v1658158021/drive_uikidy.png" alt="google drive logo" />
+        <img
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_167/v1658158021/drive_uikidy.png"
+          alt="google drive logo"
+        />
         <a
           target="_blank"
           id="link"
@@ -60,7 +75,10 @@
       </div>
 
       <div class="resource">
-        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_266/v1658158424/jamboard2_piqvce.png" alt="jamboard" />
+        <img
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_266/v1658158424/jamboard2_piqvce.png"
+          alt="jamboard"
+        />
         <a
           target="_blank"
           id="link"
@@ -102,29 +120,24 @@ h3 {
   margin-right: auto;
 }
 #resources {
-  width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  padding-bottom: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+  grid-gap: 7rem;
+  justify-items: center;
+  grid-template-rows: auto;
+  padding-bottom: 10rem;
+  margin: 6rem 11rem 0 11rem;
 }
 .resource {
-  margin-top: 5rem;
   height: 30rem;
   width: 30rem;
+  border-radius: 2rem;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  transition: 0.5s ease-in-out;
-  background-color: white;
-  border-radius: 2rem;
 }
 .resourcestop {
   background-color: #333043;
@@ -134,19 +147,15 @@ h3 {
 }
 img {
   height: 15rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
   display: block;
-  margin-top: 3rem;
 }
 #link {
   color: #333043;
   font-size: var(--h5);
   font-family: 'Cairo', sans-serif;
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .item {
   color: #333043;
@@ -160,127 +169,57 @@ ul {
   margin-right: auto;
 }
 @media only screen and (max-width: 1500px) {
-  .resource {
-    width: 30rem;
-    margin-top: 5rem;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(255, 255, 255);
-    border-radius: 2rem;
-    margin-left: 2rem;
-  }
-  .resourcestop {
-    background-color: #333043;
-  }
   img {
     height: 14rem;
   }
-  #link {
-    color: #333043;
-    font-size: var(--h5);
-    font-family: 'Cairo', sans-serif;
-    text-align: center;
-    margin-top: 1rem;
+}
+@media only screen and (max-width: 1032px) {
+  #resources {
+    margin-left: 8rem;
+    margin-right: 8rem;
   }
 }
-@media only screen and (max-width: 720px) {
-  .heading {
-    margin-left: 4rem;
-    margin-top: 0rem;
-  }
+@media only screen and (max-width: 770px) {
   img {
     height: 13rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4rem;
   }
   #link {
     font-size: var(--h6);
   }
   #resources {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 5rem;
+    margin-top: 4rem;
   }
   .resource {
-    margin-top: 3rem;
+    margin-top: 0rem;
     width: 25rem;
     height: 25rem;
   }
   h3 {
     font-size: var(--one);
-  }
-}
-@media only screen and (max-width: 710px) {
-  #resources {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 5rem;
-  }
-  .resource {
-    margin-top: 3rem;
-    width: 25rem;
-    height: 25rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
   }
   h3 {
     font-size: var(--smallText);
   }
 }
-
-@media only screen and (max-width: 620px) {
-  .heading {
-    font-size: var(--h4);
-    text-align: center;
-    margin-left: 0;
-  }
-
-  #resources {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 5rem;
-  }
-  .resource {
-    margin-top: 3rem;
-    width: 25rem;
-    height: 25rem;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(255, 255, 255);
-    border-radius: 2rem;
-    padding-bottom: 2rem;
-  }
-  img {
-    height: 10rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4rem;
-  }
+@media only screen and (max-width: 500px) {
   #link {
     font-size: var(--h6);
   }
   h3 {
     font-size: var(--one);
+  }
+  #resources {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .resource {
+    width: 20rem;
+    height: 22rem;
   }
   .resource:hover {
     transform: scale(1.05);
   }
 }
 </style>
-
