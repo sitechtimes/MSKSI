@@ -1,7 +1,6 @@
 <template>
   <div>
     <CalendarTop />
-    <CalendarMid />
     <Agendas />
   </div>
 </template>

@@ -7,14 +7,11 @@
         <ul id="subc">
           <li class="text">Sign in-Attendance Assist</li>
           <li class="text">Session Feedback/Tracking and follow up</li>
-          <li class="text">
-            Keeping the attendance sign in for meetings in chat
-          </li>
+          <li class="text">Keep the attendance sign in for meetings in chat</li>
           <li class="text">Transformation Tables</li>
           <li class="text">Managing website & calendar</li>
         </ul>
       </div>
-
       <div class="image-container">
         <img
           id="picture"
@@ -114,14 +111,24 @@
     margin-right: 10rem;
   }
 }
+@media only screen and (max-width: 1200px) {
+  #picture {
+    width: 25rem;
+    height: 25rem;
+  }
+  .image-container {
+    margin-top: 6rem;
+    margin-left: 0rem;
+  }
+}
 @media only screen and (max-width: 1032px) {
   .text {
     margin-left: 8rem;
+    width: 100%;
   }
   #picture {
-    width: 21rem;
-    height: 21rem;
-    position: sticky;
+    width: 20rem;
+    height: 20rem;
     margin-top: 0rem;
     display: block;
     margin: auto;
@@ -131,7 +138,7 @@
   }
   .image-container {
     margin-top: 1rem;
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
     justify-content: flex-end;
   }
@@ -148,6 +155,9 @@
   }
 }
 @media only screen and (max-width: 770px) {
+  /* #info {
+    display: block;
+  } */
   .text {
     margin-left: 8rem;
   }
@@ -161,7 +171,6 @@
     margin-top: 0.5rem;
   }
   .heading {
-    font-size: var(--h3);
     margin-top: 0;
     margin-left: 4rem;
   }
@@ -181,9 +190,16 @@
   }
 }
 @media only screen and (max-width: 500px) {
+  #picture {
+    width: 17rem;
+    height: 17rem;
+    margin-left: 5rem;
+  }
   .text {
     margin-top: 0;
     margin-bottom: 0;
+    line-height: 3.5;
+    width: 100%;
   }
   #subc {
     margin-top: 0rem;
