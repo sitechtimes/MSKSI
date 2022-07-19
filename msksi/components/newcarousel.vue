@@ -96,7 +96,6 @@ export default {
 button {
   --btn-size: 65px;
   border: none;
-  background: none;
   position: absolute;
   background-color: red;
   height: var(--btn-size);
@@ -104,7 +103,7 @@ button {
   top: 56%;
   z-index: 5;
 }
-img{
+img {
   height: 50rem;
   width: 50rem;
 }
@@ -126,7 +125,6 @@ img{
   user-select: none;
   z-index: 3;
   position: relative;
-
 }
 .prev--card {
   position: absolute;
