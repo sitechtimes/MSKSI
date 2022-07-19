@@ -179,6 +179,17 @@ export default {
   #info {
     flex-direction: column;
   }
+  .button {
+    margin-top: 7rem;
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: lighter;
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+    margin: 4rem;
+  }
 }
 
 @media only screen and (max-width: 510px) {
@@ -207,7 +218,7 @@ export default {
   .image-container {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0;
   }
 }
