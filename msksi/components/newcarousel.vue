@@ -35,13 +35,13 @@
 <script>
 export default {
     name: 'CarouselNew',
+    props: ['left', 'right'],
     methods: {
         swapCards(direction){
             const cardsContainerEl = this.$refs["card-wrapper"]
             const currentCardEl = cardsContainerEl.querySelector(".current--card");
             const prevCardEl = cardsContainerEl.querySelector(".prev--card");
             const nextCardEl = cardsContainerEl.querySelector(".next--card");
-            swapCardsClass();
             function swapCardsClass(){
                 currentCardEl.classList.remove(".current--card")
                 prevCardEl.classList.remove(".prev--card")
@@ -63,6 +63,7 @@ export default {
                     nextCardEl.classList.add("prev--card");
                 }
             }
+            swapCardsClass();
         }
     }
 }
