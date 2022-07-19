@@ -114,7 +114,7 @@ h3 {
   height: 30rem;
   width: 30rem;
   border-radius: 2rem;
-  background-color: white;
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,7 +123,7 @@ h3 {
    transition: 0.5s ease-in-out;
 }
 .resourcestop {
-  background-color: #333043;
+  background-color: var(--secondarybackground);
 }
 .heading {
   color: var(--yellow);

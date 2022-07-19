@@ -5,20 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
 
 :root {
-  /* --navyblue: #262433;
+  --navyblue: #262433;
   --yellow: #fcdc4d;
+  --darkyellow:#fcdc4d;
   --darkpink: #e9587a;
   --cerise: #dc355c;
   --white: #fff;
   --tpnavyblue: #141127d7;
-  --secondarybackground: #333043; */
-  --navyblue: #1E1E1E;
-  --yellow: #FFFFFF;
-  --darkpink: #FF92AB;
-  --cerise: #FFE9E9;
-  --white: #FFE9E9;
-  --tpnavyblue: #FF92AB;
-  --secondar ybackground:#1E1E1E;
+  --secondarybackground: #333043;
+
 
   --navbar-bg: var(--navyblue);
   --nav-text: var(--white);
@@ -43,10 +38,12 @@
 [data-theme="blackpink"]{
   --navyblue: #1E1E1E;
   --yellow: #FFFFFF;
+  --darkyellow: #FFE9E9;
   --darkpink: #FF92AB;
   --cerise: #FFE9E9;
   --white: #FFE9E9;
-  --tpnavyblue: #141127d7;
+  --tpnavyblue: #FF92AB;
+  --secondarybackground:#1E1E1E;
 }
 
 #navbar {
@@ -156,7 +153,7 @@ body {
     background-color: var(--darkpink);
   }
   .yellow:after{
-    background-color: var(--yellow); 
+    background-color: var(--darkyellow); 
   }
   .button:before {
     content: '';
@@ -170,7 +167,7 @@ body {
     border-radius: 10rem;
   }
   .pink:before{
-    background-color: var(--yellow);
+    background-color: var(--darkyellow);
     color: var(--navyblue);
   }
   .yellow:before{

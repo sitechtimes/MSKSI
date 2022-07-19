@@ -23,7 +23,7 @@ export default {
 </script>
 <style scoped>
 #AboutUsBottom {
-  background-color: #333043;
+  background-color: var(--secondarybackground);
   padding-bottom: 10rem;
 }
 .heading {

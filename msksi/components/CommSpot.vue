@@ -147,7 +147,7 @@ export default {
 .CSreadmore {
   height: 125rem;
   width: 125rem;
-  background-color: #141127d7;
+  background-color: var(--tpnavyblue);
   clip-path: polygon(100% 27%, 68% 100%, 100% 100%);
   position: absolute;
   bottom: 0;
@@ -157,7 +157,7 @@ export default {
 }
 
 .CSroutermore:hover + .CSreadmore {
-  background-color: #141127d7;
+  background-color: var(--navyblue);
 }
 
 .CSroutermore {

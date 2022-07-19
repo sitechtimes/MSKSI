@@ -77,7 +77,7 @@ a {
   cursor: pointer;
 }
 .GalleryTop {
-  background-color: #333043;
+  background-color: var(--secondarybackground);
   padding-bottom: 10rem;
 }
 .gall {
