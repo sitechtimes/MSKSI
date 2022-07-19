@@ -18,7 +18,7 @@
       <div class="image-container">
         <img
           id="picture"
-          src="~/assets/images/social.png"
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_400/v1658163434/social_a4dawq.png"
           alt="woman on social media"
         />
         <form
