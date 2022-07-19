@@ -38,6 +38,7 @@ export default {
     props: ['left', 'right'],
     methods: {
         swapCards(direction){
+            console.log("poo")
             const cardsContainerEl = this.$refs["card-wrapper"]
             const currentCardEl = cardsContainerEl.querySelector(".current--card");
             const prevCardEl = cardsContainerEl.querySelector(".prev--card");

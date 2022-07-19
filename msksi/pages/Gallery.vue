@@ -1,16 +1,15 @@
 <template>
   <div>
-    <newcarousel />
+    <NewCarousel />
     <GalleryTop />
     <AlbumPreview />
-    <GalleryTest />
   </div>
 </template>
 
 <script>
 import GalleryTop from '~/components/GalleryTop.vue'
 import GalleryCarousel from '~/components/GalleryCarousel.vue'
-import newcarousel from '~/components/newcarousel.vue'
+import NewCarousel from '~/components/NewCarousel.vue'
 export default {
   components: { GalleryTop, GalleryCarousel, newcarousel },
   head() {
