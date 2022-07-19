@@ -5,12 +5,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
 
 :root {
-  --navyblue: #262433;
+  /* --navyblue: #262433;
   --yellow: #fcdc4d;
   --darkpink: #e9587a;
   --cerise: #dc355c;
   --white: #fff;
   --tpnavyblue: #141127d7;
+  --secondarybackground: #333043; */
+  --navyblue: #1E1E1E;
+  --yellow: #FFFFFF;
+  --darkpink: #FF92AB;
+  --cerise: #FFE9E9;
+  --white: #FFE9E9;
+  --tpnavyblue: #FF92AB;
+  --secondarybackground:#FF92AB;
 
   --navbar-bg: var(--navyblue);
   --nav-text: var(--white);
@@ -32,6 +40,15 @@
   --four: 4rem;
   --one: 1.3rem;
 }
+[data-theme="blackpink"]{
+  --navyblue: #1E1E1E;
+  --yellow: #FFFFFF;
+  --darkpink: #FF92AB;
+  --cerise: #FFE9E9;
+  --white: #FFE9E9;
+  --tpnavyblue: #141127d7;
+}
+
 #navbar {
   background-color: var(--navyblue);
   width: 100%;

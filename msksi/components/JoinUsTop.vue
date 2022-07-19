@@ -18,7 +18,7 @@
       <div class="image-container">
         <img
           id="picture"
-          src="~/assets/images/subcom.png"
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_300/v1658233391/subcom_lrb2ca.png"
           alt="remote meeting"
         />
         <form
