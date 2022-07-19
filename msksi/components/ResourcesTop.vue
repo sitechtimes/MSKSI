@@ -3,7 +3,7 @@
     <h2 class="heading">Resources</h2>
     <div id="resources">
       <div class="resource">
-        <img src="~/assets/images/folder.png" alt="folder" />
+        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_147/v1658158400/folder_ceqsbs.png" alt="folder" />
         <a
           target="_blank"
           id="link"
@@ -12,7 +12,7 @@
         >
       </div>
       <div class="resource">
-        <img src="~/assets/images/jamboard.png" alt="jamboard" />
+        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_266/v1658158427/jamboard_ss2kz9.png" alt="jamboard" />
         <a
           target="_blank"
           id="link"
@@ -21,7 +21,7 @@
         >
       </div>
       <div class="resource">
-        <img src="~/assets/images/padlet.png" alt="padlet logo" />
+        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_150/v1658158440/padlet_fioxqe.png" alt="padlet logo" />
         <a
           target="_blank"
           id="link"
@@ -30,7 +30,7 @@
         >
       </div>
       <div class="resource">
-        <img src="~/assets/images/journal.png" alt="journal" />
+        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_266/v1658158421/journal_vdoeki.png" alt="journal" />
         <a
           target="_blank"
           id="link"
@@ -39,7 +39,7 @@
         >
       </div>
       <div class="resource">
-        <img src="~/assets/images/drive.png" alt="google drive logo" />
+        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_167/v1658158021/drive_uikidy.png" alt="google drive logo" />
         <a
           target="_blank"
           id="link"
@@ -60,7 +60,7 @@
       </div>
 
       <div class="resource">
-        <img src="~/assets/images/jamboard2.png" alt="jamboard" />
+        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_266/v1658158424/jamboard2_piqvce.png" alt="jamboard" />
         <a
           target="_blank"
           id="link"
