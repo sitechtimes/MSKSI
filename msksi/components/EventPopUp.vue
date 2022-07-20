@@ -34,8 +34,7 @@ export default {
           } else {
               return this.eventdate;
           }
-      }
-  methods:{
+      },
     gifHover(){
       this.gifVisible = true;
     },
