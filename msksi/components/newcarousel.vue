@@ -3,7 +3,11 @@
     <div class="cardList" ref="cardList">
       <button @click="swapCards(left)" class="left btn">
         <div class="icon">
-          <img src="https://o.remove.bg/downloads/56be51e8-d09c-43bc-9120-83b2413dfe0d/download-removebg-preview.png" alt="" class="left arrow">
+          <img
+            src="~assets/images/CarouselArrow.png"
+            alt=""
+            class="left arrow"
+          />
         </div>
       </button>
       <div class="card-wrapper" ref="card-wrapper">
@@ -34,7 +38,11 @@
       </div>
       <button @click="swapCards(right)" class="right btn">
         <div class="icon">
-          <img src="https://o.remove.bg/downloads/56be51e8-d09c-43bc-9120-83b2413dfe0d/download-removebg-preview.png" alt="" class="right arrow">
+          <img
+            src="~assets/images/CarouselArrow.png"
+            alt=""
+            class="right arrow"
+          />
         </div>
       </button>
     </div>
@@ -73,8 +81,9 @@ export default {
       }
       swapCardsClass()
     },
-    }
-  };
+    cardSwitch() {},
+  },
+}
 </script>
 
 <style scoped>
@@ -95,26 +104,26 @@ export default {
   background: none;
   height: var(--btn-size);
   width: var(--btn-size);
-  top: 48%;
+  top: 46%;
   z-index: 5;
   transition: all 0.2s;
 }
-.btn:hover{
+.btn:hover {
   transform: scale(1.15);
 }
 img {
   height: 50rem;
   width: 50rem;
 }
-.arrow{
-  height: 3rem;
-  width: 3rem;
+.arrow {
+  height: 4rem;
+  width: 4rem;
 }
-.right.arrow{
+.right.arrow {
   transform: rotate(180deg);
 }
-.left.btn{
-  left: 29%;
+.left.btn {
+  left: 30%;
 }
 .right.btn {
   right: 35%;
