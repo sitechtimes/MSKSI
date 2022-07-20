@@ -3,7 +3,7 @@
     <div class="cardList">
       <button @click="swapCards(left)" class="left-btn">
         <div class="icon">
-          <p>L</p>
+          <img src="https://o.remove.bg/downloads/56be51e8-d09c-43bc-9120-83b2413dfe0d/download-removebg-preview.png" alt="" class="arrow-1">
         </div>
       </button>
       <div class="card-wrapper" ref="card-wrapper">
@@ -34,7 +34,7 @@
       </div>
       <button @click="swapCards(right)" class="right-btn">
         <div class="icon">
-          <p>R</p>
+          <img src="https://o.remove.bg/downloads/56be51e8-d09c-43bc-9120-83b2413dfe0d/download-removebg-preview.png" alt="" class="arrow-2">
         </div>
       </button>
     </div>
@@ -62,16 +62,10 @@ export default {
         nextCardEl.classList.remove('next--card')
 
         if (direction === 'right') {
-          prevCardEl.style.zIndex = '2'
-          nextCardEl.style.zIndex = '3'
-
           currentCardEl.classList.add('prev--card')
           prevCardEl.classList.add('next--card')
           nextCardEl.classList.add('current--card')
         } else if (direction === 'left') {
-          prevCardEl.style.zIndex = '3'
-          nextCardEl.style.zIndex = '2'
-
           currentCardEl.classList.add('next--card')
           prevCardEl.classList.add('current--card')
           nextCardEl.classList.add('prev--card')
@@ -86,26 +80,40 @@ export default {
 <style scoped>
 .NewCarousel {
   width: 100%;
-  height: 95rem;
+  height: 80rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--navyblue);
   overflow: hidden;
+  padding: 0 0 2rem 0;
 }
 button {
   --btn-size: 65px;
   border: none;
   position: absolute;
-  background-color: red;
+  background: none;
   height: var(--btn-size);
   width: var(--btn-size);
-  top: 56%;
+  top: 48%;
   z-index: 5;
 }
 img {
   height: 50rem;
   width: 50rem;
+}
+.arrow-1{
+  height: 3rem;
+  width: 3rem;
+}
+.arrow-2{
+  height: 3rem;
+  width: 3rem;
+  transform: rotate(180deg);
+}
+
+.left-btn{
+  left: 29%;
 }
 .right-btn {
   right: 35%;
