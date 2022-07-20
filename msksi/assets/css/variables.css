@@ -99,8 +99,8 @@ body {
   margin-left: 11rem;
   font-size: var(--h3);
   margin-top: 4.5rem;
-  font-family: 'Black Han Sans';
-  font-weight: lighter;
+  font-family: 'Sora';
+  font-weight: bolder;
 }
 .button {
   padding: 1.2rem;
@@ -109,11 +109,12 @@ body {
   height: 8rem;
   font-size: var(--h4);
   border-radius: 20rem;
-  font-family: 'Black Han Sans';
+  font-family: 'Sora';
   border: none;
   cursor: url('../images/hoverBtnCursor.png'), auto;
   z-index: 1;
   transition: 0.5s ease-in-out;
+  font-weight: bolder;
 }
 .button:hover {
   transform: scale(1.1);

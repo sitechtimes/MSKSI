@@ -27,10 +27,11 @@ export default {
 }
 .name {
   font-size: var(--h1);
-  font-family: 'Black Han Sans';
-  font-weight: lighter;
+  font-family: 'Sora';
   color: var(--yellow);
   padding-top: 7rem;
+  font-weight: bolder;
+  font-style: normal;
 }
 .alignright {
   width: fit-content;
