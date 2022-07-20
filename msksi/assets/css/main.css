@@ -76,8 +76,12 @@ body,
   .text {
     font-size: var(--h6);
   }
+  .gifImage{
+    display:none;
+  }
 }
 .menuIcon {
   background-color: transparent;
   border-color: transparent;
 }
+
