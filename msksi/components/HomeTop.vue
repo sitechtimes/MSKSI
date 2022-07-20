@@ -2,7 +2,7 @@
   <div>
     <div class="hometop">
       <div class="alignright">
-        <h2 class="name mysis">My Sister’s</h2>
+        <h2 class="name mysis"><span id="yellow"></span> My Sister’s</h2>
         <div class="line2">
           <svg
             version="1.1"
@@ -162,7 +162,7 @@
             </g>
           </svg>
 
-          <h2 class="name keeper">Keeper</h2>
+          <h2 class="name keeper"><span id="pink"></span>Keeper</h2>
         </div>
 
         <h3 class="si">Staten Island</h3>
@@ -226,26 +226,41 @@ export default {
     },
     drawLogo() {
       const fadeTL = this.$gsap.timeline()
-      const split = new SplitText('.name', { type: 'chars, words' })
+
       fadeTL
-        .fromTo(
-          split.chars,
+
+        .to('#yellow, #pink', {
+          visibility: 'visible',
+          width: '100%',
+          duration: 0.3,
+          delay: 2,
+        })
+        .to(
+          '#yellow, #pink',
           {
-            opacity: 0,
-            x: 200,
-            y: 100,
-            stagger: 0.05,
+            width: 0,
+            right: 0,
+            duration: 1,
           },
-          {
-            x: 0,
-            y: 0,
-            opacity: 1,
-
-            duration: 0.8,
-            delay: 2,
-          }
+          '>'
         )
-
+        .to(
+          '.name',
+          {
+            visibility: 'visible',
+            duration: 2,
+          },
+          '<'
+        )
+        .to(
+          '.si',
+          {
+            y: -10,
+            duration: 0.5,
+            opacity: 1,
+          },
+          '<'
+        )
         .from(
           '#logo-img',
           {
@@ -255,17 +270,18 @@ export default {
             top: '50%',
             position: 'absolute',
             ease: 'none',
-            duration: 0.5,
+            duration: 0.3,
             scale: 1.5,
             opacity: 1,
           },
-          '<'
+          '<-1'
         )
+
         .to(
           '#logo-img',
           {
             rotate: -40,
-            duration: 0.5,
+            duration: 0.3,
             scale: 0.8,
           },
           '<'
@@ -275,7 +291,7 @@ export default {
           {
             scale: 0.9,
             rotate: 10,
-            duration: 0.5,
+            duration: 0.3,
           },
           '>'
         )
@@ -284,7 +300,7 @@ export default {
           {
             scale: 1,
             rotate: 0,
-            duration: 0.5,
+            duration: 0.3,
           },
           '>'
         )
@@ -292,7 +308,7 @@ export default {
         .from(
           '#logo-line1',
           {
-            duration: 1.5,
+            duration: 0.5,
             y: 30,
             opacity: 0,
             delay: 0.2,
@@ -303,7 +319,7 @@ export default {
         .from(
           '#logo-line2',
           {
-            duration: 1,
+            duration: 0.5,
             y: 30,
             x: 20,
             opacity: 0,
@@ -314,7 +330,7 @@ export default {
         .from(
           '#logo-line3',
           {
-            duration: 1,
+            duration: 0.5,
             y: 30,
             x: 30,
             opacity: 0,
@@ -325,7 +341,7 @@ export default {
         .from(
           '#logo-line4',
           {
-            duration: 1,
+            duration: 0.5,
 
             x: 30,
             opacity: 0,
@@ -336,7 +352,7 @@ export default {
         .from(
           '#logo-line5',
           {
-            duration: 1,
+            duration: 0.5,
             y: -30,
             x: 30,
             opacity: 0,
@@ -347,7 +363,7 @@ export default {
         .from(
           '#logo-line6',
           {
-            duration: 1,
+            duration: 0.5,
             y: -30,
             x: 20,
             opacity: 0,
@@ -358,7 +374,7 @@ export default {
         .from(
           '#logo-line7',
           {
-            duration: 1,
+            duration: 0.5,
             y: -30,
             x: 20,
             opacity: 0,
@@ -369,7 +385,7 @@ export default {
         .from(
           '#logo-line8',
           {
-            duration: 1,
+            duration: 0.5,
             y: -30,
             opacity: 0,
             delay: 0.2,
@@ -379,7 +395,7 @@ export default {
         .from(
           '#logo-line9',
           {
-            duration: 1,
+            duration: 0.5,
             y: -30,
 
             opacity: 0,
@@ -390,7 +406,7 @@ export default {
         .from(
           '#logo-line10',
           {
-            duration: 1,
+            duration: 0.5,
             y: -30,
             x: -20,
             opacity: 0,
@@ -401,7 +417,7 @@ export default {
         .from(
           '#logo-line11',
           {
-            duration: 1,
+            duration: 0.5,
             y: -30,
             x: -30,
             opacity: 0,
@@ -412,7 +428,7 @@ export default {
         .from(
           '#logo-line12',
           {
-            duration: 1,
+            duration: 0.5,
             y: -30,
             x: -30,
             opacity: 0,
@@ -423,7 +439,7 @@ export default {
         .from(
           '#logo-line13',
           {
-            duration: 1,
+            duration: 0.5,
             y: -30,
             x: -30,
             opacity: 0,
@@ -434,7 +450,7 @@ export default {
         .from(
           '#logo-line14',
           {
-            duration: 1,
+            duration: 0.5,
 
             x: -30,
             opacity: 0,
@@ -445,7 +461,7 @@ export default {
         .from(
           '#logo-line15',
           {
-            duration: 1,
+            duration: 0.5,
             x: -30,
             opacity: 0,
             delay: 0.4,
@@ -455,7 +471,7 @@ export default {
         .from(
           '#logo-line16',
           {
-            duration: 1,
+            duration: 0.5,
             y: 30,
             opacity: 0,
             delay: 0.6,
@@ -465,7 +481,7 @@ export default {
         .from(
           '#logo-line17',
           {
-            duration: 1,
+            duration: 0.5,
             y: 30,
             opacity: 0,
             delay: 0.4,
@@ -475,7 +491,7 @@ export default {
         .from(
           '#logo-line18',
           {
-            duration: 1,
+            duration: 0.5,
             y: 30,
             opacity: 0,
             delay: 0.1,
@@ -488,7 +504,7 @@ export default {
             scale: 0.8,
           },
           {
-            duration: 0.7,
+            duration: 0.4,
             opacity: 1,
             scale: 1.1,
             x: 0,
@@ -499,7 +515,7 @@ export default {
         .to(
           '#heart',
           {
-            duration: 0.5,
+            duration: 0.4,
             scale: 1,
           },
           '>'
@@ -520,6 +536,7 @@ export default {
   font-weight: lighter;
   color: var(--yellow);
   padding-top: 7rem;
+  visibility: hidden;
 }
 .alignright {
   width: fit-content;
@@ -533,6 +550,8 @@ export default {
   font-size: 13rem;
   text-align: right;
   padding-top: 20rem;
+  position: relative;
+  width: fit-content;
 }
 .line2 {
   display: flex;
@@ -549,9 +568,25 @@ export default {
   text-align: right;
   padding-top: 0rem;
   margin-top: 2rem;
-  width: 50rem;
+  width: fit-content;
   margin-right: 0%;
   margin-left: 4rem;
+  position: relative;
+}
+#yellow {
+  background-color: var(--yellow);
+  width: 0;
+  height: 40%;
+  position: absolute;
+  visibility: hidden;
+}
+
+#pink {
+  background-color: var(--darkpink);
+  width: 0;
+  height: 65%;
+  position: absolute;
+  visibility: hidden;
 }
 
 #logo-img {
@@ -575,6 +610,7 @@ export default {
   text-align: right;
   margin-top: 7rem;
   margin-left: 75%;
+  opacity: 0;
 }
 @media only screen and (max-width: 1500px) {
   .hometop {
@@ -626,6 +662,9 @@ export default {
     width: auto;
     height: 16rem;
   }
+  #yellow {
+    height: 35%;
+  }
 }
 @media only screen and (max-width: 770px) {
   .hometop {
@@ -639,7 +678,7 @@ export default {
   }
   .name {
     font-size: var(--h2);
-    margin-left: 0;
+    margin-left: 5rem;
     margin-right: 0;
   }
   .line2 {
@@ -659,10 +698,14 @@ export default {
   #logo-img {
     height: 10rem;
   }
+  #yellow {
+    height: 25%;
+  }
 }
 @media only screen and (max-width: 500px) {
   .name {
     font-size: var(--h3);
+    margin-left: 3rem;
   }
   .line2 {
     margin-right: 3rem;
@@ -678,6 +721,9 @@ export default {
   }
   #logo-img {
     height: 8rem;
+  }
+  #yellow {
+    height: 20%;
   }
 }
 </style>
