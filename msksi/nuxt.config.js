@@ -34,6 +34,7 @@ export default {
       scrollTo: true,
       scrollTrigger: true,
       MotionPathPlugin: true,
+      SplitText: true,
     },
   },
 

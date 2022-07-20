@@ -208,7 +208,7 @@ export default {
           '<'
         )
         .to(
-          '#logo-line15, #logo-line13',
+          '#logo-line15, #logo-line13, #logo-line14',
           {
             x: 10,
             duration: 1,
@@ -226,21 +226,26 @@ export default {
     },
     drawLogo() {
       const fadeTL = this.$gsap.timeline()
+      const split = new SplitText('.name', { type: 'chars, words' })
       fadeTL
         .fromTo(
-          '.name, .si',
+          split.chars,
           {
             opacity: 0,
             x: 200,
+            y: 100,
+            stagger: 0.05,
           },
           {
             x: 0,
             y: 0,
             opacity: 1,
-            duration: 1,
+
+            duration: 0.8,
             delay: 2,
           }
         )
+
         .from(
           '#logo-img',
           {
@@ -256,7 +261,34 @@ export default {
           },
           '<'
         )
-        .add('bounce')
+        .to(
+          '#logo-img',
+          {
+            rotate: -40,
+            duration: 0.5,
+            scale: 0.8,
+          },
+          '<'
+        )
+        .to(
+          '#logo-img',
+          {
+            scale: 0.9,
+            rotate: 10,
+            duration: 0.5,
+          },
+          '>'
+        )
+        .to(
+          '#logo-img',
+          {
+            scale: 1,
+            rotate: 0,
+            duration: 0.5,
+          },
+          '>'
+        )
+
         .from(
           '#logo-line1',
           {
