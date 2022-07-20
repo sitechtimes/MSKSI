@@ -3,7 +3,6 @@
     <AboutUsTop />
     <AboutUsMid />
     <AboutUsBottom />
-    <Agenda /> 
   </div>
 </template>
 
@@ -11,8 +10,7 @@
 import AboutUsTop from '~/components/AboutUsTop.vue'
 import AboutUsMid from '~/components/AboutUsMid.vue'
 import AboutUsBottom from '~/components/AboutUsBottom.vue'
-import Agenda from '../components/Agenda.vue'
 export default {
-  components: { AboutUsTop, AboutUsMid, AboutUsBottom, Agenda },
+  components: { AboutUsTop, AboutUsMid, AboutUsBottom },
 }
 </script>
