@@ -3,7 +3,6 @@
     <AboutUsTop />
     <AboutUsMid />
     <AboutUsBottom />
-    <Agenda />
   </div>
 </template>
 

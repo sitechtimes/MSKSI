@@ -1,7 +1,7 @@
 <template>
   <div class="Agendas">
     <h2 class="heading" id="agendas">Agendas</h2>
-    <h3 class="text">Click to view agendas.</h3>
+    <h3 class="text" id="text">Click to view agendas.</h3>
     <div class="agendas-container">
       <div class="yearly-agenda">
         <div class="container">
@@ -119,8 +119,10 @@ export default {
   font-family: 'Sora';
   font-style: normal;
   font-weight: 700;
-  font-size: 7.8rem;
   text-align: center;
+}
+#text {
+  font-size: var(--h4);
 }
 .text {
   color: var(--white);
@@ -128,8 +130,7 @@ export default {
   font-style: normal;
   font-weight: 400;
   text-align: center;
-  line-height: 10rem;
-  font-size: 2.8rem;
+  line-height: 7.5rem;
 }
 .agendas-container {
   display: grid;
@@ -151,7 +152,6 @@ export default {
   font-family: 'Sora';
   font-style: normal;
   font-weight: 700;
-  font-size: 4.5rem;
   margin-top: 3.5rem;
   padding-bottom: 3rem;
 }
@@ -164,7 +164,7 @@ a {
 }
 ul li::before {
   content: '•';
-  font-size: 8rem;
+  font-size: 10rem;
   color: var(--yellow);
   text-align: center;
   vertical-align: middle;
@@ -178,7 +178,8 @@ li {
   color: var(--navy);
   text-align: left;
   margin-left: 20rem;
-  line-height: 8rem;
+  line-height: 6rem;
+  font-size: var(--h4);
   cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
 }
 /* .date::before {
@@ -192,14 +193,142 @@ li {
   cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
   margin-top: 1.5rem;
   margin-bottom: auto;
-  margin-right: 6rem;
+  margin-right: 8rem;
+  margin: 1.5rem 8rem auto 0;
 }
 .arrow {
   height: 10rem;
   cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
+  transition: 0.5s;
   /* transform: rotate(180deg); */
 }
 .down {
   transform: rotate(180deg);
+  transition: 0.5s;
+}
+@media only screen and (max-width: 1500px) {
+  .agendas-container {
+    margin-top: 3rem;
+    grid-gap: 5.5rem;
+  }
+  #text {
+    font-size: var(--h5);
+    line-height: 6rem;
+  }
+  .year {
+    font-size: var(--h4);
+    margin: 3rem 0rem 0rem 8rem;
+  }
+  .arrow {
+    height: 7.5rem;
+  }
+  .toggle {
+    margin: 1.5rem 6rem auto 0;
+  }
+  .date {
+    font-size: var(--h5);
+    margin-left: 15rem;
+    line-height: 4rem;
+  }
+  ul li::before {
+    font-size: 7rem;
+  }
+}
+@media only screen and (max-width: 1032px) {
+  .agendas-container {
+    grid-gap: 5rem;
+  }
+  .yearly-agenda {
+    margin: 0 8rem 0 8rem;
+  }
+  .year {
+    margin: 3rem 0rem 0rem 5rem;
+  }
+  .toggle {
+    margin: 1.5rem 3.5rem auto 0;
+  }
+  .date {
+    margin-left: 11rem;
+    height: 4rem;
+  }
+  ul li::before {
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .agendas-container {
+    margin-top: 3rem;
+    grid-gap: 4rem;
+  }
+  .yearly-agenda {
+    margin: 0 5rem 0 5rem;
+  }
+  .container {
+    height: 8rem;
+  }
+  .year {
+    margin: 2.75rem 0rem 0rem 4rem;
+    font-size: var(--h5);
+  }
+  #text {
+    line-height: 2.5;
+    font-size: var(--h6);
+  }
+  .toggle {
+    margin: 1.5rem 2.5rem auto 0;
+  }
+  .arrow {
+    height: 5.5rem;
+  }
+  ul {
+    padding-bottom: 3rem;
+  }
+  ul li::before {
+    font-size: 4rem;
+    margin-right: 1rem;
+  }
+  .date {
+    margin-left: 7rem;
+    height: 3rem;
+    font-size: var(--h6);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .agendas-container {
+    margin-top: 2rem;
+    grid-gap: 2.2rem;
+  }
+  .yearly-agenda {
+    margin: 0 3rem 0 3rem;
+  }
+  .container {
+    height: 6rem;
+  }
+  #text {
+    font-size: var(--one);
+    line-height: 2;
+  }
+  .year {
+    margin: 2.1rem 0rem 0rem 2.5rem;
+    font-size: var(--h6);
+    padding-bottom: 2rem;
+  }
+  .toggle {
+    margin: 1.5rem 2rem auto 0;
+  }
+  .arrow {
+    height: 3.3rem;
+  }
+  .date {
+    font-size: var(--one);
+    height: 2.5rem;
+    margin-left: 5rem;
+  }
+  ul {
+    padding-bottom: 2.2rem;
+  }
+  ul li::before {
+    font-size: 3.5rem;
+  }
 }
 </style>
