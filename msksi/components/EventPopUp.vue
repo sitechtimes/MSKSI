@@ -1,5 +1,6 @@
 <template>
-    <div class="previewcard">
+    <div @mouseover="gifHover" @mouseleave="gifLeave" class="previewcard">
+        <div class="eventinfo">
         <div class="dates">
         <p class="eventmonth"> {{ eventmonth }}</p>
         <p class="eventnumber"> {{ leadingZero(eventdate) }}</p>
@@ -8,13 +9,19 @@
         <div class="cal-button">
             <a class="calendarlink" href="/Calendar">Read More...</a>
         </div>
-        <a class="cal-arrow" href="/Calendar">></a>
+        </div>
+         <img v-show="gifVisible" src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_139/v1658147894/MSKSI/pinkHeartJif_f6kcd1.gif" alt="heart gif when hover" class="gifImage">
     </div>
 </template>
-
+ 
 <script>
 export default {
     name: `EventPopUp`,
+    data(){
+        return{
+            gifVisible: false,
+        }
+    },
     props: {
     eventname: String,
     eventmonth: String,
@@ -28,6 +35,13 @@ export default {
               return this.eventdate;
           }
       }
+  methods:{
+    gifHover(){
+      this.gifVisible = true;
+    },
+    gifLeave(){
+      this.gifVisible = false;
+    }
   }
 }
 </script>
@@ -42,6 +56,22 @@ export default {
     border-radius: 2rem;
     font-family: 'ABeeZee', sans-serif;
     padding-top: 3rem;
+    transition: all .3s;
+    position: relative;
+}
+.previewcard:hover{
+      transform: translateY(-5px);
+}
+.eventinfo{
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.gifImage{
+    width:25%;
+    /* position: inherit; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 .dates{
     display: flex;

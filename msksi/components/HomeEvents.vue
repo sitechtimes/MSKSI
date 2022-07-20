@@ -11,7 +11,7 @@
        </div>
     </div>
 </template>
-
+aadfas
 <script>
 export default {
   name: `HomeEvents`,
