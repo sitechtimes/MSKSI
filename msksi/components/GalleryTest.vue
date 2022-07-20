@@ -1,6 +1,6 @@
 <template>
   <div class="Gallery">
-    <h2 class="heading">Photo <span class="gall">Gallery</span></h2>
+    <h2 class="heading">Photo <span class="gall heading">Gallery</span></h2>
     <div class="Albums">
       <Album
         v-for="album in albums"
@@ -40,7 +40,7 @@ a {
 .gall {
   color: var(--darkpink);
   margin: 0;
-  font-size: var(--h1);
+  /* font-size: var(--h1); */
 }
 .name {
   font-family: 'ABeeZee', sans-serif;
@@ -86,7 +86,7 @@ a {
 @media only screen and (max-width: 1032px) {
   .polaroid-container {
     grid-gap: 5rem;
-    margin: 7rem;
+    margin: 5rem;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -112,6 +112,10 @@ a {
     margin-top: 0rem;
     margin-bottom: 1rem;
     font-size: var(--h6);
+  }
+  .Albums {
+    margin: 0;
+    margin-top: 5rem;
   }
 }
 </style>
