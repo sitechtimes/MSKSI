@@ -123,10 +123,10 @@ h3 {
    transition: 0.5s ease-in-out;
 }
 .resourcestop {
-  background-color: var(--secondarybackground);
+  background-color: var(--second-primary);
 }
 .heading {
-  color: var(--yellow);
+  color: var(--secondary);
 }
 img {
   height: 15rem;

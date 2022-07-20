@@ -115,7 +115,7 @@ export default {
   padding-bottom: 8rem;
 }
 #agendas {
-  color: var(--white);
+  color: var(--font-color);
   font-family: 'Sora';
   font-style: normal;
   font-weight: 700;
@@ -123,7 +123,7 @@ export default {
   text-align: center;
 }
 .text {
-  color: var(--white);
+  color: var(--font-color);
   font-family: 'ABeeZee';
   font-style: normal;
   font-weight: 400;
@@ -137,7 +137,7 @@ export default {
   margin-top: 5rem;
 }
 .yearly-agenda {
-  background-color: var(--white);
+  background-color: var(--font-color);
   margin: 0 10rem 0 10rem;
   border-radius: 1rem;
 }
@@ -165,7 +165,7 @@ a {
 ul li::before {
   content: '•';
   font-size: 8rem;
-  color: var(--yellow);
+  color: var(--secondary);
   text-align: center;
   vertical-align: middle;
   margin-right: 2rem;

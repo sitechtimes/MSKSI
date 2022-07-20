@@ -25,13 +25,13 @@ export default {
   padding-bottom: 10rem;
 }
 .gall {
-  color: var(--darkpink);
+  color: var(--teritary);
   font-size: var(--h1);
 }
 .name {
   font-family: 'ABeeZee', sans-serif;
   font-style: normal;
-  color: var(--navyblue);
+  color: var(--primary);
   text-align: center;
   font-size: var(--h5);
   width: 20rem;

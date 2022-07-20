@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .specialmonthly {
-  background-color: var(--navyblue);
+  background-color: var(--primary);
   padding-bottom: 4rem;
 }
 

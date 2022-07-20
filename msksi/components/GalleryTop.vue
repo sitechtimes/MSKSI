@@ -77,17 +77,17 @@ a {
   cursor: pointer;
 }
 .GalleryTop {
-  background-color: var(--secondarybackground);
+  background-color: var(--second-primary);
   padding-bottom: 10rem;
 }
 .gall {
-  color: var(--darkpink);
+  color: var(--teritary);
   margin: 0;
 }
 .name {
   font-family: 'ABeeZee', sans-serif;
   font-style: normal;
-  color: var(--navyblue);
+  color: var(--primary);
   text-align: center;
   font-size: var(--h5);
   width: 20rem;

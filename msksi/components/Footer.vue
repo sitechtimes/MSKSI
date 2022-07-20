@@ -46,21 +46,21 @@
 </template>
 <style scoped>
 #footer {
-  background-color: var(--navyblue);
+  background-color: var(--primary);
   text-align: center;
   justify-content: center;
   bottom: 0px;
   width: 100%;
 }
 .contacts {
-  color: var(--white);
+  color: var(--font-color);
   margin-top: 2rem;
   font-weight: lighter;
   font-size: var(--h5);
   font-family: 'ABeeZee', sans-serif;
 }
 .contactus {
-  color: var(--darkpink);
+  color: var(--teritary);
   font-size: var(--h3);
   font-family: 'Black Han Sans';
   padding-top: 3.5rem;

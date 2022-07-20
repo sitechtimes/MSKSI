@@ -65,7 +65,7 @@ export default {
   text-align: right;
   margin-left: 5rem;
   font-family: 'ABeeZee', sans-serif;
-  color: var(--navyblue);
+  color: var(--primary);
   font-size: var(--h5);
 }
 .Agendas {
@@ -73,12 +73,12 @@ export default {
   padding-bottom: 10rem;
 }
 .heading {
-  color: var(--navyblue);
+  color: var(--primary);
   text-align: center;
 }
 .subheading {
   font-size: var(--h3);
-  color: var(--darkpink);
+  color: var(--teritary);
   text-align: left;
   margin-left: 4rem;
   font-family: 'Black Han Sans';
@@ -97,7 +97,7 @@ export default {
   }
   .link {
     margin-left: 4rem;
-    color: var(--navyblue);
+    color: var(--primary);
     font-size: var(--h5);
   }
   .subheading {

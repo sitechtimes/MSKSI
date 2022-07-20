@@ -43,7 +43,7 @@ export default {
 .previewcard{
     height: 45rem;
     width: 45rem;
-    background-color: var(--navyblue);
+    background-color: var(--primary);
     border-radius: 2rem;
     font-family: 'ABeeZee', sans-serif;
     padding-top: 3rem;
@@ -72,18 +72,18 @@ export default {
 }
 .eventname{
     font-size: 5rem;
-    color: var(--white);
+    color: var(--font-color);
     text-align: left;
     padding: 0 0 0 1.2rem;
 }
 .eventmonth {
     font-size: var(--h3);
-    color: var(--white);
+    color: var(--font-color);
     font-size: 7rem;
 }
 .eventnumber{
     font-size: 16rem;
-    color: var(--white);
+    color: var(--font-color);
     font-family: 'Black Han Sans', sans-serif;
     padding: 0 2rem 0 0;
 }
@@ -93,13 +93,13 @@ export default {
     
 }
 .calendarlink {
-    color: var(--white);
+    color: var(--font-color);
     font-size: var(--h4);
     text-decoration: none;
     transition: all .2s;
 }
 .calendarlink:hover {
-    color: var(--darkpink);
+    color: var(--teritary);
 }
 @media screen and (max-width: 1500px){
 .previewcard{

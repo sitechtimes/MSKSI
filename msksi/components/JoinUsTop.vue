@@ -58,26 +58,26 @@
   width: 30rem;
 }
 .joinustop {
-  background-color: var(--secondarybackground);
+  background-color: var(--second-primary);
   padding-bottom: 8rem;
 }
 
 .pink {
-  background-color: var(--darkpink);
-  color: white;
+  background-color: var(--teritary);
+  color: var(--font-color);
   filter: drop-shadow(3px 4px 3px black);
   margin-top: 4rem;
 }
 
 #subc {
   list-style-type: circle;
-  color: white;
+  color: var(--font-color);
   margin-top: 2rem;
   padding-bottom: 5rem;
   flex-direction: row;
 }
 .subc {
-  color: var(--darkpink);
+  color: var(--teritary);
   font-size: var(--h2);
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -158,7 +158,7 @@
     margin-left: 8rem;
   }
   .subc {
-    color: var(--darkpink);
+    color: var(--teritary);
     font-size: var(--h3);
     margin-left: 4rem;
     margin-top: 0.2rem;

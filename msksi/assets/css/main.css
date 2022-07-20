@@ -20,7 +20,7 @@ a {
   font-family: 'Black Han Sans';
   margin: 0rem 11rem 0 11rem;
   font-weight: lighter;
-  color: var(--yellow);
+  color: var(--secondary);
   padding-top: 7rem;
 }
 .text {

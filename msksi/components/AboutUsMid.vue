@@ -51,7 +51,7 @@ export default {
 <style scoped>
 .AboutUsMid {
   text-align: center;
-  background-color: var(--white);
+  background-color: var(--font-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,11 +62,11 @@ export default {
   margin: 10rem 0 10rem 0;
 }
 .msksi {
-  color: var(--darkpink);
+  color: var(--teritary);
   padding-top: 0;
 }
 .vision {
-  color: var(--navyblue);
+  color: var(--primary);
   padding-top: 1.2rem;
 }
 #right {
@@ -83,7 +83,7 @@ export default {
 }
 .list {
   font-size: var(--h3);
-  color: var(--navyblue);
+  color: var(--primary);
   display: block;
   text-align: left;
   line-height: 4rem;
@@ -103,7 +103,7 @@ li {
 @media only screen and (max-width: 1032px) {
   .AboutUsMid {
     text-align: center;
-    background-color: var(--white);
+    background-color: var(--font-color);
     display: inline-block;
     padding-bottom: 6rem;
   }

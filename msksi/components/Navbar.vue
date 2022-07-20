@@ -10,6 +10,7 @@
       <router-link class="navRouter router" to="/JoinUs"> Join Us </router-link>
     </div>
     <Menu />
+    <!-- <ColorPicker /> -->
   </header>
 </template>
 

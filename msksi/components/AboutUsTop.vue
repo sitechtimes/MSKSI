@@ -34,10 +34,10 @@ export default {
 <style scoped>
 .AboutUsTop {
   padding-bottom: 9rem;
-  background-color: var(--secondarybackground);
+  background-color: var(--second-primary);
 }
 .mission {
-  color: var(--darkpink);
+  color: var(--teritary);
   font-size: var(--h1);
 }
 .blockText {
@@ -47,7 +47,7 @@ export default {
 .text {
   margin: 4rem 11rem 0 11rem;
   font-family: 'Cairo', sans-serif;
-  color: var(--white);
+  color: var(--font-color);
   text-align: left;
   justify-content: center;
 }

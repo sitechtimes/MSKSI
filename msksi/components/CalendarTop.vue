@@ -21,7 +21,7 @@ export default {
 
 <style scoped>
 .calendartop {
-  background-color: var(--secondarybackground);
+  background-color: var(--second-primary);
   height: 100rem;
 }
 .calendarFlex {

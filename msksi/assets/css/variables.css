@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
 
 :root {
+  /* normal variables */
   --navyblue: #262433;
   --yellow: #fcdc4d;
   --darkyellow:#fcdc4d;
@@ -13,7 +14,29 @@
   --white: #fff;
   --tpnavyblue: #141127d7;
   --secondarybackground: #333043;
+  /* black pink variables */
+  --black: #1E1E1E;
+  --white: #FFFFFF;
+  --lightpink: #FFE9E9;
+  --darkpink: #FF92AB;
 
+/* intentions */
+  /* --primary: var(--navyblue);
+  --secondary:var(--yellow);
+  --secondary-version:var(--darkyellow);
+  --teritary:var(--darkpink);
+  --light-teritary:var(--cerise);
+  --font-color:var(--white);
+  --tp-bg:var(--tpnavyblue);
+  --second-primary: var(--secondarybackground); */
+  --primary: var(--black);
+  --secondary:var(--white);
+  --secondary-version:var(--lightpink);
+  --teritary:var(--darkpink);
+  --light-teritary:var(--lightpink);
+  --font-color:var(--white);
+  --tp-bg:var(--darkpink);
+  --second-primary: var(--black);
 
   --navbar-bg: var(--navyblue);
   --nav-text: var(--white);
@@ -35,19 +58,39 @@
   --four: 4rem;
   --one: 1.3rem;
 }
-[data-theme="blackpink"]{
-  --navyblue: #1E1E1E;
+.blackpink{
+  --primary: var(--black);
+  --secondary:var(--white);
+  --secondary-version:var(--lightpink);
+  --teritary:var(--darkpink);
+  --light-teritary:var(--lightpink);
+  --font-color:var(--white);
+  --tp-bg:var(--darkpink);
+  --second-primary: var(--black);
+
+
+  /* --navyblue: #1E1E1E;
   --yellow: #FFFFFF;
   --darkyellow: #FFE9E9;
   --darkpink: #FF92AB;
   --cerise: #FFE9E9;
   --white: #FFE9E9;
   --tpnavyblue: #FF92AB;
-  --secondarybackground:#1E1E1E;
+  --secondarybackground:#1E1E1E; */
+}
+.purple-p-y{
+  --primary: var(--navyblue);
+  --secondary:var(--yellow);
+  --secondary-version:var(--darkyellow);
+  --teritary:var(--darkpink);
+  --light-teritary:var(--cerise);
+  --font-color:var(--white);
+  --tp-bg:var(--tpnavyblue);
+  --second-primary: var(--secondarybackground);
 }
 
 #navbar {
-  background-color: var(--navyblue);
+  background-color: var(--primary);
   width: 100%;
   height: 8rem;
   display: flex;
@@ -68,7 +111,7 @@
 }
 .logo {
   font-size: 3rem;
-  color: var(--darkpink);
+  color: var(--teritary);
   margin-left: 2rem;
   margin-top: auto;
   margin-bottom: auto;
@@ -77,7 +120,7 @@
   text-decoration: none;
 }
 .navRouter {
-  color: var(--white);
+  color: var(--font-color);
   font-size: var(--h5);
   margin-right: 4rem;
   font-family: 'ABeeZee', sans-serif;
@@ -95,7 +138,7 @@ body {
 .router:after {
   display: block;
   content: '';
-  border-bottom: solid 3px var(--darkpink);
+  border-bottom: solid 3px var(--teritary);
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
@@ -105,8 +148,8 @@ body {
 }
 
 .router.nuxt-link-exact-active {
-  color: var(--yellow);
-  border-bottom: 3px solid var(--yellow);
+  color: var(--secondary);
+  border-bottom: 3px solid var(--secondary);
 }
 .subheading {
   margin-left: 11rem;
@@ -150,7 +193,7 @@ body {
     z-index: -2;
   }
   .pink:after{
-    background-color: var(--darkpink);
+    background-color: var(--teritary);
   }
   .yellow:after{
     background-color: var(--darkyellow); 
@@ -168,17 +211,17 @@ body {
   }
   .pink:before{
     background-color: var(--darkyellow);
-    color: var(--navyblue);
+    color: var(--primary);
   }
   .yellow:before{
-    background-color: var(--darkpink);
-    color: var(--white);
+    background-color: var(--teritary);
+    color: var(--font-color);
   }
     .button:hover:before {
       width: 100%;
     }
     .pink:hover:before{
-      color: var(--navyblue);
+      color: var(--primary);
     }
   
 
@@ -219,7 +262,7 @@ body {
   right: -100%;
   height: 100%;
   width: 100%;
-  background: var(--navyblue);
+  background: var(--primary);
   transition: all 0.6s ease-in-out;
 }
 #active:checked ~ .wrapper {
@@ -270,21 +313,23 @@ input[type='checkbox'] {
   margin-top: 2rem;
 }
 .menu-router {
-  color: white;
+  color: var(--font-color);
   text-decoration: none;
   font-size: 2rem;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
 .menu-router.nuxt-link-exact-active {
-  color: var(--yellow);
-  border-bottom: 3px solid var(--yellow);
+  color: var(--secondary);
+  border-bottom: 3px solid var(--secondary);
 }
+
+/* scrollbar css */
 ::-webkit-scrollbar {
   width: 1.5rem;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--navyblue);
+  background-color: var(--primary);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -292,9 +337,9 @@ input[type='checkbox'] {
     linear,
     left bottom,
     left top,
-    color-stop(0.14, var(--yellow)),
-    color-stop(0.62, var(--darkpink)),
-    color-stop(0.86, var(--cerise))
+    color-stop(0.14, var(--secondary)),
+    color-stop(0.62, var(--teritary)),
+    color-stop(0.86, var(--light-teritary))
   );
   /* border-radius: 10rem; */
 }

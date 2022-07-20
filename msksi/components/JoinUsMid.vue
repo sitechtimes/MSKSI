@@ -51,8 +51,8 @@ export default {
   height: 40rem;
 }
 .yellow {
-  color: var(--navyblue);
-  background-color: var(--yellow);
+  color: var(--primary);
+  background-color: var(--secondary-version);
   filter: drop-shadow(5px 5px 4px grey);
 }
 .image-container {
@@ -79,12 +79,12 @@ export default {
 }
 #wbsm {
   list-style-type: circle;
-  color: var(--navyblue);
+  color: var(--primary);
   margin-top: 4rem;
   padding-bottom: 5rem;
 }
 .wbsmr {
-  color: var(--darkpink);
+  color: var(--teritary);
 }
 /* .button{
   cursor: url('../images/hoverBtnCursor.png'), auto;
@@ -134,6 +134,7 @@ export default {
     margin-left: 2rem;
     padding-bottom: 2rem;
     flex-direction: row;
+    color: var(--font-color);
   }
   #textgroup {
     width: 80%;

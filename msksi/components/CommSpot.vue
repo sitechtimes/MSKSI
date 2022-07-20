@@ -79,7 +79,7 @@ export default {
 <style>
 .homespotlight {
   height: 100rem;
-  background-color: var(--white);
+  background-color: var(--font-color);
   position: relative;
   display: flex;
   flex-direction: row;
@@ -126,7 +126,7 @@ export default {
   margin-top: -5rem;
 }
 .commspot {
-  color: var(--darkpink);
+  color: var(--teritary);
   left: 0;
   right: 0;
   top: 0;
@@ -137,7 +137,7 @@ export default {
 
 .nuxt-content {
   font-size: var(--h3);
-  color: var(--navyblue);
+  color: var(--primary);
   font-family: 'ABeeZee', sans-serif;
   margin-top: 3rem;
   margin-right: 28rem;
@@ -147,7 +147,7 @@ export default {
 .CSreadmore {
   height: 125rem;
   width: 125rem;
-  background-color: var(--tpnavyblue);
+  background-color: var(--tp-bg);
   clip-path: polygon(100% 27%, 68% 100%, 100% 100%);
   position: absolute;
   bottom: 0;
@@ -157,12 +157,12 @@ export default {
 }
 
 .CSroutermore:hover + .CSreadmore {
-  background-color: var(--navyblue);
+  background-color: var(--primary);
 }
 
 .CSroutermore {
   font-size: var(--h4);
-  color: var(--yellow);
+  color: var(--secondary);
   font-family: 'ABeeZee', sans-serif;
   font-weight: bold;
   bottom: 20rem;
@@ -173,7 +173,7 @@ export default {
 }
 
 .CSroutermore:hover {
-  color: var(--yellow);
+  color: var(--secondary);
   text-decoration: underline;
   text-decoration-thickness: 0.35rem;
 }

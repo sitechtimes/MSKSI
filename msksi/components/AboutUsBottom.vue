@@ -23,17 +23,17 @@ export default {
 </script>
 <style scoped>
 #AboutUsBottom {
-  background-color: var(--secondarybackground);
+  background-color: var(--second-primary);
   padding-bottom: 10rem;
 }
 .heading {
   text-align: center;
-  color: var(--darkpink);
+  color: var(--teritary);
   font-family: 'Black Han Sans';
 }
 .will {
   font-size: var(--h3);
-  color: var(--yellow);
+  color: var(--secondary);
   text-align: left;
   font-family: 'Black Han Sans';
   margin-left: 11rem;
@@ -41,26 +41,26 @@ export default {
   font-weight: lighter;
 }
 .texti {
-  color: white;
+  color: var(--font-color);
   font-weight: lighter;
   margin: 11rem;
   display: block;
   margin-top: 6rem;
   margin-bottom: auto;
   font-family: 'Cairo', sans-serif;
-  color: var(--white);
+  color: var(--font-color);
   text-align: left;
   justify-content: center;
 }
 .goal {
-  color: var(--navyblue);
+  color: var(--primary);
 }
 .our {
-  color: var(--darkpink);
+  color: var(--teritary);
   font-size: var(--h1);
 }
 .mission {
-  color: var(--yellow);
+  color: var(--secondary);
   font-size: var(--h1);
 }
 @media only screen and (max-width: 1500px) {

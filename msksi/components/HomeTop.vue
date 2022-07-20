@@ -22,14 +22,14 @@ export default {
 
 <style scoped>
 .hometop {
-  background-color: var(--navyblue);
+  background-color: var(--primary);
   padding-bottom: 30rem;
 }
 .name {
   font-size: var(--h1);
   font-family: 'Black Han Sans';
   font-weight: lighter;
-  color: var(--yellow);
+  color: var(--secondary);
   padding-top: 7rem;
 }
 .alignright {
@@ -54,7 +54,7 @@ export default {
 }
 
 .keeper {
-  color: var(--darkpink);
+  color: var(--teritary);
   font-size: 13rem;
   text-align: right;
   padding-top: 0rem;
@@ -69,7 +69,7 @@ export default {
 
 .si {
   font-family: 'ABeeZee', sans-serif;
-  color: var(--yellow);
+  color: var(--secondary);
   font-size: var(--h3);
   width: 35rem;
   text-align: right;
@@ -78,7 +78,7 @@ export default {
 }
 @media only screen and (max-width: 1500px) {
   .hometop {
-    background-color: var(--navyblue);
+    background-color: var(--primary);
     padding-bottom: 30rem;
   }
   .name {

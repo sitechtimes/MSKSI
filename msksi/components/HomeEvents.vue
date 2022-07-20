@@ -31,14 +31,14 @@ export default {
 
 <style scoped>
 .homeevents {
-  background-color: var(--darkpink);
+  background-color: var(--teritary);
   padding: 7rem;
   }
 .eventheader {
     font-size: 9rem;
     text-align: center;
     font-family: 'Sora', sans-serif;
-    color: var(--white);
+    color: var(--font-color);
     padding-top: 4rem;
   }
 .eventpreviews{
