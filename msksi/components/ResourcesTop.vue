@@ -3,7 +3,10 @@
     <h2 class="heading">Resources</h2>
     <div id="resources">
       <div class="resource">
-        <img src="~/assets/images/folder.png" alt="folder" />
+        <img
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_147/v1658158400/folder_ceqsbs.png"
+          alt="folder"
+        />
         <a
           target="_blank"
           id="link"
@@ -12,7 +15,10 @@
         >
       </div>
       <div class="resource">
-        <img src="~/assets/images/jamboard.png" alt="jamboard" />
+        <img
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_266/v1658158427/jamboard_ss2kz9.png"
+          alt="jamboard"
+        />
         <a
           target="_blank"
           id="link"
@@ -21,7 +27,10 @@
         >
       </div>
       <div class="resource">
-        <img src="~/assets/images/padlet.png" alt="padlet logo" />
+        <img
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_150/v1658158440/padlet_fioxqe.png"
+          alt="padlet logo"
+        />
         <a
           target="_blank"
           id="link"
@@ -30,7 +39,10 @@
         >
       </div>
       <div class="resource">
-        <img src="~/assets/images/journal.png" alt="journal" />
+        <img
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_266/v1658158421/journal_vdoeki.png"
+          alt="journal"
+        />
         <a
           target="_blank"
           id="link"
@@ -39,7 +51,10 @@
         >
       </div>
       <div class="resource">
-        <img src="~/assets/images/drive.png" alt="google drive logo" />
+        <img
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_167/v1658158021/drive_uikidy.png"
+          alt="google drive logo"
+        />
         <a
           target="_blank"
           id="link"
@@ -60,7 +75,10 @@
       </div>
 
       <div class="resource">
-        <img src="~/assets/images/jamboard2.png" alt="jamboard" />
+        <img
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_266/v1658158424/jamboard2_piqvce.png"
+          alt="jamboard"
+        />
         <a
           target="_blank"
           id="link"
@@ -91,16 +109,16 @@ export default {
 }
 </script>
 <style scoped>
-.resource:hover{
-transform: scale(1.1);
-transition: .5s;
+.resource:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
-h3{
-font-size: var(--h6);
-font-family: 'Cairo', sans-serif;
-width: 80%;
-margin-left: auto;
-margin-right: auto;
+h3 {
+  font-size: var(--h6);
+  font-family: 'Cairo', sans-serif;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 #resources {
   display: grid;
@@ -121,6 +139,7 @@ margin-right: auto;
   align-items: center;
   justify-content: center;
   text-align: center;
+  transition: 0.5s ease-in-out;
 }
 .resourcestop {
   background-color: #333043;
@@ -140,14 +159,14 @@ img {
   width: 80%;
   margin-top: 2rem;
 }
-.item{
-color: #333043;
-font-family: 'Cairo', sans-serif;
+.item {
+  color: #333043;
+  font-family: 'Cairo', sans-serif;
   text-align: center;
-font-size: var(--h6);
+  font-size: var(--h6);
 }
-ul{
-  margin-top: .2rem;
+ul {
+  margin-top: 0.2rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -204,11 +223,11 @@ ul{
   .resource:hover {
     transform: scale(1.05);
   }
-h3{
-  font-size: var(--one);
-}
-.resource:hover{
-transform: scale(1.05);
-}
+  h3 {
+    font-size: var(--one);
+  }
+  .resource:hover {
+    transform: scale(1.05);
+  }
 }
 </style>

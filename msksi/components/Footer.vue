@@ -10,7 +10,7 @@
         <div class="backing">
           <img
             class="icon twitter"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
+            src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_36/v1658158920/Twitter-logo.svg_gzu5h2.png"
             alt=""
           />
         </div>
@@ -21,7 +21,7 @@
         ><div class="backing">
           <img
             class="icon instagram"
-            src="~/assets/images/insta2.jpg"
+            src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_36/v1658158827/insta2_nwkjlt.png"
             alt=""
           /></div
       ></a>
@@ -31,7 +31,7 @@
         ><div class="backing">
           <img
             class="icon tiktok"
-            src="~/assets/images/tiktok.png"
+            src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_36/v1658158813/tiktok_kphjpg.png"
             alt=""
           /></div
       ></a>
@@ -39,7 +39,7 @@
         href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
         target="_blank"
         ><div class="backing">
-          <img class="icon gmail" src="~/assets/images/gmail.png" alt="" /></div
+          <img class="icon gmail" src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_36/v1658158832/gmail_t1edxi.png" alt="" /></div
       ></a>
     </div>
   </div>
