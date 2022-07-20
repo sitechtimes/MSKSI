@@ -130,7 +130,7 @@ export default {
   font-style: normal;
   font-weight: 400;
   text-align: center;
-  line-height: 10rem;
+  line-height: 7.5rem;
 }
 .agendas-container {
   display: grid;
@@ -208,11 +208,12 @@ li {
 }
 @media only screen and (max-width: 1500px) {
   .agendas-container {
-    margin-top: 2rem;
+    margin-top: 3rem;
     grid-gap: 5.5rem;
   }
   #text {
     font-size: var(--h5);
+    line-height: 6rem;
   }
   .year {
     font-size: var(--h4);
@@ -234,6 +235,12 @@ li {
   }
 }
 @media only screen and (max-width: 1032px) {
+  .agendas-container {
+    grid-gap: 5rem;
+  }
+  .yearly-agenda {
+    margin: 0 8rem 0 8rem;
+  }
   .year {
     margin: 3rem 0rem 0rem 5rem;
   }
@@ -244,11 +251,17 @@ li {
     margin-left: 11rem;
     height: 4rem;
   }
+  ul li::before {
+    font-size: 6rem;
+  }
 }
 @media only screen and (max-width: 770px) {
   .agendas-container {
     margin-top: 3rem;
-    grid-gap: 4.5rem;
+    grid-gap: 4rem;
+  }
+  .yearly-agenda {
+    margin: 0 5rem 0 5rem;
   }
   .container {
     height: 8rem;
@@ -258,7 +271,8 @@ li {
     font-size: var(--h5);
   }
   #text {
-    line-height: 2;
+    line-height: 2.5;
+    font-size: var(--h6);
   }
   .toggle {
     margin: 1.5rem 2.5rem auto 0;
@@ -277,6 +291,44 @@ li {
     margin-left: 7rem;
     height: 3rem;
     font-size: var(--h6);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .agendas-container {
+    margin-top: 2rem;
+    grid-gap: 2.2rem;
+  }
+  .yearly-agenda {
+    margin: 0 3rem 0 3rem;
+  }
+  .container {
+    height: 6rem;
+  }
+  #text {
+    font-size: var(--one);
+    line-height: 2;
+  }
+  .year {
+    margin: 2.1rem 0rem 0rem 2.5rem;
+    font-size: var(--h6);
+    padding-bottom: 2rem;
+  }
+  .toggle {
+    margin: 1.5rem 2rem auto 0;
+  }
+  .arrow {
+    height: 3.3rem;
+  }
+  .date {
+    font-size: var(--one);
+    height: 2.5rem;
+    margin-left: 5rem;
+  }
+  ul {
+    padding-bottom: 2.2rem;
+  }
+  ul li::before {
+    font-size: 3.5rem;
   }
 }
 </style>
