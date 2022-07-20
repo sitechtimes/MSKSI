@@ -204,7 +204,7 @@
   .image-container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0;
     margin-bottom: 2rem;
   }
