@@ -43,6 +43,7 @@
 .image-container {
   text-align: center;
   margin-top: 2rem;
+  margin-left: 4rem;
 }
 #picture {
   margin-top: 8rem;
@@ -108,16 +109,19 @@
   }
   .image-container {
     margin-top: 1rem;
-    margin-right: 10rem;
+    margin-right: 5rem;
+    margin-left: 2rem;
   }
 }
 @media only screen and (max-width: 1200px) {
   #picture {
-    width: 25rem;
-    height: 25rem;
+    width: 24rem;
+    height: 24rem;
   }
   .image-container {
     margin-top: 6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   .text {
     margin-left: 6rem;
@@ -131,8 +135,13 @@
 }
 
 @media only screen and (max-width: 770px) {
+  #picture {
+    width: 22rem;
+    height: 22rem;
+  }
   #textgroup {
     width: 100%;
+    padding-left: 0;
   }
   #info {
     display: flex;
@@ -167,7 +176,7 @@
   }
   .button {
     margin-top: 15rem;
-    margin-left: 4rem;
+    margin-left: 2rem;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -177,9 +186,9 @@
     margin-left: 5rem;
   }
   .text {
-    margin-top: 0;
+    margin-top: 2rem;
     margin-bottom: 0;
-    line-height: 3.5;
+    line-height: 3;
     width: 100%;
   }
   #subc {
@@ -198,6 +207,9 @@
     flex-direction: row;
     margin: 0;
     margin-bottom: 2rem;
+  }
+  .button {
+    margin-top: 10rem;
   }
 }
 </style>

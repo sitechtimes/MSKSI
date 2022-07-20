@@ -62,7 +62,6 @@ export default {
   font-family: 'Be Vietnam Pro', sans-serif;
   margin-left: 15rem;
   margin-top: 5rem;
-  width: 60vw;
   line-height: 5rem;
 }
 .joinusmid {
@@ -148,6 +147,7 @@ export default {
   }
   #textgroup {
     width: 90%;
+    margin-left: 0;
   }
   #info {
     flex-direction: column;
@@ -192,6 +192,7 @@ export default {
   }
   .button {
     margin-top: 8rem;
+    margin-left: 1rem;
   }
 }
 </style>
