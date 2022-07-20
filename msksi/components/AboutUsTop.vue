@@ -32,7 +32,7 @@ export default {
 <style scoped>
 .AboutUsTop {
   padding-bottom: 9rem;
-  background-color: #333043;
+  background-color: var(--secondarybackground);
 }
 .mission {
   color: var(--darkpink);

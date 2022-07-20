@@ -15,7 +15,7 @@
       <div class="image-container">
         <img
           id="picture"
-          src="~/assets/images/subcom.png"
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_300/v1658233391/subcom_lrb2ca.png"
           alt="remote meeting"
         />
         <form
@@ -51,7 +51,7 @@
   width: 30rem;
 }
 .joinustop {
-  background-color: #333043;
+  background-color: var(--secondarybackground);
   padding-bottom: 8rem;
 }
 
@@ -204,7 +204,7 @@
   .image-container {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0;
     margin-bottom: 2rem;
   }
