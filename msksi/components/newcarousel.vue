@@ -1,9 +1,9 @@
 <template>
   <div class="NewCarousel">
-    <div class="cardList">
-      <button @click="swapCards(left)" class="left-btn">
+    <div class="cardList" ref="cardList">
+      <button @click="swapCards(left)" class="left btn">
         <div class="icon">
-          <img src="https://o.remove.bg/downloads/56be51e8-d09c-43bc-9120-83b2413dfe0d/download-removebg-preview.png" alt="" class="arrow-1">
+          <img src="https://o.remove.bg/downloads/56be51e8-d09c-43bc-9120-83b2413dfe0d/download-removebg-preview.png" alt="" class="left arrow">
         </div>
       </button>
       <div class="card-wrapper" ref="card-wrapper">
@@ -32,9 +32,9 @@
           </div>
         </div>
       </div>
-      <button @click="swapCards(right)" class="right-btn">
+      <button @click="swapCards(right)" class="right btn">
         <div class="icon">
-          <img src="https://o.remove.bg/downloads/56be51e8-d09c-43bc-9120-83b2413dfe0d/download-removebg-preview.png" alt="" class="arrow-2">
+          <img src="https://o.remove.bg/downloads/56be51e8-d09c-43bc-9120-83b2413dfe0d/download-removebg-preview.png" alt="" class="right arrow">
         </div>
       </button>
     </div>
@@ -73,8 +73,8 @@ export default {
       }
       swapCardsClass()
     },
-  },
-}
+    }
+  };
 </script>
 
 <style scoped>
@@ -88,7 +88,7 @@ export default {
   overflow: hidden;
   padding: 0 0 2rem 0;
 }
-button {
+.btn {
   --btn-size: 65px;
   border: none;
   position: absolute;
@@ -97,25 +97,26 @@ button {
   width: var(--btn-size);
   top: 48%;
   z-index: 5;
+  transition: all 0.2s;
+}
+.btn:hover{
+  transform: scale(1.15);
 }
 img {
   height: 50rem;
   width: 50rem;
 }
-.arrow-1{
+.arrow{
   height: 3rem;
   width: 3rem;
 }
-.arrow-2{
-  height: 3rem;
-  width: 3rem;
+.right.arrow{
   transform: rotate(180deg);
 }
-
-.left-btn{
+.left.btn{
   left: 29%;
 }
-.right-btn {
+.right.btn {
   right: 35%;
 }
 .cardList {
@@ -139,8 +140,8 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) translateX(-220px) rotateY(25deg) scale(0.9);
-  width: 100;
-  height: 100;
+  width: 100%;
+  height: 100%;
   display: inline-block;
   user-select: none;
   opacity: 0.6;
@@ -157,13 +158,5 @@ img {
   user-select: none;
   opacity: 0.6;
   z-index: 2;
-}
-.card::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
 }
 </style>
