@@ -3,7 +3,7 @@
     <h2 class="heading">Resources</h2>
     <div id="resources">
       <div class="resource">
-        <img src="~/assets/images/folder.png" alt="folder" />
+        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_147/v1658158400/folder_ceqsbs.png" alt="folder" />
         <a
           target="_blank"
           id="link"
@@ -12,7 +12,7 @@
         >
       </div>
       <div class="resource">
-        <img src="~/assets/images/jamboard.png" alt="jamboard" />
+        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_266/v1658158427/jamboard_ss2kz9.png" alt="jamboard" />
         <a
           target="_blank"
           id="link"
@@ -21,7 +21,7 @@
         >
       </div>
       <div class="resource">
-        <img src="~/assets/images/padlet.png" alt="padlet logo" />
+        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_150/v1658158440/padlet_fioxqe.png" alt="padlet logo" />
         <a
           target="_blank"
           id="link"
@@ -30,7 +30,7 @@
         >
       </div>
       <div class="resource">
-        <img src="~/assets/images/journal.png" alt="journal" />
+        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_266/v1658158421/journal_vdoeki.png" alt="journal" />
         <a
           target="_blank"
           id="link"
@@ -39,7 +39,7 @@
         >
       </div>
       <div class="resource">
-        <img src="~/assets/images/drive.png" alt="google drive logo" />
+        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_167/v1658158021/drive_uikidy.png" alt="google drive logo" />
         <a
           target="_blank"
           id="link"
@@ -60,7 +60,7 @@
       </div>
 
       <div class="resource">
-        <img src="~/assets/images/jamboard2.png" alt="jamboard" />
+        <img src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_266/v1658158424/jamboard2_piqvce.png" alt="jamboard" />
         <a
           target="_blank"
           id="link"
@@ -93,7 +93,6 @@ export default {
 <style scoped>
 .resource:hover {
   transform: scale(1.1);
-  transition: 0.5s;
 }
 h3 {
   font-size: var(--h6);
@@ -115,15 +114,15 @@ h3 {
   height: 30rem;
   width: 30rem;
   border-radius: 2rem;
-  background-color: var(--white);
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+   transition: 0.5s ease-in-out;
 }
 .resourcestop {
-  background-color: var(--secondarybackground);
   background-color: #333043;
 }
 .heading {
@@ -134,7 +133,6 @@ img {
   margin: 0 auto 0 auto;
   display: block;
 }
-
 #link {
   color: #333043;
   font-size: var(--h5);
@@ -153,7 +151,6 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-
 @media only screen and (max-width: 1500px) {
   img {
     height: 14rem;
@@ -163,9 +160,6 @@ ul {
   #resources {
     margin-left: 8rem;
     margin-right: 8rem;
-  }
-  .resource:hover {
-    transform: scale(1);
   }
 }
 @media only screen and (max-width: 770px) {
@@ -188,34 +182,24 @@ ul {
   h3 {
     font-size: var(--one);
   }
-  ul {
-    font-size: var(--one);
+  h3 {
+    font-size: var(--smallText);
   }
 }
 @media only screen and (max-width: 500px) {
-  img {
-    height: 7.5rem;
-  }
   #link {
     font-size: var(--h6);
-    margin-top: 1rem;
-    line-height: 2rem;
-  }
-  .item {
-    font-size: var(--tiny);
-    line-height: 1.5rem;
   }
   h3 {
-    font-size: var(--tiny);
-    line-height: 1.5rem;
+    font-size: var(--one);
   }
   #resources {
     margin-left: 5rem;
     margin-right: 5rem;
   }
   .resource {
-    width: 18rem;
-    height: 18rem;
+    width: 20rem;
+    height: 22rem;
   }
   .resource:hover {
     transform: scale(1.05);
