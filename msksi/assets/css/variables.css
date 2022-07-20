@@ -166,12 +166,10 @@ body {
 .pink:hover:before {
   color: var(--navyblue);
 }
-
-  .button {
-    width: 20rem;
-    height: 7rem;
-    font-size: var(--subheadingjum);
-  }
+.button {
+  width: 20rem;
+  height: 7rem;
+  font-size: var(--subheadingjum);
 }
 .button:active {
   animation: press 0.2s 1 linear;
