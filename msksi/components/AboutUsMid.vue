@@ -51,7 +51,7 @@ export default {
 <style scoped>
 .AboutUsMid {
   text-align: center;
-  background-color: white;
+  background-color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +103,7 @@ li {
 @media only screen and (max-width: 1032px) {
   .AboutUsMid {
     text-align: center;
-    background-color: white;
+    background-color: var(--white);
     display: inline-block;
     padding-bottom: 6rem;
   }
@@ -169,7 +169,7 @@ li {
     margin: 2rem 0 0rem 0;
   }
   .list {
-    font-size: var(--h5);
+    font-size: 2.2rem;
     line-height: 2rem;
   }
   .msksi {

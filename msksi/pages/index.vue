@@ -3,7 +3,7 @@
     <HomeTop />
     <CommSpot />
     <HomeMonth />
-    <HomeEvents/>
+    <HomeEvents />
   </div>
 </template>
 
@@ -15,10 +15,5 @@ import HomeEvents from '~/components/HomeEvents.vue'
 export default {
   name: 'home',
   components: { HomeEvents, HomeMonth, CommSpot, HomeTop },
-    head() {
-    return {
-      title: "Home | My Sister's Keeper Staten Island"
-    };
-  },
 }
 </script>

@@ -7,8 +7,12 @@ body,
   box-sizing: border-box;
   margin: 0;
   font-size: 62.5%;
-  cursor: url('../images/pinkCursor.png'), default;
+  cursor: url('../images/pinkCursor.png'), auto;
 }
+.button[data-v-8d025cfc] {
+  cursor: url('../images/hoverBtnCursor.png'), auto;
+}
+
 .heading {
   font-size: var(--h1);
   font-family: 'Black Han Sans';
@@ -38,14 +42,15 @@ body,
   }
   .heading {
     font-size: var(--h2);
-    font-family: 'Black Han Sans';
-    font-weight: lighter;
     padding-top: 6rem;
     text-align: center;
-    font-size: var(--h2);
+    margin: 0;
   }
   .text {
     font-size: var(--h5);
+  }
+  .button:hover {
+    transform: scale(1);
   }
 }
 @media only screen and (min-width: 1032px) {
@@ -58,7 +63,7 @@ body,
 }
 @media only screen and (max-width: 770px) {
   .heading {
-    padding-top: 5rem;
+    padding-top: 4rem;
     font-size: var(--h3);
     margin: 0;
   }
@@ -70,9 +75,6 @@ body,
   }
   .text {
     font-size: var(--h6);
-  }
-  .gifImage{
-    display:none;
   }
 }
 .menuIcon {
