@@ -51,7 +51,7 @@
   width: 30rem;
 }
 .joinustop {
-  background-color: var(--secondarybackground);
+  background-color: #333043;
   padding-bottom: 8rem;
 }
 

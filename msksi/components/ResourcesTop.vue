@@ -124,6 +124,7 @@ h3 {
 }
 .resourcestop {
   background-color: var(--secondarybackground);
+  background-color: #333043;
 }
 .heading {
   color: var(--yellow);
