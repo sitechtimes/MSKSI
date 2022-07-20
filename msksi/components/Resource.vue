@@ -2,7 +2,6 @@
   <div class="resource">
     <img :src="img" :alt="title" />
     <a target="_blank" id="link" :href="link">{{ title }}</a>
-    <h3>{{ description }}</h3>
   </div>
 </template>
 <script>
@@ -19,15 +18,8 @@ export default {
 
 <style scoped>
 .resource:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: 0.5s;
-}
-h3 {
-  font-size: var(--h6);
-  font-family: 'Cairo', sans-serif;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
 }
 #resources {
   width: 90vw;
@@ -42,7 +34,7 @@ h3 {
   padding-bottom: 6rem;
 }
 .resource {
-  margin-top: 5rem;
+  margin-top: 2rem;
   height: 30rem;
   width: 30rem;
   display: flex;
@@ -57,7 +49,7 @@ h3 {
   color: var(--yellow);
 }
 img {
-  height: 15rem;
+  height: 12.5rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
