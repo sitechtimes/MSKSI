@@ -66,6 +66,7 @@ p {
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 2rem;
+        height: 35rem;
     }
 }
 
