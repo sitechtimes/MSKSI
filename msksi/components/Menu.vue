@@ -1,33 +1,39 @@
 <template>
   <div class="menu">
-    <input v-model="checked" @click="toggleOn" type="checkbox" id="active" />
+    <input type="checkbox" id="active" />
     <label for="active" class="menu-btn"><span></span></label>
     <label for="active" class="close"></label>
-    <div class="wrapper">
+    <div v-if="show" class="wrapper">
       <ul class="link-container">
-        <li class="link" @click="toggleOff">
-          <router-link class="menu-router" to="/"> Home </router-link>
+        <li class="link">
+          <router-link @click="close()" class="menu-router" to="/">
+            Home
+          </router-link>
         </li>
-        <li class="link" @click="toggleOff">
-          <router-link class="menu-router" to="/AboutUs">
+        <li class="link">
+          <router-link @click="close()" class="menu-router" to="/AboutUs">
             About Us
           </router-link>
         </li>
-        <li class="link" @click="toggleOff">
-          <router-link class="menu-router" to="/Calendar">
+        <li class="link">
+          <router-link @click="close()" class="menu-router" to="/Calendar">
             Calendar
           </router-link>
         </li>
-        <li class="link" @click="toggleOff">
-          <router-link class="menu-router" to="/Gallery"> Gallery </router-link>
+        <li class="link">
+          <router-link @click="close()" class="menu-router" to="/Gallery">
+            Gallery
+          </router-link>
         </li>
-        <li class="link" @click="toggleOff">
-          <router-link class="menu-router" to="/Resources">
+        <li class="link">
+          <router-link @click="close()" class="menu-router" to="/Resources">
             Resources
           </router-link>
         </li>
-        <li class="link" @click="toggleOff">
-          <router-link class="menu-router" to="/JoinUs"> Join Us </router-link>
+        <li class="link">
+          <router-link @click="close()" class="menu-router" to="/JoinUs">
+            Join Us
+          </router-link>
         </li>
       </ul>
     </div>
@@ -36,31 +42,23 @@
 <script>
 export default {
   name: 'Menu',
-  data(){
-    return{
+  data() {
+    return {
       checked: Boolean,
+      show: false,
     }
   },
   methods: {
-    toggleOn() {
-      let menuOpen = document.querySelector('.wrapper');
-      menuOpen.classList.remove('hide');
-      console.log('bye')
-      this.checked = true;
+    close() {
+      this.show = !this.show
     },
-      toggleOff() {
-      let menuOpen = document.querySelector('.wrapper');
-      menuOpen.classList.add('hide')
-      console.log('hello')
-      this.checked = false;
-    }
   },
 }
 </script>
 <style>
-  .hide{
+.hide {
   z-index: -2;
   right: -100%;
   transition: all 0.6s ease-in-out;
-  }
+}
 </style>
