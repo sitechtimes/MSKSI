@@ -35,6 +35,7 @@ export default {
       scrollTrigger: true,
     },
   },
+  
   generate: {
     routes: function() {
       const fs = require('fs');
