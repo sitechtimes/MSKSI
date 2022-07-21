@@ -1,32 +1,46 @@
 <template>
-  <div id="AlbumPreview">
-    <h2 class="heading">Photo <span class="gall">Gallery</span></h2>
-    <div class="polaroid-container">
-      <div class="polaroid">
-        <img id="picture" :src="img" :alt="title" />
-        <a class="name" target="_blank" :href="link">{{ title }}</a>
-      </div>
+  <div class="Gallery">
+    <h2 class="heading">Photo <span class="gall heading">Gallery</span></h2>
+    <div class="Albums">
+      <Album
+        v-for="album in albums"
+        :key="album.title"
+        :title="album.title"
+        :img="album.img"
+        :link="album.link"
+      />
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'AlbumPreview',
-  props: {
-    title: String,
-    img: String,
-    link: String,
+  name: 'GalleryTest',
+  components: {},
+  data() {
+    return {
+      albums: [],
+    }
+  },
+  async fetch() {
+    let albums = await this.$content('albums').sortBy('order', 'desc').fetch()
+    this.albums = albums
+    console.log(this.albums)
   },
 }
 </script>
 <style scoped>
-#AlbumPreview {
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+a {
+  cursor: pointer;
+}
+.Gallery {
   background-color: #333043;
   padding-bottom: 10rem;
 }
 .gall {
   color: var(--darkpink);
-  font-size: var(--h1);
+  margin: 0;
+  /* font-size: var(--h1); */
 }
 .name {
   font-family: 'ABeeZee', sans-serif;
@@ -40,19 +54,20 @@ export default {
   text-align: center;
   margin-top: 3rem;
 }
-.polaroid-container {
+.Albums {
   display: grid;
+  background-color: #333043;
   grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
   grid-gap: 7rem;
   margin: 11rem;
-  margin-top: 6rem;
+  margin-top: 4rem;
   justify-items: center;
   grid-template-rows: auto;
+  padding-bottom: 0rem;
 }
 .polaroid {
   background-color: white;
   height: 36rem;
-  width: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,17 +82,17 @@ export default {
   z-index: 1;
   background-color: rgb(194, 194, 194);
 }
-@media only screen and (max-width: 1080px) {
-  .heading {
-    text-align: center;
-    margin: 0;
-  }
+
+@media only screen and (max-width: 1032px) {
   .polaroid-container {
     grid-gap: 5rem;
-    margin: 7rem;
+    margin: 5rem;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
+  .polaroid-container {
+    margin-top: 3rem;
+  }
   .polaroid {
     display: flex;
     flex-wrap: wrap;
@@ -85,28 +100,22 @@ export default {
     align-items: center;
     justify-content: center;
     width: 48vw;
-    height: 35rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0rem;
+    height: 27rem;
+    margin: 0 auto 0 auto;
   }
   #picture {
     margin-top: 2rem;
+    width: 15rem;
+    height: 15rem;
   }
   .name {
-    font-size: var(--h5);
-    margin-top: 0;
-  }
-  .heading {
-    font-size: var(--h3);
-    margin-left: 0rem;
-    margin-right: 0rem;
     margin-top: 0rem;
-    text-align: center;
+    margin-bottom: 1rem;
+    font-size: var(--h6);
   }
-  .gall {
-    font-size: var(--h3);
-    margin-top: 0rem;
+  .Albums {
+    margin: 0;
+    margin-top: 4rem;
   }
 }
 </style>

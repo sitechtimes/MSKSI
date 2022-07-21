@@ -1,35 +1,34 @@
 <template>
   <div class="joinusmid">
     <div id="info">
-    
-        <div id="textgroup">
-          <h3 class="subheading wbsm">Website & Social Media Manager</h3>
-           <ul id="wbsm">
-           <li class="text">
-            Maintain the MSKSI website with the most current information, agendas,
-            opportunities etc
+      <div id="textgroup">
+        <h3 class="subheading wbsm">Website & Social Media Manager</h3>
+        <ul id="wbsm">
+          <li class="text">
+            Maintain the MSKSI website with the most current information,
+            agendas, opportunities etc
           </li>
           <li class="text">
-            Highlight our MSKSI members for their work professionally, educationally
-            and personally.
+            Highlight our MSKSI members for their work professionally,
+            educationally and personally.
           </li>
         </ul>
+      </div>
 
-        </div>
-       
-            <div class="image">
-              <img
-            id="picture"
-                src="~/assets/images/social.png"
-                alt="woman on social media"/>
+      <div class="image-container">
+        <img
+          id="picture"
+          src="~/assets/images/social.png"
+          alt="woman on social media"
+        />
+        <form
+          target="_blank"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform"
+        >
+          <button class="button yellow">Join Us!</button>
+        </form>
+      </div>
     </div>
-    </div>
-    <form
-      target="_blank"
-      action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform"
-    >
-      <button class="button yellow">Join Us!</button>
-    </form>
   </div>
 </template>
 <script>
@@ -40,42 +39,35 @@ export default {
 </script>
 
 <style scoped>
-#info{
+#info {
   display: flex;
   flex-direction: row;
 }
-#textgroup{
+#textgroup {
   width: 75%;
 }
-#picture{
-  width: 38rem;
-  height: 38rem;
-  margin-top: 4rem;
-} 
-.image{
-     display: flex;
-    justify-content: end;
-    margin-right: 10rem;
+#picture {
+  width: 40rem;
+  height: 40rem;
 }
 .yellow {
   color: var(--navyblue);
   background-color: var(--yellow);
   filter: drop-shadow(5px 5px 4px grey);
 }
+.image-container {
+  text-align: center;
+}
 .text {
   font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: var(--h3);
   margin-left: 15rem;
-  margin-top: 5.5rem;
-  line-height: 6rem;
-  width: 60vw;
-  line-height: 6rem;
-  display: inline-block
+  margin-top: 5rem;
+  line-height: 5rem;
 }
 .joinusmid {
   padding-bottom: 8rem;
   background-color: white;
-  margin-top: 20rem;
+  margin-top: 15rem;
 }
 .wbsm {
   font-size: var(--h2);
@@ -86,24 +78,15 @@ export default {
 #wbsm {
   list-style-type: circle;
   color: var(--navyblue);
-  margin-top: 2rem;
-  padding-bottom: 5rem;
+  margin-top: 4rem;
 }
 .wbsmr {
   color: var(--darkpink);
 }
-/* .button{
-  cursor: url('../images/hoverBtnCursor.png'), auto;
-} */
 @media only screen and (max-width: 1500px) {
   .subheading {
     font-size: var(--subheadingju);
     margin-left: 11rem;
-  }
-  .text {
-    font-size: var(--list);
-    margin-left: 12rem;
-    margin-top: 0.2rem;
   }
   .wbsm {
     margin-top: 0;
@@ -111,88 +94,105 @@ export default {
   .joinusmid {
     margin-top: 10rem;
   }
-  #picture{
-  width: 28rem;
-  height: 28rem;
-} 
-.image{
-  margin-top: 1rem;
-  flex-direction: row;
-     display: flex;
-    justify-content: flex-end;
-    margin-right: 10rem;
+  #picture {
+    width: 33rem;
+    height: 33rem;
+  }
 }
-}
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 1200px) {
+  .subheading {
+    font-size: var(--subheadingju);
+  }
+  #textgroup {
+    width: 70%;
+  }
   .text {
     margin-left: 8rem;
-    font-size: var(--h5);
   }
   .wbsm {
-    font-size: var(--h3);
-    margin-left: 8rem;
-    margin-left: 4rem;
+    margin-left: 6rem;
+  }
+  #picture {
+    width: 25rem;
+    height: 25rem;
+  }
+  .image-container {
+    margin-top: 6rem;
+    margin-left: 0rem;
   }
 }
 @media only screen and (max-width: 770px) {
-    #picture{
-width: 21rem;
-    height: 21rem;
-    position: relative;
-    margin-top: 0rem;
+  .subheading {
+    font-size: var(--subheadingjum);
+    text-align: center;
+  }
+  #picture {
+    width: 24rem;
+    height: 24rem;
     display: block;
     margin: auto;
     margin-bottom: 4rem;
-} 
-.image{
-  margin-top: 1rem;
-  flex-direction: column;
-     display: flex;
-    justify-content: flex-end;
-    margin-right: 10rem;
-}
+  }
+  .image-container {
+    margin-top: 1rem;
+    flex-direction: row;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
   #wbsm {
     margin-left: 2rem;
     padding-bottom: 2rem;
-  flex-direction: row;
+    flex-direction: row;
   }
-  #textgroup{
-    width: 80%;
+  #textgroup {
+    width: 90%;
+    margin-left: 0;
   }
-  #info{
+  #info {
     flex-direction: column;
+  }
+  .button {
+    margin-top: 9rem;
+    margin-left: 4rem;
+  }
+  .text {
+    margin-top: 2rem;
   }
 }
 
-@media only screen and (max-width: 510px) {
-    #info{
+@media only screen and (max-width: 500px) {
+  #info {
     flex-direction: column;
   }
-  #picture{
-  width: 25rem;
-  height: 25rem;
-  position: relative;
-  top: 0;
-  margin-bottom: 4rem;
-  margin-top: 1rem;
-}
+  #picture {
+    width: 20rem;
+    height: 20rem;
+    top: 0;
+    margin-top: 1rem;
+  }
   .text {
     margin-top: 0;
     margin-bottom: 0;
+    line-height: 3;
+    width: 100%;
   }
   #wbsm {
     margin-left: -1.8rem;
-    font-size: var(--h6);
     padding-bottom: 2rem;
   }
   .subheading {
     font-size: var(--subheadingjum);
   }
-  .image {
+  .image-container {
     display: flex;
     justify-content: center;
     flex-direction: row;
     margin: 0;
+  }
+  .button {
+    margin-top: 8rem;
+    margin-left: 1rem;
   }
 }
 </style>

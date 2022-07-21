@@ -532,8 +532,7 @@ export default {
 }
 .name {
   font-size: var(--h1);
-  font-family: 'Black Han Sans';
-  font-weight: lighter;
+  font-family: 'Sora';
   color: var(--yellow);
   padding-top: 7rem;
   visibility: hidden;
@@ -544,7 +543,7 @@ export default {
   align-content: right;
   height: fit-content;
   flex-direction: column;
-  margin: 0 auto;
+  margin: auto;
 }
 .mysis {
   font-size: 13rem;
@@ -608,7 +607,7 @@ export default {
   font-size: var(--h3);
   width: 35rem;
   text-align: right;
-  margin-top: 7rem;
+  margin-top: 3rem;
   margin-left: 75%;
   opacity: 0;
 }
