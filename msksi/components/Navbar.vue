@@ -28,5 +28,5 @@ export default {
 }
 
 /* css for links when hover and when active */
-/* moved to variable css */
+
 </style>

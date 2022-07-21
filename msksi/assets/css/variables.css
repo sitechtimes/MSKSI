@@ -24,7 +24,7 @@
   --h2: 6rem;
   --h3: 4.5rem;
   --h4: 3.4rem;
-  --h5: 2.3rem;
+  --h5: 2.2rem;
   --h6: 1.5rem;
   --smallText: 0.8rem;
   --list: 3rem;
@@ -32,6 +32,9 @@
   --subheadingjum: 3rem;
   --four: 4rem;
   --one: 1.3rem;
+}
+a:hover {
+  cursor: url('../images/hoverBtnCursor.png'), auto;
 }
 #navbar {
   background-color: var(--navyblue);
@@ -111,7 +114,7 @@ body {
   border-radius: 20rem;
   font-family: 'Sora';
   border: none;
-  cursor: url('../images/hoverBtnCursor.png'), auto;
+  cursor: pointer;
   z-index: 1;
   transition: 0.5s ease-in-out;
   font-weight: bolder;
@@ -155,7 +158,7 @@ body {
   border-radius: 10rem;
 }
 .pink:before {
-  background-color: var(--yellow);
+  background-color: var(--cerise);
   color: var(--navyblue);
 }
 .yellow:before {
@@ -174,6 +177,19 @@ body {
     width: 20rem;
     height: 7rem;
     font-size: var(--subheadingjum);
+  }
+}
+@media only screen and (max-width: 700px) {
+  .button {
+    margin-top: 7rem;
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: lighter;
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+    margin: 4rem;
   }
 }
 .button:active {
@@ -271,7 +287,8 @@ input[type='checkbox'] {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--navyblue);
+  background: #f1f1f1;
+  border-radius: 40rem;
 }
 
 ::-webkit-scrollbar-thumb {
