@@ -48,6 +48,7 @@ h3 {
   margin-right: auto;
 }
 #resources {
+  text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
   grid-gap: 7rem;
@@ -72,7 +73,7 @@ h3 {
   color: var(--yellow);
 }
 img {
-  height: 15rem;
+  height: 13rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -85,7 +86,7 @@ img {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 .item {
   color: #333043;
