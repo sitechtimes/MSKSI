@@ -7,6 +7,13 @@
 <script>
 export default {
   name: 'Album',
+  async asyncData({ $content }) {
+    const posts = await $content("blog").fetch();
+
+    return {
+      posts,
+    };
+  },
   props: {
     title: String,
     img: String,
