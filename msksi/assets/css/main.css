@@ -9,17 +9,16 @@ body,
   font-size: 62.5%;
   cursor: url('../images/pinkCursor.png'), auto;
 }
-.button[data-v-8d025cfc],
-button,
-a {
+.button[data-v-8d025cfc] {
   cursor: url('../images/hoverBtnCursor.png'), auto;
 }
 
 .heading {
   font-size: var(--h1);
-  font-family: 'Black Han Sans';
+  font-family: 'Sora';
+  font-weight: bolder;
+  font-style: normal;
   margin: 0rem 11rem 0 11rem;
-  font-weight: lighter;
   color: var(--yellow);
   padding-top: 7rem;
 }
@@ -29,7 +28,6 @@ a {
 @media only screen and (max-width: 1500px) {
   .heading {
     font-size: var(--h2);
-    font-family: 'Black Han Sans';
   }
   .text {
     font-size: var(--subheadingjum);
@@ -50,6 +48,9 @@ a {
   }
   .text {
     font-size: var(--h5);
+  }
+  .button:hover {
+    transform: scale(1);
   }
 }
 @media only screen and (min-width: 1032px) {
@@ -75,11 +76,12 @@ a {
   .text {
     font-size: var(--h6);
   }
-  .gifImage{
-    display:none;
+  .gifImage {
+    display: none;
   }
 }
 .menuIcon {
   background-color: transparent;
   border-color: transparent;
 }
+

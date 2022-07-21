@@ -21,11 +21,11 @@ export default {
 
 <style scoped>
 .calendartop {
-  background-color: var(--secondarybackground);
+  background-color: #333043;
   height: 100rem;
 }
 .calendarFlex {
-  display: flex;  
+  display: flex;
   margin: 0 auto;
   justify-content: center;
   align-items: center;

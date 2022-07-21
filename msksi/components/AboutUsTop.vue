@@ -1,6 +1,6 @@
 <template>
   <div class="AboutUsTop">
-      <h2 class="heading">Our <span class="h mission">Mission</span></h2>
+    <h2 class="heading">Our <span class="h mission">Mission</span></h2>
     <h3 id="text" class="text">
       {{ textarea }}
     </h3>
@@ -26,15 +26,13 @@ export default {
     }
   },
 
-  methods: {
-
-  },
+  methods: {},
 }
 </script>
 <style scoped>
 .AboutUsTop {
   padding-bottom: 9rem;
-  background-color: var(--secondarybackground);
+  background-color: #333043;
 }
 .mission {
   color: var(--darkpink);
@@ -51,7 +49,6 @@ export default {
   text-align: left;
   justify-content: center;
 }
-
 
 @media only screen and (max-width: 1500px) {
   .mission {

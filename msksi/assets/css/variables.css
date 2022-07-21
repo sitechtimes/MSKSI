@@ -7,13 +7,11 @@
 :root {
   --navyblue: #262433;
   --yellow: #fcdc4d;
-  --darkyellow:#fcdc4d;
   --darkpink: #e9587a;
   --cerise: #dc355c;
   --white: #fff;
   --tpnavyblue: #141127d7;
-  --secondarybackground: #333043;
-
+  --navy: #333043;
 
   --navbar-bg: var(--navyblue);
   --nav-text: var(--white);
@@ -26,7 +24,7 @@
   --h2: 6rem;
   --h3: 4.5rem;
   --h4: 3.4rem;
-  --h5: 2rem;
+  --h5: 2.2rem;
   --h6: 1.5rem;
   --smallText: 0.8rem;
   --list: 3rem;
@@ -35,7 +33,9 @@
   --four: 4rem;
   --one: 1.3rem;
 }
-
+a:hover {
+  cursor: url('../images/hoverBtnCursor.png'), auto;
+}
 #navbar {
   background-color: var(--navyblue);
   width: 100%;
@@ -97,21 +97,22 @@
   margin-left: 11rem;
   font-size: var(--h3);
   margin-top: 4.5rem;
-  font-family: 'Black Han Sans';
-  font-weight: lighter;
+  font-family: 'Sora';
+  font-weight: bolder;
 }
 .button {
   padding: 1.2rem;
   width: 22rem;
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
   height: 8rem;
   font-size: var(--h4);
   border-radius: 20rem;
-  font-family: 'Black Han Sans';
+  font-family: 'Sora';
   border: none;
-  cursor: url('../images/hoverBtnCursor.png'), auto;
+  cursor: pointer;
   z-index: 1;
   transition: 0.5s ease-in-out;
+  font-weight: bolder;
 }
 .button:hover {
   transform: scale(1.1);
@@ -120,7 +121,7 @@
 /* button test
 .button {
   display: inline-block;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -172,6 +173,19 @@
     width: 20rem;
     height: 7rem;
     font-size: var(--subheadingjum);
+  }
+}
+@media only screen and (max-width: 700px) {
+  .button {
+    margin-top: 7rem;
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: lighter;
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+    margin: 4rem;
   }
 }
 .button:active {
@@ -269,7 +283,8 @@ input[type='checkbox'] {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--navyblue);
+  background: #f1f1f1;
+  border-radius: 40rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -281,89 +296,5 @@ input[type='checkbox'] {
     color-stop(0.62, var(--darkpink)),
     color-stop(0.86, var(--cerise))
   );
-  /* border-radius: 10rem; */
-}
-
-
-/* test scroll buttons */
-/* Buttons */
-::-webkit-scrollbar-button:single-button {
-  background-color: rgb(64, 64, 64);
-
-  display: block;
-  background-size: 10px;
-  background-repeat: no-repeat;
-}
-
-/* Up */
-::-webkit-scrollbar-button:single-button:vertical:decrement {
-  height: 12px;
-  width: 16px;
-  background-position: center 4px;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(233,88,122)'><polygon points='50,00 0,50 100,50'/></svg>");
-}
-
-::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(233,88,122)'><polygon points='50,00 0,50 100,50'/></svg>");
-}
-
-::-webkit-scrollbar-button:single-button:vertical:decrement:active {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(220,53,92)'><polygon points='50,00 0,50 100,50'/></svg>");
-}
-
-/* Down */
-::-webkit-scrollbar-button:single-button:vertical:increment {
-  height: 12px;
-  width: 16px;
-  background-position: center 2px;
-  /* background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='0,0 100,0 50,50'/></svg>");
- */
- background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(233,88,122)'><polygon points='0,0 100,0 50,50'/></svg>")
-}
-/* ::-webkit-scrollbar-button:single-button:vertical:increment:hover {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(112, 112, 112)'><polygon points='0,0 100,0 50,50'/></svg>");
-}
-
-::-webkit-scrollbar-button:single-button:vertical:increment:active {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 100,0 50,50'/></svg>");
-} */
-::-webkit-scrollbar-button:single-button:vertical:increment:hover {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(233,88,122)'><polygon points='0,0 100,0 50,50'/></svg>");
-}
-
-::-webkit-scrollbar-button:single-button:vertical:increment:active {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(220,53,92)'><polygon points='0,0 100,0 50,50'/></svg>");
-}
-
-/* Left */
-::-webkit-scrollbar-button:single-button:horizontal:decrement {
-  height: 12px;
-  width: 12px;
-  background-position: 3px 3px;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(233,88,122)'><polygon points='0,50 50,100 50,0'/></svg>");
-
-}
-
-::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(233,88,122)'><polygon points='0,50 50,100 50,0'/></svg>");
-}
-
-::-webkit-scrollbar-button:single-button:horizontal:decrement:active {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(220,53,92)'><polygon points='0,50 50,100 50,0'/></svg>");
-}
-
-/* Right */
-::-webkit-scrollbar-button:single-button:horizontal:increment {
-  height: 12px;
-  width: 12px;
-  background-position: 3px 3px;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(233,88,122)'><polygon points='0,0 0,100 50,50'/></svg>");
-}
-
-::-webkit-scrollbar-button:single-button:horizontal:increment:hover {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(233,88,122)'><polygon points='0,0 0,100 50,50'/></svg>");
-}
-
-::-webkit-scrollbar-button:single-button:horizontal:increment:active {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(220,53,92)'><polygon points='0,0 0,100 50,50'/></svg>");
+  border-radius: 10rem;
 }

@@ -7,14 +7,11 @@
         <ul id="subc">
           <li class="text">Sign in-Attendance Assist</li>
           <li class="text">Session Feedback/Tracking and follow up</li>
-          <li class="text">
-            Keeping the attendance sign in for meetings in chat
-          </li>
+          <li class="text">Keep the attendance sign in for meetings in chat</li>
           <li class="text">Transformation Tables</li>
           <li class="text">Managing website & calendar</li>
         </ul>
       </div>
-
       <div class="image-container">
         <img
           id="picture"
@@ -36,11 +33,6 @@
   cursor: url('../assets/images/hoverBtnCursor.png'), auto;
   /* cursor: pointer; */
 }
-
-.button:hover {
-  transform: scale(1.2);
-  transition: transform 0.75s;
-}
 #info {
   display: flex;
   flex-direction: row;
@@ -51,6 +43,7 @@
 .image-container {
   text-align: center;
   margin-top: 2rem;
+  margin-left: 4rem;
 }
 #picture {
   margin-top: 8rem;
@@ -58,7 +51,7 @@
   width: 30rem;
 }
 .joinustop {
-  background-color: var(--secondarybackground);
+  background-color: #333043;
   padding-bottom: 8rem;
 }
 
@@ -85,7 +78,6 @@
 .text {
   font-family: 'Be Vietnam Pro', sans-serif;
   margin-left: 15rem;
-  margin-top: 0.5rem;
   line-height: 7rem;
 }
 @media only screen and (max-width: 1500px) {
@@ -117,43 +109,44 @@
   }
   .image-container {
     margin-top: 1rem;
-    margin-right: 10rem;
+    margin-right: 5rem;
+    margin-left: 2rem;
   }
 }
-@media only screen and (max-width: 1032px) {
-  .text {
-    margin-left: 8rem;
-  }
+@media only screen and (max-width: 1200px) {
   #picture {
-    width: 21rem;
-    height: 21rem;
-    position: sticky;
-    margin-top: 0rem;
-    display: block;
-    margin: auto;
-    padding: 0;
-    margin-right: auto;
-    margin-bottom: 4rem;
+    width: 24rem;
+    height: 24rem;
   }
   .image-container {
-    margin-top: 1rem;
-    flex-direction: column;
-    display: flex;
-    justify-content: flex-end;
-  }
-  #subc {
+    margin-top: 6rem;
     margin-left: 2rem;
-    padding-bottom: 2rem;
-    flex-direction: row;
+    margin-right: 2rem;
+  }
+  .text {
+    margin-left: 6rem;
   }
   #textgroup {
-    width: 80%;
+    width: 70%;
   }
-  #info {
-    flex-direction: column;
+  .subheading {
+    margin-left: 6rem;
   }
 }
+
 @media only screen and (max-width: 770px) {
+  #picture {
+    width: 22rem;
+    height: 22rem;
+  }
+  #textgroup {
+    width: 100%;
+    padding-left: 0;
+  }
+  #info {
+    display: flex;
+    flex-direction: column;
+  }
   .text {
     margin-left: 8rem;
   }
@@ -167,7 +160,6 @@
     margin-top: 0.5rem;
   }
   .heading {
-    font-size: var(--h3);
     margin-top: 0;
     margin-left: 4rem;
   }
@@ -176,20 +168,39 @@
     width: 16rem;
     height: 4.5rem;
     font-size: var(--h5);
-    font-weight: lighter;
+    font-weight: bolder;
     border-radius: 20rem;
-    font-family: 'Black Han Sans';
+    font-family: 'Sora';
     border: none;
     margin: 4rem;
   }
   .subheading {
     font-size: var(--subheadingjum);
+    text-align: center;
+  }
+  .image-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0rem;
+  }
+  .button {
+    margin-top: 15rem;
+    margin-left: 2rem;
   }
 }
 @media only screen and (max-width: 500px) {
+  #picture {
+    width: 17rem;
+    height: 17rem;
+    margin-left: 5rem;
+  }
   .text {
-    margin-top: 0;
+    margin-top: 2rem;
     margin-bottom: 0;
+    line-height: 3;
+    width: 100%;
   }
   #subc {
     margin-top: 0rem;
@@ -204,9 +215,12 @@
   .image-container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0;
     margin-bottom: 2rem;
+  }
+  .button {
+    margin-top: 10rem;
   }
 }
 </style>
