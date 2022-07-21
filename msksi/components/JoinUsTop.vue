@@ -163,6 +163,17 @@
     margin-top: 0;
     margin-left: 4rem;
   }
+  .button {
+    margin-top: 7rem;
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: bolder;
+    border-radius: 20rem;
+    font-family: 'Sora';
+    border: none;
+    margin: 4rem;
+  }
   .subheading {
     font-size: var(--subheadingjum);
     text-align: center;

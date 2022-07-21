@@ -39,7 +39,11 @@
         href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
         target="_blank"
         ><div class="backing">
-          <img class="icon gmail" src="~/assets/images/gmail.png" alt="" /></div
+          <img
+            class="icon gmail"
+            src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_36/v1658158832/gmail_t1edxi.png"
+            alt=""
+          /></div
       ></a>
     </div>
   </div>
@@ -62,9 +66,9 @@
 .contactus {
   color: var(--darkpink);
   font-size: var(--h3);
-  font-family: 'Black Han Sans';
+  font-family: 'Sora';
   padding-top: 3.5rem;
-  font-weight: lighter;
+  font-weight: bolder;
 }
 .buttons {
   display: flex;
