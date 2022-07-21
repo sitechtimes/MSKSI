@@ -5,9 +5,8 @@
 </template>
 
 <script>
-import ResourcesTop from '~/components/ResourcesTop.vue'
 import ResourceDisplay from '~/components/ResourceDisplay.vue'
 export default {
-  components: { ResourcesTop, ResourceDisplay },
+  components: { ResourceDisplay },
 }
 </script>

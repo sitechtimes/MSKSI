@@ -18,8 +18,8 @@ export default {
 
 <style scoped>
 .resource:hover {
-  transform: scale(1.05);
-  transition: 0.5s;
+  transform: scale(1.02);
+  transition: 0.2s;
 }
 #resources {
   width: 90vw;
