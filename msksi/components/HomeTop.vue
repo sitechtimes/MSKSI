@@ -4,7 +4,7 @@
       <div class="alignright">
         <h2 class="name mysis">My Sister’s</h2>
         <div class="line2">
-          <img id="logo-img" src="~/assets/images/logo.png" alt="msksi logo" />
+          <img id="logo-img" src="../assets/images/logo.png" alt="msksi logo" />
           <h2 class="name keeper">Keeper</h2>
         </div>
 
