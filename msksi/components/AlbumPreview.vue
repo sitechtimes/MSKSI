@@ -67,7 +67,7 @@ export default {
   z-index: 1;
   background-color: rgb(194, 194, 194);
 }
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1032px) {
   .heading {
     text-align: center;
     margin: 0;
@@ -77,7 +77,7 @@ export default {
     margin: 7rem;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
   .polaroid {
     display: flex;
     flex-wrap: wrap;
@@ -110,4 +110,3 @@ export default {
   }
 }
 </style>
-

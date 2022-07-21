@@ -29,6 +29,10 @@
   </div>
 </template>
 <style scoped>
+.joinustop {
+  background-color: #333043;
+  padding-bottom: 8rem;
+}
 .button {
   cursor: url('../assets/images/hoverBtnCursor.png'), auto;
   /* cursor: pointer; */
@@ -38,66 +42,47 @@
   flex-direction: row;
 }
 #textgroup {
-  width: 75%;
+  width: 70%;
+  text-align: left;
 }
 .image-container {
   text-align: center;
   margin-top: 2rem;
-  margin-left: 4rem;
 }
 #picture {
   margin-top: 8rem;
-  height: 30rem;
-  width: 30rem;
+  height: 35rem;
+  width: 35rem;
 }
-.joinustop {
-  background-color: #333043;
-  padding-bottom: 8rem;
-}
-
 .pink {
   background-color: var(--darkpink);
   color: white;
   filter: drop-shadow(3px 4px 3px black);
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
-
 #subc {
-  list-style-type: circle;
   color: white;
   margin-top: 2rem;
   padding-bottom: 5rem;
   flex-direction: row;
+  margin-left: 4rem;
+  line-height: 1;
 }
 .subc {
   color: var(--darkpink);
   font-size: var(--h2);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-.text {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  margin-left: 15rem;
-  line-height: 7rem;
 }
 @media only screen and (max-width: 1500px) {
-  .text {
-    margin-left: 12rem;
-    margin-top: 0rem;
-  }
   #subc {
     margin-left: 2rem;
     padding-bottom: 2rem;
   }
-  .subheading {
-    font-size: var(--subheadingju);
-    margin-left: 11rem;
-    margin-top: 2rem;
-    padding-bottom: 0;
+  .subc {
+    font-size: var(--h3);
+    margin-top: 5rem;
   }
   .text {
     margin-left: 12rem;
-    margin-top: 0.5rem;
   }
   .joinusmid {
     height: 75rem;
@@ -113,7 +98,7 @@
     margin-left: 2rem;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1032px) {
   #picture {
     width: 24rem;
     height: 24rem;
@@ -128,9 +113,6 @@
   }
   #textgroup {
     width: 70%;
-  }
-  .subheading {
-    margin-left: 6rem;
   }
 }
 
@@ -150,18 +132,13 @@
   .text {
     margin-left: 8rem;
   }
-  .subc {
+  .subheading {
     color: var(--darkpink);
-    font-size: var(--h3);
-    margin-left: 4rem;
-    margin-top: 0.2rem;
+    margin: 0;
+    text-align: center;
   }
   #subc {
     margin-top: 0.5rem;
-  }
-  .heading {
-    margin-top: 0;
-    margin-left: 4rem;
   }
   .button {
     margin-top: 7rem;
@@ -173,10 +150,6 @@
     font-family: 'Sora';
     border: none;
     margin: 4rem;
-  }
-  .subheading {
-    font-size: var(--subheadingjum);
-    text-align: center;
   }
   .image-container {
     display: flex;

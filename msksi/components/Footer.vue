@@ -130,7 +130,7 @@
     width: 35rem;
   }
 }
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 500px) {
   .contactus {
     font-size: 2.5rem;
   }

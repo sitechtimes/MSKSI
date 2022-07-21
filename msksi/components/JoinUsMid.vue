@@ -39,12 +39,20 @@ export default {
 </script>
 
 <style scoped>
+.joinusmid {
+  padding-bottom: 10rem;
+  background-color: white;
+}
 #info {
   display: flex;
   flex-direction: row;
 }
 #textgroup {
-  width: 75%;
+  width: 72%;
+  margin-top: 8rem;
+}
+.text {
+  margin-left: 14rem;
 }
 #picture {
   width: 40rem;
@@ -57,49 +65,36 @@ export default {
 }
 .image-container {
   text-align: center;
-}
-.text {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  margin-left: 15rem;
-  margin-top: 5rem;
-  line-height: 5rem;
-}
-.joinusmid {
-  padding-bottom: 8rem;
-  background-color: white;
-  margin-top: 15rem;
+  margin-top: 0rem;
 }
 .wbsm {
-  font-size: var(--h2);
-  margin-top: -4rem;
   color: rgba(220, 53, 92, 1);
-  padding-top: 0;
+  margin-top: 12rem;
 }
 #wbsm {
-  list-style-type: circle;
   color: var(--navyblue);
   margin-top: 4rem;
+}
+li {
+  margin-right: 0;
 }
 .wbsmr {
   color: var(--darkpink);
 }
 @media only screen and (max-width: 1500px) {
-  .subheading {
-    font-size: var(--subheadingju);
-    margin-left: 11rem;
-  }
   .wbsm {
     margin-top: 0;
+    font-size: var(--h3);
   }
   .joinusmid {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
   #picture {
     width: 33rem;
     height: 33rem;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1032px) {
   .subheading {
     font-size: var(--subheadingju);
   }
@@ -108,9 +103,6 @@ export default {
   }
   .text {
     margin-left: 8rem;
-  }
-  .wbsm {
-    margin-left: 6rem;
   }
   #picture {
     width: 25rem;
@@ -122,10 +114,6 @@ export default {
   }
 }
 @media only screen and (max-width: 770px) {
-  .subheading {
-    font-size: var(--subheadingjum);
-    text-align: center;
-  }
   #picture {
     width: 24rem;
     height: 24rem;
@@ -175,14 +163,14 @@ export default {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 3;
-    width: 100%;
   }
   #wbsm {
     margin-left: -1.8rem;
     padding-bottom: 2rem;
   }
-  .subheading {
-    font-size: var(--subheadingjum);
+  .wbsm {
+    margin: 0;
+    text-align: center;
   }
   .image-container {
     display: flex;
