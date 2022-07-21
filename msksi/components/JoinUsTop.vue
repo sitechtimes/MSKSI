@@ -170,9 +170,9 @@
     width: 16rem;
     height: 4.5rem;
     font-size: var(--h5);
-    font-weight: lighter;
+    font-weight: bolder;
     border-radius: 20rem;
-    font-family: 'Black Han Sans';
+    font-family: 'Sora';
     border: none;
     margin: 4rem;
   }
