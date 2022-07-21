@@ -16,7 +16,8 @@ export default {
 }
 </script>
 
-<style scoped>.resourcestop {
+<style scoped>
+.resourcestop {
   background: #333043;
 }
 .resource:hover {
@@ -31,6 +32,7 @@ h3 {
   margin-right: auto;
 }
 #resources {
+  text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
   grid-gap: 7rem;
@@ -55,7 +57,7 @@ h3 {
   color: var(--yellow);
 }
 img {
-  height: 15rem;
+  height: 13rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -204,6 +206,5 @@ ul {
     transform: scale(1.05);
   }
 }
-
 </style>
 
