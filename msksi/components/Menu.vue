@@ -63,9 +63,9 @@ export default {
 }
 </script>
 <style>
-  .hide{
+.hide {
   z-index: -2;
   right: -100%;
   transition: all 0.6s ease-in-out;
-  }
+}
 </style>
