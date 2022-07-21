@@ -16,25 +16,31 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped>.resourcestop {
+  background: #333043;
+}
 .resource:hover {
-  transform: scale(1.02);
+ transform: scale(1.02);
   transition: 0.2s;
 }
-#resources {
-  width: 90vw;
+h3 {
+  font-size: var(--h6);
+  font-family: 'Cairo', sans-serif;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  padding-bottom: 6rem;
+}
+#resources {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+  grid-gap: 7rem;
+  justify-items: center;
+  grid-template-rows: auto;
+  padding-bottom: 10rem;
+  margin: 4rem 11rem 0;
 }
 .resource {
-  margin-top: 2rem;
+  margin-top: 0rem;
   height: 30rem;
   width: 30rem;
   display: flex;
@@ -49,7 +55,7 @@ export default {
   color: var(--yellow);
 }
 img {
-  height: 12.5rem;
+  height: 15rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -60,11 +66,9 @@ img {
   font-size: var(--h5);
   font-family: 'Cairo', sans-serif;
   width: 80%;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
-  text-align: center;
 }
 .item {
   color: #333043;
@@ -146,8 +150,8 @@ ul {
   }
   .resource {
     margin-top: 3rem;
-    width: 25rem;
-    height: 25rem;
+    width: 23rem;
+    height: 23rem;
     margin-right: 2rem;
     margin-left: 2rem;
   }
@@ -156,7 +160,7 @@ ul {
   }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 520px) {
   .heading {
     font-size: var(--h4);
     text-align: center;
@@ -175,9 +179,9 @@ ul {
     padding-bottom: 5rem;
   }
   .resource {
-    margin-top: 3rem;
-    width: 25rem;
-    height: 25rem;
+    margin-top: 1rem;
+    width: 23rem;
+    height: 23rem;
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
@@ -200,5 +204,6 @@ ul {
     transform: scale(1.05);
   }
 }
+
 </style>
 

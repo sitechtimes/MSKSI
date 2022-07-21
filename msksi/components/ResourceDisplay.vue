@@ -37,8 +37,8 @@ export default {
   background: #333043;
 }
 .resource:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
+ transform: scale(1.02);
+  transition: 0.2s;
 }
 h3 {
   font-size: var(--h6);
@@ -54,10 +54,10 @@ h3 {
   justify-items: center;
   grid-template-rows: auto;
   padding-bottom: 10rem;
-  margin: 6rem 11rem 0;
+  margin: 4rem 11rem 0;
 }
 .resource {
-  margin-top: 4rem;
+  margin-top: 0rem;
   height: 30rem;
   width: 30rem;
   display: flex;
@@ -167,8 +167,8 @@ ul {
   }
   .resource {
     margin-top: 3rem;
-    width: 25rem;
-    height: 25rem;
+    width: 23rem;
+    height: 23rem;
     margin-right: 2rem;
     margin-left: 2rem;
   }
@@ -177,7 +177,7 @@ ul {
   }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 520px) {
   .heading {
     font-size: var(--h4);
     text-align: center;
@@ -196,9 +196,9 @@ ul {
     padding-bottom: 5rem;
   }
   .resource {
-    margin-top: 3rem;
-    width: 25rem;
-    height: 25rem;
+    margin-top: 1rem;
+    width: 23rem;
+    height: 23rem;
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
