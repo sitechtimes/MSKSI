@@ -183,7 +183,7 @@ export default {
       const bounceTL = this.$gsap.timeline({
         repeat: -1,
         yoyo: true,
-        delay: 2.5,
+        delay: 2,
       })
       bounceTL
         .to('#logo-img', {
@@ -232,7 +232,7 @@ export default {
         .to('#yellow, #pink', {
           visibility: 'visible',
           width: '100%',
-          duration: 0.3,
+          duration: 0.2,
           delay: 2,
         })
         .to(
@@ -240,7 +240,7 @@ export default {
           {
             width: 0,
             right: 0,
-            duration: 1,
+            duration: 0.5,
           },
           '>'
         )
@@ -280,8 +280,8 @@ export default {
         .to(
           '#logo-img',
           {
-            rotate: -40,
-            duration: 0.3,
+            rotate: 10,
+            duration: 0.2,
             scale: 0.8,
           },
           '<'
@@ -290,7 +290,7 @@ export default {
           '#logo-img',
           {
             scale: 0.9,
-            rotate: 10,
+            rotate: -10,
             duration: 0.3,
           },
           '>'
@@ -314,7 +314,7 @@ export default {
             delay: 0.2,
           },
 
-          '<-2'
+          '<-1.5'
         )
         .from(
           '#logo-line2',
@@ -528,7 +528,7 @@ export default {
 <style scoped>
 .hometop {
   background-color: var(--navyblue);
-  padding-bottom: 30rem;
+  padding-bottom: 25rem;
 }
 .name {
   font-size: var(--h1);
@@ -643,14 +643,20 @@ export default {
     margin-left: 0;
     margin-right: 0;
   }
+
+  .line2 {
+    margin: 0;
+    justify-content: left;
+  }
   .name {
     margin-left: 0;
     margin-right: 0;
     font-size: 9.5rem;
   }
   .keeper {
-    width: 40rem;
-    margin-left: 1rem;
+    width: fit-content;
+    margin-left: 3rem;
+    right: 0;
   }
   .si {
     font-size: 3rem;
@@ -665,35 +671,42 @@ export default {
   #yellow {
     height: 35%;
   }
+  #pink {
+    height: 75%;
+  }
 }
 @media only screen and (max-width: 770px) {
   .hometop {
     padding-bottom: 20rem;
+    height: calc(100vh - 8rem) !important;
+  }
+  .alignright {
+    height: fit-content;
   }
   .mysis {
-    padding-top: 20rem;
+    padding-top: 15rem;
     text-align: center;
     margin-left: 0;
     margin-right: 0;
   }
   .name {
     font-size: var(--h2);
-    margin-left: 5rem;
+
     margin-right: 0;
-  }
-  .line2 {
-    margin-right: 5.5rem;
   }
   .keeper {
     font-size: var(--h2);
     width: 23.5rem;
     margin-left: 2rem;
+    margin-bottom: 4rem;
   }
   .si {
     font-size: var(--h5);
-    width: 47rem;
+    width: 40rem;
     text-align: right;
-    margin-left: 0%;
+    margin-left: 0;
+    position: absolute;
+    top: 45rem;
   }
   #logo-img {
     height: 10rem;
@@ -701,15 +714,21 @@ export default {
   #yellow {
     height: 25%;
   }
+  #pink {
+    height: 90%;
+  }
 }
 @media only screen and (max-width: 500px) {
   .name {
     font-size: var(--h3);
-    margin-left: 3rem;
+  }
+  .mysis {
+    padding-top: 16rem;
   }
   .line2 {
-    margin-right: 3rem;
+    justify-content: right;
   }
+
   .keeper {
     font-size: var(--h3);
     width: 18rem;
@@ -717,13 +736,14 @@ export default {
   }
   .si {
     font-size: var(--h6);
-    width: 33rem;
+    width: 28rem;
+    top: 40rem;
   }
   #logo-img {
     height: 8rem;
   }
   #yellow {
-    height: 20%;
+    height: 25%;
   }
 }
 </style>
