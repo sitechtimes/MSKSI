@@ -35,16 +35,6 @@
   --four: 4rem;
   --one: 1.3rem;
 }
-[data-theme="blackpink"]{
-  --navyblue: #1E1E1E;
-  --yellow: #FFFFFF;
-  --darkyellow: #FFE9E9;
-  --darkpink: #FF92AB;
-  --cerise: #FFE9E9;
-  --white: #FFE9E9;
-  --tpnavyblue: #FF92AB;
-  --secondarybackground:#1E1E1E;
-}
 
 #navbar {
   background-color: var(--navyblue);
@@ -87,10 +77,6 @@
   display: inline-block;
 }
 
-html,
-body {
-  cursor: url('../images/favicon.png'), default;
-}
 
 .router:after {
   display: block;
@@ -105,8 +91,7 @@ body {
 }
 
 .router.nuxt-link-exact-active {
-  color: var(--yellow);
-  border-bottom: 3px solid var(--yellow);
+  color: var(--darkpink);
 }
 .subheading {
   margin-left: 11rem;
@@ -132,7 +117,7 @@ body {
   transform: scale(1.1);
   transition: 0.3s;
 }
-/* button test */
+/* button test
 .button {
   display: inline-block;
   transition: all .3s;
@@ -174,12 +159,12 @@ body {
     background-color: var(--darkpink);
     color: var(--white);
   }
-    .button:hover:before {
-      width: 100%;
-    }
-    .pink:hover:before{
-      color: var(--navyblue);
-    }
+  .button:hover:before {
+    width: 100%;
+  }
+  .pink:hover:before{
+    color: var(--navyblue);
+  } */
   
 
 @media only screen and (max-width: 1500px) {
