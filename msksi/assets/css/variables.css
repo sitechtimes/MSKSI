@@ -284,7 +284,6 @@ input[type='checkbox'] {
 
 ::-webkit-scrollbar-track {
   background: var(--navyblue);
-  border-radius: 40rem;
 }
 
 ::-webkit-scrollbar-thumb {
