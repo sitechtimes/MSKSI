@@ -15,9 +15,10 @@ body,
 
 .heading {
   font-size: var(--h1);
-  font-family: 'Black Han Sans';
+  font-family: 'Sora';
+  font-weight: bolder;
+  font-style: normal;
   margin: 0rem 11rem 0 11rem;
-  font-weight: lighter;
   color: var(--yellow);
   padding-top: 7rem;
 }
@@ -27,7 +28,6 @@ body,
 @media only screen and (max-width: 1500px) {
   .heading {
     font-size: var(--h2);
-    font-family: 'Black Han Sans';
   }
   .text {
     font-size: var(--subheadingjum);
@@ -76,8 +76,8 @@ body,
   .text {
     font-size: var(--h6);
   }
-  .gifImage{
-    display:none;
+  .gifImage {
+    display: none;
   }
 }
 .menuIcon {
