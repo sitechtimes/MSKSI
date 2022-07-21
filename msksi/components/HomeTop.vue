@@ -590,7 +590,7 @@ export default {
 
 #logo-img {
   width: auto;
-  height: 25rem;
+  height: 20rem;
 
   margin-top: 1rem;
 }
@@ -624,7 +624,7 @@ export default {
   .keeper {
     width: 45rem;
     margin-top: 1rem;
-    margin-left: 2rem;
+    margin-left: 0rem;
   }
   .si {
     margin-top: 2rem;
@@ -633,7 +633,7 @@ export default {
   }
   #logo-img {
     width: auto;
-    height: 20rem;
+    height: 18rem;
   }
 }
 @media only screen and (max-width: 1032px) {
@@ -654,7 +654,7 @@ export default {
   }
   .keeper {
     width: fit-content;
-    margin-left: 3rem;
+    margin-left: 2rem;
     right: 0;
   }
   .si {
@@ -696,7 +696,7 @@ export default {
   .keeper {
     font-size: var(--h2);
     width: 23.5rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-bottom: 4rem;
   }
   .si {
