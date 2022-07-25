@@ -91,17 +91,10 @@ export default {
     },
     LeftCardRotate() {
       const timeline = this.$gsap.timeline()
-      timeline
-        .from('.current--card', {
-          x: -100,
-          duration: 0.5,
-        })
-        .from('.prev--card', {
-          ease: 'power1.out',
-          duration: 0.2,
-          y: -2,
-          rotation: 1,
-        })
+      timeline.from('.current--card', {
+        x: -100,
+        duration: 0.5,
+      })
     },
   },
 }
