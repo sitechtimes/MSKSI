@@ -5,7 +5,7 @@
         <div class="icon">
           <img
             src="~assets/images/CarouselArrow.png"
-            alt=""
+            alt="left arrow"
             class="left arrow"
           />
         </div>
@@ -40,7 +40,7 @@
         <div class="icon">
           <img
             src="~assets/images/CarouselArrow.png"
-            alt=""
+            alt="right arrow"
             class="right arrow"
           />
         </div>
