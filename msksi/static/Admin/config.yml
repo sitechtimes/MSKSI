@@ -58,3 +58,23 @@ collections:
       - { label: 'Event Name', name: 'eventname', widget: 'string' }
       - { label: 'Event Month', name: 'eventmonth', widget: 'datetime' }
       - { label: 'Event Date', name: 'eventdate', widget: 'string' }
+  - name: 'commspot'
+    label: 'Community Spotlight'
+    folder: 'content/commspot'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Main Image', name: 'img_main', widget: 'image' }
+      - { label: 'Small Image 1', name: 'img_reel1', widget: 'image' }
+      - { label: 'Small Image 2', name: 'img_reel2', widget: 'image' }
+      - { label: 'Small Image 3', name: 'img_reel3', widget: 'image' }
+      - { label: 'Caption 1', name: 'reel_caption1', widget: 'string' }
+      - { label: 'Caption 2', name: 'reel_caption1', widget: 'string' }
+      - { label: 'Caption 3', name: 'reel_caption1', widget: 'string' }
+      - { label: 'Album Link', name: 'link', widget: 'string' }
