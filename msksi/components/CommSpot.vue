@@ -1,7 +1,7 @@
 <template>
   <div class="homespotlight">
     <div id="CSbutton-holder">
-      <router-link class="navRouter CSroutermore router" to="/AboutUs">
+      <router-link class="navRouter CSroutermore" to="/AboutUs">
         Read More
       </router-link>
       <div class="CSreadmore"></div>
