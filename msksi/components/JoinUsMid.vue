@@ -66,10 +66,8 @@ export default {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-size: var(--h3);
   margin-left: 15rem;
-  margin-top: 5.5rem;
-  line-height: 6rem;
-  width: 60vw;
-  line-height: 6rem;
+  margin-top: 5rem;
+  line-height: 5rem;
 }
 .joinusmid {
   height: 75rem;
@@ -85,7 +83,7 @@ export default {
 #wbsm {
   list-style-type: circle;
   color: var(--navyblue);
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 .wbsmr {
   color: var(--darkpink);
@@ -94,34 +92,6 @@ export default {
   .joinusmid {
     height: 66rem;
   }
-  .text {
-    font-size: var(--list);
-  }
-  .subheading {
-    font-size: var(--subheadingju);
-  }
-  .button {
-    margin-top: 7.5rem;
-    position: sticky;
-    left: 11rem;
-    width: 20rem;
-    height: 5.5rem;
-  }
-  .text {
-    font-size: var(--h3);
-    margin-left: 12rem;
-    margin-top: 0.5rem;
-  }
-
-  .subheading {
-    margin-left: 6rem;
-  }
-  .joinustop {
-    height: 85rem;
-  }
-  .joinusmid {
-    height: 75rem;
-  }
   .wbsm {
     margin-top: 0;
   }
@@ -129,24 +99,89 @@ export default {
   .joinusmid {
     margin-top: 10rem;
   }
+  #picture {
+    width: 33rem;
+    height: 33rem;
+  }
 }
-@media only screen and (max-width: 810px) {
-  .joinusmid {
-    height: 95rem;
+@media only screen and (max-width: 1200px) {
+  .subheading {
+    font-size: var(--subheadingju);
+  }
+  #textgroup {
+    width: 70%;
   }
   .text {
     margin-left: 8rem;
     font-size: var(--h5);
   }
   .wbsm {
-    font-size: var(--h3);
-    margin-left: 8rem;
-    margin-top: 0rem;
+    margin-left: 6rem;
+  }
+  #picture {
+    width: 25rem;
+    height: 25rem;
+  }
+  .image-container {
+    margin-top: 6rem;
+    margin-left: 0rem;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .subheading {
+    font-size: var(--subheadingjum);
+    text-align: center;
+  }
+  #picture {
+    width: 24rem;
+    height: 24rem;
+    display: block;
+    margin: auto;
+    margin-bottom: 4rem;
+  }
+  .image-container {
+    margin-top: 1rem;
+    flex-direction: row;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #wbsm {
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+    flex-direction: row;
+  }
+  #textgroup {
+    width: 90%;
+    margin-left: 0;
+  }
+  #info {
+    flex-direction: column;
+  }
+  .button {
+    margin-top: 9rem;
     margin-left: 4rem;
   }
-  .heading {
-    font-size: var(--h3);
+  .text {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #info {
+    flex-direction: column;
+  }
+  #picture {
+    width: 20rem;
+    height: 20rem;
+    top: 0;
+    margin-top: 1rem;
+  }
+  .text {
     margin-top: 0;
+    margin-bottom: 0;
+    line-height: 3;
+    width: 100%;
   }
   .button {
     margin-top: 5rem;
@@ -194,6 +229,10 @@ export default {
   }
   .subheading {
     font-size: var(--subheadingjum);
+  }
+  .button {
+    margin-top: 8rem;
+    margin-left: 1rem;
   }
 }
 </style>

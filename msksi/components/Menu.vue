@@ -36,6 +36,22 @@
 <script>
 export default {
   name: 'Menu',
-  methods: {},
+  data(){
+    return{
+      checked: Boolean,
+    }
+  },
+  methods: {
+    toggleOn() {
+      let menuOpen = document.querySelector('.wrapper');
+      menuOpen.classList.remove('hide');
+      this.checked = true;
+    },
+      toggleOff() {
+      let menuOpen = document.querySelector('.wrapper');
+      menuOpen.classList.add('hide')
+      this.checked = false;
+    }
+  },
 }
 </script>

@@ -51,8 +51,10 @@ export default {
 <style scoped>
 .AboutUsMid {
   text-align: center;
-  background-color: white;
-  height: 85rem;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .left {
   width: 50%;
@@ -108,7 +110,7 @@ li {
 @media only screen and (max-width: 1018px) {
   .AboutUsMid {
     text-align: center;
-    background-color: white;
+    background-color: var(--white);
     display: inline-block;
     padding-bottom: 6rem;
   }

@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: develop # Branch to update (optional; defaults to master)
 
-media_folder: "static/img"
-public_folder: "/img"
+media_folder: 'static/img'
+public_folder: '/img'
 
 collections:
   - name: 'album'
@@ -19,21 +19,9 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Album Link', name: 'link', widget: 'string' }
       - { label: 'Image', name: 'img', widget: 'image' }
-  - name: 'agenda'
-    label: 'Agenda'
-    folder: 'content/agendas'
-    format: 'frontmatter'
-    create: true
-    slug: '{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Agenda Link', name: 'link', widget: 'string' }
-    - name: 'resource'
+  - name: 'resource'
     label: 'Resource'
-    folder: 'content/newresources'
+    folder: 'content/resources'
     format: 'frontmatter'
     create: true
     slug: '{{slug}}'
@@ -42,20 +30,5 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Resources Link', name: 'link', widget: 'string' }  
+      - { label: 'Resources Link', name: 'link', widget: 'string' }
       - { label: 'Image', name: 'img', widget: 'image' }
-
-  # - name: 'comm-spot'
-  #   label: 'Community Spotlight'
-  #   folder: 'content/comm-spot'
-  #   format: 'frontmatter'
-  #   create: true
-  #   slug: '{{slug}}'
-  #   editor:
-  #     preview: false
-  #   fields:
-  #     - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-  #     - { label: 'Title', name: 'subheader', widget: 'string' }
-  #     - { label: 'Month', name: 'month', widget: 'string' }
-  #     - { label: 'Image', name: 'img', widget: 'image' }
-  #     - { label: 'Description', name: 'description', widget: 'string' }

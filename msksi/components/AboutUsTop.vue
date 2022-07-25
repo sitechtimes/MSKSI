@@ -1,10 +1,6 @@
 <template>
   <div class="AboutUsTop">
-    <div class="blockText">
-      <h2 class="heading">Our <span class="h mission">Mission</span></h2>
-      <button @click="playMethod" id=play></button>
-      <button @click="pauseMethods" id=pause></button>
-    </div>
+    <h2 class="heading">Our <span class="h mission">Mission</span></h2>
     <h3 id="text" class="text">
         {{ textarea }}
     </h3>
@@ -30,42 +26,8 @@ export default {
       paused: false,
     }
   },
-  head (){
-    return{
-      htmlAttrs: {lang:'en'}
-    }
-  },
-  mounted(){
-     if ('speechSynthesis' in window) {
-     console.log('works') /* speech synthesis supported */
-  }
-  else {
-     console.log('no works') /* speech synthesis not supported */
-  }
-  },
-  methods: {
-    playMethod(){
-      const utterance = new SpeechSynthesisUtterance();
-      let voices = []
-      voices = window.speechSynthesis.getVoices();
-      utterance.voice = voices[0];
-      // utterance.rate = 10;
-      utterance.volume = 10;
-      utterance.text = this.textarea;
-        speechSynthesis.speak(utterance);
-        console.log(this.textarea);
-      
-      if (this.paused === true ){
-        window.speechSynthesis.resume();
-        // resume();
-      }
-    },
-    pauseMethods(){
-      speechSynthesis.pause();
-      this.paused = true;
-      // pause();
-    }
-  },
+
+  methods: {},
 }
 </script>
 <style scoped>
@@ -120,7 +82,6 @@ button {
 #pause:focus {
   background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
 }
-
 
 @media only screen and (max-width: 1500px) {
   .AboutUsTop {

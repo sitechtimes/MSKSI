@@ -58,7 +58,19 @@ p {
     padding-bottom: 8rem;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 1500px){
+    .postcontent{
+        flex-wrap: wrap-reverse;
+    }
+    img{
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 2rem;
+        height: 35rem;
+    }
+}
+
+@media screen and (max-width: 450px){
     .newmonth{
         padding-bottom: 0rem;
     }
@@ -84,19 +96,6 @@ p {
         justify-content: center;
     }
 
-}
-@media screen and (max-width: 1500px){
-    .postcontent{
-        flex-wrap: wrap-reverse;
-    }
-    img{
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 2rem;
-    }
-    p {
-        padding-top: 3rem;
-    }
 }
 
 </style>
