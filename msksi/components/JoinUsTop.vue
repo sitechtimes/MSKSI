@@ -169,10 +169,15 @@
   }
 }
 @media only screen and (max-width: 500px) {
+  .joinustop {
+    padding-bottom: 4rem;
+  }
   #picture {
     width: 17rem;
     height: 17rem;
-    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .text {
     margin-top: 3rem;
@@ -194,12 +199,10 @@
   .image-container {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    margin: 0;
-    margin-bottom: 2rem;
+    flex-direction: column;
   }
   .button {
-    margin-top: 10rem;
+    margin: 4rem;
   }
 }
 </style>

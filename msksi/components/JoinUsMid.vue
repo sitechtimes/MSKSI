@@ -184,8 +184,7 @@ li {
   #picture {
     width: 20rem;
     height: 20rem;
-    margin-top: 1rem;
-    margin-right: 0rem;
+    margin: 0rem auto 0rem auto;
   }
   .text {
     margin-top: 3rem;
@@ -199,16 +198,16 @@ li {
     margin: 5rem;
     margin-bottom: 3rem;
     text-align: center;
+    font-size: var(--subheadingjum);
   }
   .image-container {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0;
   }
   .button {
-    margin-top: 8rem;
-    margin-right: 6rem;
+    margin: 0 4rem 4rem 4rem;
   }
 }
 </style>
