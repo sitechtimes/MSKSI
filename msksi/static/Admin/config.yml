@@ -32,3 +32,29 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Resources Link', name: 'link', widget: 'string' }
       - { label: 'Image', name: 'img', widget: 'image' }
+  - name: 'monthposts'
+    label: 'Month Posts'
+    folder: 'content/monthposts'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Month', name: 'month', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Title', name: 'subheader', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Image', name: 'img', widget: 'image' }
+  - name: 'eventpreview'
+    label: 'Event Preveiw'
+    folder: 'content/eventpreview'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Event Name', name: 'eventname', widget: 'string' }
+      - { label: 'Event Month', name: 'eventmonth', widget: 'datetime' }
+      - { label: 'Event Date', name: 'eventdate', widget: 'string' }
