@@ -45,13 +45,11 @@ export default {
     toggleOn() {
       let menuOpen = document.querySelector('.wrapper');
       menuOpen.classList.remove('hide');
-      console.log('bye')
       this.checked = true;
     },
       toggleOff() {
       let menuOpen = document.querySelector('.wrapper');
       menuOpen.classList.add('hide')
-      console.log('hello')
       this.checked = false;
     }
   },

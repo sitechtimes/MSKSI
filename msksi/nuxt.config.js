@@ -15,7 +15,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -33,6 +33,8 @@ export default {
     extraPlugins: {
       scrollTo: true,
       scrollTrigger: true,
+      MotionPathPlugin: true,
+      SplitText: true,
     },
   },
 
@@ -40,7 +42,25 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-
+    [
+      'nuxt-fontawesome',
+      {
+        imports: [
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: ['fas'],
+          },
+          {
+            set: '@fortawesome/free-regular-svg-icons',
+            icons: ['far'],
+          },
+          {
+            set: '@fortawesome/free-brands-svg-icons',
+            icons: ['fab'],
+          },
+        ],
+      },
+    ],
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content

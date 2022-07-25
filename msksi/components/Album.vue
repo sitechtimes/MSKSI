@@ -1,30 +1,16 @@
 <template>
-  <div class="Gallery">
-    <h2 class="heading">Photo <span class="gall heading">Gallery</span></h2>
-    <div class="Albums">
-      <Album
-        v-for="album in albums"
-        :key="album.title"
-        :title="album.title"
-        :img="album.img"
-        :link="album.link"
-      />
-    </div>
+  <div class="polaroid">
+    <img id="picture" :src="img" :alt="title" />
+    <a class="name" target="_blank" :href="link">{{ title }}</a>
   </div>
 </template>
 <script>
 export default {
-  name: 'GalleryTest',
-  components: {},
-  data() {
-    return {
-      albums: [],
-    }
-  },
-  async fetch() {
-    let albums = await this.$content('albums').sortBy('order', 'desc').fetch()
-    this.albums = albums
-    console.log(this.albums)
+  name: 'Album',
+  props: {
+    title: String,
+    img: String,
+    link: String,
   },
 }
 </script>
@@ -33,37 +19,16 @@ export default {
 a {
   cursor: pointer;
 }
-.Gallery {
-  background-color: #333043;
-  padding-bottom: 10rem;
-}
-.gall {
-  color: var(--darkpink);
-  margin: 0;
-  /* font-size: var(--h1); */
-}
 .name {
-  font-family: 'ABeeZee', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-style: normal;
   color: var(--navyblue);
   text-align: center;
   font-size: var(--h5);
   width: 20rem;
   display: block;
-  font-weight: bolder;
   text-align: center;
   margin-top: 3rem;
-}
-.Albums {
-  display: grid;
-  background-color: #333043;
-  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
-  grid-gap: 7rem;
-  margin: 11rem;
-  margin-top: 4rem;
-  justify-items: center;
-  grid-template-rows: auto;
-  padding-bottom: 0rem;
 }
 .polaroid {
   background-color: white;
@@ -72,6 +37,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }
 #picture {
   height: 20rem;
@@ -86,7 +52,7 @@ a {
 @media only screen and (max-width: 1032px) {
   .polaroid-container {
     grid-gap: 5rem;
-    margin: 5rem;
+    margin: 7rem;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -113,10 +79,5 @@ a {
     margin-bottom: 1rem;
     font-size: var(--h6);
   }
-  .Albums {
-    margin: 0;
-    margin-top: 4rem;
-  }
 }
 </style>
-

@@ -29,16 +29,18 @@ export default {
 .heading {
   text-align: center;
   color: var(--darkpink);
-  font-family: 'Black Han Sans';
+  font-family: 'Sora';
+  font-weight: bolder;
+  font-style: normal;
 }
 .will {
   font-size: var(--h3);
   color: var(--yellow);
   text-align: left;
-  font-family: 'Black Han Sans';
+  font-family: 'Sora';
   margin-left: 11rem;
   margin-top: 8rem;
-  font-weight: lighter;
+  font-weight: 600;
 }
 .texti {
   color: white;
@@ -101,7 +103,6 @@ export default {
   .will {
     font-size: var(--h5);
     text-align: left;
-    font-family: 'Black Han Sans';
     margin: 2rem 6rem 0 6rem;
     font-weight: lighter;
     margin-top: 4rem;

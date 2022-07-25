@@ -15,10 +15,10 @@ import HomeEvents from '~/components/HomeEvents.vue'
 export default {
   name: 'home',
   components: { HomeEvents, HomeMonth, CommSpot, HomeTop },
-    head() {
+  head() {
     return {
       title: "Home | My Sister's Keeper Staten Island"
-    };
-  },
+    }
+  }
 }
 </script>
