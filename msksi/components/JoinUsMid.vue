@@ -52,6 +52,7 @@ export default {
 }
 .text {
   margin-left: 14rem;
+  margin-right: 10rem;
 }
 #picture {
   width: 40rem;
@@ -100,22 +101,45 @@ li {
   .subheading {
     font-size: var(--subheadingju);
   }
+  .image-container {
+    margin-right: 6rem;
+  }
   #textgroup {
     width: 70%;
   }
+  .wbsm {
+    margin-top: 10rem;
+  }
+  #wbsm {
+    margin-left: 5rem;
+    margin-right: 4rem;
+  }
   .text {
     margin-left: 8rem;
+    margin-right: 2rem;
   }
   #picture {
-    width: 25rem;
-    height: 25rem;
+    width: 28rem;
+    height: 28rem;
+    margin-bottom: 1rem;
   }
   .image-container {
-    margin-top: 6rem;
+    margin-top: 8rem;
     margin-left: 0rem;
   }
 }
 @media only screen and (max-width: 770px) {
+  .joinusmid {
+    padding-bottom: 4rem;
+  }
+  .wbsm {
+    font-size: var(--h4);
+    margin: 0;
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
   #picture {
     width: 24rem;
     height: 24rem;
@@ -137,17 +161,19 @@ li {
   }
   #textgroup {
     width: 90%;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
   #info {
     flex-direction: column;
   }
   .button {
     margin-top: 9rem;
-    margin-left: 4rem;
+    margin-left: 1rem;
   }
   .text {
     margin-top: 2rem;
+    margin-left: 5rem;
   }
 }
 
@@ -158,20 +184,20 @@ li {
   #picture {
     width: 20rem;
     height: 20rem;
-    top: 0;
     margin-top: 1rem;
+    margin-right: 0rem;
   }
   .text {
-    margin-top: 0;
+    margin-top: 3rem;
     margin-bottom: 0;
-    line-height: 3;
+    line-height: 2;
   }
   #wbsm {
-    margin-left: -1.8rem;
     padding-bottom: 2rem;
   }
   .wbsm {
-    margin: 0;
+    margin: 5rem;
+    margin-bottom: 3rem;
     text-align: center;
   }
   .image-container {
@@ -182,7 +208,7 @@ li {
   }
   .button {
     margin-top: 8rem;
-    margin-left: 1rem;
+    margin-right: 6rem;
   }
 }
 </style>

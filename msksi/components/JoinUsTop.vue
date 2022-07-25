@@ -74,7 +74,7 @@
 }
 @media only screen and (max-width: 1500px) {
   #subc {
-    margin-left: 2rem;
+    margin-left: 1rem;
     padding-bottom: 2rem;
   }
   .subc {
@@ -88,8 +88,8 @@
     height: 75rem;
   }
   #picture {
-    width: 28rem;
-    height: 28rem;
+    width: 26rem;
+    height: 26rem;
     margin-top: 5rem;
   }
   .image-container {
@@ -99,17 +99,20 @@
   }
 }
 @media only screen and (max-width: 1032px) {
+  .subheading {
+    font-size: var(--subheadingju);
+  }
   #picture {
     width: 24rem;
     height: 24rem;
   }
   .image-container {
-    margin-top: 6rem;
+    margin-top: 3rem;
     margin-left: 2rem;
-    margin-right: 2rem;
+    margin-right: 7rem;
   }
   .text {
-    margin-left: 6rem;
+    margin-right: 6rem;
   }
   #textgroup {
     width: 70%;
@@ -136,6 +139,8 @@
     color: var(--darkpink);
     margin: 0;
     text-align: center;
+    margin-top: 3rem;
+    font-size: var(--h4);
   }
   #subc {
     margin-top: 0.5rem;
@@ -170,20 +175,21 @@
     margin-left: 5rem;
   }
   .text {
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 0;
-    line-height: 3;
-    width: 100%;
+    line-height: 2;
+    margin-left: 5rem;
+    margin-right: 7rem;
   }
   #subc {
     margin-top: 0rem;
-    margin-left: -1.8rem;
     font-size: var(--h6);
-    width: 95vw;
+    margin-right: auto;
+    margin-left: 4rem;
   }
   .subheading {
     font-size: var(--subheadingjum);
-    margin-top: 0;
+    margin-top: 4rem;
   }
   .image-container {
     display: flex;
