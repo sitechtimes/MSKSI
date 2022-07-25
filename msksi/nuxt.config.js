@@ -33,6 +33,8 @@ export default {
     extraPlugins: {
       scrollTo: true,
       scrollTrigger: true,
+      MotionPathPlugin: true,
+      SplitText: true,
     },
   },
   
@@ -59,7 +61,6 @@ export default {
         ],
       },
     ],
-
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
