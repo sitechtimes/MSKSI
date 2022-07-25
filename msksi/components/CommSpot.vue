@@ -3,6 +3,7 @@
     <div id="CSbutton-holder">
       <router-link class="navRouter CSroutermore" to="/AboutUs">
         Read More
+            <div class="arrow"></div>
       </router-link>
       <div class="CSreadmore"></div>
     </div>
@@ -293,6 +294,52 @@ export default {
 }
 .square-cut:hover .tp-hover {
   height: 100%;
+}
+
+/* arrow */
+
+.arrow {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  height: 60px;
+  width: 100px;
+}
+
+.arrow:before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 10%;
+  margin-top: -1px;
+  right: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.arrow:hover:before {
+  right: 34px;
+  width: 35px;
+}
+
+.arrow:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 2%;
+  /* margin-top: -5px; */
+  right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.arrow:hover:after {
+  right: 34px;
+  right: 30px;
 }
 
 /*media queries*/
