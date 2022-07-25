@@ -83,10 +83,12 @@ li {
 }
 @media only screen and (max-width: 1500px) {
   .wbsm {
-    margin-top: 0;
     font-size: var(--h3);
   }
   .joinusmid {
+    margin-top: 0rem;
+  }
+  .image-container {
     margin-top: 5rem;
   }
   #picture {
