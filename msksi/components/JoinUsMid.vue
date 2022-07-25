@@ -49,7 +49,6 @@ export default {
 }
 #textgroup {
   width: 72%;
-  margin-top: 8rem;
 }
 .text {
   margin-left: 14rem;
@@ -65,11 +64,12 @@ export default {
 }
 .image-container {
   text-align: center;
-  margin-top: 0rem;
+  margin-top: 4rem;
 }
 .wbsm {
   color: rgba(220, 53, 92, 1);
   margin-top: 12rem;
+  font-size: var(--h2);
 }
 #wbsm {
   color: var(--navyblue);
