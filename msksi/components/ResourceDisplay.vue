@@ -29,6 +29,36 @@ export default {
     this.resources = resources
     console.log(this.resources)
   },
+  mounted() {
+    this.staggerFly()
+  },
+  updated() {
+    this.staggerFly()
+  },
+  methods: {
+    staggerFly() {
+      const staggerTL = this.$gsap.timeline({})
+      staggerTL
+        .fromTo(
+          '.resource',
+          {
+            y: 70,
+            stagger: 0.05,
+            duration: 0.5,
+          },
+          { y: -8, stagger: 0.05, duration: 0.5 }
+        )
+        .to(
+          '.resource',
+          {
+            y: 0,
+            stagger: 0.05,
+            duration: 0.5,
+          },
+          '<+0.5'
+        )
+    },
+  },
 }
 </script>
 
@@ -37,7 +67,7 @@ export default {
   background: #333043;
 }
 .resource:hover {
- transform: scale(1.02);
+  transform: scale(1.02);
   transition: 0.2s;
 }
 h3 {
@@ -86,7 +116,7 @@ img {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 .item {
   color: #333043;
@@ -223,4 +253,3 @@ ul {
   }
 }
 </style>
-

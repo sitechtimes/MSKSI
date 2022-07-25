@@ -26,6 +26,36 @@ export default {
     this.albums = albums
     console.log(this.albums)
   },
+  mounted() {
+    this.staggerFly()
+  },
+  updated() {
+    this.staggerFly()
+  },
+  methods: {
+    staggerFly() {
+      const staggerTL = this.$gsap.timeline({})
+      staggerTL
+        .fromTo(
+          '.polaroid',
+          {
+            y: 70,
+            stagger: 0.05,
+            duration: 0.5,
+          },
+          { y: -8, stagger: 0.05, duration: 0.5 }
+        )
+        .to(
+          '.polaroid',
+          {
+            y: 0,
+            stagger: 0.05,
+            duration: 0.5,
+          },
+          '<+0.5'
+        )
+    },
+  },
 }
 </script>
 <style scoped>
@@ -119,4 +149,3 @@ a {
   }
 }
 </style>
-

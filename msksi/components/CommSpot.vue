@@ -1,7 +1,7 @@
 <template>
   <div class="homespotlight">
     <div id="CSbutton-holder">
-      <router-link class="navRouter CSroutermore" to="/AboutUs">
+      <router-link class="router CSroutermore" to="/AboutUs">
         Read More
       </router-link>
       <div class="CSreadmore"></div>
@@ -233,6 +233,7 @@ export default {
   position: absolute;
   z-index: 11;
   transition: all 0.2s;
+  text-decoration: none;
 }
 
 .CSimg-reel {
@@ -383,16 +384,16 @@ export default {
   }
 
   .CSreadmore {
-    width: 30rem;
+    width: 25rem;
     clip-path: none;
     height: 7rem;
     margin-bottom: 1.3rem;
-    border-radius: 2rem;
+    border-radius: 3.5rem;
     bottom: 4rem;
   }
 
   .CSroutermore {
-    padding: 2rem 8.5rem;
+    padding: 2rem 5.5rem;
     bottom: 5rem;
     font-size: 2.6rem;
   }

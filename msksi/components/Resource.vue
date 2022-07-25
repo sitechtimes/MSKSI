@@ -21,7 +21,7 @@ export default {
   background: #333043;
 }
 .resource:hover {
- transform: scale(1.02);
+  transform: scale(1.02);
   transition: 0.2s;
 }
 h3 {
@@ -207,4 +207,3 @@ ul {
   }
 }
 </style>
-
