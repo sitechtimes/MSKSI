@@ -1,7 +1,7 @@
 <template>
   <div class="NewCarousel">
     <div class="cardList" ref="cardList">
-      <button @click="swapCards(left)" class="left btn">
+      <button @click="swapCards(left), LeftCardRotate()" class="left btn">
         <div class="icon">
           <img
             src="~assets/images/CarouselArrow.png"
@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>
-      <button @click="swapCards(right)" class="right btn">
+      <button @click="swapCards(right), RightCardRotate()" class="right btn">
         <div class="icon">
           <img
             src="~assets/images/CarouselArrow.png"
@@ -82,6 +82,27 @@ export default {
       swapCardsClass()
     },
     cardSwitch() {},
+    RightCardRotate() {
+      const timeline = this.$gsap.timeline()
+      timeline.from('.current--card', {
+        x: 100,
+        duration: 0.5,
+      })
+    },
+    LeftCardRotate() {
+      const timeline = this.$gsap.timeline()
+      timeline
+        .from('.current--card', {
+          x: -100,
+          duration: 0.5,
+        })
+        .from('.prev--card', {
+          ease: 'power1.out',
+          duration: 0.2,
+          y: -2,
+          rotation: 1,
+        })
+    },
   },
 }
 </script>
