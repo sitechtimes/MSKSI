@@ -9,9 +9,7 @@ body,
   font-size: 62.5%;
   cursor: url('../images/pinkCursor.png'), auto;
 }
-.button[data-v-8d025cfc],
-button,
-a {
+.button[data-v-8d025cfc] {
   cursor: url('../images/hoverBtnCursor.png'), auto;
 }
 
@@ -51,6 +49,9 @@ a {
   .text {
     font-size: var(--h5);
   }
+  .button:hover {
+    transform: scale(1);
+  }
 }
 @media only screen and (min-width: 1032px) {
   .menu {
@@ -83,3 +84,4 @@ a {
   background-color: transparent;
   border-color: transparent;
 }
+
