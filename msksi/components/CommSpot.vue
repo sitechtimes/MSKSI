@@ -41,7 +41,6 @@
 <script>
 export default {
   name: 'CommSpot',
-
   data() {
     return {
       post: 'Loading',
