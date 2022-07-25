@@ -70,7 +70,7 @@ export default {
 </script>
 <style>
 .slide-enter-active {
-  animation: slide-right 0.5s;
+  animation: slide-right 0.6s;
 }
 /* .slide-leave-active {
   animation: slide-right 0.5s reverse;
