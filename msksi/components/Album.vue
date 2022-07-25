@@ -17,7 +17,7 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
 a {
-  cursor: pointer;
+  cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
 }
 .name {
   font-family: 'Be Vietnam Pro', sans-serif;
@@ -29,7 +29,15 @@ a {
   display: block;
   text-align: center;
   margin-top: 3rem;
+  text-decoration: none;
+  transition: all 0.2s;
 }
+
+.name:hover {
+  text-decoration: underline var(--darkpink) 3px;
+  color: var(--darkpink);
+}
+
 .polaroid {
   background-color: white;
   height: 36rem;

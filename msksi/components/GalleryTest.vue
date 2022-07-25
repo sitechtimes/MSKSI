@@ -61,7 +61,7 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
 a {
-  cursor: pointer;
+  cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
 }
 .Gallery {
   background-color: #333043;
