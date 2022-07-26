@@ -4,7 +4,7 @@
     <div class="Albums">
       <Album
         v-for="album in albums"
-        :key="album.title"
+        :key="album.slug"
         :title="album.title"
         :img="album.img"
         :link="album.link"

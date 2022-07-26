@@ -49,11 +49,7 @@ export default {
 }
 
 .text {
-  margin: 4rem 11rem 0 11rem;
-  font-family: 'Cairo', sans-serif;
   color: var(--white);
-  text-align: left;
-  font-size: var(--four);
   justify-content: center;
 }
 /* test buttons */

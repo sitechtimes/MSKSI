@@ -58,13 +58,8 @@ export default {
 }
 .left {
   width: 50%;
-  height: 100%;
-  font-family: 'Black Han Sans';
-}
-.v {
-  margin-top: auto;
-  margin-bottom: auto;
-  display: block;
+  font-family: 'Black Han Sans', sans-serif ;
+  margin: 10rem 0 10rem 0;
 }
 .msksi {
   color: var(--darkpink);

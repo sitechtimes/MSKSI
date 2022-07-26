@@ -1,8 +1,8 @@
 <template>
   <div id="AboutUsBottom">
-    <h2 class="gao">Goals and Outcome</h2>
-    <h3 class="will">MSKSI members will:</h3>
-    <h4 class="texti">
+    <h2 class="heading gao">Goals and Outcomes</h2>
+    <h3 class="subheading will">MSKSI members will:</h3>
+    <h4 class="text texti">
       Be able to adapt healthy social and emotional habits that will support
       building positive internal self-esteem. Be mindful how others appear and
       show up. Have grace, dignity and leave room for error and forgiveness.
@@ -44,18 +44,17 @@ export default {
   font-size: var(--h2);
   text-align: center;
   color: var(--darkpink);
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif;
   font-weight: bolder;
   font-style: normal;
 }
 .will {
-  font-size: var(--h3);
   color: var(--yellow);
-  text-align: left;
-  font-family: 'Sora';
-  margin-left: 11rem;
-  margin-top: 8rem;
-  font-weight: 600;
+}
+.texti {
+  display: block;
+  color: var(--white);
+  justify-content: center;
 }
 .goal {
   color: var(--navyblue);
@@ -78,25 +77,12 @@ export default {
   }
   .will {
     margin-top: 4rem;
-    font-weight: lighter;
-  }
-  .gao {
-    padding-top: 7rem;
-    font-weight: lighter;
-  }
-}
-@media only screen and (max-width: 1500px) {
-  .will {
-    font-size: var(--h4);
   }
   .texti {
     margin-top: 4rem;
   }
 }
-@media only screen and (max-width: 510px) {
-  #AboutUsBottom {
-    height: 68rem;
-  }
+@media only screen and (max-width: 770px) {
   .texti {
     margin-top: 2rem;
     font-size: var(--h5);
@@ -112,10 +98,7 @@ export default {
     padding-top: 5rem;
   }
   .will {
-    font-size: var(--h5);
-    text-align: left;
     margin: 2rem 6rem 0 6rem;
-    font-weight: lighter;
     margin-top: 4rem;
   }
 }

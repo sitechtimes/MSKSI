@@ -22,26 +22,20 @@ export default {
 </script>
 
 <style scoped>
-
-.button {
-  padding: 1.2rem;
-  margin-top: 10rem;
-  margin-left: 80%;
-  position: sticky;
-  left: 125rem;
-  width: 22rem;
-  height: 8rem;
-  font-size: var(--four);
-  border-radius: 20rem;
-  font-family: 'Black Han Sans';
-  border: none;
-  cursor: pointer;
+.joinusmid {
+  padding-bottom: 10rem;
+  background-color: white;
 }
-
-.button:hover{
-  transform: scale(1.2);
-  transition: transform .75s;
-
+#info {
+  display: flex;
+  flex-direction: row;
+}
+#textgroup {
+  width: 72%;
+}
+.text {
+  margin-left: 14rem;
+  margin-right: 10rem;
 }
 .button:active {
   animation: press 0.2s 1 linear;
@@ -62,74 +56,60 @@ export default {
   background-color: var(--yellow);
   filter: drop-shadow(5px 5px 4px grey);
 }
-.text {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: var(--h3);
-  margin-left: 15rem;
-  margin-top: 5rem;
-  line-height: 5rem;
-}
-.joinusmid {
-  height: 75rem;
-  background-color: white;
-  margin-top: 20rem;
-}
-.wbsm {
-  font-size: var(--h2);
-  margin-top: -4rem;
-  color: rgba(220, 53, 92, 1);
-  padding-top: 0;
-}
-#wbsm {
-  list-style-type: circle;
-  color: var(--navyblue);
+.image-container {
+  text-align: center;
   margin-top: 4rem;
 }
-.wbsmr {
-  color: var(--darkpink);
+.wbsm {
+  color: rgba(220, 53, 92, 1);
+  margin-top: 12rem;
+  font-size: var(--h2);
 }
-@media only screen and (max-width: 1500px) {
-  .joinusmid {
-    height: 66rem;
-  }
-  .wbsm {
-    margin-top: 0;
-  }
-
-  .joinusmid {
-    margin-top: 10rem;
-  }
   #picture {
     width: 33rem;
     height: 33rem;
-  }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1032px) {
   .subheading {
     font-size: var(--subheadingju);
+  }
+  .image-container {
+    margin-right: 6rem;
   }
   #textgroup {
     width: 70%;
   }
+  .wbsm {
+    margin-top: 10rem;
+  }
+  #wbsm {
+    margin-left: 5rem;
+    margin-right: 4rem;
+  }
   .text {
     margin-left: 8rem;
-    font-size: var(--h5);
-  }
-  .wbsm {
-    margin-left: 6rem;
+    margin-right: 2rem;
   }
   #picture {
-    width: 25rem;
-    height: 25rem;
+    width: 28rem;
+    height: 28rem;
+    margin-bottom: 1rem;
   }
   .image-container {
-    margin-top: 6rem;
+    margin-top: 8rem;
     margin-left: 0rem;
   }
 }
 @media only screen and (max-width: 770px) {
-  .subheading {
-    font-size: var(--subheadingjum);
+  .joinusmid {
+    padding-bottom: 4rem;
+  }
+  .wbsm {
+    font-size: var(--h4);
+    margin: 0;
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
   #picture {
@@ -153,17 +133,19 @@ export default {
   }
   #textgroup {
     width: 90%;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
   #info {
     flex-direction: column;
   }
   .button {
     margin-top: 9rem;
-    margin-left: 4rem;
+    margin-left: 1rem;
   }
   .text {
     margin-top: 2rem;
+    margin-left: 5rem;
   }
 }
 
@@ -174,65 +156,30 @@ export default {
   #picture {
     width: 20rem;
     height: 20rem;
-    top: 0;
-    margin-top: 1rem;
+    margin: 0rem auto 0rem auto;
   }
   .text {
-    margin-top: 0;
+    margin-top: 3rem;
     margin-bottom: 0;
-    line-height: 3;
-    width: 100%;
-  }
-  .button {
-    margin-top: 5rem;
-    width: 16rem;
-    height: 4.5rem;
-    font-size: var(--h4);
-    font-weight: lighter;
-    border-radius: 20rem;
-    font-family: 'Black Han Sans';
-    border: none;
-    margin: 4rem;
-  }
-  .subheading {
-    font-size: var(--subheadingjum);
-  }
-}
-@media only screen and (max-width: 510px){
-  .joinusmid {
-    height: 95rem;
-  }
-  .text {
-    margin-top: 0;
-    margin-bottom: 0;
-    
+    line-height: 2;
   }
   #wbsm {
-    margin-left: -1.8rem;
-    font-size: var(--h6);
-    width: 95vw;
+    padding-bottom: 2rem;
   }
-
-  .button {
-    margin-top: 5rem;
-    width: 16rem;
-    height: 4.5rem;
-    font-size: var(--h5);
-    font-weight: lighter;
-    border-radius: 20rem;
-    font-family: 'Black Han Sans';
-    border: none;
-    margin-left: auto;
-    display: block;
-    margin-right: auto;
-
-  }
-  .subheading {
+  .wbsm {
+    margin: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
     font-size: var(--subheadingjum);
   }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+  }
   .button {
-    margin-top: 8rem;
-    margin-left: 1rem;
+    margin: 0 4rem 4rem 4rem;
   }
 }
 </style>

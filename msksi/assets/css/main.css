@@ -15,23 +15,39 @@ body,
 
 .heading {
   font-size: var(--h1);
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif;
   font-weight: bolder;
   font-style: normal;
   margin: 0rem 11rem 0 11rem;
   color: var(--yellow);
   padding-top: 7rem;
 }
+.subheading {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: var(--h3);
+  text-align: left;
+  margin-left: 11rem;
+  margin-top: 8rem;
+}
 .text {
   font-size: var(--four);
+  font-family: 'Sora', sans-serif;
+  margin: 4rem 11rem 0 11rem;
+  text-align: left;
+  font-weight: lighter;
 }
 @media only screen and (max-width: 1500px) {
   .heading {
     font-size: var(--h2);
   }
+  .subheading {
+    font-size: var(--h4);
+  }
   .text {
     font-size: var(--subheadingjum);
   }
+
 }
 @media only screen and (max-width: 1032px) {
   .nav {
@@ -67,11 +83,18 @@ body,
     font-size: var(--h3);
     margin: 0;
   }
+  .subheading {
+    font-size: var(--h5);
+  }
+
 }
 @media only screen and (max-width: 500px) {
   .heading {
     padding-top: 3rem;
     font-size: var(--h4);
+  }
+  .logo{
+    font-size: var(--h5);
   }
   .text {
     font-size: var(--h6);
@@ -84,4 +107,3 @@ body,
   background-color: transparent;
   border-color: transparent;
 }
-
