@@ -180,6 +180,7 @@ li {
   margin-left: 20rem;
   line-height: 6rem;
   font-size: var(--h4);
+  margin-top: 0;
   cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
 }
 /* .date::before {
