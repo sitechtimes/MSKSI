@@ -41,7 +41,7 @@ collections:
     fields:
       - { label: 'Month', name: 'month', widget: 'string' }
       - { label: 'Post Title', name: 'subheader', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Post Description', name: 'description', widget: 'string' }
       - { label: 'Post Image', name: 'img', widget: 'image' }
   - name: 'eventpreview'
     label: 'Event Preview'
