@@ -22,12 +22,27 @@ body,
   color: var(--yellow);
   padding-top: 7rem;
 }
+.subheading {
+  font-family: 'Sora';
+  font-weight: 600;
+  font-size: var(--h3);
+  text-align: left;
+  margin-left: 11rem;
+  margin-top: 8rem;
+}
 .text {
   font-size: var(--four);
+  font-family: 'Sora';
+  margin: 4rem 11rem 0 11rem;
+  text-align: left;
+  font-weight: lighter;
 }
 @media only screen and (max-width: 1500px) {
   .heading {
     font-size: var(--h2);
+  }
+  .subheading {
+    font-size: var(--h4);
   }
   .text {
     font-size: var(--subheadingjum);
@@ -67,6 +82,9 @@ body,
     font-size: var(--h3);
     margin: 0;
   }
+  .subheading {
+    font-size: var(--h5);
+  }
 }
 @media only screen and (max-width: 500px) {
   .heading {
@@ -84,4 +102,3 @@ body,
   background-color: transparent;
   border-color: transparent;
 }
-

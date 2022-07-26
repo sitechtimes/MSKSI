@@ -7,6 +7,14 @@
 <script>
 export default {
   name: 'Resource',
+  async asyncData({ $content }) {
+    const posts = await $content("blog").fetch();
+
+    return {
+      posts,
+    };
+  },
+
   props: {
     title: String,
     img: String,
