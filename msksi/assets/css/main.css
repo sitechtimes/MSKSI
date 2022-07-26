@@ -47,9 +47,7 @@ body,
   .text {
     font-size: var(--subheadingjum);
   }
-  .logo{
-    font-size: var(--h4);
-  }
+
 }
 @media only screen and (max-width: 1032px) {
   .nav {
@@ -88,9 +86,7 @@ body,
   .subheading {
     font-size: var(--h5);
   }
-  .logo{
-    font-size: var(--h4);
-  }
+
 }
 @media only screen and (max-width: 500px) {
   .heading {
