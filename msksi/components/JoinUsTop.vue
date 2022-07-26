@@ -152,7 +152,7 @@
     font-size: var(--h5);
     font-weight: bolder;
     border-radius: 20rem;
-    font-family: 'Sora';
+    font-family: 'Sora', sans-serif ;
     border: none;
     margin: 4rem;
   }

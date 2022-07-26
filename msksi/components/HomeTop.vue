@@ -172,6 +172,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'HomeTop',
   mounted() {
@@ -526,13 +527,14 @@ export default {
 </script>
 
 <style scoped>
+
 .hometop {
   background-color: var(--navyblue);
   padding-bottom: 25rem;
 }
 .name {
   font-size: var(--h1);
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif ;
   color: var(--yellow);
   padding-top: 7rem;
   visibility: hidden;
