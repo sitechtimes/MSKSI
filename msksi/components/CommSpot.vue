@@ -3,7 +3,7 @@
     <div id="CSbutton-holder">
       <router-link class="navRouter CSroutermore" to="/AboutUs">
         Read More
-        <div class="arrow"></div>
+            <div class="arrow"></div>
       </router-link>
       <div class="CSreadmore"></div>
     </div>
@@ -131,7 +131,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .homespotlight {
   height: 100rem;
   background-color: var(--white);
@@ -306,7 +306,7 @@ export default {
 }
 
 .arrow:before {
-  content: '';
+  content: "";
   width: 25px;
   height: 2px;
   background: white;
@@ -323,7 +323,7 @@ export default {
 }
 
 .arrow:after {
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border-style: solid;
