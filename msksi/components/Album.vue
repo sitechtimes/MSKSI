@@ -23,9 +23,7 @@ export default {
 </script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
-a {
-  cursor: pointer;
-}
+
 .name {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-style: normal;

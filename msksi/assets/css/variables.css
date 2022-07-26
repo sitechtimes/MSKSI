@@ -110,7 +110,7 @@ a:hover {
   border-radius: 20rem;
   font-family: 'Sora';
   border: none;
-  cursor: pointer;
+  cursor: url('../images/hoverBtnCursor.png'), auto;
   z-index: 1;
   transition: 0.5s ease-in-out;
   font-weight: bolder;
