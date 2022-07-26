@@ -35,6 +35,7 @@ body,
   font-family: 'Sora';
   margin: 4rem 11rem 0 11rem;
   text-align: left;
+  font-weight: lighter;
 }
 @media only screen and (max-width: 1500px) {
   .heading {
