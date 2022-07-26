@@ -184,7 +184,7 @@ a:hover {
     font-size: var(--h5);
     font-weight: lighter;
     border-radius: 20rem;
-    font-family: 'Black Han Sans';
+    font-family: 'Black Han Sans', sans-serif ;
     border: none;
     margin: 4rem;
   }
