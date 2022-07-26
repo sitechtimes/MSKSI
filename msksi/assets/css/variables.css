@@ -65,7 +65,7 @@ a:hover {
   margin-left: 2rem;
   margin-top: auto;
   margin-bottom: auto;
-  font-family: 'Black Han Sans';
+  font-family: 'Black Han Sans', sans-serif;
   font-weight: lighter;
   text-decoration: none;
 }
@@ -99,7 +99,7 @@ a:hover {
   margin-left: 11rem;
   font-size: var(--h3);
   margin-top: 4.5rem;
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif ;
   font-weight: bolder;
 }
 .button {
@@ -109,7 +109,7 @@ a:hover {
   height: 8rem;
   font-size: var(--h4);
   border-radius: 20rem;
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif;
   border: none;
   cursor: url('../images/hoverBtnCursor.png'), auto;
   z-index: 1;

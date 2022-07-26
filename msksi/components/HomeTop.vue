@@ -532,7 +532,7 @@ export default {
 }
 .name {
   font-size: var(--h1);
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif ;
   color: var(--yellow);
   padding-top: 7rem;
   visibility: hidden;

@@ -116,7 +116,7 @@ export default {
 }
 #agendas {
   color: var(--white);
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif;
   font-style: normal;
   font-weight: 700;
   text-align: center;
@@ -149,7 +149,7 @@ export default {
 }
 .year {
   color: var(--navy);
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif ;
   font-style: normal;
   font-weight: 700;
   margin-top: 3.5rem;
