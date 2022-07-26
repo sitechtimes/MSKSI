@@ -4,7 +4,7 @@
     <div id="resources">
       <Resource
         v-for="resource in resources"
-        :key="resource.title"
+        :key="resource.slug"
         :title="resource.title"
         :img="resource.img"
         :link="resource.link"
