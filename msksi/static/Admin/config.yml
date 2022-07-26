@@ -11,47 +11,44 @@ collections:
     folder: 'content/albums'
     format: 'frontmatter'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Album Name', name: 'title', widget: 'string' }
       - { label: 'Album Link', name: 'link', widget: 'string' }
-      - { label: 'Image', name: 'img', widget: 'image' }
+      - { label: 'Cover Image', name: 'img', widget: 'image' }
   - name: 'resource'
     label: 'Resource'
     folder: 'content/resources'
     format: 'frontmatter'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Resource Name', name: 'title', widget: 'string' }
       - { label: 'Resources Link', name: 'link', widget: 'string' }
-      - { label: 'Image', name: 'img', widget: 'image' }
+      - { label: 'Resource Image', name: 'img', widget: 'image' }
   - name: 'monthposts'
     label: 'Month Posts'
     folder: 'content/monthposts'
     format: 'frontmatter'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
       - { label: 'Month', name: 'month', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Title', name: 'subheader', widget: 'string' }
+      - { label: 'Post Title', name: 'subheader', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Image', name: 'img', widget: 'image' }
+      - { label: 'Post Image', name: 'img', widget: 'image' }
   - name: 'eventpreview'
-    label: 'Event Preveiw'
+    label: 'Event Preview'
     folder: 'content/eventpreview'
     format: 'frontmatter'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
@@ -67,7 +64,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Main Image', name: 'img_main', widget: 'image' }
@@ -77,4 +74,3 @@ collections:
       - { label: 'Caption 1', name: 'reel_caption1', widget: 'string' }
       - { label: 'Caption 2', name: 'reel_caption1', widget: 'string' }
       - { label: 'Caption 3', name: 'reel_caption1', widget: 'string' }
-      - { label: 'Album Link', name: 'link', widget: 'string' }
