@@ -47,6 +47,7 @@ body,
   .text {
     font-size: var(--subheadingjum);
   }
+
 }
 @media only screen and (max-width: 1032px) {
   .nav {
@@ -85,11 +86,15 @@ body,
   .subheading {
     font-size: var(--h5);
   }
+
 }
 @media only screen and (max-width: 500px) {
   .heading {
     padding-top: 3rem;
     font-size: var(--h4);
+  }
+  .logo{
+    font-size: var(--h5);
   }
   .text {
     font-size: var(--h6);
