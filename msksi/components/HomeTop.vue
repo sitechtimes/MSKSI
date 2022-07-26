@@ -172,6 +172,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'HomeTop',
   mounted() {
@@ -526,6 +527,7 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
 .hometop {
   background-color: var(--navyblue);
   padding-bottom: 25rem;
