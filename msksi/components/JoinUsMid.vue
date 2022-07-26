@@ -39,12 +39,20 @@ export default {
 </script>
 
 <style scoped>
+.joinusmid {
+  padding-bottom: 10rem;
+  background-color: white;
+}
 #info {
   display: flex;
   flex-direction: row;
 }
 #textgroup {
-  width: 75%;
+  width: 72%;
+}
+.text {
+  margin-left: 14rem;
+  margin-right: 10rem;
 }
 #picture {
   width: 40rem;
@@ -57,83 +65,94 @@ export default {
 }
 .image-container {
   text-align: center;
-}
-.text {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  margin-left: 15rem;
-  margin-top: 5.5rem;
-  line-height: 6rem;
-  width: 60vw;
-  line-height: 7rem;
-}
-.joinusmid {
-  padding-bottom: 8rem;
-  background-color: white;
-  margin-top: 15rem;
+  margin-top: 4rem;
 }
 .wbsm {
-  font-size: var(--h2);
-  margin-top: -4rem;
   color: rgba(220, 53, 92, 1);
-  padding-top: 0;
+  margin-top: 12rem;
+  font-size: var(--h2);
 }
 #wbsm {
-  list-style-type: circle;
   color: var(--navyblue);
   margin-top: 4rem;
-  padding-bottom: 5rem;
+}
+li {
+  margin-right: 0;
 }
 .wbsmr {
   color: var(--darkpink);
 }
-/* .button{
-  cursor: url('../images/hoverBtnCursor.png'), auto;
-} */
 @media only screen and (max-width: 1500px) {
-  .subheading {
-    font-size: var(--subheadingju);
-    margin-left: 11rem;
-  }
-  .text {
-    margin-left: 12rem;
-    margin-top: 0.2rem;
-  }
   .wbsm {
-    margin-top: 0;
+    font-size: var(--h3);
   }
   .joinusmid {
-    margin-top: 10rem;
+    margin-top: 0rem;
+  }
+  .image-container {
+    margin-top: 5rem;
   }
   #picture {
-    width: 35rem;
-    height: 35rem;
+    width: 33rem;
+    height: 33rem;
   }
 }
-@media only screen and (max-width: 810px) {
-  .text {
-    margin-left: 8rem;
+@media only screen and (max-width: 1032px) {
+  .subheading {
+    font-size: var(--subheadingju);
+  }
+  .image-container {
+    margin-right: 6rem;
+  }
+  #textgroup {
+    width: 70%;
   }
   .wbsm {
+    margin-top: 10rem;
+  }
+  #wbsm {
+    margin-left: 5rem;
+    margin-right: 4rem;
+  }
+  .text {
     margin-left: 8rem;
-    margin-left: 4rem;
+    margin-right: 2rem;
+  }
+  #picture {
+    width: 28rem;
+    height: 28rem;
+    margin-bottom: 1rem;
+  }
+  .image-container {
+    margin-top: 8rem;
+    margin-left: 0rem;
   }
 }
 @media only screen and (max-width: 770px) {
+  .joinusmid {
+    padding-bottom: 4rem;
+  }
+  .wbsm {
+    font-size: var(--h4);
+    margin: 0;
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
   #picture {
-    width: 21rem;
-    height: 21rem;
-    position: relative;
-    margin-top: 0rem;
+    width: 24rem;
+    height: 24rem;
     display: block;
     margin: auto;
     margin-bottom: 4rem;
   }
   .image-container {
     margin-top: 1rem;
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 10rem;
+    margin-right: auto;
+    margin-left: auto;
   }
   #wbsm {
     margin-left: 2rem;
@@ -141,41 +160,54 @@ export default {
     flex-direction: row;
   }
   #textgroup {
-    width: 80%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
   }
   #info {
     flex-direction: column;
   }
+  .button {
+    margin-top: 9rem;
+    margin-left: 1rem;
+  }
+  .text {
+    margin-top: 2rem;
+    margin-left: 5rem;
+  }
 }
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 500px) {
   #info {
     flex-direction: column;
   }
   #picture {
-    width: 25rem;
-    height: 25rem;
-    position: relative;
-    top: 0;
-    margin-bottom: 4rem;
-    margin-top: 1rem;
+    width: 20rem;
+    height: 20rem;
+    margin: 0rem auto 0rem auto;
   }
   .text {
-    margin-top: 0;
+    margin-top: 3rem;
     margin-bottom: 0;
+    line-height: 2;
   }
   #wbsm {
-    margin-left: -1.8rem;
     padding-bottom: 2rem;
   }
-  .subheading {
+  .wbsm {
+    margin: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
     font-size: var(--subheadingjum);
   }
   .image-container {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0;
+  }
+  .button {
+    margin: 0 4rem 4rem 4rem;
   }
 }
 </style>

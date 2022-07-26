@@ -1,6 +1,6 @@
 <template>
   <div class="AboutUsTop">
-      <h2 class="heading">Our <span class="h mission">Mission</span></h2>
+    <h2 class="heading">Our <span class="h mission">Mission</span></h2>
     <h3 id="text" class="text">
       {{ textarea }}
     </h3>
@@ -26,9 +26,7 @@ export default {
     }
   },
 
-  methods: {
-
-  },
+  methods: {},
 }
 </script>
 <style scoped>
@@ -45,13 +43,9 @@ export default {
   align-items: center;
 }
 .text {
-  margin: 4rem 11rem 0 11rem;
-  font-family: 'Cairo', sans-serif;
   color: var(--white);
-  text-align: left;
   justify-content: center;
 }
-
 
 @media only screen and (max-width: 1500px) {
   .mission {

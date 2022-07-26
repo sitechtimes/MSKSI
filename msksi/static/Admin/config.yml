@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: develop # Branch to update (optional; defaults to master)
 
-media_folder: "static/img"
-public_folder: "/img"
+media_folder: 'static/img'
+public_folder: '/img'
 
 collections:
   - name: 'album'
@@ -15,47 +15,62 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Album Name', name: 'title', widget: 'string' }
       - { label: 'Album Link', name: 'link', widget: 'string' }
-      - { label: 'Image', name: 'img', widget: 'image' }
-  - name: 'agenda'
-    label: 'Agenda'
-    folder: 'content/agendas'
-    format: 'frontmatter'
-    create: true
-    slug: '{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Agenda Link', name: 'link', widget: 'string' }
-    - name: 'resource'
+      - { label: 'Cover Image', name: 'img', widget: 'image' }
+  - name: 'resource'
     label: 'Resource'
-    folder: 'content/newresources'
+    folder: 'content/resources'
     format: 'frontmatter'
     create: true
     slug: '{{slug}}'
     editor:
       preview: false
     fields:
+      - { label: 'Resource Name', name: 'title', widget: 'string' }
+      - { label: 'Resources Link', name: 'link', widget: 'string' }
+      - { label: 'Resource Image', name: 'img', widget: 'image' }
+  - name: 'monthposts'
+    label: 'Month Posts'
+    folder: 'content/monthposts'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Month', name: 'month', widget: 'string' }
+      - { label: 'Post Title', name: 'subheader', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Post Image', name: 'img', widget: 'image' }
+  - name: 'eventpreview'
+    label: 'Event Preview'
+    folder: 'content/eventpreview'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Event Name', name: 'eventname', widget: 'string' }
+      - { label: 'Event Month', name: 'eventmonth', widget: 'datetime' }
+      - { label: 'Event Date', name: 'eventdate', widget: 'string' }
+  - name: 'commspot'
+    label: 'Community Spotlight'
+    folder: 'content/commspot'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Resources Link', name: 'link', widget: 'string' }  
-      - { label: 'Image', name: 'img', widget: 'image' }
-
-  # - name: 'comm-spot'
-  #   label: 'Community Spotlight'
-  #   folder: 'content/comm-spot'
-  #   format: 'frontmatter'
-  #   create: true
-  #   slug: '{{slug}}'
-  #   editor:
-  #     preview: false
-  #   fields:
-  #     - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-  #     - { label: 'Title', name: 'subheader', widget: 'string' }
-  #     - { label: 'Month', name: 'month', widget: 'string' }
-  #     - { label: 'Image', name: 'img', widget: 'image' }
-  #     - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Main Image', name: 'img_main', widget: 'image' }
+      - { label: 'Small Image 1', name: 'img_reel1', widget: 'image' }
+      - { label: 'Small Image 2', name: 'img_reel2', widget: 'image' }
+      - { label: 'Small Image 3', name: 'img_reel3', widget: 'image' }
+      - { label: 'Caption 1', name: 'reel_caption1', widget: 'string' }
+      - { label: 'Caption 2', name: 'reel_caption1', widget: 'string' }
+      - { label: 'Caption 3', name: 'reel_caption1', widget: 'string' }

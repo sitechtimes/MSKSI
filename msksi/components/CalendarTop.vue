@@ -25,7 +25,7 @@ export default {
   height: 100rem;
 }
 .calendarFlex {
-  display: flex;  
+  display: flex;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
