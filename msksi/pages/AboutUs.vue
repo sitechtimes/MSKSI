@@ -3,7 +3,6 @@
     <AboutUsTop />
     <AboutUsMid />
     <AboutUsBottom />
-    <Agendas />
   </div>
 </template>
 
@@ -11,13 +10,12 @@
 import AboutUsTop from '~/components/AboutUsTop.vue'
 import AboutUsMid from '~/components/AboutUsMid.vue'
 import AboutUsBottom from '~/components/AboutUsBottom.vue'
-import Agendas from '~/components/Agendas.vue'
 export default {
-  components: { AboutUsTop, AboutUsMid, AboutUsBottom, Agendas },
-   head() {
+  components: { AboutUsTop, AboutUsMid, AboutUsBottom },
+  head() {
     return {
-      title: "About | My Sister's Keeper Staten Island"
-    };
+      title: "About | My Sister's Keeper Staten Island",
+    }
   },
 }
 </script>
