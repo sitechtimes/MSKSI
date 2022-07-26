@@ -34,8 +34,7 @@ a {
 }
 
 .name:hover {
-  text-decoration: underline var(--darkpink) 3px;
-  color: var(--darkpink);
+  text-decoration: underline;
 }
 
 .polaroid {

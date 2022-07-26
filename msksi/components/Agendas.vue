@@ -99,7 +99,27 @@
 <script>
 export default {
   name: 'Agendas',
-  methods: {},
+  mounted() {
+    this.staggerFly()
+  },
+  methods: {
+    staggerFly() {
+      const staggerTL = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '.agendas-container',
+          start: 'top bottom',
+          scrub: false,
+        },
+      })
+      staggerTL.from('.yearly-agenda', {
+        x: 350,
+        width: '70%',
+        stagger: 0.15,
+        duration: 0.8,
+        delay: 0.1,
+      })
+    },
+  },
   data() {
     return {
       show2019: true,

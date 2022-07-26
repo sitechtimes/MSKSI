@@ -95,37 +95,32 @@ export default {
           end: 'top 100px',
           scrub: false,
         },
+        onComplete: function () {
+          document.querySelectorAll('.square-cut').forEach((el) => {
+            el.style.transition = 'all 0.3s'
+          })
+        },
       })
 
-      fadeTLR.from('#CSimg-r1, .CSreadmore', {
-        delay: 0.5,
-        opacity: 0,
-        duration: 0.8,
-        y: 80,
-        ease: 'ease-out',
-      })
-      fadeTLR.from(
-        '#CSimg-r2',
-        {
-          delay: 0.2,
+      fadeTLR
+        .from('.square-cut', {
+          delay: 0.5,
           opacity: 0,
           duration: 0.8,
           y: 80,
-          ease: 'ease-out',
-        },
-        '<'
-      )
-      fadeTLR.from(
-        '#CSimg-r3',
-        {
-          delay: 0.2,
-          opacity: 0,
-          duration: 0.8,
-          y: 80,
-          ease: 'ease-out',
-        },
-        '<'
-      )
+
+          stagger: 0.2,
+        })
+        .from(
+          '.CSreadmore',
+          {
+            opacity: 0,
+            duration: 0.8,
+            y: 80,
+            ease: 'ease-out',
+          },
+          '<'
+        )
     },
   },
 }
@@ -175,12 +170,13 @@ export default {
 .CStext-holder {
   position: relative;
   height: 100%;
+  width: 70%;
   text-align: left;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding-left: 6rem;
-  margin-top: -10rem;
+  padding-bottom: 30rem;
 }
 .commspot {
   color: var(--darkpink);
@@ -202,49 +198,14 @@ export default {
   line-height: 5rem;
 }
 
-.CSreadmore {
-  height: 125rem;
-  width: 125rem;
-  background-color: var(--tpnavyblue);
-  clip-path: polygon(100% 27%, 68% 100%, 100% 100%);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transition: all 0.3s;
-  z-index: 10;
-}
-
-.CSroutermore:hover + .CSreadmore {
-  background-color: var(--darknavyblue);
-}
-
-.CSroutermore:hover {
-  transform: scale(1.025);
-  cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
-}
-
-.CSroutermore {
-  font-size: 3rem;
-  color: var(--white);
-  font-family: 'ABeeZee', sans-serif;
-  font-weight: bold;
-  bottom: 22rem;
-  right: 3rem;
-  position: absolute;
-  z-index: 11;
-  transition: all 0.2s;
-  text-decoration: none;
-}
-
 .CSimg-reel {
   position: absolute;
-  bottom: 15rem;
+  bottom: 8rem;
   left: 74rem;
   height: 20rem;
   width: 62rem;
   display: flex;
   justify-content: space-between;
-  transition: all 0.3s;
 }
 
 .CSimg-r {
@@ -258,7 +219,6 @@ export default {
   display: flex;
   justify-content: center;
   position: relative;
-  transition: all 0.3s;
 }
 
 .reel-caption {
@@ -295,7 +255,39 @@ export default {
 .square-cut:hover .tp-hover {
   height: 100%;
 }
+.CSreadmore {
+  height: 125rem;
+  width: 125rem;
+  background-color: var(--tpnavyblue);
+  clip-path: polygon(100% 27%, 68% 100%, 100% 100%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: all 0.3s;
+  z-index: 10;
+}
 
+.CSroutermore:hover + .CSreadmore {
+  background-color: var(--darknavyblue);
+}
+
+.CSroutermore:hover {
+  transform: scale(1.025);
+  cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
+}
+
+.CSroutermore {
+  font-size: 3rem;
+  color: var(--white);
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: bold;
+  bottom: 22rem;
+  right: 3rem;
+  position: absolute;
+  z-index: 11;
+  transition: all 0.2s;
+  text-decoration: none;
+}
 /*media queries*/
 @media only screen and (max-width: 1750px) {
   .CSimg-reel {

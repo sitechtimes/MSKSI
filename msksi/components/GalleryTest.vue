@@ -34,7 +34,15 @@ export default {
   },
   methods: {
     staggerFly() {
-      const staggerTL = this.$gsap.timeline({})
+      const staggerTL = this.$gsap.timeline({
+        onComplete: function () {
+          document.querySelectorAll('.polaroid').forEach((el) => {
+            el.style.transform = null
+            el.style.transition = 'all 0.3s'
+          })
+          console.log('no transform')
+        },
+      })
       staggerTL
         .fromTo(
           '.polaroid',
@@ -102,6 +110,10 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.polaroid:hover {
+  transform: scale(1.02);
 }
 #picture {
   height: 20rem;

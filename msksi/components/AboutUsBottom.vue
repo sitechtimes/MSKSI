@@ -18,7 +18,29 @@
 <script>
 export default {
   name: 'AboutUsBottom',
-  methods: {},
+  mounted() {
+    this.staggerFly()
+  },
+  updated() {
+    this.staggerFly()
+  },
+  methods: {
+    staggerFly() {
+      const staggerTL = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '.will',
+          start: 'top center',
+          scrub: false,
+        },
+      })
+      staggerTL.from('.will, .texti', {
+        x: 50,
+        stagger: 0.15,
+        duration: 0.5,
+        width: '90%',
+      })
+    },
+  },
 }
 </script>
 <style scoped>

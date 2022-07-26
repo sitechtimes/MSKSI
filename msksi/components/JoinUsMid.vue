@@ -4,11 +4,11 @@
       <div id="textgroup">
         <h3 class="subheading wbsm">Website & Social Media Manager</h3>
         <ul id="wbsm">
-          <li class="text">
+          <li class="text wbsmtext">
             Maintain the MSKSI website with the most current information,
             agendas, opportunities etc
           </li>
-          <li class="text">
+          <li class="text wbsmtext">
             Highlight our MSKSI members for their work professionally,
             educationally and personally.
           </li>
@@ -34,7 +34,40 @@
 <script>
 export default {
   name: 'JoinUsMid',
-  methods: {},
+  mounted() {
+    this.staggerFly()
+    this.bounce()
+  },
+  methods: {
+    staggerFly() {
+      const staggerTL = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '.wbsm',
+          start: 'top center',
+        },
+      })
+      staggerTL.from('.wbsmtext', {
+        x: 75,
+        stagger: 0.1,
+        duration: 0.5,
+      })
+    },
+    bounce() {
+      const bounceTL = this.$gsap.timeline({
+        repeat: -1,
+        yoyo: true,
+      })
+      bounceTL
+        .to('img', {
+          y: -10,
+          duration: 1.3,
+        })
+        .to('img', {
+          y: 0,
+          duration: 1.3,
+        })
+    },
+  },
 }
 </script>
 

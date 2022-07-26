@@ -5,11 +5,13 @@
       <div id="textgroup">
         <h3 class="subheading subc">Sub Committee</h3>
         <ul id="subc">
-          <li class="text">Sign in-Attendance Assist</li>
-          <li class="text">Session Feedback/Tracking and follow up</li>
-          <li class="text">Keep the attendance sign in for meetings in chat</li>
-          <li class="text">Transformation Tables</li>
-          <li class="text">Managing website & calendar</li>
+          <li class="text subctext">Sign in-Attendance Assist</li>
+          <li class="text subctext">Session Feedback/Tracking and follow up</li>
+          <li class="text subctext">
+            Keep the attendance sign in for meetings in chat
+          </li>
+          <li class="text subctext">Transformation Tables</li>
+          <li class="text subctext">Managing website & calendar</li>
         </ul>
       </div>
       <div class="image-container">
@@ -227,6 +229,34 @@
 <script>
 export default {
   name: 'JoinUsTop',
-  methods: {},
+  mounted() {
+    this.staggerFly()
+    this.bounce()
+  },
+  methods: {
+    staggerFly() {
+      const staggerTL = this.$gsap.timeline({})
+      staggerTL.from('.subctext', {
+        x: 75,
+        stagger: 0.1,
+        duration: 0.5,
+      })
+    },
+    bounce() {
+      const bounceTL = this.$gsap.timeline({
+        repeat: -1,
+        yoyo: true,
+      })
+      bounceTL
+        .to('img', {
+          y: -10,
+          duration: 1.3,
+        })
+        .to('img', {
+          y: 0,
+          duration: 1.3,
+        })
+    },
+  },
 }
 </script>

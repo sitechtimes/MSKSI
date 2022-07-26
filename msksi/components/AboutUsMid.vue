@@ -14,27 +14,29 @@
     </div>
     <div id="right">
       <ol class="list">
-        <li>
+        <li class="visli">
           Become empowered and take an active lead in their education process.
         </li>
-        <li>Support peers in developing positive, sisterly relationships.</li>
-        <li>
+        <li class="visli">
+          Support peers in developing positive, sisterly relationships.
+        </li>
+        <li class="visli">
           Build community, accountability and collaborative relationships among
           their peers.
         </li>
-        <li>
+        <li class="visli">
           Adopt healthy social emotional habits that support building positive
           internal self-esteem.
         </li>
-        <li>
+        <li class="visli">
           Partner with positive role models to create lasting impactful
           relationships.
         </li>
-        <li>
+        <li class="visli">
           Be supported with transitions from elementary school to college
           (College and Career Readiness).
         </li>
-        <li>
+        <li class="visli">
           Engage in community-based projects to build civic awareness and
           participation.
         </li>
@@ -45,7 +47,36 @@
 <script>
 export default {
   name: 'AboutUsMid',
-  methods: {},
+  mounted() {
+    this.staggerFly()
+  },
+  methods: {
+    staggerFly() {
+      const staggerTL = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '.list',
+          start: 'top center',
+          scrub: false,
+        },
+      })
+      staggerTL
+        .to('.visli', {
+          x: 30,
+          stagger: 0.05,
+          duration: 0.5,
+        })
+        .to(
+          '.visli',
+          {
+            x: 0,
+            stagger: 0.05,
+            duration: 0.5,
+            width: 'auto',
+          },
+          '<+0.4'
+        )
+    },
+  },
 }
 </script>
 <style scoped>

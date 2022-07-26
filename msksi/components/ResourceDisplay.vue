@@ -37,7 +37,15 @@ export default {
   },
   methods: {
     staggerFly() {
-      const staggerTL = this.$gsap.timeline({})
+      const staggerTL = this.$gsap.timeline({
+        onComplete: function () {
+          document.querySelectorAll('.resource').forEach((el) => {
+            el.style.transform = null
+            el.style.transition = 'all 0.3s'
+          })
+          console.log('no transform')
+        },
+      })
       staggerTL
         .fromTo(
           '.resource',
@@ -68,7 +76,6 @@ export default {
 }
 .resource:hover {
   transform: scale(1.02);
-  transition: 0.2s;
 }
 h3 {
   font-size: var(--h6);
