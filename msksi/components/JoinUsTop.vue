@@ -26,6 +26,7 @@
         </form>
       </div>
     </div>
+  </div>
 </template>
 <style scoped>
 .joinustop {
@@ -163,7 +164,7 @@
     font-size: var(--h5);
     font-weight: bolder;
     border-radius: 20rem;
-    font-family: 'Sora', sans-serif ;
+    font-family: 'Sora', sans-serif;
     border: none;
     margin: 4rem;
   }
@@ -206,7 +207,7 @@
 
   .heading {
     font-size: var(--h3);
-margin-left: 4rem;
+    margin-left: 4rem;
   }
   .button {
     margin-top: 6rem;
@@ -240,5 +241,4 @@ export default {
   name: 'JoinUsTop',
   methods: {},
 }
-
 </script>
