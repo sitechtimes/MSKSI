@@ -69,7 +69,7 @@
 
 .contactus {
   font-size: 2.2rem;
-  font-family: 'Black Han Sans';
+  font-family: 'Black Han Sans', sans-serif ;
   padding-top: 7rem;
   font-weight: lighter;
   color: var(--yellow);
