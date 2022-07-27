@@ -2,7 +2,7 @@
   <div class="joinusmid">
     <div id="info">
       <div id="textgroup">
-        <h3 class="subheading wbsm">Website & Social Media Manager</h3>
+        <h3 class="subheading wbsm wbsmtext">Website & Social Media Manager</h3>
         <ul id="wbsm">
           <li class="text wbsmtext">
             Maintain the MSKSI website with the most current information,
@@ -35,21 +35,29 @@
 export default {
   name: 'JoinUsMid',
   mounted() {
-    this.staggerFly()
+    this.scrollFadeGeneral()
   },
   methods: {
-    staggerFly() {
-      const staggerTL = this.$gsap.timeline({
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({
         scrollTrigger: {
           trigger: '.wbsm',
           start: 'top bottom-=20%',
         },
       })
-      staggerTL.from('.wbsmtext, .wbsm', {
-        x: 75,
-        stagger: 0.1,
-        duration: 0.5,
-      })
+      genTL.fromTo(
+        '.wbsmtext',
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.1,
+          duration: 0.5,
+        }
+      )
     },
   },
 }

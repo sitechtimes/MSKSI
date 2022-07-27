@@ -48,13 +48,14 @@ export default {
         {
           opacity: 1,
           y: 0,
-          stagger: 0.3,
+
           duration: 0.5,
         }
       )
     },
     staggerFly() {
       const staggerTL = this.$gsap.timeline({
+        delay: 0.3,
         onComplete: function () {
           document.querySelectorAll('.resource').forEach((el) => {
             el.style.transform = null
@@ -67,11 +68,12 @@ export default {
         .fromTo(
           '.resource',
           {
+            opacity: 0,
             y: 70,
             stagger: 0.05,
             duration: 0.5,
           },
-          { y: -8, stagger: 0.05, duration: 0.5 }
+          { opacity: 1, y: -8, stagger: 0.05, duration: 0.5 }
         )
         .to(
           '.resource',

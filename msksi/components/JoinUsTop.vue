@@ -1,11 +1,11 @@
 <template>
   <div class="joinustop">
-    <h2 class="heading">Join Us Today!</h2>
+    <h2 class="heading fade">Join Us Today!</h2>
     <div id="info">
       <div id="textgroup">
-        <h3 class="subheading subc">Sub Committee</h3>
+        <h3 class="subheading subc subctext">Sub Committee</h3>
         <ul id="subc">
-          <li class="text subctext">Sign in-Attendance Assist</li>
+          <li class="text subctext fade">Sign in-Attendance Assist</li>
           <li class="text subctext">Session Feedback/Tracking and follow up</li>
           <li class="text subctext">
             Keep the attendance sign in for meetings in chat
@@ -230,17 +230,40 @@
 export default {
   name: 'JoinUsTop',
   mounted() {
-    this.staggerFly()
+    this.scrollFadeGeneral()
     this.bounce()
   },
   methods: {
-    staggerFly() {
-      const staggerTL = this.$gsap.timeline({})
-      staggerTL.from('.subctext, .subc', {
-        x: 75,
-        stagger: 0.1,
-        duration: 0.5,
-      })
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({})
+      genTL
+        .fromTo(
+          '.fade',
+          {
+            y: 40,
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+            y: 0,
+            stagger: 0.3,
+            duration: 0.5,
+          }
+        )
+        .fromTo(
+          '.subctext',
+          {
+            y: 40,
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+            y: 0,
+            stagger: 0.1,
+            duration: 0.5,
+          },
+          '<+0.3'
+        )
     },
     bounce() {
       const bounceTL = this.$gsap.timeline({
