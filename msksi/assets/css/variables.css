@@ -266,6 +266,7 @@ input[type='checkbox'] {
 }
 .link {
   margin-top: 2rem;
+  list-style: none;
 }
 .menu-router {
   color: white;
