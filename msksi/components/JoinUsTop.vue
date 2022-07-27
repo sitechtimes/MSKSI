@@ -134,6 +134,7 @@
   }
   .text {
     margin-left: 8rem;
+    margin-top: 2rem;
   }
   .subheading {
     color: var(--darkpink);
