@@ -435,8 +435,13 @@ export default {
     margin-bottom: 1.3rem;
     border-radius: 2rem;
     bottom: 4rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
-
+  .arrow{
+    display: none;
+  }
   .CSroutermore {
     padding: 2rem 8.5rem;
     bottom: 5rem;
