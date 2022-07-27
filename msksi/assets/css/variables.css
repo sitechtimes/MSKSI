@@ -35,6 +35,8 @@
   --four: 4rem;
   --one: 1.3rem;
 }
+.arrow:hover,
+router-link:hover,
 a:hover {
   cursor: url('../images/hoverBtnCursor.png'), auto;
 }
