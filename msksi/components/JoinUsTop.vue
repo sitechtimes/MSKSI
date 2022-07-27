@@ -236,7 +236,7 @@ export default {
   methods: {
     staggerFly() {
       const staggerTL = this.$gsap.timeline({})
-      staggerTL.from('.subctext', {
+      staggerTL.from('.subctext, .subc', {
         x: 75,
         stagger: 0.1,
         duration: 0.5,
@@ -248,11 +248,11 @@ export default {
         yoyo: true,
       })
       bounceTL
-        .to('img', {
+        .to('#picture', {
           y: -10,
           duration: 1.3,
         })
-        .to('img', {
+        .to('#picture', {
           y: 0,
           duration: 1.3,
         })

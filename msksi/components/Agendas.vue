@@ -1,7 +1,7 @@
 <template>
   <div class="Agendas">
-    <h2 class="heading" id="agendas">Agendas</h2>
-    <h3 class="text" id="text">Click to view agendas.</h3>
+    <h2 class="heading fade2" id="agendas">Agendas</h2>
+    <h3 class="text fade2" id="text">Click to view agendas.</h3>
     <div class="agendas-container">
       <div class="yearly-agenda">
         <div class="container">
@@ -101,6 +101,7 @@ export default {
   name: 'Agendas',
   mounted() {
     this.staggerFly()
+    this.scrollFadeGeneral()
   },
   methods: {
     staggerFly() {
@@ -112,12 +113,34 @@ export default {
         },
       })
       staggerTL.from('.yearly-agenda', {
-        x: 350,
-        width: '70%',
+        x: '75%',
+        width: '50%',
         stagger: 0.15,
         duration: 0.8,
         delay: 0.1,
       })
+    },
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '.fade2',
+          start: 'top bottom-=20%',
+          scrub: false,
+        },
+      })
+      genTL.fromTo(
+        '.fade2',
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.3,
+          duration: 0.5,
+        }
+      )
     },
   },
   data() {

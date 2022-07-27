@@ -1,13 +1,13 @@
 <template>
   <div id="AboutUsBottom">
-    <h2 class="heading gao">Goals and Outcomes</h2>
-    <h3 class="will">MSKSI members will:</h3>
-    <h4 class="text texti">
+    <h2 class="heading gao fade3">Goals and Outcomes</h2>
+    <h3 class="will fade3">MSKSI members will:</h3>
+    <h4 class="text texti fade3">
       Be able to adapt healthy social and emotional habits that will support
       building positive internal self-esteem. Be mindful how others appear and
       show up. Have grace, dignity and leave room for error and forgiveness.
     </h4>
-    <h4 class="text texti">
+    <h4 class="text texti fade3">
       Have a voice, opportunity and forum to grow in the MSKSI community. MSKSI
       focuses on equity in support of all students with a lens on our
       marginalized groups; however MSKSI is not just black and brown students,
@@ -19,26 +19,33 @@
 export default {
   name: 'AboutUsBottom',
   mounted() {
-    this.staggerFly()
+    this.scrollFadeGeneral()
   },
   updated() {
-    this.staggerFly()
+    this.scrollFadeGeneral()
   },
   methods: {
-    staggerFly() {
-      const staggerTL = this.$gsap.timeline({
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({
         scrollTrigger: {
-          trigger: '.will',
-          start: 'top center',
+          trigger: '.gao',
+          start: 'top bottom-=30%',
           scrub: false,
         },
       })
-      staggerTL.from('.will, .texti', {
-        x: 50,
-        stagger: 0.15,
-        duration: 0.5,
-        width: '90%',
-      })
+      genTL.fromTo(
+        '.fade3',
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.1,
+          duration: 0.5,
+        }
+      )
     },
   },
 }
@@ -47,6 +54,9 @@ export default {
 #AboutUsBottom {
   background-color: #333043;
   padding-bottom: 10rem;
+}
+.gao {
+  opacity: 0;
 }
 .heading {
   text-align: center;

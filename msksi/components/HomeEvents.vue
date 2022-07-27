@@ -1,6 +1,6 @@
 <template>
   <div class="homeevents">
-    <h1 class="eventheader">Upcoming Events</h1>
+    <h1 class="eventheader fade2 upcomingevents">Upcoming Events</h1>
     <div class="eventpreviews">
       <EventPopUp
         v-for="event in events"
@@ -27,17 +27,38 @@ export default {
   },
   mounted() {
     this.staggerFly()
+    this.scrollFadeGeneral()
   },
   updated() {
     this.staggerFly()
   },
   methods: {
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '.eventheader',
+          start: 'top center',
+          scrub: false,
+        },
+      })
+      genTL.fromTo(
+        '.fade2, .upcomingevents',
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+        }
+      )
+    },
     staggerFly() {
       const staggerTL = this.$gsap.timeline({
         scrollTrigger: {
           trigger: '.eventpreviews',
           start: 'top center',
-
           scrub: false,
         },
         onComplete: function () {
@@ -50,6 +71,7 @@ export default {
       })
       staggerTL.from('.previewcard', {
         y: 70,
+        opacity: 0,
         stagger: 0.15,
         duration: 0.5,
       })

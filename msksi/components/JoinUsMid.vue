@@ -36,36 +36,20 @@ export default {
   name: 'JoinUsMid',
   mounted() {
     this.staggerFly()
-    this.bounce()
   },
   methods: {
     staggerFly() {
       const staggerTL = this.$gsap.timeline({
         scrollTrigger: {
           trigger: '.wbsm',
-          start: 'top center',
+          start: 'top bottom-=20%',
         },
       })
-      staggerTL.from('.wbsmtext', {
+      staggerTL.from('.wbsmtext, .wbsm', {
         x: 75,
         stagger: 0.1,
         duration: 0.5,
       })
-    },
-    bounce() {
-      const bounceTL = this.$gsap.timeline({
-        repeat: -1,
-        yoyo: true,
-      })
-      bounceTL
-        .to('img', {
-          y: -10,
-          duration: 1.3,
-        })
-        .to('img', {
-          y: 0,
-          duration: 1.3,
-        })
     },
   },
 }

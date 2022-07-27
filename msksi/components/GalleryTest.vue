@@ -1,6 +1,8 @@
 <template>
   <div class="Gallery">
-    <h2 class="heading">Photo <span class="gall heading">Gallery</span></h2>
+    <h2 class="heading fade">
+      Photo <span class="gall heading fade">Gallery</span>
+    </h2>
     <div class="Albums">
       <Album
         v-for="album in albums"
@@ -28,13 +30,31 @@ export default {
   },
   mounted() {
     this.staggerFly()
+    this.scrollFadeGeneral()
   },
   updated() {
     this.staggerFly()
   },
   methods: {
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({})
+      genTL.fromTo(
+        '.fade',
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+
+          duration: 0.5,
+        }
+      )
+    },
     staggerFly() {
       const staggerTL = this.$gsap.timeline({
+        delay: 0.3,
         onComplete: function () {
           document.querySelectorAll('.polaroid').forEach((el) => {
             el.style.transform = null
@@ -50,8 +70,9 @@ export default {
             y: 70,
             stagger: 0.05,
             duration: 0.5,
+            opacity: 0,
           },
-          { y: -8, stagger: 0.05, duration: 0.5 }
+          { y: -8, stagger: 0.05, duration: 0.5, opacity: 1 }
         )
         .to(
           '.polaroid',

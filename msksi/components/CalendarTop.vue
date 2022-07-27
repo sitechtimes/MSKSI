@@ -1,7 +1,7 @@
 <template>
   <div class="calendartop">
-    <h2 class="heading">Calendar</h2>
-    <div class="calendarFlex">
+    <h2 class="heading fade">Calendar</h2>
+    <div class="calendarFlex fade">
       <iframe
         src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23333043&ctz=America%2FNew_York&title=My%20Sister's%20Keeper%20Calendar&showNav=1&src=Y18ydW03amlramhwYTFtdHMzZnBuZGczdW04a0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb201NWEwNzUwY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23AD1457&color=%230B8043&color=%23202124"
         style="border-width: 0"
@@ -16,6 +16,33 @@
 <script>
 export default {
   name: 'CalendarTop',
+  mounted() {
+    this.scrollFadeGeneral()
+  },
+  methods: {
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '.fade',
+          start: 'top bottom',
+          scrub: false,
+        },
+      })
+      genTL.fromTo(
+        '.fade',
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.3,
+          duration: 0.5,
+        }
+      )
+    },
+  },
 }
 </script>
 
