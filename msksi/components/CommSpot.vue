@@ -299,7 +299,7 @@ export default {
 
 .arrow {
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 60%;
   height: 60px;
   width: 100px;
@@ -307,19 +307,19 @@ export default {
 
 .arrow:before {
   content: "";
-  width: 25px;
+  width: 15px;
   height: 2px;
   background: white;
   position: absolute;
   top: 10%;
   margin-top: -1px;
-  right: 1.2rem;
+  right: 1rem;
   transition: all 0.3s ease;
 }
 
 .arrow:hover:before {
-  right: 34px;
-  width: 35px;
+  right: 20px;
+  width: 18px;
 }
 
 .arrow:after {
@@ -332,13 +332,13 @@ export default {
   position: absolute;
   top: 2%;
   /* margin-top: -5px; */
-  right: 1rem;
+  right: 0.6rem;
   transition: all 0.3s ease;
 }
 
 .arrow:hover:after {
-  right: 34px;
-  right: 30px;
+  right: 20px;
+  right: 15px;
 }
 
 /*media queries*/
@@ -435,8 +435,13 @@ export default {
     margin-bottom: 1.3rem;
     border-radius: 2rem;
     bottom: 4rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
-
+  .arrow{
+    display: none;
+  }
   .CSroutermore {
     padding: 2rem 8.5rem;
     bottom: 5rem;
