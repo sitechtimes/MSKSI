@@ -228,6 +228,7 @@ a:hover {
   text-align: center;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
+  cursor: url('../images/hoverBtnCursor.png'), auto;
 }
 .menu-btn span,
 .menu-btn::before,
