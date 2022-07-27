@@ -15,7 +15,7 @@
       <div class="image-container">
         <img
           id="picture"
-          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_300/v1658233391/subcom_lrb2ca.png"
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/q_100/v1658233391/MSKSI/subcom_lrb2ca.png"
           alt="remote meeting"
         />
         <form
@@ -152,7 +152,7 @@
     font-size: var(--h5);
     font-weight: bolder;
     border-radius: 20rem;
-    font-family: 'Sora', sans-serif ;
+    font-family: 'Sora', sans-serif;
     border: none;
     margin: 4rem;
   }

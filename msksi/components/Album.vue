@@ -25,7 +25,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
 
 .name {
-  font-family: '' ABeeZee ', sans-serif', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
   font-style: normal;
   color: var(--navyblue);
   text-align: center;
