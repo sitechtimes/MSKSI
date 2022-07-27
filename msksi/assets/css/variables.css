@@ -271,7 +271,7 @@ input[type='checkbox'] {
   color: white;
   text-decoration: none;
   font-size: 2rem;
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: '' ABeeZee ', sans-serif', sans-serif;
 }
 .menu-router.nuxt-link-exact-active {
   color: var(--yellow);
