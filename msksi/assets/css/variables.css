@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap'); */
 
 :root {
   --navyblue: #262433;
@@ -64,7 +64,7 @@ a:hover {
   margin-left: 2rem;
   margin-top: auto;
   margin-bottom: auto;
-  font-family: 'Black Han Sans';
+  font-family: 'Black Han Sans', sans-serif;
   font-weight: lighter;
   text-decoration: none;
 }
@@ -98,7 +98,7 @@ a:hover {
   margin-left: 11rem;
   font-size: var(--h3);
   margin-top: 4.5rem;
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif;
   font-weight: bolder;
 }
 .button {
@@ -108,7 +108,7 @@ a:hover {
   height: 8rem;
   font-size: var(--h4);
   border-radius: 20rem;
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif;
   border: none;
   cursor: url('../images/hoverBtnCursor.png'), auto;
   z-index: 1;
@@ -183,7 +183,7 @@ a:hover {
     font-size: var(--h5);
     font-weight: lighter;
     border-radius: 20rem;
-    font-family: 'Black Han Sans';
+    font-family: 'Black Han Sans', sans-serif;
     border: none;
     margin: 4rem;
   }

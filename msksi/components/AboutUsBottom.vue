@@ -29,7 +29,7 @@ export default {
 .heading {
   text-align: center;
   color: var(--darkpink);
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif;
   font-weight: bolder;
   font-style: normal;
 }
