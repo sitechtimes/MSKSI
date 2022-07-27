@@ -193,10 +193,11 @@ li {
   }
   #wbsm {
     padding-bottom: 2rem;
+    margin-top: 0rem;
   }
   .wbsm {
     margin: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     text-align: center;
     font-size: var(--subheadingjum);
   }
