@@ -52,7 +52,7 @@ export default {
 }
 .text {
   margin-left: 14rem;
-  margin-right: 10rem;
+  margin-right: 4rem;
 }
 #picture {
   width: 40rem;
@@ -65,7 +65,7 @@ export default {
 }
 .image-container {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 .wbsm {
   color: rgba(220, 53, 92, 1);
@@ -90,7 +90,8 @@ li {
     margin-top: 0rem;
   }
   .image-container {
-    margin-top: 5rem;
+    margin-top: 7rem;
+    margin-right: 8rem;
   }
   #picture {
     width: 33rem;
@@ -193,10 +194,11 @@ li {
   }
   #wbsm {
     padding-bottom: 2rem;
+    margin-top: 0rem;
   }
   .wbsm {
     margin: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     text-align: center;
     font-size: var(--subheadingjum);
   }
