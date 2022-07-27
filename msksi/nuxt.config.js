@@ -15,7 +15,13 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=ABeeZee&family=Be+Vietnam+Pro:wght@300&family=Black+Han+Sans&family=Sora:wght@200&display=swap',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -33,6 +39,8 @@ export default {
     extraPlugins: {
       scrollTo: true,
       scrollTrigger: true,
+      MotionPathPlugin: true,
+      SplitText: true,
     },
   },
 
@@ -59,7 +67,6 @@ export default {
         ],
       },
     ],
-
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
