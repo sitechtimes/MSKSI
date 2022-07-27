@@ -94,7 +94,10 @@ body,
     font-size: var(--h4);
   }
   .logo {
-    font-size: var(--h5);
+    margin-left: 1.5rem;
+  }
+  .menu {
+    margin-right: 3rem;
   }
   .text {
     font-size: var(--h6);
