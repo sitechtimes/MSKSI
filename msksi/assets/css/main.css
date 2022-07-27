@@ -32,9 +32,11 @@ body,
 }
 .text {
   font-size: var(--four);
-  font-family: 'Sora', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
   margin: 4rem 11rem 0 11rem;
   text-align: left;
+  line-height: 1.3;
+  word-spacing: 0.061rem;
   font-weight: lighter;
 }
 @media only screen and (max-width: 1500px) {
@@ -47,7 +49,6 @@ body,
   .text {
     font-size: var(--subheadingjum);
   }
-
 }
 @media only screen and (max-width: 1032px) {
   .nav {
@@ -86,14 +87,13 @@ body,
   .subheading {
     font-size: var(--h5);
   }
-
 }
 @media only screen and (max-width: 500px) {
   .heading {
     padding-top: 3rem;
     font-size: var(--h4);
   }
-  .logo{
+  .logo {
     font-size: var(--h5);
   }
   .text {
