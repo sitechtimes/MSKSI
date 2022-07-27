@@ -272,6 +272,7 @@ input[type='checkbox'] {
   text-decoration: none;
   font-size: 2rem;
   font-family: ' ABeeZee ', sans-serif;
+  list-style: none;
 }
 .menu-router.nuxt-link-exact-active {
   color: var(--yellow);
