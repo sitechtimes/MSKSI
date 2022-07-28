@@ -35,7 +35,7 @@ export default {
 }
 .text {
   margin-left: 14rem;
-  margin-right: 10rem;
+  margin-right: 4rem;
 }
 .button:active {
   animation: press 0.2s 1 linear;
@@ -58,13 +58,34 @@ export default {
 }
 .image-container {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 .wbsm {
   color: rgba(220, 53, 92, 1);
   margin-top: 12rem;
   font-size: var(--h2);
 }
+#wbsm {
+  color: var(--navyblue);
+  margin-top: 4rem;
+}
+li {
+  margin-right: 0;
+}
+.wbsmr {
+  color: var(--darkpink);
+}
+@media only screen and (max-width: 1500px) {
+  .wbsm {
+    font-size: var(--h3);
+  }
+  .joinusmid {
+    margin-top: 0rem;
+  }
+  .image-container {
+    margin-top: 7rem;
+    margin-right: 8rem;
+  }
   #picture {
     width: 33rem;
     height: 33rem;
@@ -165,10 +186,11 @@ export default {
   }
   #wbsm {
     padding-bottom: 2rem;
+    margin-top: 0rem;
   }
   .wbsm {
     margin: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     text-align: center;
     font-size: var(--subheadingjum);
   }

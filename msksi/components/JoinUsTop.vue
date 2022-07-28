@@ -15,7 +15,7 @@
       <div class="image-container">
         <img
           id="picture"
-          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_300/v1658233391/subcom_lrb2ca.png"
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/q_100/v1658233391/MSKSI/subcom_lrb2ca.png"
           alt="remote meeting"
         />
         <form
@@ -92,8 +92,8 @@
     margin-top: 5rem;
   }
   .text {
-    font-size: var(--h3);
-    margin-left: 12rem;
+    margin-left: 13rem;
+    margin-right: 3rem;
   }
   .joinusmid {
     height: 75rem;
@@ -104,7 +104,7 @@
     margin-top: 5rem;
   }
   .image-container {
-    margin-top: 1rem;
+    margin-top: 7rem;
     margin-right: 5rem;
     margin-left: 2rem;
   }
@@ -118,12 +118,12 @@
     height: 24rem;
   }
   .image-container {
-    margin-top: 3rem;
+    margin-top: 6rem;
     margin-left: 2rem;
     margin-right: 7rem;
   }
   .text {
-    margin-right: 6rem;
+    margin-right: 1rem;
   }
   #textgroup {
     width: 70%;
@@ -134,6 +134,8 @@
   #picture {
     width: 22rem;
     height: 22rem;
+    margin-left: 3.5rem;
+    margin-top: 2rem;
   }
   #textgroup {
     width: 100%;
@@ -144,8 +146,7 @@
     flex-direction: column;
   }
   .text {
-    margin-left: 8rem;
-    font-size: var(--h5);
+    margin: 2rem 4rem 0 8rem;
   }
   .subheading {
     color: var(--darkpink);
@@ -155,10 +156,12 @@
     font-size: var(--h4);
   }
   #subc {
-    margin-top: 0.5rem;
+    margin-top: 3rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    margin: 3rem 3.5rem 0 3.5rem;
   }
   .button {
-    margin-top: 7rem;
     width: 16rem;
     height: 4.5rem;
     font-size: var(--h5);
@@ -167,6 +170,7 @@
     font-family: 'Sora', sans-serif;
     border: none;
     margin: 4rem;
+    margin-top: 11rem;
   }
   .image-container {
     display: flex;
@@ -174,10 +178,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 0rem;
-  }
-  .button {
-    margin-top: 15rem;
-    margin-left: 2rem;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -192,14 +192,14 @@
     margin-right: auto;
   }
   .text {
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 0;
-    line-height: 2;
+    line-height: 1.3;
     margin-left: 5rem;
     margin-right: 7rem;
   }
   #subc {
-    margin-top: 0rem;
+    margin-top: 2rem;
     font-size: var(--h6);
     margin-right: auto;
     margin-left: 4rem;
