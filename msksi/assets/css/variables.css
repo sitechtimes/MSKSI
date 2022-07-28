@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap'); */
 
 :root {
   --navyblue: #262433;
@@ -38,6 +38,8 @@
   --card-width: 200px;
   --card-height: 300px;
 }
+.arrow:hover,
+router-link:hover,
 a:hover {
   cursor: url('../images/hoverBtnCursor.png'), auto;
 }
@@ -67,7 +69,7 @@ a:hover {
   margin-left: 2rem;
   margin-top: auto;
   margin-bottom: auto;
-  font-family: 'Black Han Sans';
+  font-family: 'Black Han Sans', sans-serif;
   font-weight: lighter;
   text-decoration: none;
 }
@@ -81,7 +83,6 @@ a:hover {
   /* position: relative; */
   display: inline-block;
 }
-
 
 .router:after {
   display: block;
@@ -102,7 +103,7 @@ a:hover {
   margin-left: 11rem;
   font-size: var(--h3);
   margin-top: 4.5rem;
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif;
   font-weight: bolder;
 }
 .button {
@@ -112,9 +113,9 @@ a:hover {
   height: 8rem;
   font-size: var(--h4);
   border-radius: 20rem;
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif;
   border: none;
-  cursor: pointer;
+  cursor: url('../images/hoverBtnCursor.png'), auto;
   z-index: 1;
   transition: 0.5s ease-in-out;
   font-weight: bolder;
@@ -171,7 +172,6 @@ a:hover {
   .pink:hover:before{
     color: var(--navyblue);
   } */
-  
 
 @media only screen and (max-width: 1500px) {
   .button {
@@ -180,7 +180,7 @@ a:hover {
     font-size: var(--subheadingjum);
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   .button {
     margin-top: 7rem;
     width: 16rem;
@@ -188,7 +188,7 @@ a:hover {
     font-size: var(--h5);
     font-weight: lighter;
     border-radius: 20rem;
-    font-family: 'Black Han Sans';
+    font-family: 'Black Han Sans', sans-serif;
     border: none;
     margin: 4rem;
   }
@@ -233,6 +233,7 @@ a:hover {
   text-align: center;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
+  cursor: url('../images/hoverBtnCursor.png'), auto;
 }
 .menu-btn span,
 .menu-btn::before,
@@ -271,12 +272,14 @@ input[type='checkbox'] {
 }
 .link {
   margin-top: 2rem;
+  list-style: none;
 }
 .menu-router {
   color: white;
   text-decoration: none;
   font-size: 2rem;
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: ' ABeeZee ', sans-serif;
+  list-style: none;
 }
 .menu-router.nuxt-link-exact-active {
   color: var(--yellow);
@@ -301,7 +304,6 @@ input[type='checkbox'] {
   );
   /* border-radius: 10rem; */
 }
-
 
 /* test scroll buttons */
 /* Buttons */
@@ -336,7 +338,7 @@ input[type='checkbox'] {
   background-position: center 2px;
   /* background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='0,0 100,0 50,50'/></svg>");
  */
- background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(233,88,122)'><polygon points='0,0 100,0 50,50'/></svg>")
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(233,88,122)'><polygon points='0,0 100,0 50,50'/></svg>");
 }
 /* ::-webkit-scrollbar-button:single-button:vertical:increment:hover {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(112, 112, 112)'><polygon points='0,0 100,0 50,50'/></svg>");
@@ -359,7 +361,6 @@ input[type='checkbox'] {
   width: 12px;
   background-position: 3px 3px;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(233,88,122)'><polygon points='0,50 50,100 50,0'/></svg>");
-
 }
 
 ::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {

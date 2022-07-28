@@ -39,12 +39,20 @@ export default {
 </script>
 
 <style scoped>
+.joinusmid {
+  padding-bottom: 10rem;
+  background-color: white;
+}
 #info {
   display: flex;
   flex-direction: row;
 }
 #textgroup {
-  width: 75%;
+  width: 72%;
+}
+.text {
+  margin-left: 14rem;
+  margin-right: 4rem;
 }
 #picture {
   width: 40rem;
@@ -57,73 +65,80 @@ export default {
 }
 .image-container {
   text-align: center;
-}
-.text {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  margin-left: 15rem;
-  margin-top: 5rem;
-  line-height: 5rem;
-}
-.joinusmid {
-  padding-bottom: 8rem;
-  background-color: white;
-  margin-top: 15rem;
+  margin-top: 6rem;
 }
 .wbsm {
-  font-size: var(--h2);
-  margin-top: -4rem;
   color: rgba(220, 53, 92, 1);
-  padding-top: 0;
+  margin-top: 12rem;
+  font-size: var(--h2);
 }
 #wbsm {
-  list-style-type: circle;
   color: var(--navyblue);
   margin-top: 4rem;
+}
+li {
+  margin-right: 0;
 }
 .wbsmr {
   color: var(--darkpink);
 }
 @media only screen and (max-width: 1500px) {
-  .subheading {
-    font-size: var(--subheadingju);
-    margin-left: 11rem;
-  }
   .wbsm {
-    margin-top: 0;
+    font-size: var(--h3);
   }
   .joinusmid {
-    margin-top: 10rem;
+    margin-top: 0rem;
+  }
+  .image-container {
+    margin-top: 7rem;
+    margin-right: 8rem;
   }
   #picture {
     width: 33rem;
     height: 33rem;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1032px) {
   .subheading {
     font-size: var(--subheadingju);
+  }
+  .image-container {
+    margin-right: 6rem;
   }
   #textgroup {
     width: 70%;
   }
+  .wbsm {
+    margin-top: 10rem;
+  }
+  #wbsm {
+    margin-left: 5rem;
+    margin-right: 4rem;
+  }
   .text {
     margin-left: 8rem;
-  }
-  .wbsm {
-    margin-left: 6rem;
+    margin-right: 2rem;
   }
   #picture {
-    width: 25rem;
-    height: 25rem;
+    width: 28rem;
+    height: 28rem;
+    margin-bottom: 1rem;
   }
   .image-container {
-    margin-top: 6rem;
+    margin-top: 8rem;
     margin-left: 0rem;
   }
 }
 @media only screen and (max-width: 770px) {
-  .subheading {
-    font-size: var(--subheadingjum);
+  .joinusmid {
+    padding-bottom: 4rem;
+  }
+  .wbsm {
+    font-size: var(--h4);
+    margin: 0;
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
   #picture {
@@ -147,17 +162,19 @@ export default {
   }
   #textgroup {
     width: 90%;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
   #info {
     flex-direction: column;
   }
   .button {
     margin-top: 9rem;
-    margin-left: 4rem;
+    margin-left: 1rem;
   }
   .text {
     margin-top: 2rem;
+    margin-left: 5rem;
   }
 }
 
@@ -168,31 +185,31 @@ export default {
   #picture {
     width: 20rem;
     height: 20rem;
-    top: 0;
-    margin-top: 1rem;
+    margin: 0rem auto 0rem auto;
   }
   .text {
-    margin-top: 0;
+    margin-top: 3rem;
     margin-bottom: 0;
-    line-height: 3;
-    width: 100%;
+    line-height: 2;
   }
   #wbsm {
-    margin-left: -1.8rem;
     padding-bottom: 2rem;
+    margin-top: 0rem;
   }
-  .subheading {
+  .wbsm {
+    margin: 5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
     font-size: var(--subheadingjum);
   }
   .image-container {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0;
   }
   .button {
-    margin-top: 8rem;
-    margin-left: 1rem;
+    margin: 0 4rem 4rem 4rem;
   }
 }
 </style>

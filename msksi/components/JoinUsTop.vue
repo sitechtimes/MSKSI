@@ -15,7 +15,7 @@
       <div class="image-container">
         <img
           id="picture"
-          src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_300/v1658233391/subcom_lrb2ca.png"
+          src="https://res.cloudinary.com/dzzja5n1u/image/upload/q_100/v1658233391/MSKSI/subcom_lrb2ca.png"
           alt="remote meeting"
         />
         <form
@@ -29,6 +29,10 @@
   </div>
 </template>
 <style scoped>
+.joinustop {
+  background-color: #333043;
+  padding-bottom: 8rem;
+}
 .button {
   cursor: url('../assets/images/hoverBtnCursor.png'), auto;
   /* cursor: pointer; */
@@ -38,82 +42,67 @@
   flex-direction: row;
 }
 #textgroup {
-  width: 75%;
+  width: 70%;
+  text-align: left;
 }
 .image-container {
   text-align: center;
   margin-top: 2rem;
-  margin-left: 4rem;
 }
 #picture {
   margin-top: 8rem;
-  height: 30rem;
-  width: 30rem;
+  height: 35rem;
+  width: 35rem;
 }
-.joinustop {
-  background-color: #333043;
-  padding-bottom: 8rem;
-}
-
 .pink {
   background-color: var(--darkpink);
   color: white;
   filter: drop-shadow(3px 4px 3px black);
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
-
 #subc {
-  list-style-type: circle;
   color: white;
   margin-top: 2rem;
   padding-bottom: 5rem;
   flex-direction: row;
+  margin-left: 4rem;
+  line-height: 1;
 }
 .subc {
   color: var(--darkpink);
   font-size: var(--h2);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-.text {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  margin-left: 15rem;
-  line-height: 7rem;
 }
 @media only screen and (max-width: 1500px) {
-  .text {
-    margin-left: 12rem;
-    margin-top: 0rem;
-  }
   #subc {
-    margin-left: 2rem;
+    margin-left: 1rem;
     padding-bottom: 2rem;
   }
-  .subheading {
-    font-size: var(--subheadingju);
-    margin-left: 11rem;
-    margin-top: 2rem;
-    padding-bottom: 0;
+  .subc {
+    font-size: var(--h3);
+    margin-top: 5rem;
   }
   .text {
-    margin-left: 12rem;
-    margin-top: 0.5rem;
+    margin-left: 13rem;
+    margin-right: 3rem;
   }
   .joinusmid {
     height: 75rem;
   }
   #picture {
-    width: 28rem;
-    height: 28rem;
+    width: 26rem;
+    height: 26rem;
     margin-top: 5rem;
   }
   .image-container {
-    margin-top: 1rem;
+    margin-top: 7rem;
     margin-right: 5rem;
     margin-left: 2rem;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1032px) {
+  .subheading {
+    font-size: var(--subheadingju);
+  }
   #picture {
     width: 24rem;
     height: 24rem;
@@ -121,16 +110,13 @@
   .image-container {
     margin-top: 6rem;
     margin-left: 2rem;
-    margin-right: 2rem;
+    margin-right: 7rem;
   }
   .text {
-    margin-left: 6rem;
+    margin-right: 1rem;
   }
   #textgroup {
     width: 70%;
-  }
-  .subheading {
-    margin-left: 6rem;
   }
 }
 
@@ -138,6 +124,8 @@
   #picture {
     width: 22rem;
     height: 22rem;
+    margin-left: 3.5rem;
+    margin-top: 2rem;
   }
   #textgroup {
     width: 100%;
@@ -148,35 +136,31 @@
     flex-direction: column;
   }
   .text {
-    margin-left: 8rem;
+    margin: 2rem 4rem 0 8rem;
   }
-  .subc {
+  .subheading {
     color: var(--darkpink);
-    font-size: var(--h3);
-    margin-left: 4rem;
-    margin-top: 0.2rem;
+    margin: 0;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: var(--h4);
   }
   #subc {
-    margin-top: 0.5rem;
-  }
-  .heading {
-    margin-top: 0;
-    margin-left: 4rem;
+    margin-top: 3rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    margin: 3rem 3.5rem 0 3.5rem;
   }
   .button {
-    margin-top: 7rem;
     width: 16rem;
     height: 4.5rem;
     font-size: var(--h5);
     font-weight: bolder;
     border-radius: 20rem;
-    font-family: 'Sora';
+    font-family: 'Sora', sans-serif;
     border: none;
     margin: 4rem;
-  }
-  .subheading {
-    font-size: var(--subheadingjum);
-    text-align: center;
+    margin-top: 11rem;
   }
   .image-container {
     display: flex;
@@ -185,42 +169,42 @@
     margin-right: auto;
     margin-top: 0rem;
   }
-  .button {
-    margin-top: 15rem;
-    margin-left: 2rem;
-  }
 }
 @media only screen and (max-width: 500px) {
+  .joinustop {
+    padding-bottom: 4rem;
+  }
   #picture {
     width: 17rem;
     height: 17rem;
-    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .text {
     margin-top: 2rem;
     margin-bottom: 0;
-    line-height: 3;
-    width: 100%;
+    line-height: 1.3;
+    margin-left: 5rem;
+    margin-right: 7rem;
   }
   #subc {
-    margin-top: 0rem;
-    margin-left: -1.8rem;
+    margin-top: 2rem;
     font-size: var(--h6);
-    width: 95vw;
+    margin-right: auto;
+    margin-left: 4rem;
   }
   .subheading {
     font-size: var(--subheadingjum);
-    margin-top: 0;
+    margin-top: 4rem;
   }
   .image-container {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    margin: 0;
-    margin-bottom: 2rem;
+    flex-direction: column;
   }
   .button {
-    margin-top: 10rem;
+    margin: 4rem;
   }
 }
 </style>
