@@ -7,6 +7,14 @@
 <script>
 export default {
   name: 'Resource',
+  async asyncData({ $content }) {
+    const posts = await $content('blog').fetch()
+
+    return {
+      posts,
+    }
+  },
+
   props: {
     title: String,
     img: String,
@@ -26,7 +34,7 @@ export default {
 }
 h3 {
   font-size: var(--h6);
-  font-family: 'Cairo', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -66,7 +74,7 @@ img {
 #link {
   color: #333043;
   font-size: var(--h5);
-  font-family: 'Cairo', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -75,7 +83,7 @@ img {
 }
 .item {
   color: #333043;
-  font-family: 'Cairo', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
   text-align: center;
   font-size: var(--h6);
 }
@@ -103,7 +111,7 @@ ul {
   #link {
     color: #333043;
     font-size: var(--h5);
-    font-family: 'Cairo', sans-serif;
+    font-family: 'ABeeZee', sans-serif;
     text-align: center;
     margin-top: 1rem;
   }

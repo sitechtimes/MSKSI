@@ -61,29 +61,16 @@ export default {
 .heading {
   text-align: center;
   color: var(--darkpink);
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif;
   font-weight: bolder;
   font-style: normal;
 }
 .will {
-  font-size: var(--h3);
   color: var(--yellow);
-  text-align: left;
-  font-family: 'Sora';
-  margin-left: 11rem;
-  margin-top: 8rem;
-  font-weight: 600;
 }
 .texti {
-  color: white;
-  font-weight: lighter;
-  margin: 11rem;
   display: block;
-  margin-top: 6rem;
-  margin-bottom: auto;
-  font-family: 'Cairo', sans-serif;
   color: var(--white);
-  text-align: left;
   justify-content: center;
 }
 .goal {
@@ -106,8 +93,6 @@ export default {
   }
   .will {
     margin-top: 4rem;
-    font-weight: lighter;
-    font-size: var(--h4);
   }
 }
 @media only screen and (max-width: 1032px) {
@@ -122,9 +107,6 @@ export default {
   }
 }
 @media only screen and (max-width: 770px) {
-  #AboutUsBottom {
-    padding-bottom: 6rem;
-  }
   .texti {
     margin: 2rem 6rem 0 6rem;
   }
@@ -133,10 +115,7 @@ export default {
     width: 100%;
   }
   .will {
-    font-size: var(--h5);
-    text-align: left;
     margin: 2rem 6rem 0 6rem;
-    font-weight: lighter;
     margin-top: 4rem;
   }
 }

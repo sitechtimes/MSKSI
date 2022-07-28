@@ -7,6 +7,13 @@
 <script>
 export default {
   name: 'Album',
+  async asyncData({ $content }) {
+    const posts = await $content('blog').fetch()
+
+    return {
+      posts,
+    }
+  },
   props: {
     title: String,
     img: String,
@@ -20,7 +27,7 @@ a {
   cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
 }
 .name {
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
   font-style: normal;
   color: var(--navyblue);
   text-align: center;

@@ -101,7 +101,7 @@ export default {
 }
 .left {
   width: 50%;
-  font-family: 'Black Han Sans';
+  font-family: 'Black Han Sans', sans-serif;
   margin: 10rem 0 10rem 0;
 }
 .msksi {
@@ -132,7 +132,7 @@ export default {
   line-height: 4rem;
   width: 95%;
   margin: 8rem 0 8rem 0;
-  font-family: 'Cairo', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
 }
 
 li {

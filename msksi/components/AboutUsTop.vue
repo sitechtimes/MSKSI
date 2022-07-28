@@ -62,10 +62,7 @@ export default {
   align-items: center;
 }
 .text {
-  margin: 4rem 11rem 0 11rem;
-  font-family: 'Cairo', sans-serif;
   color: var(--white);
-  text-align: left;
   justify-content: center;
 }
 
