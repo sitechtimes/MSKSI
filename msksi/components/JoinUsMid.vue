@@ -1,24 +1,29 @@
 <template>
-        <div class="joinusmid">
-      <h3 class="subheading wbsm">Website & Social Media Manager</h3>
-      <ul id="wbsm">
-        <li class="text">Maintain the MSKSI website with the most current information, agendas, opportunities etc</li>
-        <li class="text">Highlight our MSKSI members for their work professionally, educationally and personally.</li>
-      </ul>
-      <form
-        target="_blank"
-        action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform"
-      >
-        <button class="button yellow">Join Us!</button>
-      </form>
-    </div>
+  <div class="joinusmid">
+    <h3 class="subheading wbsm">Website & Social Media Manager</h3>
+    <ul id="wbsm">
+      <li class="text">
+        Maintain the MSKSI website with the most current information, agendas,
+        opportunities etc
+      </li>
+      <li class="text">
+        Highlight our MSKSI members for their work professionally, educationally
+        and personally.
+      </li>
+    </ul>
+    <form
+      target="_blank"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform"
+    >
+      <button class="button yellow">Join Us!</button>
+    </form>
+  </div>
 </template>
 <script>
 export default {
   name: 'JoinUsMid',
   methods: {},
 }
-
 </script>
 
 <style scoped>
@@ -89,6 +94,7 @@ li {
   #picture {
     width: 33rem;
     height: 33rem;
+  }
 }
 @media only screen and (max-width: 1032px) {
   .subheading {
