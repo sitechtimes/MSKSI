@@ -3,7 +3,7 @@
     <HomeTop />
     <CommSpot />
     <HomeMonth />
-    <HomeEvents />
+    <!-- <HomeEvents /> -->
   </div>
 </template>
 
