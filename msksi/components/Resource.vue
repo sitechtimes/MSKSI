@@ -1,6 +1,6 @@
 <template>
   <div class="resource">
-    <img :src="img" :alt="title" />
+    <nuxt-img :src="img" :alt="title" />
     <a target="_blank" id="link" :href="link">{{ title }}</a>
   </div>
 </template>
