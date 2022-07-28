@@ -58,7 +58,6 @@ export default {
 }
 .left {
   width: 50%;
-  font-family: 'Black Han Sans', sans-serif;
   margin: 10rem 0 10rem 0;
 }
 .msksi {

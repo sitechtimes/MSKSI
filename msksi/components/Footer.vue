@@ -64,14 +64,13 @@
   text-align: center;
   bottom: 0px;
   width: 100%;
-  height: 25rem;
+  height: 22rem;
 }
 
 .contactus {
-  font-size: 2.2rem;
-  font-family: 'Black Han Sans', sans-serif ;
-  padding-top: 7rem;
-  font-weight: lighter;
+  font-size: var(--subheadingjum);
+  font-family: 'Sora', sans-serif;
+  padding-top: 5rem;
   color: var(--yellow);
   padding-bottom: 2rem;
 }
