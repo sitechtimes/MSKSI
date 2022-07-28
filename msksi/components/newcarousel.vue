@@ -88,22 +88,25 @@ export default {
         .from('.current--card', {
           x: 100,
           duration: 0.5,
+          ease: 'back.out(1.7)',
         })
         .from(
           '.next--card',
           {
-            x: 5,
+            x: -100,
             delay: 0,
             duration: 0.2,
+            ease: 'back.out(1.7)',
           },
           '-=.5'
         )
         .from(
           '.prev--card',
           {
-            x: 5,
+            x: -500,
             delay: 0,
             duration: 0.4,
+            ease: 'back.out(1.7)',
           },
           '-=.5'
         )
@@ -117,21 +120,25 @@ export default {
         .from('.current--card', {
           x: -100,
           duration: 0.5,
+          ease: 'back.out(1.7)',
         })
         .from(
           '.next--card',
           {
-            x: 100,
+            x: 10,
             delay: 0,
-            duration: 0.2,
+            duration: 0.5,
+            ease: 'back.out(1.7)',
           },
           '-=.5'
         )
         .from(
           '.prev--card',
           {
-            x: 100,
+            x: 5,
+            delay: 0,
             duration: 0.6,
+            ease: 'back.out(1.7)',
           },
           '-=.5'
         )
@@ -197,7 +204,6 @@ img {
   width: 100%;
   height: 100%;
   display: inline-block;
-  user-select: none;
   z-index: 3;
   position: relative;
 }
@@ -209,7 +215,6 @@ img {
   width: 100%;
   height: 100%;
   display: inline-block;
-  user-select: none;
   opacity: 0.6;
   z-index: 2;
 }
@@ -221,7 +226,6 @@ img {
   width: 100%;
   height: 100%;
   display: inline-block;
-  user-select: none;
   opacity: 0.6;
   z-index: 2;
 }
