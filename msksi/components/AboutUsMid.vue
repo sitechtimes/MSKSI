@@ -65,6 +65,9 @@ export default {
   color: var(--darkpink);
   padding-top: 0;
 }
+iframe {
+  cursor: url('~assets/images/hoverBtnCursor.png'), auto;
+}
 .vision {
   color: var(--navyblue);
   padding-top: 1.2rem;
