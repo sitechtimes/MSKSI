@@ -19,7 +19,7 @@ export default {
       { rel: 'icon', type: 'image/png', href: '/favicon.png' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=ABeeZee&family=Be+Vietnam+Pro:wght@300&family=Black+Han+Sans&family=Sora:wght@200&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=ABeeZee&family=Black+Han+Sans&family=Sora:wght@800&display=swap',
       },
     ],
   },

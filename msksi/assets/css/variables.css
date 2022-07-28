@@ -35,6 +35,8 @@
   --four: 4rem;
   --one: 1.3rem;
 }
+.arrow:hover,
+router-link:hover,
 a:hover {
   cursor: url('../images/hoverBtnCursor.png'), auto;
 }
@@ -228,6 +230,7 @@ a:hover {
   text-align: center;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
+  cursor: url('../images/hoverBtnCursor.png'), auto;
 }
 .menu-btn span,
 .menu-btn::before,
@@ -266,12 +269,14 @@ input[type='checkbox'] {
 }
 .link {
   margin-top: 2rem;
+  list-style: none;
 }
 .menu-router {
   color: white;
   text-decoration: none;
   font-size: 2rem;
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: ' ABeeZee ', sans-serif;
+  list-style: none;
 }
 .menu-router.nuxt-link-exact-active {
   color: var(--yellow);

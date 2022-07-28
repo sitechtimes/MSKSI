@@ -689,7 +689,6 @@ export default {
   }
   .name {
     font-size: var(--h2);
-
     margin-right: 0;
   }
   .keeper {
