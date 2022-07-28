@@ -22,7 +22,7 @@ export default {
 <style scoped>
 .calendartop {
   background-color: #333043;
-  padding-bottom: 20rem;
+  padding-bottom: 70rem;
 }
 .calendarFlex {
   display: flex;
@@ -30,7 +30,6 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-bottom: 50rem;
   height: 0;
   overflow: visible;
 }
@@ -47,7 +46,7 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-bottom: 40rem;
+  padding-bottom: 0rem;
   height: 0;
   overflow: visible;
 }
@@ -58,6 +57,9 @@ export default {
   height: 55rem;
   margin-top: 3rem;
 }
+.calendartop{
+  padding-bottom: 60rem;
+}
 }
 @media only screen and (max-width: 710px){
     .calendarFlex {
@@ -66,7 +68,6 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-bottom: 28rem;
   height: 0;
   overflow: visible;
 }
@@ -77,15 +78,20 @@ export default {
   height: 40rem;
   margin-top: 3rem;
 }
+.calendartop{
+  padding-bottom: 45rem;
+}
 }
 @media only screen and (max-width: 520px) {
+  .calendartop{
+  padding-bottom: 38rem;
+}
   .calendarFlex {
   display: flex;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-bottom: 20rem;
   height: 0;
   overflow: visible;
 }
