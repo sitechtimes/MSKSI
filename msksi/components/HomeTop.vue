@@ -716,22 +716,19 @@ export default {
   .mysis {
     padding-top: 16rem;
   }
-  .line2 {
-    justify-content: right;
-  }
-
   .keeper {
     font-size: var(--h3);
     width: 18rem;
-    margin-left: 1rem;
+    margin-left: 0rem;
   }
   .si {
     font-size: var(--h6);
-    width: 28rem;
-    top: 40rem;
+    width: 27.5rem;
+    margin-top: 2.5rem;
   }
   #logo-img {
-    height: 8rem;
+    height: 6.5rem;
+    margin-left: 5rem;
   }
   #yellow {
     height: 25%;
