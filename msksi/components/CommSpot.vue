@@ -67,7 +67,7 @@ export default {
       const fadeTL = this.$gsap.timeline({
         scrollTrigger: {
           trigger: '#CSimg-holder',
-          start: 'top bottom',
+          start: 'top bottom-=20px',
           end: 'top 100px',
           scrub: false,
         },
@@ -290,7 +290,7 @@ export default {
 
 .CSroutermore {
   bottom: 22rem;
-  right: 3rem;
+  right: 8rem;
   position: absolute;
   z-index: 11;
   transition: all 0.2s;
@@ -466,13 +466,11 @@ export default {
     transform: translateX(-50%);
   }
 
-  
   .arrow {
     display: none;
   }
-  
 
- .CSreadmore,
+  .CSreadmore,
   .CSroutermore {
     visibility: hidden;
   }
