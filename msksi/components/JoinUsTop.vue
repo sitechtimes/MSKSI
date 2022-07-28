@@ -24,16 +24,19 @@
           action="https://docs.google.com/forms/d/e/1FAIpQLSe2NJzLuFUyTc_8Jcmn4DhyH5qfBWbKtwRjYrSzCFyERI8r1Q/viewform"
           target="_blank"
         >
-          <button class="button pink">Join Us!</button>
+          <button class="button pink joinbtn">Join Us!</button>
         </form>
       </div>
     </div>
   </div>
 </template>
 <style scoped>
-.button {
+.joinbtn {
   cursor: url('../assets/images/hoverBtnCursor.png'), auto;
-  /* cursor: pointer; */
+  font-size: 3rem;
+}
+.joinbtn:hover {
+  transform: scale(1.05);
 }
 #info {
   display: flex;
@@ -166,15 +169,15 @@
     margin-left: 4rem;
   }
   .button {
-    margin-top: 7rem;
     width: 16rem;
-    height: 4.5rem;
+    height: 5rem;
     font-size: var(--h5);
     font-weight: bolder;
     border-radius: 20rem;
     font-family: 'Sora';
     border: none;
-    margin: 4rem;
+    margin: 8rem;
+    margin-top: 12rem;
   }
   .subheading {
     font-size: var(--subheadingjum);
@@ -187,16 +190,12 @@
     margin-right: auto;
     margin-top: 0rem;
   }
-  .button {
-    margin-top: 15rem;
-    margin-left: 2rem;
-  }
 }
 @media only screen and (max-width: 500px) {
   #picture {
     width: 17rem;
     height: 17rem;
-    margin-left: 5rem;
+    margin-left: 10rem;
   }
   .text {
     margin-top: 2rem;
@@ -221,8 +220,9 @@
     margin: 0;
     margin-bottom: 2rem;
   }
-  .button {
+  .joinbtn {
     margin-top: 10rem;
+    margin-left: 5rem;
   }
 }
 </style>

@@ -25,7 +25,7 @@
           target="_blank"
           action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform"
         >
-          <button class="button yellow">Join Us!</button>
+          <button class="button yellow joinbtn">Join Us!</button>
         </form>
       </div>
     </div>
@@ -64,6 +64,13 @@ export default {
 </script>
 
 <style scoped>
+.joinbtn {
+  cursor: url('../assets/images/hoverBtnCursor.png'), auto;
+  font-size: 3rem;
+}
+.joinbtn:hover {
+  transform: scale(1.05);
+}
 #info {
   display: flex;
   flex-direction: row;
@@ -177,9 +184,12 @@ export default {
   #info {
     flex-direction: column;
   }
-  .button {
-    margin-top: 9rem;
-    margin-left: 4rem;
+  .joinbtn {
+    width: 16rem;
+    height: 5rem;
+    font-size: var(--h5);
+    margin: 5rem;
+    margin-top: 8rem;
   }
   .text {
     margin-top: 2rem;
@@ -200,7 +210,7 @@ export default {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 3;
-    width: 100%;
+    width: 90%;
   }
   #wbsm {
     margin-left: -1.8rem;
@@ -215,7 +225,7 @@ export default {
     flex-direction: row;
     margin: 0;
   }
-  .button {
+  .joinbtn {
     margin-top: 8rem;
     margin-left: 1rem;
   }

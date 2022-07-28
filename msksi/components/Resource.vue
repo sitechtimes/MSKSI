@@ -71,6 +71,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
+  line-height: 3rem;
 }
 .item {
   color: #333043;
