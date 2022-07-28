@@ -232,6 +232,44 @@ img {
   opacity: 0.6;
   z-index: 2;
 }
+@media screen and (max-width: 1032px) {
+  img {
+    height: 35rem;
+    width: 35rem;
+  }
+  .btn {
+    z-index: 4;
+    top: 50%;
+  }
+  .left.btn {
+    left: 25%;
+  }
+  .right.btn {
+    right: 25%;
+  }
+}
+@media screen and (max-width: 800px) {
+  img {
+    height: 31rem;
+    width: 31rem;
+  }
+  .next--card {
+    left: 10%;
+  }
+  .prev--card {
+    left: 90%;
+  }
+  .btn {
+    z-index: 4;
+    top: 50%;
+  }
+  .left.btn {
+    left: 20%;
+  }
+  .right.btn {
+    right: 20%;
+  }
+}
 @media screen and (max-width: 500px) {
   .NewCarousel {
     height: 80rem;
@@ -264,18 +302,6 @@ img {
   }
   .right.btn {
     right: 15%;
-  }
-}
-@media screen and (max-width: 800px) {
-  img {
-    height: 30rem;
-    width: 30rem;
-  }
-}
-@media screen and (max-width: 1032px) {
-  img {
-    height: 35rem;
-    width: 35rem;
   }
 }
 </style>
