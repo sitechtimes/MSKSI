@@ -172,15 +172,14 @@ export default {
 }
 
 .CStext-holder {
-  position: relative;
-  height: 100%;
-  width: 70%;
   text-align: left;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  padding-left: 6rem;
-  margin-bottom: 36rem;
+  padding-right: 28rem;
+  padding-bottom: 40rem;
+  padding-top: 10rem;
+  padding-left: 7rem;
 }
 .commspot {
   color: var(--darkpink);
@@ -189,7 +188,7 @@ export default {
   top: 0;
   margin-left: 0;
   padding-top: 0;
-  margin-right: 12rem;
+  margin-right: 0;
   font-size: 5rem;
 }
 
@@ -198,16 +197,16 @@ export default {
   color: var(--navyblue);
   font-family: 'ABeeZee', sans-serif;
   margin-top: 3rem;
-  margin-right: 28rem;
+
   line-height: 5rem;
 }
 
 .CSimg-reel {
   position: absolute;
   bottom: 12rem;
-  left: 74rem;
+  right: 42rem;
   height: 20rem;
-  width: 62rem;
+  width: 35%;
   display: flex;
   justify-content: space-between;
 }
@@ -338,7 +337,7 @@ export default {
     width: 15rem;
   }
   .CStext-holder {
-    padding-bottom: 30rem;
+    padding-bottom: 35rem;
   }
 }
 @media only screen and (max-width: 1560px) {
@@ -346,8 +345,10 @@ export default {
     width: 60rem;
   }
   .CStext-holder {
-    padding-bottom: 42rem;
+    padding-bottom: 45rem;
+    padding-right: 25rem;
   }
+
   #CSimg-holder {
     width: 30rem;
     height: 30rem;
@@ -358,9 +359,6 @@ export default {
     width: 50rem;
   }
 
-  .nuxt-content {
-    margin-right: 32rem;
-  }
   .CSimg-reel {
     bottom: 8rem;
     left: auto;
@@ -405,7 +403,7 @@ export default {
   .CStext-holder {
     width: 80vw;
     justify-content: center;
-    padding: 10rem 2rem 52rem 2rem;
+    padding: 10rem 1rem 55rem 1rem;
     align-self: center;
   }
 
@@ -481,7 +479,7 @@ export default {
   }
 
   .CStext-holder {
-    padding: 5rem 3rem 55rem 3rem;
+    padding: 5rem 1rem 57rem 1rem;
   }
 
   .commspot {
