@@ -1,9 +1,9 @@
 <template>
   <div class="newmonth">
-    <h2>{{ month }}</h2>
-    <h3>{{ subheader }}</h3>
+    <h2 class="heading">{{ month }}</h2>
+    <h3 class="subheading">{{ subheader }}</h3>
     <div class="postcontent">
-      <p>{{ description }}</p>
+      <p class="text">{{ description }}</p>
       <img :src="image" alt="" />
     </div>
   </div>
@@ -27,24 +27,18 @@ export default {
 img {
   height: 40rem;
 }
-h2 {
-  font-size: var(--h1);
-  color: var(--yellow);
+.heading {
   text-align: center;
-  font-family: 'Sora', sans-serif;
-  padding-top: 8rem;
+  padding-top: 4rem;
 }
 h3 {
-  font-size: var(--h2);
   color: var(--darkpink);
   text-align: center;
-  font-family: 'Sora', sans-serif;
+  margin: 1rem 0 0 0;
 }
-p {
-  font-size: 3rem;
-  padding: 0 4rem 2rem 4rem;
-  font-family: 'ABeeZee', sans-serif;
-  font-weight: 300;
+.text {
+  font-size: var(--subheadingjum);
+  margin: 0 4rem 0 4rem;
   color: var(--white);
 }
 
@@ -56,43 +50,44 @@ p {
 .newmonth {
   padding-bottom: 8rem;
 }
+img {
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--darkpink);
+}
 
 @media screen and (max-width: 1500px) {
   .postcontent {
     flex-wrap: wrap-reverse;
+    padding-top: 2rem;
+  }
+  .newmonth {
+    padding-bottom: 5rem;
   }
   img {
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 2rem;
+    margin-bottom: 3rem;
     height: 35rem;
   }
+  .text {
+    font-size: var(--h5);
+  }
 }
-
-@media screen and (max-width: 450px) {
-  .newmonth {
-    padding-bottom: 0rem;
-  }
-  .postcontent {
-    display: inline-block;
-    padding: 2rem 0 0 0;
-    text-align: center;
-  }
-  h2 {
-    font-size: var(--h3);
-    padding-top: 6rem;
-  }
-  h3 {
-    font-size: 3rem;
-  }
-  p {
-    font-size: 2.3rem;
-    padding: 0.4rem 4rem 1rem 4rem;
-  }
+@media screen and (max-width: 770px) {
   img {
-    height: 24rem;
-    padding-bottom: 2rem;
-    justify-content: center;
+    height: 20rem;
+  }
+  .text {
+    font-size: var(--h6);
+  }
+}
+@media screen and (max-width: 500px) {
+  img {
+    height: 15rem;
+  }
+  .text {
+    margin: 0;
   }
 }
 </style>
