@@ -47,7 +47,7 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-bottom: 30%;
+  padding-bottom: 40rem;
   height: 0;
   overflow: visible;
 }
@@ -66,7 +66,7 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-bottom: 40%;
+  padding-bottom: 28rem;
   height: 0;
   overflow: visible;
 }
@@ -85,7 +85,7 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-bottom: 40%;
+  padding-bottom: 20rem;
   height: 0;
   overflow: visible;
 }
