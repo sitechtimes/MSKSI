@@ -30,7 +30,7 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-bottom: 25%;
+  padding-bottom: 50rem;
   height: 0;
   overflow: visible;
 }
