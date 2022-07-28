@@ -43,7 +43,7 @@ h3 {
 p {
   font-size: 3rem;
   padding: 0 4rem 2rem 4rem;
-  font-family: '' ABeeZee ', sans-serif', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
   font-weight: 300;
   color: var(--white);
 }
