@@ -64,6 +64,7 @@ export default {
 .text {
   color: var(--white);
   justify-content: center;
+  line-height: 7rem;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -114,6 +115,7 @@ export default {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    line-height: 3.5rem;
   }
 }
 </style>

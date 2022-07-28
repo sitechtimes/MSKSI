@@ -71,7 +71,9 @@
   padding-bottom: 5rem;
   flex-direction: row;
   margin-left: 4rem;
-  line-height: 1;
+}
+.text {
+  line-height: 2;
 }
 .subc {
   color: var(--darkpink);

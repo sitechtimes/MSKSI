@@ -85,6 +85,7 @@ export default {
 .text {
   margin-left: 14rem;
   margin-right: 4rem;
+  line-height: 2;
 }
 #picture {
   width: 40rem;

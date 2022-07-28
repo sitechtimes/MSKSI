@@ -73,7 +73,7 @@ p {
   font-family: 'ABeeZee', sans-serif;
   font-weight: 300;
   color: var(--white);
-  line-height: 5rem;
+  line-height: 2;
 }
 
 .postcontent {

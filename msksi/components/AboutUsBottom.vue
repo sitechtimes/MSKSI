@@ -66,12 +66,19 @@ export default {
   font-style: normal;
 }
 .will {
+  font-size: var(--h3);
   color: var(--yellow);
+  text-align: left;
+  font-family: 'Sora';
+  margin-left: 11rem;
+  margin-top: 8rem;
+  font-weight: 600;
 }
 .texti {
   display: block;
   color: var(--white);
   justify-content: center;
+  line-height: 7rem;
 }
 .goal {
   color: var(--navyblue);
@@ -117,11 +124,13 @@ export default {
   .will {
     margin: 2rem 6rem 0 6rem;
     margin-top: 4rem;
+    font-size: 3rem;
   }
 }
 @media only screen and (max-width: 500px) {
   .texti {
     margin: 2rem 4rem 0 4rem;
+    line-height: 3.5rem;
   }
   h2 {
     text-align: center;
@@ -129,6 +138,7 @@ export default {
   }
   .will {
     margin: 2rem 4rem 0 4rem;
+    font-size: 2.5rem;
   }
 }
 </style>

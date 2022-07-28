@@ -166,6 +166,7 @@ export default {
 }
 #text {
   font-size: var(--h4);
+  margin-top: 0;
 }
 .text {
   color: var(--white);
@@ -192,7 +193,7 @@ export default {
 }
 .year {
   color: var(--navy);
-  font-family: 'Sora', sans-serif ;
+  font-family: 'Sora', sans-serif;
   font-style: normal;
   font-weight: 700;
   margin-top: 3.5rem;
