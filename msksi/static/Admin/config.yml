@@ -8,7 +8,7 @@ public_folder: '/img'
 collections:
   - name: 'album'
     label: 'Album'
-    folder: 'content/albums'
+    folder: 'msksi/content/albums'
     format: 'frontmatter'
     create: true
     slug: '{{slug}}'
@@ -20,7 +20,7 @@ collections:
       - { label: 'Cover Image', name: 'img', widget: 'image' }
   - name: 'resource'
     label: 'Resource'
-    folder: 'content/resources'
+    folder: 'msksi/content/resources'
     format: 'frontmatter'
     create: true
     slug: '{{slug}}'
@@ -32,7 +32,7 @@ collections:
       - { label: 'Resource Image', name: 'img', widget: 'image' }
   - name: 'monthposts'
     label: 'Month Posts'
-    folder: 'content/monthposts'
+    folder: 'msksi/content/monthposts'
     format: 'frontmatter'
     create: true
     slug: '{{slug}}'
@@ -45,7 +45,7 @@ collections:
       - { label: 'Post Image', name: 'img', widget: 'image' }
   - name: 'eventpreview'
     label: 'Event Preview'
-    folder: 'content/eventpreview'
+    folder: 'msksi/content/eventpreview'
     format: 'frontmatter'
     create: true
     slug: '{{slug}}'
@@ -57,7 +57,7 @@ collections:
       - { label: 'Event Date', name: 'eventdate', widget: 'string' }
   - name: 'commspot'
     label: 'Community Spotlight'
-    folder: 'content/commspot'
+    folder: 'msksi/content/commspot'
     format: 'frontmatter'
     create: true
     slug: '{{slug}}'

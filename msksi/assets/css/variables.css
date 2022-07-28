@@ -35,6 +35,8 @@
   --four: 4rem;
   --one: 1.3rem;
 }
+.arrow:hover,
+router-link:hover,
 a:hover {
   cursor: url('../images/hoverBtnCursor.png'), auto;
 }
@@ -59,14 +61,7 @@ a:hover {
   align-items: center;
 }
 .logo {
-  font-size: 3rem;
-  color: var(--darkpink);
-  margin-left: 2rem;
-  margin-top: auto;
-  margin-bottom: auto;
-  font-family: 'Black Han Sans', sans-serif;
-  font-weight: lighter;
-  text-decoration: none;
+  margin-left: 4rem;
 }
 .navRouter {
   color: var(--white);
@@ -74,7 +69,7 @@ a:hover {
   margin-right: 4rem;
   font-family: 'ABeeZee', sans-serif;
   text-decoration: none;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   /* position: relative; */
   display: inline-block;
 }
@@ -228,6 +223,7 @@ a:hover {
   text-align: center;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
+  cursor: url('../images/hoverBtnCursor.png'), auto;
 }
 .menu-btn span,
 .menu-btn::before,
