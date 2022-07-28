@@ -131,6 +131,7 @@ export default {
   font-weight: 400;
   text-align: center;
   line-height: 7.5rem;
+  margin: 0rem 11rem 0 11rem;
 }
 .agendas-container {
   display: grid;
@@ -149,7 +150,7 @@ export default {
 }
 .year {
   color: var(--navy);
-  font-family: 'Sora', sans-serif ;
+  font-family: 'Sora', sans-serif;
   font-style: normal;
   font-weight: 700;
   margin-top: 3.5rem;
