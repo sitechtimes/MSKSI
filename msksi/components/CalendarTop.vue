@@ -26,7 +26,7 @@ export default {
 }
 .calendarFlex {
   display: flex;
-  margin: 3rem auto 0 auto;
+  margin: 1rem auto 0 auto;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -36,8 +36,8 @@ export default {
 .calendarFlex iframe {
   position: absolute;
   top: 0;
-  width: 70%;
-  height: 65rem;
+  width: 80%;
+  height: 68rem;
 }
 @media only screen and (max-width: 1500px){
     .calendarFlex {
