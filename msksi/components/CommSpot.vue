@@ -262,7 +262,7 @@ export default {
 }
 .square-cut:hover .tp-hover {
   height: 100%;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .CSreadmore {
   height: 125rem;
