@@ -633,7 +633,7 @@ export default {
     margin-top: 0;
   }
 }
-@media only screen and (max-width: 1032px) {
+@media only screen and (max-width: 1200px) {
   .mysis {
     text-align: center;
     margin-left: 0;
@@ -653,12 +653,12 @@ export default {
     margin-left: 0rem;
   }
   .si {
-    font-size: 3rem;
-    width: 28rem;
+    font-size: var(--h4);
+    width: 25rem;
     text-align: right;
     margin-top: 3rem;
   }
-  #logo-img {
+  #temp-logo {
     width: auto;
     height: 13rem;
     margin-left: 2rem;

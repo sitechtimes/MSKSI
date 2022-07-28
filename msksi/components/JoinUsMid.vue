@@ -1,34 +1,22 @@
 <template>
   <div class="joinusmid">
-    <div id="info">
-      <div id="textgroup">
-        <h3 class="subheading wbsm">Website & Social Media Manager</h3>
-        <ul id="wbsm">
-          <li class="text">
-            Maintain the MSKSI website with the most current information,
-            agendas, opportunities etc
-          </li>
-          <li class="text">
-            Highlight our MSKSI members for their work professionally,
-            educationally and personally.
-          </li>
-        </ul>
-      </div>
-
-      <div class="image-container">
-        <img
-          id="picture"
-          src="~/assets/images/social.png"
-          alt="woman on social media"
-        />
-        <form
-          target="_blank"
-          action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform"
-        >
-          <button class="button yellow">Join Us!</button>
-        </form>
-      </div>
-    </div>
+    <h3 class="subheading wbsm">Website & Social Media Manager</h3>
+    <ul id="wbsm">
+      <li class="text">
+        Maintain the MSKSI website with the most current information, agendas,
+        opportunities etc
+      </li>
+      <li class="text">
+        Highlight our MSKSI members for their work professionally, educationally
+        and personally.
+      </li>
+    </ul>
+    <form
+      target="_blank"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform"
+    >
+      <button class="button yellow">Join Us!</button>
+    </form>
   </div>
 </template>
 <script>
@@ -54,9 +42,19 @@ export default {
   margin-left: 14rem;
   margin-right: 4rem;
 }
-#picture {
-  width: 40rem;
-  height: 40rem;
+.button:active {
+  animation: press 0.2s 1 linear;
+}
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 .yellow {
   color: var(--navyblue);

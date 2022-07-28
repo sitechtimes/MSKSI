@@ -84,17 +84,60 @@ export default {
     cardSwitch() {},
     RightCardRotate() {
       const timeline = this.$gsap.timeline()
-      timeline.from('.current--card', {
-        x: 100,
-        duration: 0.5,
-      })
+      timeline
+        .from('.current--card', {
+          x: 100,
+          duration: 0.5,
+        })
+        .from(
+          '.next--card',
+          {
+            x: 5,
+            delay: 0,
+            duration: 0.2,
+          },
+          '-=.5'
+        )
+        .from(
+          '.prev--card',
+          {
+            x: 5,
+            delay: 0,
+            duration: 0.4,
+          },
+          '-=.5'
+        )
+      timeline.set('.current--card', { clearProps: true })
+      timeline.set('.next--card', { clearProps: true })
+      timeline.set('.prev--card', { clearProps: true })
     },
     LeftCardRotate() {
       const timeline = this.$gsap.timeline()
-      timeline.from('.current--card', {
-        x: -100,
-        duration: 0.5,
-      })
+      timeline
+        .from('.current--card', {
+          x: -100,
+          duration: 0.5,
+        })
+        .from(
+          '.next--card',
+          {
+            x: 100,
+            delay: 0,
+            duration: 0.2,
+          },
+          '-=.5'
+        )
+        .from(
+          '.prev--card',
+          {
+            x: 100,
+            duration: 0.6,
+          },
+          '-=.5'
+        )
+      timeline.set('.current--card', { clearProps: true })
+      timeline.set('.next--card', { clearProps: true })
+      timeline.set('.prev--card', { clearProps: true })
     },
   },
 }
@@ -137,10 +180,10 @@ img {
   transform: rotate(180deg);
 }
 .left.btn {
-  left: 30%;
+  left: 29%;
 }
 .right.btn {
-  right: 35%;
+  right: 37%;
 }
 .cardList {
   width: calc(3 * var(--card-width));

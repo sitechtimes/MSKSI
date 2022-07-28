@@ -34,8 +34,18 @@
   padding-bottom: 8rem;
 }
 .button {
-  cursor: url('../assets/images/hoverBtnCursor.png'), auto;
-  /* cursor: pointer; */
+  padding: 1.2rem;
+  margin-top: 10rem;
+  margin-left: 80%;
+  position: sticky;
+  left: 125rem;
+  width: 22rem;
+  height: 8rem;
+  font-size: var(--four);
+  border-radius: 20rem;
+  font-family: 'Black Han Sans';
+  border: none;
+  cursor: pointer;
 }
 #info {
   display: flex;
@@ -193,6 +203,24 @@
     font-size: var(--h6);
     margin-right: auto;
     margin-left: 4rem;
+  }
+
+  .heading {
+    font-size: var(--h3);
+    margin-left: 4rem;
+  }
+  .button {
+    margin-top: 6rem;
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: lighter;
+    border-radius: 20rem;
+    font-family: 'Black Han Sans';
+    border: none;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
   }
   .subheading {
     font-size: var(--subheadingjum);
