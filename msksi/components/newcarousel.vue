@@ -16,6 +16,7 @@
             <img
               src="https://randomwordgenerator.com/img/picture-generator/57e5d4444d50ab14f1dc8460962e33791c3ad6e04e507440752f73dd944bc6_640.jpg"
               alt=""
+              class="next.img"
             />
           </div>
         </div>
@@ -32,6 +33,7 @@
             <img
               src="https://randomwordgenerator.com/img/picture-generator/53e3d44a4950aa14f1dc8460962e33791c3ad6e04e507440722d72d5944ccd_640.jpg"
               alt=""
+              class="prev.img"
             />
           </div>
         </div>
@@ -87,7 +89,7 @@ export default {
       timeline
         .from('.current--card', {
           x: 100,
-          duration: 0.5,
+          duration: 0.6,
           ease: 'back.out(1.7)',
         })
         .from(
@@ -95,7 +97,7 @@ export default {
           {
             x: -100,
             delay: 0,
-            duration: 0.2,
+            duration: 0.3,
             ease: 'back.out(1.7)',
           },
           '-=.5'
@@ -105,7 +107,7 @@ export default {
           {
             x: -500,
             delay: 0,
-            duration: 0.4,
+            duration: 0.5,
             ease: 'back.out(1.7)',
           },
           '-=.5'
@@ -119,7 +121,7 @@ export default {
       timeline
         .from('.current--card', {
           x: -100,
-          duration: 0.5,
+          duration: 0.6,
           ease: 'back.out(1.7)',
         })
         .from(
@@ -127,7 +129,7 @@ export default {
           {
             x: 10,
             delay: 0,
-            duration: 0.5,
+            duration: 0.6,
             ease: 'back.out(1.7)',
           },
           '-=.5'
@@ -135,7 +137,7 @@ export default {
         .from(
           '.prev--card',
           {
-            x: 5,
+            x: 2,
             delay: 0,
             duration: 0.6,
             ease: 'back.out(1.7)',
@@ -179,6 +181,7 @@ img {
   height: 50rem;
   width: 50rem;
 }
+
 .arrow {
   height: 4rem;
   width: 4rem;
@@ -187,10 +190,10 @@ img {
   transform: rotate(180deg);
 }
 .left.btn {
-  left: 29%;
+  left: 32%;
 }
 .right.btn {
-  right: 37%;
+  right: 35%;
 }
 .cardList {
   width: calc(3 * var(--card-width));
@@ -228,5 +231,51 @@ img {
   display: inline-block;
   opacity: 0.6;
   z-index: 2;
+}
+@media screen and (max-width: 500px) {
+  .NewCarousel {
+    height: 80rem;
+    padding-bottom: 5rem;
+  }
+  img {
+    height: 25rem;
+    width: 25rem;
+  }
+  .next--card {
+    left: 20%;
+    top: 10%;
+    transform: rotateY(-30deg);
+  }
+  .prev--card {
+    left: -20%;
+    top: 10%;
+    transform: rotateY(30deg);
+  }
+  .arrow {
+    height: 2rem;
+    width: 2rem;
+  }
+  .btn {
+    z-index: 4;
+    top: 50%;
+  }
+  .left.btn {
+    left: 15%;
+  }
+  .right.btn {
+    right: 15%;
+  }
+}
+@media screen and (max-width: 800px) {
+  img {
+    height: 30rem;
+    width: 30rem;
+  }
+}
+@media screen and (max-width: 1032px) {
+  img {
+    height: 35rem;
+    width: 35rem;
+  }
 }
 </style>

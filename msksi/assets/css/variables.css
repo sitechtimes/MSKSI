@@ -34,9 +34,6 @@
   --subheadingjum: 3rem;
   --four: 4rem;
   --one: 1.3rem;
-
-  --card-width: 200px;
-  --card-height: 300px;
 }
 .arrow:hover,
 router-link:hover,
