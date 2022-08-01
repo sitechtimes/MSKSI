@@ -63,6 +63,9 @@ body,
     text-align: center;
     margin: 0;
   }
+  .logo {
+    margin-left: 2rem;
+  }
   .text {
     font-size: var(--h5);
   }
@@ -92,9 +95,6 @@ body,
   .heading {
     padding-top: 3rem;
     font-size: var(--h4);
-  }
-  .logo {
-    font-size: var(--h5);
   }
   .text {
     font-size: var(--h6);

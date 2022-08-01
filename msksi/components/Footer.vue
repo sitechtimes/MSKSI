@@ -2,12 +2,11 @@
   <div id="footer">
     <h2 class="contactus footer-text">Contact Us</h2>
     <div class="combo">
-      <div class="highlighter"></div>
       <div class="buttons">
         <a
           href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf"
           target="_blank"
-          class="icon"
+          class="logoicon"
         >
           <div class="backing">
             <span class="hoverselect selecttwitter"></span>
@@ -21,7 +20,7 @@
         <a
           href="https://www.instagram.com/_sammytheseagull/?hl=en"
           target="_blank"
-          class="icon"
+          class="logoicon"
           ><div class="backing">
             <span class="hoverselect selectinstagram"></span>
             <img
@@ -33,7 +32,7 @@
         <a
           href="https://www.tiktok.com/@charlidamelio?lang=en"
           target="_blank"
-          class="icon"
+          class="logoicon"
           ><div class="backing">
             <span class="hoverselect selecttiktok"></span>
             <img
@@ -45,7 +44,7 @@
         <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=mwhalen3@schools.nyc.gov"
           target="_blank"
-          class="icon"
+          class="logoicon"
           ><div class="backing">
             <span class="hoverselect selectgmail"></span>
             <img
@@ -64,37 +63,26 @@
   text-align: center;
   bottom: 0px;
   width: 100%;
-  height: 25rem;
+  height: 22rem;
 }
-
 .contactus {
-  font-size: 2.2rem;
-  font-family: 'Black Han Sans', sans-serif ;
-  padding-top: 7rem;
-  font-weight: lighter;
+  font-size: var(--subheadingjum);
+  font-family: 'Sora', sans-serif;
+  padding-top: 5rem;
   color: var(--yellow);
   padding-bottom: 2rem;
 }
-
-.highlighter {
-  position: absolute;
-  width: 30rem;
-  height: 6rem;
-  border-radius: 5rem;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  /* border: solid 0.5rem var(--yellow);
-  background-color: var(--yellow); */
+.combo {
+  text-align: center;
 }
 .buttons {
   display: flex;
   justify-content: space-around;
   width: 25rem;
   height: 5rem;
-  margin: 0.5rem auto 0 50%;
-  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .backing {
   height: 6rem;
   width: 6rem;
@@ -118,21 +106,20 @@
   height: 2.3rem;
 }
 
-.icon {
+.logoicon {
   transition: all 0.9s;
   z-index: 100;
-  margin-top: 0rem;
 }
 .iconimg:hover,
 .backing:hover {
   cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
 }
 
-.icon:hover .hoverselect {
+.logoicon:hover .hoverselect {
   transform: scale(1);
   /*  border: solid 0.5rem var(--yellow); */
 }
-.icon:hover .iconimg {
+.logoicon:hover .iconimg {
   filter: saturate(100%);
 }
 
@@ -155,27 +142,11 @@
 
 /*media queries*/
 
-@media only screen and (max-width: 1320px) {
-  .contactus {
-    padding-top: 7rem;
-    margin-left: 0;
-    font-size: 2rem;
-  }
-
-  .highlighter {
-    width: 26rem;
-    height: 5rem;
-  }
-  .buttons {
-    width: 22rem;
-  }
-  .icon {
-    margin-top: 1rem;
-  }
+@media only screen and (max-width: 1032px) {
   .backing {
     margin: auto;
   }
-  .icon,
+  /* .logoicon,
   .backing {
     height: 3rem;
     width: 3rem;
@@ -186,34 +157,40 @@
   .instagram,
   .tiktok {
     height: 2.5rem;
-  }
+  } */
   .hoverselect {
     width: 5.5rem;
     height: 5.5rem;
   }
 }
-@media only screen and (max-width: 1030px) {
-  .icon:hover .hoverselect {
+@media only screen and (max-width: 1032px) {
+  .logoicon:hover .hoverselect {
     transform: scale(0);
   }
-  .icon:hover .iconimg {
+  .logoicon:hover .iconimg {
     filter: saturate(0) brightness(5);
   }
-  .backing:hover .tiktok {
+  .logobacking:hover .tiktok {
     content: url(~/assets/images/tiktok-white.png);
+  }
+}
+@media only screen and (max-width: 770px) {
+  #footer {
+    height: 20rem;
+  }
+  .contactus {
+    padding-top: 4rem;
   }
 }
 @media only screen and (max-width: 500px) {
   #footer {
-    height: 25rem;
+    height: 18rem;
   }
   .contactus {
-    padding-top: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
   }
-  .icon {
-    margin-top: 1.75rem;
-  }
-  .icon,
+  /* .logoicon,
   .backing {
     height: 1.5rem;
     width: 1.5rem;
@@ -227,13 +204,9 @@
   }
   .gmail {
     height: 1.7rem;
-  }
+  } */
   .buttons {
     width: 18rem;
-  }
-  .highlighter {
-    width: 22rem;
-    height: 5rem;
   }
 }
 </style>
