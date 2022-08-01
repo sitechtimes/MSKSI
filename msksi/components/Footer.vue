@@ -59,7 +59,7 @@
 </template>
 <style scoped>
 #footer {
-  background-color: var(--darknavyblue);
+  background-color: var(--navyblue);
   text-align: center;
   bottom: 0px;
   width: 100%;
@@ -69,7 +69,7 @@
   font-size: var(--subheadingjum);
   font-family: 'Sora', sans-serif;
   padding-top: 5rem;
-  color: var(--yellow);
+  color: var(--darkpink);
   padding-bottom: 2rem;
 }
 .combo {
@@ -86,7 +86,6 @@
 .backing {
   height: 6rem;
   width: 6rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +95,6 @@
   height: 2.5rem;
   width: auto;
   transition: all 0.1s;
-  filter: saturate(0) brightness(5);
 }
 .instagram,
 .tiktok {
@@ -167,10 +165,7 @@
   .logoicon:hover .hoverselect {
     transform: scale(0);
   }
-  .logoicon:hover .iconimg {
-    filter: saturate(0) brightness(5);
-  }
-  .logobacking:hover .tiktok {
+  .backing:hover .tiktok {
     content: url(~/assets/images/tiktok-white.png);
   }
 }
