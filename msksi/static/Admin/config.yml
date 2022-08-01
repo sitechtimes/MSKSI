@@ -3,7 +3,7 @@ backend:
   branch: develop # Branch to update (optional; defaults to master)
 
 media_folder: 'msksi/assets/images'
-public_folder: '/assets/images'
+public_folder: 'msksi/assets/images'
 
 collections:
   - name: 'album'
