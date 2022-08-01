@@ -573,7 +573,7 @@ export default {
 #yellow {
   background-color: var(--yellow);
   width: 0;
-  height: 40%;
+  height: 50%;
   position: absolute;
   visibility: hidden;
 }
@@ -631,6 +631,9 @@ export default {
     height: 15rem;
     margin-right: 2.5rem;
     margin-top: 0;
+  }
+  #yellow {
+    height: 40%;
   }
 }
 @media only screen and (max-width: 1032px) {
@@ -699,9 +702,9 @@ export default {
     margin-right: 0rem;
     margin-left: 7rem;
   }
-  #yellow {
+  /* #yellow {
     height: 25%;
-  }
+  } */
 }
 @media only screen and (max-width: 500px) {
   .name {

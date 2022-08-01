@@ -2,13 +2,13 @@
   <div class="joinusmid">
     <div id="info">
       <div id="textgroup">
-        <h3 class="subheading wbsm">Website & Social Media Manager</h3>
+        <h3 class="subheading wbsm wbsmtext">Website & Social Media Manager</h3>
         <ul id="wbsm">
-          <li class="text">
+          <li class="text wbsmtext">
             Maintain the MSKSI website with the most current information,
             agendas, opportunities etc
           </li>
-          <li class="text">
+          <li class="text wbsmtext">
             Highlight our MSKSI members for their work professionally,
             educationally and personally.
           </li>
@@ -25,7 +25,7 @@
           target="_blank"
           action="https://docs.google.com/forms/d/e/1FAIpQLSdLleMNkyNTnnFrRaDa_cKdIi1B3mEL_bXRyhrxpzT3pGzzxA/viewform"
         >
-          <button class="button yellow">Join Us!</button>
+          <button class="button yellow joinbtn">Join Us!</button>
         </form>
       </div>
     </div>
@@ -34,11 +34,43 @@
 <script>
 export default {
   name: 'JoinUsMid',
-  methods: {},
+  mounted() {
+    this.scrollFadeGeneral()
+  },
+  methods: {
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '.wbsm',
+          start: 'top bottom-=20%',
+        },
+      })
+      genTL.fromTo(
+        '.wbsmtext',
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.1,
+          duration: 0.5,
+        }
+      )
+    },
+  },
 }
 </script>
 
 <style scoped>
+.joinbtn {
+  cursor: url('../assets/images/hoverBtnCursor.png'), auto;
+  font-size: 3rem;
+}
+.joinbtn:hover {
+  transform: scale(1.05);
+}
 .joinusmid {
   padding-bottom: 10rem;
   background-color: white;
@@ -53,6 +85,7 @@ export default {
 .text {
   margin-left: 14rem;
   margin-right: 4rem;
+  line-height: 2;
 }
 #picture {
   width: 40rem;
@@ -179,9 +212,12 @@ li {
   #info {
     flex-direction: column;
   }
-  .button {
-    margin-top: 9rem;
-    margin-left: 1rem;
+  .joinbtn {
+    width: 16rem;
+    height: 5rem;
+    font-size: var(--h5);
+    margin: 5rem;
+    margin-top: 8rem;
   }
   .text {
     margin-top: 2rem;
@@ -201,6 +237,8 @@ li {
   .text {
     margin-top: 3rem;
     margin-bottom: 0;
+
+    width: 90%;
     line-height: 2;
   }
   #wbsm {

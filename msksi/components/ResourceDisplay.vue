@@ -1,6 +1,6 @@
 <template>
   <div class="resourcestop">
-    <h2 class="heading">Resources</h2>
+    <h2 class="heading fade">Resources</h2>
     <div id="resources">
       <Resource
         v-for="resource in resources"
@@ -28,6 +28,63 @@ export default {
       .fetch()
     this.resources = resources
     console.log(this.resources)
+  },
+  mounted() {
+    this.staggerFly()
+    this.scrollFadeGeneral()
+  },
+  updated() {
+    this.staggerFly()
+  },
+  methods: {
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({})
+      genTL.fromTo(
+        '.fade',
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+
+          duration: 0.5,
+        }
+      )
+    },
+    staggerFly() {
+      const staggerTL = this.$gsap.timeline({
+        delay: 0.3,
+        onComplete: function () {
+          document.querySelectorAll('.resource').forEach((el) => {
+            el.style.transform = null
+            el.style.transition = 'all 0.3s'
+          })
+          console.log('no transform')
+        },
+      })
+      staggerTL
+        .fromTo(
+          '.resource',
+          {
+            opacity: 0,
+            y: 70,
+            stagger: 0.05,
+            duration: 0.5,
+          },
+          { opacity: 1, y: -8, stagger: 0.05, duration: 0.5 }
+        )
+        .to(
+          '.resource',
+          {
+            y: 0,
+            stagger: 0.05,
+            duration: 0.5,
+          },
+          '<+0.5'
+        )
+    },
   },
 }
 </script>

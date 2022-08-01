@@ -29,7 +29,9 @@ export default {
 </script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
-
+a {
+  cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
+}
 .name {
   font-family: 'ABeeZee', sans-serif;
   font-style: normal;
@@ -40,7 +42,14 @@ export default {
   display: block;
   text-align: center;
   margin-top: 3rem;
+  text-decoration: none;
+  transition: all 0.2s;
 }
+
+.name:hover {
+  text-decoration: underline;
+}
+
 .polaroid {
   background-color: white;
   height: 36rem;

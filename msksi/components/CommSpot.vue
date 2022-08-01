@@ -1,11 +1,14 @@
 <template>
   <div class="homespotlight">
     <div id="CSbutton-holder">
-      <router-link class="navRouter CSroutermore" to="/AboutUs">
+      <router-link class="router CSroutermore" to="/AboutUs">
         Read More
-            <div class="arrow"></div>
+        <div class="arrow"></div>
       </router-link>
       <div class="CSreadmore"></div>
+      <button id="CSmorebtn" onclick="location.href='/AboutUs'">
+        Read More
+      </button>
     </div>
     <div class="spotlight-images">
       <img id="spotlight" src="~/assets/images/spotlight.png" alt="" />
@@ -64,7 +67,7 @@ export default {
       const fadeTL = this.$gsap.timeline({
         scrollTrigger: {
           trigger: '#CSimg-holder',
-          start: 'top bottom',
+          start: 'top bottom-=20px',
           end: 'top 100px',
           scrub: false,
         },
@@ -95,37 +98,32 @@ export default {
           end: 'top 100px',
           scrub: false,
         },
+        onComplete: function () {
+          document.querySelectorAll('.square-cut').forEach((el) => {
+            el.style.transition = 'all 0.3s'
+          })
+        },
       })
 
-      fadeTLR.from('#CSimg-r1, .CSreadmore', {
-        delay: 0.5,
-        opacity: 0,
-        duration: 0.8,
-        y: 80,
-        ease: 'ease-out',
-      })
-      fadeTLR.from(
-        '#CSimg-r2',
-        {
-          delay: 0.2,
+      fadeTLR
+        .from('.square-cut', {
+          delay: 0.5,
           opacity: 0,
           duration: 0.8,
           y: 80,
-          ease: 'ease-out',
-        },
-        '<'
-      )
-      fadeTLR.from(
-        '#CSimg-r3',
-        {
-          delay: 0.2,
-          opacity: 0,
-          duration: 0.8,
-          y: 80,
-          ease: 'ease-out',
-        },
-        '<'
-      )
+
+          stagger: 0.2,
+        })
+        .from(
+          '.CSreadmore',
+          {
+            opacity: 0,
+            duration: 0.8,
+            y: 80,
+            ease: 'ease-out',
+          },
+          '<'
+        )
     },
   },
 }
@@ -133,7 +131,8 @@ export default {
 
 <style>
 .homespotlight {
-  height: 100rem;
+  height: fit-content;
+  min-height: 100rem;
   background-color: var(--white);
   position: relative;
   display: flex;
@@ -173,14 +172,14 @@ export default {
 }
 
 .CStext-holder {
-  position: relative;
-  height: 100%;
   text-align: left;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
-  padding-left: 6rem;
-  margin-top: -10rem;
+  padding-right: 28rem;
+  padding-bottom: 40rem;
+  padding-top: 10rem;
+  padding-left: 7rem;
 }
 .commspot {
   color: var(--darkpink);
@@ -189,7 +188,7 @@ export default {
   top: 0;
   margin-left: 0;
   padding-top: 0;
-  margin-right: 12rem;
+  margin-right: 0;
   font-size: 5rem;
 }
 
@@ -198,23 +197,89 @@ export default {
   color: var(--navyblue);
   font-family: 'ABeeZee', sans-serif;
   margin-top: 3rem;
-  margin-right: 28rem;
+
   line-height: 5rem;
 }
 
+.CSimg-reel {
+  position: absolute;
+  bottom: 12rem;
+  right: 42rem;
+  height: 20rem;
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.CSimg-r {
+  height: 20rem;
+  transition: all 0.3s;
+}
+
+.square-cut:hover .CSimg-r {
+  height: 100%;
+}
+
+.square-cut {
+  height: 25rem;
+  width: 20rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.reel-caption {
+  font-size: 1.5rem;
+  color: var(--navyblue);
+  font-family: 'ABeeZee', sans-serif;
+  z-index: 2000;
+  position: absolute;
+  top: 21rem;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.tp-hover {
+  background-color: var(--navyblue);
+  height: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s;
+  object-fit: cover;
+  bottom: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.square-cut:hover .reel-caption {
+  font-size: 1.75rem;
+  padding-bottom: 3rem;
+  color: var(--white);
+  padding: 1.5rem;
+  top: auto;
+  bottom: 0;
+}
+.square-cut:hover .tp-hover {
+  height: 100%;
+  opacity: 0.7;
+}
 .CSreadmore {
   height: 125rem;
   width: 125rem;
-  background-color: var(--tpnavyblue);
   clip-path: polygon(100% 27%, 68% 100%, 100% 100%);
-  position: absolute;
   bottom: 0;
   right: 0;
-  transition: all 0.3s;
   z-index: 10;
 }
-
-.CSroutermore:hover + .CSreadmore {
+.CSreadmore,
+#CSmorebtn {
+  background-color: var(--tpnavyblue);
+  position: absolute;
+  transition: all 0.3s;
+}
+.CSroutermore:hover + .CSreadmore,
+#CSmorebtn:hover {
   background-color: var(--darknavyblue);
 }
 
@@ -224,75 +289,36 @@ export default {
 }
 
 .CSroutermore {
-  font-size: 3rem;
-  color: var(--white);
-  font-family: 'ABeeZee', sans-serif;
-  font-weight: bold;
   bottom: 22rem;
-  right: 3rem;
+  right: 8rem;
   position: absolute;
   z-index: 11;
   transition: all 0.2s;
+  text-decoration: none;
+  font-size: 3rem;
 }
 
-.CSimg-reel {
-  position: absolute;
-  bottom: 15rem;
-  left: 74rem;
-  height: 20rem;
-  width: 62rem;
-  display: flex;
-  justify-content: space-between;
-  transition: all 0.3s;
-}
-
-.CSimg-r {
-  object-fit: cover;
-}
-
-.square-cut {
-  height: 20rem;
-  width: 20rem;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  transition: all 0.3s;
-}
-
-.reel-caption {
-  font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.884);
+.CSroutermore,
+#CSmorebtn {
+  font-size: 2.6rem;
+  color: var(--white);
   font-family: 'ABeeZee', sans-serif;
-  z-index: 2000;
-  position: absolute;
-  bottom: 0;
-  padding: 1.3rem;
-  width: 100%;
-  transition: all 0.3s;
+  font-weight: bold;
 }
-
-.tp-hover {
-  background-color: rgba(0, 0, 0, 0.514);
-  height: 5rem;
-  width: 100%;
-  z-index: 1000;
-  transition: all 0.3s;
-  object-fit: cover;
-  bottom: 0;
-  position: absolute;
+#CSmorebtn {
+  width: 25rem;
+  height: 7rem;
+  margin-bottom: 1.3rem;
+  border-radius: 3.5rem;
+  bottom: 4rem;
+  margin-left: 50%;
+  transform: translate(-50%);
+  right: auto;
+  z-index: 20;
+  visibility: hidden;
 }
-
-.square-cut:hover {
-  height: 22rem;
-}
-
-.square-cut:hover .reel-caption {
-  font-size: 1.75rem;
-  padding-bottom: 3rem;
-}
-.square-cut:hover .tp-hover {
-  height: 100%;
+#CSmorebtn:hover {
+  transform: translate(-50%) scale(1.025);
 }
 
 /* arrow */
@@ -306,7 +332,7 @@ export default {
 }
 
 .arrow:before {
-  content: "";
+  content: '';
   width: 15px;
   height: 2px;
   background: white;
@@ -323,7 +349,7 @@ export default {
 }
 
 .arrow:after {
-  content: "";
+  content: '';
   width: 0;
   height: 0;
   border-style: solid;
@@ -346,19 +372,28 @@ export default {
   .CSimg-reel {
     width: 47rem;
     height: 15rem;
-    top: 62rem;
+  }
+  .CSimg-r {
+    height: 15rem;
+  }
+  .reel-caption {
+    top: 16rem;
   }
   .square-cut {
-    height: 15rem;
+    height: 20rem;
     width: 15rem;
   }
-  .square-cut:hover {
-    height: 17rem;
+  .CStext-holder {
+    padding-bottom: 35rem;
   }
 }
 @media only screen and (max-width: 1560px) {
   #spotlight {
     width: 60rem;
+  }
+  .CStext-holder {
+    padding-bottom: 45rem;
+    padding-right: 25rem;
   }
 
   #CSimg-holder {
@@ -371,33 +406,36 @@ export default {
     width: 50rem;
   }
 
-  .nuxt-content {
-    margin-right: 32rem;
-  }
   .CSimg-reel {
-    bottom: 10rem;
+    bottom: 8rem;
     left: auto;
     right: 45rem;
     width: 78rem;
-    height: 25rem;
+    height: 30rem;
     top: auto;
   }
-  .square-cut {
+  .CSimg-r {
     height: 25rem;
+  }
+  .reel-caption {
+    top: 26rem;
+  }
+  .square-cut {
+    height: 30rem;
     width: 25rem;
   }
   .reel-caption {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
-  .square-cut:hover {
-    height: 27rem;
+  .square-cut:hover .reel-caption {
+    font-size: 1.9rem;
+    padding-bottom: 3rem;
   }
 }
 
 @media only screen and (max-width: 1320px) {
   .homespotlight {
     flex-direction: column;
-    height: fit-content;
   }
 
   #spotlight {
@@ -412,7 +450,7 @@ export default {
   .CStext-holder {
     width: 80vw;
     justify-content: center;
-    padding: 16rem 0 50rem 0;
+    padding: 10rem 1rem 55rem 1rem;
     align-self: center;
   }
 
@@ -452,13 +490,10 @@ export default {
 
   .CSreadmore,
   .CSroutermore {
-    margin-left: 50%;
-    transform: translate(-50%);
-    right: auto;
+    visibility: hidden;
   }
-
-  .CSroutermore:hover {
-    transform: translate(-50%) scale(1.025);
+  #CSmorebtn {
+    visibility: visible;
   }
 
   .icon {
@@ -469,7 +504,7 @@ export default {
     margin-right: 0;
   }
   .CSimg-reel {
-    bottom: 20rem;
+    bottom: 18rem;
     right: auto;
     left: 50%;
     transform: translateX(-50%);
@@ -477,24 +512,25 @@ export default {
 }
 @media only screen and (max-width: 900px) {
   .square-cut {
-    height: 20rem;
+    height: 25rem;
     width: 20rem;
   }
   .CSimg-reel {
     width: 62rem;
     height: 20rem;
-    bottom: 22rem;
+    bottom: 25rem;
   }
   .tp-hover {
     height: 6rem;
   }
-  .square-cut:hover {
-    height: 22rem;
+  .CSimg-r {
+    height: 20rem;
   }
-
-  .CSroutermore {
-    width: 29.5rem;
-    padding: 2rem 8rem;
+  .reel-caption {
+    top: 21rem;
+  }
+  .CSimg-r:hover {
+    height: 25rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -512,7 +548,7 @@ export default {
   }
 
   .CStext-holder {
-    padding: 15rem 0 48rem 0;
+    padding: 5rem 1rem 57rem 1rem;
   }
 
   .commspot {
@@ -524,28 +560,24 @@ export default {
     line-height: 4rem;
   }
 
-  .CSroutermore {
+  #CSmorebtn {
     font-size: 2rem;
-    bottom: 5rem;
-    width: 22.5rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-
-  .CSreadmore {
-    width: 22rem;
+    width: 18rem;
     height: 6rem;
   }
 
   .square-cut {
-    height: 14rem;
+    height: 18rem;
     width: 14rem;
     margin-bottom: 1.5rem;
   }
+  .CSimg-r {
+    height: 14rem;
+  }
   .CSimg-reel {
     width: 38rem;
-    height: 14rem;
-    bottom: 32rem;
+    height: 16rem;
+    bottom: 37rem;
     padding-right: 3rem;
     padding-left: 3rem;
 
@@ -555,9 +587,11 @@ export default {
 
   .reel-caption {
     font-size: 1.2rem;
+    top: 15rem;
   }
-  .square-cut:hover {
-    height: 15rem;
+  .square-cut:hover .reel-caption {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
   }
 }
 </style>

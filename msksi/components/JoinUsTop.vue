@@ -1,15 +1,17 @@
 <template>
   <div class="joinustop">
-    <h2 class="heading">Join Us Today!</h2>
+    <h2 class="heading fade">Join Us Today!</h2>
     <div id="info">
       <div id="textgroup">
-        <h3 class="subheading subc">Sub Committee</h3>
+        <h3 class="subheading subc subctext">Sub Committee</h3>
         <ul id="subc">
-          <li class="text">Sign in-Attendance Assist</li>
-          <li class="text">Session Feedback/Tracking and follow up</li>
-          <li class="text">Keep the attendance sign in for meetings in chat</li>
-          <li class="text">Transformation Tables</li>
-          <li class="text">Managing website & calendar</li>
+          <li class="text subctext fade">Sign in-Attendance Assist</li>
+          <li class="text subctext">Session Feedback/Tracking and follow up</li>
+          <li class="text subctext">
+            Keep the attendance sign in for meetings in chat
+          </li>
+          <li class="text subctext">Transformation Tables</li>
+          <li class="text subctext">Managing website & calendar</li>
         </ul>
       </div>
       <div class="image-container">
@@ -22,7 +24,7 @@
           action="https://docs.google.com/forms/d/e/1FAIpQLSe2NJzLuFUyTc_8Jcmn4DhyH5qfBWbKtwRjYrSzCFyERI8r1Q/viewform"
           target="_blank"
         >
-          <button class="button pink">Join Us!</button>
+          <button class="button pink joinbtn">Join Us!</button>
         </form>
       </div>
     </div>
@@ -33,9 +35,12 @@
   background-color: #333043;
   padding-bottom: 8rem;
 }
-.button {
+.joinbtn {
   cursor: url('../assets/images/hoverBtnCursor.png'), auto;
-  /* cursor: pointer; */
+  font-size: 3rem;
+}
+.joinbtn:hover {
+  transform: scale(1.05);
 }
 #info {
   display: flex;
@@ -66,7 +71,9 @@
   padding-bottom: 5rem;
   flex-direction: row;
   margin-left: 4rem;
-  line-height: 1;
+}
+.text {
+  line-height: 2;
 }
 .subc {
   color: var(--darkpink);
@@ -153,7 +160,7 @@
   }
   .button {
     width: 16rem;
-    height: 4.5rem;
+    height: 5rem;
     font-size: var(--h5);
     font-weight: bolder;
     border-radius: 20rem;
@@ -211,6 +218,57 @@
 <script>
 export default {
   name: 'JoinUsTop',
-  methods: {},
+  mounted() {
+    this.scrollFadeGeneral()
+    this.bounce()
+  },
+  methods: {
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({})
+      genTL
+        .fromTo(
+          '.fade',
+          {
+            y: 40,
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+            y: 0,
+            stagger: 0.3,
+            duration: 0.5,
+          }
+        )
+        .fromTo(
+          '.subctext',
+          {
+            y: 40,
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+            y: 0,
+            stagger: 0.1,
+            duration: 0.5,
+          },
+          '<+0.3'
+        )
+    },
+    bounce() {
+      const bounceTL = this.$gsap.timeline({
+        repeat: -1,
+        yoyo: true,
+      })
+      bounceTL
+        .to('#picture', {
+          y: -10,
+          duration: 1.3,
+        })
+        .to('#picture', {
+          y: 0,
+          duration: 1.3,
+        })
+    },
+  },
 }
 </script>

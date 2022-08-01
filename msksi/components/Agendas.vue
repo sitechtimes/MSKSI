@@ -1,8 +1,8 @@
 <template>
   <div class="Agendas">
-    <h2 class="heading" id="agendas">Agendas</h2>
+    <h2 class="heading fade2" id="agendas">Agendas</h2>
     <div class="agendaText">
-      <h3 class="text" id="text">Click below to view our agendas.</h3>
+      <h3 class="text fade2" id="text">Click below to view our agendas.</h3>
     </div>
     <a
       href="https://calendar.google.com
@@ -111,7 +111,50 @@
 <script>
 export default {
   name: 'Agendas',
-  methods: {},
+  mounted() {
+    this.staggerFly()
+    this.scrollFadeGeneral()
+  },
+  methods: {
+    staggerFly() {
+      const staggerTL = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '.agendas-container',
+          start: 'top bottom',
+          scrub: false,
+        },
+      })
+      staggerTL.from('.yearly-agenda', {
+        x: '75%',
+        width: '50%',
+        stagger: 0.15,
+        duration: 0.8,
+        delay: 0.1,
+      })
+    },
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '.fade2',
+          start: 'top bottom-=20%',
+          scrub: false,
+        },
+      })
+      genTL.fromTo(
+        '.fade2',
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.3,
+          duration: 0.5,
+        }
+      )
+    },
+  },
   data() {
     return {
       show2019: true,
@@ -141,6 +184,7 @@ export default {
 }
 #text {
   font-size: var(--h4);
+  margin-top: 0;
 }
 .text {
   color: var(--white);

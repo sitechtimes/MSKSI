@@ -1,7 +1,7 @@
 <template>
   <div class="AboutUsTop">
-    <h2 class="heading">Our <span class="h mission">Mission</span></h2>
-    <h3 id="text" class="text">
+    <h2 class="heading fade">Our <span class="h mission">Mission</span></h2>
+    <h3 id="text" class="text fade">
       {{ textarea }}
     </h3>
   </div>
@@ -25,8 +25,27 @@ export default {
       in order to have a voice, respect and rapport in a diverse community.`,
     }
   },
-
-  methods: {},
+  mounted() {
+    this.scrollFadeGeneral()
+  },
+  methods: {
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({})
+      genTL.fromTo(
+        '.fade',
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.3,
+          duration: 0.5,
+        }
+      )
+    },
+  },
 }
 </script>
 <style scoped>
@@ -45,6 +64,7 @@ export default {
 .text {
   color: var(--white);
   justify-content: center;
+  line-height: 7rem;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -95,6 +115,7 @@ export default {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    line-height: 3.5rem;
   }
 }
 </style>

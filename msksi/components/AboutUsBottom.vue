@@ -1,13 +1,13 @@
 <template>
   <div id="AboutUsBottom">
-    <h2 class="heading gao">Goals and Outcomes</h2>
-    <h3 class="subheading will">MSKSI members will:</h3>
-    <h4 class="text texti">
+    <h2 class="heading gao fade3">Goals and Outcomes</h2>
+    <h3 class="will fade3">MSKSI members will:</h3>
+    <h4 class="text texti fade3">
       Be able to adapt healthy social and emotional habits that will support
       building positive internal self-esteem. Be mindful how others appear and
       show up. Have grace, dignity and leave room for error and forgiveness.
     </h4>
-    <h4 class="text texti">
+    <h4 class="text texti fade3">
       Have a voice, opportunity and forum to grow in the MSKSI community. MSKSI
       focuses on equity in support of all students with a lens on our
       marginalized groups; however MSKSI is not just black and brown students,
@@ -18,13 +18,45 @@
 <script>
 export default {
   name: 'AboutUsBottom',
-  methods: {},
+  mounted() {
+    this.scrollFadeGeneral()
+  },
+  updated() {
+    this.scrollFadeGeneral()
+  },
+  methods: {
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '.gao',
+          start: 'top bottom-=30%',
+          scrub: false,
+        },
+      })
+      genTL.fromTo(
+        '.fade3',
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.1,
+          duration: 0.5,
+        }
+      )
+    },
+  },
 }
 </script>
 <style scoped>
 #AboutUsBottom {
   background-color: #333043;
   padding-bottom: 10rem;
+}
+.gao {
+  opacity: 0;
 }
 .heading {
   text-align: center;
@@ -34,12 +66,19 @@ export default {
   font-style: normal;
 }
 .will {
+  font-size: var(--h3);
   color: var(--yellow);
+  text-align: left;
+  font-family: 'Sora';
+  margin-left: 11rem;
+  margin-top: 8rem;
+  font-weight: 600;
 }
 .texti {
   display: block;
   color: var(--white);
   justify-content: center;
+  line-height: 7rem;
 }
 .goal {
   color: var(--navyblue);
@@ -84,14 +123,17 @@ export default {
   .will {
     margin: 2rem 6rem 0 6rem;
     margin-top: 4rem;
+    font-size: 3rem;
   }
 }
 @media only screen and (max-width: 500px) {
   .texti {
     margin: 2rem 4rem 0 4rem;
+    line-height: 3.5rem;
   }
   .will {
     margin: 2rem 4rem 0 4rem;
+    font-size: 2.5rem;
   }
 }
 </style>
