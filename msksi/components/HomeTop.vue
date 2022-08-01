@@ -580,7 +580,7 @@ export default {
 #pink {
   background-color: var(--darkpink);
   width: 0;
-  height: 65%;
+  height: 96%;
   position: absolute;
   visibility: hidden;
 }

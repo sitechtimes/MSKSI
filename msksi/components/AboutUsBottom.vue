@@ -70,6 +70,9 @@ export default {
   .texti {
     margin: 2rem 8rem 0 8rem;
   }
+  .heading {
+    margin: 0rem 8rem 0 8rem;
+  }
   #AboutUsBottom {
     padding-bottom: 6rem;
   }
@@ -77,10 +80,6 @@ export default {
 @media only screen and (max-width: 770px) {
   .texti {
     margin: 2rem 6rem 0 6rem;
-  }
-  h2 {
-    text-align: center;
-    width: 100%;
   }
   .will {
     margin: 2rem 6rem 0 6rem;
@@ -90,10 +89,6 @@ export default {
 @media only screen and (max-width: 500px) {
   .texti {
     margin: 2rem 4rem 0 4rem;
-  }
-  h2 {
-    text-align: center;
-    width: 100%;
   }
   .will {
     margin: 2rem 4rem 0 4rem;
