@@ -573,14 +573,14 @@ export default {
 #yellow {
   background-color: var(--yellow);
   width: 0;
-  height: 40%;
+  height: 50%;
   position: absolute;
   visibility: hidden;
 }
 #pink {
   background-color: var(--darkpink);
   width: 0;
-  height: 65%;
+  height: 95%;
   position: absolute;
   visibility: hidden;
 }
@@ -632,6 +632,9 @@ export default {
     margin-right: 2.5rem;
     margin-top: 0;
   }
+  #yellow {
+    height: 40%;
+  }
 }
 @media only screen and (max-width: 1032px) {
   .mysis {
@@ -667,9 +670,6 @@ export default {
   #yellow {
     height: 35%;
   }
-  #pink {
-    height: 75%;
-  }
 }
 @media only screen and (max-width: 770px) {
   .alignright {
@@ -701,12 +701,6 @@ export default {
     height: 8rem;
     margin-right: 0rem;
     margin-left: 7rem;
-  }
-  #yellow {
-    height: 25%;
-  }
-  #pink {
-    height: 90%;
   }
 }
 @media only screen and (max-width: 500px) {
