@@ -3,7 +3,7 @@ backend:
   branch: develop 
 
 media_folder: 'msksi/static/img/upload'
-public_folder: 'img/upload'
+public_folder: '/img/upload'
 
 collections:
   - name: 'album'
