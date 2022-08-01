@@ -24,7 +24,7 @@ export default {
   methods: {
     imageURL(image) {
       // const images = require.context('../static/', false, /\.png$/)
-      return require('../static/' + image )
+      return require('../static' + image )
     }
   }
 }

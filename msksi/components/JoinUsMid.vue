@@ -133,6 +133,17 @@ li {
   .joinusmid {
     padding-bottom: 4rem;
   }
+  .button {
+    width: 16rem;
+    height: 4.5rem;
+    font-size: var(--h5);
+    font-weight: bolder;
+    border-radius: 20rem;
+    font-family: 'Sora', sans-serif;
+    border: none;
+    margin: 4rem;
+    margin-top: 11rem;
+  }
   .wbsm {
     font-size: var(--h4);
     margin: 0;
