@@ -81,7 +81,8 @@ iframe {
 #video {
   height: 22vw;
   width: 35vw;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0;
+  border: solid var(--darkpink) 0.5rem;
 }
 .list {
   font-size: var(--h3);
