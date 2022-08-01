@@ -1,6 +1,6 @@
 <template>
   <div class="polaroid">
-    <img id="picture" :src="img" :alt="title" />
+    <img id="picture" :src="imageURL(img)" :alt="title" />
     <a class="name" target="_blank" :href="link">{{ title }}</a>
   </div>
 </template>
@@ -19,6 +19,12 @@ export default {
     img: String,
     link: String,
   },
+  methods: {
+    imageURL(image) {
+      // const images = require.context('../static/', false, /\.png$/)
+      return require('../static' + image )
+    }
+  }
 }
 </script>
 <style scoped>

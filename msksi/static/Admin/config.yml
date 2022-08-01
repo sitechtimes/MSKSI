@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
-  branch: develop # Branch to update (optional; defaults to master)
+  branch: develop 
 
-media_folder: 'static/img'
-public_folder: '/img'
+media_folder: 'msksi/static/img/upload'
+public_folder: '/img/upload'
 
 collections:
   - name: 'album'

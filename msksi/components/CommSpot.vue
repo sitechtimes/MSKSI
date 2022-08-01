@@ -466,8 +466,26 @@ export default {
     transform: translateX(-50%);
   }
 
-  .arrow {
+  .CSreadmore {
+    width: 30rem;
+    clip-path: none;
+    height: 7rem;
+    margin-bottom: 1.3rem;
+    border-radius: 2rem;
+    bottom: 4rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+  }
+  .arrow{
     display: none;
+  }
+  .CSroutermore {
+    padding: 2rem 8.5rem;
+    bottom: 5rem;
+    font-size: 2.6rem;
+    text-align: center;
   }
 
   .CSreadmore,
