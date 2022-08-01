@@ -47,7 +47,7 @@ h3 {
   justify-items: center;
   grid-template-rows: auto;
   padding-bottom: 10rem;
-  margin: 4rem 11rem 0;
+  margin: 7rem 11rem 0;
 }
 .resource {
   margin-top: 0rem;
@@ -100,7 +100,9 @@ ul {
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
     border-radius: 2rem;
-    margin-left: 2rem;
+  }
+  #resources {
+    margin: 2rem 11rem 0;
   }
   .resourcestop {
     background-color: #333043;

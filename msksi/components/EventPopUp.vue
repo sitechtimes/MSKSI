@@ -12,6 +12,13 @@
     </div>
     <img
       v-show="gifVisible"
+      src="~/assets/images/pinkHeartGif.gif"
+      alt="heart gif when hover"
+      class="gifImage"
+    />
+
+    <img
+      v-show="gifVisible"
       src="https://res.cloudinary.com/dzzja5n1u/image/upload/c_scale,w_139/v1658147894/MSKSI/pinkHeartJif_f6kcd1.gif"
       alt="heart gif when hover"
       class="gifImage"

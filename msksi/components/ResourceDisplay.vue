@@ -112,7 +112,7 @@ h3 {
   justify-items: center;
   grid-template-rows: auto;
   padding-bottom: 10rem;
-  margin: 4rem 11rem 0;
+  margin: 7rem 11rem 0;
 }
 .resource {
   margin-top: 0rem;
@@ -164,7 +164,9 @@ ul {
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
     border-radius: 2rem;
-    margin-left: 2rem;
+  }
+  #resources {
+    margin: 2rem 11rem 0;
   }
   .resourcestop {
     background-color: #333043;
@@ -180,11 +182,12 @@ ul {
     margin-top: 1rem;
   }
 }
-@media only screen and (max-width: 720px) {
-  .heading {
-    margin-left: 4rem;
-    margin-top: 0rem;
+@media only screen and (max-width: 770px) {
+  .resource {
+    margin-top: 2rem;
   }
+}
+@media only screen and (max-width: 720px) {
   img {
     height: 13rem;
     margin-left: auto;
@@ -194,7 +197,7 @@ ul {
   #link {
     font-size: var(--h6);
   }
-  #resources {
+  /* #resources {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -204,7 +207,7 @@ ul {
     align-items: center;
     justify-content: space-around;
     padding-bottom: 5rem;
-  }
+  } */
   .resource {
     margin-top: 3rem;
     width: 25rem;
@@ -214,7 +217,7 @@ ul {
     font-size: var(--one);
   }
 }
-@media only screen and (max-width: 710px) {
+/* @media only screen and (max-width: 710px) {
   #resources {
     text-align: center;
     display: flex;
@@ -233,7 +236,7 @@ ul {
   h3 {
     font-size: var(--smallText);
   }
-}
+} */
 
 @media only screen and (max-width: 520px) {
   .heading {
@@ -246,12 +249,12 @@ ul {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-bottom: 5rem;
+    padding-bottom: 5rem; */
   }
   .resource {
     margin-top: 1rem;

@@ -175,6 +175,7 @@ export default {
   font-weight: 400;
   text-align: center;
   line-height: 7.5rem;
+  margin: 0rem 11rem 0 11rem;
 }
 .agendas-container {
   display: grid;
