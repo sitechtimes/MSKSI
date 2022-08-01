@@ -580,7 +580,7 @@ export default {
 #pink {
   background-color: var(--darkpink);
   width: 0;
-  height: 65%;
+  height: 96%;
   position: absolute;
   visibility: hidden;
 }
@@ -667,9 +667,6 @@ export default {
   #yellow {
     height: 35%;
   }
-  #pink {
-    height: 75%;
-  }
 }
 @media only screen and (max-width: 770px) {
   .alignright {
@@ -704,9 +701,6 @@ export default {
   }
   #yellow {
     height: 25%;
-  }
-  #pink {
-    height: 90%;
   }
 }
 @media only screen and (max-width: 500px) {
