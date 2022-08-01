@@ -9,12 +9,12 @@
           <button @click="show2019 = !show2019" class="toggle">
             <img
               v-if="show2019"
-              class="arrow down"
+              class="arrowBtn down"
               src="~/assets/images/arrow up.png"
               alt="arrow"
             /><img
               v-else
-              class="arrow up"
+              class="arrowBtn up"
               src="~/assets/images/arrow up.png"
               alt="arrow"
             />
@@ -35,12 +35,12 @@
           <button @click="show2020 = !show2020" class="toggle">
             <img
               v-if="show2020"
-              class="arrow down"
+              class="arrowBtn down"
               src="~/assets/images/arrow up.png"
               alt="arrow"
             /><img
               v-else
-              class="arrow up"
+              class="arrowBtn up"
               src="~/assets/images/arrow up.png"
               alt="arrow"
             />
@@ -62,12 +62,12 @@
           <button @click="show2021 = !show2021" class="toggle">
             <img
               v-if="show2021"
-              class="arrow down"
+              class="arrowBtn down"
               src="~/assets/images/arrow up.png"
               alt="arrow"
             /><img
               v-else
-              class="arrow up"
+              class="arrowBtn up"
               src="~/assets/images/arrow up.png"
               alt="arrow"
             />
@@ -116,7 +116,7 @@ export default {
 }
 #agendas {
   color: var(--white);
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif;
   font-style: normal;
   font-weight: 700;
   text-align: center;
@@ -131,6 +131,7 @@ export default {
   font-weight: 400;
   text-align: center;
   line-height: 7.5rem;
+  margin: 0rem 11rem 0 11rem;
 }
 .agendas-container {
   display: grid;
@@ -149,7 +150,7 @@ export default {
 }
 .year {
   color: var(--navy);
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif;
   font-style: normal;
   font-weight: 700;
   margin-top: 3.5rem;
@@ -180,6 +181,7 @@ li {
   margin-left: 20rem;
   line-height: 6rem;
   font-size: var(--h4);
+  margin-top: 0;
   cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
 }
 /* .date::before {
@@ -196,7 +198,7 @@ li {
   margin-right: 8rem;
   margin: 1.5rem 8rem auto 0;
 }
-.arrow {
+.arrowBtn {
   height: 10rem;
   cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
   transition: 0.5s;
@@ -219,7 +221,7 @@ li {
     font-size: var(--h4);
     margin: 3rem 0rem 0rem 8rem;
   }
-  .arrow {
+  .arrowBtn {
     height: 7.5rem;
   }
   .toggle {
@@ -277,7 +279,7 @@ li {
   .toggle {
     margin: 1.5rem 2.5rem auto 0;
   }
-  .arrow {
+  .arrowBtn {
     height: 5.5rem;
   }
   ul {
@@ -316,7 +318,7 @@ li {
   .toggle {
     margin: 1.5rem 2rem auto 0;
   }
-  .arrow {
+  .arrowBtn {
     height: 3.3rem;
   }
   .date {

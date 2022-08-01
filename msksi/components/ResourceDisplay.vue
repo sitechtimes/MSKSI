@@ -4,7 +4,7 @@
     <div id="resources">
       <Resource
         v-for="resource in resources"
-        :key="resource.title"
+        :key="resource.slug"
         :title="resource.title"
         :img="resource.img"
         :link="resource.link"
@@ -37,12 +37,12 @@ export default {
   background: #333043;
 }
 .resource:hover {
- transform: scale(1.02);
+  transform: scale(1.02);
   transition: 0.2s;
 }
 h3 {
   font-size: var(--h6);
-  font-family: 'Cairo', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -55,7 +55,7 @@ h3 {
   justify-items: center;
   grid-template-rows: auto;
   padding-bottom: 10rem;
-  margin: 4rem 11rem 0;
+  margin: 7rem 11rem 0;
 }
 .resource {
   margin-top: 0rem;
@@ -82,15 +82,15 @@ img {
 #link {
   color: #333043;
   font-size: var(--h5);
-  font-family: 'Cairo', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 .item {
   color: #333043;
-  font-family: 'Cairo', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
   text-align: center;
   font-size: var(--h6);
 }
@@ -107,7 +107,9 @@ ul {
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
     border-radius: 2rem;
-    margin-left: 2rem;
+  }
+  #resources {
+    margin: 2rem 11rem 0;
   }
   .resourcestop {
     background-color: #333043;
@@ -118,16 +120,17 @@ ul {
   #link {
     color: #333043;
     font-size: var(--h5);
-    font-family: 'Cairo', sans-serif;
+    font-family: 'ABeeZee', sans-serif;
     text-align: center;
     margin-top: 1rem;
   }
 }
-@media only screen and (max-width: 720px) {
-  .heading {
-    margin-left: 4rem;
-    margin-top: 0rem;
+@media only screen and (max-width: 770px) {
+  .resource {
+    margin-top: 2rem;
   }
+}
+@media only screen and (max-width: 720px) {
   img {
     height: 13rem;
     margin-left: auto;
@@ -137,7 +140,7 @@ ul {
   #link {
     font-size: var(--h6);
   }
-  #resources {
+  /* #resources {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -147,7 +150,7 @@ ul {
     align-items: center;
     justify-content: space-around;
     padding-bottom: 5rem;
-  }
+  } */
   .resource {
     margin-top: 3rem;
     width: 25rem;
@@ -157,7 +160,7 @@ ul {
     font-size: var(--one);
   }
 }
-@media only screen and (max-width: 710px) {
+/* @media only screen and (max-width: 710px) {
   #resources {
     text-align: center;
     display: flex;
@@ -176,7 +179,7 @@ ul {
   h3 {
     font-size: var(--smallText);
   }
-}
+} */
 
 @media only screen and (max-width: 520px) {
   .heading {
@@ -189,12 +192,12 @@ ul {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-bottom: 5rem;
+    padding-bottom: 5rem; */
   }
   .resource {
     margin-top: 1rem;
@@ -223,4 +226,3 @@ ul {
   }
 }
 </style>
-

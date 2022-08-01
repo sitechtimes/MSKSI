@@ -2,33 +2,72 @@ backend:
   name: git-gateway
   branch: develop # Branch to update (optional; defaults to master)
 
-media_folder: 'static/img'
-public_folder: '/img'
+media_folder: '/msksi/static/img/upload'
+public_folder: '/msksi/static/img/upload'
 
 collections:
   - name: 'album'
     label: 'Album'
-    folder: 'content/albums'
+    folder: 'msksi/content/albums'
     format: 'frontmatter'
     create: true
     slug: '{{slug}}'
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Album Name', name: 'title', widget: 'string' }
       - { label: 'Album Link', name: 'link', widget: 'string' }
-      - { label: 'Image', name: 'img', widget: 'image' }
+      - { label: 'Cover Image', name: 'img', widget: 'image' }
   - name: 'resource'
     label: 'Resource'
-    folder: 'content/resources'
+    folder: 'msksi/content/resources'
     format: 'frontmatter'
     create: true
     slug: '{{slug}}'
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Resource Name', name: 'title', widget: 'string' }
       - { label: 'Resources Link', name: 'link', widget: 'string' }
-      - { label: 'Image', name: 'img', widget: 'image' }
+      - { label: 'Resource Image', name: 'img', widget: 'image' }
+  - name: 'monthposts'
+    label: 'Month Posts'
+    folder: 'msksi/content/monthposts'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Month', name: 'month', widget: 'string' }
+      - { label: 'Post Title', name: 'subheader', widget: 'string' }
+      - { label: 'Post Description', name: 'description', widget: 'string' }
+      - { label: 'Post Image', name: 'img', widget: 'image' }
+  - name: 'eventpreview'
+    label: 'Event Preview'
+    folder: 'msksi/content/eventpreview'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Event Name', name: 'eventname', widget: 'string' }
+      - { label: 'Event Month', name: 'eventmonth', widget: 'datetime' }
+      - { label: 'Event Date', name: 'eventdate', widget: 'string' }
+  - name: 'commspot'
+    label: 'Community Spotlight'
+    folder: 'msksi/content/commspot'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Main Image', name: 'img_main', widget: 'image' }
+      - { label: 'Small Image 1', name: 'img_reel1', widget: 'image' }
+      - { label: 'Small Image 2', name: 'img_reel2', widget: 'image' }
+      - { label: 'Small Image 3', name: 'img_reel3', widget: 'image' }
+      - { label: 'Caption 1', name: 'reel_caption1', widget: 'string' }
+      - { label: 'Caption 2', name: 'reel_caption2', widget: 'string' }
+      - { label: 'Caption 3', name: 'reel_caption3', widget: 'string' }

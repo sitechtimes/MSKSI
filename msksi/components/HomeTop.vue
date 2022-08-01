@@ -532,7 +532,7 @@ export default {
 }
 .name {
   font-size: var(--h1);
-  font-family: 'Sora';
+  font-family: 'Sora', sans-serif;
   color: var(--yellow);
   padding-top: 7rem;
   visibility: hidden;
@@ -546,11 +546,10 @@ export default {
   margin: auto;
 }
 .mysis {
-  font-size: 13rem;
-  text-align: right;
+  font-size: 15rem;
+  text-align: center;
   padding-top: 20rem;
   position: relative;
-  width: fit-content;
 }
 .line2 {
   display: flex;
@@ -560,16 +559,15 @@ export default {
   align-content: center;
   position: relative;
 }
-
 .keeper {
   color: var(--darkpink);
-  font-size: 13rem;
+  font-size: 15rem;
   text-align: right;
   padding-top: 0rem;
   margin-top: 2rem;
   width: fit-content;
   margin-right: 0%;
-  margin-left: 4rem;
+  margin-left: 3rem;
   position: relative;
 }
 #yellow {
@@ -579,7 +577,6 @@ export default {
   position: absolute;
   visibility: hidden;
 }
-
 #pink {
   background-color: var(--darkpink);
   width: 0;
@@ -587,12 +584,11 @@ export default {
   position: absolute;
   visibility: hidden;
 }
-
 #logo-img {
   width: auto;
-  height: 25rem;
-
+  height: 20rem;
   margin-top: 1rem;
+  margin-right: 3rem;
 }
 .logo-heart {
   fill: #e9587a;
@@ -607,14 +603,13 @@ export default {
   font-size: var(--h3);
   width: 35rem;
   text-align: right;
-  margin-top: 3rem;
   margin-left: 75%;
+  margin-top: 5rem;
   opacity: 0;
 }
 @media only screen and (max-width: 1500px) {
   .hometop {
     background-color: var(--navyblue);
-    padding-bottom: 30rem;
   }
   .name {
     margin-left: 0;
@@ -622,18 +617,20 @@ export default {
     font-size: 11rem;
   }
   .keeper {
-    width: 45rem;
+    width: 42rem;
     margin-top: 1rem;
-    margin-left: 2rem;
+    margin-left: 0rem;
   }
   .si {
-    margin-top: 2rem;
+    margin-top: 3rem;
     font-size: var(--h4);
     margin-left: 64%;
   }
   #logo-img {
     width: auto;
-    height: 20rem;
+    height: 15rem;
+    margin-right: 2.5rem;
+    margin-top: 0;
   }
 }
 @media only screen and (max-width: 1032px) {
@@ -642,7 +639,6 @@ export default {
     margin-left: 0;
     margin-right: 0;
   }
-
   .line2 {
     margin: 0;
     justify-content: left;
@@ -653,19 +649,20 @@ export default {
     font-size: 9.5rem;
   }
   .keeper {
-    width: fit-content;
-    margin-left: 3rem;
-    right: 0;
+    width: 36rem;
+    margin-left: 0rem;
   }
   .si {
     font-size: 3rem;
     width: 28rem;
     text-align: right;
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
   #logo-img {
     width: auto;
-    height: 16rem;
+    height: 13rem;
+    margin-left: 2rem;
+    margin-right: 2.5rem;
   }
   #yellow {
     height: 35%;
@@ -675,10 +672,6 @@ export default {
   }
 }
 @media only screen and (max-width: 770px) {
-  .hometop {
-    padding-bottom: 20rem;
-    height: calc(100vh - 8rem) !important;
-  }
   .alignright {
     height: fit-content;
   }
@@ -690,25 +683,24 @@ export default {
   }
   .name {
     font-size: var(--h2);
-
     margin-right: 0;
   }
   .keeper {
     font-size: var(--h2);
-    width: 23.5rem;
-    margin-left: 2rem;
-    margin-bottom: 4rem;
+    width: 24rem;
+    margin-left: 1rem;
   }
   .si {
     font-size: var(--h5);
     width: 40rem;
     text-align: right;
-    margin-left: 0;
-    position: absolute;
-    top: 45rem;
+    margin-left: 6rem;
+    margin-top: 3rem;
   }
   #logo-img {
-    height: 10rem;
+    height: 8rem;
+    margin-right: 0rem;
+    margin-left: 7rem;
   }
   #yellow {
     height: 25%;
@@ -724,22 +716,19 @@ export default {
   .mysis {
     padding-top: 16rem;
   }
-  .line2 {
-    justify-content: right;
-  }
-
   .keeper {
     font-size: var(--h3);
     width: 18rem;
-    margin-left: 1rem;
+    margin-left: 0rem;
   }
   .si {
     font-size: var(--h6);
-    width: 28rem;
-    top: 40rem;
+    width: 27.5rem;
+    margin-top: 2.5rem;
   }
   #logo-img {
-    height: 8rem;
+    height: 6.5rem;
+    margin-left: 5rem;
   }
   #yellow {
     height: 25%;

@@ -58,12 +58,14 @@ export default {
 }
 .left {
   width: 50%;
-  font-family: 'Black Han Sans';
   margin: 10rem 0 10rem 0;
 }
 .msksi {
   color: var(--darkpink);
   padding-top: 0;
+}
+iframe {
+  cursor: url('~assets/images/hoverBtnCursor.png'), auto;
 }
 .vision {
   color: var(--navyblue);
@@ -89,7 +91,7 @@ export default {
   line-height: 4rem;
   width: 95%;
   margin: 8rem 0 8rem 0;
-  font-family: 'Cairo', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
 }
 
 li {

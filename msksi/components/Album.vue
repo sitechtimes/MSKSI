@@ -7,6 +7,13 @@
 <script>
 export default {
   name: 'Album',
+  async asyncData({ $content }) {
+    const posts = await $content('blog').fetch()
+
+    return {
+      posts,
+    }
+  },
   props: {
     title: String,
     img: String,
@@ -16,11 +23,9 @@ export default {
 </script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
-a {
-  cursor: pointer;
-}
+
 .name {
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
   font-style: normal;
   color: var(--navyblue);
   text-align: center;
