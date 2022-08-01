@@ -39,68 +39,69 @@ export default {
   width: 80%;
   height: 68rem;
 }
-@media only screen and (max-width: 1500px){
-    .calendarFlex {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding-bottom: 0rem;
-  height: 0;
-  overflow: visible;
-}
-.calendarFlex iframe {
-  position: absolute;
-  top: 0;
-  width: 80%;
-  height: 55rem;
-  margin-top: 3rem;
-}
-.calendartop{
-  padding-bottom: 60rem;
-}
-}
-@media only screen and (max-width: 710px){
-    .calendarFlex {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 0;
-  overflow: visible;
-}
-.calendarFlex iframe {
-  position: absolute;
-  top: 0;
-  width: 80%;
-  height: 40rem;
-  margin-top: 3rem;
-}
-.calendartop{
-  padding-bottom: 45rem;
-}
-}
-@media only screen and (max-width: 520px) {
-  .calendartop{
-  padding-bottom: 38rem;
-}
+@media only screen and (max-width: 1500px) {
   .calendarFlex {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 0;
-  overflow: visible;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 0rem;
+    height: 0;
+    overflow: visible;
+  }
+  .calendarFlex iframe {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 55rem;
+    margin-top: 3rem;
+  }
+  .calendartop {
+    padding-bottom: 60rem;
+  }
 }
-.calendarFlex iframe {
-  position: absolute;
-  top: 0;
-  width: 80%;
-  height: 33rem;
-  margin-top: 3rem;
+@media only screen and (max-width: 770px) {
+  .calendarFlex {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 0;
+    overflow: visible;
+  }
+  .calendarFlex iframe {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 45rem;
+    margin-top: 3rem;
+  }
+  .calendartop {
+    padding-bottom: 50rem;
+  }
 }
+@media only screen and (max-width: 500px) {
+  .calendartop {
+    padding-bottom: 0rem;
+    display: none;
+  }
+  /* .calendarFlex {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 0;
+    overflow: visible;
+  }
+  .calendarFlex iframe {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 40rem;
+    margin-top: 3rem;
+  } */
 }
 </style>
