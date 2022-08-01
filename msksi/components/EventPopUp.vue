@@ -137,8 +137,8 @@ export default {
     .calendarlink{
         font-size: 2rem;
     }
-    .dates{
+    /* .dates{
         padding: 2.5rem 2.6rem 0 2.6rem;
-    }
+    } */
 }
 </style>
