@@ -10,10 +10,10 @@ import CalendarTop from '~/components/CalendarTop.vue'
 import Agendas from '~/components/Agendas.vue'
 export default {
   components: { CalendarTop, Agendas },
-   head() {
+  head() {
     return {
-      title: "Calender | My Sister's Keeper Staten Island"
-    };
+      title: "Calendar | My Sister's Keeper Staten Island",
+    }
   },
 }
 </script>

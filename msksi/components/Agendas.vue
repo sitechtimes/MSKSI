@@ -1,7 +1,16 @@
 <template>
   <div class="Agendas">
     <h2 class="heading fade2" id="agendas">Agendas</h2>
-    <h3 class="text fade2" id="text">Click to view agendas.</h3>
+    <div class="agendaText">
+      <h3 class="text fade2" id="text">Click below to view our agendas.</h3>
+    </div>
+    <a
+      href="https://calendar.google.com
+"
+      target="_blank"
+      class="calendarText"
+      ><h3 class="text" id="text">Click here to view our calendar.</h3></a
+    >
     <div class="agendas-container">
       <div class="yearly-agenda">
         <div class="container">
@@ -94,6 +103,9 @@
         </ul>
       </div>
     </div>
+    <div class="img-container">
+      <img class="agendaimg" src="~/assets/images/agenda.png" alt="" />
+    </div>
   </div>
 </template>
 <script>
@@ -163,6 +175,12 @@ export default {
   font-style: normal;
   font-weight: 700;
   text-align: center;
+}
+.calendarText {
+  display: none;
+}
+.agendaimg {
+  display: none;
 }
 #text {
   font-size: var(--h4);
@@ -340,6 +358,9 @@ li {
   }
 }
 @media only screen and (max-width: 500px) {
+  .Agendas {
+    padding: 0;
+  }
   .agendas-container {
     margin-top: 2rem;
     grid-gap: 2.2rem;
@@ -353,6 +374,7 @@ li {
   #text {
     font-size: var(--one);
     line-height: 2;
+    margin: 0;
   }
   .year {
     margin: 2.1rem 0rem 0rem 2.5rem;
@@ -369,12 +391,29 @@ li {
     font-size: var(--one);
     height: 2.5rem;
     margin-left: 5rem;
+    width: 60%;
   }
   ul {
     padding-bottom: 2.2rem;
   }
   ul li::before {
     font-size: 3.5rem;
+  }
+  .img-container {
+    width: 100%;
+    text-align: center;
+  }
+  .agendaimg {
+    display: initial;
+    height: 20%;
+    width: 90%;
+    text-align: center;
+  }
+  .agendaText {
+    display: none;
+  }
+  .calendarText {
+    display: initial;
   }
 }
 </style>

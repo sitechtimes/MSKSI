@@ -580,7 +580,7 @@ export default {
 #pink {
   background-color: var(--darkpink);
   width: 0;
-  height: 95%;
+  height: 96%;
   position: absolute;
   visibility: hidden;
 }
@@ -702,6 +702,9 @@ export default {
     margin-right: 0rem;
     margin-left: 7rem;
   }
+  /* #yellow {
+    height: 25%;
+  } */
 }
 @media only screen and (max-width: 500px) {
   .name {
