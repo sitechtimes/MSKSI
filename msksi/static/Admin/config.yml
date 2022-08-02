@@ -17,7 +17,12 @@ collections:
     fields:
       - { label: 'Album Name', name: 'title', widget: 'string' }
       - { label: 'Album Link', name: 'link', widget: 'string' }
-      - { label: 'Cover Image', name: 'img', widget: 'image', choose_url: false }
+      - {
+          label: 'Cover Image',
+          name: 'img',
+          widget: 'image',
+          choose_url: false,
+        }
   - name: 'resource'
     label: 'Resource'
     folder: 'msksi/content/resources'
@@ -29,7 +34,12 @@ collections:
     fields:
       - { label: 'Resource Name', name: 'title', widget: 'string' }
       - { label: 'Resources Link', name: 'link', widget: 'string' }
-      - { label: 'Resource Image', name: 'img', widget: 'image', choose_url: false }
+      - {
+          label: 'Resource Image',
+          name: 'img',
+          widget: 'image',
+          choose_url: false,
+        }
   - name: 'monthposts'
     label: 'Month Posts'
     folder: 'msksi/content/monthposts'
@@ -57,18 +67,41 @@ collections:
           label: 'Title',
           name: 'title',
           widget: 'string',
-          pattern: ['^.{5,20}$', 'Must have at least 5 characters'],
+          pattern:
+            [
+              '^.{5,25}$',
+              'Must have more than 5 characters and less than 25 characters',
+            ],
         }
       - {
           label: 'Description',
           name: 'description',
           widget: 'string',
-          ['^.{20,120}$', 'Must have at least 20 characters'],
+          pattern:
+            [
+              '^.{10,120}$',
+              'Must have more than 10 characters and less than 120 characters',
+            ],
         }
       - { label: 'Main Image', name: 'img_main', widget: 'image' }
-      - { label: 'Small Image 1', name: 'img_reel1', widget: 'image', choose_url: false }
-      - { label: 'Small Image 2', name: 'img_reel2', widget: 'image', choose_url: false }
-      - { label: 'Small Image 3', name: 'img_reel3', widget: 'image', choose_url: false }
+      - {
+          label: 'Small Image 1',
+          name: 'img_reel1',
+          widget: 'image',
+          choose_url: false,
+        }
+      - {
+          label: 'Small Image 2',
+          name: 'img_reel2',
+          widget: 'image',
+          choose_url: false,
+        }
+      - {
+          label: 'Small Image 3',
+          name: 'img_reel3',
+          widget: 'image',
+          choose_url: false,
+        }
       - { label: 'Caption 1', name: 'reel_caption1', widget: 'string' }
       - { label: 'Caption 2', name: 'reel_caption2', widget: 'string' }
       - { label: 'Caption 3', name: 'reel_caption3', widget: 'string' }
