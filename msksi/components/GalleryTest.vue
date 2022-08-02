@@ -1,6 +1,8 @@
 <template>
   <div class="Gallery">
-    <h2 class="heading">Photo <span class="gall heading">Gallery</span></h2>
+    <h2 class="heading fade">
+      Photo <span class="gall heading fade">Gallery</span>
+    </h2>
     <div class="Albums">
       <Album
         v-for="album in albums"
@@ -26,12 +28,69 @@ export default {
     this.albums = albums
     console.log(this.albums)
   },
+  mounted() {
+    this.staggerFly()
+    this.scrollFadeGeneral()
+  },
+  updated() {
+    this.staggerFly()
+  },
+  methods: {
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({})
+      genTL.fromTo(
+        '.fade',
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+
+          duration: 0.5,
+        }
+      )
+    },
+    staggerFly() {
+      const staggerTL = this.$gsap.timeline({
+        delay: 0.3,
+        onComplete: function () {
+          document.querySelectorAll('.polaroid').forEach((el) => {
+            el.style.transform = null
+            el.style.transition = 'all 0.3s'
+          })
+          console.log('no transform')
+        },
+      })
+      staggerTL
+        .fromTo(
+          '.polaroid',
+          {
+            y: 70,
+            stagger: 0.05,
+            duration: 0.5,
+            opacity: 0,
+          },
+          { y: -8, stagger: 0.05, duration: 0.5, opacity: 1 }
+        )
+        .to(
+          '.polaroid',
+          {
+            y: 0,
+            stagger: 0.05,
+            duration: 0.5,
+          },
+          '<+0.5'
+        )
+    },
+  },
 }
 </script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
 a {
-  cursor: pointer;
+  cursor: url('~/assets/images/hoverBtnCursor.png'), auto;
 }
 .Gallery {
   background-color: #333043;
@@ -72,6 +131,10 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.polaroid:hover {
+  transform: scale(1.02);
 }
 #picture {
   height: 20rem;
@@ -119,4 +182,3 @@ a {
   }
 }
 </style>
-

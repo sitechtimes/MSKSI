@@ -2,7 +2,7 @@
   <div class="AboutUsMid">
     <div class="left">
       <h2 class="heading v msksi">MSKSI</h2>
-      <div id="video-container">
+      <div id="video-container ">
         <iframe
           id="video"
           src="https://drive.google.com/file/d/1JlT8gnYTEr3YedSs970C7dVHHq5K43eM/preview"
@@ -14,27 +14,29 @@
     </div>
     <div id="right">
       <ol class="list">
-        <li>
+        <li class="fade2">
           Become empowered and take an active lead in their education process.
         </li>
-        <li>Support peers in developing positive, sisterly relationships.</li>
-        <li>
+        <li class="fade2">
+          Support peers in developing positive, sisterly relationships.
+        </li>
+        <li class="fade2">
           Build community, accountability and collaborative relationships among
           their peers.
         </li>
-        <li>
+        <li class="fade2">
           Adopt healthy social emotional habits that support building positive
           internal self-esteem.
         </li>
-        <li>
+        <li class="fade2">
           Partner with positive role models to create lasting impactful
           relationships.
         </li>
-        <li>
+        <li class="fade2">
           Be supported with transitions from elementary school to college
           (College and Career Readiness).
         </li>
-        <li>
+        <li class="fade2">
           Engage in community-based projects to build civic awareness and
           participation.
         </li>
@@ -45,7 +47,48 @@
 <script>
 export default {
   name: 'AboutUsMid',
-  methods: {},
+  mounted() {
+    this.scrollFadeGeneral()
+  },
+  methods: {
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '.fade2',
+          start: 'top bottom-=30%',
+          scrub: false,
+        },
+      })
+      genTL
+        .fromTo(
+          '.fade2',
+          {
+            y: 40,
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+            y: 0,
+            stagger: 0.1,
+            duration: 0.5,
+          }
+        )
+        .fromTo(
+          '.v',
+          {
+            y: 40,
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+            y: 0,
+            stagger: 0.1,
+            duration: 0.5,
+          },
+          '<'
+        )
+    },
+  },
 }
 </script>
 <style scoped>
@@ -81,7 +124,8 @@ iframe {
 #video {
   height: 22vw;
   width: 35vw;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0;
+  border: solid var(--darkpink) 0.5rem;
 }
 .list {
   font-size: var(--h3);

@@ -18,6 +18,33 @@ export default {
     description: String,
     image: String,
   },
+  mounted() {
+    this.scrollFadeGeneral()
+  },
+  methods: {
+    scrollFadeGeneral() {
+      const genTL = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: '.fade',
+          start: 'top bottom-=40%',
+          scrub: false,
+        },
+      })
+      genTL.fromTo(
+        '.fade',
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.3,
+          duration: 0.5,
+        }
+      )
+    },
+  },
 }
 </script>
 
@@ -40,6 +67,7 @@ h3 {
   font-size: var(--subheadingjum);
   margin: 0 4rem 0 4rem;
   color: var(--white);
+  line-height: 2;
 }
 
 .postcontent {

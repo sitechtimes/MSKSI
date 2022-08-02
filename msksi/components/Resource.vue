@@ -1,6 +1,6 @@
 <template>
   <div class="resource">
-    <img :src="img" :alt="title" />
+    <img :src="imageURL(img)" :alt="title" />
     <a target="_blank" id="link" :href="link">{{ title }}</a>
   </div>
 </template>
@@ -21,6 +21,12 @@ export default {
     link: String,
     description: String,
   },
+  methods: {
+    imageURL(image) {
+      // const images = require.context('../static/', false, /\.png$/)
+      return require('../static' + image )
+    }
+  }
 }
 </script>
 
@@ -79,6 +85,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
+  line-height: 3rem;
 }
 .item {
   color: #333043;
