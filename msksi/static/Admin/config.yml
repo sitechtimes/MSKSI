@@ -77,10 +77,11 @@ collections:
           label: 'Description',
           name: 'description',
           widget: 'string',
-          [
-            '^.{10,120}$',
-            'Must have more than 10 characters and less than 120 characters',
-          ],
+          pattern:
+            [
+              '^.{10,120}$',
+              'Must have more than 10 characters and less than 120 characters',
+            ],
         }
       - { label: 'Main Image', name: 'img_main', widget: 'image' }
       - {
