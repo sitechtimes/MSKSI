@@ -52,6 +52,7 @@ export default {
         }
       )
     },
+
     staggerFly() {
       const staggerTL = this.$gsap.timeline({
         delay: 0.3,
