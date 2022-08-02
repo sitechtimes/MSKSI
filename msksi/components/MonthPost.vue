@@ -107,7 +107,7 @@ img {
     height: 20rem;
   }
   .text {
-    font-size: var(--h6);
+    font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 500px) {
