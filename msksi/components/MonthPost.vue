@@ -1,8 +1,8 @@
 <template>
   <div class="newmonth">
-    <h2 class="heading">{{ month }}</h2>
-    <h3 class="subheading">{{ subheader }}</h3>
-    <div class="postcontent">
+    <h2 class="heading fade">{{ month }}</h2>
+    <h3 class="subheading fade">{{ subheader }}</h3>
+    <div class="postcontent fade">
       <p class="text">{{ description }}</p>
       <img :src="image" alt="" />
     </div>
