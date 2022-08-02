@@ -95,6 +95,7 @@
   height: 2.5rem;
   width: auto;
   transition: all 0.1s;
+  filter: saturate(0) brightness(5);
 }
 .instagram,
 .tiktok {
@@ -143,6 +144,12 @@
 @media only screen and (max-width: 1032px) {
   .backing {
     margin: auto;
+  }
+  .iconimg {
+    height: 2.5rem;
+    width: auto;
+    transition: all 0.1s;
+    filter: saturate(100%);
   }
   /* .logoicon,
   .backing {
