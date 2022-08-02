@@ -19,7 +19,10 @@
 
     <div class="CStext-holder">
       <h2 class="heading commspot">Community Spotlight</h2>
-      <nuxt-content :document="post" />
+      <div class="nuxt-content">
+        <h3>{{ post.title }}</h3>
+        <h4>{{ post.description }}</h4>
+      </div>
     </div>
 
     <div class="CSimg-reel">
@@ -138,7 +141,9 @@ export default {
   display: flex;
   flex-direction: row;
 }
-
+h4 {
+  font-weight: lighter;
+}
 .spotlight-images {
   width: 68rem;
   height: 75rem;
@@ -473,12 +478,12 @@ export default {
     margin-bottom: 1.3rem;
     border-radius: 2rem;
     bottom: 4rem;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     /* text-align: center; */
   }
-  .arrow{
+  .arrow {
     display: none;
   }
   .CSroutermore {

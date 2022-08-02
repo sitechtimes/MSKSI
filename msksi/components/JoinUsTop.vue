@@ -52,7 +52,7 @@
 }
 .image-container {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 #picture {
   margin-top: 8rem;
@@ -73,7 +73,8 @@
   margin-left: 4rem;
 }
 .text {
-  line-height: 2;
+  line-height: 1.5;
+  margin-top: 2.5rem;
 }
 .subc {
   color: var(--darkpink);
@@ -101,7 +102,7 @@
     margin-top: 5rem;
   }
   .image-container {
-    margin-top: 7rem;
+    margin-top: 2rem;
     margin-right: 5rem;
     margin-left: 2rem;
   }
@@ -115,7 +116,7 @@
     height: 24rem;
   }
   .image-container {
-    margin-top: 6rem;
+    margin-top: 1rem;
     margin-left: 2rem;
     margin-right: 7rem;
   }
@@ -124,6 +125,9 @@
   }
   #textgroup {
     width: 70%;
+  }
+  .pink {
+    margin-top: 3rem;
   }
 }
 

@@ -114,21 +114,5 @@ export default {
     padding-bottom: 0rem;
     display: none;
   }
-  /* .calendarFlex {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 0;
-    overflow: visible;
-  }
-  .calendarFlex iframe {
-    position: absolute;
-    top: 0;
-    width: 90%;
-    height: 40rem;
-    margin-top: 3rem;
-  } */
 }
 </style>

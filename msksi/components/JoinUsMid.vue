@@ -72,7 +72,7 @@ export default {
   transform: scale(1.05);
 }
 .joinusmid {
-  padding-bottom: 10rem;
+  padding-bottom: 12rem;
   background-color: white;
 }
 #info {
@@ -85,7 +85,7 @@ export default {
 .text {
   margin-left: 14rem;
   margin-right: 4rem;
-  line-height: 2;
+  line-height: 1.5;
 }
 #picture {
   width: 40rem;
@@ -123,7 +123,7 @@ li {
     margin-top: 0rem;
   }
   .image-container {
-    margin-top: 7rem;
+    margin-top: 10rem;
     margin-right: 8rem;
   }
   #picture {
@@ -150,7 +150,7 @@ li {
   }
   .text {
     margin-left: 8rem;
-    margin-right: 2rem;
+    margin-right: 0rem;
   }
   #picture {
     width: 28rem;
@@ -180,9 +180,7 @@ li {
   .wbsm {
     font-size: var(--h4);
     margin: 0;
-    margin-top: 8rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 8rem 5rem 0 5rem;
     text-align: center;
   }
   #picture {
@@ -216,7 +214,7 @@ li {
     width: 16rem;
     height: 5rem;
     font-size: var(--h5);
-    margin: 5rem;
+    margin: 0rem;
     margin-top: 8rem;
   }
   .text {
@@ -237,8 +235,8 @@ li {
   .text {
     margin-top: 3rem;
     margin-bottom: 0;
-
-    width: 90%;
+    margin-left: 4.5rem;
+    width: 86%;
     line-height: 2;
   }
   #wbsm {
