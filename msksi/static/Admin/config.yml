@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: develop 
+  branch: develop
 
 media_folder: 'msksi/static/img/upload'
 public_folder: '/img/upload'
@@ -53,6 +53,18 @@ collections:
     editor:
       preview: false
     fields:
+      - {
+          label: 'Title',
+          name: 'title',
+          widget: 'string',
+          pattern: ['^.{5,20}$', 'Must have at least 5 characters'],
+        }
+      - {
+          label: 'Description',
+          name: 'description',
+          widget: 'string',
+          ['^.{20,120}$', 'Must have at least 20 characters'],
+        }
       - { label: 'Main Image', name: 'img_main', widget: 'image' }
       - { label: 'Small Image 1', name: 'img_reel1', widget: 'image' }
       - { label: 'Small Image 2', name: 'img_reel2', widget: 'image' }
