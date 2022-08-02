@@ -57,13 +57,20 @@ collections:
           label: 'Title',
           name: 'title',
           widget: 'string',
-          pattern: ['^.{5,20}$', 'Must have at least 5 characters'],
+          pattern:
+            [
+              '^.{5,25}$',
+              'Must have more than 5 characters and less than 25 characters',
+            ],
         }
       - {
           label: 'Description',
           name: 'description',
           widget: 'string',
-          ['^.{20,120}$', 'Must have at least 20 characters'],
+          [
+            '^.{10,120}$',
+            'Must have more than 10 charactersless than 120 characters',
+          ],
         }
       - { label: 'Main Image', name: 'img_main', widget: 'image' }
       - { label: 'Small Image 1', name: 'img_reel1', widget: 'image' }
