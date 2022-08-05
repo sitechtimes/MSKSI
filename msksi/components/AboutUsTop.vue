@@ -78,6 +78,7 @@ export default {
   }
   .text {
     margin: 2rem 8rem 0 8rem;
+    line-height: 5rem;
   }
   .blockText {
     display: initial;
@@ -104,6 +105,7 @@ export default {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    line-height: 4rem;
   }
 }
 @media only screen and (max-width: 500px) {

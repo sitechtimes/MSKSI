@@ -106,8 +106,11 @@ export default {
   .will {
     margin: 3rem 8rem 0 8rem;
   }
+  .text {
+    line-height: 5rem;
+  }
   .texti {
-    margin: 2rem 8rem 0 8rem;
+    margin: 4rem 8rem 0 8rem;
   }
   .heading {
     margin: 0rem 8rem 0 8rem;
@@ -119,6 +122,9 @@ export default {
 @media only screen and (max-width: 770px) {
   .texti {
     margin: 2rem 6rem 0 6rem;
+  }
+  .text {
+    line-height: 4rem;
   }
   .will {
     margin: 2rem 6rem 0 6rem;
