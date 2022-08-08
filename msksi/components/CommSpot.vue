@@ -330,7 +330,7 @@ h4 {
 
 .arrow {
   position: absolute;
-  top: 45%;
+  top: 30%;
   left: 60%;
   height: 60px;
   width: 100px;
