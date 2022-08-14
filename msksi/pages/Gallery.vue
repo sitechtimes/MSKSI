@@ -1,16 +1,16 @@
 <template>
   <div>
     <NewCarousel />
-    <GalleryTop />
-    <AlbumPreview />
+    <GalleryTest />
   </div>
 </template>
 
 <script>
-import GalleryTop from '~/components/GalleryTop.vue'
 import NewCarousel from '~/components/NewCarousel.vue'
+import GalleryTest from '~/components/GalleryTest.vue'
+
 export default {
-  components: { GalleryTop, NewCarousel },
+  components: { GalleryTest, NewCarousel },
   head() {
     return {
       title: "Gallery | My Sister's Keeper Staten Island",

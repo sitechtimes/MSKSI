@@ -22,23 +22,85 @@ export default {
 <style scoped>
 .calendartop {
   background-color: #333043;
-  height: 100rem;
+  padding-bottom: 70rem;
 }
 .calendarFlex {
-  display: flex;  
-  margin: 0 auto;
+  display: flex;
+  margin: 1rem auto 0 auto;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-bottom: 40%;
   height: 0;
-  overflow: hidden;
+  overflow: visible;
 }
 .calendarFlex iframe {
   position: absolute;
   top: 0;
-  /* left: 0;  */
-  width: 70%;
-  height: 100%;
+  width: 80%;
+  height: 68rem;
+}
+@media only screen and (max-width: 1500px){
+    .calendarFlex {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 0rem;
+  height: 0;
+  overflow: visible;
+}
+.calendarFlex iframe {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  height: 55rem;
+  margin-top: 3rem;
+}
+.calendartop{
+  padding-bottom: 60rem;
+}
+}
+@media only screen and (max-width: 710px){
+    .calendarFlex {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 0;
+  overflow: visible;
+}
+.calendarFlex iframe {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  height: 40rem;
+  margin-top: 3rem;
+}
+.calendartop{
+  padding-bottom: 45rem;
+}
+}
+@media only screen and (max-width: 520px) {
+  .calendartop{
+  padding-bottom: 38rem;
+}
+  .calendarFlex {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 0;
+  overflow: visible;
+}
+.calendarFlex iframe {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  height: 33rem;
+  margin-top: 3rem;
+}
 }
 </style>

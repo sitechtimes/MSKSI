@@ -1,7 +1,7 @@
 <template>
   <div class="NewCarousel">
     <div class="cardList" ref="cardList">
-      <button @click="swapCards(left)" class="left btn">
+      <button @click="swapCards(left), LeftCardRotate()" class="left btn">
         <div class="icon">
           <img
             src="~assets/images/CarouselArrow.png"
@@ -16,6 +16,7 @@
             <img
               src="https://randomwordgenerator.com/img/picture-generator/57e5d4444d50ab14f1dc8460962e33791c3ad6e04e507440752f73dd944bc6_640.jpg"
               alt=""
+              class="next.img"
             />
           </div>
         </div>
@@ -32,11 +33,12 @@
             <img
               src="https://randomwordgenerator.com/img/picture-generator/53e3d44a4950aa14f1dc8460962e33791c3ad6e04e507440722d72d5944ccd_640.jpg"
               alt=""
+              class="prev.img"
             />
           </div>
         </div>
       </div>
-      <button @click="swapCards(right)" class="right btn">
+      <button @click="swapCards(right), RightCardRotate()" class="right btn">
         <div class="icon">
           <img
             src="~assets/images/CarouselArrow.png"
@@ -82,6 +84,70 @@ export default {
       swapCardsClass()
     },
     cardSwitch() {},
+    RightCardRotate() {
+      const timeline = this.$gsap.timeline()
+      timeline
+        .from('.current--card', {
+          x: 100,
+          duration: 0.6,
+          ease: 'back.out(1.7)',
+        })
+        .from(
+          '.next--card',
+          {
+            x: -100,
+            delay: 0,
+            duration: 0.3,
+            ease: 'back.out(1.7)',
+          },
+          '-=.5'
+        )
+        .from(
+          '.prev--card',
+          {
+            x: -500,
+            delay: 0,
+            duration: 0.5,
+            ease: 'back.out(1.7)',
+          },
+          '-=.5'
+        )
+      timeline.set('.current--card', { clearProps: true })
+      timeline.set('.next--card', { clearProps: true })
+      timeline.set('.prev--card', { clearProps: true })
+    },
+    LeftCardRotate() {
+      const timeline = this.$gsap.timeline()
+      timeline
+        .from('.current--card', {
+          x: -100,
+          duration: 0.6,
+          ease: 'back.out(1.7)',
+        })
+        .from(
+          '.next--card',
+          {
+            x: 10,
+            delay: 0,
+            duration: 0.6,
+            ease: 'back.out(1.7)',
+          },
+          '-=.5'
+        )
+        .from(
+          '.prev--card',
+          {
+            x: 2,
+            delay: 0,
+            duration: 0.6,
+            ease: 'back.out(1.7)',
+          },
+          '-=.5'
+        )
+      timeline.set('.current--card', { clearProps: true })
+      timeline.set('.next--card', { clearProps: true })
+      timeline.set('.prev--card', { clearProps: true })
+    },
   },
 }
 </script>
@@ -115,6 +181,7 @@ img {
   height: 50rem;
   width: 50rem;
 }
+
 .arrow {
   height: 4rem;
   width: 4rem;
@@ -123,7 +190,7 @@ img {
   transform: rotate(180deg);
 }
 .left.btn {
-  left: 30%;
+  left: 32%;
 }
 .right.btn {
   right: 35%;
@@ -140,7 +207,6 @@ img {
   width: 100%;
   height: 100%;
   display: inline-block;
-  user-select: none;
   z-index: 3;
   position: relative;
 }
@@ -152,7 +218,6 @@ img {
   width: 100%;
   height: 100%;
   display: inline-block;
-  user-select: none;
   opacity: 0.6;
   z-index: 2;
 }
@@ -164,8 +229,79 @@ img {
   width: 100%;
   height: 100%;
   display: inline-block;
-  user-select: none;
   opacity: 0.6;
   z-index: 2;
+}
+@media screen and (max-width: 1032px) {
+  img {
+    height: 35rem;
+    width: 35rem;
+  }
+  .btn {
+    z-index: 4;
+    top: 50%;
+  }
+  .left.btn {
+    left: 25%;
+  }
+  .right.btn {
+    right: 25%;
+  }
+}
+@media screen and (max-width: 800px) {
+  img {
+    height: 31rem;
+    width: 31rem;
+  }
+  .next--card {
+    left: 10%;
+  }
+  .prev--card {
+    left: 90%;
+  }
+  .btn {
+    z-index: 4;
+    top: 50%;
+  }
+  .left.btn {
+    left: 20%;
+  }
+  .right.btn {
+    right: 20%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .NewCarousel {
+    height: 80rem;
+    padding-bottom: 5rem;
+  }
+  img {
+    height: 25rem;
+    width: 25rem;
+  }
+  .next--card {
+    left: 20%;
+    top: 10%;
+    transform: rotateY(-30deg);
+  }
+  .prev--card {
+    left: -20%;
+    top: 10%;
+    transform: rotateY(30deg);
+  }
+  .arrow {
+    height: 2rem;
+    width: 2rem;
+  }
+  .btn {
+    z-index: 4;
+    top: 50%;
+  }
+  .left.btn {
+    left: 15%;
+  }
+  .right.btn {
+    right: 15%;
+  }
 }
 </style>

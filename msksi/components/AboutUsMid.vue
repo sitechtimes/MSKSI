@@ -51,19 +51,21 @@ export default {
 <style scoped>
 .AboutUsMid {
   text-align: center;
-  background-color: white;
+  background-color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .left {
   width: 50%;
-  font-family: 'Black Han Sans';
   margin: 10rem 0 10rem 0;
 }
 .msksi {
   color: var(--darkpink);
   padding-top: 0;
+}
+iframe {
+  cursor: url('~assets/images/hoverBtnCursor.png'), auto;
 }
 .vision {
   color: var(--navyblue);
@@ -89,7 +91,7 @@ export default {
   line-height: 4rem;
   width: 95%;
   margin: 8rem 0 8rem 0;
-  font-family: 'Cairo', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
 }
 
 li {
@@ -103,7 +105,7 @@ li {
 @media only screen and (max-width: 1032px) {
   .AboutUsMid {
     text-align: center;
-    background-color: white;
+    background-color: var(--white);
     display: inline-block;
     padding-bottom: 6rem;
   }
